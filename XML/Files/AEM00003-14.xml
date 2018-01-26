@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML tags, elements, and DTD Copyright 2014 by eJournalPress a division of Precision Computer Works, Inc. -->
+<xml>
+  <manuscript>
+    <country>China</country>
+    <production-data>
+      <production-data-color_charge_form-date></production-data-color_charge_form-date>
+      <production-data-copyright-release-date></production-data-copyright-release-date>
+      <production-data-dataset-quantity></production-data-dataset-quantity>
+      <production-data-doi>10.1128/AEM.00003-14</production-data-doi>
+      <production-data-first-page-number></production-data-first-page-number>
+      <production-data-has-color-figures></production-data-has-color-figures>
+      <production-data-issue-date></production-data-issue-date>
+      <production-data-issue-number></production-data-issue-number>
+      <production-data-last-page-number></production-data-last-page-number>
+      <production-data-online-page_count></production-data-online-page_count>
+      <production-data-online-publication-date></production-data-online-publication-date>
+      <production-data-order-in-issue></production-data-order-in-issue>
+      <production-data-print-page-count></production-data-print-page-count>
+      <production-data-print-publication-date></production-data-print-publication-date>
+      <production-data-proofs_received_from_author-date></production-data-proofs_received_from_author-date>
+      <production-data-proofs_received_from_setter-date></production-data-proofs_received_from_setter-date>
+      <production-data-ready-for-production-date>2014-02-07  13:16:37</production-data-ready-for-production-date>
+      <production-data-scheduled-date></production-data-scheduled-date>
+      <production-data-sent-to-publisher-date></production-data-sent-to-publisher-date>
+      <production-data-submission-page-count></production-data-submission-page-count>
+      <production-data-supplemental-material-quantity>1</production-data-supplemental-material-quantity>
+      <production-data-video-quantity></production-data-video-quantity>
+      <production-data-volume_number></production-data-volume_number>
+    </production-data>
+    <version>
+      <key>66817|0</key>
+      <abstract>Increasing evidence suggests that perturbations in the intestinal microbiota composition of infants may be implicated in the pathogenesis of food allergy (FA), while its actual structure and composition in human beings with FA remains unclear. Microbial diversity and composition were analyzed with parallel barcoded 454 pyrosequencing targeting the 16S rRNA gene hypervariable V1-V3 regions in the feces of 34 infants with FA (17 IgE-mediated and 17 non-IgE-mediated) and 45 healthy controls. Here we showed that several key FA-associated bacterial phylotypes, but not the overall microbiota diversity, significantly changed in infancy fecal microbiota with FA and contributed to the development of FA. The proportion of abundant Bacteroidetes, Proteobacteria, and Actinobacteria phyla were significantly reduced, while the Firmicutes phylum was highly enriched in the FA group (P&amp;lt;0.05). Abundant Clostridiaceae 1 was prevalent in FA infants at the family level (P=0.016). FA-enriched phylotypes negatively correlated with interleukin 10, for example the genus Enterococcus and Staphylococcus. Despite profound interindividual variability, 20 predominant genera was significantly different between the FA and healthy control groups (P&amp;lt;0.05). Infants with IgE-mediated FA had increased Clostridium sensu stricto and Anaerobacter and decreased Bacteroides and Clostridium XVIII (P&amp;lt;0.05). A positive correlation was observed between Clostridium sensu stricto and serum-specific IgE (R=0.655, P&amp;lt;0.001). The specific microbiota signature could distinguish infants with IgE-mediated FA from non-IgE-mediated ones. Detailed microbiota analysis of a well-characterized cohort of infants with FA showed that dysbiosis of fecal microbiota with several FA-associated key phylotypes may play a pathogenic role in FA.</abstract>
+      <agree-date></agree-date>
+      <appeal-date></appeal-date>
+      <appeal-status></appeal-status>
+      <author-approval-date>2014-01-01  21:48:56</author-approval-date>
+      <author-funding>
+      </author-funding>
+      <authors>
+        <author>
+          <author-person-id>159161</author-person-id>
+          <author-seq>1</author-seq>
+          <is-corr>true</is-corr>
+        </author>
+        <author>
+          <author-person-id>236274</author-person-id>
+          <author-seq>2</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>236276</author-person-id>
+          <author-seq>3</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>236268</author-person-id>
+          <author-seq>4</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>236269</author-person-id>
+          <author-seq>5</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>236270</author-person-id>
+          <author-seq>6</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>236271</author-person-id>
+          <author-seq>7</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>94826</author-person-id>
+          <author-seq>8</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>236275</author-person-id>
+          <author-seq>9</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>34838</author-person-id>
+          <author-seq>10</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>24774</author-person-id>
+          <author-seq>11</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+      </authors>
+      <category>Microbial Ecology</category>
+      <commissioned>No</commissioned>
+      <commissioned-due-date></commissioned-due-date>
+      <commissioned-next-chase-date></commissioned-next-chase-date>
+      <conflict-of-interest>No</conflict-of-interest>
+      <contributing-author-notification>ZXL</contributing-author-notification>
+      <current-stage>Revision Received</current-stage>
+      <decision>Modify</decision>
+      <decision-date>2014-01-21  08:39:00</decision-date>
+      <dual-publication-text></dual-publication-text>
+      <editors>
+        <editor>
+          <editor-assigned-date>2014-01-02  16:47:45</editor-assigned-date>
+          <editor-decision>Revise only</editor-decision>
+          <editor-decision-date>2014-01-21  08:38:56</editor-decision-date>
+          <editor-decision-due-date>2014-01-25  23:53:01</editor-decision-due-date>
+          <editor-person-id>25643</editor-person-id>
+        </editor>
+      </editors>
+      <ejp-decision>Revise only</ejp-decision>
+      <emails>
+      </emails>
+      <evaluations></evaluations>
+      <hardcopy-or-electronic>electronic</hardcopy-or-electronic>
+      <history>
+      </history>
+      <institution-type></institution-type>
+      <invite-date></invite-date>
+      <is_resubmission>false</is_resubmission>
+      <issue-date></issue-date>
+      <keywords>
+        <keywords>
+          <sequence>2</sequence>
+          <word>16S rRNA</word>
+        </keywords>
+        <keywords>
+          <sequence>3</sequence>
+          <word>fecal microbiota</word>
+        </keywords>
+        <keywords>
+          <sequence>4</sequence>
+          <word>food allergy</word>
+        </keywords>
+        <keywords>
+          <sequence>5</sequence>
+          <word>IgE</word>
+        </keywords>
+        <keywords>
+          <sequence>6</sequence>
+          <word>infants</word>
+        </keywords>
+        <keywords>
+          <sequence>7</sequence>
+          <word>pyrosequencing</word>
+        </keywords>
+      </keywords>
+      <manuscript-funding>
+      </manuscript-funding>
+      <manuscript-notes></manuscript-notes>
+      <manuscript-number>AEM00003-14</manuscript-number>
+      <manuscript-type>Full-length text</manuscript-type>
+      <number-of-pages></number-of-pages>
+      <open-access>No</open-access>
+      <open-access-license-type></open-access-license-type>
+      <partial-ms-next-chase-dt>2014-01-11  19:56:33</partial-ms-next-chase-dt>
+      <payments>
+      </payments>
+      <potential-editors>
+      </potential-editors>
+      <potential-referees>
+        <potential-referee>
+          <potential-referee-first-contact-date></potential-referee-first-contact-date>
+          <potential-referee-next-contact-date></potential-referee-next-contact-date>
+          <potential-referee-person-id>149798</potential-referee-person-id>
+          <potential-referee-second-contact-date></potential-referee-second-contact-date>
+          <potential-referee-sequence>1</potential-referee-sequence>
+          <potential-referee-status>Not Needed</potential-referee-status>
+          <potential-referee-status-date>2014-01-07  04:34:12</potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+        <potential-referee>
+          <potential-referee-first-contact-date></potential-referee-first-contact-date>
+          <potential-referee-next-contact-date></potential-referee-next-contact-date>
+          <potential-referee-person-id>34834</potential-referee-person-id>
+          <potential-referee-second-contact-date></potential-referee-second-contact-date>
+          <potential-referee-sequence>2</potential-referee-sequence>
+          <potential-referee-status>Not Needed</potential-referee-status>
+          <potential-referee-status-date>2014-01-07  04:34:12</potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+        <potential-referee>
+          <potential-referee-first-contact-date></potential-referee-first-contact-date>
+          <potential-referee-next-contact-date></potential-referee-next-contact-date>
+          <potential-referee-person-id>29378</potential-referee-person-id>
+          <potential-referee-second-contact-date></potential-referee-second-contact-date>
+          <potential-referee-sequence>3</potential-referee-sequence>
+          <potential-referee-status>Not Needed</potential-referee-status>
+          <potential-referee-status-date>2014-01-07  04:34:12</potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+        <potential-referee>
+          <potential-referee-first-contact-date>2014-01-06  12:29:46</potential-referee-first-contact-date>
+          <potential-referee-next-contact-date>2014-01-10  12:29:38</potential-referee-next-contact-date>
+          <potential-referee-person-id>183425</potential-referee-person-id>
+          <potential-referee-second-contact-date></potential-referee-second-contact-date>
+          <potential-referee-sequence>4</potential-referee-sequence>
+          <potential-referee-status>Not Needed</potential-referee-status>
+          <potential-referee-status-date>2014-01-07  04:34:12</potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+        <potential-referee>
+          <potential-referee-first-contact-date></potential-referee-first-contact-date>
+          <potential-referee-next-contact-date></potential-referee-next-contact-date>
+          <potential-referee-person-id>5197</potential-referee-person-id>
+          <potential-referee-second-contact-date></potential-referee-second-contact-date>
+          <potential-referee-sequence>5</potential-referee-sequence>
+          <potential-referee-status>Not Needed</potential-referee-status>
+          <potential-referee-status-date>2014-01-07  04:34:12</potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+        <potential-referee>
+          <potential-referee-first-contact-date></potential-referee-first-contact-date>
+          <potential-referee-next-contact-date></potential-referee-next-contact-date>
+          <potential-referee-person-id>92280</potential-referee-person-id>
+          <potential-referee-second-contact-date></potential-referee-second-contact-date>
+          <potential-referee-sequence>6</potential-referee-sequence>
+          <potential-referee-status>Not Needed</potential-referee-status>
+          <potential-referee-status-date>2014-01-07  04:34:12</potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+        <potential-referee>
+          <potential-referee-first-contact-date>2014-01-06  12:29:44</potential-referee-first-contact-date>
+          <potential-referee-next-contact-date>2014-01-10  12:29:36</potential-referee-next-contact-date>
+          <potential-referee-person-id>215709</potential-referee-person-id>
+          <potential-referee-second-contact-date></potential-referee-second-contact-date>
+          <potential-referee-sequence>7</potential-referee-sequence>
+          <potential-referee-status>Accepted</potential-referee-status>
+          <potential-referee-status-date>2014-01-07  04:34:10</potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+        <potential-referee>
+          <potential-referee-first-contact-date></potential-referee-first-contact-date>
+          <potential-referee-next-contact-date></potential-referee-next-contact-date>
+          <potential-referee-person-id>33247</potential-referee-person-id>
+          <potential-referee-second-contact-date></potential-referee-second-contact-date>
+          <potential-referee-sequence>8</potential-referee-sequence>
+          <potential-referee-status>Not Needed</potential-referee-status>
+          <potential-referee-status-date>2014-01-07  04:34:12</potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+        <potential-referee>
+          <potential-referee-first-contact-date>2014-01-06  12:29:49</potential-referee-first-contact-date>
+          <potential-referee-next-contact-date>2014-01-10  12:29:41</potential-referee-next-contact-date>
+          <potential-referee-person-id>31656</potential-referee-person-id>
+          <potential-referee-second-contact-date></potential-referee-second-contact-date>
+          <potential-referee-sequence>9</potential-referee-sequence>
+          <potential-referee-status>Accepted</potential-referee-status>
+          <potential-referee-status-date>2014-01-06  21:28:08</potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+        <potential-referee>
+          <potential-referee-first-contact-date></potential-referee-first-contact-date>
+          <potential-referee-next-contact-date></potential-referee-next-contact-date>
+          <potential-referee-person-id>195049</potential-referee-person-id>
+          <potential-referee-second-contact-date></potential-referee-second-contact-date>
+          <potential-referee-sequence>10</potential-referee-sequence>
+          <potential-referee-status>Not Needed</potential-referee-status>
+          <potential-referee-status-date>2014-01-07  04:34:12</potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+        <potential-referee>
+          <potential-referee-first-contact-date>2014-01-06  12:29:47</potential-referee-first-contact-date>
+          <potential-referee-next-contact-date>2014-01-10  12:29:40</potential-referee-next-contact-date>
+          <potential-referee-person-id>155374</potential-referee-person-id>
+          <potential-referee-second-contact-date></potential-referee-second-contact-date>
+          <potential-referee-sequence>11</potential-referee-sequence>
+          <potential-referee-status>Accepted</potential-referee-status>
+          <potential-referee-status-date>2014-01-06  12:42:57</potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+      </potential-referees>
+      <referees>
+        <referee>
+          <referee-due-date>2014-01-20  12:42:49</referee-due-date>
+          <referee-next-chase-date>2014-01-21  12:42:49</referee-next-chase-date>
+          <referee-person-id>155374</referee-person-id>
+          <referee-rank></referee-rank>
+          <referee-received-date>2014-01-20  23:53:00</referee-received-date>
+          <referee-recommendation>Revise only</referee-recommendation>
+          <referee-sequence>1</referee-sequence>
+          <referee-started-date>2014-01-06  12:42:57</referee-started-date>
+        </referee>
+        <referee>
+          <referee-due-date>2014-01-20  21:28:01</referee-due-date>
+          <referee-next-chase-date>2014-01-19  21:28:01</referee-next-chase-date>
+          <referee-person-id>31656</referee-person-id>
+          <referee-rank></referee-rank>
+          <referee-received-date>2014-01-15  19:46:37</referee-received-date>
+          <referee-recommendation>Reject</referee-recommendation>
+          <referee-sequence>2</referee-sequence>
+          <referee-started-date>2014-01-06  21:28:08</referee-started-date>
+        </referee>
+        <referee>
+          <referee-due-date>2014-01-21  04:34:04</referee-due-date>
+          <referee-next-chase-date>2014-01-20  04:34:04</referee-next-chase-date>
+          <referee-person-id>215709</referee-person-id>
+          <referee-rank></referee-rank>
+          <referee-received-date>2014-01-08  01:58:17</referee-received-date>
+          <referee-recommendation>Revise only</referee-recommendation>
+          <referee-sequence>3</referee-sequence>
+          <referee-started-date>2014-01-07  04:34:11</referee-started-date>
+        </referee>
+      </referees>
+      <related-manuscripts>
+      </related-manuscripts>
+      <revision-due-date>2014-03-07  08:39:01</revision-due-date>
+      <revision-next-chase-date>2014-02-25  08:39:01</revision-next-chase-date>
+      <running-title>Food allergy associated infancy fecal microbiota</running-title>
+      <senior-editors>
+        <senior-editor>
+          <senior-editor-assigned-date>2014-01-01  21:49:01</senior-editor-assigned-date>
+          <senior-editor-person-id>19750</senior-editor-person-id>
+        </senior-editor>
+      </senior-editors>
+      <subject-areas>
+      </subject-areas>
+      <submission-date>2014-01-01  21:48:56</submission-date>
+      <themes>
+      </themes>
+      <title>Altered Fecal Microbiota Composition for Food Allergy in Chinese Infants</title>
+      <transfers>
+      </transfers>
+      <version-number>0</version-number>
+    </version>
+    <version>
+      <key>66817|1</key>
+      <abstract>Increasing evidence suggests that perturbations in the intestinal microbiota composition of infants may be implicated in the pathogenesis of food allergy (FA), while its actual structure and composition in human beings with FA remains unclear. Microbial diversity and composition were analyzed with parallel barcoded 454 pyrosequencing targeting the 16S rRNA gene hypervariable V1-V3 regions in the feces of 34 infants with FA (17 IgE-mediated and 17 non-IgE-mediated) and 45 healthy controls. Here we showed that several key FA-associated bacterial phylotypes, but not the overall microbiota diversity, significantly changed in infancy fecal microbiota with FA and were associated with the development of FA. The proportion of abundant Bacteroidetes, Proteobacteria, and Actinobacteria phyla were significantly reduced, while the Firmicutes phylum was highly enriched in the FA group (P&amp;lt;0.05). Abundant Clostridiaceae 1 was prevalent in FA infants at the family level (P=0.016). FA-enriched phylotypes negatively correlated with interleukin 10, for example the genus Enterococcus and Staphylococcus. Despite profound interindividual variability, 20 predominant genera was significantly different between the FA and healthy control groups (P&amp;lt;0.05). Infants with IgE-mediated FA had increased Clostridium sensu stricto and Anaerobacter and decreased Bacteroides and Clostridium XVIII (P&amp;lt;0.05). A positive correlation was observed between Clostridium sensu stricto and serum-specific IgE (R=0.655, P&amp;lt;0.001). The specific microbiota signature could distinguish infants with IgE-mediated FA from non-IgE-mediated ones. Detailed microbiota analysis of a well-characterized cohort of infants with FA showed that dysbiosis of fecal microbiota with several FA-associated key phylotypes may play a pathogenic role in FA.</abstract>
+      <agree-date></agree-date>
+      <appeal-date></appeal-date>
+      <appeal-status></appeal-status>
+      <author-approval-date>2014-02-05  23:44:11</author-approval-date>
+      <author-funding>
+      </author-funding>
+      <authors>
+        <author>
+          <author-person-id>159161</author-person-id>
+          <author-seq>1</author-seq>
+          <is-corr>true</is-corr>
+        </author>
+        <author>
+          <author-person-id>236274</author-person-id>
+          <author-seq>2</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>236276</author-person-id>
+          <author-seq>3</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>236270</author-person-id>
+          <author-seq>4</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>236268</author-person-id>
+          <author-seq>5</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>236269</author-person-id>
+          <author-seq>6</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>236271</author-person-id>
+          <author-seq>7</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>94826</author-person-id>
+          <author-seq>8</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>236275</author-person-id>
+          <author-seq>9</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>34838</author-person-id>
+          <author-seq>10</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>24774</author-person-id>
+          <author-seq>11</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+      </authors>
+      <category>Microbial Ecology</category>
+      <commissioned>No</commissioned>
+      <commissioned-due-date></commissioned-due-date>
+      <commissioned-next-chase-date></commissioned-next-chase-date>
+      <conflict-of-interest>No</conflict-of-interest>
+      <contributing-author-notification>ZXL</contributing-author-notification>
+      <current-stage>Manuscript Archive</current-stage>
+      <decision>Accept</decision>
+      <decision-date>2014-02-06  13:06:49</decision-date>
+      <dual-publication-text></dual-publication-text>
+      <editors>
+        <editor>
+          <editor-assigned-date>2014-02-06  10:20:06</editor-assigned-date>
+          <editor-decision>Accept, no revision</editor-decision>
+          <editor-decision-date>2014-02-06  13:06:41</editor-decision-date>
+          <editor-decision-due-date></editor-decision-due-date>
+          <editor-person-id>25643</editor-person-id>
+        </editor>
+      </editors>
+      <ejp-decision>Accept, no revision</ejp-decision>
+      <emails>
+      </emails>
+      <evaluations></evaluations>
+      <hardcopy-or-electronic>electronic</hardcopy-or-electronic>
+      <history>
+      </history>
+      <institution-type></institution-type>
+      <invite-date></invite-date>
+      <is_resubmission>false</is_resubmission>
+      <issue-date></issue-date>
+      <keywords>
+        <keywords>
+          <sequence>2</sequence>
+          <word>16S rRNA</word>
+        </keywords>
+        <keywords>
+          <sequence>3</sequence>
+          <word>fecal microbiota</word>
+        </keywords>
+        <keywords>
+          <sequence>4</sequence>
+          <word>food allergy</word>
+        </keywords>
+        <keywords>
+          <sequence>5</sequence>
+          <word>IgE</word>
+        </keywords>
+        <keywords>
+          <sequence>6</sequence>
+          <word>infants</word>
+        </keywords>
+        <keywords>
+          <sequence>7</sequence>
+          <word>pyrosequencing</word>
+        </keywords>
+      </keywords>
+      <manuscript-funding>
+      </manuscript-funding>
+      <manuscript-notes></manuscript-notes>
+      <manuscript-number>AEM00003-14R1</manuscript-number>
+      <manuscript-type>Full-length text</manuscript-type>
+      <number-of-pages></number-of-pages>
+      <open-access>No</open-access>
+      <open-access-license-type></open-access-license-type>
+      <partial-ms-next-chase-dt>2014-02-15  23:05:42</partial-ms-next-chase-dt>
+      <payments>
+      </payments>
+      <potential-editors>
+      </potential-editors>
+      <potential-referees>
+        <potential-referee>
+          <potential-referee-first-contact-date></potential-referee-first-contact-date>
+          <potential-referee-next-contact-date></potential-referee-next-contact-date>
+          <potential-referee-person-id>155374</potential-referee-person-id>
+          <potential-referee-second-contact-date></potential-referee-second-contact-date>
+          <potential-referee-sequence>1</potential-referee-sequence>
+          <potential-referee-status>Not Contacted</potential-referee-status>
+          <potential-referee-status-date></potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+        <potential-referee>
+          <potential-referee-first-contact-date></potential-referee-first-contact-date>
+          <potential-referee-next-contact-date></potential-referee-next-contact-date>
+          <potential-referee-person-id>31656</potential-referee-person-id>
+          <potential-referee-second-contact-date></potential-referee-second-contact-date>
+          <potential-referee-sequence>2</potential-referee-sequence>
+          <potential-referee-status>Not Contacted</potential-referee-status>
+          <potential-referee-status-date></potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+        <potential-referee>
+          <potential-referee-first-contact-date></potential-referee-first-contact-date>
+          <potential-referee-next-contact-date></potential-referee-next-contact-date>
+          <potential-referee-person-id>215709</potential-referee-person-id>
+          <potential-referee-second-contact-date></potential-referee-second-contact-date>
+          <potential-referee-sequence>3</potential-referee-sequence>
+          <potential-referee-status>Not Contacted</potential-referee-status>
+          <potential-referee-status-date></potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+      </potential-referees>
+      <referees>
+      </referees>
+      <related-manuscripts>
+      </related-manuscripts>
+      <revision-due-date></revision-due-date>
+      <revision-next-chase-date></revision-next-chase-date>
+      <running-title>Food allergy associated infancy fecal microbiota</running-title>
+      <senior-editors>
+        <senior-editor>
+          <senior-editor-assigned-date>2014-02-06  10:20:04</senior-editor-assigned-date>
+          <senior-editor-person-id>19750</senior-editor-person-id>
+        </senior-editor>
+      </senior-editors>
+      <subject-areas>
+      </subject-areas>
+      <submission-date>2014-02-05  23:44:11</submission-date>
+      <themes>
+      </themes>
+      <title>Altered Fecal Microbiota Composition for Food Allergy in Infants</title>
+      <transfers>
+      </transfers>
+      <version-number>1</version-number>
+    </version>
+  </manuscript>
+  <people>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2016-08-16  15:52:53</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>LARRY</first-name>
+      <gender>unknown</gender>
+      <gender-count>n/a</gender-count>
+      <gender-probability>n/a</gender-probability>
+      <middle-name>J</middle-name>
+      <person-id>5197</person-id>
+      <title>Prof.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>Germany</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2017-08-23  11:13:00</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Harold</first-name>
+      <gender>male</gender>
+      <gender-count>364</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name>L.</middle-name>
+      <person-id>19750</person-id>
+      <title></title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>China</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2011-03-16  11:39:29</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Lanjuan</first-name>
+      <gender>unknown</gender>
+      <gender-count>n/a</gender-count>
+      <gender-probability>n/a</gender-probability>
+      <middle-name></middle-name>
+      <person-id>24774</person-id>
+      <title></title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>Canada</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2011-03-29  08:00:21</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Mansel</first-name>
+      <gender>male</gender>
+      <gender-count>1</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name>W.</middle-name>
+      <person-id>25643</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>China</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2011-11-21  22:21:17</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Baoli</first-name>
+      <gender>unknown</gender>
+      <gender-count>n/a</gender-count>
+      <gender-probability>n/a</gender-probability>
+      <middle-name></middle-name>
+      <person-id>29378</person-id>
+      <title></title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>Japan</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2016-09-23  01:23:17</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Fumito</first-name>
+      <gender>male</gender>
+      <gender-count>3</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name></middle-name>
+      <person-id>31656</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>Korea (South), Republic of</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2011-05-16  08:26:40</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Sunghee</first-name>
+      <gender>female</gender>
+      <gender-count>3</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name></middle-name>
+      <person-id>33247</person-id>
+      <title></title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>China</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2011-05-23  22:32:50</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Xin</first-name>
+      <gender>female</gender>
+      <gender-count>35</gender-count>
+      <gender-probability>0.63</gender-probability>
+      <middle-name></middle-name>
+      <person-id>34834</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>China</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2011-05-23  22:26:37</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Charlie</first-name>
+      <gender>male</gender>
+      <gender-count>1131</gender-count>
+      <gender-probability>0.79</gender-probability>
+      <middle-name></middle-name>
+      <person-id>34838</person-id>
+      <title>Prof.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2012-01-24  13:44:24</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Shoko</first-name>
+      <gender>female</gender>
+      <gender-count>44</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name></middle-name>
+      <person-id>92280</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>China</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2012-02-04  21:30:22</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Yuezhu</first-name>
+      <gender>unknown</gender>
+      <gender-count>n/a</gender-count>
+      <gender-probability>n/a</gender-probability>
+      <middle-name></middle-name>
+      <person-id>94826</person-id>
+      <title>Miss</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>China</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2015-02-07  06:30:01</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Wei</first-name>
+      <gender>female</gender>
+      <gender-count>203</gender-count>
+      <gender-probability>0.54</gender-probability>
+      <middle-name></middle-name>
+      <person-id>149798</person-id>
+      <title>Prof.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2015-04-21  09:59:43</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Jiangchao</first-name>
+      <gender>unknown</gender>
+      <gender-count>n/a</gender-count>
+      <gender-probability>n/a</gender-probability>
+      <middle-name></middle-name>
+      <person-id>155374</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>China</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2014-01-02  21:26:26</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Zongxin</first-name>
+      <gender>unknown</gender>
+      <gender-count>n/a</gender-count>
+      <gender-probability>n/a</gender-probability>
+      <middle-name></middle-name>
+      <person-id>159161</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>Greece</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2013-04-16  10:49:13</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Chrysanthi</first-name>
+      <gender>female</gender>
+      <gender-count>22</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name>L</middle-name>
+      <person-id>183425</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>Netherlands</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2013-06-12  11:02:26</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Sandra</first-name>
+      <gender>female</gender>
+      <gender-count>4110</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name>P.</middle-name>
+      <person-id>195049</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>Japan</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2013-09-18  00:45:49</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Takashi</first-name>
+      <gender>male</gender>
+      <gender-count>16</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name></middle-name>
+      <person-id>215709</person-id>
+      <title></title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>China</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2014-01-01  20:27:24</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Yueqiu</first-name>
+      <gender>female</gender>
+      <gender-count>3</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name></middle-name>
+      <person-id>236268</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>China</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2014-01-01  20:27:32</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Xiaojuan</first-name>
+      <gender>female</gender>
+      <gender-count>1</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name></middle-name>
+      <person-id>236269</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>China</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2014-01-01  20:27:39</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Yiwen</first-name>
+      <gender>female</gender>
+      <gender-count>5</gender-count>
+      <gender-probability>0.8</gender-probability>
+      <middle-name></middle-name>
+      <person-id>236270</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>China</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2014-01-01  20:27:46</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Li</first-name>
+      <gender>female</gender>
+      <gender-count>274</gender-count>
+      <gender-probability>0.66</gender-probability>
+      <middle-name></middle-name>
+      <person-id>236271</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>China</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2014-01-01  20:33:28</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Zailing</first-name>
+      <gender>unknown</gender>
+      <gender-count>n/a</gender-count>
+      <gender-probability>n/a</gender-probability>
+      <middle-name></middle-name>
+      <person-id>236274</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>China</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2014-01-01  20:33:32</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Jinbo</first-name>
+      <gender>unknown</gender>
+      <gender-count>n/a</gender-count>
+      <gender-probability>n/a</gender-probability>
+      <middle-name></middle-name>
+      <person-id>236275</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>China</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2014-01-01  20:33:37</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Xia</first-name>
+      <gender>female</gender>
+      <gender-count>46</gender-count>
+      <gender-probability>0.98</gender-probability>
+      <middle-name></middle-name>
+      <person-id>236276</person-id>
+      <title>Dr.</title>
+    </person>
+  </people>
+</xml>

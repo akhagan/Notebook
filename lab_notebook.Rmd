@@ -1,0 +1,60 @@
+---
+title: "Lab Notebook"
+output: html_notebook
+---
+
+#2018/01/26
+
+**- set up digital notebook using Rmarkdown notebook**
+
+**- lit review cont:** 
+
+1. "Causes for the persistence of Impact Factor mania", 2014; 
+
+1. "Sharing of science is most likely among male scientists", 2017; 
+
+1. "Males are over-represented among life science researchers committing scientific misconduct", 2013
+
+**- Parsing XML files**
+
+Successfully imported xml file and pulled the rootnode.Still having trouble pulling data (eg, country, referee-recommendation) from the node. Tried using "xml2" package which I can get to obtain a count of the nodes, or return text from the entire file, but not return the text from a single node.
+
+**- Figure outline for "gender in publishing"**
+
+1. gender of all editors over time
+
+1. breakdown into editor type: e.g., EiC, senior, associate
+
+1. gender of all reviewers over time
+
+1. gender of all senior authors over time
+
+1. gender of all first authors over time
+
+1. proportion of gender at each stage: e.g., author, reviewer, editor by type
+
+1. proportion of recruitment by gender, i.e. does eic gender impact editor gender; does editor impact reviewer gender 
+
+Would also like to explore the effects of gender on review status - may be better as a second paper "gender in review"
+
+1. evaluate and score reviewer comments for theme - trends based on author gender and/or reviewer gender
+
+1. evaluate time from submission to final decision (focus on time spent in editor hands/not authors) - trends based on author/reviewer/editor gender
+
+1. breakdown above based on number of rounds of review
+
+1. does final decision differ by author/reviewer/editor gender
+
+All of these questions could also be applied to geography
+
+**Goals for Jan 29 - Feb 2**
+
+- Lit review - 8 papers
+
+- choose paper for lab meeting
+
+- write/send Mike/mSphere memo
+
+- learn github/submit pull request
+ 
+- parse XML file to obtain "country"
