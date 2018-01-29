@@ -2,6 +2,134 @@
 title: "Lab Notebook"
 output: html_notebook
 ---
+#Goals for Jan 29 - Feb 2
+
+- Lit review - 8 papers: I
+
+- choose paper for lab meeting
+
+- write/send Mike/mSphere memo
+
+- learn github/submit pull request
+ 
+- ~~parse XML file to obtain "country"~~
+
+- ~~watch [video of Bruna talk](https://youtu.be/Bh0DbBsbGjc)~~
+
+#2018/01/30  
+**Lit review cont:**
+
+1. "Male gatekeepers gender bias in the publishing process", Bransch & Kvasnicka, 2017.
+
+***
+  + Background: 
+
+
+#2018/01/29
+
+**ASM memo re: cascading articles**
+
+If available, I pulled data of papers rejected from ASM journals that were published in OTHER ASM journals (i.e., excluded mSphere from submissions, then looked at papers published in mSphere). Goal is to look at citation/Mendeley save rates, which journal is publishing rejects from which journal, and look at average times from rejection in A to publication in B. Had to import files as tab delimited. Having trouble parsing the date format. 
+
+**Emilio Bruna, UF "What 1.25 million papers tell us about global biases in the creation & diffusion of scientific knowledge"**
+
++ Who are we & where do we work - as ecologists 
+
++ all articles with tropical field sites = 56% of studies conducted in 1 of 7 countries (brazil, costa rica, mexico, puerto rico, Australia)
+
++ 20 countries represented by only 1 pub (in biotropica)
+
++ 62% had lead author based outside of country in which research was conducted (U.S. 34% & Brazil 11%)
+
++ "ecology is the art of proving the obvious with increasingly advanced statistics" 
+
++ 45% of all authors are foreign scentists, 28% in country sci, 27% multinational teams
+
++ Working collaborative w. local scientsits/ communitites is the right thing to do!
+
++ 1) better understand the social/political/economic context in which one's research is embedded 2) minimize "intellectuall export" 3) Ethical professional conduct
+
++ Henry  Wickham - late 1800's took hundreds of seeds of rubber trees, grow seedlings and undercut the brazilian market on rubber (biopiracy)
+
++ Personally/professionally rewarding: 1) professional skills 2) professional recongnition 3) unique outreach 4) Fun 
+
++ international work comes at a cost: time/money/stress (= productivity)
+
++ What is the impact of your scholarship?
+
++ Do the national affiliations of authors influence journal placement & citation performance? 1.25 million articles, broad topics
+
++ 1) journal placement impact factor & IF quantiles
+
++ 2) citation performance total citations of a paper published in a given year in a given journal (it's all relative!!) & citation quantiles
+
++ caveats: citations are only one way to quantify "impact", I think IF are used incorrectly so often they're effectively useless
+
++ 1) identify country of author's listed institution 2) journal impact factor 3) # of citations
+
++ different from previous work b/c of how authorship is grouped
+
++ 2 approaches: what impacts citations? # authors, # countries, # references, Journal, Age
+
++ differences in distribution of data points (papers) for each value of covariate (co author country combos) = separate coefficitens (slopes) for each, in the past people have looked at combos but not independent
+
++ international collaboration has a strong & positive effect on article performance (articles published in journals w. higher IF & articles have more citations relative to others in same journal x year) - above & beyond # of coauthors
+
++ Why: 1) multinational authorship - reflects global scope 2) global authors = greater visibility (non-overlaping networks) 3) more countries = more research funding 4) Maybe the work is just better -> **diversity promotes hard work & creativity before any interpersonal interactions even take place**
+
++ more preparation b/c less comfortable - less knowledge about people & backgrounds must be more prepared to work effectively 
+
++ national identity matters (+ or -) - in re: to both impact factors & citation rates
+
++ Why are papers by Brazilian authors "underperforming" at the journal level & "overperforming" at the citation level: Journal placement (1, negative bias at the peer-review stage 2) biased author effect, Akre, 2011) + Citation performance (better science, citation bias) -> bias in 3/4 options
+
++ Review stage bias - Crane, 1967 "Gatekeepers of science" - powerful -> small, elite group provides stamp of approval: shape direction of field, shape direction of field, choose new editors, confer legitimacy -> follows workplace dynamics - like recruits like
+
++ Gatekeeper project
+
++ Editorial boards should be aspirational, not "reflective"
+
++ Has the richness & diversity of the editorial community changed over the last 3 decades? Yes, richness has increased, but editorial boards have increased at the same time -> looking at diversity, however, it has remained flat & low. 55% in U.S., 12% in U.K.
+
++ Institutional diversity of editorial boards: (1985 - 2015) >75% are at research schools like U.M.; 36% gov't; 25% NGO --> nobody from community or tribal colleges
+
++ Takehome messages: 1) internationall collaboration (& funding) gives a high return on investment 2) Implicit biases may influence how research is judged druing evaluation & citation 3) Biases in the production, diffusion & evaluation of scholarship can be overcome, but it requires planning, effort, & accountability 4) Biases in the production & diffusion of knowledge have socio-econoimc consequences 
+
++ "95% of the new science in the world is created in the countries comprising only 1/5 of the world's population. And much of that science -- in the realm of health, for example -- neglects the problems that afflict most of the world's people. This unbalanced distribution of scientific activity generates serious problems not only for the scientific community in the developing countries, but for development itself. It accellerates the disparity between advanced and developing countries, creating social & economic difficulties at both national & international levels" - Kofi Annan (2003) Science
+
++ **Scientific productivity, doesn't matter the topic, leads to socioeconoimc development**. Knowledge is power
+
++ Mapping scientific collaborations - next project: 1) Scientific productivity in Latin America 2) Structure of scientific collaborations
+
+**Lit review cont:**
+
+1. "Author's gender affects rating of academic articles: Evidence from an incentivized, deception-free laboratory experiment", Krawcxyk & Smyk,  2016.
+
+  ***
+  + Background: describes gender-science sterotype; age as a factor of perception (younger > odds of drawing woman sci; young women more likely to be sterotyped); unconscious correlation betwn gender & qualification; women held to higher standard, often judged by males, at risk of skewed persepective of skills; career stage may make a difference in gendered evaluations; 2009 study found no differences in reviews of article written by M/F/GN - female  postdocs most critical;  2013 study found that male-authored abstracts rated higher on average (but completed a questionanaire about opinon on gender  roles??)
+  
+  + Methods: 1) told subjects the task (no deception); 2) provided entire paper; 3) financial reward for correctly answering a relevant question; 4) no internet; 5) asked question about paper elements to learn if "traditionally feminine" vs "masculine" aspects were judged differently; Used 5 pairs of papers written by mixed-gender authors from top schools; pilot study w. 4 students who read and rated all 10 papers similarly; Each study subject read and evaluated one paper described as "male/female/young male/young female economist" - no names to exclude effect of nationality/ethnicity; all subjects in a single session recieved the same paper with the same assigned gender; pilot study was repeated without gender/publication data
+  
+  + Predictions: 1) female authors will recive lower ratings than GN/M & be less often judged as published 2) Young female will be judged inferior to female
+  
+  + Results: publication prediction accuracy was essentially random; male-authored papers more likely to be considered "published"; percevied age had no effect; 
+  
+  + Discussion/conclusion: gender, but not age, of author matters during evaluation; self-selected subjects interested in economics (likely future academics); research conducted at U of Warsaw - 50-60% F PhD candidates/ 20% F full-time professors; subjects approaching age of early career decisions, bias against women suggests women fail to see successful F scholars & may alter decisions accordingly; 
+  
+  + Follow up: Albrecht et al. (2013); Ruben et al. (2014); Wenneras and Wold (2001); Tregenza, 2002; Link, 2998; Ceci and Williams (2011);   Moss-Racusin et al. (2012); Williams and Ceci (2015); Paludie and Bauer (1983); Paludi and Strayer (1985); Peck, 1978; Borsuk et al. (2009);  Knobloch-Westerwick et al. (2013)
+
+**-Parsed XML file** 
+
+Used xml2 package, was able to identify specific content, (_e.g._, country, author id):
+```{r}
+library(xml2)
+xmldoc1 <- read_xml("XML/Files/AEM00003-14.xml")
+xml_text(xml_find_all(xmldoc1, "//country"))
+```
+I can also generate a list of the author ids for further analysis:
+```{r, eval=FALSE}
+author_id <- as.list(xml_text(xml_find_all(xmldoc1, "//author-person-id")))
+```
 
 #2018/01/26
 
@@ -46,15 +174,3 @@ Would also like to explore the effects of gender on review status - may be bette
 1. does final decision differ by author/reviewer/editor gender
 
 All of these questions could also be applied to geography
-
-**Goals for Jan 29 - Feb 2**
-
-- Lit review - 8 papers
-
-- choose paper for lab meeting
-
-- write/send Mike/mSphere memo
-
-- learn github/submit pull request
- 
-- parse XML file to obtain "country"

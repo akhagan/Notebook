@@ -37,7 +37,7 @@ xml_children(xmldoc1)
 #attempting to extract the value of a specific variable - Country
 country <- xml_find_all(xmldoc1, ".//country")
 xml_attr(xmldoc1, ".//country")
-xml_text(xmldoc1, "//country")
+xml_text(xmldoc1, ".//country")
 xml_text(xml_attr(xmldoc1, ".//country"))
 xml_text(xmldoc1, trim = TRUE)
 xml_name(xmldoc1, "//country")
@@ -59,3 +59,11 @@ xml_attrs(xml_find_all(xmldoc1, ".//country")) #returns [[1]] named character (0
 xml_attrs(xml_find_all(xmldoc1, ".//author-person-id")) #returns [[22]]
 #so, okay, it's working, just isn't giving me "china"
 
+#According to wikipedia, an attribute precedes an =, and is generally inside tags (aka elements). 
+#If I want to isolate "country", that is content
+#retry again w. XML package & figured out that xml_text returns text of full document
+#nest xml_find_all: --> returns "China"
+xml_text(xml_find_all(xml_doc1, "//country"))
+
+#generate list of author ids:
+author_id <- as.list(xml_text(xml_find_all(xmldoc1, "//author-person-id")))
