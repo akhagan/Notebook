@@ -67,3 +67,14 @@ xml_text(xml_find_all(xml_doc1, "//country"))
 
 #generate list of author ids:
 author_id <- as.list(xml_text(xml_find_all(xmldoc1, "//author-person-id")))
+
+#Next task - pull needed data for gender study into data frame/tibble  
+# e.g., 1st/corresponding author IDs/gender, editor/reviewer IDs/gender, 
+# reviewer recommendations, date submitted, date of final decision, doi
+library(tidyverse)
+pubdata <- tibble(
+  doi = xml_text(xml_find_first(xmldoc1, "//production-data-doi")),
+  sub_date = xml_text(xml_find_first(xmldoc1, "//author-approval-date")),
+  first_auth_id = xml_text(xml_find_first(xmldoc1, "//author-person-id")), 
+  editor_id = xml_text(xml_find_first(xmldoc1, "//editor-person-id"))
+)

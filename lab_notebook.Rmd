@@ -4,7 +4,7 @@ output: html_notebook
 ---
 #Goals for Jan 29 - Feb 2
 
-- Lit review - 8 papers: I
+- Lit review - 8 papers: IV
 
 - choose paper for lab meeting
 
@@ -16,22 +16,104 @@ output: html_notebook
 
 - ~~watch [video of Bruna talk](https://youtu.be/Bh0DbBsbGjc)~~
 
+#2018/01/31
+
+**- To do**
+
+1. Lit review
+
+1. read paper for lab meeting
+
+1. filter erratum from published papers data (cascading articles memo)
+
+1. test XML parse on different file
+
+**- Lit Review**
+
+1. "Is there a sex bias in choosing editors?", Dickersin et al., 2003
+
+2. "Is there gender bias in JAMA's peer review process?", Gilbert et al., 1994
+
 #2018/01/30  
-**Lit review cont:**
+
+**- cascading articles memo**
+
+Found a package to use doi to pull altmetrics data to add. Pretty cool, but along the way realized that some of the "publications" listed in the dataset are actually erratum so I need to filter those from the list prior to processing. 
+```{r, eval=FALSE}
+library(rAltmetric)
+get_alt <- function(x){
+  altmetrics(doi = x) %>%
+    altmetric_data()
+}
+dummy_doi <- list("10.1128/mbio.00590-17", "10.1128/mbio.00713-17")
+raw_alt <- lapply(dummy_doi, get_alt)
+```
+
+**- parsing XML files**
+
+Worked on parsing more data from XML files. Was able to pull doi, first author id, editor id, and submission date into a tibble. Also want to pull out corresponding author, final decision date, reviewer ids & decisions. Found that the bottom of the file links person ids to first names, country of origin, and sometimes gender. Need to figure out how to parse that data out also. One issue is that a "reject & resubmit" decision results in a new submission/xml file -> how do you link data? Is the "key" constant? Or the manuscript number? - latter seems unlikely since that is also how the xml file is titled
+
+**- ASM all staff meeting**
+
+**- Gender in publishing**
+
+* Additional questions: 
+    + Are women editors assigned to diff # of papers?
+    + Do women editors/reviewers have an associated cost in reduced publications
+    + Do women accept/reject female authors more/less than men - vice versa
+
+**- Lit review cont:**
 
 1. "Male gatekeepers gender bias in the publishing process", Bransch & Kvasnicka, 2017.
 
 ***
-  + Background: 
+  + Background: Editors can also take more indirect influence, e.g. by selectively assigning submissions to reviewers who favor certain subjects or do a better job at reviewing (which improves manuscript quality), or by influencing the decisions of other editors in board meetings or informal talks (Addis and Villa, 2003). Gender bias may also entail significant efficiency losses. Few studies have looked at editorial boards, mostly for professional ties, not gender differences. Presence of women on hiring committees have negative impact for female candidates. Two types of literature re: female under-representation in economics: 1) Demand-side---potential discrimination by employers e.g., universities & research institutions---studies suggest statistical discrimination b/c unobservable productivity &/or decision-makers aversion to interact w. women 2) Supply-side--M/F productivity gaps e.g., lack of professional networks & mentors for women, < likely to apply for promotions, less competition, > time on socially desirable tasks that don't count towards tenure
+  
+  + Methods: Pulled data from the article, editorial info from each issue, citation info from WoS. Assigned gender to authors by hand -> 1 if any F author/0 if none. Assigning editors to papers was difficult: 1st had to learn class of editors responsible for handling & decisions. 2nd editors listed in issue may be different from those who handeled the articles in that issue. Chose to consider the avg share of F editors of a journal over the 3 yrs before an article was published ('editor share'). Used article citation as a proxy for article quality. Used JEL codes to bin articles by field to account for citation. Attempted to control for # of authors, # of pages, and year of publication.
+  
+  + Results: only 16.3% of articles had at least 1 F author. As the share of F editors increased, share of F-authored articles decreased. Quality increased with > F editor share (up to 11.7%), but then declined (based on citation count). Possible reasons include:
+    + F editors may discriminate to protect their standing (Broder, 1993)
+    + M editors may discriminate less in all-male environment (Akerlof & Kranton, 2000)
+    + "Queen Bee syndrome" F editors prefer M b/c acclamated to M-dominated system (Ellemers et al., 2004)
+    + Editor responsiblities reduce time for research & publications (Vernos, 2013)
+    + F authors submit less to journals w. F editors
+    + Gendered networks (Saloner, 1985) - M networks may be disrupted, at first improving quality, then be replaced by F networks
+    + F may initially improve performance of group (Wooley et al., 2010), then productivity effect is reversed
 
+***
 
+2. "To name or not to name: The effect of changing author gender on peer review", Borsuk et al., 2009
+
+***
+  + Background: M reviewers tend to recommend accept/reject, F revisions (Davo et al., 2003). # of authors/nationality can bias. Gender has also been shown to have an effect, but trends may be changing. Both editor & reviewer populations are mostly male. Reviewer performance varies by gender. 
+  
+  + Methods: Used published paper w. journal's mean citation #, formated as manuscript w. M/F/I/NN, & distributed to UG/Grad/PD/faculty. Only 2 faculty responded.
+  
+  + Results: UG in class more likely to reject & give lower quality rating than online. Author gender had no effect. PD/Grad more likely to reject than UG. F rated manuscripts lower than M, primarily b/c F PD. 
+
+***
+
+3. "Why are women underused in the JECH peer review process?", Davo et al., 2003
+
+***
+
++ Background: emperical evidence about sex bias in choosing referees w. out justification by any qualitiy criteria
+
++ Methods: Year 2000 JECH databased mined retrospectively for peer review management info. 31% F reviewers, took 1st 100 M & 100 F reviewers for convenience then looked at ALL reviews provided by these reviewers (from 1992-2002, 48% female). Variables: Sex (independent), time to answer, editors percieved quality, reviewer recommend decisions.
+
++ Results: All women answered w. comments, 6.5% of men did not. No differences re: time to answer or editors percieved quality. Women 3% more likely to ask for major revision, Men 4% more likely to accept or reject.
+
++ Discussion: Bias - manuscripts may be assigned differently 
+
++ Follow up: Gilbert et al., 1994; Dickersin et. al, 1998
+  
 #2018/01/29
 
-**ASM memo re: cascading articles**
+**- ASM memo re: cascading articles**
 
 If available, I pulled data of papers rejected from ASM journals that were published in OTHER ASM journals (i.e., excluded mSphere from submissions, then looked at papers published in mSphere). Goal is to look at citation/Mendeley save rates, which journal is publishing rejects from which journal, and look at average times from rejection in A to publication in B. Had to import files as tab delimited. Having trouble parsing the date format. 
 
-**Emilio Bruna, UF "What 1.25 million papers tell us about global biases in the creation & diffusion of scientific knowledge"**
+**- Emilio Bruna, UF "What 1.25 million papers tell us about global biases in the creation & diffusion of scientific knowledge"**
 
 + Who are we & where do we work - as ecologists 
 
@@ -101,7 +183,7 @@ If available, I pulled data of papers rejected from ASM journals that were publi
 
 + Mapping scientific collaborations - next project: 1) Scientific productivity in Latin America 2) Structure of scientific collaborations
 
-**Lit review cont:**
+**- Lit review cont:**
 
 1. "Author's gender affects rating of academic articles: Evidence from an incentivized, deception-free laboratory experiment", Krawcxyk & Smyk,  2016.
 
