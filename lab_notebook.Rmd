@@ -4,7 +4,7 @@ output: html_notebook
 ---
 #Goals for Jan 29 - Feb 2
 
-- Lit review - 8 papers: IV
+- Lit review - 8 papers: VI
 
 - choose paper for lab meeting
 
@@ -16,23 +16,89 @@ output: html_notebook
 
 - ~~watch [video of Bruna talk](https://youtu.be/Bh0DbBsbGjc)~~
 
-#2018/01/31
 
+#2018/02/01
 **- To do**
 
-1. Lit review
+1. test XML parse on different file
 
 1. read paper for lab meeting
 
-1. filter erratum from published papers data (cascading articles memo)
+1. seminar + lunch with speaker
 
-1. test XML parse on different file
+1. lab meeting
+
+#2018/01/31
+
+**- Cascading articles**
+
+Figured out how to parse the dates with lubridate::mdy & wrote script for filtering out the erratum. Running into a problem with how to apply the script because the document has newlines. If I attempt to remove newlines from the tibble, it converts to a string so I wrote a function to replace newlines then sapply to the "Published Title column". Unfortunately, it still isn't working. Supposedly it can't find that object?
+```{r, eval=FALSE}
+#function to replace hidden line break characters from text strings
+no_breaks <- function(x){
+  gsub("[\r\n]" , "", x)
+}
+
+#filter out erratum
+mBio_no_err <- mBio_raw %>% 
+  sapply(no_breaks()) %>% 
+  filter(`Published Title` != str_view(string = `Published Title`, pattern = "Erratum"))
+```
+Looks like stringr returns a string but filter requires a logical output, so used grepl which returns True/False
+```{r, eval=FALSE}
+filter(grepl("Erratum", `Published Title`) == FALSE) 
+```
+Wrote a series of scripts to pull and join altmetrics data with clean impact vizor data, unfortunately they don't work with in a function together.
+```{r, eval=FALSE}
+#write function to pull altmetrics data for each doi & convert to d.f.
+get_alt_raw <- function(x){
+  altmetrics(doi = x) %>%
+    altmetric_data()
+}
+
+#function to retrieve altmetrics into clean dataframe
+get_alt <- function(input_dataframe){
+  doi_list <- list(input_dataframe$doi)#generate list of doi numbers
+  alt_score <- input_dataframe %>% pmap_df(doi_list, get_alt_raw) %>% #pull altmetrics
+    mutate(Altmetric = score) %>% #obtain column titled "Altmetrics" of data from "score"
+    select(doi, Altmetric) #pull relevent data
+  joined <- input_dataframe %>% full_join(alt_score, by="doi") #join to original dataset
+  return(joined)
+}
+
+ "Error: Don't know how to pluck from a closure"
+```
+After merging altmetrics data, next step is to scrape & merge citation data from WoS
 
 **- Lit Review**
 
 1. "Is there a sex bias in choosing editors?", Dickersin et al., 2003
 
+***
+
++ Background: People are interested in studying careers of F in science/medicine. 45-60% of those in Public Health:Epidemiology graduate programs are women. F faculty numbers have increased 23% in 1976 to 36% in 1991 but little data following grad school. Study questions: F representation in epi editorial boards vs proportion of F authors/reviewers 1) does prop of F editors reflect F authors/reviewers? 2) Has prop of each changed over time?
+
++ Methods: Looked from 1982 - 1994 (sp journals in 82, 87, 92 & 94) in 4 journals (AJE, JCE, AE, Epi). Identified editors, reviewers, and authors (down to 8) from articles and volumes, attributed sex where possible. 
+
++ Results: All F editors in All journals ranged from 6.5% to 16.3%. Removing unassigned gender persons, F were on average 28.7% of authors, 26.7% of reviewers and 12.8% of editors. Values ranged from year to year
+
++ Comment: The proportion of F editors is low, though it had increased over time & in newer journals. Possible that women just aren't as good at epi as men? Not if you look at productivity via papers & asking to be reviewers. Cohort effect - recent influx of women means ineligible at higher proportion than eligible but prop of F editors didn't increase over time after incrase in F authors nor does it seem that more F editors have been added. Women may be refusing membership on boards or less likely to nominate themselves. Selection bias by male EiCs. **increased "professional influence" is conferred by being an author, reviewer, or editor and that each of these roles has progres- sively more influence in the scientific community.**
+
+***
+
 2. "Is there gender bias in JAMA's peer review process?", Gilbert et al., 1994
+
+***
+
++ Background: PUblication bias occurs in 3 stages: gender bias in differential handling of manuscripts is one. 
+
++ Question: the gender ofthe corresponding author, the assigned editor, or the reviewers had an effect on, or association with, the peer review, manuscript processing, or acceptance rates of research articles submitted
+
++ Methods: pulled data from 1991 including corresponding author, assigned editor/reviewer, reviewer recommendations, turnaround times for review, editor ratings of reviewer, final decision. Genders determined. 
+
++ Results: Editors employed most M full-time, most F part-time but handeled 2x #manuscripts. F editors assigned 30% more F authored papers than men. M reviewers assisted M editors more often than F. F reviewers aided equally. F editors rated reviewers lower than M ed, irrespective of gender. M reviewers took ~2 days longer to return reviews. M authored manuscripts fared worse in initial review by editor, F ed summarily rejected at higher rates than M (b/c higher case load?). No sig diff following review or in overall tally.
+
++ Comment: "the evidence suggests that either female editors are assigned manuscripts of lower quality, irrespective of the corresponding author's gender, or female editors' higher rejection rates without other review shows a differenee in the level of criticism between male and female editors" OR they are triaging a higher case load to a managable number of papers
 
 #2018/01/30  
 
