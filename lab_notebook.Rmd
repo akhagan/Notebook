@@ -2,31 +2,51 @@
 title: "Lab Notebook"
 output: html_notebook
 ---
-#Goals for Jan 29 - Feb 2
+#Goals for Feb 5 - 9
 
-- Lit review - 8 papers: VI
+- Lit review - 6 papers
 
-- choose paper for lab meeting
+- Lab meeting
 
-- write/send Mike/mSphere memo
+- finish analyzing data & write/send Mike/mSphere memo
 
 - learn github/submit pull request
+
+- figure out parsing text from each xml node
+
+- scrape citations
  
-- ~~parse XML file to obtain "country"~~
+#2018/02/02
 
-- ~~watch [video of Bruna talk](https://youtu.be/Bh0DbBsbGjc)~~
+**- Transfered articles**
 
+I was able to build a function pulling altmetrics data and determining the "time in transfer" (publication date - rejection date). It worked when applied to mSphere & mSystems data, but all other data sets are failing the altmetrics function. I will have to explore why. Perhaps there are other types of articles like Erratum that need to be filtered out.
+
+Also generated plots where citation metrics are on a log10 scale since the Altmetrics data can get pretty high.
+```{r}
+source("../Impact_Vizor/Transfers/Code/get_transfer_stats.R")
+
+mSphere <- get_transfer_stats("../Impact_Vizor/Transfers/Data/msphere1.txt")
+
+ggplot(data = mSphere, title= "Stats on Transfers to mSphere") +
+  geom_point(mapping = aes(x= log_value, y= `Time in Transfer`, color = `Submitted Journal`)) +
+  facet_wrap(~ metric) +
+  labs(x= "Citation Value (log10)")
+```
+
+**- Obtained journals reports from Melissa**
+
+**- Meet with Zack about microscopy experiment**
+
+**- Internet rabbit hole to pull more papers re: gender in diversity**
 
 #2018/02/01
-**- To do**
 
-1. test XML parse on different file
+**- Read Gong, et al. paper for lab meeting**
 
-1. read paper for lab meeting
+**- Seminar + lunch w. speaker (Randy Stockbridge)**
 
-1. seminar + lunch with speaker
-
-1. lab meeting
+**- Lab meeting**
 
 #2018/01/31
 
