@@ -4,7 +4,7 @@ output: html_notebook
 ---
 #Goals for Feb 5 - 9
 
-- Lit review - 6 papers
+- Lit review - 6 papers: III
 
 - Lab meeting
 
@@ -14,8 +14,172 @@ output: html_notebook
 
 - figure out parsing text from each xml node
 
-- scrape citations
+- ~~scrape citations~~
  
+#2018/02/08 
+
+**To do**
+
+1. finish prepping for lab meeting
+
+1. analyze transfer data & start memo w/o updated citations
+
+1. continue XML parse
+
+#2018/02/07
+
+**- lab meeting presentation**
+
++ worked on slide deck, need to add more background data
+
+**- Read Marcy's lab meeting doc**
+
+**- Parse XML**
+
+The XML structure is not very neat. There are duplicate naming schemes that prevent easy dump into a dataframe. Reading up on what [XML files are] (https://www.w3schools.com/xml/default.asp) and how they work to better understand the parsing procedure. 
+
++ An XML file is built of nodes/elements in a tree-like structure. The root node is the beggining and the end. It is a "parent" to the next subset of nodes, which are in turn a "child" to the preceeding node. Each element can have text (contained between <node>text</node>) and attributes (contained within the element e.g., <node category = root>text<node/>).
+
++ XML files have a "self-describing" syntax. A prolog defines the XML version and characer encoding. The next line is the root element, the next is a child element of the root, which in turn can have child elements. The child elements from a single "parent" are "siblings". 
+
++ Tags are the brackets of a node and come in pairs. If there is an opening tag <>, then there is a closing </> tag. <tag /> is also appropriate syntax for an empty node/tag. **Tags are case sensitive!** 
+
++ XML attribute values must be in quotes. Attribute values can often be stored as elements instead. "metadata (data about data) should be stored as attributes, and the data itself should be stored as elements"
+
+Mapped the EJP/ASM XML structure. Two major branches: manuscript & people. Manuscript contains data split by version: authors, editor, referees (suggested, contacted & accepted), referee decisions, editor decision, etc. where persons are identfied by an ID number. The people branch contains identfying data for each ID number: country, first & middle names, title, & gender
+
+**- Scraping citations**
+
+Having trouble figuring out how to scrape citations, apparently it's harder than I thought b/c nobody (google scholar, etc) wants to make their data scrapable. I'm also not sure how "valuable" this will be in the long run so I'm shelving it, along with the altmetrics scraping, for now. In the meantime, I've emailed Judith and Tyler, informatists at Taubman, to set up a meeting to discuss what resources they have that I can use. 
+
+**- Marc's seminar**
+
+#2018/02/06
+
+**-Scrape citations**
+
+Built a function and for loop to collate doi numbers from every data set into a single file using the magicfor package, next I need to figure out how to batch process doi #s
+```{r, eval=FALSE}
+source("Code/get_transfer_stats.R")
+library(magicfor)
+
+#Generate list of doi for WoS analysis
+get_doi_file <- function(input_txt){
+  text <- read_tsv(input_txt, col_names = TRUE)
+  as.list(text$`CrossRef DOI`)
+}  
+
+#list of all journals data sets
+transfer_master_list <- as.list(c("Data/aac.txt", "Data/aem.txt", "Data/cvi.txt", "Data/genome_announcements.txt",
+                        "Data/iai.txt", "Data/jb.txt", "Data/jcm.txt", "Data/jv.txt", "Data/mBio.txt",
+                        "Data/mcb.txt", "Data/msphere1.txt", "Data/msystems.txt"))
+
+#loop reading in of each journal dataset & pull doi's - collate into a single vector using magic_for then write to csv
+magic_for() #starts function call
+
+for(i in transfer_master_list) {
+  doi_list <- get_doi_file(i)
+  put(doi_list)} #indicates what data needs to be pulled
+
+magic_result_as_vector() %>% #collates into vector
+  write.csv("transfer_doi_master.csv")
+```
+
+
+**-Work on lab meeting presentation**
+
+Re-read paper and started slide deck. 
+
+**-Lit review**
+
+1. "Threats to objectivity in peer review: The case of gender" Kaatz et al., 2014
+
+***
+
++ Implict biases against women exist and science is consider more "M" than "F" b/c of stereotypes. These sterotypes subtley shift expectations such that women have to achieve more to be rated equal to men. This despite women recieving praise for equal achievements b/c she exceeded the lower expectations. 
+
++ Aged 40-65 hold the strongest implicit biases, the same age as reviewers. Is this affecting acceptance rate of F-authored papers and grant proposals? 
+
++ **"Women are generally found to have fewer but overall higher-quality peer-reviewed scientific publications than men (Symonds, 2006)"** 
+
++ **"If gender bias operates in grant peer review, one would expect that different evaluative standards for M and F investigators would be exaggerated when assumptions of performance most strongly align with M gender stereotypes; that is, where science and leadership conflate."**
+
++ "Data from the NIH website show persistently lower Type 2 R01 or R01- equivalent success rates for women versus men, and there was no change after the 2009 change in scoring and critique structure (range, 2-8% lower; average, 5%)"
+
++ Writen critiques of R01 proposals are significantly different from M to F. Reviewers provide more praise to women for exceeding lower performance expectations while critqiues for M have more negative words --> they recieve similar scores and funding outcomes!
+
++ Suggested interventions for scientific review:
+    + reflect on susceptibility for bias
+    + focus and don't rush through a review
+    + imagine a female scientific leader
+    + review assesment criteria before evaluation
+    + challenge evaluation with opposite gender, ethnicity, institution
+    + avoid gender-typed terms in review criteria
+
++ Follow up: 
+    + Symonds, et al. "Gender differences in publication output" Plos one (2006); 
+    + Pohlhaus et al. "Sex differences in application, success, and funding rates for NIH extramural programs" Acad Med (2011); 
+    + Kaatz, et al., "A quantitative linguistic analysis of NIH R01 application critiques from investigators at one institution" Acad Med (2014)
+    
+***
+2. "Journals invite too few women to referee" Lerback & Hanson (2017)
+
+***
+
++ Peer review is a career building activity that develops writing skills & expertise, + fosters relationships with other scholars. Esp. important for young scientists. Most studies don't have access to gender/age data. 
+
++ this data set has age and genders of authors & reviewers from 2012 to 2015 for AGU journals (20 journals; 6,000 papers) Find that women were used as reviwers less often than expected - based on proportion of members in that age/gender group. 
+
++ 1st authored papers are important for career development/hiring/promotions. 1st authors are typically the cooresponding authors. 
+
++ Women 26% of submitting 1st authors vs 28% members. Acceptance rate higher than for males, gender of editor/reviewer did not affect. Women submitted fewer overall papers than M
+
++ higher acceptance rates could be due to reverse gender bias or better journals targeting/manuscript preparation
+
++ Only 20% of reveiwers were women, persistent accross all age groups. F reviwers suggested 21% of time by F authors, 15% by M authors. Women of every age declined more often than men. Main reason given was workload. "The differences may also reflect varying approaches to risk or confidence"
+
++ **"It [reviewing] provides positive feedback that a scholar is respected and participating in their field and fosters self-confidence, all of which lead to increased retention of woemn in geoscience"**
+
++ Hiring F editors has helped AGU mitigate teh disparity in recommendations. Encourage authors/editors to invite more women to review, esp younger.
+
+
++ Follow up: 
+    + Holmes et al., "women in the Geosciences: Pracitcal, positive practices toward parity" (2015)
+
+***
+3. "Time-to-credit gender inequities of first-year PhD students in the biological sciences" Feldon et al., (2017)
+
+***
+
++ Background: Tenured F faculty are expected to take on more mentorship/service, which is uncompensated & undervalued (Hirshfield, 2014). When M & W work equal hours, M percieved as more dedicated & productive. W 50% of biology phd grads, only 30% tenure-track positions. Trouble finding post-docs? Longitudinal studies suggest that # grad papers predicts productivity later in careers.
+
++ Research questions:
+    + Do men and women report different amounts of time spent on supervised research?
+    + Are there differential reported influences associated with research time spent for men and women?
+    + Is there a differential publication yield for men and women per time spent on supervised research?
+    
++ Methods: focus on field with lab-based experiments, multi-level modeling to account for insitutional culture/practices. Time spent on research reported biweekely. Reported # journal articles, conference papers, & published abstracts they recived authorship credit on. 336 students/53 institutions. Completed bi-weekly surveys for time, + 3 year-end surveys. Used hierarchical linear modeling to analyze logitutinal data
+
++ Results: Men more confident than women in designing experiments & formulating research hypotheses. W report upto 30hr more time in supervised research than M. Found significant gender by total hrs spent on rearch for journal articles. For 100hr spent on research, M 15% more likely to recieve authorship credit. 
+
++ Discussion: "men spend significantly less time engaging in supervised research, are less likely to attribute their time alloca- tion to the demands of assigned tasks, and are 15% more likely to author published journal articles than their female counter- parts per 100 hours of research time" Gender inequality manifests as early as 1st year of grad school in the "time-to-credit" payoff. F students percieve greater estimate of effort req'd for success (Smith et al., 2013). Disparities in publishing may account for PD hiring discrepancies. "no evidence that lower self-efficacy prompts women to self-select out of professional opportunities in the first years of their doctoral studies", "the relevance of confidence in experimental design skills to time spent on research may point to a greater relevance of those skills in the tasks assigned to male graduate students within the laboratory environment."
+
++ Follow up:
+    + Hirshfield et al., (2014) "She's not good with crying: the effect of gender expectations on graduate students assesments of their principal investigators"
+    + Reid (2015) "Embracing, passing, revealing, and the ideal worker image: how people naviage expected and experienced professional identities."
+    + Sheltzer & Smith (2014) "Elete male faculty in teh life sciences employ fewer women"
+    + Smith et al., (2013) "When trying hard isn't natural: women's belonging with and motivation for male-dominated STEM fields as a function of effor expenditure concerns"
+
+#2018/02/05
+
+**-Transfer stats**
+
++ Worked more on pulling altmetrics but ran into trouble running a list of dois with a bad doi. I also think I need to get my own altmetrics key so I'm shelving that part of the analysis for now. 
+
++ Need to figure out how to access updated citation data going to manually pull citation data from WoS, but working twoards generating a script to isolate doi numbers from each dataset to do a single pull and generate a single data set of citation data. Then do a left join for each journals dataset. Problem is that everytime I run a for loop, the doi numbers write over themselves instead of adding to the list. 
+
+**-Read Pat's opinion on reproducibility**
+
 #2018/02/02
 
 **- Transfered articles**

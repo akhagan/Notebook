@@ -3,7 +3,7 @@ library(XML)
 #Parse XML file & get the root node (huh?)
 #root node is the origin of data for a cascade of nodes
 #any node is a root node, relative to what is below
-xmldoc1 <- xmlParse("XML/Files/AEM00003-14.xml")
+xmldoc1 <- xmlParse("Files/AEM00003-14.xml")
 rootnode <- xmlRoot(xmldoc1)
 rootnode[1]
 
@@ -78,3 +78,14 @@ pubdata <- tibble(
   first_auth_id = xml_text(xml_find_first(xmldoc1, "//author-person-id")), 
   editor_id = xml_text(xml_find_first(xmldoc1, "//editor-person-id"))
 )
+
+#going to try a different approach, which is to convert the XML file 
+#to a dataframe, then parse out the needed data
+#uses XML package
+xmldata <- xmlToDataFrame("Files/AEM00003-14.xml")
+# Returns: Error in `[<-.data.frame`(`*tmp*`, i, names(nodes[[i]]), value = c("China",  : 
+# duplicate subscripts for columns
+
+# testing to see what various commands get
+xmldoc1 <- xmlParse("Files/AEM00003-14.xml")
+detaildf<-xmlToDataFrame(nodes = getNodeSet(xmldoc1, "/datainfo/data/item"))
