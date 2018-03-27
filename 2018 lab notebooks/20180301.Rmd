@@ -1,0 +1,787 @@
+---
+title: "Lab Notebook: March 2018"
+output: html_notebook
+---
+#Goals: Mar 26 - 30
+
+1. XML parse
+    + rewrite code to return NA values if there is no text at a node
+    + how to filter redundant info (e.g., take only one if both home & work address given)
+    + standardize times calculated from `lubridate` 
+    + figure out what to do for editorially rejected papers since there won't be any review outcome data
+    + ~~write function to save & parse XML files before running functions instead of parsing w/in each function.~~
+    + figure out how to link reject & resubmit papers to their accepted/published version
+
+1. ASM Transfer articles
+    + Compare citations of editorial rejections from each journal to citations of articles in the journal - esp mBio
+    + Common keywords in editorial rejections by journal
+    + Which journals are losing the most R&R'd papers
+
+1. ~~Lit review: 4 papers~~
+
+1. Edits to Bacillus manuscript -> waiting for Phil & Ashu
+
+1. ~~Journal Club Paper~~
+
+1. ASM Staff Meeting - Tuesday @ 2pm
+
+
+#2018/03/27
+
+**- Catch up on Feedly/Scholarly Kitchen**
+
+["Calling It Out, Spelling It Out, Stamping It Out: Recognizing and Avoiding Bias"](https://scholarlykitchen.sspnet.org/2018/03/13/calling-spelling-stamping-recognizing-avoiding-bias/)
+
+["From where I sit. Changing our defaults"](https://workplaceequityproject.org/2018/03/07/from-where-i-sit-changing-our-defaults/)
+
+["Blindspot - Was a Key Factor Missed in the Study of Viral Lies?"](https://scholarlykitchen.sspnet.org/2018/03/12/blindspot-key-factor-missed-study-viral-lies/)
+
+["Preprints and Citations: Should Non-Peer Reviewed Material Be Included in Article References?"](https://scholarlykitchen.sspnet.org/2018/03/14/preprints-citations-non-peer-reviewed-material-included-article-references/)
+
+["Is #DeleteFacebook Going to Change Academic Life and Scholarly Publishing?"](https://scholarlykitchen.sspnet.org/2018/03/26/time-rethink-big-techs-relationship-ivory-tower/)
+
+-> Return to the [Implicit Bias Blog](https://implicit.harvard.edu/implicit/blog.html)
+
+#2018/03/26
+
+**- Journal club paper**
+
+Describes how one bacteria is detected in the livers of SLE mouse model & if a CBL strain of mouse is mono-colonized. Also correlates with increased activity of thole-TLRs, TH17 cells & anti-RNA/DNA antibodies. Same trends observed in humans with SLE and especially a related cirossis. 
+
+
+###Lit Review
+
+**1. "Double jeopardy in astronomy and planetary science: Women of color face greater risks of gendered and racial harassment", Clancy et al., 2017**
+
+***
+Questionnaire asking diversity questions & questions about bigoted remarks, verbal/physical harrassment & skipping events for safety reasons. WoC report disportional amounts of all b/c of "double jeopardy". 7% miss 6+ events a month!!
+
+Follow up: Bejerano & Bartosh, 2015
+
+***
+**2. "Is science built on the shoulders of women? A study of gender differences in contributorship", Macaluso et al., 2016**
+
+***
+Examined author contributions in PloS Journals from 2008 - 2013 (b/c plos requires authorship statement). Pulled XML files from Plos & scraped WoS data from each author. Examined 5 different categories by author genders and broken down by corresponding author & first author genders. Also looked based on "academic age", e.g. years since first publication. Women more likely to be associated with performing the experiment (e.g. technicican) vs planning/writing analyzing. Moderated by corresponding author gender. E.g., having a male corresponding increased proportion of W involved in experimentation relative to female corresponding author. 
+
+***
+**3. "Addressing sex and gender inequities in scientific research and publishing", Del Boca, 2016**
+
+***
+Editorial on how researchers need to do better at recruiting/studying things according to gender (b/c single largest source of variation above race/ethnicity) & that W need to be better represented in publishing (this was only one paragraph of the entire thing. Oops). Lists several ways to address this issue througout the manuscript from title to discussion. 
+
+***
+**4. "Sex differences in institutional support for junior biomedical researchers" Sege et al, 2015**
+
+***
+Uses applications to a New England based funding source to examine startup packages by gender, research type (clinical vs basic), university type & degree. W recived significantly less start up support - can't be explained by any factor other than gender. 
+
+#Goals: Mar 19 - 23
+
+1. XML parse
+    + ~~write functions to pull and compile author, manuscript, referee and version data~~
+    + ~~write function to assign review outcomes to version based on dates~~
+    + ~~test on multiple XML files~~
+
+1. ASM Transfer articles
+    + ~~Dig deeper into mBio rejected articles~~
+    + ~~Pull and join mSystems/mSphere citation data~~
+
+1. ~~Lit review: 4 papers~~
+
+1. Edits to Bacillus manuscript -> waiting for Phil & Ashu
+
+1. ~~Edits to ASM blog post~~
+
+#2018/03/22
+
+**- Read _The Scholarly Kitchen_**
+
+["Peer Review Fails to Prevent Publication of Paper with Unsupported Claims About Peer Review"](https://scholarlykitchen.sspnet.org/2018/03/15/a-comment-on-klein-et-als-comparing-articles-to-preprints/)
+
+["Ask The Chefs: How Do You Stay Informed About Scholarly Communications?"](https://scholarlykitchen.sspnet.org/2018/03/22/ask-chefs-how-stay-informed-about-scholarly-communications/)
+
+**- Lab meeting**
+
+**- Departmental seminar**
+
+**- ASM transfers**
+
+Investigated mBio rejected papers more carefully. Of the 3000 papers rejected by mBio `percent_lost`% have been published in >1900 non-ASM journals. 
+```{r}
+mBio_rejected %>% 
+  mutate(`Published Publisher` = if_else(is.na(`Published Publisher`) == TRUE, "NA", `Published Publisher`)) %>% 
+  mutate(`Published Journal` = fct_lump(`Published Journal`, n = 30)) %>% #collapse to 29 published journals + other
+  ggplot(aes(x = mBio_reject_lump30$`Published Journal`, fill = if_else(`Published Publisher` == "American Society for Microbiology", rgb(56,146,208, maxColorValue = 255),
+                                                                                    rgb(227,111,30, maxColorValue=255)))) +
+    geom_bar() +
+    geom_text(stat = "count", aes(label=..count..),vjust=-1) +
+    labs(x = "Number of articles published",
+       caption = paste("`Other` are the least frequently published", published - 29, "journals"),
+       legend = "Publisher") +
+    my_theme +
+    scale_fill_discrete(name="Publisher",
+                      breaks=c(rgb(56,146,208, maxColorValue = 255),
+                               rgb(227,111,30, maxColorValue=255)),
+                      labels=c("ASM", "Other"))
+```
+
+Editorial rejections account for most rejected papers from mBio (`ed_reject/published*100`%). Papers rejected following review and papers rejected with resubmission encouraged account for `rev_reject/published*100`% and `reject_resub/published*100`% respectively. Of course, most of the latter rejections return to mBio. (I want to include these values at the top of the relevant facets in the graph below.)
+```{r}
+mBio_rejected %>% 
+  mutate(`Published Journal` = fct_lump(`Published Journal`, n = 20)) %>%
+  ggplot(aes(x = `Published Journal`, fill = if_else(`Published Publisher` == "American Society for Microbiology", rgb(56,146,208, maxColorValue = 255),
+                                                     rgb(227,111,30, maxColorValue=255))))+
+  geom_bar() +
+  facet_wrap(~`Reject Reason`) +
+  geom_text(stat = "count", aes(label=..count..),vjust=-1) +
+  labs(x = "Number of articles published",
+       caption = paste("`Other` are the least frequently published", published - 19, "journals")) +
+  my_theme +
+  scale_fill_discrete(name="Publisher",
+                      breaks=c(rgb(56,146,208, maxColorValue = 255),
+                               rgb(227,111,30, maxColorValue=255)),
+                      labels=c("ASM", "Other"))
+```
+Other questions I'd like to explore are to calculate the number of R&R's lost to non-ASM papers, & to compare citations of mBio rejections to those published in mBio.
+
+#2018/03/21
+
+**- Aric's Thesis Defense**
+
+**- Made significant edits to the ASM blog post**
+
+**- ASM transfer articles**
+
+Pulled mSphere & mSystems citation data from Impact Vizor and joined it with the rest of the data. I then conditionally replaced the citation values for mSphere & mSystems to the new data. Unfortunately, all of this changed all of my column names, sigh.
+
+Made several plots examining transfers between ASM journals. For example:
+```{r}
+#most frequent types of rejections
+ggplot(data = ASM_transfers) +
+  geom_bar(aes(x = Reject.Reason)) +
+  labs(title= "Most transfers are editorial rejections") +
+  my_theme
+```
+
+```{r}
+ggplot(data = ASM_transfers) +
+  geom_bar(aes(x = fct_infreq(Submitted.Journal))) +
+  facet_wrap(~Reject.Reason, scales = "free") +
+  labs(title= "mBio is the leading source of transfers") +
+  ylab(label = "Number of transfers") +
+  xlab(label = "Submitted Journal") +
+  my_theme
+```
+
+Also looked at how citations change between types of rejections in submitted vs published journals. There are a limited number of reject & resubmit tranfers so that data is difficult to interpret.
+```{r}
+ASM_transfers %>% 
+  filter(Reject.Reason == "Editorial Rejection") %>% 
+  plot_cites_by_subjournal() +
+  labs(title= "Editorial rejections are equvalently cited on average") 
+```
+```{r}
+ASM_transfers %>% 
+  filter(Reject.Reason == "Rejected") %>% 
+  plot_cites_by_subjournal() +
+  labs(title= "Rejections following review from IaI are more frequently cited") 
+```
+
+
+Compare citations of editorial rejections from each journal to citations of articles in the journal - esp mBio
+
+Common keywords in editorial rejections by journal
+
+#2018/03/20
+
+**- PDA meeting**
+
+**- JT defense**
+
+**- Edits to ASM blog post**
+
+Incorporate Kaitlin's suggestions. Waiting for comments from Julie.
+
+###Lit Review
+
+**1. "Are female applicants disadvantaged in National Institutes of Health peer review? Combining algorithmic text mining and qualitative methods to detect evaluative differences", Magua et al., 2017**
+
+***
+Text mining of reviewer comments from NIH grants. All were eventually funded but data included unfunded versions. There were distinct differences in descriptions of the proposals, scientists & research environment based on gender of applicant. Critiques of M applicants more likely to be "coddled" with a statement of competence vs W who were given "gentle" but vauge critiques. Women's research environment also discussed more than M applicants. M applications more likely to be described as innovative & significant, F as having "expertise".
+
+Follow up: Correll S, Simard C. Vague Feedback Is Holding Women Back. Harvard Business Review. 2016.
+
+***
+**2. "Gender differences in providing peer review to two behavioural science journals, 2006 - 2015", Schmaling & Blume, 2017**
+
+***
+. Men outnumbered women among the 2,178 potential reviewers for two behavioural science journals (53.5% and 46.5%, respectively).
+. Women were more likely to accept invitations to review than men (64% and 59%, respectively).
+. Women took approximately two more days to complete their reviews than men.
+. There were no gender differences in the number of days to respond to invitations to review or in the total number of invitations extended
+
+***
+**3. "Vague Feedback Is Holding Women Back." Correll S, Simard C., Harvard Business Review. 2016.[https://hbr.org/2016/04/research-vague-feedback-is-holding-women-back]**
+
+
+#2018/03/19
+
+**- Parse XML**
+
+Fixed the function to assign review outcomes to a manuscript version, the >/< arrows were in the wrong direction. I wrote a script to parse the data into four different data frames: metadata of the manuscript, metadata of the versions, meta data of review outcomes and people. The "People" dataframe has each individual assigned to a role (e.g., author, editor, senior editor, reviewer). All dataframes contain the manuscript number as an identifier. 
+```{r, message=FALSE, warning=FALSE}
+parse_people("../XML/Files/AEM00003-14.xml") %>% print.data.frame()
+```
+
+Perhaps I'll try to find a way to condense manuscript & version metadata. - Yup!
+
+```{r, message=FALSE, warning=FALSE}
+parse_manu("../XML/Files/AEM00003-14.xml") %>% print.data.frame()
+```
+
+I've tried writing all of this into a single function but I've run into trouble with one of the dataframes (`version_meta`) not being "detected" - Turns out that because I defined the `assign_version` function separately, I have to specify `version_meta` in the function arguements.
+
+```{r, eval=FALSE}
+#need to assign a version to referee data/outcomes so that I can track them by revision - use dates where if review return falls between submitted & decision date then its assigned that version
+assign_version <- function(x, version_meta) {
+  if_else((ymd_hms(as.character(x)) >= ymd_hms(as.character(version_meta[1,"Submitted_date"])) & ymd_hms(as.character(x)) <= ymd_hms(as.character(version_meta[1,"Decision_date"]))), #if review is returned after the manuscript submitted date & before the manuscript decision date
+          0, #then it assigned that manuscript version, if not, then iterate through possible versions. 
+          if_else((ymd_hms(as.character(x)) >= ymd_hms(as.character(version_meta[2,"Submitted_date"])) & ymd_hms(as.character(x)) <= ymd_hms(as.character(version_meta[2,"Decision_date"]))), 
+                  1,
+                  if_else((ymd_hms(as.character(x)) >= ymd_hms(as.character(version_meta[3,"Submitted_date"])) & ymd_hms(as.character(x)) <= ymd_hms(as.character(version_meta[3,"Decision_date"]))), 
+                          3, 
+                          if_else((ymd_hms(as.character(x)) >= ymd_hms(as.character(version_meta[4,"Submitted_date"])) & ymd_hms(as.character(x)) <= ymd_hms(as.character(version_meta[4,"Decision_date"]))), 
+                                  4, 5)))) #>4 versions is assigned a value of NA, since intital version is 0, then highest version level is 3
+}
+```
+
+Tried parsing another XML file --> no doi number, so it threw an error. I'm going to have to rewrite code to return NA values if there is no text at a node. Nick suggested writing a function for parsing the data by assigning common paths to variables in conjunction with `paste0` to generate the full path. Also need to build in a way to name the resultant variable based on the input. 
+
+Someone reported both their home & work address, so now I have to figure out how to filter one of those out since it affects how the dataframes bind. - I think there's a way to pull only the first value from a path?
+
+Also realized that `lubridate` doesn't give consistent units when calculating time between dates, sometimes in hours, others in days. I have to find a way to standardize it. 
+
+What do I do if something is editorially rejected - there won't be any review outcome data
+
+To improve speed I should probably save the parsed XML files before running functions instead of parsing w/in each function.
+
+**- Writing Review for lab meeting**
+
+**Summary:** Leeuwenhoek's description (or lack there of) of his methods set microbiology back because they weren't reproducible & it was decades before a comperable tool was designed by Hooke. A recent example of reproducibility is Bourne's challenge for others to reproduce his 2010 study. Challenge-acceptors estimate that it would take 160 hours for a novice to understand the analysis & another 120 to impliment it. Reproducbility is "available" but not readily accessible. These stories are in odds to the AAM report that sloppy science, selection and experimental bias and misconduct are the primary drivers of the inability to reproduce science. The author has three goals: framework for science in microbiology, overview of factors that threaten reproducibility, and suggest exercises.
+
+**What works:** The anecdotes are useful in setting the stage for the "true" problems in reproducibility. Overall the introduction has a nice narrative flow: Leeuwenhoek AND Bourne (i.e., most scientists) both had issues with reproductibility BUT those issues aren't reflected in reproducility guidence from the AAM. THEREFORE I'm going to give new guidance. In most cases, logic and conclusions are clear.
+
+**What doesn't work:** The individual anecdotes lack narrative structures and while they are independent stories, I think you can find a way to connect them so that the transition is smoother for the reader. There is no transition between the AAM paragraph and the goals paragraph. It is unclear how the "framework for thinking about how science is conducted" relates to what you've already described and/or the AAM statement. There are several places where the sentence structure negatively impacts understanding, generally because the sentence is either too convoluted or too long with the key point buried at the end.
+
+###Lit Review
+
+**1. "Faculty service loads and gender: Are women taking care of the academic family ?", Guarino & Borden, 2017**
+
+***
++ Background: Women experience academia differently then men - short of resources and heavy on additional responsibilities. Responsibilities divided into research, teaching & service. All factor into yearly evaluations & promotions but service is considered less so tenured faculty are supposed to take on a larger load. Two types of service, internal (school, dept, etc) & external (community, associations, etc). Previous studies have found that there are gendered differences regarding service whereby women spend more time in service, especially internal & local, despite not having a preference (relative to men). There seems to be some changes over time - more even distribution now. Several different mechanisms for this observation 1) interactions in an organizations hierarchy, 2) fear of retaliation for declining, 3) increased expectations that W will perform service above M 4) W pursing internal track admin opportunities
+
++ Data: Two datasets 
+    1) national FSSE survey - 19,000 faculty @ 143 colleges 
+    2) university specific FYAR survey w. more info re: type of service performed - two campuses, 1715 faculty (excluded 337 w. admin positions) - Only reports # of services, not # of hours spent in service
+    
++ Results: mean amount of services differs by +30 min/wk or 1.5 activities per yr for W; FSSE shows that full profs spend most time on service, w. F sig more time than M - Arts & humanities spend more time than business/sciences. FYAR data - W report 1 more service activity/yr, associates report more internal service than Assis/Full. W perform more community & national (review panels?) service. In the social sciences, W are more likely to perform service w. F chair. Internal service is more likely with F chair. 
+
++ Discussion: W faculty perform more service than M & this is driven by internal service. 
+
+***
+
+**2. "Gender differences in accepting and receiving requests for tasks with low promotability", Babcock et al., 2017**
+
+***
++ Background: Time spent on research is clearly preferable for promotions in academica, however, W spend 2.45 fewer hrs/wk on research than M - W more likely to mentor undergrads & participate in more committees. Managers are more likely to assign challenging tasks to M than F. "Unless W spend more time at work than M, working on a less-promtable task means that they spend less time on more-promotable tasks". This may be more than an issue of opportunity cost since such assignments may decrease job satisfaction & thus committment & investment in the job.
+
++ Research question: Are W more likely to be asked to complete low promotability tasks than M & are they more likely to agree?
+
++ Divided into several different experiments:
+
+  1) Response to volunteer requests - F faculty more likely to volunteer to be on a committee (7.0% vs 2.6%) -> higher representation (25% F faculty but 38% faculty senate). Unclear why this is the case - do W have a stronger preference? Designed experiment where people need to volunteer for a task ("investing") that everyone wants to get done but noone wants to do (b/c if not, then they get to spend time on better tasks i.e., >$ ). Someone must volunteer where the consequence is that it may not get done in time & suffers a time penalty (1.25 back vs 2). 
+  
+  2) Even gender split - 84.2% of groups invested 2/3 in last two seconds. W more likely than M (3.4 vs 2.3 x). 61% of M invest 2 or < times, only 40% fall in same category. Why? Could gender be proxy for personality traits or reflect differences in beliefs that others will pick up the slack?
+  
+  3) Beliefs vs personality: does response differ by gender composition - groups split into single sex b/c if gender differences in investing are caused by personality (more conforming/altruistic/risk averse) then investment should increase. If caused by belief that W more likely to volunteer then M should invest more & F less. - NO difference in liklihood to invest if in same sex group. Behavior is not due to fixed preferences but drawn from group composition. 
+  
+  4) Are W asked to volunteer more than M? - Adds outside requestor who must ask 1 person to invest after seeing their pictures & is incentivized to get someone to agree. Mixed gender groups of 4 - all were shown images of group members & asked who they would ask to invest if chosen as the requestor. All submitted, then assignments given at same time as the request - other members where shown who recieved the request. All members (except requestor) were able to invest. Only 40% of investments were made in last 2 seconds (vs 80%). Mean # requests for M & F (8.7 vs 11.1). Gender is predictive of request. Difference increases over experiment w. 0.9 more requests in 1st 5 rounds (stranger) & 1.6 in last 5 (non-stranger). Difference of 12 percentage points whether F is asked above M. Request to invest has impact on decision. Requested have investment rate of 65.5% vs 14% if not asked (no diff by gender). Requested investment does differ by gender requested 51% for M & 75% for W
+  
+  5) Is investment rate for W believed to be higher than it is for M? - Asked 3rd party to predict behavior in a represntative session from 1st experiment after participating in 5 rounds of the game. Results for first task were consistent with first experiment re: % of successful investments & gender split. 3rd party was provided with info including: sex, age, U.S. citizenship, year in school & major. 3rd party gave probability that either group member 1, 2, 3, invested or that noone invested. In groups with 2M1F W predicted to invest 47%, 2F1M 75% - should be 33 & 66% if equal beliefs. 
+  
+  6) Altruism - does generosity differ with the gender of the decision maker & the other group members? - participants provided with bio info of other participants in group & asked to make 6 decisions that result in payoffs to themselves & two other group members. No evidence that W are more likely to chose a later & more altruistic switch point. Nor is there a difference if the recipient is M or F.
+  
++ Conclusion: study is small, randomized, and anonymous - what about when its nonanonymous & potential for reputation building? "While the gender difference in volunteering and in requests to volunteer is disturbing, it is important to note that the decision to perform such tasks is not made in error. If no-one else will volunteer it is, in our setting, individually rational to do so even if it places the individual at a relative disadvantage. From the organization's perspective it may, however, be an error to let the acceptance of low-promotability tasks be discretionary. If performance on high-promotability tasks is more import- ant than performance on low-promotability tasks, then organizations should prefer to have the latter performed by those who are least able to perform tasks with high promotability. In improving the allocation of tasks it is promising that differential request and acceptance rates appear to be influenced by beliefs. This suggests that small inter- ventions can help reduce the differences in allocations of less-promotable tasks."
+
+#Goals: Mar 12 - 16
+
+1. ~~Submit completed ASM blog post~~
+
+1. XML parse
+    + write functions to pull and compile author, manuscript, referee and version data 
+    + ~~figure out how to calculate days in review, days to decision~~
+    + ~~figure out how to merge all into single row of dataframe, regardless of version #~~ - leave separate, join as needed
+
+1. ASM Transfer articles
+    + Dig deeper into mBio rejected articles
+    + Pull and join mSystems/mSphere citation data
+
+1. ~~Lit review: 4 papers~~
+
+1. ~~Kaitlyn's journal club paper~~ - N/A
+
+1. ~~Edits to Bacillus manuscript~~ - N/A, still waiting for comments
+
+#2018/03/16
+
+**- Parsing XML files**
+
+Figured out the issue I was having with dates (they were being read as factors) & wrote a function to assign the manuscript version to the review outcomes. For some reason, however, it is returning False when it should be true. Still working on that.
+
+```{r}
+cbind(data.frame(manu_number %>% head(n=1)), referee_id, referee_recommendation, referee_start, referee_return) %>% 
+  left_join(person_data, by = "ID") %>% #join with person identifiers & demographics using the designated ID number
+  mutate(time_in_review = ymd_hms(Review_return) - ymd_hms(Review_start),
+         version = assign_version(Review_return))
+
+#need to assign a version to referee data/outcomes so that I can track them by revision - use dates where if review return falls between submitted & decision date then its assigned that version?
+assign_version <- function(x) {
+  if_else((ymd_hms(as.character(x)) >= ymd_hms(as.character(version_meta[1,"Submitted_date"])) & ymd_hms(as.character(x)) >= ymd_hms(as.character(version_meta[1,"Decision_date"]))), as.integer(version_meta[1,"Version"]), as.integer(5))
+}
+```
+
+
+**- Olivia's Thesis Defense**
+
+###Lit Review
+
+**1. "Gender and Byline Placement of Co-first Authors in Clinical and Basic Science Journals With High Impact Factors", Aakhus et al., 2018**
+
+***
+Examined papers published between 2005 & 2014 - M & F co-authors are equally likely to be placed first
+
+***
+**2. "Dancing Backwards in High Heels: Female Professors Experience More Work Demands and Special Favor Requests, Particularly from Academically Entitled Students", El-Alayli et al., 2018**
+
+***
++ Gender bias regarding female instructors requires that F professors behave more nurturing but must demonstrate more expertise to be percived as being equally knowledgable as M professors. This doesn't protect them from poor student reviews & leads to more requests for favors and emotional labor. 
+
++ This paper examines the perception of F vs M faculty regarding emotional labor and favors. It also evaluates students for their perceptions, academic entitlement, and responses to denial of a hypothetical favor.
+
++ S1 Methods: M & F faculty from 300 U.S. institutions contacted to complete an online survey re: demographics, current position, course most frequently taught & asked to estimate how often students exhibited behaviors to solicit standard work demands, special favors, and friendship behaviors + assessments of emtional labor (self-directed & other-directed)
+
++ Women reported more student behaviors in all regards. M&F self-directed emotional labor was not significant but F other-directed was higher than M. Professor gender was predictive of special favors which was in turn predictive of other-directed emotional labor.
+
++ S1 reports faculty percieved and reported interactions, not actual or the student. It also doesn't take into account potential differences in faculty behavior that may elict these differences (which doesn't mean that bias is a factor). S2 evaluates student responses. 
+
++ S2 Methods: Undergrads from public university completing survey for credit. Randomly assigned to either M or F scenario & given description of instructor then asked if they would approach instructor w. a series of requests then how they would feel if denied. Also completed an academic entitlement scale & gender & authority measure + Old-fashioned  & Modern sexist scales. 
+
++ Student gender was not significant except that F students seemed to be more likely to expect favorable response from F professors. Entitlement was only associated with stronger expectations in the F professor conditions. 
+
+#2018/03/15
+
+**- Lab meeting**
+
+###Lit Review
+
+**1. "Gender disparities in high-quality research revealed by Nature index journals", Bendels et.al 2018**
+
+***
++ Background: **"common opinion that "scientific authorship" embodies a type of reward system that does not exclusively honour the pure scientific merit of someone's intellectual contribution but also reflects hierarchical structures of the research community"** presitge of authorships follows a ranked order with a higher rep of 1st & last authors, lower for co-authors & since early career generally publish 1st/co and senior as last we can view academic status of women. 
+
++ Research questions: gender distribution across first, co & last authorships, how does this change over time, are there differences in productivity & citation rates are there regional differences regarding integration of women
+
++ Methods: scraped data from Nature Index (excluding physics) & analyzed 1,488,989 male and female authorships from 293,557 articles that were published between January 2008 and May 2016. _Prestige index_ is a measure for the odds of holding prestigious authorships vs men where co-authors are weighted negatively but 1st/last are equal and weighted positively. 0 == gender-neutral distribution but >0 == excess of prestigous authorships held by women, <0 == lack
+
++ Results: men are 2x more likely to have a last authorship, women make up 33.1%, 31.8%, and 18.1% of global first, co & last authorships, respecitvely. In almost all countries, women had lower odds for last authorships vs men. Iceland is the only country with higher odds for women as last authors - giving highest _PI_ of all, followed by New Zealand which was almost gender neutral in all authorship categories (+,=,=). All topics had negative _PI_ except for Earth & Environmental (0.06). The _PI_ was negative across all journals - only 5 of 54 journals do women have equal or higher odds for prestigious authorships vs men. Large negative correlation between 5-yr JIF & corresponding _PI_. No correlation to FAP. The more authors on an article, the higher the FAP and lower the representation at prestigous authorships. "The analysis of combined authorships documents that male-first/ male-last and male-first/female-last articles have on average the highest citation rates with 40.2 and 36.8 citations/article, respectively, followed by female-first/male-last and female-first/ female-last articles with 35.2 and 33.2 citations/article, respectively" "Overall, 61.0% male authors are responsible for 70.2% of all authorships in our data set (Fig 5C), thus indicating a higher pro- ductivity of the male authors."
+
++ Discussion: "We identified a global pattern of FAORs that is characterized by the triplet (+, +, -), i.e. higher female odds for first or co-authorships and lower female odds for last authorships compared to men. This uneven distribution of female authors across the different authorships reflects the known structural imbalance of the scientific system, with just a few female group leaders as last-authors and many female researchers at lower hierarchical level being first- or co- authors."
+
+Woah - "Japan-with a strong sense of patriarchy in society [36]-occupies a noticeable role among the top 15 productive countries: it has with 17% the lowest FAP, an even more unfavour- able FAOR-pattern and a relatively low Prestige Index, thus pointing to a non-advanced integra- tion of female scientists. Concomitantly, the Japanese government recently reported that its world standing in science and technology is falling [37] and introduced a range of policies in response to this, which are designed to recruit top international researchers"
+
+"Methodically, the comparison of e.g. Turkey to Finland emphasizes the importance to include FAORs and the related Prestige Index in the analysis of authorships: Although both countries are characterized by a relatively high proportion of approximately 40% female authorships, Finland has a more favourable FAOR-pattern with considerably higher female odds for prestigious authorships than Turkey. Apparently, the FAOR-distribution reveals two completely different scientific systems regarding the integration of women."
+
+***
+**2. "The Matilda effect in science" Rossiter, 1993**
+
+***
+"Just how specific and widespread should a scientific reputation be? If we had some scale or measure, then we might know how upset or outraged to be when a deserving scientist is ignored or forgotten. After all, not everyone can or should be remembered by everyone else" - If science is meritocratic, then acheivements should determine this --> not the case for women.
+
+Named after a suffragette who aided in writing "The Woman's Bible" - a feminist examination of the Bible
+
+#2018/03/14
+
+**- ASM blog post**
+
+Completed and submitted. 
+
+**- Catch up on emails**
+
+#Goals: Mar 5 - 9
+
+1. ~~Lab meeting chalk talk~~
+
+1. ~~Will's paper for lab meeting~~
+
+1. ASM blog post
+    + ~~Read Legionella papers~~
+    + ~~interview Michele - Tues @ noon~~
+    + ~~Compose 1st draft~~
+    + Edit/restructure
+
+1. ~~Lit review: 4 papers~~
+
+1. ASM Transfer articles
+    + Analyze mBio rejected articles in more depth
+    + ~~Pull citation data for mSphere & mSystems articles only~~ - scrap until hear from Melissa
+
+1. ~~Parse XML files~~
+    + ~~tutorial on XML/XML2 packages~~
+    + ~~HTML parse tutorial~~
+    + ~~parse essential information from AEM XML~~
+
+
+#2018/03/08
+
+**- Lab meeting chalk talk notes**
+
+split effects of gender on review by field/journal - is there a specific reason to split by journal
+
+journal mastheads from each issue to find historical editors & EiCs - 5 - 10 year term so try issue 1 of each year 
+
+Journey through peer review: how long does it take to get through, how much attrition
+
+Jo handelsman - NIH directors awards - every step has bias e.g, self-bias in submission, drop out of peer review, longer to resubmit - time for editors to assign reviewers based on authors, how many have to be asked
+
+Mat leave study: #kids, mat leave, 
+
+2 papers: signpost & reviewer bias + timeline
+
+Genderize.io - validate with ASM membership database & choose threshold (Nicole's database?)
+
+Does percieved matter more than actual gender
+
+email genderizer - these are the actual probabilties -is there a database with percieved gender?
+
+survey to look at perception of names  - subset data to show bias against obviously gendered names versus "unknown"
+
+**- Will preprint notes**
+
+Skim, scan, read: what is the paper about? is it written legibly? Does the narrative make sense?
+
+Will has a rubric!
+
+**- Parse XML files**
+
+Watched a couple of tutorials on HTML & XML parsing. Figured out how to identify paths and export text from each path into a variable. Parsed essential data from XML file: doi, editor/reviewer/author ids, demographic data for manuscript (category, article type, etc) and persons (gender, gender probability, country, title). I can write scripts to identify first and corresponding authors and join ids, subset manuscript meta data, version meta data, and review outcomes. The problem I have now is that I want to calculate the days to decision but the supplied dates aren't parsing in lubridate. I'd also like to calculate the days in review. Another issue is that I have to find a way to put all data from all revisions into a single row so that I can have all manuscript data from one XML file in a single row.
+```{r}
+#dataframe of manuscript meta data
+manu_meta <- cbind(manu_number, manu_type, category, resub_status) %>% 
+  head(n=1) %>% cbind(first_auth, corres_auth) %>% print()
+```
+
+```{r}
+#join version data
+version_meta <- cbind(key, version, submitted_date, decision_date, decision, editor, senior_editor)  %>% print()
+```
+
+```{r}
+#join referee data
+review_outcome <- cbind(referee_id, referee_recommendation, referee_start, referee_return) %>% 
+  left_join(person_data, by = "ID")  %>% print() #join with person identifiers & demographics using the designated ID number
+```
+
+
+**- mSystems/mSphere citation data**
+
+Communicated with Stacey regarding Impact Vizor. It seems that the citation data is there, but it isn't available thorugh the Rejected Articles Tracker for some reason. I may need to pull this data from the citation tracker then do a join by doi.
+
+**- ASM blog post**
+
+Pull review papers on Legionella
+
+#2018/03/07
+
+**- Work on lab meeting presentation**
+
+I think I want to have a discussion regarding questions to as about gender in publishing and how to split those questions into different stories/papers.
+
+Data available:
+
+  + author/reviewers/editors: first name, country, institution, gender & gender probability, linked by person ID
+  
+  + manuscript: country, doi, author sequence, corresponding author, submission data, editor assigned/decision dates, decision, resubmission y/n, potential referees & date of contacts, status, needed y/n, assigned referees & due date/recev'd date/rank/recommendation/contact dates, transfers, version number
+  
+  + Where rejected manuscripts are eventually published
+  
+Questions:
+
+Signpost questions:
+
+1. gender of all editors over time
+
+1. breakdown into editor type: e.g., EiC, senior, associate
+
+1. gender of all reviewers over time
+
+1. gender of all senior authors over time
+
+1. gender of all first authors over time
+
+1. proportion of gender at each stage: e.g., author, reviewer, editor by type
+
+1. proportion of recruitment by gender, i.e. does eic gender impact editor gender; does editor impact reviewer gender 
+
+Effects of gender on review status:
+
+1. evaluate and score reviewer comments for theme - trends based on author gender and/or reviewer gender
+
+1. evaluate time from submission to final decision (focus on time spent in editor hands/not authors) - trends based on author/reviewer/editor gender
+
+1. breakdown above based on number of rounds of review
+
+1. does final decision differ by author/reviewer/editor gender
+
+Additional questions beyond current data set: 
+
+1. article quality /impact - measure by citations, altmetrics, types/locations of citations (e.g., policy white papers, peer review), readablity, journal impact factor 
+
+1. author productivity - number of publications (first vs corresponding vs co/middle), frequency, attempt to control for maternity
+
+1. collaboration - number of corresponding authors/countries/institutions per manuscript 
+
+1. tenure/promotability - probability of advancement based on manuscript characteristics, institution
+
+All of these questions could also be applied to geography - also examine abstract readability/grammar for English vs non-English speaking countries and compare to reviewer recommendations 
+
+How do you apply this to PoC or other identities?
+
+**- Read Will's paper for lab meeting**
+
+Critiques: didn't prove second conclusion. There's no data indicating that the IBD therapy changed prior to the decreases in diversity or before. Chicken vs egg. Well-designed, longitudial, both pros. 
+
+Questions: does the IBD e vs s relate to donors? They show what appears to be a pooled comparison but since they had 11 donors for all patients, its possible there's a trend
+
+Observations: odd that diversity doesn't predict recurrence of CDI, only initial colonization. Always a baseline 10-20% recurrence rate. 
+
+**- ASM blog post**
+
+Read over relevant news coverage. Write first draft.
+
+#2018/03/06
+
+**- ASM blog post**
+
+Read mBio paper, read background, interviewed Michele
+
+###- Lit review
+
+**- pulled more papers from previous lit reviews & relevant Twitter threads**
+
+**1. "Persistent Underrepresentation of Women's Science in High Profile Journals" Shen et al., preprint**
+
+Considering writing a comment/review of this preprint. It's very brief (only 4 graphs), which show that female authorship is negatively correlated with impact factor. Additionally, the proportion of female authors is below the proportion funded by NIH RO1s
+
+The authors call for 3 immediate actions by high impact journals: 1) collect and make publicly available gender and minority data 2) double-blind peer review 3) provide reviewers with clear guidance for review criteria
+
+Critiques: 
+
+1. Authors assume that this indicates gender bias in peer review, however there is no evidence to support that and the data needed to examine peer review in editorial rejections isn't available to this analysis. 
+
+1. The data for double-blind peer review is conflicting, and may reduce career opportunities for female reviewers to network with other researchers
+
+1. Ignores that high impact journals are an artifically inflated and poor substitutes for quality research
+
+
+#2018/03/05
+
+**- ASM blog post**
+
+Read PNAS paper, NPR story & emailed Michele about possible interview
+
+**- Bloodborne pathogens training**
+
+###- Lit review
+
+**1. "Gender in the Global Research Landscape" - report by Elsvier**
+
+***
+Key findings:
+  1. The proportion of women among researchers & inventors is increasing in all 12 comparator countries & regions over time
+      + women inventors increased from 10% (96-00) to 14% (11-15)
+      + The representation of women in STEM varies geographically, with certain countries having relatively high propor- tions of women among researchers (Bolivia 63%, Venezuela 56%), while others have lower proportions (Republic of Korea 18%, Japan 15%). Only 25% of researchers in France, Germany, and the Netherlands are women. (4)
+      + A large study of 5.5 million papers and 27.3 million authorships reveals that men produce a greater number of papers (70%) and hold more first authorships (66%) than women, even in the most productive countries (9) - UNESCO 2015 ~28% researchers worldwide are women
+      + Women researchers have also been shown to specialize less than men, which may also be linked to lower productivity and promotion.(24, 25)
+      + The National Institutes of Health (NIH) has formally recognized the need to address the gender imbalance in the United States' biomedical re- search workforce, not only to ensure fairness, but also to channel all available intellectual capacity towards building knowledge and improving human health.(29)
+      + Programs in US (NIH, NSF ADVANCE), EU (Horizon 2020, STAGES), Asia-Pacific ("womenomics", Japan hosting Gender Summit 10, SAGE, Athena SWAN, WISET)
+      + M&I is evenly split between M/F researchers in all countries/regions 
+      
+  2. Women publish fewer research papers on average than men, but there is no evidence that this affects how their papers are cited or downloaded
+      + Research has shown that gender does have an influence on tasks associated with authorship: women are more likely to perform experiments than men, who tend to have other roles (81)
+      + despite their low representation in the field, women hold a fairly high share of first/corresponding authorships in this field (Engineering). - given that men are authors on more papers, does this mean that female researchers are more productive than men?
+  3. Women are less likely than men to collaborate internationally on research papers
+  4. In general, women's scholarly output includes a slightly larger proportion of highly interdisciplinary research than men's
+  5. Among researchers, women are generally less internationally mobile than men
+  6. Gender research is growing in terms of size and complexity, with new topics emerging over time
+  7. The former dominance of the US in gender research has declined as research activity in the EU has risen
+
+Methods:
+  + Mined Scopus for data set spanned 20 years, 12 comparator countries and regions (US, EU, UK, Canada, Australia, Brazil, Denmark, Portugal), 27 subject areas.
+  + "Novel gender disabiguation approach" - combining Scopus data with data sources providing information on first names and gender per country (Genderize.io, NamSor sociolinguistic analysis, and Wikipedia name lists), which allow us to assign a gender to author profiles with a first name
+  + Scopus indexes authors with an associated unique identifier (Scopus ID). Through this data structure, we can identify all the papers, affil- iations, and citations of an author to form a Scopus Author Profile
+  + Scopus, journals are classified into 27 non-mutually exclusive subject areas, use these journal subject areas as a proxy for fields of research
+  
+***
+**2. "Recognition for Group Work: Gender Differences in Academia" Sarsons, 2017**
+
+***
+Background:
+  + Organizations increasingly rely on group work for production
+  + does uncertainty over an individual's role on a project lead to differential attribution of credit that contributes to the gender pay gap?
+  + A significant protion of the promotion gap is unexplained by productivity, personality/behavioral differences, or fertility preferences
+  + Examine tenure decisions w.in Economics academia b/c there is a large tenure gap that hasn't shifted despite increase of W in field & authors are ordered alphabetically making it difficult to discern contributions
+  + Correlating fraction of an individual's papers that are coauthored w. tenure, test whether women recieve less credit for work when contributions are unclear vs clear (solo author)
+  + M&W who solo author most of their work are tenured at equal rates but additional co-authored papers corellate with an 8% increase in tenure probabilty for men vs 2% for women
+  
+Data: 
+  + CVs from economists who went up for tenure between 1985-2014 at top 30 phd-granting insitutions in US
+  + 6-8 years after hire = tenure window, moving to another university ranked 5 positions below or industry during/shortly after that window = denied tenure
+  + use the RePEc/IDEAS ranking of econom- ics journals to control for the quality of a person's publications. I take the top 85 journals and give the top journal a score of 85. The lowest quality journal has a score of one.
+  + 70% recieved tenure at first institution: 52% of women & 75% of men
+  + No difference in number of papers or total unique coauthors - w 2x as likely to coauthor with women, men tend to publish coauthored in slightly better journals
+  
+Results: 
+  + The condition (solo vs co authorship) of papers doesn't matter for M tenure - does for women, 0 solo = 40% chance vs 80% solo = 75% chance
+  + matters if the co-author is M, F, or mix. Less credit if no other women on the paper
+  + In sociology, authors are listed by contributions - randomly sampled faculty at the top 20 sociology PhD-granting schools in the U.S. n=250, 40% are female
+  + Being 1st is strongly correlated with tenure - but no penalization for being a co-author vs M
+
+***
+**3. "An examination of gender differences in the American Fisheries Society peer-review process" Handley, et al. 2015**
+
+***
+Background: 
+  + double-blind review corrects for bias in favor of US & english-speaking countries
+  + no evidence that gender influences peer review outcomes - to date
+  + in 2003, women comprised 16.7% of regular AFS members, 30.8% of young professionals, and 35.3% of students. By 2012 female regular members represented 19.8% of total membership, and female young professionals and students were 37.5% and 38.2%, respectively.
+  + Electronic submissions between 2003 & 2010
+  + Manuscripts assigned to Associate Editor by the AFS editorial office based on paper subject & AE expertise
+  + AE's handle peer review, assess manuscript & submit suggestions to the editor, who makes final decision
+
+Methods: 
+  + 4,663 manuscripts submitted to 4 journals
+  + gender coded for 1st author based on first name - 5% indiscernible - reliability confirmed by hand, 250/co-author
+  + number of revisions for each manuscript, decision, and final outcome all recorded - those still in review or with indiscernible author gender were excluded -> 4,264 manuscripts
+  + Two sets of analysis: 1) descriptive 2) heirarchical linear modeling - controlled for base rate representation differences
+  + This study used a nested design with two hierarchical levels. The manuscript was at the lowest level of the hierarchy. Associate Editor represented the next level of the hierarchy. Variables associated with the highest level were AE gender, journal, and submission year. Variables associated with the lower level of manuscript were reviewer gender, author gender, manuscript recommendations, number of rounds of revisions, publication outcome, and whether there was one author from an English- speaking country (although not of primary interest to our study, omitting a relevant variable from the HLM models would bias our regression estimates). We also included two-way interactions between first author gender and AE gender and first author gender and the presence of at least one female reviewer.
+  
+Results: 
+  + Sig diff in % of manuscripts submitted by W 1st athors between journals - more freq sub to JAAH & TAFS
+  + No diff in author gender & AE gender
+  + F authored manuscripts more likely to be assigned at least 1 F reviewer, M authored papers less likely to have 1 less F reviewer, & F AEs chose F reviewers more often than M
+  + F authored manuscripts less likely to be published, only sig for NAJFM
+  + Manuscripts with at least one "english-speaking" author were more likely to be published (63.1% vs 28.9%!!) 
+  + Manuscripts w. M author had better chance of publication w. F AE than M (69.9% vs 61.7%) & w. F reviewers 
+  + more revisions increased liklihood of publication
+  + reveiwer evaluations were biased toward an english-speaking author, no diff based on gender
+  
+Discussion: 
+  + Female first authors tended to submit more manuscripts to TAFS (the journal with the highest rejection rate) and fewer manuscripts than expected to NAJA (the journal with the lowest rejection rate)
+  + "strong evidence that differences in acceptance rates among journals, which were controlled for in this analysis, at least partially explain the gender differences in publication outcomes" -- why didn't they look at editorial rejection breakdown by gender?
+  + "consistent disadvantage experienced by manuscripts with no author from an English- speaking country"
+
+***
+**4. "How stereotypes impair women's careers in science" Reuben, et al., 2014**
+
+***
+Background:
+  + Why does the proportion of women in science, technology, engineering, and mathematics (STEM)-related professions fail to reflect the interest girls demonstrate for mathematics and science courses in early school years?
+  + is difficult to show the existence of discrimination if we allow for the possibility of a sex difference in preference; that is, if women truly prefer fields outside of mathematics and science, then their lower proportions in STEM domains may result not from discrimination but merely from preference.
+  + designed expt where supply-side considerations did not apply (e.g., job candidates chosen randomly & couldn't opt out) - avoiding preference bias from candidate
+  + elicited expectations of candidate performances to test if performance-related expectations were biased by sex or if there was bias in updating expecitations as they recieved more info about candidate performance
+  + used implicit assocaition test to check for ias in initial beliefes & with biase in updating process
+  + W were 1/2 as likely to be hired as men b/c of erronious belief re: performance
+  + self-reported performance women were chosen at equally low rates despite better candidates chosen more frequently on avg
+  + Men more likely to boast vs women who underestimate - employers (esp those w. strong bias) tend not to take this bias into account
+  + bias reduced (but not eliminated) when employers pre-informed re: previous performance
+  + When the information was "objective" (i.e., provided by the experimenter), the updating, although not complete, was not biased by the preexisting stereotype (as measured by the IAT). In contrast, when the information was provided by the subjects themselves, employers biased against women were less likely to realize that, on average, men boast more about their performance than women do, leading to a biased and suboptimal choice in favor of men.
+  
+Methods:
+  + subjects "hired" to perform arithmetic test w. equal performance from both genders
+  + two subjects randomly selected as candidates, others became employers
+  + Employers provided two responses for each pair of candidates they evaluated: (i) choosing one of the two candidates as their "employee" and (ii) estimating the number of sums each candidate would complete correctly on a second arithmetic task. 
+  + Candidates earned more money in the experiment if they were chosen by the employer. Employers earned more if they chose the candidate who performed better than the other candidate in the pair on the second arithmetic task
+  + Varied what type of info given re: candidate - e.g., looks (gender), self-reported score, examiner-reported score, before/after hiring, sometimes offered to update choice based on info 
+  + all employers completed the IAT test for bias
+  
+Results:
+  + substantial discrimination against women in all conditions
+  + percent W candidates chosen in no info & self-report were almost identical (<50%)
+  + 10% more likely if examiner reported score - still less than 50%
+  + no info cond - expected earnings of female candidates is 19.4% less than that of their male counterparts
+  + In all three conditions, the higher-performing candidate was picked significantly more often than would have occurred by chance (by at least 4.6 percentage points)
+  + Suboptimal hiring decisions were associated strongly with sex bias. If hiring decisions were sex-neutral, the fraction of sub- optimal decisions in which a lower-performing male was chosen over a higher-performing female would be close to 50%
+  + employers of both genders had more difficulty associating women with science/ math than men
+  + positive, highly significant re- lationship between IAT scores and the average expected difference in performance between the evaluated male and female candidates
+  + IAT scores were not significantly correlated with how much they overestimated their own future performance, for both men & women
+  + in self-report 20.7% of employers did not update their expectation, and 34.6% updated as if their prior belief was completely uninformative - 12.8% & 46.6%, respectively for examiner-reported scores
+  + Employers found candidates' past performance a more reliable signal, and hence more useful information for decision-making, than their self-reported expectation of future performance, but they still weighted prior beliefs excessively.
+  + stereotypes did not seem to affect the updating process when the information was provided by a neutral third party
+  + Less-biased employers (with low IAT scores) made a stark distinction between self-reported performance levels based on the candidates' sex
+  + In con- trast, more biased employers (with high IAT scores) put more weight on the male candidates' announcements and, as a result, did not differentiate significantly between the self-reports of male and female candidates
+  
+Discussion:
+  + Our findings seem to suggest that both men and women discriminate against women without realizing that they do so. This form of discrimination is very different from the forms normally modeled in economics. Importantly, discrimination driven by implicit associations requires different (less coercive) policies for remediation (21).
+  + Thus, even in the face of valuable new information, employers continue to rely at least in part on their biased priors.
+  + Men tend to be more self-promoting than women in these reports, but employers, particularly those dem- onstrating evidence of stronger implicit sex bias (higher IAT), do not fully appreciate the extent of this difference.
+  + the bias against women measured by the IAT seems to act in two ways: It penalizes women when an unfounded negative stereotype against them exists, and it does not penalize men when there is evidence (15, 16) that they overpromote themselves.
+
+Follow up:
+
+   + Sekaquaptewa D, Thompson M (2003) Solo status, stereotype threat, and perfor- mance expectancies: Their effects on women's performance. J Exp Soc Psychol 39(1): 68-74.
+    
+   + Bertrand M, Chugh D, Mullainathan S (2005) New approaches to discrimination: Implicit discrimination. Am Econ Rev 95(2):94-98.
+
+#Goals: Feb 26 - Mar 2
+
+1. ~~Software Carpentry Workshop (M&T)~~
+
+1. Lit review: 3 papers
+
+1. ASM Transfer articles
+    + ~~Email Melissa about research/Impact Vizor~~ - Composed
+    + ~~Check Impact Vizor for non-doi assigned articles~~ 
+    + Analyze mBio rejected articles in more depth
+
+1. Parse XML files
+    + tutorial on XML/XML2 packages
+    + HTML parse 
+    
+#2018/03/02
+
+**- Transfered articles data analysis**
+
+Used Schloss lab papers to examine entries with duplicated doi numbers
+```{r, eval=FALSE}
+schloss_pub <- all_rejected %>% 
+  filter(grepl("Schloss", `Corresponding Author`) == TRUE)
+```
+
+Any article with the "Reject & Resubmit" Figured out how to filter entries with redundant doi numbers by `subset(!duplicated(doi))`. This returns the most recently rejected entry. Unfortunately, when applied to the `ASM_transfers` dataset this doesn't make `nrow()` and `summarise(n_distinct(doi))` equivalent like it does for `all_rejected`. Although, as I type this, I realize it's because I've gathered all of the citation metrics so each doi number has 3 rows.
+
+**- Composed draft of email to Melissa**
+
+Found that the data downloaded from Impact Vizor re: rejected manuscripts does not seem to include articles submitted but not published. 
+
+Also, there's no citation count data for manuscripts published in either mSystems or mSphere.
+
+**- PiBS Scientist Spotlight interview**
+
+#2018/03/01
+
+**- Lab meeting**
+
+**- Marc's practice talk**
+
+**- Finish manuscript edits & submit to Phil**

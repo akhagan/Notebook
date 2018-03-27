@@ -1,0 +1,785 @@
+---
+title: "2018/02/12 Notebook"
+output: html_notebook
+---
+
+#Goals: Feb 26 - Mar 2
+
+1. ~~Software Carpentry Workshop (M&T)~~
+
+1. Lit review: 3 papers
+
+1. ASM Transfer articles
+    + ~~Email Melissa about research/Impact Vizor~~ - Composed
+    + ~~Check Impact Vizor for non-doi assigned articles~~ 
+    + Analyze mBio rejected articles in more depth
+
+1. Parse XML files
+    + tutorial on XML/XML2 packages
+    + HTML parse 
+
+#2018/02/28
+
+**- Manuscript edits**
+
+**- Questionarres for PiBS Scientist Spotlight & ASM Microcosm profile**
+
+**- Edit next ASM blog post**
+
+#2018/02/27 Software Carpentry Workshop
+
+**Version control w. Git**
+
+- git is a tool to make your code publically available 
+- github:git as rstudio:r
+- version control allows multiple people to work in parallel & later merge
+- also acts as an unlimted "undo" button
+- git init #starts new project
+- git status #nots if changes have been made to files in the repository
+- git add #places a file in the staging area
+- git commit -m #commits changes to repository & adds message indicating what was done in this version
+- git log #gives log of last commit, useful to see what the last thing done was
+- git diff #tells what's been changed since the previous version
+- can also directly compare to a specfic version by using the version file number: git diff key# 
+- consider keeping add & commit steps separate
+- git hub doesn't keep track of directories, it keeps track of files
+- git commit #opens nano text file for longer explainations of changes
+- use HEAD~3 to look at diff btwn current & three versions ago e.g.: git diff --color-words HEAD~3 mars.txt
+- git checkout #allows you to "Checkout" previous versions of a file, this is a "permanant restoration" if you add & commit the change
+- git rm & git commit automatically stage a change (e.g., function of git add) but still need to be committed
+- get add . #commits everything that's being tracked in git
+- create a .gitignore file to add all file types that you want to ignore (not be added to the repo or show up in git status)
+- git pull #request recent changes
+- git push #add committed changes to the online repository
+- use the issues tab as a forum to discuss changes that need to be made. Close issues as they are addressed. 
+- git clone #makes a copy of a repository
+
+**Intro to R**
+
+- base plots let you put the legend in the plot
+- names() #outputs column names
+- rbind() #add rows to the bottom of the data frame
+
+#2018/02/26 Software Carpentry Workshop
+
+**- Command line in Git Bash**
+
+- "man" function doesn't work in git bash - use "fun --help" instead
+- git bash will also automatically show contents info (e.g., /*@) without the -l command
+- absolute path - from root directory
+- relative path - how to get there from where you currently are
+- ls -a #gets hidden files
+	- . in front of file name indicates that the file is hidden from the user
+	- .. is directory up a level
+	- . is current directory
+- -t sorts by time
+- -l gives long form
+- -h is human readable (usually converts size)
+- pwd #prints working directory
+- cd #change working directory
+- ls #list directory contents
+- cd ~ #short cuts to home directory
+
+- be consistent in how you name files/directories/etc so that you always know how to type when finding them (e.g., cases upvslow, underscore vs hyphen)
+
+- mkdir #make new directory (don't use whitespace, - or _ instead; don't start with - or .)
+- nano is a way to write/edit text files
+- save #write out
+- cat #concatenate & prints contents of a file
+- head #gives first 5 lines of a file (tail gives last 5)
+- touch #another command to create a file
+- rm #remove files -- **DELETING IS FOREVER**
+- rm -r #remove directories w. files
+- rmdir #will only remove empty directories
+- renaming a file is actually moving a current file then deleting the old version -> use **mv** cmd
+- mv file into current working director just use .
+- cp #command creates a copy of the file
+
+- wc #returns word/character count
+- * is a wildcard, matches 0 or more characters
+- use ? for a single character or [] to specify characters in a singe location 
+- wc -l #counted # of lines
+- sort -n #sorted lines numerically
+- head -n #1 return first line
+- each time redirected to a new file -> not as efficient as a pipe | 
+
+**-Intro to R**
+
+- ctrl S #save file
+- you can reverse the order of variable name & functions eg c(1,3,5) -> X
+- starting a variable with a . creates a hidden variable (you can still call it, but it doesn't show up in the environment)
+- rm() #removes a variable
+- check R version R.Version() 
+```{R}
+cats <- data.frame(name=c("Masha", "Beemo", "Leona"),
+                   coat=c("black", "black", "calico"),
+                   age=c(6,5,3), 
+                   weight=c(16, 8,8),
+                   plays_fetch=c(0,1,0))
+```
+- length() #Gives number of columns
+- length(cats$name) #gives number of rows in column name
+
+#Goals: Feb 19 - 23
+
+1. ~~Lit review: 3 papers~~
+
+1. Workshops
+    + ~~Intro to Linux Workshop (T @ 1pm)~~
+    + ~~Data Processing w. R workshop (W @ 2pm)~~
+    + ~~Advanced batch computing on Flux workshop (F @ 1)~~ - cancelled
+
+1. ~~Section on "Communication" in R4DS~~
+
+1. ASM memo
+    + for loops to generate plots
+    + ~~re-export data from Impact Vizor on rejected ASM papers~~
+    + scrape citation data from Scopus - skip: ask Melissa
+    + ~~analyze data~~
+    + write R markdown
+
+#2018/02/23
+
+**- Scientist Spotlight questionnaire**
+
+**- Worked on anthracis manuscript**
+
+Generated figure from Zack's microscopy data and redesigned figure two.
+
+#2018/02/22
+
+**-Lab meeting**
+
+**-Meet w. Pat**
+
+I've overblown the transfer memo, haha. I need to write an email to Melissa discussing Mike's initial question and the information provided but also discuss that it might be valuable to be applied to all journals and describe some of the other questions that it has prompted (e.g., how many reject/resub articles are "lost") and suggest those as interesting topics for the discussion at Microbe. I should also ask about the data in Impact Vizor (e.g., missing citation stats, what about papers without doi numbers). Send email to Pat first.
+
+Pat was also interested in looking at papers rejected specifically from mBio - Where do they go and how are they cited? How does that compare to those published by mBio? 
+
+**- ASM Transfers**
+
+```{r}
+ggplot(data = ASM_transfers) +
+  geom_point(aes(x = `Published Journal`, y = `Days in Transfer`, color = `Reject Reason`),
+             position = "jitter", alpha = 0.5) + 
+  facet_wrap(~`Reject Reason`) +
+  labs(title = "Transfer time by journal") +
+  scale_color_brewer(palette = "Dark2")+
+  theme_classic() + 
+  theme(legend.position = "none", axis.text=element_text(size=12), axis.title=element_text(size=14,face="bold"), 
+        plot.title = element_text(size=16,face="bold"), 
+        axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+```{r}
+ggplot(data = ASM_transfers) +
+  geom_bar(aes(x = fct_infreq(`Published Journal`), 
+               fill = `Submitted Journal`), position = "stack") + 
+  labs(title = "Transfers accepted per journal") +
+  ylab(label = "Transfers published since 2012") +
+  xlab(label = "ASM Journal") +
+  theme_classic() + 
+  theme(axis.text=element_text(size=12), axis.title=element_text(size=14,face="bold"), 
+        plot.title = element_text(size=16,face="bold"), axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+
+```{r}
+ggplot(data = ASM_transfers) +
+  geom_boxplot(aes(x = `Published Journal`, y = `Citation value`, 
+                 color = Metric),
+             position = "jitter", alpha = 0.5) + 
+  facet_wrap(~Metric) +
+  labs(title = "Citation Metrics of Transferred Articles") +
+  scale_color_brewer(palette = "Dark2")+
+  theme_classic() + 
+  theme(legend.position = "none", axis.text=element_text(size=12), axis.title=element_text(size=14,face="bold"), 
+        plot.title = element_text(size=16,face="bold"), 
+        axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+```{r}
+ggplot(data = ASM_transfers) +
+  geom_count(aes(x = `Published Journal`, y = `Submitted Journal`)) +
+  labs(title = "Citation Metrics of Transferred Articles") +
+  theme_classic() + 
+  theme(legend.position = "top", axis.text=element_text(size=12), axis.title=element_text(size=14,face="bold"), 
+        plot.title = element_text(size=16,face="bold"), 
+        axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+#2018/02/21
+
+**- Data analysis in R workshop**
+
+**- Transfer ASM**
+
+Pulled data from Impact Vizor again. This time I took all articles that were rejected at once. Following import, I sorted out all of the reject/resubmit papers to determine number of R&R articles published by ASM vs other journals. 
+
+I also generated a master list of dois to pull from scopus & downnloaded a scopus API & got an API key. Unfortunately, I have too many doi numbers for a single pull (limit of 5000/pull & 20000/week).
+
+Wrote function to compare published journals to submitted journals but need to figure out how to ignore case
+
+
+
+#2018/02/20
+
+**- Read "Prestigious Science Journals Struggle to Reach Even Average Reliability" Brembs, 2018**
+
+**-Lit review**
+
+1. "Analysis of NIH R01 Application Critiques, Impact and Criteria Scores: Does the Sex of the Principal Investigator Make a Difference?" Kaatz et al., 2016.
+
+***
+Background: 
+  + M&F applicants have similar success rates for new (type 1) R01's but lowwer success rates (5%) in renewals (type 2) w. no change for past 15 yrs.
+  + NIH has 2-phase system: 1) reviewers assign scores & write critiques, top 1/2 of applications are discussed & rescored 2) NIH staff & advisory make recommendations for fundint
+  + gender stereotype - agentic traits: independence, logic - reviewers hold women to higher performance standards by requiring more proof of ability to confirm competence
+  + Greater praise & fewer negative evaluation words did not translate to better scores or funding outcomes for F PIs
+  + 2009, NIH altered scoring system from 5 to 9 points & introduced separate criterion scores for approach, significance, innovation, investigators & environment w. bullet points for strentghts & weaknesses
+  + this study analyzed priority & criteria scores & reviewer critiques from a sample of applications from 2010 to 2014
+  
+Methods:
+  + Queried RePORTER database for UW-Madison PI's who recieved type 1 or type 2 r01 grants from 2010 - 2014 then requested the summary statements directly from the PIs. Excluded data from grants funded after revison under the old format. 
+  + sample was 739 critiques, 268 from 88 unfunded & 471 from 153 funded from 125 PIs (M = 61% & F= 39%). 
+  + used R to pull applicant info (degree, experience level, application type, & scoring info) & parse bulleted text 
+  + "We wrote an R program that matched the Linguistic Inquiry Word Count (LIWC, 2007) program used in our previous study16,38 and used it to detect 7 categories of words relevant to scientific grant evaluation in each critique and criteria subsection (see Kaatz et al16 for full lists of words in each category): ability (e.g., able, skill), achievement (e.g., awards, honors), agentic (e.g., competent, leader), negative evaluation (e.g., unclear, illogical), positive evaluation (e.g., solid, feasible), research (e.g., productivity, grant), and standout adjectives (e.g., exceptional, outstanding)." -> 2 outcome variables Y/N & %
+  
+Results: 
+  + No difference in M/F scores for type 1, but significant diff for type 2
+  + A strong approach score was predictive of a strong priority score
+  + Overall, M PI proposals were more positive
+
+Discussion:
+  + F PIs applying for type 2 may be disadvantaged in scoring - worse scores in priority, approach & significance
+  + overall, approach scores predicted priority scores but noncompetitive approach scores were more detrimental for F PIs
+  + evidence of different evaluative scores - F type 2 reviews more likely to have standout & ability words
+  + lingusitic differences originated in approach & significance strength sections
+  + no nonresponse bias, good sample of differing fields, even clincal & similar critera for hiring/promotion/productivity suggest similar background qualifications. 
+  + This bias is unconcieous & more likely to occur when a review is for a high-status position or award - agenic traits
+  + renewals are higher status awards
+  + implicit beliefs that women are less competent than men are confounded by perceptions that women are weak & need to be protected from negative experiences. - more likely to occur with explicit bias than implicit though
+  + body of research documents co-occurance of more positive lingusitic comments & poorer numerical rankings for women than men in male-typed roles. in-group bias whre members of a postitively-sterotype ingroup recieve favorable ratings on criteria that matter most for obtaining tangible rewards & members of a negatively sterotyped out group recieve favorable ratings on criteria that matter least. 
+  + in-group bias more likely when women make up less than 25% of applicants - true for Type 2 R01s 
+  + women fail to advance at equvalent rates to men & are more likely than men to study issues within the realm of women's health, women's attrition from research areers perpetuates health disparities.
+
+***
+2. "National hiring experiments reveal 2:1 faculty preference for women on STEM tenure track" Williams & Ceci, 2015
+
+***
+Background: 
+  + Application of women to tenure track positions is key juncture in understanding lack of attrition in STEM fields
+  + once hired W prosper w. similar rates of promotion  - why are there fewer applicants?
+  + Discouraging messaging re: sexism in hiring? Single study in psychology (50% F field) showed bias
+  + however no study in math-intenstive fields w. strong applicant records
+  
+Methods: 
+  + 5 experiments w. 873 tenure-track faculty from 371 colleges & universities in 50 states + DC
+  + hiring faculty preferences for hypothetical applicants in two math-intensive fields in which women are poorly represented (engineering & economics) & well represented (Biology & psychology)
+  + Used applications for Dr. X/Y/Z differing in the gender pronouns used. 
+  + Also evaluated lifestyle differences e.g. 
+      + expt 1 - two applicants married w/o kids, & 2 w. stay @home spouses.
+      + expt 2 - married father of two w. stay @ home spouse, single mother of 2 w. absent ex-spouse
+      + expt 3 - identical mothers or fathers who either did or did not take a 1 y parental leave in grad school
+      + expt 4 - same as one but evaluated CV vs narrative summaries
+      + expt 5 - faculty rated only 1 applicant (m/f w. identical records) to validate expt 1-4
+  + claims they used complex experimental design to avoid giving away the punchline - not terribly convinced
+  + faculty recived info for 3 candidates - used narrative summaries vs CV b/c no single CV would hold accross all fields
+  + used a pre-tested "foil" candidate to obscure design - slightly weaker candidate
+  + lifestyle data incorporated in summaries as "voluntarily" provided info
+  + two forms of ea gender were described in either traditionally F or M adjectives
+  + used same descriptors only differed by gender in ea experiment - how do you ask people to compare & expect a non-social-acceptible response?
+
+Results: 
+  + Women candidates preferred over men by at least 2:1 in all lifestyle conditions
+  + M faculty preferred women w. leave in grad school over W w/o leave 2:1, no effect on M applicants
+  + F preferred mothers w. no extended leaves
+  + CV experiment replicated narrative summary experiment
+  + rating of a single narrative at a time confirmed preference for F applicants - rated 1 point scale higher --> why didn't they do the entire study this way?
+  
+Discussion:
+  + attempts to counter bias in academia have worked - auspicious time for F applying for tenure-track jobs
+  + F advantages come at a cost to M, who may be disadvantaged when competing against equally qualified W
+  + "once tenure-track F apply to a position, departments are on average inviting more F to interview than would be expected if gender were not a factor"
+
+Follow up:
+  + 
+
+#2018/02/19
+
+**- Lit Review**
+
+1. "Editor and reviewer gender influence the peer review process but not peer review outcomes at an ecology journal" Fox et al., 2016
+
+***
++ Background: Authorship functions as a signal of gender inequality in the sciences & acts as a potiential contributorM editors consider reviewer status more than F & differences in social/professional networks could lead F editors to choose reviewers of diff backgrounds. Editorial boards are also geographically homogenous. More closely reflect distribution of PhD-granting institutions or journal ownership. Less diversity may reduce the diversity of perspectives & approaches valued & represented. 
+
++ Question: 
+    + how editor gender influences gender balance in reviewer recruitment
+    + how reviewer gender influences responses to review invitations & review scores given to papers
+    + whether editor seniority & geographic locality mediate effects of editor & reviewer gender 
+
++ Methods: All "standard" papers submitted to _Functional Ecology_ from Jan 2004 to June 2014. Only evaluated the first submission & review for a given paper. Selected reviewers are those suggested by the authors, invited reivewers are those asked by the editor and agreed reviewers are those actually performing the reivew. Data set includes 23,516 selected reviewers with 8533 unique individuals. 17,958 invitations were sent to 7551 unique reviewers, 8763 let to an agreement (4898 individuals) & 8288 reviews were submitted. Primarily assigned gender by first hand knowledge, followed by google searches & genderize.io. Seniority determined by defense year. location determined by home country & the UN M.49 area codes
+
++ Results: Prop of selected/invited/agreed F reviewers increased over time. 2004 all manuscripts handled by 1 of 4 male reviewers. in 2005, FE started recruiting associate editors to handel manuscripts w. geographic & gender diversity in mind. F editors primary driver for F reviewers b/c more likely to invite F reviewers. F less likely to respond to review requests but 6% more likely to agree if they do respond. Proportion of respondee's agreeing to review has declined. Invitations from F editors more likely to be declined, esp by M reviewers. No evidence of bias by gender re: review score, accept/reject following peer review. No difference in seniority at time of appointment as editor. Seniority does affect likely hood of selecting F reviewers. Reivewers less likely to accept and/or respond if the editor was more senior. Editors selected more reviewers from NA overall & each editor was more likely to select from within their geographic region. 
+
++ Discussion: Key findings - 1) proportion of women selected as reviewers depends on gender of editor, esp for more senior editors. 2) Women invited were less likely to respond, took longer to respond, but were more likely to agree if they did respond. 3) Women invited to review responded similarly regardless of gender whereas men were less likely to respond & more likely to decline if the editor was female. 4) No evidence in bias re: score or decision 5) reviewers less likely to agree the more senior the editor 6) editors more likely to select reviewers from their own geographic regions
+
+  + To increase diversity in peer review, increase diversity of editorial boards. That women respond less frequently may not mean that they're ignoring them but may be inactive email addresses since women leave sci @ higher rates and move to accomodate husband's careers more frequently. The studies reporting gender bias in journal peer review are generally older than those reporting no bias which may reflect changing social attitudes. When choosing reviewers it may be better for editors to rely more on manuscript reference lists & data base searches than on personal knowledge
+
++ Follow up:
+    + Ledin et al, 2007
+    + Martin 2012
+    + West et al, 2013
+    + Alzahrani 2010
+    + McPherson, 2001
+    + Grod, 2010
+    + wing, 2010
+    + Willet 2013
+    + Uzun 2004
+    + Garcia-Carpintero 2010
+    +
+
+**- Communication in R4DS**
+
+Some good ideas on how to manipulate graphics in ggplot and other packages to use. Also, I think I might switch my notebook strategy from a single notebook to multiples: e.g one per project, plus one for lit review, plus one for daily summaries where most of the detail is in the project notebooks. 
+
+I'm still unclear about how to run big, background chunks of code... I think I'll pull an example from github
+
+#Goals: Feb 12 - 16
+
+1. ASM memo on transfer articles
+    + for loops to generate plots
+    + ~~for loops to bind data frames~~
+    + analyze data
+    + write R markdown
+
+2. ~~R4DS Ch. 21 on Iterations~~
+
+3. Parse XML file into dataframe
+
+4. ~~Lit review: 6 papers~~
+
+5. ~~Meet with Judy & Tyler about Taubman Resources/scraping citations~~
+
+#2018/02/16
+
+**- Transfer memo Rmarkdown**
+
+I started writing the text of the memo. I have two main problems in trying to finish this thing: 
+
+1. I don't understand how to run chunks that source from other R scripts. It doesn't run properly when I try to "source" the file like you do between R scripts. 
+
+2. I keep trying to add more analyses. This started as a simple excercise and has expanded into the following data questions:
+
+  + How long does an article spend in transfer per journal? What is the overall median?
+  
+  + Where are the bulk of transfers being published? How are the decisions represented?
+  
+  + What are the citation metrics for transferred articles? (Impact Vizor doesn't have updated citation counts, so I'm going to have to scrape that data from Scopus)
+  
+  + Within ASM journals, is there a trend re: where papers are being rejected from and where they are published?
+  
+  + How many papers that recieve the reject w. resubmit decision are leaving ASM journals?
+
+**- Lit review**
+
+1. "Author-suggested reviewers: gender differences and influences on the peer review process at an ecology journal" Fox et al., 2017
+
++ Background: The growth of scientific lit & increasing selectivity of journals have increased the peer review "burden", reducing the proportion of review requests submitted. Authors are often asked to suggest reviewers since they know their field well, which has led to concerns that author-suggested reviews are biased toward the author. Gender affects some aspects of peer review. Study asks how prefferred and nonpreferred reviewers, use of suggestions by editors & influence on decision outcome & how these questions relate to gender
+
++ Methods: used data from journal submissions from Jan 2004 to June 2014 - 6720 papers. Only assigned gender to non-Asian names, used genderize.io TO test if review scores are biased by preferred authors - chose those who reviewed as both suggested & non-suggested reviewers, calculated mean scores for each type of review & compared to a non-parametric test
+
++ Results: Few authors volunteer non-preferred reviewers. Percent of preferred F reviewers increased by 10% over the decade. Gender had no impact on +/- of suggested reviewers or #. Proportion of women reviewers suggested by F authors (27%) was higher than for M authors (21%). 1 in 4 reviewers contacted by editors are author-suggested & is constant over time. No difference in editor gender/seniority re: reviewer assignment. Gender of the reviewer is a factor. Author-suggested F reviewers (46.2) are selected more than M reviewers (41.8). Until 2006, papers with suggested reviewers were more likely to be sent for peer review. Prospective reivewers were more likely to respond if suggested but no more likely to accept. Women were less likely to respond. Author-suggested reviewers scored papers more positively (~16%). Papers reviewed by author-suggested were more likely to have a "revise" decision: 52% if 2 preferred reviewers, 36% if 1, 28% if none. 
+
++ Discussion: Differences in gender of author-suggested reviewers/editors could be explained by varying proportion of women in subfields and/or by professional network structures (often a factor of age & gender). Preferred reviewers may be more postive overall b/c they are more enthusiastic about the paper subjects, more often share author perspectives, or are biased in the authors' favor. Preferred authors may also be beetter informed & review scores more correctly reflect the true quality & significance of the paper. Listing non-preferred reviewers increases odds of positive decision, possibly by eliminating lower review scores since correcting for mean score reduces the significance. 
+
++ Follow up: 
+  
+  + Fox et al, 2016 "Gender differ- ences in patterns of authorship do not affect peer review outcomes at an ecology journal. Functional"
+  
+  + Schroter et al, 2006 "Differences in review quality and recommendations for publication between peer reviewers suggested by authors or by editors."
+  
+  + Wager et al., 2006 "Are reviewers suggested by authors as good as those chosen by editors? Results of a rater-blinded, retrospective study"
+  
+  + Rivara et al., 2007 "A comparison of reviewers selected by editors and reviewers suggested by authors."
+  
+  + Kowalczuk et al, 2015 "Retrospective analysis of the quality of reports by author-suggested and non-author-suggested reviewers in journals operat- ing on open or single-blind peer review models"
+  
+  + Schroeder et al, 2013 "Fewer invited talks by women in evolutionary biol- ogy symposia. Journal"
+  
+  + Nature, 2012 "Nature's sexism"
+  
+  + Pettorelli et al, 2013 "Addressing gender imbalances in Animal Con- servation."
+  
+  + Fox, C.W. & Burns, C.S. (2015) The relationship between manuscript title structure and success: editorial decisions and citation performance for an ecological journal. Ecology and Evolution, 5, 1970-1980
+
+**- Dax is sick again**
+
+**- Transfer Memo**
+
+Created Rmarkdown file
+
+Reattempted to pull citation data after converting list of dois into a string separated by the Boolean operator "OR". Unfortunately Scopus won't cooperate. Need to look into the API?
+```{r, eval=FALSE}
+#Generate list of doi for WoS analysis
+get_doi_file <- function(input_txt){
+  text <- read_tsv(input_txt, col_names = TRUE)
+  doi <- as.list(text$`CrossRef DOI`) 
+  return(doi)
+}  
+
+#list of all journals data sets
+transfer_master_list <- list(c("Data/aac.txt", "Data/aem.txt", "Data/cvi.txt", "Data/genome_announcements.txt", "Data/iai.txt", "Data/jb.txt", "Data/jcm.txt", "Data/jv.txt", "Data/mBio.txt", "Data/mcb.txt", "Data/msphere1.txt", "Data/msystems.txt"))
+
+doi_master <- pmap(transfer_master_list, get_doi_file) %>%
+  unlist() %>% paste(collapse = " OR ")
+  
+write_file(doi_master, "doi_master_list.txt") #save text file of dois
+```
+
+#2018/02/15
+
+**- Meet with Taubman informatist (Tyler Nix)**
+
+Export batch citation data using DOI numbers with Boolean operator "OR". Perform the same in pubmed to access PMID numbers then pull the NIH relative citation ratio from iCite. Within a month or two, UM will have insitutional access to an altmetrics tool. Scopus has PlumX altmetrics but can't batch export. 
+
+Look up [impact metrics](http://guides.lib.umich.edu/researchimpact/holisticframeworks) for determining article quality - use a combo of quant/qual metrics
+
+**- Transfer stats**
+
+Merged data from all journals into a master list:
+
+```{r, eval = FALSE}
+#list of all journals data sets
+transfer_master_list <- list("Data/aac.txt", "Data/aem.txt", "Data/cvi.txt", "Data/genome_announcements.txt", "Data/iai.txt", "Data/jb.txt", "Data/jcm.txt", "Data/jv.txt", "Data/mBio.txt", "Data/mcb.txt", "Data/msphere1.txt", "Data/msystems.txt")
+
+#loop reading in of each journal dataset & collate into a single dataframe for analysis
+journals_master <- lapply(transfer_master_list, get_files) %>% bind_rows()
+```
+
+Generated plots of the number of transfers published per journal, and number of days in transfer per journal
+
+```{r}
+ggplot(data = master_stats) +
+  geom_boxplot(aes(x = `Published Journal`, y = `Days in Transfer`)) + 
+  labs(title = "Transfer time by journal") +
+  theme_classic() + 
+  theme(legend.position = "none", axis.text=element_text(size=12), axis.title=element_text(size=14,face="bold"), 
+        plot.title = element_text(size=16,face="bold"), axis.text.x = element_text(angle = 90, hjust = 1))
+
+```
+
+```{r}
+ggplot(data = master_stats) +
+  geom_bar(aes(x = `Published Journal`)) + 
+  labs(x = "Number of transfers", title = "Transfers accepted per journal") +
+  theme_classic() + 
+  theme(legend.position = "none", axis.text=element_text(size=12), axis.title=element_text(size=14,face="bold"), 
+        plot.title = element_text(size=16,face="bold"), axis.text.x = element_text(angle = 90, hjust = 1))
+```
+
+
+**- Read journal club paper**
+
+**- Lit review**
+
+1. "Quantitative evaluation of gender bias in astronomical publications from citation counts" Caplar, 2017
+
+***
++ Biases against W in astronomy re: conference presentation, telescope proposal success rates. Pulled >200,000 publications from 1950-2015 from 5 major astronmy journals - data included names & # of authors, number of references, year of publication, journal, abstract & name of 1st authors institution. -> removed papers where 1st author gender couldn't be assigned or had no citations/references.
+
++ Papers written by M & W have different "properties". Citation count is expected to correlate w. non-gender-specific properites of papers (e.g., seniority, # references, journal, year, field of study, geogrpahical region). Attempted to separate gender bias effect from non-gender-specific properties effect
+
++ Men recieve ~6% more citations - used machine-learning to correct & estimate more accurately the amount of gender bias by training on non-gender-specific parameters to predict the number of citations for given F authored papers then comparing the predictions against actual counts. -> W recieve 10% fewer citations than expected. 
+
++ Replaced actual citations for W with predicted citations then measure the difference in citations - > Men should recieve 4% fewer citations than F b/c of differences in paper properties
+
++ Gender identification run through multiple algorithms: 
+    + SexMachine (https://pypi.python.org/pypi/SexMachine/), a Python module. This database consists of 40,000 names from a wide geographical range that have been classified by native speakers. 
+    
+    + United States Social Security Administration and the UK Office of National Statistics, which track the gender of all children born in these countries (https://github.com/OpenGenderTracking/globalnamedata). It consists of about 100,000 names, but it does not have the geographical width of the first database. 
+    
+    + Gender API (https://gender-api.com/), which includes nearly 2,000,000 names. 
+    
+    + If a given first name consists of several names, we check the gender for all of the names and weight the final gender assignment accordingly
+  
++ F authored papers have 7 +/- 3% more references
+
++ Follow up:
+    + Ghiasi, G., Larivière, V. & Sugimoto, C. R. On the compliance of women engineers with a gendered scientific system. PLoS ONE 10, e0145931 (2015)
+    
+    + Davenport, J. R. A. et al. Studying gender in conference talks - data from the 223rd Meeting of the American Astronomical Society. Preprint at http://arXiv.org/abs/1403.3091 (2014)
+    
+    + Pritchard, J. et al. Asking gender questions: results from a survey of gender and question asking among UK astronomers at NAM2014. Astron. Geophys. 55, 8-12 (2014)
+    
+    + Hong, L. & Page, S. E. Groups of diverse problem solvers can outperform groups of high-ability problem solvers. Proc. Natl Acad. Sci. USA 101, 16,385-16,389 (2004).
+    
+    + Medin, D. L. & Lee, C. D. Diversity makes better science. APS Observer (27 April 2012); www.psychologicalscience.org/observer/diversity-makes- better-science#.WQB3psYo-aE
+    
+***
+2. "Female grant applicants are equally successful when peer reviewers assess the science, but not when they assess the scientist", Witteman et al., 2017
+
+***
++ Background: W must perform to a higher standard than men for equal recognition (esp POC). W more often charaterized as "lacking the brilliance, drive, and talent required to carry a novel line of inquiry through to discovery", contribute more labor for less credit . **"Female surgeons have been shown to have better patient outcomes overall, yet, when a patient dies in surgery under the care of a female surgeon, general practitioners reduce referrals to her and to other female surgeons in her specialty, whereas they show no such reduced referrals to male surgeons following a patient's death." & "high-potential women are favored over high-potential men and that, while women face discrimination at earlier stages, once women have proven themselves in a male-dominated context, they are favored over men"** No previous study (all observational) has found that women fare better than men in grant submissions/funding. Compare grand success rates among 3 grant programs: tradtional, two new programs w/ & w/o explicit review focus of PI quality. Possible results: 
+
+  + Gaps similar under all 3 conditions suggest  different career paths and choices made by women and men, differences between the types of research proposed by female and male principal investigators, or may be spurious. 
+  
+  + A larger gap in favour of male PIs when focusing on science suggests that gender gaps are due to lower quality proposals by W. 
+  
+  + A larger gap in favour of men when focusing on the scientist suggests that gender gaps in research funding are partly or wholly driven by gender bias 
+  
+  + Other potential results such as gaps in favor of female PIs were not considered a priori because publicly-available summary statistics of the programs showed these results to be impossible
+  
++ Methods: pulled data from all applications submitted between 2011 & 2016 - modeled success rates as a function of the grant program, PI sex, age, domain of research & controlled for different review criteria b/c of age & research domain
+
++ Results: 23,918 applications from 7, 093 PIs. 15,775 from 4,472 M PI & 8,143 from 2,621 F PI. 27% submitted 5+ apps. Overall success rate was 15.8% - predicted probability of success 0.9% higher for M PIs
+
++ Discussion: Netherlands - grant reviewers gave equal scores to men's and women's proposed research but assigned lower scores to women as researchers. "Following the grant cycles analyzed in our study and as part of a broader Equity Framework,81 the CIHR implemented new policies in an attempt to eliminate the observed gender gap in Foundation grants"
+
++ Follow up:
+
+  + Rossiter, M. W. The Matthew Matilda Effect in Science. Soc. Stud. Sci. 23, 325-341 (1993)
+  
+  + Klein, R. S. et al. Speaking out about gender imbalance in invited speakers improves diversity. Nat. Immunol. 18, 475-478 (2017)
+  
+  + Ginther, D. K. et al. Race, ethnicity, and NIH research awards. Science 333, 1015-1019 (2011)
+  
+  + Williams, J., Phillips, K. W. & Hall, E. V. Double jeopardy?: Gender bias against women of color in science. (Hastings College of the Law, Center for WorkLife Law, 2014)
+  
+  + Leslie, S.-J., Cimpian, A., Meyer, M. & Freeland, E. Expectations of brilliance underlie gender distributions across academic disciplines. Science 347, 262-265 (2015)
+  
+  + Clancy, K. B. H., Lee, K. M. N., Rodgers, E. M. & Richey, C. Double jeopardy in astronomy and planetary science: Women of color face greater risks of gendered and racial harassment. J. Geophys. Res. Planets 122, 2017JE005256 (2017)
+  
+  + Magua, W. et al. Are Female Applicants Disadvantaged in National Institutes of Health Peer Review? Combining Algorithmic Text Mining and Qualitative Methods to Detect Evaluative Differences in R01 Reviewers' Critiques. J. Womens. Health 26, 560-570 (2017).
+  
+  + Carnes, M. et al. The effect of an intervention to break the gender bias habit for faculty at one institution: a cluster randomized, controlled trial. Acad. Med. 90, 221-230 (2015).
+  
+  + Smyth, F. L. & Nosek, B. A. On the gender-science stereotypes held by scientists: explicit accord with gender-ratios, implicit accord with scientific identity. Front. Psychol. 6, 415 (2015)
+  
+  + Macaluso, B., Larivière, V., Sugimoto, T. & Sugimoto, C. R. Is Science Built on the Shoulders of Women? A Study of Gender Differences in Contributorship. Acad. Med. 91, 1136-1142 (2016)
+  
+  + Schmader, T., Whitehead, J. & Wysocki, V. H. A Linguistic Comparison of Letters of Recommendation for Male and Female Chemistry and Biochemistry Job Applicants. Sex Roles 57, 509-514 (2007)
+  
+  + Stark, P., Ottoboni, K., Boring, A. & Cetinkaya-Rundel, M. Student Evaluations of Teaching (Mostly) Do Not Measure Teaching Effectiveness. (2016). doi:10.14293/S2199- 1006.1.SOR-EDU.AETBZC.v1
+  
+  + Babcock, L., Recalde, M. P., Vesterlund, L. & Weingart, L. Gender Differences in Accepting and Receiving Requests for Tasks with Low Promotability. Am. Econ. Rev. 107, 714-747 (2017)
+  
+  + Guarino, C. M. & Borden, V. M. H. Faculty Service Loads and Gender: Are Women Taking Care of the Academic Family? Res. High. Educ. 58, 672-694 (2017).
+  
+  + El-Alayli, A., Hansen-Brown, A. A. & Ceynar, M. Dancing Backwards in High Heels: Female Professors Experience More Work Demands and Special Favor Requests, Particularly from Academically Entitled Students. Sex Roles 1-15 (2018).
+  
+  + Sege, R., Nykiel-Bub, L. & Selk, S. Sex Differences in Institutional Support for Junior Biomedical Researchers. JAMA 314, 1175-1177 (2015)
+  
+  + Lutter, M. & Schröder, M. Who becomes a tenured professor, and why? Panel data evidence from German sociology, 1980-2013. Res. Policy 45, 999-1013 (2016)
+  
+  + Ceci, S. J. & Williams, W. M. Women have substantial advantage in STEM faculty hiring, except when competing against more-accomplished men. Front. Psychol. 6, 1532 (2015).
+  
+  + Leslie, L. M., Manchester, C. F. & Dahm, P. C. Why and When Does the Gender Gap Reverse? Diversity Goals and the Pay Premium for High Potential Women. Acad. Manage. J. 60, 402-432 (2017)
+  
+  + Gino, F., Wilmuth, C. A. & Brooks, A. W. Compared to men, women view professional advancement as equally attainable, but less desirable. Proc. Natl. Acad. Sci. U. S. A. 112, 12354-12359 (2015).
+  
+  + Moss-Racusin, C. A. et al. A 'Scientific Diversity' Intervention to Reduce Gender Bias in a Sample of Life Scientists. CBE Life Sci. Educ. 15, (2016)
+  
+  + Tricco, A. C. et al. Strategies to Prevent or Reduce Gender Bias in Peer Review of Research Grants: A Rapid Scoping Review. PLoS One 12, e0169718 (2017).
+  
+  + Unconscious Bias in Peer Review. Available at: http://www.cihr-irsc.gc.ca/lms/e/bias/. (Accessed: 2nd August 2017)
+  
+  + Balafoutas, L. & Sutter, M. Affirmative action policies promote women and do not harm efficiency in the laboratory. Science 335, 579-582 (2012)
+
+#2018/02/14
+
+**- Find follow up papers from previous week's lit reviews**
+
+**- Lit Review**
+
+1. "Is there gender bias in reviewer selection and publication success rates for the _New Zealand Journal of Ecology_?" Buckley et al., 2014
+
+***
+
++ Background: Science requires that problems/questions be challenged with multiple perspectives which requires diversity in scientists and their backgrounds, however, there are disparities in representation (e.g., women/ethnic minorities). New Zealand is not an exception to the global gender bias patterns. Between 2003 & 2012, only 10 of 41 invited speakers were women; 77% of best student presentation, 72% of best student poster & 64% of best paper by a new researcher awards went to women - only 11% of more prestgious awards for ecological excellence went to women. The gender pay gap is worse than in the US. No gender bias in success rae of female first authors vs male. Call for scientific journal editors to assess gender equity in their publication process. These researchers asked:
+    1. is the rate of publication success biased by gender of either first or corressponding author?
+    1. is the gender ration of selected reviewers biased?
+    1. does the gender of the associate editor bias either publication success or reviewer selection frequencies by gender?
+
++ Methods: NZJE manuscript database was used to obtain a list of papers submitted & sent for review between 2003 & 2012. Genders of first & corresponding authors were obtained (13/365 excluded). Current editors asked to provide data re: frequency of F & M reviewers selected for all papers in that time period. To assess bias, a 2x2 contingency table analysis was used to compare the frequencies of accepted & declined manuscripts by 1st author gender. 
+
++ Results: 128 of 352 manuscripts had F lead authors; 86% of lead authors were also corressponding authors. Success rates of F vs M manuscript submissions were similar but overall percentage by F authors was much lower (36% F first author). On average, more M reviewers were selected (~29% F), individual editors ranged (0-60%), but F more likely to select F reviewers - but not statistically significant. 
+
++ Discussion: Not a gender bias in publication success rate. Disparity in F reviewers selected (29%), however that is similar to the proportional availability of full-time F ecologists (27%) - doesn't include F PD or grad students. Thus authors conclude it is an issue of female "visibility" versus "availability". Suggestion that being selected as a reviewer increases visibility, which has a direct & significant impact on salary. Little evidence of gender discrimination in publication (C&W, 2011), under-rep of W in Sci b/c of positions w. fewer resources. **"Participating in the peer-review process is an important way that early-career researchers can feel more involved with, and contribute to, the scientific community"** Reviewer-mentoring intitiative - spreading the responsibility of peer review across all experience levels
+
++ Follow up: 
+    + Conley & Stadmark, 2012 "Gender matters: a call to commission more women writers"; 
+    
+    + Heidari & Babor, 2013 "Evaluate gender equality in journals"; 
+    
+    + Tregenza, 2002 "Gender bias in the refereeing process? Trends"; 
+    
+    + De Vries, 2009 "Exploring the peer review process: What is it, does it work, and can it be improved?"; 
+    
+    + Valkonen & Brooks, 2011 "Gender balance in Cortex acceptance rates"; 
+    
+    + Lee, 2013 "Bias in peer review."; 
+    
+    + Leahey, 2007 "Not by productivity alone: how visibility and specialization contribute to academic earnings."; 
+    
+    + Ceci & Williams, 2011 "Understanding current causes of women's underrepresentation in science."; 
+    
+    + Donaldson, 2010 "Injecting youth into peer-review to ensure its sustainability: a case study of ecology journals."
+    
+***
+2. "To Name or Not to Name: The Effect of Changing Author Gender on Peer Review" Borsuk, et al., 2009
+
+***
++ Background: Peer review requires unpaid participation & assessment could be based on something other than scientific merit at any point (e.g., more senior reviewers are more critical, the number of authors, gender or nationality can influence merit). used a single research paper with varying names (M, F, initials) across a variety of reviewer types (undergrad, grad, pd, faculty) to ask if gender and/or seniority altered recommendation to accept
+
++ Method: used a previously published study formatted a manuscript changing only author names. Distributed to undergrads in 4 biology classes, posted online, provided to grad students/pd's 
+
++ Results: 1031 respondants (faculty = 2) author gender had no effect on acceptance rates. PD/grad most likely to reject. F rated lower than M
+
++ Follow up: 
+
+  + Kliewer et al, 2004 "Peer reviewat theAmerican Journal ofRoentgenology:Howreviewer and manuscript characteristics affected editorial decisions on 196 major papers."
+  
+  + Kliewer et al, 2005 "Reviewing the reviewers: Comparison of review quality and reviewer characteristics at the American Journal of Roentgenology. American"
+
+  + Nylenna et al, 1994 "Multiple blinded reviews of the same two manuscripts: Effects of referee characteristics and publication language."
+
+**- R4DS Ch. 21**
+
+For loops have 3 components:
+    
+  + output: speeds up the for loop by creating space for the output before the loop is started. Often done w. vector() function, which has two arguments: the type of vector (e.g., logical, integer, double, etc) & length, which I don't fully understand??
+   
+  + sequence: determines what to loop over, use the seq_along() function to avoid trouble with zero-length vectors
+   
+  + body: the code doing the work that is run repeatedly 
+    
+```{r, eval=FALSE}
+output <- vector("double", ncol(df))  # 1. output
+for (i in seq_along(df)) {            # 2. sequence
+  output[[i]] <- median(df[[i]])      # 3. body
+}
+```
+
+For loop variations:
+    
+  + Modifying an existing object (instead of creating a new one) - simply call the input as the output, suggests using [[]] instead of [] to make it clear to work with a single element
+    
+  + Looping over names or values (instead of indices) - three ways to loop over a vector. The first is over the numeric indices (seq_along()), the second is over elements (x in xs), which is most useful for "side-effects" (e.g., plotting or saving a file) b/c saving the output is difficult. The third is to loop over the names (nm in names(xs)), which gives name that you can use to access the value with x[[nm]]. Useful if you want to use the name in a plot title or file name. A named output requires you t o name the results vector. Iteration over numeric indicies is most general b/c you can extract both the name and the value:
+```{r, eval=FALSE}
+for (i in seq_along(x)) {
+  name <- names(x)[[i]]
+  value <- x[[i]]
+}
+```
+
+  + Handling outputs of unknown length - save the results in a "list", then combine into a single vector after completion of the loop. Can use unlist() to parse a list of vectors into a single vector. For a long string, save the output in a character vector then combine into a single string with paste(output, collapse = " "). For a big dataframe, save the output in a list then use dplyr::bind_rows(output) to combine into a single dataframe
+   
+  + Handling sequences of unknown length - A while loop is a for loop that you can set to work until a certain condition is met, typically used for simulations. It is more general than a for loop and has only two componenets: a conditions & a body. 
+
+For loops vs functionals:
+
+  + R is a functional programming language, i.e., you can write a for loop into a function and call the function instead of the for loop. This is helpful because you can write the function to become more generalizeable, which means less overall code. Find the pattern, then write the variable as an arguement for the function. 
+  
+  + The purrr package provides functions to eliminate many common for loops. This allows you to break common list manipulation challenges into independent pieces: 1) solve the problem for a single element of the list 2) break a complex problem into smaller steps
+  
+The map functions:
+
+  + the pattern of looping over a vector, doing something to each element & saving the results - one function for each type of output
+  
+  + simplicity of function keeps attention on the operation being performed, not the "bookkeeping" of the for loop. 
+  
+  + you can extract elements by name or position
+  
+  + lapply() identical to map() except that map() allows for shortcuts like above, sapply() is a wrapper around lapply(), vapply is also an lapply wrapper, but you supply extra arguements - advantage is that it can produce matrices
+  
+Failure:
+
+  + when an operation fails, it will often cause the entire map to error. Use safely(), which is similar to try() but returns a modified version of the function in a list with two elements: 1) "result" - NULL if failed 2) "error" - NULL if successful
+  
+  + use purrr::transpose() to generate two lists (result & error) of all objects vs two lists for each object
+  
+  + possibly() always succeeds b/c you supply a default value to return in case of an error
+  
+  + quietly() is similar to safely() but captures printed output, messages & warnings instead of errors
+  
+Mapping over multiple arguments: 
+
+  + map2() & pmap() allow you to use a function that calls two (or more in a list) vectors to iterate over simultaneously
+  
+Invoking different functions:
+
+ + in addition to varying the arguements for a function, you can vary the function using invoke_map()
+ 
+ + the first arguement is a list of functions, the second is list of lists giving the arguements that vary for each function
+ 
+ + can also supply in a tribble
+ 
+Walk:
+
+  + an alternate to map that you call b/c you want the side effects (e.g., save file) vs the return value
+  
+  + walk(), walk2() & pwalk() - use pwalk() for a list of plots and a vector of file names to save each file to the corresponding location 
+  
+```{r, eval=FALSE}
+library(ggplot2)
+plots <- mtcars %>% 
+  split(.$cyl) %>% 
+  map(~ggplot(., aes(mpg, wt)) + geom_point())
+paths <- stringr::str_c(names(plots), ".pdf")
+
+pwalk(list(paths, plots), ggsave, path = tempdir())
+```
+
+Predicate functions:
+
+  + some functions work with predicate functions that return either a single TRUE or FALSE, keep() & discard() keep elements of the input where the predicate is TRUE or FALSE, respectively.
+  
+  + some() & every() determine if the predicate is true for any or all of the elements - returns TRUE/FALSE
+  
+  + detect() finds the first element where the predicate is true; detect_index() returns its position
+  
+  + reduce() takes a binary function (i.e., function w. two primary inputs) & applies it repeatedly to a list until there is only a single element left.
+  
+  + accumulate() is similar but keeps all of the interium results
+  
+  + 
+**- Meet w. Zack**
+
+#2018/02/13
+
+**- Home with Dax, still not well enough for daycare**
+
+**- Lit Review**
+
+1. "Gender bias in scholarly peer review" Helmer et al., 2017
+
+***
+
++ Background: Important role of peer review to improve research paper quality. Relies on "self-regulated interactions" re: editors assignment of reviewers. Since peer reviewer & editor info is generally confidential info, previous studies have had small data sets & given partly contradictory reports. Frontiers journals differ in disclosing identites with each published journal to increase transparency. Pulled reviewer, author, and editor data from 41,000+ papers published between 2007 & 2015 for analysis.
+
++ Results: Used directed networks to verify active/mature research network. Women were 37% of authors, 28% of reviewers and 26% of editors. Global trend toward gender parity, differences between fields (PH is most likely to have parity). To test whether lower fractions of F contributers was a reflection of available authors by maintaining gender proportions but randomizing gender assignment & concluded that the smaller number of F "actors" doens't explain the unbalanced proprtions of F contributors. Looked at differences over the entire distributions & found that some individuals provide a large number of contrbutions whereas most provide a small number. Marked gender homophily bias for M & F editors. 73% M reviewers by M editors, 33% F reviewers by F editors. "inbreeding homophily" is widespread among male editors
+
++ Discussion: Women are underrepresented in science with a very slow trend toward parity. Women contribute less than expected.  Increasing the # of invitations to F reviewers would have a direct & proportional effect. Previous studies were mono-discipline & report 9 to 38 to 54% F editors (supplementary 2). Frontiers 6% (robotics), to 37% (Neurosci). F reviewers in lit 16% to 48% vs Frontiers 11% to 48%. Comparison of women's underrep in AGU (Lerback & Hanson, 2017 is questionable b/c reviewers in lower age groups are rarely invited by editors. F reviewers more likely to accept F-authored papers (Lloyd, 1990) vs equal liklihood to reject ( Borsuk, 2009). Differences in gender attachment strategies; W have small homogenous groups & M in larger, more herogenous groups. Strongly homophilic W editors "femocrats" that help push top-down solutions for so long as they are present **"The goal should be to motivate all scientific actors to "integrate thinking about gender discrimination in every decisional process" (translated from Woodward, 2008"** 
+
++ Follow up: 
+    - Lloyd,"Gender factors in reviewer recommendations for manuscript publication"  1990; 
+    - Budden, "Double blind review..." 2008; 
+    - Borsuk, "To name or not to name: the effect of changing author gender on peer review" 2009; 
+    - Knobloch-Westerwick, "The Matilida effect in science communciation..." 2013; 
+    - Lariviere, et al., "Bibliometrics: Global gender disparities in science" 2013; 
+    - Buckley, 2014; New Zealand Journal of Ecology paper
+    - Demarest, "The reviewer in the mirror: examining gendered and ethnicized notions of reciprocity in peer review" 2014; 
+    - Handley, "An examination of gender differences in the American Fisheries Society peer-review proces" 2015b; 
+    - Fox, "Editor & reviewer gender influence the peer review process but not peer review outcomes at an ecology journal" 2016; 
+    - Cole & Zuckerman, "THe productivity puzzle: persistence & change in patterns of publication of men & women scientists" 1984; 
+    - Zuckerman, "The careers of men & women scientists: A review of current research" 1991; 
+    - Long & Fox, "Scientific Careers: Universalism & particularism" 1995; 
+    - Xie & Shauman, "Sex differences in resarch productivity: new evidence about an old puzzle" 1998; 
+    - Pan & Kalinaki, "Mapping gender in the german research arena" 2015; 
+    - Caplar, 2016 "Quantitative evaluation of gender Bias in astronomical publications from citation counts"
+
+#2018/02/12
+
+**- Dax was sick, rescheduled workshops for next week**

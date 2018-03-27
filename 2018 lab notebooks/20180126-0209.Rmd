@@ -1,12 +1,12 @@
 ---
-title: "Lab Notebook"
+title: "Lab Notebook Jan 26 - Feb 9, 2018"
 output: html_notebook
 ---
 #Goals for Feb 5 - 9
 
-- Lit review - 6 papers: III
+- ~~Lit review - 5/6 papers~~
 
-- Lab meeting
+- ~~Lab meeting~~
 
 - finish analyzing data & write/send Mike/mSphere memo
 
@@ -16,15 +16,46 @@ output: html_notebook
 
 - ~~scrape citations~~
  
+#2018/02/09
+
+**- Transfer stats**
+
+Figured out how to plot the data nicely, but got stuck trying to use a for loop and ggplot together. Kaitlin gave me a work around that I'll try to use later. I also tried to bind datasets together with a for loop, but again ran into trouble. Decided to read through R4DS Ch.21 on Iterations to learn more about loops. I really want to finish this "memo" next week...
+
+**- Lit review**
+
+1. "Elite male faculty in the life sciences employ fewer women" Sheltzer & Smith, 2014
+
+***
++ Background: Gender differences in individual's personal aspirations may explain some of leaky pipeline e.g. women rank work-life balance & parenthood-related issues as more important than men do. M post-docs >2x as likely to expect their spouse to make career sacrifices for their benefit. F scientists w. children sig less likely to be hired for tenure-track jobs than those w/out (Opposite phenomenon for men). Career outcomes are affected by post-doc labs & mentors. 
+
++ Results: Collected info on grad students/post-docs/faculty in 39 depts at 24 high ranking US instiutions. Used lab websites/dept directories to assign mentors to trainees. Most prestigious faculty were those funded by HHMI, NAS members, or won a major research award. F: 21% full professors, 29% assist prof, 25% HHMI, 18% NAS, 16% major award. 49% grad, 39% post-doc. Avg - male PI had F 36% post-doc & 47% grad. W PI - 46% PD & 53% grad. Prestigious M faculty had fewer F PD than other M faculty. No diff btwn F faculty. **"Combining faculty of both genders, men were about 17% more likely to do their graduate training with a member of the NAS, 25% more likely to do their postdoctoral training with a member of the NAS, and 90% more likely to do their postdoctoral training with a Nobel Laureate."** "Feeder labs" are those who produce assist profs. 13% of all profss were NAS, but 58% of feeder labs were NAS members. Feeder labs have 14% fewer F postdocs than non-feeders. 
+
++ Discussion: Data do not show conscious bias. Could also be self-selection "women win competitive fellowships for graduate and postdoctoral training at frequencies that are proportional to their representation among all trainees." "According to the theory of cumulative disadvantage, persistent inequalities in achieve- ment can result from small differences in treatment over a pro- longed goal-oriented process (14). In controlled studies, women in academia receive less favorable evaluations, receive lower salary offers, and are ignored by faculty more frequently than men (15, 20)."
+
++ Follow up: Milkman et al (2013) "Discrimination in the Academ: A field experiment"
+
+***
+2. "Science Faculty's subtle gender biases favor male students" Moss-Racusin et al., 2012
+
+***
++ Background: There's a problem getting women from graduate degree to professorship. Many argue its b/c of life choices, there isn't bias in the sciences. No one has tested it. Bias occurs from repeated exposure to sterotypes, predicted that M/F faculty would both exhibit gender bias. "People who value their objectivity & fairness are particularly likely to fall prey to biases"
+
++ Methods: tested for differences in treatment of lab manager candidate based on gendered name in Re: to: 1) percieved competence, 2) salary offers (which reflect value), 3) willingness to mentor. Nationwide sample of bio/chem/physics professors (n=127) randomly assigned application w. either M or F name. Participants rated compentence, hirability, salary and amount of mentoring they would offer. Participants believed that their feedback would be shared with the student rated.
+
++ Results:  Student gender was significant, faculty gender was not. Faculty viewed F students as less competent, less hireable, offered less mentoring & less starting salary. F & M faculty rated similarly in all areas. F applicant was considered more "likeable"
+
++ Discussion: Study filled gap in examining bias in faculty vs undergrads. While differences in ratings are relatively small, the effect sizes were moderate to large. Moderation studies suggest that implicit biases negatively affect F (but not M) student. Bias was exhibity by both M & F faculty regardless of discipline, age, or tenure status. Selecting faculty who interact with students on a regular basis allows for "ecological validity & generalizability". If the decision to move forward in science is affected by such early career bias, then fixing issues later in the career path won't fully correct gender parity. "Our results point to the importance of establishing objective, transparent student evaluation and admissions criteria to uard against observers tendentcy to unintentionally use different standards when assessing women relative to men"
+
++ Follow up: Stenpries, Anders & Ritzke (1999) "The impact of gender on teh reivew of the CV of job applicants & tenure candidates: A nationl empirical study" Sex Roles 41:509-528
+
 #2018/02/08 
 
-**To do**
+**- Finish prepping slides for lab meeting**
 
-1. finish prepping for lab meeting
+**- Seminar**
 
-1. analyze transfer data & start memo w/o updated citations
-
-1. continue XML parse
+**- Lab meeting**
 
 #2018/02/07
 
@@ -86,11 +117,11 @@ magic_result_as_vector() %>% #collates into vector
 ```
 
 
-**-Work on lab meeting presentation**
+**- Work on lab meeting presentation**
 
 Re-read paper and started slide deck. 
 
-**-Lit review**
+**- Lit review**
 
 1. "Threats to objectivity in peer review: The case of gender" Kaatz et al., 2014
 
@@ -172,13 +203,13 @@ Re-read paper and started slide deck.
 
 #2018/02/05
 
-**-Transfer stats**
+**- Transfer stats**
 
 + Worked more on pulling altmetrics but ran into trouble running a list of dois with a bad doi. I also think I need to get my own altmetrics key so I'm shelving that part of the analysis for now. 
 
 + Need to figure out how to access updated citation data going to manually pull citation data from WoS, but working twoards generating a script to isolate doi numbers from each dataset to do a single pull and generate a single data set of citation data. Then do a left join for each journals dataset. Problem is that everytime I run a for loop, the doi numbers write over themselves instead of adding to the list. 
 
-**-Read Pat's opinion on reproducibility**
+**- Read/comment on Pat's opinion on reproducibility**
 
 #2018/02/02
 
@@ -448,7 +479,7 @@ If available, I pulled data of papers rejected from ASM journals that were publi
   
   + Discussion/conclusion: gender, but not age, of author matters during evaluation; self-selected subjects interested in economics (likely future academics); research conducted at U of Warsaw - 50-60% F PhD candidates/ 20% F full-time professors; subjects approaching age of early career decisions, bias against women suggests women fail to see successful F scholars & may alter decisions accordingly; 
   
-  + Follow up: Albrecht et al. (2013); Ruben et al. (2014); Wenneras and Wold (2001); Tregenza, 2002; Link, 2998; Ceci and Williams (2011);   Moss-Racusin et al. (2012); Williams and Ceci (2015); Paludie and Bauer (1983); Paludi and Strayer (1985); Peck, 1978; Borsuk et al. (2009);  Knobloch-Westerwick et al. (2013)
+  + Follow up: Albrecht et al. (2013); Ruben et al. (2014); Wenneras and Wold (2001); Tregenza, 2002; Link, 1998; Ceci and Williams (2011);   Moss-Racusin et al. (2012); Williams and Ceci (2015); Paludie and Bauer (1983); Paludi and Strayer (1985); Peck, 1978; Borsuk et al. (2009);  Knobloch-Westerwick et al. (2013)
 
 **-Parsed XML file** 
 
