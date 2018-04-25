@@ -24,15 +24,15 @@ assign_version <- function(x, version_meta) {
 
 #parse XML doc & find the root node before running further parsing functions
 get_top <- function(input_XML){
-  xmldoc1 <- xmlParse(input_XML)
-  xmltop <- xmlRoot(xmldoc1)
+  xmldoc1 <- xmlParse(input_XML) #parse
+  xmltop <- xmlRoot(xmldoc1) #find rootnode - enables pulling node text
   return(xmltop)
 }  
 
 #generate a named column from scraped xml data of a single type, use tryCatch to avoid errors for blank XML nodes
-get_column <- function(input_xml, node, newname){
+get_column <- function(input_xml, node, newname){ #input of source file, node relative path, and name for column
   column <- tryCatch(
-    setNames(xmlToDataFrame(nodes = getNodeSet(input_xml, node)), newname),
+    setNames(xmlToDataFrame(nodes = getNodeSet(input_xml, node)), newname), #uses input to retrieve text from all nodes with the relative path & generates a df
     error = function(e) {setNames(as.data.frame("NA"), newname)} #if nothing present, return NA value in a dataframe
   )
 }
@@ -40,8 +40,8 @@ get_column <- function(input_xml, node, newname){
 #get the people involved in the manuscript, assign their roles, identify by manuscript number
 parse_people <- function(input_xmltop){
   
-  #Manuscript identifiers and person data
-  manu_number <- get_column(input_xmltop, "//manuscript-number", "manu.number")
+  #Manuscript identifiers and person data, variable names have _ & column names .
+  manu_number <- get_column(input_xmltop, "//manuscript-number", "manu.number")#use manuscript number as unique identifier
 
   author_id <- get_column(input_xmltop, "//author-person-id", "person.id")
   author_corr <- get_column(input_xmltop, "//is-corr", "author.corres")
@@ -56,17 +56,17 @@ parse_people <- function(input_xmltop){
   person_data <- cbind(data.frame(manu_number %>% head(n=1)), data.frame(t(person_df),row.names=NULL)) #convert into useable dataframe & add manuscript number identifier
   
   #pool person data & demographics by first assigning each individual a "role"
-  role <- c("author", "editor", "senior_editor", "reviewer")
+  role <- c("author", "editor", "senior.editor", "reviewer")
 
   authors <- cbind(data.frame(role[1]), author_id, author_corr, author_seq) %>% #combine author data (id, if corresponding, and sequence), add column to designate role as author
-    rename(role = role.1.) %>% #rename
-    filter(author.seq == "1" | author.corres == "true") #restrict to only first and/or corresponding authors
+    rename(role = role.1.) #%>% #rename
+    #filter(author.seq == "1" | author.corres == "true") #restrict to only first and/or corresponding authors
  
-  editor <- cbind(data.frame(role[2]), person.id = editor_id) %>% rename(role = role.2.) #combine editor data
+  editor <- cbind(data.frame(role[2]), person.id = editor.id) %>% rename(role = role.2.) #combine editor data
 
-  senior_editor <- cbind(data.frame(role[3]), person.id = sen_editor_id) %>% rename(role = role.3.) #combine senior editor data
+  senior_editor <- cbind(data.frame(role[3]), person.id = sen.editor.id) %>% rename(role = role.3.) #combine senior editor data
 
-  reviewers <- cbind(data.frame(role[4]), person.id = reviewer_id) %>% rename(role = role.4.) #combine reviewer data
+  reviewers <- cbind(data.frame(role[4]), person.id = reviewer.id) %>% rename(role = role.4.) #combine reviewer data
 
   #dataframe of people, their roles and demographics
   people <- list(authors, editor, senior_editor, reviewers) %>% 
@@ -89,26 +89,27 @@ parse_manu <- function(input_xmltop){
     sapply(unlist) %>% sapply(function(x) if_else(any(is.null(x)), "NA", x)) #replace null values with "NA" - enables maintenance of a dataframe for later join
   prod_data <- data.frame(doi = prod_df["production-data-doi"], 
                           ready.for.production.date = prod_df["production-data-ready-for-production-date"],
-                          stringsAsFactors = FALSE) #select doi & date
+                          stringsAsFactors = FALSE) #pull doi & production date into df to retain for later join
 
   #Manuscript identifiers and categorical data
-  xmlvers1 <- xmlmanu[[3]] #specify version 1 data
-  manu_df <- xmlSApply(xmlvers1, function(x) xmlSApply(x, xmlValue)) #pull values within node
+  xmlvers1 <- xmlmanu[[3]] #specify version 1 data since it should apply to all others
+  manu_df <- xmlSApply(xmlvers1, function(x) xmlSApply(x, xmlValue)) #pull all values within manuscript node
     manu_data <- data.frame(manuscript.number = manu_df$`manuscript-number`, 
                              category = manu_df$category, 
                           manuscript.type = manu_df$`manuscript-type`,
                           submission.date = manu_df$`submission-date`,
                           is.resubmission = manu_df$is_resubmission,
-                          stringsAsFactors = FALSE) #select relevant columns
+                          stringsAsFactors = FALSE) #select relevant columns & rename
 
-  #version specific information
+  #version specific information - specified the desired information that is possible in all versions
   key <- get_column(input_xmltop, "//key", "key")
   version <- get_column(input_xmltop, "//version-number", "version")
   submitted_date <- get_column(input_xmltop, "//version/submission-date", "submitted.date")
   decision_date <- get_column(input_xmltop, "//version/decision-date", "decision.date")
   decision <- get_column(input_xmltop, "//version/ejp-decision", "EJP.decision")
   related_manu <- get_column(input_xmltop, "//related-manuscript-number-from", "related.manu")
-  number_authors <- xmlToDataFrame(nodes = getNodeSet(input_xmltop, "//author-person-id")) %>% n_distinct()
+  number_authors <- xmlToDataFrame(nodes = getNodeSet(input_xmltop, "//author-person-id")) %>% 
+    n_distinct()#remove duplicated authors (b/c listed more than once if>2 versions)
     
   reviewer_id <- get_column(input_xmltop, "//referee-person-id", "person.id")
   reviewer_recommendation <- get_column(input_xmltop, "//referee-recommendation", "review.recommendation")
@@ -116,7 +117,7 @@ parse_manu <- function(input_xmltop){
   reviewer_return <- get_column(input_xmltop, "//referee-received-date", "review.return")
     
   #join version data
-  version_meta <- cbind(data.frame(manu_data$manuscript.number, stringsAsFactors = FALSE), 
+  version_meta <- cbind(data.frame(manu_data$manuscript.number, stringsAsFactors = FALSE), #use manuscript number as unqiue identifier
                         version, submitted_date, decision_date, decision, related_manu, number_authors, stringsAsFactors = FALSE) %>% 
     mutate(days.to.decision = as.duration(ymd_hms(submitted.date) %--% ymd_hms(decision.date))/ddays(1)) %>%
     rename(manuscript.number = manu_data.manuscript.number,
@@ -127,7 +128,7 @@ parse_manu <- function(input_xmltop){
   manu_meta <- cbind(prod_data,manu_data)
 
   #join referee data
-  review_outcome <- cbind(data.frame(manu_data$manuscript.number, stringsAsFactors = FALSE), 
+  review_outcome <- cbind(data.frame(manu_data$manuscript.number, stringsAsFactors = FALSE), #use manuscript number as common identifier
                           reviewer_id, reviewer_recommendation, reviewer_start, reviewer_return, stringsAsFactors = FALSE) %>% 
     mutate(days.to.review = as.duration(ymd_hms(review.start) %--% ymd_hms(review.return))/ddays(1),
            version.reviewed = assign_version(review.return, version_meta)) %>% 
