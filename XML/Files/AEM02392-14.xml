@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML tags, elements, and DTD Copyright 2014 by eJournalPress a division of Precision Computer Works, Inc. -->
+<xml>
+  <manuscript>
+    <country>United States</country>
+    <production-data>
+      <production-data-color_charge_form-date></production-data-color_charge_form-date>
+      <production-data-copyright-release-date></production-data-copyright-release-date>
+      <production-data-dataset-quantity></production-data-dataset-quantity>
+      <production-data-doi></production-data-doi>
+      <production-data-first-page-number></production-data-first-page-number>
+      <production-data-has-color-figures></production-data-has-color-figures>
+      <production-data-issue-date></production-data-issue-date>
+      <production-data-issue-number></production-data-issue-number>
+      <production-data-last-page-number></production-data-last-page-number>
+      <production-data-online-page_count></production-data-online-page_count>
+      <production-data-online-publication-date></production-data-online-publication-date>
+      <production-data-order-in-issue></production-data-order-in-issue>
+      <production-data-print-page-count></production-data-print-page-count>
+      <production-data-print-publication-date></production-data-print-publication-date>
+      <production-data-proofs_received_from_author-date></production-data-proofs_received_from_author-date>
+      <production-data-proofs_received_from_setter-date></production-data-proofs_received_from_setter-date>
+      <production-data-ready-for-production-date></production-data-ready-for-production-date>
+      <production-data-scheduled-date></production-data-scheduled-date>
+      <production-data-sent-to-publisher-date></production-data-sent-to-publisher-date>
+      <production-data-submission-page-count></production-data-submission-page-count>
+      <production-data-supplemental-material-quantity></production-data-supplemental-material-quantity>
+      <production-data-video-quantity></production-data-video-quantity>
+      <production-data-volume_number></production-data-volume_number>
+    </production-data>
+    <version>
+      <key>81648|0</key>
+      <abstract>Pathogen life cycles in mammalian hosts have been studied extensively, but studies in arthropod vectors represent considerable challenges. In part, this is due to the difficulty of delivering a reproducible dose of bacteria to follow arthropod-associated replication. We have established reproducible techniques to introduce known numbers of Francisella tularensis strain LVS from mice into Dermacentor variabilis nymphs. Using this infection model system, we performed dose-response infection experiments and followed bacterial replication through the molt to adults and at later time points. During development to adults, bacteria replicate to high numbers and can be found associated with the gut tissues, salivary glands and hemolymph of adult ticks. Further, we can transmit a mutant of LVS (LVS&amp;#x2206;purMCD), that cannot replicate in macrophages in vitro or in mice to nymphs. Our data show that LVS&amp;#x2206;purMCD cannot be transstadially transmitted from nymphs to adult ticks. We then show that a plasmid-complemented strain of LVS&amp;#x2206;purMCD is recoverable in adult ticks and necessary for bacterial replication during the molt. In a mixed infection assay (&amp;#x2206;purMCD vs &amp;#x2206;purMCD complement) 98% of the recovered bacteria retain the plasmid marker. These data suggest that the &amp;#x2206;purMCD mutation cannot be rescued by the presence of a complemented strain in a mixed infection. Importantly, our infection model provides a platform to test specific mutants for their replication in ticks, perform competition studies and use other genetic techniques to identify F. tularensis genes that are expressed or required in this unique environment.</abstract>
+      <agree-date></agree-date>
+      <appeal-date></appeal-date>
+      <appeal-status></appeal-status>
+      <author-approval-date>2014-07-21  23:56:05</author-approval-date>
+      <author-funding>
+      </author-funding>
+      <authors>
+        <author>
+          <author-person-id>3467</author-person-id>
+          <author-seq>1</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>276345</author-person-id>
+          <author-seq>2</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>276348</author-person-id>
+          <author-seq>3</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>276352</author-person-id>
+          <author-seq>4</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>186772</author-person-id>
+          <author-seq>5</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>5285</author-person-id>
+          <author-seq>6</author-seq>
+          <is-corr>true</is-corr>
+        </author>
+      </authors>
+      <category>Genetics and Molecular Biology</category>
+      <commissioned>No</commissioned>
+      <commissioned-due-date></commissioned-due-date>
+      <commissioned-next-chase-date></commissioned-next-chase-date>
+      <conflict-of-interest>No</conflict-of-interest>
+      <contributing-author-notification>DWF</contributing-author-notification>
+      <current-stage>Decision Sent to Author</current-stage>
+      <decision>Reject</decision>
+      <decision-date>2014-08-12  18:24:51</decision-date>
+      <dual-publication-text></dual-publication-text>
+      <editors>
+        <editor>
+          <editor-assigned-date>2014-07-22  11:49:19</editor-assigned-date>
+          <editor-decision>Reject</editor-decision>
+          <editor-decision-date>2014-08-12  18:24:45</editor-decision-date>
+          <editor-decision-due-date>2014-08-14  18:11:06</editor-decision-due-date>
+          <editor-person-id>5921</editor-person-id>
+        </editor>
+      </editors>
+      <ejp-decision>Reject</ejp-decision>
+      <emails>
+      </emails>
+      <evaluations></evaluations>
+      <hardcopy-or-electronic>electronic</hardcopy-or-electronic>
+      <history>
+      </history>
+      <institution-type></institution-type>
+      <invite-date></invite-date>
+      <is_resubmission>false</is_resubmission>
+      <issue-date></issue-date>
+      <keywords>
+        <keywords>
+          <sequence>2</sequence>
+          <word>F. tularensis</word>
+        </keywords>
+        <keywords>
+          <sequence>3</sequence>
+          <word>tick infection</word>
+        </keywords>
+        <keywords>
+          <sequence>4</sequence>
+          <word>Dermacentor variabilis</word>
+        </keywords>
+        <keywords>
+          <sequence>5</sequence>
+          <word>Live vaccine strain</word>
+        </keywords>
+      </keywords>
+      <manuscript-funding>
+      </manuscript-funding>
+      <manuscript-notes></manuscript-notes>
+      <manuscript-number>AEM02392-14</manuscript-number>
+      <manuscript-type>Full-length text</manuscript-type>
+      <number-of-pages></number-of-pages>
+      <open-access>No</open-access>
+      <open-access-license-type></open-access-license-type>
+      <partial-ms-next-chase-dt>2014-07-31  17:52:21</partial-ms-next-chase-dt>
+      <payments>
+      </payments>
+      <potential-editors>
+      </potential-editors>
+      <potential-referees>
+        <potential-referee>
+          <potential-referee-first-contact-date>2014-07-22  18:13:30</potential-referee-first-contact-date>
+          <potential-referee-next-contact-date>2014-07-26  18:13:47</potential-referee-next-contact-date>
+          <potential-referee-person-id>19538</potential-referee-person-id>
+          <potential-referee-second-contact-date></potential-referee-second-contact-date>
+          <potential-referee-sequence>1</potential-referee-sequence>
+          <potential-referee-status>Accepted</potential-referee-status>
+          <potential-referee-status-date>2014-07-22  20:46:39</potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+        <potential-referee>
+          <potential-referee-first-contact-date>2014-07-23  18:37:38</potential-referee-first-contact-date>
+          <potential-referee-next-contact-date>2014-07-27  18:37:56</potential-referee-next-contact-date>
+          <potential-referee-person-id>25030</potential-referee-person-id>
+          <potential-referee-second-contact-date></potential-referee-second-contact-date>
+          <potential-referee-sequence>2</potential-referee-sequence>
+          <potential-referee-status>Accepted</potential-referee-status>
+          <potential-referee-status-date>2014-07-24  11:50:16</potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+        <potential-referee>
+          <potential-referee-first-contact-date>2014-07-22  18:13:29</potential-referee-first-contact-date>
+          <potential-referee-next-contact-date>2014-07-26  18:13:45</potential-referee-next-contact-date>
+          <potential-referee-person-id>9675</potential-referee-person-id>
+          <potential-referee-second-contact-date></potential-referee-second-contact-date>
+          <potential-referee-sequence>4</potential-referee-sequence>
+          <potential-referee-status>Declined</potential-referee-status>
+          <potential-referee-status-date>2014-07-23  10:38:08</potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+        <potential-referee>
+          <potential-referee-first-contact-date>2014-07-22  18:13:30</potential-referee-first-contact-date>
+          <potential-referee-next-contact-date>2014-07-26  18:13:46</potential-referee-next-contact-date>
+          <potential-referee-person-id>13813</potential-referee-person-id>
+          <potential-referee-second-contact-date></potential-referee-second-contact-date>
+          <potential-referee-sequence>5</potential-referee-sequence>
+          <potential-referee-status>Declined</potential-referee-status>
+          <potential-referee-status-date>2014-07-23  01:14:15</potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+        <potential-referee>
+          <potential-referee-first-contact-date>2014-07-22  18:13:31</potential-referee-first-contact-date>
+          <potential-referee-next-contact-date>2014-08-02  05:12:00</potential-referee-next-contact-date>
+          <potential-referee-person-id>29369</potential-referee-person-id>
+          <potential-referee-second-contact-date>2014-07-27  05:11:33</potential-referee-second-contact-date>
+          <potential-referee-sequence>5</potential-referee-sequence>
+          <potential-referee-status>No Response</potential-referee-status>
+          <potential-referee-status-date></potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date>2014-07-30  05:12:00</potential-referee-third-contact-date>
+        </potential-referee>
+      </potential-referees>
+      <referees>
+        <referee>
+          <referee-due-date>2014-08-05  20:46:56</referee-due-date>
+          <referee-next-chase-date>2014-08-04  20:46:56</referee-next-chase-date>
+          <referee-person-id>19538</referee-person-id>
+          <referee-rank></referee-rank>
+          <referee-received-date>2014-08-04  13:19:09</referee-received-date>
+          <referee-recommendation>Revise only</referee-recommendation>
+          <referee-sequence>1</referee-sequence>
+          <referee-started-date>2014-07-22  20:46:39</referee-started-date>
+        </referee>
+        <referee>
+          <referee-due-date>2014-08-07  11:50:36</referee-due-date>
+          <referee-next-chase-date>2014-08-06  11:50:36</referee-next-chase-date>
+          <referee-person-id>25030</referee-person-id>
+          <referee-rank></referee-rank>
+          <referee-received-date>2014-08-06  13:02:00</referee-received-date>
+          <referee-recommendation>Reject</referee-recommendation>
+          <referee-sequence>2</referee-sequence>
+          <referee-started-date>2014-07-24  11:50:17</referee-started-date>
+        </referee>
+      </referees>
+      <related-manuscripts>
+        <related-manuscript>
+          <key-to>85065|0</key-to>
+          <related-manuscript-number-to>AEM02917-14</related-manuscript-number-to>
+        </related-manuscript>
+        <related-manuscript>
+          <key-to>85065|1</key-to>
+          <related-manuscript-number-to>AEM02917-14R1</related-manuscript-number-to>
+        </related-manuscript>
+        <related-manuscript>
+          <key-to>85065|2</key-to>
+          <related-manuscript-number-to>AEM02917-14R2</related-manuscript-number-to>
+        </related-manuscript>
+      </related-manuscripts>
+      <revision-due-date></revision-due-date>
+      <revision-next-chase-date></revision-next-chase-date>
+      <running-title>Tick infection model for F. tularensis LVS</running-title>
+      <senior-editors>
+        <senior-editor>
+          <senior-editor-assigned-date>2014-07-18  10:52:22</senior-editor-assigned-date>
+          <senior-editor-person-id>19750</senior-editor-person-id>
+        </senior-editor>
+      </senior-editors>
+      <subject-areas>
+      </subject-areas>
+      <submission-date>2014-07-21  23:56:05</submission-date>
+      <themes>
+      </themes>
+      <title>Characterization of a Reproducible and Quantitative Infection Model of Dermacentor Variabilis with the Live Vaccine Strain of Francisella tularensis</title>
+      <transfers>
+      </transfers>
+      <version-number>0</version-number>
+    </version>
+  </manuscript>
+  <people>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2011-03-23  12:20:43</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Jenifer</first-name>
+      <gender>female</gender>
+      <gender-count>130</gender-count>
+      <gender-probability>0.99</gender-probability>
+      <middle-name></middle-name>
+      <person-id>3467</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2014-09-05  14:20:17</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Dara</first-name>
+      <gender>female</gender>
+      <gender-count>122</gender-count>
+      <gender-probability>0.9</gender-probability>
+      <middle-name>W</middle-name>
+      <person-id>5285</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2017-06-16  12:29:40</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Heidi</first-name>
+      <gender>female</gender>
+      <gender-count>1211</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name></middle-name>
+      <person-id>5921</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2012-01-02  14:12:33</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Colin</first-name>
+      <gender>male</gender>
+      <gender-count>954</gender-count>
+      <gender-probability>0.99</gender-probability>
+      <middle-name></middle-name>
+      <person-id>9675</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>Sweden</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2014-08-12  14:53:07</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Anders</first-name>
+      <gender>male</gender>
+      <gender-count>603</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name>B</middle-name>
+      <person-id>13813</person-id>
+      <title>Prof.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2011-06-27  13:18:02</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Shane</first-name>
+      <gender>male</gender>
+      <gender-count>963</gender-count>
+      <gender-probability>0.91</gender-probability>
+      <middle-name>M</middle-name>
+      <person-id>19538</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>Germany</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2017-08-23  11:13:00</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Harold</first-name>
+      <gender>male</gender>
+      <gender-count>364</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name>L.</middle-name>
+      <person-id>19750</person-id>
+      <title></title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2016-01-19  19:45:08</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Susan</first-name>
+      <gender>female</gender>
+      <gender-count>3203</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name>M</middle-name>
+      <person-id>25030</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2011-04-25  09:22:59</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Jason</first-name>
+      <gender>male</gender>
+      <gender-count>4927</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name>F</middle-name>
+      <person-id>29369</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2013-05-01  22:32:24</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Hiromi</first-name>
+      <gender>female</gender>
+      <gender-count>34</gender-count>
+      <gender-probability>0.97</gender-probability>
+      <middle-name></middle-name>
+      <person-id>186772</person-id>
+      <title></title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2014-07-18  09:54:58</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Tamara</first-name>
+      <gender>female</gender>
+      <gender-count>999</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name></middle-name>
+      <person-id>276345</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2014-07-18  10:03:40</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Monika</first-name>
+      <gender>female</gender>
+      <gender-count>577</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name></middle-name>
+      <person-id>276348</person-id>
+      <title></title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2014-07-18  10:10:10</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Lavinia</first-name>
+      <gender>female</gender>
+      <gender-count>101</gender-count>
+      <gender-probability>0.99</gender-probability>
+      <middle-name></middle-name>
+      <person-id>276352</person-id>
+      <title></title>
+    </person>
+  </people>
+</xml>

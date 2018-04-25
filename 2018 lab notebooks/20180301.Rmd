@@ -6,27 +6,188 @@ output: html_notebook
 
 1. XML parse
     + rewrite code to return NA values if there is no text at a node
-    + how to filter redundant info (e.g., take only one if both home & work address given)
-    + standardize times calculated from `lubridate` 
+    + ~~how to filter redundant info (e.g., take only one if both home & work address given)~~
+    + ~~standardize times calculated from `lubridate`~~ 
     + figure out what to do for editorially rejected papers since there won't be any review outcome data
     + ~~write function to save & parse XML files before running functions instead of parsing w/in each function.~~
-    + figure out how to link reject & resubmit papers to their accepted/published version
+    + figure out how to link reject & resubmit papers to their accepted/published version - waiting for XML files from Pat
 
 1. ASM Transfer articles
-    + Compare citations of editorial rejections from each journal to citations of articles in the journal - esp mBio
+    + ~~Compare citations of editorial rejections from each journal to citations of articles in the journal - esp mBio~~
     + Common keywords in editorial rejections by journal
-    + Which journals are losing the most R&R'd papers
+    + ~~Which journals are losing the most R&R'd papers~~
 
 1. ~~Lit review: 4 papers~~
 
-1. Edits to Bacillus manuscript -> waiting for Phil & Ashu
+1. ~~Edits to Bacillus manuscript~~ -> waiting for Ashu
 
 1. ~~Journal Club Paper~~
 
-1. ASM Staff Meeting - Tuesday @ 2pm
+1. ~~ASM Staff Meeting - Tuesday @ 2pm~~
 
+1. ~~Stats Lab~~
+
+#2018/03/30
+
+**- Bacillus manuscript**
+
+Compiled edits for the Bacillus manuscript, waiting for confirmatory experiments from Ashu
+
+#2018/03/29
+
+**- Lab meeting**
+
+**- ASM Transfer articles**
+
+Set up a source file with common plotting preferences & packaging requirements. 
+
+Examined mBio rejected article more closely:
+```{r}
+#how do citations of mBio published compare to mBio rejected
+mBio_rejected %>% 
+  gather(`Mendeley Saves`:`Citations/Month`, key = Metric, value = Citation.value) %>% #tidy citation data
+  mutate(`Published Publisher` = if_else(is.na(`Published Publisher`) == TRUE, "NA", `Published Publisher`)) %>% #ensure that NA are grouped with "other"
+  mutate(`Published Journal` = fct_lump(`Published Journal`, n = 2)) %>% 
+  ggplot(aes(x = `Published Journal`, y = Citation.value)) +
+    geom_boxplot() + 
+    facet_wrap(~ Metric, scales = "free") +
+  labs(title = "mBio (reject & resubmit) articles are more cited on average than its rejected articles in other journals",
+       x = "Journals publishing rejected mBio articles, faceted by citation metric",
+       y = "Number of citations",
+       caption = paste("`Other` are the least frequently published", published - 2, "journals")) +
+  my_theme
+```
+Also found that Scientific Reports is the number one acceptor of mBio rejections.
+```{r}
+#are there trends for where articles go based on types of rejections? Removed mBio to reduce noise, lumped into 20 categories,  
+# colored by publisher, & faceted by rejection
+mBio_rejected %>% 
+  filter(`Published Journal` != "mbio") %>% #remove those published in mBio
+  mutate(`Published Publisher` = if_else(is.na(`Published Publisher`) == TRUE, "NA", `Published Publisher`)) %>% #ensure that NA are grouped with "other"
+  mutate(`Published Journal` = fct_lump(`Published Journal`, n = 20)) %>% #lump into 19 most published + "other"
+  ggplot(aes(x = `Published Journal`, 
+             fill = if_else(`Published Publisher` == "American Society for Microbiology", rgb(56,146,208, maxColorValue = 255),
+                                                     rgb(227,111,30, maxColorValue=255)))) + #set fill to ASM publisher vs Other
+  geom_bar() +
+  facet_wrap(~`Reject Reason`, scales = "free") + #facet by reject reason
+  labs(title = "Scientific Reports publishes the most editorial & resubmission encouraged articles.
+       PLoS ONE publishes the most rejected following review.", 
+    x = "Journals publishing rejected mBio articles, faceted by rejection type",
+    y = "Number published",
+    caption = paste("`Other` are the least frequently published", published - 19, "journals")) +
+  my_theme +
+  scale_fill_discrete(name="Publisher", #set values/colors for legend
+                      breaks=c(rgb(56,146,208, maxColorValue = 255),
+                               rgb(227,111,30, maxColorValue=255)),
+                      labels=c("ASM", "Other"))
+```
+
+Looked at all rejected articles more closely & especially the Reject & resubmit articles. Found that AEM rejects the most papers overall (~23%), followed by JVI (~17%). mSphere & mSystems are responsible for less than 0.5% of all rejected articles combined. Looking at the rejection reasons, the largest proportion of rejected articles come from AEM & JVI following review (17.6% and 15.1%, respectively).
+```{r}
+all_rejected %>% 
+  filter(`Reject Reason` != "Convert to Short Form") %>% 
+  ggplot(aes(x = `Submitted Journal`))+
+  geom_bar(aes(y = (..count../sum(..count..))))+
+  facet_wrap(~`Reject Reason`)+
+  prop_lab_high + #add total to top of bar
+  labs(title = "The most rejected articles come from AEM & JVI following review",
+       x = "Rejected articles by submitted ASM journal and faceted by reject reason",
+       y = "Proportion of rejected articles") +
+  my_theme +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+Digging into where Reject & resubmit papers are going, IaI accounts for 6.2% of all rejected papers, half those (3.7%) are reject & resubmit decisions, which out of all R&R articles comprise the greatest proportion lost to non-ASM journals (18.1%).
+```{r}
+all_rejected %>% 
+  filter(`Reject Reason` == "Reject & Resubmit") %>% #evaluate only R&R papers
+  mutate(`Published Publisher` = if_else(is.na(`Published Publisher`) == TRUE, "NA", `Published Publisher`)) %>% #ensures that NA values are lumped into "other"
+  mutate(`Published Publisher` = fct_recode(`Published Publisher`, "ASM" = "American Society for Microbiology")) %>% 
+  mutate(`Published Publisher` = fct_lump(`Published Publisher`, n=1)) %>% 
+  ggplot(aes(x = `Published Publisher`, fill = `Published Publisher`))+
+  geom_bar(aes(y = (..count../sum(..count..))))+
+  facet_wrap(~`Submitted Journal`, scales = "free") +
+  prop_lab_low + #add total to top of bar
+  labs(title = "IaI loses the greatest proportion of all R&R articles",
+       x = "Eventual publisher of articles with `Reject & Resubmit` decision, faceted by ASM journal",
+       y = "Proportion of R&R articles") +
+  my_theme
+```
+
+
+#2018/03/28
+
+**- Parse XML**
+Rewrote the `assign_version` function to include a function to convert values to dates and condense the conditions in a `case_when` instead of `ifelse`. This allows me to return `NA` in situtations that there are more than 5 revisions reviewed within a single XML file. Seems unlikely. Might return to rewrite this as a forloop though.
+
+Wrote function `get_top` to parse XML and find the root. This sets up the XML data to be parsed using either `xmlSApply(input_xmltop[[2]], function(x) xmlSApply(x, xmlValue))` or the `get_column` function. The first method is useful for nodes where I need all values from a single node, e.g., People or Production Data. The second option is useful for parsing a single value from either a single location buried deep in the sub-nodes (e.g., ids for assigned reviewers) or multiple values found in multiple locations within the sub-nodes (e.g., decisions from each reviewer).
+```{r, eval=FALSE}
+get_column <- function(input_xml, node, newname){
+  setNames(xmlToDataFrame(nodes = getNodeSet(input_xml, node)), newname)
+}
+
+manu_number <- get_column(input_xmltop, "//manuscript-number", "manu.number")
+```
+Unfortunately, the `xmlSapply` method returns values in lists of named characters so I had to manually bind the data I want from that action into a dataframe instead of converting the entire output into a new dataframe.
+
+Got AEM0357-16 to work with the `xmlSapply` to scrape all `xmlValues` since this joins all address data together (I can parse it later) and leave empty data blank. Noticed that for some reason 2 authors were assigned 2 person ids. 
+
+Having trouble with AEM02150-16 because it was rejected, meaning that there isn't any production data. This means that `cbind(prod_data, manu_meta)` won't work. I need to develop conditions for either dropping dataframes with no values or replacing blank cells with NA values. 
+
+Standardized `time to review` & `time to decision` to units of days using lubridate. Use `%--%` to create an interval, which you can then convert to a duration and divide by desired units. 
+```{r, eval=FALSE}
+days.to.review = as.duration(ymd_hms(review.start) %--% ymd_hms(review.return))/ddays(1)
+```
+
+**- Coursera stats lab**
 
 #2018/03/27
+
+**- Coursera Stats with R**
+
+Numerical values can be continuous or discrete (i.e., decimals possible vs whole numbers only)
+
+Confounding variables - extraneous variables that affect both the explanatory & response variable & make it seem as if there's a relationship
+
+Sampling biases:
+  + Convenience sample - individuals easily accessible
+  + Non-response - if only a non-random fraction respond to a survey such that the randomly selected sample is no longer representative of the population
+  + Voluntary response - occurs when the sample consists of people who volunteer to respond b/c they have a strong opinion
+  
+Sample methods:
+  + Simple random sample - each case is equally likely to be selected
+  + Stratified sample - divide pop into homogenous strata, then randomly sample from within each staratum
+  + Cluster sampling - divide population into heterogeneous clusters, randomly sample a few clusters, then sample all observations within those clusters
+  + Multistage sample - divide into clusters, randomply sample a few clusters, then randomly sample within these clusters.
+  
+Experimental design:
+  1. control - compare treatment of interest to a control group
+  1. randomize - randomly assign subjects to treatments
+  1. replicate - collect a sufficently large sample, or replicate the entire study
+  1. block - block for variables known or suspected to affect the outcome -> group subjects based on variable then randomly sample within each block
+  
+Variables:
+  + explanatory (factors) - conditions we can impose on experimental units
+  + blocking - characteristics that the experimental units come with, that we would like to control for - like stratifying but used during random assignment whereas stratifying is used during random sampling
+  
+Terminology:
+    + placebo - fake treatment, often control group
+    + placebo effect - showing change despite being on placebo
+    + blinding - experimental units don't know what group they're in
+    + double blind - both experimental units & researchers don't know the group assignment
+  
+Random sampling - selecting subject for study, each member is equally likely to be randomly selected - generalizable to population
+
+Random assignment - see difference between sampled subjects so separate based on those differences then randomly assign to treatment groups - allows causal inferences
+
+Both together take care of confounding variables.
+
+Downloaded lab
+
+**- worked on parsing XML files**
+
+Found a shorter way to parse "person data" into a dataframe. Tried applying it to the manuscript & version data but got frustrated. I need to figure out how to call below the first level of an XML root variable.
+
+**- Bugged Phil (in person) for his Bacillus manuscript edits**
 
 **- Catch up on Feedly/Scholarly Kitchen**
 

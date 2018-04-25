@@ -1,0 +1,480 @@
+---
+title: "Lab Notebook: April 2018"
+output: html_notebook
+---
+#Goals: Apr 23 - 27, 2018
+1. ASM blog post - fungi purify heavy metals
+    + first draft
+
+1. ~~Journal Club paper~~ N/A
+
+1. ~~Coursera Stats: Intro Wk5 data analysis project~~
+
+1. XML parse
+    + figure out how to link reject & resubmit papers to their accepted/published version --> what info do I ultimately want?
+
+1. ASM Transfer articles
+    + Ask Melissa about data for monthly reports & departmental meetings
+    + ~~Ask about total numbers of rejections~~ - asked Stacey but might be another week until she can get back to me -  consider investigating Impact Vizor?
+    
+1. _Bacillus_ manuscript
+    + ~~Generate and fix figures~~
+
+#2018/04/24
+
+**- Catch up on Feedly feed**
+
+**- ASM transfers**
+
+Found rejection data by month & journal going back to 2013 in the monthly reports. May just use that depending on what Stacey comes back with.
+
+**- XML parse**
+
+Distiction needs to be made on yesterday's scratch description that it should be the matched `relevant.manu` with the current (revised version) `manuscript.number`, otherwise it's just repeating the same manu number twice. 
+
+Second stab at writing a function to link manuscripts. Tried uniting, but that combines the two columns instead of creating a new one. Attempted `case when` & nested `ifelse` statements but get stuck, in part because I don't know how to distinguish "new" identified manuscript numbers from the input. 
+
+**- Random Stuff**
+
+Finish Rackham Grad Survey & Exit Loan Counseling
+
+#2018/04/23
+
+**- XML parse**
+
+Goal is to create a unique identifier that links ALL relevant manucripts together. NOT doing this could lead to miscounting or misinterpreting the data because a single manuscript will have multiple separate entries. 
+
+Scratching it out on paper: First, if there's a `relevant.manu` number, then search for the matching `manuscript.number`, if it is found, then create the `revised.manu` by `paste(relevant.manu, manuscript.number)` at both entries. If there isn't a `related.manu`, then `paste(manuscript.number)`, in the `revised.manu` column. In some cases, there are more than two separate entries for a manuscript so if a`revised.manu` entry has already been created, then `paste(revised.manu, related.manu)`
+
+Take first stab at writing a function to link manuscripts with a unique identifier (`revised.manu`), which is just all linked manuscript numbers concatenated together. Used `case when` such that when there is a `related.manu`, grepl searches for the matching `manuscript.number` then uses `str_extract` to `paste` both together. Combined with mutate to create a new column. Unfortunately, `str_extract` wasn't returning the sequence for pasting like I thought it was, & I still need a way to put the same identifier at ALL relevant manuscripts.
+
+**- Coursera Stats: Intro**
+
+Looked through dataset for the week 5 data analysis project. It looks really interesting, but since I'm not taking the course for a grade, I'm not going to dedicate the time to analyzing a full non-relevant data set. 
+
+**- _Bacillus_ manuscript**
+
+Generate LAESI figure & alter other figures/tables as needed. Move tables to supplementary. Need Zack to make supplementary figure for wildtype microscopy images.
+
+#Goals: Apr 16 - 19, 2018
+1. ASM blog post - fungi purify heavy metals
+    + ~~find/read reviews~~
+    + ~~outline~~
+    + first draft
+
+1. ~~Journal Club paper~~ - R/tidyverse workshop
+
+1. ~~Coursera Stats: Intro Wk4 video, reading, & lab~~
+
+1. XML parse
+    + figure out how to link reject & resubmit papers to their accepted/published version --> what info do I ultimately want?
+    + ~~test parse functions on new XMLs~~
+
+1. ASM Transfer articles
+    + Ask Melissa about data for monthly reports & departmental meetings
+    + ~~Ask about total numbers of rejections~~ 
+    + ~~Figure out why the counting is acting wierd in mBio data~~
+    + ~~Change citations by submitted journal to non-ASM published articles & put journals next to each other & add actual numbers on Y axis & consider doing log2~~
+    + ~~Top graphic - set number of rejection per journal to 1 - proportion of those lost vs retained so it's all relative~~ 
+    + ~~make it more clear that aticles are only those that get eventually published~~
+
+1. _Bacillus_ manuscript
+    + ~~Bug Ashu~~
+
+#2018/04/19
+
+**- Pat's R workshop**
+
+**- ASM transfer**
+
+Found that there are ~1,300 entries missing from pub_lump_20 as compared to the journ_lump_3 -- there are that many additional entries for mBio "submitted journal" in the `all_cites` dataframe relative to the `all_rejected` but comparing the two doesn't yield any different entries. BUT, I filtered out the articles published in the lump_20. It seems that all_cites has 339 MORE mbio submitted articles than all_rejected. Looks like the problem is fixed if I subset out the duplicated dois & don't gather the citation data. --> FIXED IT!! (by subsetting `ms_cites` on unique dois prior to joining with `all_rejected` to generate `all_cites`, just like I do for `all_cites`)  
+
+**- Finish edits on new ASM blog post**
+
+#2018/04/18
+
+**- Pat's R workshop**
+
+**- Start edits on new ASM blog post**
+
+**- XML parse**
+
+I will need to do this before analyzing the data. There is a chance that manuscripts authored by women are rejected & resubmitted more frequently so I need to ensure that relevant manuscripts are linked together so that they aren't counted multiple times. When I do this I need to use the `Relevant Manuscript` data to link with the `manuscript number` of the relevant manuscript. I'll then probably join those two columns to create a unique MS number (MS1;MS2) and change the version numbers of MS2 to reflect the total versions. -- will I need to use dates as another means to confirm?
+
+**- Email Ashu**
+
+**- ASM blog post**
+
+Read review article.
+
+Write outline & hunt sources.
+
+#2018/04/17
+
+**- ASM Transfer articles**
+
+Set number of rejections per journal to 1 in the top graph so that it shows the relative proportion of articles lost vs retained. Changed descriptive language to make it more clear that the articles are those that were eventually published. Built table with summary data for transfer stats. 
+
+Trying to figure out how to fix the citations by submitted/published journal & publisher for Pat, but am having a really hard time. Closest I've come is to group by submitted journal, then publisher (ASM vs Other), then do a boxplot with log(citation.values+1). But that ignores the fact that not all articles submitted to a journal are published in that journal. So what I need to do is filter submitted journals into `check_if_same == FALSE & Published Publisher == "Other" ` & plot citation values of those articles next to published journals where `Published Publisher == "ASM"` -- both grouped by journal --> **DONE**
+
+Next need to figure out if its possible to reassign the values on the Y-axis...
+
+Debug the mBio data - I think the values are different because the first graph is pulled from `all_rejected` while the second is from `all_cites`. Why would those counts be different though???
+
+#2018/04/16
+
+**- ASM Transfer articles**
+
+- Email Stacey to ask about total numbers of rejections 
+
+**- XML parse**
+
+- Applied filter to limit listed authors to either first or corresponding and added the total number of authors to the manuscript dataframe
+
+- Ran parse functions on all 9 XML files, ran into a problem with non-reviewed b/c there wouldn't be reviewer data to merge. Wrote `tryCatch` within the `get_column` function to return "NA" values, then filter out `person.id`s with an "NA" value.
+```{r, eval=FALSE}
+#generate a named column from scraped xml data of a single type, use tryCatch to avoid errors for blank XML nodes
+get_column <- function(input_xml, node, newname){
+  column <- tryCatch(
+    setNames(xmlToDataFrame(nodes = getNodeSet(input_xml, node)), newname),
+    error = function(e) {setNames(as.data.frame("NA"), newname)} #if nothing present, return NA value in a dataframe
+  )
+}
+```
+
+- How do I link manuscripts that have been rejected to later versions that have been submitted - version keys & manuscript numbers are not identical and authors don't always note that the manuscript is a resubmission. Only strategy I can think of is to link by author list? But if they add an author then that wont work... One potential strategy: if doi == NA, then generate list of author ids and search for list of matching author ids associated with single manuscript number. If the rejected decision date is _before_ the submission date, then match?? Another option, title/keyword similarites? in the practice case, the running titles are identical despite differences in full title, so... if doi == NA, then.. Oh, nevermind, there is a field for "related manuscripts" that includes the manuscript number of a previous version. 
+
+- Still need to figure out how/when to link them, but I also need to decide how I want the outcome to look - what info do I ultimately need?
+
+**- Coursera wk 4**
+
+Normal distribution - most things in nature are normally distributed 
+  + unimodal & symmetric w. very strict guidlines about how variably the data are distributed 
+  + many variables are nearly normal, none are exactly normal. 
+  + Follows the 68-95-99.7% rule --> % of values that must fall in the 1st/2nd/3rd standard deviations, respectively 
+  + if a 1:1 relationship btween the data & the theoretical quantiles then the data follow a nearly normal distribution - straight line
+  + Right skew - points bend up & to the left of line
+  + Left skew - Points bend down & to the right of the line
+  + Short tails - (narrower than normal distribution), points follow an S shaped-curve
+  + Long tails - (wider than normal distribution), points start below line, bend to follow & end above it
+
+Standardized (Z) score of an observation is the number of standard deviations it falls above or below the mean 
+  + Z = (observation - mean)/sd 
+  + Z = 0 if Z = mean
+  + unusual observation: |Z| >2
+  + defined for distributions of any shape
+  + can also be used to calculate percentiles (% of observations that fall below a given data point) in a normal distribution
+  + `pnorm` gives percentile given value, mean & sd
+  + `qnorm` gives value given quantile, mean & sd
+  
+Binomial distribution
+  + Bernouilli random variables - when a random individual trial has only two outcomes
+  + the probability of having _k_ successes in _n_ independent Bernouilli trials with probability of success _p_, _(1-p)_ is the probability of power 
+  + P (single scenario): $p^{k}(1-p)^{(n-k)}$
+  + # of scenarios: $\binom{n}{k} = \frac{n!}{k!(n-k!)}$ - `choose(n, k)`
+  + conditions: 
+    1. the trials must be indepdent
+    2. the number of trials, _n_, must be fixed
+    3. each trial outcome must be classified as a success or a failure
+    4. the probability of success, _p_, must be the same for each trial
+  + `dbinome(k, n, p)` - 
+  + expected value (mean) of binomial distribution: $\mu = np$
+  + Std deviation of binomial distribution: $\sigma = \sqrt{np(1-p)}$
+  
+Normal approximation to binomal
+  + given enough iterations, a binomal becomes nearly normal
+  + `sum(dbinom(70:245, 245, .25))` - odds of >= 70 power-users (p=0.25) if 245 friends
+  + **Success-failure rule**: A binomial distribution wiht at least 10 expected successes and 10 expected failures closely follows a normal distribution $np >= 10$; $n(1-p)>=10$
+  + normal approximation to the binomial: if the success-failure condition holds Binomial(n,p) ~ Normal(\mu, \sigma), where $\mu = np$ and $\sigma = \sqrt{np(1-np)}$
+  
+    
+
+#Goals: Apr 9 - 12, 2018
+1. ~~Meet w. Pat - Wed @ 2pm~~
+
+1. Lit review: 4 papers
+
+1. ~~Journal club paper~~
+
+1. ~~Coursera Stats: Intro Wk3 video, reading, & lab~~
+
+1. XML parse
+    + figure out how to link reject & resubmit papers to their accepted/published version
+    + test parse functions on new XMLs
+    + ~~figure out how to s/lapply parse function to >1 XML file~~
+
+1. ASM Transfer articles
+    + ~~prep discussion w. Pat~~
+    + ~~summarizing data & continue populating `Rmarkdown`~~
+
+1. _Bacillus_ manuscript
+    + ~~measure iron levels in ModG~~ - Cancelled
+    + ~~fix Phil's issues with the citations~~
+    
+#2018/04/12 - Thurs
+
+**- Journal Club paper**
+
+**- XML parse**
+
+Got map_df to work with parsing XMLs & figured out how to load a list of all xml files in a folder.
+```{r, eval=FALSE}
+xml_list <- c("Files/AEM02150-16.xml", "Files/AEM03057-16.xml", "Files/AEM00003-14.xml")
+xml_top_list <- lapply(xml_list, get_top) #parse & find top root of all xml files in list
+all_people <- map_df(xml_top_list, parse_people) %>% View() #loop through with parse_people function & map to df
+
+setwd("~/GitHub/Notebook/XML/Files")#set working directory to where the files are held
+all_xml_list <- list.files(pattern="*.xml") #generate list of all xml files
+xml_top_list <- lapply(all_xml_list, get_top) #read in & find top root of all files - proceed as needed
+```
+
+**- ASM blog post**
+
+Read about mycology & bioremediation.
+
+#2018/04/11
+
+**- Met with Pat**
+
+Note: send Pat what I have so far re: XML parsing 
+
+Suggestions for the memo: 
+    + Ask Melissa about data for monthly reports & departmental meetings
+    + Ask about total numbers of rejections 
+    + Figure out why the counting is acting wierd in mBio data
+    + Change citations by submitted journal to non-ASM published articles & put journals next to each other & add actual numbers on Y axis & consider doing log2
+    + Top graphic - set number of rejection per journal to 1 - proportion of those lost vs retained so it's all relative 
+    + make it more clear that aticles are only those that get eventually published
+
+**- Coursera**
+
+Posterier probability - the probability of a hypothesis given the data we just observed P(hypothesis|data) - depends on both the prior probability set & the observed data - P(data|hypothesis) is the p-value
+
+Bayesian approach updates the prior probability as data is gathered. Avoids the counter-intuitive p-value. The prior matters less the more data you have. 
+
+Finish week 3 videos & lab
+
+**- _Bacillus_ manuscript**
+
+Fixed citation issues.
+
+**- ASM blog post**
+
+Found reviews for fungi & heavy metals
+
+**- Spring Strategic Planning**
+
+Generate & populate `Rmarkdown` for April - June 2018
+
+#2018/04/10
+
+**- ASM transfers**
+
+Finished summarizing current data for the Rmarkdown & prepping for the the meeting with Pat
+
+**- Experiment to measure iron levels in ModG**
+
+#2018/04/09
+
+**- ASM Transfer articles**
+
+Worked on populating the rMarkdown in preparation for the meeting w. Pat on Wednesday. I made it through summaries of all rejected and all transferred articles. Started to look at citations and need to add mBio specific info (since it is the #1 source of transfers). Should also probably include the other journals with higher rejection numbers than mBio.
+
+**- Coursera Stats: Intro Wk3**
+ 
+Probability - P(A) - There are several interpretations but almost all agree that 0 <= P(A) <= 1.
+
+Frequentist - P(A) is the proportion of times the outcome would occur if the random process were observed an infinite number of times.
+
+Bayesian - A Bayesian interprets probability as a subjective degree of belief. Largely popularized by computational advances. Allows prior information to be integrated into the frame work.
+
+Law of large numbers - with more observations the proportion of occurences with a particular outcome converges to the probability of that outcome
+
+Disjoint events - can not happen a the same time (mutually exclusive)
+
+Non-disjoint events - can occur at the same time
+
+Union of disjoint events - probability of Either 1 event OR a 2nd => addition of probabilities P(A) + P(B)
+
+Union of nondisjoint events - probability of either of 2 events which have overlap => addition minus the area of overlap to avoid double counting P(A) + P(B) - P(A and B)
+
+Sample space - a collection of all possible outcomes of a trial
+
+Probability distribution - lists all possible outcomes with the probability that each will occur & have three broad rules
+  1. the events listed must be disjoint
+  2. each probaility must be between 0 & 1
+  3. the probablities must equal 1
+
+Complementary events - two mutually exclusive events whose probabilities add up to 1.
+
+Independence - two processes are independent if knowing the outcome of one event does not provide useful info for the outcome of the other
+
+Product rule for independent events - P(A & B) = P(A) x P(B)
+
+Conditional probability - Bayes theorem: P(A|B) = P(A & B)/P(B)
+
+General product rule (aren't indepdendent or you can't tell): P(A & B) = P(A|B) x P(B)
+
+If P(A|B) = P(A) then the events are independent b/c giving B doesn't inform A
+
+
+#Goals: Apr 2 - 5, 2018
+1. XML parse
+    + ~~develop conditions for either dropping dataframes with no values or replacing blank cells with NA values (e.g, rewrite code to return NA values if there is no text at a node or what to do for editorially rejected papers since there won't be any review outcome data)~~
+    + figure out how to link reject & resubmit papers to their accepted/published version - waiting for XML files from Pat
+
+1. ASM Transfer articles
+    + Identify common keywords in editorial rejections by journal
+    + ~~Use newly learned summarise/group_by tools to generate key pieces of data~~
+    + ~~Work on a summarizing report (meet w. Pat next week)~~
+
+1. ~~Lit review: 4 papers~~
+
+1. ~~Edits to Bacillus manuscript~~
+
+1. ~~Figure out code review~~ - Pat take over
+
+1. ~~Coursera Stats: Intro Wk2 Video & Lab~~
+
+
+#2018/04/06
+
+**- Dexter Middle School activity**
+
+#2018/04/05
+
+**- Lab meeting**
+
+**- ASM Transfer articles**
+
+Work on generating summary stats for ASM rejected articles and populating the `Rmarkdown` memo.
+
+**- Finish editing ASM blog post**
+
+#2018/04/04
+
+**- Lit Review x2**
+
+**- Edit new ASM blog post**
+
+**- XML Parse**
+
+Figured out how to replace "null" values in the xml parse with NA so that the dataframe is perserved for cbind/merging later. Should be able to adapt it for missing review outcomes, but I won't know how to approach that until I get an XML with that problem.
+
+#2018/04/03
+
+**- Lit review x2**
+
+**- Edits to Bacillus manuscript**
+
+Made text edits, need to rework figures, generate a supplemental figure for the imaging of WT cells, and test both the presence of iron and 3,4-DHB in ModG (Yael?).
+
+Also need to bug Ashu about LAESI data.
+
+**- Coursera Intro to Stats Lab**
+
+Obtain numerical summaries using `summarize()`, in which you can name (`mean_xy = `) and then call summary functions (e.g., `mean`, `sd`, `median`, `var`, `IQR`, `range`, `min`, `max`) 
+
+**- Lab maintenance**
+
+Finish general lab safety training, take form to Bonnie
+
+#2018/04/02
+
+**- Lab "maintenance"**
+
+Got Postdoc ID, dry ice training, started general lab safety training
+
+**- Intro Stats course**
+
+Read Ch. 1, watch videos for week 2:
+
+Visualizing numerical data - x = explanatory, y = response -- indicates correlation, not causation. Placing the variables as such doesn't guarantee the relationship. 
+
+Evaluating the relationship: examine the direction (increasing/decreasing), shape (linear vs not), strength (strong vs weak) & outliers
+
+Histogram - view of data density, useful for describing the shape of the distribution
+
+Distribution shapes: symmetrical vs asymmetrical (right vs left skew - always to side of long tail); modality - (uni, bi, multi, uniform) - bin width can alter the story
+
+Dotplot - especially useful when individual values are interesting
+
+Boxplot - useful for highlighting outliers, median, IQR
+
+Intensity map - useful for highlighting spatial distribution
+
+Measures of center include: mean - artimetic average, median - midpoint of distribution (single number of avg of two), mode - most frequent observation --> sample stats are point estimate of population parameters
+
+Skew of the data skews the mean towards that side relative to the median e.g., left skew: mean < median; right skew: mean > median
+
+Measures of spread: range (max-min), variance (avg squared deviation from the mean), standard deviation, IQR
+
+Variance - why square the differences? get rid of negatives so that the negatives & positives don't canel each other when added to gether - also increases larger deviations more than smaller so taht they are weighed more heavily.
+
+Standard deviation - roughly the average deviation around the mean & has the same units as the data
+
+Variability vs diversity - diversity refer to number of different observations; variability is how that data clusters together
+
+IQR - range of middle 50% of the data (IQR = Q3 - Q1) - more reliable b/d doesn't rely on extremes
+
+Robust statistics - measures on which extreme observations have little effect -- Center: median > mean, Spread: IQR > SD,range. Robust most useful for describing skewed distributions while mean/sd for symmetric
+
+Data transformations - makes some data easier to model - rescaling of the data using a function - better w. skewed data
+
+Natural log - opten applied when muc of the data cluster near zero (relative to larger values in the data set) & all observations are positive
+
+Log - to make the relationship between teh vriables more linear, hence easier to model with simple methods
+
+Others - square root, inverse (1/X)
+
+Goals of transformations - to see the data structure differently, to reduce skew to assist in modeling, to straighten a nonlinear relationship in scatterplot to model with simpler methods 
+
+Categorical variables:
+
+Frequency table & bar plot - diff than histogram b/c categorical & order can be changed
+
+Contingency table - rows vs columns, examine relationships by column or row
+
+Segmented bar plot - useful for visualizing conditional frequency distributions
+
+Mosaic plot - width demonstrates numbers of sample in the category, length demonstrations proportion
+
+Statistical inference: 
+  + start with null hypothesis that represents the status quo (variables are independent)
+  
+  + set an alternative hypothesis that represents the research question (i.e, what we're testing for - variables are dependent)
+  
+  + conduct a hypothesis test under the assumption that the null hypothesis is true, either by simulation or theoretical methods
+  
+  + if test results suggest that the data _do not_ provide convincing evidence for the alternative hypothesis, stick with null hypothesis
+  
+  + p-value - evaluated the probability of observing an outcome at least as extreme as the one observed in the original data
+  
+  + if the probability is low, reject the null hypothesis in favor of the alternative
+  
+**- Read some blogs**
+
+#Lit Review:
+
+**1. "Evaluation of h-index, its variants and extensions based on publication age & citation intensity in civil engineering", Raheel, 2018**
+
+***
+Wu-index appears to be the most well rounded measure, taking into account more than number of publications and citations. Most different indexes have some positive correllation with other indexes. Used the Spearman Rank correlation to compare their indices. 
+
+***
+**2."And now for something completely different: The congruence of the Altmetric Attention Score's structure between different article groups", Mukherjee, 2018**
+
+***
+Aggreggation of individual altmetrics scores (e.g., Twitter, Facebook, Blogs, News) into a single score doesn't work. There isn't co-linearity between many of the scores, and in some cases there are negative correlations. These nuances don't come across in an individualized score in order to make comparisons across papers.
+
+***
+**3. "How does the peer review process influence AANA journal article readability?", Biddle & Aker, 1996**
+
+***
+Evaluated the text of about 60 papers (case reports & research articles) published in AANA for readability using MS word & two different readability scales (Gunning & Flesch). 20 were randomly pulled & analyzed by humans. No sig diff btwn human/computer analysis. On average, papers become more readabile following peer review but are still pretty difficult to read.
+
+***
+**4. "The productivity puzzle: Persistence and change in patterns of publication of men and women scientists", Cole & Zuckerman, 1984**
+
+***
+Took a cohort of scientists who all recieved their PhDs in 1970 - evenly split m:f & matched (both recieved PhD from same department). Examined the number of publications from each scientist following graduation, as well as citations. They found that men publish almost twice as much as women & are more highly cited. The increased citation rate is likely due to the increased amount of scientific output. W are just as likely to publish sole vs collaborative papers as M & have first authorship. Gender, early citations, and early productivity were the greatest determinants of later productivity with greater in-gender variablilty for productivity than between gender. W are more likely to be "discouraged" by lower citation rates in their early career than M. 

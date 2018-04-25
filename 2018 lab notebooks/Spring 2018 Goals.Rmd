@@ -1,0 +1,115 @@
+---
+title: "Spring 2018 Strategic Plan"
+author: "Ada"
+date: "April 11, 2018"
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+---
+
+**Goals:** 
+Specific, Measurable, Attractive, Realistic, Time-framed
+
+
+#Writing/Research Goals
+
+1. Presentation for ASM on rejected articles
+    i) ~~Analyze/plot data~~
+    i) ~~Gather current data~~
+    i) ~~Choose important elements~~
+    i) Rmarkdown memo
+    i) Make presentation
+    i) Practice talk
+2. Parse/sort all ASM XML files
+    i) ~~l/sapply parsing functions to multiple XML files~~
+    i) link data from XML files for relevant manuscripts
+    i) learn to get on Flux
+    i) parse/compile data from 100 XML files
+    i) parse/compile data from all AEM XML files
+3. Complete 2 Coursera courses
+    i) Intro to Probabily & Data
+        A) Week 1 lab & videos
+        B) Week 2 lab & videos
+        C) Week 3 lab & videos
+        D) Week 4 lab & videos
+        E) Week 5 project
+    i) Inferential Statistics
+        A) Week 1 lab & videos
+        B) Week 2 lab & videos
+        C) Week 3 lab & videos
+        D) Week 4 lab & videos
+        E) Week 5 project
+4. Submit BA manuscript
+    i) ~~Fix citation issues~~
+    i) Get LAESI data - Ashu
+    i) Generate/fix/rearrange figures
+    i) Rewrite text as needed - limitations
+    i) Get further co-author comments
+    i) Make final changes
+    i) Double check references
+    i) Submit as preprint
+
+###Looking ahead to next Strategic Plan
+1. Complete 2 Coursera courses
+    i) Linear Regression & Modeling
+    i) Bayesian Statistics
+2. Learn about genderize.io & how to link data
+
+#Personal Goals
+
+1. Yoga 2 - 3x per week: Friday/Sunday/Tuesday
+2. Meal planning: Fridays
+    i) find good recipes
+    i) make shopping lists
+    i) cook/plan what nights
+3. Clean and purge spare room
+    i) vacuum & take out trash
+    i) sort papers on desk
+    i) sort/purge Dax's old clothes & toys
+    i) clean & purge closet
+    i) clean & purge dresser
+    i) dispose of purged items
+    i) clean carpets
+
+#Weekly evaluation
+1) My goals for last week were ____________________________.
+
+2) I did (or did not) meet them.
+
+3) If not, I didn't meet my goals because __________________________.
+
+4) My goals for next week are __________________________________
+
+5) I need help with __________________________________
+
+
+#Strategic Plan
+|Date | Distractions | Writing/Research Goals | Personal/Other Goals|
+|:---:|:-------------------------------|:-------------------------------------------|:------------------------------------|
+|4/2||~~Intro wk2~~|~~yoga x2~~; meal plan; taxes|
+|||||
+|4/9||~~Meet with Pat & fine-tune ASM data goals~~; ~~Fix citation issues~~; ~~Intro wk3~~|~~yoga x2~~; ~~meal plan~~; vaccum & sort Dax's clothes/toys -> move to 4/16|
+|||||
+|4/16||~~Make requested changes &~~ contact Melissa; ~~Intro wk4; Bug Ashu; l/sapply parsing functions to multiple XML files~~|yoga x2; meal plan; vaccum & sort Dax's clothes/toys; take clothes/toys to OUaC|
+|||||
+|4/23|Rackham Graduation (F)|Make requested changes & contact Melissa; Intro wk5; generate/fix MS figures; link data from XML pairs|yoga x2; meal plan; sort papers|
+|||||
+|4/30|Lab meeting presentation(R); Hayley & Zack in town (F)|Analyze/gather/plot ASM data; Inferential wk1; rearrange figures & rewrite text as needed|yoga x2; meal plan|
+|||||
+|5/7||Choose important points for presentation; send MS back to co-authors; Inferential wk2|yoga x2; meal plan; purge/organize closet|
+|||||
+|5/14|Anniversary (T)|finalize Rmarkdown; Inferential wk3; parse/compile 50 XML files|yoga x2; meal plan; chest of drawers?|
+|||||
+|5/21|ASM blog post due (M)|Slides for talk; Inferential wk4; parse/compile 100 XML files|yoga x2; meal plan; dispose of purge|
+|||||
+|5/28|Memorial day (M); Lab meeting presentation (R)|figure out Flux/genderize.io; ASM practice talk; Inferential wk5|yoga x2; meal plan|
+|||||
+|6/4|ASM Microbe (T-S)|ASM presentation|yoga x2; meal plan|
+|||||
+|6/11||make final changes & fix citations; parse/compile AEM XML files; Modeling wk1|yoga x2; meal plan|
+|||||
+|6/18||submit preprint; Modeling wk2; parse/compile JVI XML files|yoga x2; meal plan|
+|||||
+|6/25||parse/compile all XML files; Modeling wk3|yoga x2; meal plan|
+|||||

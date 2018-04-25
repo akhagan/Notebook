@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML tags, elements, and DTD Copyright 2014 by eJournalPress a division of Precision Computer Works, Inc. -->
+<xml>
+  <manuscript>
+    <country>United States</country>
+    <production-data>
+      <production-data-color_charge_form-date></production-data-color_charge_form-date>
+      <production-data-copyright-release-date></production-data-copyright-release-date>
+      <production-data-dataset-quantity></production-data-dataset-quantity>
+      <production-data-doi>10.1128/AEM.02856-14</production-data-doi>
+      <production-data-first-page-number></production-data-first-page-number>
+      <production-data-has-color-figures></production-data-has-color-figures>
+      <production-data-issue-date></production-data-issue-date>
+      <production-data-issue-number></production-data-issue-number>
+      <production-data-last-page-number></production-data-last-page-number>
+      <production-data-online-page_count></production-data-online-page_count>
+      <production-data-online-publication-date></production-data-online-publication-date>
+      <production-data-order-in-issue></production-data-order-in-issue>
+      <production-data-print-page-count></production-data-print-page-count>
+      <production-data-print-publication-date></production-data-print-publication-date>
+      <production-data-proofs_received_from_author-date></production-data-proofs_received_from_author-date>
+      <production-data-proofs_received_from_setter-date></production-data-proofs_received_from_setter-date>
+      <production-data-ready-for-production-date>2014-11-05  12:43:01</production-data-ready-for-production-date>
+      <production-data-scheduled-date></production-data-scheduled-date>
+      <production-data-sent-to-publisher-date></production-data-sent-to-publisher-date>
+      <production-data-submission-page-count></production-data-submission-page-count>
+      <production-data-supplemental-material-quantity></production-data-supplemental-material-quantity>
+      <production-data-video-quantity></production-data-video-quantity>
+      <production-data-volume_number></production-data-volume_number>
+    </production-data>
+    <version>
+      <key>84658|0</key>
+      <abstract>Human Vibrio infections associated with consumption of raw shellfish greatly impact the seafood industry. V. cholerae-related disease is occasionally attributed to seafood, but V. vulnificus and V. parahaemolyticus are the primary targets of post-harvest processing (PHP) efforts in the U.S., as they pose the greatest threat to the industry. Most successful PHPs for Vibrio reduction will also kill the molluscs and are not suitable for the lucrative &amp;quot;half-shell&amp;quot; market, while non-lethal practices are generally less effective. Therefore, novel intervention strategies for Vibrio reduction are needed for live oyster products. Chitosan is a bioactive derivative of chitin that is &amp;quot;Generally Recognized As Safe&amp;quot; as a food additive by the F.D.A., and chitosan microparticles (CM) were investigated herein as a potential PHP for live oyster applications. Treatment of broth cultures with 0.5% CM (w/v) resulted in growth cessation of V. cholerae, V. vulnificus, and V. parahaemolyticus, reducing levels to non-detectable after 3 hours in three independent experiments. Furthermore, similar treatment in artificial seawater at 4, 25, and 37oC reduced V. vulnificus levels by ca. 7 log CFU/ml after 24 hours exposure, but required 48 hours and was less effective at lower temperatures for V. parahaemolyticus and V. cholerae. Live oysters that were either artificially inoculated or contained natural populations of V. vulnificus and V. parahaemolyticus showed significant and consistent reductions following CM treatment (5%) compared to untreated controls. Thus, results strongly support the promising potential for the application of CM as a PHP to reduce Vibrio spp. in intact live oysters.</abstract>
+      <agree-date></agree-date>
+      <appeal-date></appeal-date>
+      <appeal-status></appeal-status>
+      <author-approval-date>2014-09-02  11:51:15</author-approval-date>
+      <author-funding>
+      </author-funding>
+      <authors>
+        <author>
+          <author-person-id>263402</author-person-id>
+          <author-seq>1</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>263409</author-person-id>
+          <author-seq>2</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>266539</author-person-id>
+          <author-seq>3</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>146698</author-person-id>
+          <author-seq>4</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>16152</author-person-id>
+          <author-seq>5</author-seq>
+          <is-corr>true</is-corr>
+        </author>
+      </authors>
+      <category>Food Microbiology</category>
+      <commissioned>No</commissioned>
+      <commissioned-due-date></commissioned-due-date>
+      <commissioned-next-chase-date></commissioned-next-chase-date>
+      <conflict-of-interest>No</conflict-of-interest>
+      <contributing-author-notification>ACW</contributing-author-notification>
+      <current-stage>Revision Received</current-stage>
+      <decision>Modify</decision>
+      <decision-date>2014-10-13  16:04:52</decision-date>
+      <dual-publication-text></dual-publication-text>
+      <editors>
+        <editor>
+          <editor-assigned-date>2014-09-02  13:23:33</editor-assigned-date>
+          <editor-decision>Revise only</editor-decision>
+          <editor-decision-date>2014-10-13  16:04:48</editor-decision-date>
+          <editor-decision-due-date></editor-decision-due-date>
+          <editor-person-id>16095</editor-person-id>
+        </editor>
+      </editors>
+      <ejp-decision>Revise only</ejp-decision>
+      <emails>
+      </emails>
+      <evaluations></evaluations>
+      <hardcopy-or-electronic>electronic</hardcopy-or-electronic>
+      <history>
+      </history>
+      <institution-type></institution-type>
+      <invite-date></invite-date>
+      <is_resubmission>false</is_resubmission>
+      <issue-date></issue-date>
+      <keywords>
+        <keywords>
+          <sequence>2</sequence>
+          <word>Vibrio</word>
+        </keywords>
+        <keywords>
+          <sequence>3</sequence>
+          <word>Chitosan</word>
+        </keywords>
+        <keywords>
+          <sequence>4</sequence>
+          <word>Microparticles</word>
+        </keywords>
+        <keywords>
+          <sequence>5</sequence>
+          <word>Oysters</word>
+        </keywords>
+      </keywords>
+      <manuscript-funding>
+      </manuscript-funding>
+      <manuscript-notes></manuscript-notes>
+      <manuscript-number>AEM02856-14</manuscript-number>
+      <manuscript-type>Full-length text</manuscript-type>
+      <number-of-pages></number-of-pages>
+      <open-access>No</open-access>
+      <open-access-license-type></open-access-license-type>
+      <partial-ms-next-chase-dt>2014-09-10  13:58:18</partial-ms-next-chase-dt>
+      <payments>
+      </payments>
+      <potential-editors>
+      </potential-editors>
+      <potential-referees>
+        <potential-referee>
+          <potential-referee-first-contact-date>2014-09-08  23:37:30</potential-referee-first-contact-date>
+          <potential-referee-next-contact-date>2014-09-19  17:12:13</potential-referee-next-contact-date>
+          <potential-referee-person-id>1376</potential-referee-person-id>
+          <potential-referee-second-contact-date>2014-09-13  05:11:41</potential-referee-second-contact-date>
+          <potential-referee-sequence>1</potential-referee-sequence>
+          <potential-referee-status>No Response</potential-referee-status>
+          <potential-referee-status-date></potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date>2014-09-16  17:12:13</potential-referee-third-contact-date>
+        </potential-referee>
+        <potential-referee>
+          <potential-referee-first-contact-date>2014-09-08  23:38:11</potential-referee-first-contact-date>
+          <potential-referee-next-contact-date>2014-09-16  05:11:45</potential-referee-next-contact-date>
+          <potential-referee-person-id>4198</potential-referee-person-id>
+          <potential-referee-second-contact-date>2014-09-13  05:11:45</potential-referee-second-contact-date>
+          <potential-referee-sequence>2</potential-referee-sequence>
+          <potential-referee-status>Accepted</potential-referee-status>
+          <potential-referee-status-date>2014-09-14  22:25:22</potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+        <potential-referee>
+          <potential-referee-first-contact-date>2014-09-08  23:44:10</potential-referee-first-contact-date>
+          <potential-referee-next-contact-date>2014-09-12  23:44:47</potential-referee-next-contact-date>
+          <potential-referee-person-id>6526</potential-referee-person-id>
+          <potential-referee-second-contact-date></potential-referee-second-contact-date>
+          <potential-referee-sequence>3</potential-referee-sequence>
+          <potential-referee-status>Accepted</potential-referee-status>
+          <potential-referee-status-date>2014-09-09  06:46:09</potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+      </potential-referees>
+      <referees>
+        <referee>
+          <referee-due-date>2014-09-28  22:26:10</referee-due-date>
+          <referee-next-chase-date>2014-09-27  22:26:10</referee-next-chase-date>
+          <referee-person-id>4198</referee-person-id>
+          <referee-rank></referee-rank>
+          <referee-received-date>2014-09-15  11:04:31</referee-received-date>
+          <referee-recommendation>Accept, no revision</referee-recommendation>
+          <referee-sequence>2</referee-sequence>
+          <referee-started-date>2014-09-14  22:25:22</referee-started-date>
+        </referee>
+        <referee>
+          <referee-due-date>2014-09-23  06:46:47</referee-due-date>
+          <referee-next-chase-date>2014-10-11  18:36:29</referee-next-chase-date>
+          <referee-person-id>6526</referee-person-id>
+          <referee-rank></referee-rank>
+          <referee-received-date>2014-10-09  08:22:58</referee-received-date>
+          <referee-recommendation>Revise only</referee-recommendation>
+          <referee-sequence>3</referee-sequence>
+          <referee-started-date>2014-09-09  06:46:09</referee-started-date>
+        </referee>
+      </referees>
+      <related-manuscripts>
+        <related-manuscript>
+          <key-from>76319|0</key-from>
+          <related-manuscript-number-from>AEM01507-14</related-manuscript-number-from>
+        </related-manuscript>
+      </related-manuscripts>
+      <revision-due-date>2014-11-27  15:04:58</revision-due-date>
+      <revision-next-chase-date>2014-11-17  15:04:58</revision-next-chase-date>
+      <running-title>Chitosan microparticles reduce mibrios in oysters</running-title>
+      <senior-editors>
+        <senior-editor>
+          <senior-editor-assigned-date>2014-09-02  13:23:32</senior-editor-assigned-date>
+          <senior-editor-person-id>19750</senior-editor-person-id>
+        </senior-editor>
+      </senior-editors>
+      <subject-areas>
+      </subject-areas>
+      <submission-date>2014-09-02  11:51:15</submission-date>
+      <themes>
+      </themes>
+      <title>Application of Chitosan Microparticles for Reduction of Vibrio Species in Seawater and Live Oysters (Crassostrea virginica)</title>
+      <transfers>
+      </transfers>
+      <version-number>0</version-number>
+    </version>
+    <version>
+      <key>84658|1</key>
+      <abstract>Human &amp;lt;i&amp;gt;Vibrio&amp;lt;/i&amp;gt; infections associated with consumption of raw shellfish greatly impact the seafood industry. &amp;lt;i&amp;gt;V. cholerae&amp;lt;/i&amp;gt;-related disease is occasionally attributed to seafood, but &amp;lt;i&amp;gt;V. vulnificus&amp;lt;/i&amp;gt; and &amp;lt;i&amp;gt;V. parahaemolyticus&amp;lt;/i&amp;gt; are the primary targets of post-harvest processing (PHP) efforts in the U.S., as they pose the greatest threat to the industry. Most successful PHPs for &amp;lt;i&amp;gt;Vibrio&amp;lt;/i&amp;gt; reduction will also kill the molluscs and are not suitable for the lucrative &amp;quot;half-shell&amp;quot; market, while non-lethal practices are generally less effective. Therefore, novel intervention strategies for Vibrio reduction are needed for live oyster products. Chitosan is a bioactive derivative of chitin that is &amp;quot;Generally Recognized As Safe&amp;quot; as a food additive by the F.D.A., and chitosan microparticles (CM) were investigated herein as a potential PHP for live oyster applications. Treatment of broth cultures with 0.5% CM (w/v) resulted in growth cessation of &amp;lt;i&amp;gt;V. cholerae, V. vulnificus&amp;lt;/i&amp;gt;, and &amp;lt;i&amp;gt;V. parahaemolyticus&amp;lt;/i&amp;gt;, reducing levels to non-detectable after 3 hours in three independent experiments. Furthermore, similar treatment in artificial seawater at 4, 25, and 37{degree sign}C reduced &amp;lt;i&amp;gt;V. vulnificus&amp;lt;/i&amp;gt; levels by ca. 7 log CFU/ml after 24 hours exposure, but required 48 hours and was less effective at lower temperatures for &amp;lt;i&amp;gt;V. parahaemolyticus&amp;lt;/i&amp;gt; and &amp;lt;i&amp;gt;V. cholerae&amp;lt;/i&amp;gt;. Live oysters that were either artificially inoculated or contained natural populations of &amp;lt;i&amp;gt;V. vulnificus&amp;lt;/i&amp;gt; and &amp;lt;i&amp;gt;V. parahaemolyticus&amp;lt;/i&amp;gt; showed significant and consistent reductions following CM treatment (5%) compared to untreated controls. Thus, results strongly support the promising potential for the application of CM as a PHP to reduce &amp;lt;i&amp;gt;Vibrio&amp;lt;/i&amp;gt; spp. in intact live oysters.</abstract>
+      <agree-date></agree-date>
+      <appeal-date></appeal-date>
+      <appeal-status></appeal-status>
+      <author-approval-date>2014-10-22  10:32:36</author-approval-date>
+      <author-funding>
+      </author-funding>
+      <authors>
+        <author>
+          <author-person-id>263402</author-person-id>
+          <author-seq>1</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>263409</author-person-id>
+          <author-seq>2</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>266539</author-person-id>
+          <author-seq>3</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>146698</author-person-id>
+          <author-seq>4</author-seq>
+          <is-corr>false</is-corr>
+        </author>
+        <author>
+          <author-person-id>16152</author-person-id>
+          <author-seq>5</author-seq>
+          <is-corr>true</is-corr>
+        </author>
+      </authors>
+      <category>Food Microbiology</category>
+      <commissioned>No</commissioned>
+      <commissioned-due-date></commissioned-due-date>
+      <commissioned-next-chase-date></commissioned-next-chase-date>
+      <conflict-of-interest>No</conflict-of-interest>
+      <contributing-author-notification>ACW</contributing-author-notification>
+      <current-stage>Manuscript Archive</current-stage>
+      <decision>Accept</decision>
+      <decision-date>2014-11-04  19:51:30</decision-date>
+      <dual-publication-text></dual-publication-text>
+      <editors>
+        <editor>
+          <editor-assigned-date>2014-10-22  10:47:03</editor-assigned-date>
+          <editor-decision>Accept, no revision</editor-decision>
+          <editor-decision-date>2014-11-04  19:51:23</editor-decision-date>
+          <editor-decision-due-date></editor-decision-due-date>
+          <editor-person-id>16095</editor-person-id>
+        </editor>
+      </editors>
+      <ejp-decision>Accept, no revision</ejp-decision>
+      <emails>
+      </emails>
+      <evaluations></evaluations>
+      <hardcopy-or-electronic>electronic</hardcopy-or-electronic>
+      <history>
+      </history>
+      <institution-type></institution-type>
+      <invite-date></invite-date>
+      <is_resubmission>false</is_resubmission>
+      <issue-date></issue-date>
+      <keywords>
+        <keywords>
+          <sequence>2</sequence>
+          <word>Vibrio</word>
+        </keywords>
+        <keywords>
+          <sequence>3</sequence>
+          <word>Chitosan</word>
+        </keywords>
+        <keywords>
+          <sequence>4</sequence>
+          <word>Microparticles</word>
+        </keywords>
+        <keywords>
+          <sequence>5</sequence>
+          <word>Oysters</word>
+        </keywords>
+      </keywords>
+      <manuscript-funding>
+      </manuscript-funding>
+      <manuscript-notes></manuscript-notes>
+      <manuscript-number>AEM02856-14R1</manuscript-number>
+      <manuscript-type>Full-length text</manuscript-type>
+      <number-of-pages></number-of-pages>
+      <open-access>No</open-access>
+      <open-access-license-type></open-access-license-type>
+      <partial-ms-next-chase-dt>2014-11-01  10:26:24</partial-ms-next-chase-dt>
+      <payments>
+      </payments>
+      <potential-editors>
+      </potential-editors>
+      <potential-referees>
+        <potential-referee>
+          <potential-referee-first-contact-date></potential-referee-first-contact-date>
+          <potential-referee-next-contact-date></potential-referee-next-contact-date>
+          <potential-referee-person-id>4198</potential-referee-person-id>
+          <potential-referee-second-contact-date></potential-referee-second-contact-date>
+          <potential-referee-sequence>2</potential-referee-sequence>
+          <potential-referee-status>Not Contacted</potential-referee-status>
+          <potential-referee-status-date></potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+        <potential-referee>
+          <potential-referee-first-contact-date></potential-referee-first-contact-date>
+          <potential-referee-next-contact-date></potential-referee-next-contact-date>
+          <potential-referee-person-id>6526</potential-referee-person-id>
+          <potential-referee-second-contact-date></potential-referee-second-contact-date>
+          <potential-referee-sequence>3</potential-referee-sequence>
+          <potential-referee-status>Not Contacted</potential-referee-status>
+          <potential-referee-status-date></potential-referee-status-date>
+          <potential-referee-suggested-to-exclude>no</potential-referee-suggested-to-exclude>
+          <potential-referee-suggested-to-include>no</potential-referee-suggested-to-include>
+          <potential-referee-third-contact-date></potential-referee-third-contact-date>
+        </potential-referee>
+      </potential-referees>
+      <referees>
+      </referees>
+      <related-manuscripts>
+        <related-manuscript>
+          <key-from>76319|0</key-from>
+          <related-manuscript-number-from>AEM01507-14</related-manuscript-number-from>
+        </related-manuscript>
+      </related-manuscripts>
+      <revision-due-date></revision-due-date>
+      <revision-next-chase-date></revision-next-chase-date>
+      <running-title>Chitosan microparticles reduce &amp;lt;i&amp;gt;Vibrios&amp;lt;/i&amp;gt; in oysters</running-title>
+      <senior-editors>
+        <senior-editor>
+          <senior-editor-assigned-date>2014-10-22  10:47:02</senior-editor-assigned-date>
+          <senior-editor-person-id>19750</senior-editor-person-id>
+        </senior-editor>
+      </senior-editors>
+      <subject-areas>
+      </subject-areas>
+      <submission-date>2014-10-22  10:32:36</submission-date>
+      <themes>
+      </themes>
+      <title>Application of Chitosan Microparticles for Reduction of &amp;lt;i&amp;gt;Vibrio&amp;lt;/i&amp;gt; Species in Seawater and Live Oysters (&amp;lt;i&amp;gt;Crassostrea virginica&amp;lt;/i&amp;gt;)</title>
+      <transfers>
+      </transfers>
+      <version-number>1</version-number>
+    </version>
+  </manuscript>
+  <people>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2012-05-24  10:41:42</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Covadonga</first-name>
+      <gender>female</gender>
+      <gender-count>13</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name>R</middle-name>
+      <person-id>1376</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2011-10-24  12:49:24</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Angelo</first-name>
+      <gender>male</gender>
+      <gender-count>539</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name></middle-name>
+      <person-id>4198</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2014-10-01  18:31:33</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Valerie</first-name>
+      <gender>female</gender>
+      <gender-count>889</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name>J</middle-name>
+      <person-id>6526</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2013-04-12  08:32:40</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>K. Eric</first-name>
+      <gender>unknown</gender>
+      <gender-count>n/a</gender-count>
+      <gender-probability>n/a</gender-probability>
+      <middle-name></middle-name>
+      <person-id>16095</person-id>
+      <title>Prof.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2014-05-16  22:49:32</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Anita</first-name>
+      <gender>female</gender>
+      <gender-count>1519</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name>C</middle-name>
+      <person-id>16152</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>Germany</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2017-08-23  11:13:00</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Harold</first-name>
+      <gender>male</gender>
+      <gender-count>364</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name>L.</middle-name>
+      <person-id>19750</person-id>
+      <title></title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2012-10-12  15:44:34</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>KwangCheol</first-name>
+      <gender>unknown</gender>
+      <gender-count>n/a</gender-count>
+      <gender-probability>n/a</gender-probability>
+      <middle-name>Casey</middle-name>
+      <person-id>146698</person-id>
+      <title>Dr.</title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2014-05-16  22:49:34</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Lei</first-name>
+      <gender>female</gender>
+      <gender-count>54</gender-count>
+      <gender-probability>0.5600000000000001</gender-probability>
+      <middle-name></middle-name>
+      <person-id>263402</person-id>
+      <title></title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2014-05-16  22:49:35</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Bernhard</first-name>
+      <gender>male</gender>
+      <gender-count>47</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name></middle-name>
+      <person-id>263409</person-id>
+      <title></title>
+    </person>
+    <person>
+      <addresses>
+        <address>
+          <address-country>United States</address-country>
+          <address-end-date></address-end-date>
+          <address-start-date>2014-06-02  11:27:35</address-start-date>
+          <address-type>Primary Work</address-type>
+        </address>
+      </addresses>
+      <area-of-interest-keyword></area-of-interest-keyword>
+      <first-name>Minyoung</first-name>
+      <gender>female</gender>
+      <gender-count>2</gender-count>
+      <gender-probability>1</gender-probability>
+      <middle-name></middle-name>
+      <person-id>266539</person-id>
+      <title>Ms.</title>
+    </person>
+  </people>
+</xml>
