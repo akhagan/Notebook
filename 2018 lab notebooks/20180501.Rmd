@@ -1,0 +1,45 @@
+---
+title: "Lab Notebook: May 2018"
+output: html_notebook
+---
+#Goals: Apr 30 - May 4, 2018
+1. ASM blog post - fungi purify heavy metals
+    + finish first draft
+
+1. ~~Plan for Code Review~~
+
+1. ~~Coursera Stats: Inferential Stats wk 1~~
+
+1. XML parse
+    + figure out how to link reject & resubmit papers to their accepted/published version --> while loop
+    + ~~figure out genderize.io~~
+    + figure out flux login
+
+1. ASM Transfer articles
+    + waiting for total numbers of rejections from Stacey
+    
+1. _Bacillus_ manuscript
+    + Edit text as needed
+    
+1. Estimated IF
+    + Figure out WoS API
+    
+1. ~~ASM Staff Meeting - Monday @ 2pm~~
+
+#2018/05/01
+
+**- Prepping for Lab Meeting**
+
+Wrote up an Rmarkdown with an explanation and all of the code for Code Review at lab meeting. 
+
+**- Science Editor Seminar**
+
+**- E.M. Blackwell**
+
+Picked up & skimmed through "A Century of Mycology" for references. Didn't find much despite Webster mentioning other female BMS presidents who were _wives_ of other presidents/founding members?
+
+**- XML parsing**
+
+Saved `all_manu` as a csv file and started fresh script to import then work on building function to link manuscripts. I think I have something close. I have a `repeat` wrapping an `if else` with lots of pasting. 
+
+**- Finish editing ASM blog post**

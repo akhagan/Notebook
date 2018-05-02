@@ -2,6 +2,64 @@
 title: "Lab Notebook: April 2018"
 output: html_notebook
 ---
+#Goals: Apr 30 - May 4, 2018
+1. ASM blog post - fungi purify heavy metals
+    + finish first draft
+
+1. Plan for Code Review
+
+1. ~~Coursera Stats: Inferential Stats wk 1~~
+
+1. XML parse
+    + figure out how to link reject & resubmit papers to their accepted/published version --> while loop
+    + ~~figure out genderize.io~~
+    + figure out flux login
+
+1. ASM Transfer articles
+    + waiting for total numbers of rejections from Stacey
+    
+1. _Bacillus_ manuscript
+    + Edit text as needed -- waiting for Zack's supplemental figure
+    
+1. Estimated IF
+    + Figure out WoS API
+    
+1. ASM Staff Meeting - Monday @ 2pm
+
+#2018/04/30
+
+**- ASM blog post edits**
+
+**- ASM staff meeting**
+
+Melissa & Journals update: 2% decline in submissions. Increased demand in open access. Too expensive (changed fee strucutre), too slow (decreased time by 40%), too cumbersome (moving to format neutral), Gold OA - authors retaining copyrights, preprint submissions. Instituted marketing strategies. Starting microbiology resources journal (online only). Partnership with ASV for JVI marketing.
+
+**- XML parse**
+
+Checked out genderize.io - looks like we might need a short-term subscription to get the names gendered (?) or just pick 1000 to verify with locations against those already assigned. Either way, need to separate list of names with linking manuscript numbers and country of work address. I'll also need to be sure to minimize the number searched by linking the manuscripts so that names are only pulled once instead of from mulitple submissions. The country would then need to be converted to [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country codes (e.g., `ISOcodes` package). Also possible to use language codes but since everything is submitted in English, that doesn't make much sense. Responses from the API are in JSON (i think), I'll need to parse response data with the `jsonlite` package. Also, the API can only handle a max of 10 names per request - will need to automate requests after splitting full list according to the daily max. 
+
+Also looked at possiblities to determine ethnicity by name. Some options include `ethnicolr` (which might be a python program?, http://ethnicolr.readthedocs.io/ethnicolr.html#caveats-and-notes); [NamSor Diaspora API](https://www.quora.com/Is-there-software-that-can-determine-gender-and-race-ethnicity-using-name-and-photograph-only), it has a limit of 100 names per month though; [NamePrism](name-prism.com), it has an API that will allow 2000 names at a time but it kinda seems to suck...; [Onolytics](onolytics.com), paid service that uses both first & last names. [A relevant research paper](https://www.tandfonline.com/doi/full/10.1080/2330443X.2018.1427012)
+
+**- Check in with Spring Strategtic Plan**
+
+**- Coursera: Inferential Stats Wk 1**
+
+Sampling variability - the distribution of sample means is less variable than the population, the more samples taken, the less variable each sample mean becomes
+
+Central limit theorem - the distribution of sample statistics is nearly normal, centered at the population mean & with a st dev equal to the population st dev divided by square root of the sample size. (use sample st dev to replace population st dev). 
+  + Conditions:
+      i. Independence - sampled observations must be independent (random sample/ assignment), if sampling w/out replacement n<10% of pop
+      i. Sample size/skew - either the population distribution is normal or if skewed, the sample size is large (n>30)
+
+Confidence Intervals - approximate 95% CI: x +/- 2 SE (Margin of error), increases the liklihood of capturing the "true" population value
+
+CI for population mean - Computed as the sample mean +/- a margin of error (critical value corresponding to the middle XX% of the normal distribution times the SE of the sampling distribution)
+  + Conditions:
+    i) Independence - sampled observations must be independent (random sample/assignment, if sample w/out replacement n<10%)
+    i) Sample size/skew: n>30, larger if pop distribution very skewed
+    
+Confidence levels are chosen, then used to calculate the numbers (vs. being calculated). A 95% CI indicates that 95% of values fall in that range of +/- SEx2 i.e., The higher the confidence level, the larger the critical value, hence the larger the margin of error, and hence the width of the confidence interval. CI's reflect the POPULATION mean & says that 95% of random samples will have CIs that contain the true average 
+
 #Goals: Apr 23 - 27, 2018
 1. ASM blog post - fungi purify heavy metals
     + first draft
@@ -14,11 +72,51 @@ output: html_notebook
     + figure out how to link reject & resubmit papers to their accepted/published version --> what info do I ultimately want?
 
 1. ASM Transfer articles
-    + Ask Melissa about data for monthly reports & departmental meetings
-    + ~~Ask about total numbers of rejections~~ - asked Stacey but might be another week until she can get back to me -  consider investigating Impact Vizor?
+    + ~~Ask Melissa about data for monthly reports & departmental meetings~~
+    + ~~Ask about total numbers of rejections~~ - asked Stacey but might be another week until she can get back to me -  ~~consider investigating Impact Vizor?~~
     
 1. _Bacillus_ manuscript
     + ~~Generate and fix figures~~
+
+#2018/04/26
+
+**- Lab meeting**
+
+**- XML parse**
+
+Read up on `while()` & `repeat()` functions. [One nice description](https://www.r-bloggers.com/a-tutorial-on-loops-in-r-usage-and-alternatives/)
+
+**- Estimated impact factors**
+
+Browsed Web of Science to see if the data needed for the estimated IF. For the 2017 IF we need: the number of *2017 citations* to papers published in 2015-16, which is then divided by the number of citable items published in 2015-2016. It is possible to get that directly from the web, but is difficult. WoS certainly doesn't make it easy. You can "Advanced Search" WoS for all articles in a given year span for a given journal then generate a citation report that gives the total number of citations for all listed articles by year. Downloading an excel report of the search only includes 2015, 2016 & total citations (conveniently not 2017...). Unfortunately(?), the citations counted are only from those indexed within WoS Core Collection. On the other hand, you can do a Cited References Search by journal & year published, but you can only select upto 1000 entries to get the references that cite those articles. That's particularly difficult when wrong/wierd citations can give a single paper multiple entries. 
+
+**- ASM blog post**
+
+Worked on fungi survey intro. Fell down a rabbit-hole looking for info re: E.M. Blackwell, a British mycologist who despite her status (head of botany dept & president of BMS) is barely referenced...
+
+#2018/04/25
+
+**- Estimated impact factors**
+
+Melissa wants estimated impact factors, which involves scraping data from WOS & calculating the 2yr IF. She sent an example report from Phil, their consultant.
+
+Learning about APIs - a nice blog [description of apis](https://tclavelle.github.io/blog/r_and_apis/)
+
+[WoS specific API info](http://ipscience-help.thomsonreuters.com/LAMRService/WebServiceOperationsGroup/requestAPIWoS/descriptionXMLrequest.html)
+
+Video: [Using Web APIs from R](https://www.rstudio.com/resources/videos/using-web-apis-from-r/) - APIs allow access of a program from within another program. Powerful b/c automate data retrieval & on an ongoing basis (unless cached). Lots of packages that wrap APIs, `httr` is a package for making requests yourself. API documentation tells you about the structure and formatting of the requests. Can generate a list of queries to search for. Look at status code to ensure that it worked (want 2XX). `GET(URL)` to retrieve data. `Content()` to convert to text - parse as XML/Json. Write helper function to convert to text, warn if empty, then return as parsed. Paged API - return data in pieces (esp if alot) `next` & `previous` fields give urls to other pages - loop through to retrieve all data. Sometimes you get a null - write function to search for null, but until you find it, do X. **Split into two parts: 1. connects with API, collects, tidies, analyzes data & 2. Deployed to RStudio Connect - scheduled to poll API & update the datastore automatically.**
+
+**- ASM blog post**
+
+Look up references, start writing intro. 
+
+Going to split it into two posts: first, an overview of fungi usefulness and second, an indepth look at ergot poisoning & pharmaceutical uses.
+
+**-XML parse**
+
+Check over functions code for consistency. Might be possible to adapt the `while()` function?
+
+**- Github backup**
 
 #2018/04/24
 
@@ -26,7 +124,7 @@ output: html_notebook
 
 **- ASM transfers**
 
-Found rejection data by month & journal going back to 2013 in the monthly reports. May just use that depending on what Stacey comes back with.
+Found submission data by month & journal going back to 2013 in the monthly reports. May just use that depending on what Stacey comes back with. Impact Vizor seems to only deal with data for published papers.
 
 **- XML parse**
 

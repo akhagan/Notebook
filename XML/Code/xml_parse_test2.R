@@ -51,7 +51,7 @@ size <- xpathSApply(AEM_manu, "//production-data", xmlSize)
 ans <- as.data.frame(fields$V1, stringsAsFactors = FALSE)
 
 #automating 
-xml_list <- c("Files/AEM02392-14.xml", "Files/AEM02917-14.xml")
+xml_list <- c("Files/AEM02917-14.xml")
 
 setwd("~/GitHub/Notebook/XML/Files")
 all_xml_list <- list.files(pattern="*.xml")

@@ -1,0 +1,105 @@
+role,person.id,author.corres,author.seq,manu.number,addresses,area.of.interest.keyword,first.name,gender,gender.count,gender.probability,middle.name,title
+author,159161,true,1,AEM00003-14,China2014-01-02  21:26:26Primary Work,,Zongxin,unknown,n/a,n/a,,Dr.
+author,236274,false,2,AEM00003-14,China2014-01-01  20:33:28Primary Work,,Zailing,unknown,n/a,n/a,,Dr.
+author,236276,false,3,AEM00003-14,China2014-01-01  20:33:37Primary Work,,Xia,female,46,0.98,,Dr.
+author,236268,false,4,AEM00003-14,China2014-01-01  20:27:24Primary Work,,Yueqiu,female,3,1,,Dr.
+author,236269,false,5,AEM00003-14,China2014-01-01  20:27:32Primary Work,,Xiaojuan,female,1,1,,Dr.
+author,236270,false,6,AEM00003-14,China2014-01-01  20:27:39Primary Work,,Yiwen,female,5,0.8,,Dr.
+author,236271,false,7,AEM00003-14,China2014-01-01  20:27:46Primary Work,,Li,female,274,0.66,,Dr.
+author,94826,false,8,AEM00003-14,China2012-02-04  21:30:22Primary Work,,Yuezhu,unknown,n/a,n/a,,Miss
+author,236275,false,9,AEM00003-14,China2014-01-01  20:33:32Primary Work,,Jinbo,unknown,n/a,n/a,,Dr.
+author,34838,false,10,AEM00003-14,China2011-05-23  22:26:37Primary Work,,Charlie,male,1131,0.79,,Prof.
+author,24774,false,11,AEM00003-14,China2011-03-16  11:39:29Primary Work,,Lanjuan,unknown,n/a,n/a,,
+author,236270,false,4,AEM00003-14,China2014-01-01  20:27:39Primary Work,,Yiwen,female,5,0.8,,Dr.
+author,236268,false,5,AEM00003-14,China2014-01-01  20:27:24Primary Work,,Yueqiu,female,3,1,,Dr.
+author,236269,false,6,AEM00003-14,China2014-01-01  20:27:32Primary Work,,Xiaojuan,female,1,1,,Dr.
+editor,25643,NA,NA,AEM00003-14,Canada2011-03-29  08:00:21Primary Work,,Mansel,male,1,1,W.,Dr.
+senior.editor,19750,NA,NA,AEM00003-14,Germany2017-08-23  11:13:00Primary Work,,Harold,male,364,1,L.,
+reviewer,155374,NA,NA,AEM00003-14,United States2015-04-21  09:59:43Primary Work,,Jiangchao,unknown,n/a,n/a,,Dr.
+reviewer,31656,NA,NA,AEM00003-14,Japan2016-09-23  01:23:17Primary Work,,Fumito,male,3,1,,Dr.
+reviewer,215709,NA,NA,AEM00003-14,Japan2013-09-18  00:45:49Primary Work,,Takashi,male,16,1,,
+author,164577,false,1,AEM01118-14,United States2013-01-22  14:40:05Primary Work,,Cresten,unknown,n/a,n/a,,Dr.
+author,164595,false,2,AEM01118-14,United States2013-01-14  18:14:58Primary Work,,Annette,female,639,1,,Dr.
+author,142999,false,3,AEM01118-14,United States2012-09-26  08:53:17Primary Work,,Gretchen,female,198,1,,Dr.
+author,16547,false,4,AEM01118-14,United States2013-09-25  17:57:54Primary Work,,Stephen,male,2608,1,H,
+author,12464,true,5,AEM01118-14,United States of America2010-01-22  16:34:09Primary Work,,Ruth,female,1344,1,E,Prof
+editor,20471,NA,NA,AEM01118-14,United States2016-05-27  17:10:54Primary Work,,Frank,male,1565,1,E.,Prof.
+senior.editor,19750,NA,NA,AEM01118-14,Germany2017-08-23  11:13:00Primary Work,,Harold,male,364,1,L.,
+reviewer,13111,NA,NA,AEM01118-14,Germany2015-05-19  10:35:42Primary Work,,Gary,male,2132,1,,
+reviewer,60674,NA,NA,AEM01118-14,Hong Kong2014-05-27  03:57:48Primary Work,,Patrick,male,2877,1,,
+reviewer,52080,NA,NA,AEM01118-14,United States2012-06-25  17:50:48Primary Work,,Laura,female,7953,1,A,Dr.
+author,263402,false,1,AEM01507-14,United States2014-05-16  22:49:34Primary Work,,Lei,female,54,0.5600000000000001,,
+author,263409,false,2,AEM01507-14,United States2014-05-16  22:49:35Primary Work,,Bernhard,male,47,1,,
+author,266539,false,3,AEM01507-14,United States2014-06-02  11:27:35Primary Work,,Minyoung,female,2,1,,Ms.
+author,146698,false,4,AEM01507-14,United States2012-10-12  15:44:34Primary Work,,KwangCheol,unknown,n/a,n/a,Casey,Dr.
+author,16152,true,5,AEM01507-14,United States2014-05-16  22:49:32Primary Work,,Anita,female,1519,1,C,Dr.
+editor,16095,NA,NA,AEM01507-14,United States2013-04-12  08:32:40Primary Work,,K. Eric,unknown,n/a,n/a,,Prof.
+senior.editor,19750,NA,NA,AEM01507-14,Germany2017-08-23  11:13:00Primary Work,,Harold,male,364,1,L.,
+reviewer,1376,NA,NA,AEM01507-14,United States2012-05-24  10:41:42Primary Work,,Covadonga,female,13,1,R,Dr.
+reviewer,4198,NA,NA,AEM01507-14,United States2011-10-24  12:49:24Primary Work,,Angelo,male,539,1,,Dr.
+reviewer,6526,NA,NA,AEM01507-14,United States2014-10-01  18:31:33Primary Work,,Valerie,female,889,1,J,Dr.
+author,164577,false,1,AEM02130-14,United States2013-01-22  14:40:05Primary Work,,Cresten,unknown,n/a,n/a,,Dr.
+author,164595,false,2,AEM02130-14,United States2013-01-14  18:14:58Primary Work,,Annette,female,639,1,,Dr.
+author,142999,false,3,AEM02130-14,United States2012-09-26  08:53:17Primary Work,,Gretchen,female,198,1,,Dr.
+author,16547,false,4,AEM02130-14,United States2013-09-25  17:57:54Primary Work,,Stephen,male,2608,1,H,
+author,12464,true,5,AEM02130-14,United States of America2010-01-22  16:34:09Primary Work,,Ruth,female,1344,1,E,Prof
+editor,20471,NA,NA,AEM02130-14,United States2016-05-27  17:10:54Primary Work,,Frank,male,1565,1,E.,Prof.
+senior.editor,19750,NA,NA,AEM02130-14,Germany2017-08-23  11:13:00Primary Work,,Harold,male,364,1,L.,
+author,408297,false,1,AEM02150-16,United States2016-07-19  17:27:32Primary Work,,Paris,female,75,0.61,S,Miss
+author,408310,false,2,AEM02150-16,United States2016-07-19  17:27:32Primary Work,,Nicole,female,4042,1,A,Ms.
+author,408311,false,3,AEM02150-16,United States2016-07-19  17:27:32Primary Work,,Diana,female,2885,0.99,E,Dr.
+author,408312,false,4,AEM02150-16,United States2016-07-19  17:27:32Primary Work,,Ernest,male,147,0.99,W,Dr.
+author,408313,false,5,AEM02150-16,United States2016-07-19  17:27:32Primary Work,,Debbie,female,2180,1,C,Ms.
+author,57985,false,6,AEM02150-16,United States2011-08-24  18:21:36Primary Work,,Christopher,male,2339,1,A.,Dr.
+author,17163,false,7,AEM02150-16,United States of America2010-01-22  16:41:40Primary Work,,DAVID,unknown,n/a,n/a,P,Dr
+author,408314,false,8,AEM02150-16,United States2016-07-19  17:27:32Primary Work,,Shiloh,female,7,0.71,,Ms.
+author,11952,true,9,AEM02150-16,United States2013-05-01  17:37:07Primary Work,,Andrea,female,5794,0.79,,Dr.
+editor,17805,NA,NA,AEM02150-16,United States2016-10-19  18:22:23Primary Work,,Patrick,male,2877,1,D.,
+senior.editor,19750,NA,NA,AEM02150-16,Germany2013-01-25  10:35:21Primary Work,,Harold,male,364,1,L.,
+reviewer,142772,NA,NA,AEM02150-16,United States2015-08-26  14:18:43Primary Work,,Jeffrey,male,932,1,M,Dr.
+reviewer,11018,NA,NA,AEM02150-16,2015-10-26  15:11:24Primary Work,,Angela,female,3511,1,M,
+reviewer,303897,NA,NA,AEM02150-16,United States2014-12-11  16:59:36Primary Work,,Virginia,female,775,1,L,Dr.
+author,3467,false,1,AEM02392-14,United States2011-03-23  12:20:43Primary Work,,Jenifer,female,130,0.99,,Dr.
+author,276345,false,2,AEM02392-14,United States2014-07-18  09:54:58Primary Work,,Tamara,female,999,1,,Dr.
+author,276348,false,3,AEM02392-14,United States2014-07-18  10:03:40Primary Work,,Monika,female,577,1,,
+author,276352,false,4,AEM02392-14,United States2014-07-18  10:10:10Primary Work,,Lavinia,female,101,0.99,,
+author,186772,false,5,AEM02392-14,United States2013-05-01  22:32:24Primary Work,,Hiromi,female,34,0.97,,
+author,5285,true,6,AEM02392-14,United States2014-09-05  14:20:17Primary Work,,Dara,female,122,0.9,W,Dr.
+editor,5921,NA,NA,AEM02392-14,United States2017-06-16  12:29:40Primary Work,,Heidi,female,1211,1,,Dr.
+senior.editor,19750,NA,NA,AEM02392-14,Germany2017-08-23  11:13:00Primary Work,,Harold,male,364,1,L.,
+reviewer,19538,NA,NA,AEM02392-14,United States2011-06-27  13:18:02Primary Work,,Shane,male,963,0.91,M,Dr.
+reviewer,25030,NA,NA,AEM02392-14,United States2016-01-19  19:45:08Primary Work,,Susan,female,3203,1,M,Dr.
+author,263402,false,1,AEM02856-14,United States2014-05-16  22:49:34Primary Work,,Lei,female,54,0.5600000000000001,,
+author,263409,false,2,AEM02856-14,United States2014-05-16  22:49:35Primary Work,,Bernhard,male,47,1,,
+author,266539,false,3,AEM02856-14,United States2014-06-02  11:27:35Primary Work,,Minyoung,female,2,1,,Ms.
+author,146698,false,4,AEM02856-14,United States2012-10-12  15:44:34Primary Work,,KwangCheol,unknown,n/a,n/a,Casey,Dr.
+author,16152,true,5,AEM02856-14,United States2014-05-16  22:49:32Primary Work,,Anita,female,1519,1,C,Dr.
+editor,16095,NA,NA,AEM02856-14,United States2013-04-12  08:32:40Primary Work,,K. Eric,unknown,n/a,n/a,,Prof.
+senior.editor,19750,NA,NA,AEM02856-14,Germany2017-08-23  11:13:00Primary Work,,Harold,male,364,1,L.,
+reviewer,4198,NA,NA,AEM02856-14,United States2011-10-24  12:49:24Primary Work,,Angelo,male,539,1,,Dr.
+reviewer,6526,NA,NA,AEM02856-14,United States2014-10-01  18:31:33Primary Work,,Valerie,female,889,1,J,Dr.
+author,3467,false,1,AEM02917-14,United States2011-03-23  12:20:43Primary Work,,Jenifer,female,130,0.99,,Dr.
+author,276345,false,2,AEM02917-14,United States2014-07-18  09:54:58Primary Work,,Tamara,female,999,1,,Dr.
+author,276348,false,3,AEM02917-14,United States2014-07-18  10:03:40Primary Work,,Monika,female,577,1,,
+author,362978,false,4,AEM02917-14,United States2015-10-15  11:55:36Primary Work,,Lavinia,female,101,0.99,J.,
+author,186772,false,5,AEM02917-14,United States2013-05-01  22:32:24Primary Work,,Hiromi,female,34,0.97,,
+author,5285,true,6,AEM02917-14,United States2014-09-05  14:20:17Primary Work,,Dara,female,122,0.9,W,Dr.
+editor,5921,NA,NA,AEM02917-14,United States2017-06-16  12:29:40Primary Work,,Heidi,female,1211,1,,Dr.
+senior.editor,19750,NA,NA,AEM02917-14,Germany2017-08-23  11:13:00Primary Work,,Harold,male,364,1,L.,
+reviewer,25030,NA,NA,AEM02917-14,United States2016-01-19  19:45:08Primary Work,,Susan,female,3203,1,M,Dr.
+reviewer,11588,NA,NA,AEM02917-14,United States2013-03-01  18:04:48Primary Work,,Martin,male,3568,1,S,
+author,408297,false,1,AEM03057-16,United States2016-07-19  17:27:32Primary Work,,Paris,female,75,0.61,S,Miss
+author,408310,false,2,AEM03057-16,United States2016-07-19  17:27:32Primary Work,,Nicole,female,4042,1,A,Ms.
+author,408311,false,3,AEM03057-16,United States2016-07-19  17:27:32Primary Work,,Diana,female,2885,0.99,E,Dr.
+author,408312,false,4,AEM03057-16,United States2016-07-19  17:27:32Primary Work,,Ernest,male,147,0.99,W,Dr.
+author,408313,false,5,AEM03057-16,United States2016-07-19  17:27:32Primary Work,,Debbie,female,2180,1,C,Ms.
+author,57985,false,6,AEM03057-16,United States2011-08-24  18:21:36Primary Work,,Christopher,male,2339,1,A.,Dr.
+author,17163,false,7,AEM03057-16,United States of America2010-01-22  16:41:40Primary Work,,DAVID,unknown,n/a,n/a,P,Dr
+author,408314,false,8,AEM03057-16,United States2016-07-19  17:27:32Primary Work,,Shiloh,female,7,0.71,,Ms.
+author,11952,true,9,AEM03057-16,United States2013-05-01  17:37:07Primary Work,,Andrea,female,5794,0.79,,Dr.
+author,428266,false,2,AEM03057-16,United States2016-12-12  14:03:45Primary Work,,Nicole,female,4042,1,A,Miss
+author,428267,false,4,AEM03057-16,United States2016-12-12  14:03:45Primary Work,,Ernest,male,147,0.99,W,Dr.
+editor,17805,NA,NA,AEM03057-16,United States2016-10-19  18:22:23Primary Work,,Patrick,male,2877,1,D.,
+senior.editor,19750,NA,NA,AEM03057-16,Germany2013-01-25  10:35:21Primary Work,,Harold,male,364,1,L.,
+reviewer,11018,NA,NA,AEM03057-16,2015-10-26  15:11:24Primary Work,,Angela,female,3511,1,M,
+reviewer,423929,NA,NA,AEM03057-16,United States2016-11-09  09:58:44Primary WorkUnited States2016-11-09  09:58:44Primary Home,,Jeremia,male,1,1,,

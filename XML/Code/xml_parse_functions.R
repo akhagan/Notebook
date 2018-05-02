@@ -62,11 +62,11 @@ parse_people <- function(input_xmltop){
     rename(role = role.1.) #%>% #rename
     #filter(author.seq == "1" | author.corres == "true") #restrict to only first and/or corresponding authors
  
-  editor <- cbind(data.frame(role[2]), person.id = editor.id) %>% rename(role = role.2.) #combine editor data
+  editor <- cbind(data.frame(role[2]), person.id = editor_id) %>% rename(role = role.2.) #combine editor data
 
-  senior_editor <- cbind(data.frame(role[3]), person.id = sen.editor.id) %>% rename(role = role.3.) #combine senior editor data
+  senior_editor <- cbind(data.frame(role[3]), person.id = sen_editor_id) %>% rename(role = role.3.) #combine senior editor data
 
-  reviewers <- cbind(data.frame(role[4]), person.id = reviewer.id) %>% rename(role = role.4.) #combine reviewer data
+  reviewers <- cbind(data.frame(role[4]), person.id = reviewer_id) %>% rename(role = role.4.) #combine reviewer data
 
   #dataframe of people, their roles and demographics
   people <- list(authors, editor, senior_editor, reviewers) %>% 

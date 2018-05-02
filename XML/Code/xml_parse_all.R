@@ -14,5 +14,6 @@ all_manu <- map_df(xml_top_list, parse_manu) #parse for manuscript info
 
 #Next steps: link manuscript versions between XML files, pull list of names for genderize.io, run through genderize.io then link back
 
+write_csv(all_people, "Processed_Data/all_people.csv", col_names = TRUE)
 
-
+write_csv(all_manu, "Processed_Data/all_manu.csv", col_names = TRUE)
