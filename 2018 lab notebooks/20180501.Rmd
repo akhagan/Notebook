@@ -11,20 +11,36 @@ output: html_notebook
 1. ~~Coursera Stats: Inferential Stats wk 1~~
 
 1. XML parse
-    + figure out how to link reject & resubmit papers to their accepted/published version --> while loop
+    + figure out how to link reject & resubmit papers to their accepted/published version --> while loop?
     + ~~figure out genderize.io~~
-    + figure out flux login
+    + ~~figure out flux login~~
 
 1. ASM Transfer articles
     + waiting for total numbers of rejections from Stacey
     
 1. _Bacillus_ manuscript
-    + Edit text as needed
+    + ~~Edit text as needed~~
     
 1. Estimated IF
     + Figure out WoS API
     
 1. ~~ASM Staff Meeting - Monday @ 2pm~~
+
+#2018/05/02
+
+**- Bacillus manuscript**
+
+Edited text, wrote importance section, figured out word counts and formatted for submission. 
+
+**-Flux**
+
+Got logged in to flux using the Windows PowerShell ssh client: `ssh akhagan@flux-login.arc-ts.umich.edu` & my level-1 password. Pat has stored all of the XML files in `/nfs/turbo/schloss-lab/gender_data` but I don't have access: `Permission denied`. For future reference there is a [Flux user guide](http://arc-ts.umich.edu/flux-user-guide/), a [helpful Youtube video](https://www.youtube.com/watch?v=D2qmlbCNqi4) & the [handouts](http://cscar.research.umich.edu/event/introduction-to-the-flux-cluster-and-batch-computing-5-3/) from a CSCAR class on intro to Flux. Also remember the notes from the commandline class!
+
+**-XML parsing**
+
+I'm only getting the manu.number back as the revised.manu.number. I think that's because it's been assigned in the beginning & isn't being re-written or the re-writing is being lost b/c of assigning the input_manu to it. So... how do I re-write it such that I don't lose the assignment? Flip it to a while statement? 
+
+I tried bringing `revised.manu.number <- manu_number` below the `if` statement but that didn't work either. 
 
 #2018/05/01
 

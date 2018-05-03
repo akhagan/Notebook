@@ -184,9 +184,9 @@ $(document).ready(function () {
 <li><p><del>Coursera Stats: Inferential Stats wk 1</del></p></li>
 <li>XML parse
 <ul>
-<li>figure out how to link reject &amp; resubmit papers to their accepted/published version –&gt; while loop</li>
+<li>figure out how to link reject &amp; resubmit papers to their accepted/published version –&gt; while loop?</li>
 <li><del>figure out genderize.io</del></li>
-<li>figure out flux login</li>
+<li><del>figure out flux login</del></li>
 </ul></li>
 <li>ASM Transfer articles
 <ul>
@@ -194,7 +194,7 @@ $(document).ready(function () {
 </ul></li>
 <li><em>Bacillus</em> manuscript
 <ul>
-<li>Edit text as needed</li>
+<li><del>Edit text as needed</del></li>
 </ul></li>
 <li>Estimated IF
 <ul>
@@ -204,6 +204,16 @@ $(document).ready(function () {
 </ol>
 </div>
 <div id="section" class="section level1">
+<h1>2018/05/02</h1>
+<p><strong>- Bacillus manuscript</strong></p>
+<p>Edited text, wrote importance section, figured out word counts and formatted for submission.</p>
+<p><strong>-Flux</strong></p>
+<p>Got logged in to flux using the Windows PowerShell ssh client: <code>ssh akhagan@flux-login.arc-ts.umich.edu</code> &amp; my level-1 password. Pat has stored all of the XML files in <code>/nfs/turbo/schloss-lab/gender_data</code> but I don’t have access: <code>Permission denied</code>. For future reference there is a <a href="http://arc-ts.umich.edu/flux-user-guide/">Flux user guide</a>, a <a href="https://www.youtube.com/watch?v=D2qmlbCNqi4">helpful Youtube video</a> &amp; the <a href="http://cscar.research.umich.edu/event/introduction-to-the-flux-cluster-and-batch-computing-5-3/">handouts</a> from a CSCAR class on intro to Flux. Also remember the notes from the commandline class!</p>
+<p><strong>-XML parsing</strong></p>
+<p>I’m only getting the manu.number back as the revised.manu.number. I think that’s because it’s been assigned in the beginning &amp; isn’t being re-written or the re-writing is being lost b/c of assigning the input_manu to it. So… how do I re-write it such that I don’t lose the assignment? Flip it to a while statement?</p>
+<p>I tried bringing <code>revised.manu.number &lt;- manu_number</code> below the <code>if</code> statement but that didn’t work either.</p>
+</div>
+<div id="section-1" class="section level1">
 <h1>2018/05/01</h1>
 <p><strong>- Prepping for Lab Meeting</strong></p>
 <p>Wrote up an Rmarkdown with an explanation and all of the code for Code Review at lab meeting.</p>
@@ -216,7 +226,7 @@ $(document).ready(function () {
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIkxhYiBOb3RlYm9vazogTWF5IDIwMTgiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KI0dvYWxzOiBBcHIgMzAgLSBNYXkgNCwgMjAxOA0KMS4gQVNNIGJsb2cgcG9zdCAtIGZ1bmdpIHB1cmlmeSBoZWF2eSBtZXRhbHMNCiAgICArIGZpbmlzaCBmaXJzdCBkcmFmdA0KDQoxLiB+flBsYW4gZm9yIENvZGUgUmV2aWV3fn4NCg0KMS4gfn5Db3Vyc2VyYSBTdGF0czogSW5mZXJlbnRpYWwgU3RhdHMgd2sgMX5+DQoNCjEuIFhNTCBwYXJzZQ0KICAgICsgZmlndXJlIG91dCBob3cgdG8gbGluayByZWplY3QgJiByZXN1Ym1pdCBwYXBlcnMgdG8gdGhlaXIgYWNjZXB0ZWQvcHVibGlzaGVkIHZlcnNpb24gLS0+IHdoaWxlIGxvb3ANCiAgICArIH5+ZmlndXJlIG91dCBnZW5kZXJpemUuaW9+fg0KICAgICsgZmlndXJlIG91dCBmbHV4IGxvZ2luDQoNCjEuIEFTTSBUcmFuc2ZlciBhcnRpY2xlcw0KICAgICsgd2FpdGluZyBmb3IgdG90YWwgbnVtYmVycyBvZiByZWplY3Rpb25zIGZyb20gU3RhY2V5DQogICAgDQoxLiBfQmFjaWxsdXNfIG1hbnVzY3JpcHQNCiAgICArIEVkaXQgdGV4dCBhcyBuZWVkZWQNCiAgICANCjEuIEVzdGltYXRlZCBJRg0KICAgICsgRmlndXJlIG91dCBXb1MgQVBJDQogICAgDQoxLiB+fkFTTSBTdGFmZiBNZWV0aW5nIC0gTW9uZGF5IEAgMnBtfn4NCg0KIzIwMTgvMDUvMDENCg0KKiotIFByZXBwaW5nIGZvciBMYWIgTWVldGluZyoqDQoNCldyb3RlIHVwIGFuIFJtYXJrZG93biB3aXRoIGFuIGV4cGxhbmF0aW9uIGFuZCBhbGwgb2YgdGhlIGNvZGUgZm9yIENvZGUgUmV2aWV3IGF0IGxhYiBtZWV0aW5nLiANCg0KKiotIFNjaWVuY2UgRWRpdG9yIFNlbWluYXIqKg0KDQoqKi0gRS5NLiBCbGFja3dlbGwqKg0KDQpQaWNrZWQgdXAgJiBza2ltbWVkIHRocm91Z2ggIkEgQ2VudHVyeSBvZiBNeWNvbG9neSIgZm9yIHJlZmVyZW5jZXMuIERpZG4ndCBmaW5kIG11Y2ggZGVzcGl0ZSBXZWJzdGVyIG1lbnRpb25pbmcgb3RoZXIgZmVtYWxlIEJNUyBwcmVzaWRlbnRzIHdobyB3ZXJlIF93aXZlc18gb2Ygb3RoZXIgcHJlc2lkZW50cy9mb3VuZGluZyBtZW1iZXJzPw0KDQoqKi0gWE1MIHBhcnNpbmcqKg0KDQpTYXZlZCBgYWxsX21hbnVgIGFzIGEgY3N2IGZpbGUgYW5kIHN0YXJ0ZWQgZnJlc2ggc2NyaXB0IHRvIGltcG9ydCB0aGVuIHdvcmsgb24gYnVpbGRpbmcgZnVuY3Rpb24gdG8gbGluayBtYW51c2NyaXB0cy4gSSB0aGluayBJIGhhdmUgc29tZXRoaW5nIGNsb3NlLiBJIGhhdmUgYSBgcmVwZWF0YCB3cmFwcGluZyBhbiBgaWYgZWxzZWAgd2l0aCBsb3RzIG9mIHBhc3RpbmcuIA0KDQoqKi0gRmluaXNoIGVkaXRpbmcgQVNNIGJsb2cgcG9zdCoq</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIkxhYiBOb3RlYm9vazogTWF5IDIwMTgiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KI0dvYWxzOiBBcHIgMzAgLSBNYXkgNCwgMjAxOA0KMS4gQVNNIGJsb2cgcG9zdCAtIGZ1bmdpIHB1cmlmeSBoZWF2eSBtZXRhbHMNCiAgICArIGZpbmlzaCBmaXJzdCBkcmFmdA0KDQoxLiB+flBsYW4gZm9yIENvZGUgUmV2aWV3fn4NCg0KMS4gfn5Db3Vyc2VyYSBTdGF0czogSW5mZXJlbnRpYWwgU3RhdHMgd2sgMX5+DQoNCjEuIFhNTCBwYXJzZQ0KICAgICsgZmlndXJlIG91dCBob3cgdG8gbGluayByZWplY3QgJiByZXN1Ym1pdCBwYXBlcnMgdG8gdGhlaXIgYWNjZXB0ZWQvcHVibGlzaGVkIHZlcnNpb24gLS0+IHdoaWxlIGxvb3A/DQogICAgKyB+fmZpZ3VyZSBvdXQgZ2VuZGVyaXplLmlvfn4NCiAgICArIH5+ZmlndXJlIG91dCBmbHV4IGxvZ2lufn4NCg0KMS4gQVNNIFRyYW5zZmVyIGFydGljbGVzDQogICAgKyB3YWl0aW5nIGZvciB0b3RhbCBudW1iZXJzIG9mIHJlamVjdGlvbnMgZnJvbSBTdGFjZXkNCiAgICANCjEuIF9CYWNpbGx1c18gbWFudXNjcmlwdA0KICAgICsgfn5FZGl0IHRleHQgYXMgbmVlZGVkfn4NCiAgICANCjEuIEVzdGltYXRlZCBJRg0KICAgICsgRmlndXJlIG91dCBXb1MgQVBJDQogICAgDQoxLiB+fkFTTSBTdGFmZiBNZWV0aW5nIC0gTW9uZGF5IEAgMnBtfn4NCg0KIzIwMTgvMDUvMDINCg0KKiotIEJhY2lsbHVzIG1hbnVzY3JpcHQqKg0KDQpFZGl0ZWQgdGV4dCwgd3JvdGUgaW1wb3J0YW5jZSBzZWN0aW9uLCBmaWd1cmVkIG91dCB3b3JkIGNvdW50cyBhbmQgZm9ybWF0dGVkIGZvciBzdWJtaXNzaW9uLiANCg0KKiotRmx1eCoqDQoNCkdvdCBsb2dnZWQgaW4gdG8gZmx1eCB1c2luZyB0aGUgV2luZG93cyBQb3dlclNoZWxsIHNzaCBjbGllbnQ6IGBzc2ggYWtoYWdhbkBmbHV4LWxvZ2luLmFyYy10cy51bWljaC5lZHVgICYgbXkgbGV2ZWwtMSBwYXNzd29yZC4gUGF0IGhhcyBzdG9yZWQgYWxsIG9mIHRoZSBYTUwgZmlsZXMgaW4gYC9uZnMvdHVyYm8vc2NobG9zcy1sYWIvZ2VuZGVyX2RhdGFgIGJ1dCBJIGRvbid0IGhhdmUgYWNjZXNzOiBgUGVybWlzc2lvbiBkZW5pZWRgLiBGb3IgZnV0dXJlIHJlZmVyZW5jZSB0aGVyZSBpcyBhIFtGbHV4IHVzZXIgZ3VpZGVdKGh0dHA6Ly9hcmMtdHMudW1pY2guZWR1L2ZsdXgtdXNlci1ndWlkZS8pLCBhIFtoZWxwZnVsIFlvdXR1YmUgdmlkZW9dKGh0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9RDJxbWxiQ05xaTQpICYgdGhlIFtoYW5kb3V0c10oaHR0cDovL2NzY2FyLnJlc2VhcmNoLnVtaWNoLmVkdS9ldmVudC9pbnRyb2R1Y3Rpb24tdG8tdGhlLWZsdXgtY2x1c3Rlci1hbmQtYmF0Y2gtY29tcHV0aW5nLTUtMy8pIGZyb20gYSBDU0NBUiBjbGFzcyBvbiBpbnRybyB0byBGbHV4LiBBbHNvIHJlbWVtYmVyIHRoZSBub3RlcyBmcm9tIHRoZSBjb21tYW5kbGluZSBjbGFzcyENCg0KKiotWE1MIHBhcnNpbmcqKg0KDQpJJ20gb25seSBnZXR0aW5nIHRoZSBtYW51Lm51bWJlciBiYWNrIGFzIHRoZSByZXZpc2VkLm1hbnUubnVtYmVyLiBJIHRoaW5rIHRoYXQncyBiZWNhdXNlIGl0J3MgYmVlbiBhc3NpZ25lZCBpbiB0aGUgYmVnaW5uaW5nICYgaXNuJ3QgYmVpbmcgcmUtd3JpdHRlbiBvciB0aGUgcmUtd3JpdGluZyBpcyBiZWluZyBsb3N0IGIvYyBvZiBhc3NpZ25pbmcgdGhlIGlucHV0X21hbnUgdG8gaXQuIFNvLi4uIGhvdyBkbyBJIHJlLXdyaXRlIGl0IHN1Y2ggdGhhdCBJIGRvbid0IGxvc2UgdGhlIGFzc2lnbm1lbnQ/IEZsaXAgaXQgdG8gYSB3aGlsZSBzdGF0ZW1lbnQ/IA0KDQpJIHRyaWVkIGJyaW5naW5nIGByZXZpc2VkLm1hbnUubnVtYmVyIDwtIG1hbnVfbnVtYmVyYCBiZWxvdyB0aGUgYGlmYCBzdGF0ZW1lbnQgYnV0IHRoYXQgZGlkbid0IHdvcmsgZWl0aGVyLiANCg0KIzIwMTgvMDUvMDENCg0KKiotIFByZXBwaW5nIGZvciBMYWIgTWVldGluZyoqDQoNCldyb3RlIHVwIGFuIFJtYXJrZG93biB3aXRoIGFuIGV4cGxhbmF0aW9uIGFuZCBhbGwgb2YgdGhlIGNvZGUgZm9yIENvZGUgUmV2aWV3IGF0IGxhYiBtZWV0aW5nLiANCg0KKiotIFNjaWVuY2UgRWRpdG9yIFNlbWluYXIqKg0KDQoqKi0gRS5NLiBCbGFja3dlbGwqKg0KDQpQaWNrZWQgdXAgJiBza2ltbWVkIHRocm91Z2ggIkEgQ2VudHVyeSBvZiBNeWNvbG9neSIgZm9yIHJlZmVyZW5jZXMuIERpZG4ndCBmaW5kIG11Y2ggZGVzcGl0ZSBXZWJzdGVyIG1lbnRpb25pbmcgb3RoZXIgZmVtYWxlIEJNUyBwcmVzaWRlbnRzIHdobyB3ZXJlIF93aXZlc18gb2Ygb3RoZXIgcHJlc2lkZW50cy9mb3VuZGluZyBtZW1iZXJzPw0KDQoqKi0gWE1MIHBhcnNpbmcqKg0KDQpTYXZlZCBgYWxsX21hbnVgIGFzIGEgY3N2IGZpbGUgYW5kIHN0YXJ0ZWQgZnJlc2ggc2NyaXB0IHRvIGltcG9ydCB0aGVuIHdvcmsgb24gYnVpbGRpbmcgZnVuY3Rpb24gdG8gbGluayBtYW51c2NyaXB0cy4gSSB0aGluayBJIGhhdmUgc29tZXRoaW5nIGNsb3NlLiBJIGhhdmUgYSBgcmVwZWF0YCB3cmFwcGluZyBhbiBgaWYgZWxzZWAgd2l0aCBsb3RzIG9mIHBhc3RpbmcuIA0KDQoqKi0gRmluaXNoIGVkaXRpbmcgQVNNIGJsb2cgcG9zdCoq</div>
 
 
 
