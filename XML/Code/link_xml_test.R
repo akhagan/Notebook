@@ -30,3 +30,5 @@ link_manu <- function(input_df, input_related_manu, input_manu){
 }
 
 #I'm only getting the manu.number back as the revised.manu.number. I think that's because it's been assigned in the beginning & isn't being re-written or the re-writing is being lost b/c of assigning the input_manu to it. So... how do I re-write it such that I don't lose the assignment? Flip it to a while statement?
+
+

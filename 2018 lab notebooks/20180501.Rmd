@@ -2,6 +2,84 @@
 title: "Lab Notebook: May 2018"
 output: html_notebook
 ---
+#Goals: May 7 - 11, 2018
+1. ASM blog post - fungi purify heavy metals
+    + send first draft of fungi survey to Jesus
+    + start outline for Ergot
+
+1. ~~Read Marcy's paper for journal club~~
+
+1. Coursera Stats: Inferential Stats wk 2
+
+1. XML parse
+    + using lab meeting ideas, write script to group reject & resubmit papers
+    + figure out how to run an r script from flux
+    + check out parsing script with more xml files on flux
+
+1. ASM Transfer articles
+    + waiting for total numbers of rejections from Stacey
+    + incorporate total rejection numbers into analysis
+    
+1. _Bacillus_ manuscript
+    + N/A - waiting for comments (recieved: Zack, Ashu, )
+    
+1. Estimated IF
+    + Figure out WoS API
+
+1. ~~Meet w. Joel Baizra - Mon @ 1:30 (talk about publishing)~~
+
+#2018/05/07
+
+**- meeting with Dr. Baizra**
+
+Notes: there are a series of challenges involved for African researchers publishing in ASM & other society/Western journals. 
+
+1. Finances: anything more than $100 (30-50 is preferable) is too expensive for a researcher in a developing country to afford unless they are working with collaborators who have a grant to pay the funds. Universities (typically private) incentivize their researchers to publish, but aren't generally willing to help cover the cost of publishing, typically preferring that researcher submit to journals with publishing waivers. Government universities are sometimes willing/able to subsized, but not more than the 100 mentioned before. BMC is one example that offers waivers, but the review process is very long and drawn out, making it very challenging for students. They also have a high rejection rate.
+
+An example journal is Science Domain, which Bazira has published with before. They have a $50 publication fee with very responsive peer reviewers (once recieved 7 reviewers for a single article!) He recommends them to students b/c they don't reject papers on the basis of novelty.
+
+1. Subscription fees: If an article is blocked behind a paywall, then other African researcher that find it relevant cannot read it and thus cannot cite it. OA access papers are cited frequently though (Joel suggested that he gets at least one citation notification per week).
+
+1. Citations: African researchers can't cite ASM journal articles because they don't find relevant articles to cite, e.g. research from others in their field - creates a bad feedback loop for ASM journals
+
+1. Grammar/Reviewers: Some reviewers comment that the article needs a native English-speaker to review (often stated in a poorly constructed sentence). Some journals will recommend editing services, but again, that costs money. Bazira will often re-read the manuscript to identify issues but without more specific comments/examples, it is difficult for them to figure out what the reviewer might have had a problem with. An aside: truthfully, the researchers from some African countries may speak/write better English than we do. In Uganda, for example, there isn't a national language, primarily different dialects but their offical language is English, so children recieve their education in English from kindergarten. 
+
+Takeaway: There is a market in Africa for a non-predatory research journal that will publish quality OA articles for a small fee and doesn't discriminate based on novelety. There might also be market for copy-editors -- charge U.S., but do African for small fees or pro-bono. Also a possibility to apply for a grant from World Bank or WHO to launch such a journal. Bazira notes that journals should be like bicycles, one for every stage of a career, not different quality, just different attention and goals. 
+
+**- postdoc lunch with Dr. Baizra**
+
+**- Journal club paper**
+
+**- XML parse**
+
+Experimented with the joins to link `related.manu` and `manuscript.number` columns to create a group id for each manuscript. Nick's idea almost works... Originally, I seemed to lose specificity behind the join.  However, this is getting me close, though I have to [save each iteration](https://stackoverflow.com/questions/36218643/save-all-iteration-result-of-repeat-loop-to-workspace-in-r) inorder to bind together at the end. If I do it this way, then I can see when matches stop b/c there's an "NA" at the end of the string ([`all(is.na())`](https://stackoverflow.com/questions/9417391/how-to-check-if-entire-vector-has-no-values-other-than-na-or-nan-in-r) should be helpful for that). I should be able to work this into a `repeat` function, one issue is the changing column names as they are added. 
+```{r, eval = FALSE}
+join_one <- input_df %>% filter(is.na(related.manu)) %>% 
+  select(manuscript.number) %>% 
+  left_join(., input_df, by = c("manuscript.number"="related.manu"))
+
+join_two <- join_one %>%  
+  filter(manuscript.number.y != "NA") %>% 
+  left_join(., input_df, by = c("manuscript.number.y"="related.manu")) 
+
+one_unite <- join_one %>% filter(is.na(manuscript.number.y)) %>% unite(sep = ";")
+
+two_unite <- join_two %>% filter(is.na(manuscript.number.y.y)) %>% unite(sep = ";")
+
+complete <- rbind(one_unite, two_unite)
+```
+
+Might be worth checking into the [`sqldf`](https://cran.r-project.org/web/packages/sqldf/sqldf.pdf) package based on the [SQL explainer blog post](https://academy.vertabelo.com/blog/illustrated-guide-sql-self-join/). 
+
+Was able to logon to the `schloss-lab` flux directory.
+
+**- Prep for meeting w. Joel Bazira**
+
+Several publications (40+), I found one in JCM & several in... odd journals. i.e., ones that to my eyes would look predatory. Starting questions:
+1. how do you choose where to submit, what journals are your "Safe" and "reach" journals?
+1. what has your experience with publishing been like? ASM? 
+1. would you like to see anything change in publishing?
+    
 #Goals: Apr 30 - May 4, 2018
 1. ASM blog post - fungi purify heavy metals
     + finish first draft
@@ -11,7 +89,7 @@ output: html_notebook
 1. ~~Coursera Stats: Inferential Stats wk 1~~
 
 1. XML parse
-    + figure out how to link reject & resubmit papers to their accepted/published version --> while loop?
+    + ~~figure out how to link reject & resubmit papers to their accepted/published version --> while loop?~~
     + ~~figure out genderize.io~~
     + ~~figure out flux login~~
 
@@ -25,6 +103,46 @@ output: html_notebook
     + Figure out WoS API
     
 1. ~~ASM Staff Meeting - Monday @ 2pm~~
+
+#2018/05/04
+
+**- ASM rejections**
+
+Pinged Stacey on this again.
+
+**- Matt Foley's Thesis Defense**
+
+**- Bacillus Manuscript**
+
+Formatted Zacks figure & sent another draft out to authors. Just waiting for comments!
+
+#2018/05/03
+
+**- Lab meeting**
+
+Pat's idea - join the table on itself - inner joins 
+```{r}
+full_join(all_manu, all_manu, by=c("related.manu"="manuscript.number")) %>% 
+  select(manuscript.number, starts_with("related.manu")) %>% distinct() %>% unite(sep = ".")
+```
+
+Nick - subset on NA b/c those will all be first submissions, then join based on manu number - general idea is to shorten the grouping number by making it the "primary" submission. (group_by then sum ?)
+
+**- Department seminar**
+
+Set up meeting with him to discuss challenges in publishing
+
+**- Bacillus manuscript**
+
+Finished formatting. Just waiting for Zack's supplemental figure. 
+
+**- Flux**
+
+Permission denied.
+
+**- ASM Fungi Blog Post**
+
+Work on first draft. 
 
 #2018/05/02
 

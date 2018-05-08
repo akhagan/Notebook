@@ -173,6 +173,80 @@ $(document).ready(function () {
 
 
 <!-- rnb-text-begin -->
+<div id="goals-may-7---11-2018" class="section level1">
+<h1>Goals: May 7 - 11, 2018</h1>
+<ol style="list-style-type: decimal">
+<li>ASM blog post - fungi purify heavy metals
+<ul>
+<li>send first draft of fungi survey to Jesus</li>
+<li>start outline for Ergot</li>
+</ul></li>
+<li><p><del>Read Marcy’s paper for journal club</del></p></li>
+<li><p>Coursera Stats: Inferential Stats wk 2</p></li>
+<li>XML parse
+<ul>
+<li>using lab meeting ideas, write script to group reject &amp; resubmit papers</li>
+<li>figure out how to run an r script from flux</li>
+<li>check out parsing script with more xml files on flux</li>
+</ul></li>
+<li>ASM Transfer articles
+<ul>
+<li>waiting for total numbers of rejections from Stacey</li>
+<li>incorporate total rejection numbers into analysis</li>
+</ul></li>
+<li><em>Bacillus</em> manuscript
+<ul>
+<li>N/A - waiting for comments (recieved: Zack, Ashu, )</li>
+</ul></li>
+<li>Estimated IF
+<ul>
+<li>Figure out WoS API</li>
+</ul></li>
+<li><p><del>Meet w. Joel Baizra - Mon @ 1:30 (talk about publishing)</del></p></li>
+</ol>
+</div>
+<div id="section" class="section level1">
+<h1>2018/05/07</h1>
+<p><strong>- meeting with Dr. Baizra</strong></p>
+<p>Notes: there are a series of challenges involved for African researchers publishing in ASM &amp; other society/Western journals.</p>
+<ol style="list-style-type: decimal">
+<li>Finances: anything more than $100 (30-50 is preferable) is too expensive for a researcher in a developing country to afford unless they are working with collaborators who have a grant to pay the funds. Universities (typically private) incentivize their researchers to publish, but aren’t generally willing to help cover the cost of publishing, typically preferring that researcher submit to journals with publishing waivers. Government universities are sometimes willing/able to subsized, but not more than the 100 mentioned before. BMC is one example that offers waivers, but the review process is very long and drawn out, making it very challenging for students. They also have a high rejection rate.</li>
+</ol>
+<p>An example journal is Science Domain, which Bazira has published with before. They have a $50 publication fee with very responsive peer reviewers (once recieved 7 reviewers for a single article!) He recommends them to students b/c they don’t reject papers on the basis of novelty.</p>
+<ol style="list-style-type: decimal">
+<li><p>Subscription fees: If an article is blocked behind a paywall, then other African researcher that find it relevant cannot read it and thus cannot cite it. OA access papers are cited frequently though (Joel suggested that he gets at least one citation notification per week).</p></li>
+<li><p>Citations: African researchers can’t cite ASM journal articles because they don’t find relevant articles to cite, e.g. research from others in their field - creates a bad feedback loop for ASM journals</p></li>
+<li><p>Grammar/Reviewers: Some reviewers comment that the article needs a native English-speaker to review (often stated in a poorly constructed sentence). Some journals will recommend editing services, but again, that costs money. Bazira will often re-read the manuscript to identify issues but without more specific comments/examples, it is difficult for them to figure out what the reviewer might have had a problem with. An aside: truthfully, the researchers from some African countries may speak/write better English than we do. In Uganda, for example, there isn’t a national language, primarily different dialects but their offical language is English, so children recieve their education in English from kindergarten.</p></li>
+</ol>
+<p>Takeaway: There is a market in Africa for a non-predatory research journal that will publish quality OA articles for a small fee and doesn’t discriminate based on novelety. There might also be market for copy-editors – charge U.S., but do African for small fees or pro-bono. Also a possibility to apply for a grant from World Bank or WHO to launch such a journal. Bazira notes that journals should be like bicycles, one for every stage of a career, not different quality, just different attention and goals.</p>
+<p><strong>- postdoc lunch with Dr. Baizra</strong></p>
+<p><strong>- Journal club paper</strong></p>
+<p><strong>- XML parse</strong></p>
+<p>Experimented with the joins to link <code>related.manu</code> and <code>manuscript.number</code> columns to create a group id for each manuscript. Nick’s idea almost works… Originally, I seemed to lose specificity behind the join. However, this is getting me close, though I have to <a href="https://stackoverflow.com/questions/36218643/save-all-iteration-result-of-repeat-loop-to-workspace-in-r">save each iteration</a> inorder to bind together at the end. If I do it this way, then I can see when matches stop b/c there’s an “NA” at the end of the string (<a href="https://stackoverflow.com/questions/9417391/how-to-check-if-entire-vector-has-no-values-other-than-na-or-nan-in-r"><code>all(is.na())</code></a> should be helpful for that). I should be able to work this into a <code>repeat</code> function, one issue is the changing column names as they are added.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjpbImpvaW5fb25lIDwtIGlucHV0X2RmICU+JSBmaWx0ZXIoaXMubmEocmVsYXRlZC5tYW51KSkgJT4lICIsIiAgc2VsZWN0KG1hbnVzY3JpcHQubnVtYmVyKSAlPiUgIiwiICBsZWZ0X2pvaW4oLiwgaW5wdXRfZGYsIGJ5ID0gYyhcIm1hbnVzY3JpcHQubnVtYmVyXCI9XCJyZWxhdGVkLm1hbnVcIikpIiwiIiwiam9pbl90d28gPC0gam9pbl9vbmUgJT4lICAiLCIgIGZpbHRlcihtYW51c2NyaXB0Lm51bWJlci55ICE9IFwiTkFcIikgJT4lICIsIiAgbGVmdF9qb2luKC4sIGlucHV0X2RmLCBieSA9IGMoXCJtYW51c2NyaXB0Lm51bWJlci55XCI9XCJyZWxhdGVkLm1hbnVcIikpICIsIiIsIm9uZV91bml0ZSA8LSBqb2luX29uZSAlPiUgZmlsdGVyKGlzLm5hKG1hbnVzY3JpcHQubnVtYmVyLnkpKSAlPiUgdW5pdGUoc2VwID0gXCI7XCIpIiwiIiwidHdvX3VuaXRlIDwtIGpvaW5fdHdvICU+JSBmaWx0ZXIoaXMubmEobWFudXNjcmlwdC5udW1iZXIueS55KSkgJT4lIHVuaXRlKHNlcCA9IFwiO1wiKSIsIiIsImNvbXBsZXRlIDwtIHJiaW5kKG9uZV91bml0ZSwgdHdvX3VuaXRlKSJdfQ== -->
+<pre class="r"><code>join_one &lt;- input_df %&gt;% filter(is.na(related.manu)) %&gt;% 
+  select(manuscript.number) %&gt;% 
+  left_join(., input_df, by = c(&quot;manuscript.number&quot;=&quot;related.manu&quot;))
+
+join_two &lt;- join_one %&gt;%  
+  filter(manuscript.number.y != &quot;NA&quot;) %&gt;% 
+  left_join(., input_df, by = c(&quot;manuscript.number.y&quot;=&quot;related.manu&quot;)) 
+
+one_unite &lt;- join_one %&gt;% filter(is.na(manuscript.number.y)) %&gt;% unite(sep = &quot;;&quot;)
+
+two_unite &lt;- join_two %&gt;% filter(is.na(manuscript.number.y.y)) %&gt;% unite(sep = &quot;;&quot;)
+
+complete &lt;- rbind(one_unite, two_unite)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Might be worth checking into the <a href="https://cran.r-project.org/web/packages/sqldf/sqldf.pdf"><code>sqldf</code></a> package based on the <a href="https://academy.vertabelo.com/blog/illustrated-guide-sql-self-join/">SQL explainer blog post</a>.</p>
+<p>Was able to logon to the <code>schloss-lab</code> flux directory.</p>
+<p><strong>- Prep for meeting w. Joel Bazira</strong></p>
+<p>Several publications (40+), I found one in JCM &amp; several in… odd journals. i.e., ones that to my eyes would look predatory. Starting questions: 1. how do you choose where to submit, what journals are your “Safe” and “reach” journals? 1. what has your experience with publishing been like? ASM? 1. would you like to see anything change in publishing?</p>
+</div>
 <div id="goals-apr-30---may-4-2018" class="section level1">
 <h1>Goals: Apr 30 - May 4, 2018</h1>
 <ol style="list-style-type: decimal">
@@ -184,7 +258,7 @@ $(document).ready(function () {
 <li><p><del>Coursera Stats: Inferential Stats wk 1</del></p></li>
 <li>XML parse
 <ul>
-<li>figure out how to link reject &amp; resubmit papers to their accepted/published version –&gt; while loop?</li>
+<li><del>figure out how to link reject &amp; resubmit papers to their accepted/published version –&gt; while loop?</del></li>
 <li><del>figure out genderize.io</del></li>
 <li><del>figure out flux login</del></li>
 </ul></li>
@@ -203,7 +277,37 @@ $(document).ready(function () {
 <li><p><del>ASM Staff Meeting - Monday @ 2pm</del></p></li>
 </ol>
 </div>
-<div id="section" class="section level1">
+<div id="section-1" class="section level1">
+<h1>2018/05/04</h1>
+<p><strong>- ASM rejections</strong></p>
+<p>Pinged Stacey on this again.</p>
+<p><strong>- Matt Foley’s Thesis Defense</strong></p>
+<p><strong>- Bacillus Manuscript</strong></p>
+<p>Formatted Zacks figure &amp; sent another draft out to authors. Just waiting for comments!</p>
+</div>
+<div id="section-2" class="section level1">
+<h1>2018/05/03</h1>
+<p><strong>- Lab meeting</strong></p>
+<p>Pat’s idea - join the table on itself - inner joins</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZnVsbF9qb2luKGFsbF9tYW51LCBhbGxfbWFudSwgYnk9YyhcInJlbGF0ZWQubWFudVwiPVwibWFudXNjcmlwdC5udW1iZXJcIikpICU+JSBcbiAgc2VsZWN0KG1hbnVzY3JpcHQubnVtYmVyLCBzdGFydHNfd2l0aChcInJlbGF0ZWQubWFudVwiKSkgJT4lIGRpc3RpbmN0KCkgJT4lIHVuaXRlKHNlcCA9IFwiLlwiKVxuYGBgIn0= -->
+<pre class="r"><code>full_join(all_manu, all_manu, by=c(&quot;related.manu&quot;=&quot;manuscript.number&quot;)) %&gt;% 
+  select(manuscript.number, starts_with(&quot;related.manu&quot;)) %&gt;% distinct() %&gt;% unite(sep = &quot;.&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Nick - subset on NA b/c those will all be first submissions, then join based on manu number - general idea is to shorten the grouping number by making it the “primary” submission. (group_by then sum ?)</p>
+<p><strong>- Department seminar</strong></p>
+<p>Set up meeting with him to discuss challenges in publishing</p>
+<p><strong>- Bacillus manuscript</strong></p>
+<p>Finished formatting. Just waiting for Zack’s supplemental figure.</p>
+<p><strong>- Flux</strong></p>
+<p>Permission denied.</p>
+<p><strong>- ASM Fungi Blog Post</strong></p>
+<p>Work on first draft.</p>
+</div>
+<div id="section-3" class="section level1">
 <h1>2018/05/02</h1>
 <p><strong>- Bacillus manuscript</strong></p>
 <p>Edited text, wrote importance section, figured out word counts and formatted for submission.</p>
@@ -213,7 +317,7 @@ $(document).ready(function () {
 <p>I’m only getting the manu.number back as the revised.manu.number. I think that’s because it’s been assigned in the beginning &amp; isn’t being re-written or the re-writing is being lost b/c of assigning the input_manu to it. So… how do I re-write it such that I don’t lose the assignment? Flip it to a while statement?</p>
 <p>I tried bringing <code>revised.manu.number &lt;- manu_number</code> below the <code>if</code> statement but that didn’t work either.</p>
 </div>
-<div id="section-1" class="section level1">
+<div id="section-4" class="section level1">
 <h1>2018/05/01</h1>
 <p><strong>- Prepping for Lab Meeting</strong></p>
 <p>Wrote up an Rmarkdown with an explanation and all of the code for Code Review at lab meeting.</p>
@@ -226,7 +330,7 @@ $(document).ready(function () {
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIkxhYiBOb3RlYm9vazogTWF5IDIwMTgiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KI0dvYWxzOiBBcHIgMzAgLSBNYXkgNCwgMjAxOA0KMS4gQVNNIGJsb2cgcG9zdCAtIGZ1bmdpIHB1cmlmeSBoZWF2eSBtZXRhbHMNCiAgICArIGZpbmlzaCBmaXJzdCBkcmFmdA0KDQoxLiB+flBsYW4gZm9yIENvZGUgUmV2aWV3fn4NCg0KMS4gfn5Db3Vyc2VyYSBTdGF0czogSW5mZXJlbnRpYWwgU3RhdHMgd2sgMX5+DQoNCjEuIFhNTCBwYXJzZQ0KICAgICsgZmlndXJlIG91dCBob3cgdG8gbGluayByZWplY3QgJiByZXN1Ym1pdCBwYXBlcnMgdG8gdGhlaXIgYWNjZXB0ZWQvcHVibGlzaGVkIHZlcnNpb24gLS0+IHdoaWxlIGxvb3A/DQogICAgKyB+fmZpZ3VyZSBvdXQgZ2VuZGVyaXplLmlvfn4NCiAgICArIH5+ZmlndXJlIG91dCBmbHV4IGxvZ2lufn4NCg0KMS4gQVNNIFRyYW5zZmVyIGFydGljbGVzDQogICAgKyB3YWl0aW5nIGZvciB0b3RhbCBudW1iZXJzIG9mIHJlamVjdGlvbnMgZnJvbSBTdGFjZXkNCiAgICANCjEuIF9CYWNpbGx1c18gbWFudXNjcmlwdA0KICAgICsgfn5FZGl0IHRleHQgYXMgbmVlZGVkfn4NCiAgICANCjEuIEVzdGltYXRlZCBJRg0KICAgICsgRmlndXJlIG91dCBXb1MgQVBJDQogICAgDQoxLiB+fkFTTSBTdGFmZiBNZWV0aW5nIC0gTW9uZGF5IEAgMnBtfn4NCg0KIzIwMTgvMDUvMDINCg0KKiotIEJhY2lsbHVzIG1hbnVzY3JpcHQqKg0KDQpFZGl0ZWQgdGV4dCwgd3JvdGUgaW1wb3J0YW5jZSBzZWN0aW9uLCBmaWd1cmVkIG91dCB3b3JkIGNvdW50cyBhbmQgZm9ybWF0dGVkIGZvciBzdWJtaXNzaW9uLiANCg0KKiotRmx1eCoqDQoNCkdvdCBsb2dnZWQgaW4gdG8gZmx1eCB1c2luZyB0aGUgV2luZG93cyBQb3dlclNoZWxsIHNzaCBjbGllbnQ6IGBzc2ggYWtoYWdhbkBmbHV4LWxvZ2luLmFyYy10cy51bWljaC5lZHVgICYgbXkgbGV2ZWwtMSBwYXNzd29yZC4gUGF0IGhhcyBzdG9yZWQgYWxsIG9mIHRoZSBYTUwgZmlsZXMgaW4gYC9uZnMvdHVyYm8vc2NobG9zcy1sYWIvZ2VuZGVyX2RhdGFgIGJ1dCBJIGRvbid0IGhhdmUgYWNjZXNzOiBgUGVybWlzc2lvbiBkZW5pZWRgLiBGb3IgZnV0dXJlIHJlZmVyZW5jZSB0aGVyZSBpcyBhIFtGbHV4IHVzZXIgZ3VpZGVdKGh0dHA6Ly9hcmMtdHMudW1pY2guZWR1L2ZsdXgtdXNlci1ndWlkZS8pLCBhIFtoZWxwZnVsIFlvdXR1YmUgdmlkZW9dKGh0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9RDJxbWxiQ05xaTQpICYgdGhlIFtoYW5kb3V0c10oaHR0cDovL2NzY2FyLnJlc2VhcmNoLnVtaWNoLmVkdS9ldmVudC9pbnRyb2R1Y3Rpb24tdG8tdGhlLWZsdXgtY2x1c3Rlci1hbmQtYmF0Y2gtY29tcHV0aW5nLTUtMy8pIGZyb20gYSBDU0NBUiBjbGFzcyBvbiBpbnRybyB0byBGbHV4LiBBbHNvIHJlbWVtYmVyIHRoZSBub3RlcyBmcm9tIHRoZSBjb21tYW5kbGluZSBjbGFzcyENCg0KKiotWE1MIHBhcnNpbmcqKg0KDQpJJ20gb25seSBnZXR0aW5nIHRoZSBtYW51Lm51bWJlciBiYWNrIGFzIHRoZSByZXZpc2VkLm1hbnUubnVtYmVyLiBJIHRoaW5rIHRoYXQncyBiZWNhdXNlIGl0J3MgYmVlbiBhc3NpZ25lZCBpbiB0aGUgYmVnaW5uaW5nICYgaXNuJ3QgYmVpbmcgcmUtd3JpdHRlbiBvciB0aGUgcmUtd3JpdGluZyBpcyBiZWluZyBsb3N0IGIvYyBvZiBhc3NpZ25pbmcgdGhlIGlucHV0X21hbnUgdG8gaXQuIFNvLi4uIGhvdyBkbyBJIHJlLXdyaXRlIGl0IHN1Y2ggdGhhdCBJIGRvbid0IGxvc2UgdGhlIGFzc2lnbm1lbnQ/IEZsaXAgaXQgdG8gYSB3aGlsZSBzdGF0ZW1lbnQ/IA0KDQpJIHRyaWVkIGJyaW5naW5nIGByZXZpc2VkLm1hbnUubnVtYmVyIDwtIG1hbnVfbnVtYmVyYCBiZWxvdyB0aGUgYGlmYCBzdGF0ZW1lbnQgYnV0IHRoYXQgZGlkbid0IHdvcmsgZWl0aGVyLiANCg0KIzIwMTgvMDUvMDENCg0KKiotIFByZXBwaW5nIGZvciBMYWIgTWVldGluZyoqDQoNCldyb3RlIHVwIGFuIFJtYXJrZG93biB3aXRoIGFuIGV4cGxhbmF0aW9uIGFuZCBhbGwgb2YgdGhlIGNvZGUgZm9yIENvZGUgUmV2aWV3IGF0IGxhYiBtZWV0aW5nLiANCg0KKiotIFNjaWVuY2UgRWRpdG9yIFNlbWluYXIqKg0KDQoqKi0gRS5NLiBCbGFja3dlbGwqKg0KDQpQaWNrZWQgdXAgJiBza2ltbWVkIHRocm91Z2ggIkEgQ2VudHVyeSBvZiBNeWNvbG9neSIgZm9yIHJlZmVyZW5jZXMuIERpZG4ndCBmaW5kIG11Y2ggZGVzcGl0ZSBXZWJzdGVyIG1lbnRpb25pbmcgb3RoZXIgZmVtYWxlIEJNUyBwcmVzaWRlbnRzIHdobyB3ZXJlIF93aXZlc18gb2Ygb3RoZXIgcHJlc2lkZW50cy9mb3VuZGluZyBtZW1iZXJzPw0KDQoqKi0gWE1MIHBhcnNpbmcqKg0KDQpTYXZlZCBgYWxsX21hbnVgIGFzIGEgY3N2IGZpbGUgYW5kIHN0YXJ0ZWQgZnJlc2ggc2NyaXB0IHRvIGltcG9ydCB0aGVuIHdvcmsgb24gYnVpbGRpbmcgZnVuY3Rpb24gdG8gbGluayBtYW51c2NyaXB0cy4gSSB0aGluayBJIGhhdmUgc29tZXRoaW5nIGNsb3NlLiBJIGhhdmUgYSBgcmVwZWF0YCB3cmFwcGluZyBhbiBgaWYgZWxzZWAgd2l0aCBsb3RzIG9mIHBhc3RpbmcuIA0KDQoqKi0gRmluaXNoIGVkaXRpbmcgQVNNIGJsb2cgcG9zdCoq</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIkxhYiBOb3RlYm9vazogTWF5IDIwMTgiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KI0dvYWxzOiBNYXkgNyAtIDExLCAyMDE4DQoxLiBBU00gYmxvZyBwb3N0IC0gZnVuZ2kgcHVyaWZ5IGhlYXZ5IG1ldGFscw0KICAgICsgc2VuZCBmaXJzdCBkcmFmdCBvZiBmdW5naSBzdXJ2ZXkgdG8gSmVzdXMNCiAgICArIHN0YXJ0IG91dGxpbmUgZm9yIEVyZ290DQoNCjEuIH5+UmVhZCBNYXJjeSdzIHBhcGVyIGZvciBqb3VybmFsIGNsdWJ+fg0KDQoxLiBDb3Vyc2VyYSBTdGF0czogSW5mZXJlbnRpYWwgU3RhdHMgd2sgMg0KDQoxLiBYTUwgcGFyc2UNCiAgICArIHVzaW5nIGxhYiBtZWV0aW5nIGlkZWFzLCB3cml0ZSBzY3JpcHQgdG8gZ3JvdXAgcmVqZWN0ICYgcmVzdWJtaXQgcGFwZXJzDQogICAgKyBmaWd1cmUgb3V0IGhvdyB0byBydW4gYW4gciBzY3JpcHQgZnJvbSBmbHV4DQogICAgKyBjaGVjayBvdXQgcGFyc2luZyBzY3JpcHQgd2l0aCBtb3JlIHhtbCBmaWxlcyBvbiBmbHV4DQoNCjEuIEFTTSBUcmFuc2ZlciBhcnRpY2xlcw0KICAgICsgd2FpdGluZyBmb3IgdG90YWwgbnVtYmVycyBvZiByZWplY3Rpb25zIGZyb20gU3RhY2V5DQogICAgKyBpbmNvcnBvcmF0ZSB0b3RhbCByZWplY3Rpb24gbnVtYmVycyBpbnRvIGFuYWx5c2lzDQogICAgDQoxLiBfQmFjaWxsdXNfIG1hbnVzY3JpcHQNCiAgICArIE4vQSAtIHdhaXRpbmcgZm9yIGNvbW1lbnRzIChyZWNpZXZlZDogWmFjaywgQXNodSwgKQ0KICAgIA0KMS4gRXN0aW1hdGVkIElGDQogICAgKyBGaWd1cmUgb3V0IFdvUyBBUEkNCg0KMS4gfn5NZWV0IHcuIEpvZWwgQmFpenJhIC0gTW9uIEAgMTozMCAodGFsayBhYm91dCBwdWJsaXNoaW5nKX5+DQoNCiMyMDE4LzA1LzA3DQoNCioqLSBtZWV0aW5nIHdpdGggRHIuIEJhaXpyYSoqDQoNCk5vdGVzOiB0aGVyZSBhcmUgYSBzZXJpZXMgb2YgY2hhbGxlbmdlcyBpbnZvbHZlZCBmb3IgQWZyaWNhbiByZXNlYXJjaGVycyBwdWJsaXNoaW5nIGluIEFTTSAmIG90aGVyIHNvY2lldHkvV2VzdGVybiBqb3VybmFscy4gDQoNCjEuIEZpbmFuY2VzOiBhbnl0aGluZyBtb3JlIHRoYW4gJDEwMCAoMzAtNTAgaXMgcHJlZmVyYWJsZSkgaXMgdG9vIGV4cGVuc2l2ZSBmb3IgYSByZXNlYXJjaGVyIGluIGEgZGV2ZWxvcGluZyBjb3VudHJ5IHRvIGFmZm9yZCB1bmxlc3MgdGhleSBhcmUgd29ya2luZyB3aXRoIGNvbGxhYm9yYXRvcnMgd2hvIGhhdmUgYSBncmFudCB0byBwYXkgdGhlIGZ1bmRzLiBVbml2ZXJzaXRpZXMgKHR5cGljYWxseSBwcml2YXRlKSBpbmNlbnRpdml6ZSB0aGVpciByZXNlYXJjaGVycyB0byBwdWJsaXNoLCBidXQgYXJlbid0IGdlbmVyYWxseSB3aWxsaW5nIHRvIGhlbHAgY292ZXIgdGhlIGNvc3Qgb2YgcHVibGlzaGluZywgdHlwaWNhbGx5IHByZWZlcnJpbmcgdGhhdCByZXNlYXJjaGVyIHN1Ym1pdCB0byBqb3VybmFscyB3aXRoIHB1Ymxpc2hpbmcgd2FpdmVycy4gR292ZXJubWVudCB1bml2ZXJzaXRpZXMgYXJlIHNvbWV0aW1lcyB3aWxsaW5nL2FibGUgdG8gc3Vic2l6ZWQsIGJ1dCBub3QgbW9yZSB0aGFuIHRoZSAxMDAgbWVudGlvbmVkIGJlZm9yZS4gQk1DIGlzIG9uZSBleGFtcGxlIHRoYXQgb2ZmZXJzIHdhaXZlcnMsIGJ1dCB0aGUgcmV2aWV3IHByb2Nlc3MgaXMgdmVyeSBsb25nIGFuZCBkcmF3biBvdXQsIG1ha2luZyBpdCB2ZXJ5IGNoYWxsZW5naW5nIGZvciBzdHVkZW50cy4gVGhleSBhbHNvIGhhdmUgYSBoaWdoIHJlamVjdGlvbiByYXRlLg0KDQpBbiBleGFtcGxlIGpvdXJuYWwgaXMgU2NpZW5jZSBEb21haW4sIHdoaWNoIEJhemlyYSBoYXMgcHVibGlzaGVkIHdpdGggYmVmb3JlLiBUaGV5IGhhdmUgYSAkNTAgcHVibGljYXRpb24gZmVlIHdpdGggdmVyeSByZXNwb25zaXZlIHBlZXIgcmV2aWV3ZXJzIChvbmNlIHJlY2lldmVkIDcgcmV2aWV3ZXJzIGZvciBhIHNpbmdsZSBhcnRpY2xlISkgSGUgcmVjb21tZW5kcyB0aGVtIHRvIHN0dWRlbnRzIGIvYyB0aGV5IGRvbid0IHJlamVjdCBwYXBlcnMgb24gdGhlIGJhc2lzIG9mIG5vdmVsdHkuDQoNCjEuIFN1YnNjcmlwdGlvbiBmZWVzOiBJZiBhbiBhcnRpY2xlIGlzIGJsb2NrZWQgYmVoaW5kIGEgcGF5d2FsbCwgdGhlbiBvdGhlciBBZnJpY2FuIHJlc2VhcmNoZXIgdGhhdCBmaW5kIGl0IHJlbGV2YW50IGNhbm5vdCByZWFkIGl0IGFuZCB0aHVzIGNhbm5vdCBjaXRlIGl0LiBPQSBhY2Nlc3MgcGFwZXJzIGFyZSBjaXRlZCBmcmVxdWVudGx5IHRob3VnaCAoSm9lbCBzdWdnZXN0ZWQgdGhhdCBoZSBnZXRzIGF0IGxlYXN0IG9uZSBjaXRhdGlvbiBub3RpZmljYXRpb24gcGVyIHdlZWspLg0KDQoxLiBDaXRhdGlvbnM6IEFmcmljYW4gcmVzZWFyY2hlcnMgY2FuJ3QgY2l0ZSBBU00gam91cm5hbCBhcnRpY2xlcyBiZWNhdXNlIHRoZXkgZG9uJ3QgZmluZCByZWxldmFudCBhcnRpY2xlcyB0byBjaXRlLCBlLmcuIHJlc2VhcmNoIGZyb20gb3RoZXJzIGluIHRoZWlyIGZpZWxkIC0gY3JlYXRlcyBhIGJhZCBmZWVkYmFjayBsb29wIGZvciBBU00gam91cm5hbHMNCg0KMS4gR3JhbW1hci9SZXZpZXdlcnM6IFNvbWUgcmV2aWV3ZXJzIGNvbW1lbnQgdGhhdCB0aGUgYXJ0aWNsZSBuZWVkcyBhIG5hdGl2ZSBFbmdsaXNoLXNwZWFrZXIgdG8gcmV2aWV3IChvZnRlbiBzdGF0ZWQgaW4gYSBwb29ybHkgY29uc3RydWN0ZWQgc2VudGVuY2UpLiBTb21lIGpvdXJuYWxzIHdpbGwgcmVjb21tZW5kIGVkaXRpbmcgc2VydmljZXMsIGJ1dCBhZ2FpbiwgdGhhdCBjb3N0cyBtb25leS4gQmF6aXJhIHdpbGwgb2Z0ZW4gcmUtcmVhZCB0aGUgbWFudXNjcmlwdCB0byBpZGVudGlmeSBpc3N1ZXMgYnV0IHdpdGhvdXQgbW9yZSBzcGVjaWZpYyBjb21tZW50cy9leGFtcGxlcywgaXQgaXMgZGlmZmljdWx0IGZvciB0aGVtIHRvIGZpZ3VyZSBvdXQgd2hhdCB0aGUgcmV2aWV3ZXIgbWlnaHQgaGF2ZSBoYWQgYSBwcm9ibGVtIHdpdGguIEFuIGFzaWRlOiB0cnV0aGZ1bGx5LCB0aGUgcmVzZWFyY2hlcnMgZnJvbSBzb21lIEFmcmljYW4gY291bnRyaWVzIG1heSBzcGVhay93cml0ZSBiZXR0ZXIgRW5nbGlzaCB0aGFuIHdlIGRvLiBJbiBVZ2FuZGEsIGZvciBleGFtcGxlLCB0aGVyZSBpc24ndCBhIG5hdGlvbmFsIGxhbmd1YWdlLCBwcmltYXJpbHkgZGlmZmVyZW50IGRpYWxlY3RzIGJ1dCB0aGVpciBvZmZpY2FsIGxhbmd1YWdlIGlzIEVuZ2xpc2gsIHNvIGNoaWxkcmVuIHJlY2lldmUgdGhlaXIgZWR1Y2F0aW9uIGluIEVuZ2xpc2ggZnJvbSBraW5kZXJnYXJ0ZW4uIA0KDQpUYWtlYXdheTogVGhlcmUgaXMgYSBtYXJrZXQgaW4gQWZyaWNhIGZvciBhIG5vbi1wcmVkYXRvcnkgcmVzZWFyY2ggam91cm5hbCB0aGF0IHdpbGwgcHVibGlzaCBxdWFsaXR5IE9BIGFydGljbGVzIGZvciBhIHNtYWxsIGZlZSBhbmQgZG9lc24ndCBkaXNjcmltaW5hdGUgYmFzZWQgb24gbm92ZWxldHkuIFRoZXJlIG1pZ2h0IGFsc28gYmUgbWFya2V0IGZvciBjb3B5LWVkaXRvcnMgLS0gY2hhcmdlIFUuUy4sIGJ1dCBkbyBBZnJpY2FuIGZvciBzbWFsbCBmZWVzIG9yIHByby1ib25vLiBBbHNvIGEgcG9zc2liaWxpdHkgdG8gYXBwbHkgZm9yIGEgZ3JhbnQgZnJvbSBXb3JsZCBCYW5rIG9yIFdITyB0byBsYXVuY2ggc3VjaCBhIGpvdXJuYWwuIEJhemlyYSBub3RlcyB0aGF0IGpvdXJuYWxzIHNob3VsZCBiZSBsaWtlIGJpY3ljbGVzLCBvbmUgZm9yIGV2ZXJ5IHN0YWdlIG9mIGEgY2FyZWVyLCBub3QgZGlmZmVyZW50IHF1YWxpdHksIGp1c3QgZGlmZmVyZW50IGF0dGVudGlvbiBhbmQgZ29hbHMuIA0KDQoqKi0gcG9zdGRvYyBsdW5jaCB3aXRoIERyLiBCYWl6cmEqKg0KDQoqKi0gSm91cm5hbCBjbHViIHBhcGVyKioNCg0KKiotIFhNTCBwYXJzZSoqDQoNCkV4cGVyaW1lbnRlZCB3aXRoIHRoZSBqb2lucyB0byBsaW5rIGByZWxhdGVkLm1hbnVgIGFuZCBgbWFudXNjcmlwdC5udW1iZXJgIGNvbHVtbnMgdG8gY3JlYXRlIGEgZ3JvdXAgaWQgZm9yIGVhY2ggbWFudXNjcmlwdC4gTmljaydzIGlkZWEgYWxtb3N0IHdvcmtzLi4uIE9yaWdpbmFsbHksIEkgc2VlbWVkIHRvIGxvc2Ugc3BlY2lmaWNpdHkgYmVoaW5kIHRoZSBqb2luLiAgSG93ZXZlciwgdGhpcyBpcyBnZXR0aW5nIG1lIGNsb3NlLCB0aG91Z2ggSSBoYXZlIHRvIFtzYXZlIGVhY2ggaXRlcmF0aW9uXShodHRwczovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy8zNjIxODY0My9zYXZlLWFsbC1pdGVyYXRpb24tcmVzdWx0LW9mLXJlcGVhdC1sb29wLXRvLXdvcmtzcGFjZS1pbi1yKSBpbm9yZGVyIHRvIGJpbmQgdG9nZXRoZXIgYXQgdGhlIGVuZC4gSWYgSSBkbyBpdCB0aGlzIHdheSwgdGhlbiBJIGNhbiBzZWUgd2hlbiBtYXRjaGVzIHN0b3AgYi9jIHRoZXJlJ3MgYW4gIk5BIiBhdCB0aGUgZW5kIG9mIHRoZSBzdHJpbmcgKFtgYWxsKGlzLm5hKCkpYF0oaHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvOTQxNzM5MS9ob3ctdG8tY2hlY2staWYtZW50aXJlLXZlY3Rvci1oYXMtbm8tdmFsdWVzLW90aGVyLXRoYW4tbmEtb3ItbmFuLWluLXIpIHNob3VsZCBiZSBoZWxwZnVsIGZvciB0aGF0KS4gSSBzaG91bGQgYmUgYWJsZSB0byB3b3JrIHRoaXMgaW50byBhIGByZXBlYXRgIGZ1bmN0aW9uLCBvbmUgaXNzdWUgaXMgdGhlIGNoYW5naW5nIGNvbHVtbiBuYW1lcyBhcyB0aGV5IGFyZSBhZGRlZC4gDQpgYGB7ciwgZXZhbCA9IEZBTFNFfQ0Kam9pbl9vbmUgPC0gaW5wdXRfZGYgJT4lIGZpbHRlcihpcy5uYShyZWxhdGVkLm1hbnUpKSAlPiUgDQogIHNlbGVjdChtYW51c2NyaXB0Lm51bWJlcikgJT4lIA0KICBsZWZ0X2pvaW4oLiwgaW5wdXRfZGYsIGJ5ID0gYygibWFudXNjcmlwdC5udW1iZXIiPSJyZWxhdGVkLm1hbnUiKSkNCg0Kam9pbl90d28gPC0gam9pbl9vbmUgJT4lICANCiAgZmlsdGVyKG1hbnVzY3JpcHQubnVtYmVyLnkgIT0gIk5BIikgJT4lIA0KICBsZWZ0X2pvaW4oLiwgaW5wdXRfZGYsIGJ5ID0gYygibWFudXNjcmlwdC5udW1iZXIueSI9InJlbGF0ZWQubWFudSIpKSANCg0Kb25lX3VuaXRlIDwtIGpvaW5fb25lICU+JSBmaWx0ZXIoaXMubmEobWFudXNjcmlwdC5udW1iZXIueSkpICU+JSB1bml0ZShzZXAgPSAiOyIpDQoNCnR3b191bml0ZSA8LSBqb2luX3R3byAlPiUgZmlsdGVyKGlzLm5hKG1hbnVzY3JpcHQubnVtYmVyLnkueSkpICU+JSB1bml0ZShzZXAgPSAiOyIpDQoNCmNvbXBsZXRlIDwtIHJiaW5kKG9uZV91bml0ZSwgdHdvX3VuaXRlKQ0KYGBgDQoNCk1pZ2h0IGJlIHdvcnRoIGNoZWNraW5nIGludG8gdGhlIFtgc3FsZGZgXShodHRwczovL2NyYW4uci1wcm9qZWN0Lm9yZy93ZWIvcGFja2FnZXMvc3FsZGYvc3FsZGYucGRmKSBwYWNrYWdlIGJhc2VkIG9uIHRoZSBbU1FMIGV4cGxhaW5lciBibG9nIHBvc3RdKGh0dHBzOi8vYWNhZGVteS52ZXJ0YWJlbG8uY29tL2Jsb2cvaWxsdXN0cmF0ZWQtZ3VpZGUtc3FsLXNlbGYtam9pbi8pLiANCg0KV2FzIGFibGUgdG8gbG9nb24gdG8gdGhlIGBzY2hsb3NzLWxhYmAgZmx1eCBkaXJlY3RvcnkuDQoNCioqLSBQcmVwIGZvciBtZWV0aW5nIHcuIEpvZWwgQmF6aXJhKioNCg0KU2V2ZXJhbCBwdWJsaWNhdGlvbnMgKDQwKyksIEkgZm91bmQgb25lIGluIEpDTSAmIHNldmVyYWwgaW4uLi4gb2RkIGpvdXJuYWxzLiBpLmUuLCBvbmVzIHRoYXQgdG8gbXkgZXllcyB3b3VsZCBsb29rIHByZWRhdG9yeS4gU3RhcnRpbmcgcXVlc3Rpb25zOg0KMS4gaG93IGRvIHlvdSBjaG9vc2Ugd2hlcmUgdG8gc3VibWl0LCB3aGF0IGpvdXJuYWxzIGFyZSB5b3VyICJTYWZlIiBhbmQgInJlYWNoIiBqb3VybmFscz8NCjEuIHdoYXQgaGFzIHlvdXIgZXhwZXJpZW5jZSB3aXRoIHB1Ymxpc2hpbmcgYmVlbiBsaWtlPyBBU00/IA0KMS4gd291bGQgeW91IGxpa2UgdG8gc2VlIGFueXRoaW5nIGNoYW5nZSBpbiBwdWJsaXNoaW5nPw0KICAgIA0KI0dvYWxzOiBBcHIgMzAgLSBNYXkgNCwgMjAxOA0KMS4gQVNNIGJsb2cgcG9zdCAtIGZ1bmdpIHB1cmlmeSBoZWF2eSBtZXRhbHMNCiAgICArIGZpbmlzaCBmaXJzdCBkcmFmdA0KDQoxLiB+flBsYW4gZm9yIENvZGUgUmV2aWV3fn4NCg0KMS4gfn5Db3Vyc2VyYSBTdGF0czogSW5mZXJlbnRpYWwgU3RhdHMgd2sgMX5+DQoNCjEuIFhNTCBwYXJzZQ0KICAgICsgfn5maWd1cmUgb3V0IGhvdyB0byBsaW5rIHJlamVjdCAmIHJlc3VibWl0IHBhcGVycyB0byB0aGVpciBhY2NlcHRlZC9wdWJsaXNoZWQgdmVyc2lvbiAtLT4gd2hpbGUgbG9vcD9+fg0KICAgICsgfn5maWd1cmUgb3V0IGdlbmRlcml6ZS5pb35+DQogICAgKyB+fmZpZ3VyZSBvdXQgZmx1eCBsb2dpbn5+DQoNCjEuIEFTTSBUcmFuc2ZlciBhcnRpY2xlcw0KICAgICsgd2FpdGluZyBmb3IgdG90YWwgbnVtYmVycyBvZiByZWplY3Rpb25zIGZyb20gU3RhY2V5DQogICAgDQoxLiBfQmFjaWxsdXNfIG1hbnVzY3JpcHQNCiAgICArIH5+RWRpdCB0ZXh0IGFzIG5lZWRlZH5+DQogICAgDQoxLiBFc3RpbWF0ZWQgSUYNCiAgICArIEZpZ3VyZSBvdXQgV29TIEFQSQ0KICAgIA0KMS4gfn5BU00gU3RhZmYgTWVldGluZyAtIE1vbmRheSBAIDJwbX5+DQoNCiMyMDE4LzA1LzA0DQoNCioqLSBBU00gcmVqZWN0aW9ucyoqDQoNClBpbmdlZCBTdGFjZXkgb24gdGhpcyBhZ2Fpbi4NCg0KKiotIE1hdHQgRm9sZXkncyBUaGVzaXMgRGVmZW5zZSoqDQoNCioqLSBCYWNpbGx1cyBNYW51c2NyaXB0KioNCg0KRm9ybWF0dGVkIFphY2tzIGZpZ3VyZSAmIHNlbnQgYW5vdGhlciBkcmFmdCBvdXQgdG8gYXV0aG9ycy4gSnVzdCB3YWl0aW5nIGZvciBjb21tZW50cyENCg0KIzIwMTgvMDUvMDMNCg0KKiotIExhYiBtZWV0aW5nKioNCg0KUGF0J3MgaWRlYSAtIGpvaW4gdGhlIHRhYmxlIG9uIGl0c2VsZiAtIGlubmVyIGpvaW5zIA0KYGBge3J9DQpmdWxsX2pvaW4oYWxsX21hbnUsIGFsbF9tYW51LCBieT1jKCJyZWxhdGVkLm1hbnUiPSJtYW51c2NyaXB0Lm51bWJlciIpKSAlPiUgDQogIHNlbGVjdChtYW51c2NyaXB0Lm51bWJlciwgc3RhcnRzX3dpdGgoInJlbGF0ZWQubWFudSIpKSAlPiUgZGlzdGluY3QoKSAlPiUgdW5pdGUoc2VwID0gIi4iKQ0KYGBgDQoNCk5pY2sgLSBzdWJzZXQgb24gTkEgYi9jIHRob3NlIHdpbGwgYWxsIGJlIGZpcnN0IHN1Ym1pc3Npb25zLCB0aGVuIGpvaW4gYmFzZWQgb24gbWFudSBudW1iZXIgLSBnZW5lcmFsIGlkZWEgaXMgdG8gc2hvcnRlbiB0aGUgZ3JvdXBpbmcgbnVtYmVyIGJ5IG1ha2luZyBpdCB0aGUgInByaW1hcnkiIHN1Ym1pc3Npb24uIChncm91cF9ieSB0aGVuIHN1bSA/KQ0KDQoqKi0gRGVwYXJ0bWVudCBzZW1pbmFyKioNCg0KU2V0IHVwIG1lZXRpbmcgd2l0aCBoaW0gdG8gZGlzY3VzcyBjaGFsbGVuZ2VzIGluIHB1Ymxpc2hpbmcNCg0KKiotIEJhY2lsbHVzIG1hbnVzY3JpcHQqKg0KDQpGaW5pc2hlZCBmb3JtYXR0aW5nLiBKdXN0IHdhaXRpbmcgZm9yIFphY2sncyBzdXBwbGVtZW50YWwgZmlndXJlLiANCg0KKiotIEZsdXgqKg0KDQpQZXJtaXNzaW9uIGRlbmllZC4NCg0KKiotIEFTTSBGdW5naSBCbG9nIFBvc3QqKg0KDQpXb3JrIG9uIGZpcnN0IGRyYWZ0LiANCg0KIzIwMTgvMDUvMDINCg0KKiotIEJhY2lsbHVzIG1hbnVzY3JpcHQqKg0KDQpFZGl0ZWQgdGV4dCwgd3JvdGUgaW1wb3J0YW5jZSBzZWN0aW9uLCBmaWd1cmVkIG91dCB3b3JkIGNvdW50cyBhbmQgZm9ybWF0dGVkIGZvciBzdWJtaXNzaW9uLiANCg0KKiotRmx1eCoqDQoNCkdvdCBsb2dnZWQgaW4gdG8gZmx1eCB1c2luZyB0aGUgV2luZG93cyBQb3dlclNoZWxsIHNzaCBjbGllbnQ6IGBzc2ggYWtoYWdhbkBmbHV4LWxvZ2luLmFyYy10cy51bWljaC5lZHVgICYgbXkgbGV2ZWwtMSBwYXNzd29yZC4gUGF0IGhhcyBzdG9yZWQgYWxsIG9mIHRoZSBYTUwgZmlsZXMgaW4gYC9uZnMvdHVyYm8vc2NobG9zcy1sYWIvZ2VuZGVyX2RhdGFgIGJ1dCBJIGRvbid0IGhhdmUgYWNjZXNzOiBgUGVybWlzc2lvbiBkZW5pZWRgLiBGb3IgZnV0dXJlIHJlZmVyZW5jZSB0aGVyZSBpcyBhIFtGbHV4IHVzZXIgZ3VpZGVdKGh0dHA6Ly9hcmMtdHMudW1pY2guZWR1L2ZsdXgtdXNlci1ndWlkZS8pLCBhIFtoZWxwZnVsIFlvdXR1YmUgdmlkZW9dKGh0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9RDJxbWxiQ05xaTQpICYgdGhlIFtoYW5kb3V0c10oaHR0cDovL2NzY2FyLnJlc2VhcmNoLnVtaWNoLmVkdS9ldmVudC9pbnRyb2R1Y3Rpb24tdG8tdGhlLWZsdXgtY2x1c3Rlci1hbmQtYmF0Y2gtY29tcHV0aW5nLTUtMy8pIGZyb20gYSBDU0NBUiBjbGFzcyBvbiBpbnRybyB0byBGbHV4LiBBbHNvIHJlbWVtYmVyIHRoZSBub3RlcyBmcm9tIHRoZSBjb21tYW5kbGluZSBjbGFzcyENCg0KKiotWE1MIHBhcnNpbmcqKg0KDQpJJ20gb25seSBnZXR0aW5nIHRoZSBtYW51Lm51bWJlciBiYWNrIGFzIHRoZSByZXZpc2VkLm1hbnUubnVtYmVyLiBJIHRoaW5rIHRoYXQncyBiZWNhdXNlIGl0J3MgYmVlbiBhc3NpZ25lZCBpbiB0aGUgYmVnaW5uaW5nICYgaXNuJ3QgYmVpbmcgcmUtd3JpdHRlbiBvciB0aGUgcmUtd3JpdGluZyBpcyBiZWluZyBsb3N0IGIvYyBvZiBhc3NpZ25pbmcgdGhlIGlucHV0X21hbnUgdG8gaXQuIFNvLi4uIGhvdyBkbyBJIHJlLXdyaXRlIGl0IHN1Y2ggdGhhdCBJIGRvbid0IGxvc2UgdGhlIGFzc2lnbm1lbnQ/IEZsaXAgaXQgdG8gYSB3aGlsZSBzdGF0ZW1lbnQ/IA0KDQpJIHRyaWVkIGJyaW5naW5nIGByZXZpc2VkLm1hbnUubnVtYmVyIDwtIG1hbnVfbnVtYmVyYCBiZWxvdyB0aGUgYGlmYCBzdGF0ZW1lbnQgYnV0IHRoYXQgZGlkbid0IHdvcmsgZWl0aGVyLiANCg0KIzIwMTgvMDUvMDENCg0KKiotIFByZXBwaW5nIGZvciBMYWIgTWVldGluZyoqDQoNCldyb3RlIHVwIGFuIFJtYXJrZG93biB3aXRoIGFuIGV4cGxhbmF0aW9uIGFuZCBhbGwgb2YgdGhlIGNvZGUgZm9yIENvZGUgUmV2aWV3IGF0IGxhYiBtZWV0aW5nLiANCg0KKiotIFNjaWVuY2UgRWRpdG9yIFNlbWluYXIqKg0KDQoqKi0gRS5NLiBCbGFja3dlbGwqKg0KDQpQaWNrZWQgdXAgJiBza2ltbWVkIHRocm91Z2ggIkEgQ2VudHVyeSBvZiBNeWNvbG9neSIgZm9yIHJlZmVyZW5jZXMuIERpZG4ndCBmaW5kIG11Y2ggZGVzcGl0ZSBXZWJzdGVyIG1lbnRpb25pbmcgb3RoZXIgZmVtYWxlIEJNUyBwcmVzaWRlbnRzIHdobyB3ZXJlIF93aXZlc18gb2Ygb3RoZXIgcHJlc2lkZW50cy9mb3VuZGluZyBtZW1iZXJzPw0KDQoqKi0gWE1MIHBhcnNpbmcqKg0KDQpTYXZlZCBgYWxsX21hbnVgIGFzIGEgY3N2IGZpbGUgYW5kIHN0YXJ0ZWQgZnJlc2ggc2NyaXB0IHRvIGltcG9ydCB0aGVuIHdvcmsgb24gYnVpbGRpbmcgZnVuY3Rpb24gdG8gbGluayBtYW51c2NyaXB0cy4gSSB0aGluayBJIGhhdmUgc29tZXRoaW5nIGNsb3NlLiBJIGhhdmUgYSBgcmVwZWF0YCB3cmFwcGluZyBhbiBgaWYgZWxzZWAgd2l0aCBsb3RzIG9mIHBhc3RpbmcuIA0KDQoqKi0gRmluaXNoIGVkaXRpbmcgQVNNIGJsb2cgcG9zdCoq</div>
 
 
 

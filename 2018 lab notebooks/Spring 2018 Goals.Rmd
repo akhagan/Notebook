@@ -25,7 +25,7 @@ Specific, Measurable, Attractive, Realistic, Time-framed
 2. Parse/sort all ASM XML files
     i) ~~l/sapply parsing functions to multiple XML files~~
     i) link data from XML files for relevant manuscripts
-    i) learn to get on Flux
+    i) ~~learn to get on Flux~~
     i) parse/compile data from 100 XML files
     i) parse/compile data from all AEM XML files
 3. Complete 2 Coursera courses
@@ -36,7 +36,7 @@ Specific, Measurable, Attractive, Realistic, Time-framed
         D) ~~Week 4 lab & videos~~
         E) ~~Week 5 project~~
     i) Inferential Statistics
-        A) Week 1 lab & videos
+        A) ~~Week 1 lab & videos~~
         B) Week 2 lab & videos
         C) Week 3 lab & videos
         D) Week 4 lab & videos
@@ -44,8 +44,8 @@ Specific, Measurable, Attractive, Realistic, Time-framed
 4. Submit BA manuscript
     i) ~~Fix citation issues~~
     i) ~~Get LAESI data - Ashu~~
-    i) Generate/fix/rearrange figures -- waiting for supplemental from Zack
-    i) Rewrite text as needed - limitations
+    i) ~~Generate/fix/rearrange figures -- waiting for supplemental from Zack~~
+    i) ~~Rewrite text as needed - limitations~~
     i) Get further co-author comments
     i) Make final changes
     i) Double check references
@@ -97,9 +97,9 @@ Specific, Measurable, Attractive, Realistic, Time-framed
 |||||
 |4/23|Rackham Graduation (F)|Make requested changes & contact Melissa; ~~Intro wk5; generate/fix MS figures~~; link data from XML pairs (this is difficult...)|~~yoga x2~~; meal plan; sort papers --> move to 5/14|
 |||||
-|4/30|Lab meeting presentation(R); Hayley & Zack in town (F)|Add rejection numbers to ASM data; Work towards linking manuscripts; Inferential wk1; rearrange figures & rewrite text as needed|yoga x2; meal plan; vaccum|
+|4/30|Lab meeting presentation(R); Hayley & Zack in town (F)|Add rejection numbers to ASM data; ~~Work towards linking manuscripts; Inferential wk1; rearrange figures & rewrite text as needed~~|yoga x2; meal plan; vaccum|
 |||||
-|5/7||Choose important points for presentation; send MS back to co-authors; Inferential wk2|yoga x2; meal plan; purge/organize closet|
+|5/7||Choose important points for presentation; ~~send MS back to co-authors~~; Inferential wk2|yoga x2; meal plan; purge/organize closet|
 |||||
 |5/14|Anniversary (T)|finalize Rmarkdown; Inferential wk3; parse/compile 50 XML files|yoga x2; meal plan; sort papers, chest of drawers(?)|
 |||||
