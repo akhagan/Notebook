@@ -4,8 +4,8 @@ output: html_notebook
 ---
 #Goals: May 7 - 11, 2018
 1. ASM blog post - fungi purify heavy metals
-    + send first draft of fungi survey to Jesus
-    + start outline for Ergot
+    + ~~send first draft of fungi survey to Jesus~~
+    + ~~start outline for Ergot~~
 
 1. ~~Read Marcy's paper for journal club~~
 
@@ -21,18 +21,32 @@ output: html_notebook
     + incorporate total rejection numbers into analysis
     
 1. _Bacillus_ manuscript
-    + N/A - waiting for comments (recieved: Zack, Ashu, Steve)
+    + N/A - waiting for comments (recieved: Zack, Ashu, Steve, David)
     
 1. Estimated IF
     + Figure out WoS API
 
 1. ~~Meet w. Joel Baizra - Mon @ 1:30 (talk about publishing)~~
 
+#2018/05/09
+
+**- Bacillus Manuscript**
+
+Incorporate David's edits.
+
+**-ASM blog post**
+
+Edit post for this week.
+
+Finish writing fungi survey post, gathered images, & sent to Jesus.
+
+Rough outline for the ergot post. 
+
 #2018/05/08
 
 **- ASM blog post**
 
-
+Write fungi survey.
 
 **Bacillus manuscript**
 
