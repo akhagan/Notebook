@@ -9,7 +9,7 @@ output: html_notebook
 
 1. ~~Read Marcy's paper for journal club~~
 
-1. Coursera Stats: Inferential Stats wk 2
+1. ~~Coursera Stats: Inferential Stats wk 2~~
 
 1. XML parse
     + using lab meeting ideas, write script to group reject & resubmit papers
@@ -21,12 +21,128 @@ output: html_notebook
     + incorporate total rejection numbers into analysis
     
 1. _Bacillus_ manuscript
-    + N/A - waiting for comments (recieved: Zack, Ashu, )
+    + N/A - waiting for comments (recieved: Zack, Ashu, Steve)
     
 1. Estimated IF
     + Figure out WoS API
 
 1. ~~Meet w. Joel Baizra - Mon @ 1:30 (talk about publishing)~~
+
+#2018/05/08
+
+**- ASM blog post**
+
+
+
+**Bacillus manuscript**
+
+Incorporated suggested edits from Zack, Ashu, & Steve. 
+
+**- Coursera Stats: Inferental stats wk 2**
+
+Hypothesis testing:
+
+  + null - H0 - often either a skeptical persepective or claim to be tested (==)
+  
+  + alternative- HA - represents an alternative claim under consideration and is often represented by a range of possibile paramater values. (<,>, !=)
+  
+  + The skeptic will not abandon the H0 unless the evidence in favor of the HA is so strong that she rejects H0 in favor of HA
+  
+  + hypothesis are always about POPULATION parameters (mu, sigma), never about sample statistics (xbar, St dev)
+  
+P-value - liklihood of observed or more extreme outcome given that H0 is true
+
+  + test statistics (e.g. Z score) - used to test a hypothesis
+  
+  + used the test statistic to calculate the p-value, the probability of observing data at least as favorable to HA as our current data set, if the null hypothesis was true.
+  
+  + if p-value is low (lower than the significance level alpha, which is usually 5%), we say that it would be very unlikely to observe the data if the null hypothesis were true and **hence reject H0**
+  
+  + if p-value is high (> alpha), we that it is likely to observe the data even if the null hypothesis were true and hence **do not reject H0**
+  
+Two-sided tests:
+  
+  + Used to check for divergence in any direction, the definition of a p-value is the same, bu the calculation is slightly different since we have to consider "at least as extreme as the observed outcome" in both directions
+  
+  + use probability of both lower & upper tail (i.e., multiply probabilty of one tail x2)
+  
+**Hypothesis testing for a single mean:**
+
+1. Set the hypothesis: 
+    + H0: mu = null value
+    + HA: mu < or > or != null value
+
+2. Calculate the point estimate: xbar
+
+3. Check conditions:
+  i. Independence: Sampled observations must be independent (random sample/assignment & if sampling without replacement n<10% of population)
+  i. Sample size/skew: n>= 30, larger if the population distribution is very skewed
+  
+4. Draw sampling distribution, shade p-value, calculate test statistic:
+  i. Z = (xbar - mu)/SE
+  i. SE = s/sqrt(n)
+  
+5. Make a decision, and interpret it in context of the research question.
+  + if p-value < alpha, reject H0; the data provide convincing evidence for HA
+  + if p-value >alpha, do not reject H0; the data do not provide convincing evidence for HA
+
+Inference for other estimators:
+
+  + An important assumption about point estimates is that they are **unbiased**, i.e., the sampling distribution of the estimate is centered at the true population parameter it estimates
+    i. that is, an unbiased estimate doesn't naturally over or underestimate the parameter, it provides a "good" estimate
+    i. the sample mean is an example of an unbiased point estimate as well as others (xbar1 - xbar2, sample proportion (p-hat), p-hat1 - p-hat2)
+    
+  + confidence intervals for nearly normal point estimates: point estimate +/- z* x SE
+  
+  + Z = (point estimate - null value)/SE
+  
+Decision Errors:
+
+  + Type 1 errors: rejecting H0 when it is actually true, the probability of doing so is alpha
+  
+  + Type 2 errors: failing to reject H0 when HA is true (i.e., you should have rejected H0), the probability of doing so is beta
+  
+  + Balancing error rates: Type 1 & 2 errors are inversely proportional, tend to want to minimze the type 1 error
+    
+  + type 1 error rate:
+    i. We reject H0 when the p-value < 0.05 (alpha == 0.05)
+    i. this means that for the cases where H0 is actually true, we do not want to incorrectly reject it more than 5% of those times
+    i. in other words, when using a 5% significane level, there is about 5% chance of making a type 1 error if the null hypothesis is true P(Type 1 error | H0 true) == alpha
+    
+  + Power of a test is the probability of correctly rejecting H0 & the probability of doing so is 1-beta
+  
+  + Goal is to keep both alpha & beta low
+  
+  + Type 2 error rate:
+    i. if HA is actually true, what is the chance that we make a type 2 error?
+    i. the answer isn't obvious
+    i. if the true population average is very close to the null value, it will be difficult to detect a difference (& reject H0)
+    i. if the true population average is very different from the null value it will be easier to detect a difference
+    i. beta then depends on effect size (gamma), difference between point estimate & null value
+    
+Significance vs Confidence Levels:
+
+  + complements of each other (e.g., 5% vs 95%) - depends on if test is one-sided vs two-sided
+  
+  + if two-sided, 95% interval with 2.5% on either side: alpha is equivalent to CL = 1 - alpha
+  
+  + if one-sided, then all 5% must be on one side, the equivalent confidence level is 90% b/c of the 5% at the other end of the tail: alpha is equvalent to CL = 1 - (2x alpha)
+  
+  + if H0 is rejected, a confidence interval that agrees with the result of hypothesis test should NOT include the null value
+  
+  + if H0 is failed to be rejected, a confidence interval that agrees with the result of the hypothesis test SHOULD include the null value
+  
+Statistical vs Practical Significance:
+
+  + Real differences between the point estimate & null value are easier to detect with larger samples
+  
+  + However, very large samples will result in statistical significance even for tiny differences between the sample mean & the null value (effect size), even when the difference is not practically significant.
+
+**- lab maintenance**
+
+ADA & Shipping biologics training courses.
+
+Applied for free github private repositories.
 
 #2018/05/07
 
