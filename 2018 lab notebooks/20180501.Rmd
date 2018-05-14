@@ -2,6 +2,76 @@
 title: "Lab Notebook: May 2018"
 output: html_notebook
 ---
+#Goals: May 14 - 18, 2018
+1. ASM blog post - fungi purify heavy metals
+    + incorporate suggestions from Jesus
+    + Microbial Myths post?
+
+1. Read Sarah's paper for journal club
+
+1. Coursera Stats: Inferential Stats wk 3
+
+1. XML parse
+    + finish & test script to group manuscripts & join as column
+    + figure out how to run an r script from flux
+    + check out parsing script with 100 more xml files on flux
+
+1. ASM Transfer articles
+    + waiting for total numbers of rejections from Stacey
+    + incorporate total rejection numbers into analysis
+    + will probably need to do an analysis overtime to see trend in published vs unpublished
+    + finalize Rmarkdown report
+    
+1. _Bacillus_ manuscript
+    + finish incorporating comments (recieved: Zack, Ashu, Steve, David)
+    
+1. Estimated IF
+    + Waiting for WoS API update from Pat
+    + Figure out WoS API
+
+#2018/05/14
+
+**- XML parse**
+
+Doing a conditional join using strings is more difficult than it sounds. Tried doing a mutate, but because it works as a vector vs. row by row basis, it doesn't work with any of the `stringr` functions & returns a vector instead of a single `group_number`. I'm probably going to have to do a join, but I think I'm running into the same problem with the `fuzzy_left_join`. I tried `sqldf` but that doesn't want to work at all. 
+
+**- Bacillus manuscript**
+
+Check in with Phil about preprint & submissions. Sent the revised draft to Phil.
+
+**- Coursera Stats: Inferential Stats wk 3**
+
+t-distribution:
+
+  + when sigma is unknown (almost always), use the t-distribution to address the uncertaininty of the std error estimate, bell shaped but thicker tails than the normal (observations more likely to fall beyond 2 SD from the mean - more conservative)
+  
+  + always centered at 0, with one parameter: degrees of freedom (df), which determines the thickness of of tails
+  
+  + t statistic: T = (obs - null)/SE 
+  P(|tdf=10|>2) = `pt(2, df = 10, lower.tail = FALSE) *2`
+  
+Inference for a mean:
+
+  + estimate the mean: point estimate +/- margin of error == xbar+/- t*df(s/sqrt(n)) where df = n-1
+  
+  + finding the critical t score: `qt(lower tail %, df = )` - always use positive critical score
+  
+  + finding the p-value: `pt(t score, df, lower.tail = FALSE) *2` (pt gives the probability BELOW on the curve but we need the inverse so x2)
+  
+Comparing two independent means:
+
+  + point estimate is the DIFFERENCE between the two means (Xbar1 - xbar2), do the same with the SE for each xbar
+  
+  + DF for the t statistic is the minimum n-1
+  
+  + Conditions for inference for comparing two independent means:
+    1. Independence:
+        + within groups: sampled observations must be independent (random sample, <10% of population)
+        + between groups: the two groups must be independent of each other (non-paired)
+    2. Sample size/skew: The more skew in the population distributions, the higher the sample size needed
+    
+  
+
 #Goals: May 7 - 11, 2018
 1. ASM blog post - fungi purify heavy metals
     + ~~send first draft of fungi survey to Jesus~~
@@ -12,7 +82,7 @@ output: html_notebook
 1. ~~Coursera Stats: Inferential Stats wk 2~~
 
 1. XML parse
-    + using lab meeting ideas, write script to group reject & resubmit papers
+    + ~~using lab meeting ideas, write script to group reject & resubmit papers~~
     + figure out how to run an r script from flux
     + check out parsing script with more xml files on flux
 
@@ -27,6 +97,20 @@ output: html_notebook
     + Figure out WoS API
 
 1. ~~Meet w. Joel Baizra - Mon @ 1:30 (talk about publishing)~~
+
+#2018/05/10
+
+**- Lab meeting**
+
+**- Altmetric workshop**
+
+Altmetric explorer allows you to visualize the data for all things that are being tracked - NOT restricted to UM research!
+
+Engagement: direct link back to research object
+
+**- Flux rabbit hole**
+
+Created a new github repository & cloned it to flux. Copied `gender_data` into it and added to `.gitignore`. Figured out that Powershell doesn't like Nano so I messed with text editors. Looks like Vim is my best option (cause Atom takes FOREVER to open). Have to figure out how to download new colorschemes for Vim. Still have to figure out how to run a script from within flux...
 
 #2018/05/09
 
