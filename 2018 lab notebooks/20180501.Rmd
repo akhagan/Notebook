@@ -12,8 +12,8 @@ output: html_notebook
 1. Coursera Stats: Inferential Stats wk 3
 
 1. XML parse
-    + finish & test script to group manuscripts & join as column
-    + figure out how to run an r script from flux
+    + ~~finish & test script to group manuscripts & join as column~~
+    + ~~figure out how to run an r script from flux~~
     + check out parsing script with 100 more xml files on flux
 
 1. ASM Transfer articles
@@ -28,6 +28,24 @@ output: html_notebook
 1. Estimated IF
     + Waiting for WoS API update from Pat
     + Figure out WoS API
+
+#2018/05/15
+
+**- ASM blog post**
+
+Edit Monika's next post.
+
+**- Flux**
+
+I need to randomly select 100 XML files from the `gender_data/data/AEM` folder & copy them to `XML_parse/Files`, but that is apparently pretty tricky. At least I know I can write `Rscript path/to/code/` to run an R script.
+
+**- Phone meeting with Melissa**
+
+Talking about the monthly reports. Pulled from eJP, generally canned search queries. Screenshot, pasted & save as PDF vs. pulling from/reformatting excel sheet. Pat really likes the mBio report, which is more detailed. EJP has APIs, Melissa will write down the parameters for the current reports, then put me in communication with an eJP rep in order to work out the details of their APIs.
+
+**- XML parse**
+
+It took all FUCKING day, but I finally figured out how to link the current manuscript number to the grouped manuscript number using `mutate`, `map` and my own function.
 
 #2018/05/14
 
