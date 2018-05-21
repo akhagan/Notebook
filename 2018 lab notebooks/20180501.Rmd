@@ -2,14 +2,46 @@
 title: "Lab Notebook: May 2018"
 output: html_notebook
 ---
+#Goals: May 21 - 25
+1. ASM blog post
+    + incorporate edits from group to fungi survey post
+
+1. Read Will's paper for journal club?
+
+1. Coursera Stats: Inferential Stats wk 4
+
+1. XML parse - next step is scale up to all AEM XML files, waiting until after ASM
+
+1. ASM Transfer articles
+    + incorporate total rejection numbers into analysis
+    + will probably need to do an analysis over time to see trend in published vs unpublished
+    + draft of Rmarkdown report for Pat
+    + finalize Rmarkdown report & send to Melissa    + 
+    
+1. _Bacillus_ manuscript - Phil's edits? Submit?
+    
+1. Estimated IF
+    + Waiting for WoS API update from Pat
+    + Figure out WoS API
+
+#2018/05/21
+
+**- ASM transfer**
+
+Worked on updating the Rmarkdown analysis. Need to fix the copy/editing language, rename the Journals so that they're capitalized correctly and figure out why cmr & mmbr aren't grouping correctly.
+
+**- Bacillus manuscript**
+
+Check in with Phil.
+
 #Goals: May 14 - 18, 2018
 1. ASM blog post - fungi purify heavy metals
-    + incorporate suggestions from Jesus
-    + Microbial Myths post?
+    + ~~incorporate suggestions from Jesus~~
+    + Microbial Myths post - postpone until after ASM
 
-1. Read Sarah's paper for journal club
+1. ~~Read Sarah's paper for journal club~~
 
-1. Coursera Stats: Inferential Stats wk 3
+1. ~~Coursera Stats: Inferential Stats wk 3~~
 
 1. XML parse
     + ~~finish & test script to group manuscripts & join as column~~
@@ -17,9 +49,9 @@ output: html_notebook
     + check out parsing script with 100 more xml files on flux
 
 1. ASM Transfer articles
-    + waiting for total numbers of rejections from Stacey
+    + ~~waiting for total numbers of rejections from Stacey~~
     + incorporate total rejection numbers into analysis
-    + will probably need to do an analysis overtime to see trend in published vs unpublished
+    + will probably need to do an analysis over time to see trend in published vs unpublished
     + finalize Rmarkdown report
     
 1. _Bacillus_ manuscript
@@ -28,6 +60,136 @@ output: html_notebook
 1. Estimated IF
     + Waiting for WoS API update from Pat
     + Figure out WoS API
+
+#2018/05/17
+
+**- Lab meeting**
+
+**- Journal Club paper**
+
+**- ASM Transfer Analysis**
+
+Pulled new data from Impact Vizor to analyze along with the rejected totals from Stacey. These data include ALL rejected submissions from 01/01/2013 to 04/30/2018. My prior analysis only looked at full text research articles, so I will have to start broad & then narrow the scope to research articles & short forms. Fortunately, the new data include citation data for mSystems & mSphere articles so I don't have to re-pull that data. Tried doing a ggplot looking at rejections over time, but had trouble with the layering. I'll need to somehow get all of the data in the same dataframe? Mostly spent time going over the previous analysis updating the variable names & incorporating the total rejected data. I'll have to complete that with the rest of the analysis & then update the memo. I'm not sure the best way to do that, either update what I have or just start from scratch.
+
+#2018/05/16
+
+**- ASM Blog post**
+
+Work on Jesus' suggested edits & sent to Ray.
+
+**- Coursera: Inferential Stats wk 3**
+
+Comparing two paired means:
+
+  + When two sets of observations are not independent, they are paired (e.g., reading & writing)
+  
+  + look at the **difference** in the two parameters
+  
+  + parameter of interest: average diff for population (mu diff), 
+  
+  + point estimate: average difference from sample (xbar diff)
+  
+  + Hypothesis for paired means: H0 == no difference, HA == is a difference 
+  
+Power:
+
+  + The probability of correctly rejecting H0 == 1 - beta (the probability of a type 2 error - failing to reject H0)
+  
+  + H0: no difference, HA: there is a difference
+  
+  + work backwards from the desired power to determine the desired sample size
+  
+  + calculate required sample size for a desired level of power
+  
+  + calculate power for a range of sample sizes & choose the level of power
+  
+Comparing >2 means:
+
+  + ANOVA - analysis of variance, with test statistic F
+  
+  + H0 - the mean outcome is the same across all categories (mu1 = mu2 = m3 ... = muk)
+  
+  + HA - at least one pair of means is different from each other (doesn't specify which are different)
+  
+  + T test compares means from **2** groups: are they so far apart that the observed difference cannot be reasonably attributed to sampling variability & test statistic is a ratio of std difference over std error
+  
+  + ANOVA - compare means from **more than two** groups: are they so far apart that the observed differences cannot all reasonably be attributed to sampling variability & test stat is a ratio of the variability between groups over the variability within groups. 
+  
+  + Large test stats lead to small p-values
+  
+  + F distribution is right skewed & always positive. A large F stat requires that the variability between groups is larger than the variability within groups.
+  
+  + Variability partitioning - between groups (based on grouping variablity) & other factors (within group variability)
+  
+  + SST (sum of squares total) measures Total variability in the response variable - more interested in how this value partitions 
+  
+  + SSG (sum of squares groups) measures variability Between groups - explained variablity (squared deviation of group means from overall mean, weighted sample size)
+  
+  + SSE (sum of squares error) measures the variability within groups - unexplained variability (unexplained by the group variable due to other reasons)
+  
+  + To get from SS to Mean Sq, weight by sample size using DF.
+  
+  + Mean sq, which measures average variability within & between groups, calculated as the total variability (SS) scaled by the associated degrees of freedom
+  
+  + F stat = ratio of the avg between group & within group variabilites (i.e., MSG/MSE)
+  
+  + p-value is the probaility of at least as large a ratio between the "between" & "within" group variabilities if in fact the means of all groups are equal - area under the F curve, with DFF & DFE 
+  
+  + to calculate `pf(F stat, DFg, DFe, lower.tail = FALSE)`
+  
+Conditions for ANOVA
+
+  1. Indepdendence:
+    i. within groups: sampled observations must be independent
+    i. between groups: the groups must be independent of each other (non-paired) -- if not, repeated measures ANOVA
+  1. Approximate normality: distributions should be nearly normal within each group
+  1. Equal variance: groups should have roughly equal variability - can check with box plots
+  
+Multiple comparisons
+
+  + ANOVA tells that means differ, but not which
+  
+  + multiple comparisions inflates the Type 1 error rate, correct with multiple comparisions significance level
+  
+Bootstrapping:
+
+  + Using samples to make conclusions about a population when you can't sample the population further
+  
+  + Scheme:
+  
+    1. take a bootstrap sample - a random sample taken **with replacement** from the original sample, of the same size of the original sample
+    
+    1. calculate the bootstrap stat - a stat such as mean, median, proportion, etc computed on the bootstrap samples
+    
+    1. repeat steps 1 & 2 many times (generally >10,000) to create a bootstrap distribution - a distribution of bootstrap statistics
+    
+  + Estimate the confidence interval:
+  
+    1. percentile method
+    
+    1. standard error method
+    
+  + Limitations:
+  
+    + Not as rigid conditions as CLT based methods
+    + if the bootstrap distribution is extermely skewed or sparse, the bootstrap interval might be unreliable
+    + A representative sample is still required -- if the sample is biased, the estimates resulting from this sample will also be biased. 
+    
+  + Bootstrap vs sampling distributions:
+  
+    + Sampling dist created using sampling (with replacement) from the population
+    + Bootstrap dist created using sampling (with replacement) from the sample
+    + Both are distributions of sample statistics
+
+**-ASM Transfer articles**
+
+Recieved rejection data from Stacey
+
+**- Update Strategic goals**
+
+**- Flux**
+
+Worked on trying to randomly select & move files again, to no avail.
 
 #2018/05/15
 
@@ -41,7 +203,7 @@ I need to randomly select 100 XML files from the `gender_data/data/AEM` folder &
 
 **- Phone meeting with Melissa**
 
-Talking about the monthly reports. Pulled from eJP, generally canned search queries. Screenshot, pasted & save as PDF vs. pulling from/reformatting excel sheet. Pat really likes the mBio report, which is more detailed. EJP has APIs, Melissa will write down the parameters for the current reports, then put me in communication with an eJP rep in order to work out the details of their APIs.
+Talking about the monthly reports. Pulled from eJP, generally canned search queries. Screenshot, pasted & save as PDF vs. pulling from/reformatting excel sheet. Pat really likes the mBio report, which is more detailed. EJP has APIs, Melissa will write down the parameters for the current reports, then put me in communication with an eJP rep in order to work out the details of their APIs. I sent her a draft version of the rejection report. 
 
 **- XML parse**
 
