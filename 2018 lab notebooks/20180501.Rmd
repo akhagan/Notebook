@@ -6,16 +6,14 @@ output: html_notebook
 1. ASM blog post
     + incorporate edits from group to fungi survey post
 
-1. Read Will's paper for journal club?
-
 1. Coursera Stats: Inferential Stats wk 4
 
 1. XML parse - next step is scale up to all AEM XML files, waiting until after ASM
 
 1. ASM Transfer articles
-    + incorporate total rejection numbers into analysis
+    + ~~incorporate total rejection numbers into analysis~~
     + will probably need to do an analysis over time to see trend in published vs unpublished
-    + draft of Rmarkdown report for Pat
+    + ~~draft of Rmarkdown report for Pat~~
     + finalize Rmarkdown report & send to Melissa    + 
     
 1. _Bacillus_ manuscript - Phil's edits? Submit?
@@ -23,6 +21,14 @@ output: html_notebook
 1. Estimated IF
     + Waiting for WoS API update from Pat
     + Figure out WoS API
+
+#2018/05/22
+
+**- ASM transfer**
+
+Worked on updating the Rmarkdown analysis & sent draft to Pat. Trying to install `tinytex` so that I can generate a PDF version of the report but the install keeps failing. I've tried installing TeX Studio & the complete MiTex, but neither seemed to work, so I tried to uninstall both of them. 
+
+Pat said to do word doc then reformat. He gave suggestions, for changes. One major thing is to eliminate articles whose resubmissions were accepted to the same journal they were rejected from. Notes for Melissa - Parasitology is showing up in ASM submitted journal, and some journals don't have articles given reject & resubmit decisions associated with them. Need to cut the "moving journals" section, merge with mBio & eliminate transfer days analysis. Pat wants me to compare median ASM citations to non-rejected ASM citations, which I'll have to pull from Impact Vizor. Fiddle with Log2 transformed citation plots.
 
 #2018/05/21
 
