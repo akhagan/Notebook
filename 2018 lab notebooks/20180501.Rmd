@@ -2,6 +2,38 @@
 title: "Lab Notebook: May 2018"
 output: html_notebook
 ---
+#Goals: May 29 - June 1
+1. ASM blog post
+    + incorporate edits from group to fungi survey post
+
+1. Coursera Stats: Inferential Stats wk 4
+
+1. XML parse - next step is scale up to all AEM XML files, waiting until after ASM
+
+1. ASM Transfer articles
+    + slides for presentation   
+    + practice talk on Thursday @ lab meeting
+    
+1. _Bacillus_ manuscript - Phil's edits? Submit?
+    
+1. Estimated IF
+    + Waiting for WoS API update from Pat
+    + Figure out WoS API
+    
+1. ~~Finish AEM data request~~
+
+1. ~~Finalize Microbial Myths doc~~
+
+#2018/05/29
+
+**- Started presentation for Microbe**
+
+**- Worked on Microbial Myths doc**
+
+**- AEM data request**
+
+Finished analyzing data & generating plots for Harold's questions. Sent compiled doc to Stacey Burke.
+
 #Goals: May 21 - 25
 1. ASM blog post
     + incorporate edits from group to fungi survey post
@@ -21,6 +53,63 @@ output: html_notebook
 1. Estimated IF
     + Waiting for WoS API update from Pat
     + Figure out WoS API
+
+#2018/05/25
+
+**- Special Request from AEM EiC**
+
+Continued. 
+
+#2018/05/24
+
+**- Lab meeting**
+
+**- Special Request from AEM EiC**
+
+Stacey sent me a list of questions from Harold, the EiC for AEM, that she hadn't had a chance to address. I started working on those for her.
+
+**- Coursera: Inferential Stats wk4 -- Inference for proportions**
+
+Sampling Variablilty & CLT for Proportions:
+
+  + sample distributions != sampling distribution (statistics of ea. sample dist)
+  
+  + start with categorial variable, use to calc summary stat, which becomes a numerical sampling distribution
+  
+  + CLT for proportions: nearly normal, centered at pop proportion with a std error inversely proportional to the sample size. phat ~ N(mean = p, SE = sqrt(p(1-p)/n))
+  
+  + Conditions: 
+    1. Independence: sampled observations must be independent
+      i. random sample/assignment
+      i. if sampling w/out replacement, n<10% of population
+    2. Sample size/skew: there should be at least 10 successes & 10 failures in the sample: np >= 10 & n(1-p) >= 10
+  
+
+Confidence Interval for a Proportion:
+
+Hypothesis Test for a Proportion:
+
+Estimating the Difference Between Two Proportions:
+
+Hypothesis Test for Comparing Two Proportions:
+
+Small Sample Proportions:
+
+Comparing Two Small Sample Proportions:
+
+Chi-Square GOF Test:
+
+The Chi-Square Independence Test:
+
+**- ASM transfer**
+
+Added table for median citations, wrote introduction, sent another draft to Pat. Send final version to Melissa.
+
+#2018/05/23
+
+**- ASM transfer**
+
+Continued... Mainly worked on trying to revisualize the stack bar chart of publishers (tried Venn, ideal concept, but would take too long to get done). Pulled citation data & generated median citations for all of ASM + each journal according to accepted, resubmission accepted, and rejected. Numbered figured, reorganized.
 
 #2018/05/22
 
