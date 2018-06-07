@@ -1,0 +1,64 @@
+---
+title: "Lab Notebook: June 2018"
+output: html_notebook
+---
+#Goals: June 4 - 8
+1. ASM blog post
+    + incorporate edits from group to fungi survey post
+
+1. Coursera Stats: Inferential Stats wk 4
+
+1. XML parse - next step is scale up to all AEM XML files, waiting until after ASM
+
+1. ASM Transfer articles
+    + Practice talk on Monday
+    + Present on Thursday!!
+    
+1. _Bacillus_ manuscript - Phil's edits (after Microbe)
+    
+1. Estimated IF
+    + Waiting for WoS API update from Pat
+    + Figure out WoS API
+    
+1. Moderate Microbial Myths
+
+#2018/06/07
+
+**- Journals Board Meeting**
+
+
+
+**- AEM**
+
+Harold wants to know the impact by country of origin (# citations per country normalized to the # papers published by that country). That data is in the XML files but doesn't seem to be carried into Impact Vizor. 
+
+#2018/06/06
+
+**- JCM Meeting**
+
+JCM is interested in editor specific statistics: "For each editor, a list of papers they edited during 2015-2016, with the number of times each was cited? Let me know if it's too cumbersome or otherwise problematic"
+
+**- Meet with Melissa**
+
+Email dates for August meeting!
+
+Talk about revamping the montly report. EJP reports are tricky b/c the documentations & parameter options aren't great. Currently Melissa does the reports for all journals except mBio manually. Some of the reports are multijournals, others have to be done on a per journal basis. On the whole it is pretty tedious. The mBio report is done by Maisha with some different stats. Melissa is going to note the parameters she uses.
+
+Stats needed:
+  + submissions
+  + personal work loads (e.g., editor / EiC level stats)
+  + acceptance rates
+  + problem manuscripts (those that have been sitting in pergatory for a while, generally with the author)
+  + citations reporting (e.g. like those I've included in the rejected article tracker)
+  + other stats to help monitor editors, journal trends, themes, trend data, etc. - see mBio for ideas/template
+  + Useage stats (from highwire, which pulls from scopus)
+  
+Starter task is to pick one journal to do a sample report on & circulate to the EiCs then refine based on input. Probably start with Impact Vizor data & highwire reports to decide layout, etc then work backwards to the long term plan, which maybe to pull XML files continuously from eJP to update data. 
+
+#2018/06/04
+
+**- Practice ASM talk again**
+
+**- Coursera Stats: Inferential Stats wk 4**
+
+**- ASM blog post edits**

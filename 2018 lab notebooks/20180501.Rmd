@@ -11,8 +11,8 @@ output: html_notebook
 1. XML parse - next step is scale up to all AEM XML files, waiting until after ASM
 
 1. ASM Transfer articles
-    + slides for presentation   
-    + practice talk on Thursday @ lab meeting
+    + ~~slides for presentation~~   
+    + ~~practice talk on Thursday @ lab meeting~~
     
 1. _Bacillus_ manuscript - Phil's edits? Submit?
     
@@ -24,11 +24,17 @@ output: html_notebook
 
 1. ~~Finalize Microbial Myths doc~~
 
-#2018/05/30
+#2018/05/31
+
+**- lab meeting**
+
+**- ASM harrassment training**
 
 **- Presentation for Microbe**
 
+#2018/05/30
 
+**- Presentation for Microbe**
 
 #2018/05/29
 
