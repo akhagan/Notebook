@@ -2,6 +2,204 @@
 title: "Lab Notebook: June 2018"
 output: html_notebook
 ---
+#Goals: June 18 - 22
+1. EiC stats
+    + Editor data for JCM & AEM - scale up to all journals?
+    + Top competitors for all journals
+  
+1. Coursera Stats: 
+    + Inferential Stats wk 4
+
+1. XML parse: 
+    + next step is scale up to all AEM XML files - need to randomly select & move 50, 100 fles
+    + Or learn to use R on flux & have it randomly select 50 files
+    + figure out genderize.io
+  
+1. Estimated IF
+    + ~~Email Tyler about WoS API~~
+    
+1. Endorsement letter for Marc
+
+1. ~~Pick Journal Club Paper~~
+
+1. Monthly journals report
+    + Identify graphs/plots
+    + Identify data needed
+  
+1. Publishing in Devloping countries Opinion Piece
+    + ~~Email Ethiopian researchers~~
+    + outline
+
+#2018/06/20
+
+**- Finish Marc's Endorsement letter**
+
+**- Work on Journal Club Presentation**
+
+**- Email organized wishlist to Melissa**
+
+**- Work on R script to randomly select & parse 50 XML files**
+
+#2018/06/19
+
+**- Work on Marc's Endorsement letter**
+
+**- Email Abel about publishing experience**
+
+**- Email Tyler about WoS API**
+
+Seems to be out of town until Thursday
+
+**- Script for editor data**
+Have a script that can generate a list of the ASM journals then generate CSV files containing all of the articles accepted & published by each editor (along with months published & doi)
+
+Just need to figure out how to deal with the special characters in Editor names... Seems to be a version/software issue. Pat & others on Mac(?) can get it to work but I can't.
+
+#2018/06/18
+
+**- Finish Marc's Rec letter**
+
+**- organize wishlist**
+
+**- Work on script to tidy data from ASM_subs report**
+
+**- ASM Journals debrief**
+
+#Goals: June 11 - 15
+1. ASM blog post 
+    + ~~incorporate edits from group to fungi survey post~~
+    + ~~outline education blog post~~
+    + ~~outline blog post follow up to Microbial Myths~~
+
+1. Publishing in Devloping countries Opinion Piece
+    + interview more researchers
+    + outline
+
+1. Coursera Stats: 
+    + Inferential Stats wk 4
+    + Start modeling
+
+1. XML parse: 
+    + next step is scale up to all AEM XML files - need to randomly select & move 50, 100 fles
+    + Or learn to use R on flux & have it randomly select 50 files
+    + figure out genderize.io
+
+1. EiC stats
+    + Editor data for JCM & AEM - scale up to all journals?
+    + Top competitors for all journals
+
+1. Pick Journal Club Paper
+
+1. Monthly journals report
+    + Identify graphs/plots
+    + Identify data needed
+    + API vs continual access to XML
+  
+1. ~~_Bacillus_ manuscript - submit to mBio - Thursday @ 11am~~
+    
+1. Estimated IF
+    + Waiting for WoS API update from Pat
+    + Figure out WoS API
+    
+1. Endorsement letter for Marc
+
+
+#2018/06/14
+
+**- Submit manuscript to mBio @11**
+
+**- Meet with Pat @1:30**
+
+Pat suggested "wire framing" a report - i.e. mock up with fake data to know what data we need from where.
+
+Scott Martin (main campus) - ask Tyler Nix about getting the citations data for calculating IF. 
+
+What I focus on depends on what I want to do: 
+  + Research? - gender study
+  + Journals data analysis - reports
+  
+Things I can do now:
+  + wire frame the report
+  + mSystems/AEM/JCM questions
+  + check in with Tyler about the WoS api & cites
+
+Notes on Flux:  
+Tmucks - a way to run things in the background (have a sesssion that you can shut computer down & will still run)
+
+PBS - job handler system - interactive mode (qsub-I)
+
+$R -e "source(`file.R); command(..)"
+
+$Rscript file.R
+
+**- Lab meeting**
+
+#2018/06/13
+
+**- Outline Education blog post**
+
+**- Outline Microbial Myths post**
+
+**- Marc's rec letter**
+
+**- PDA meeting at 12:15**
+
+**- Travis' defense at 1:00**
+
+#2018/06/12
+
+**- Takeaways/feedback re: ASM**
+
+- POM symbol idea: road signs
+
+- Poster Talks:
+    + multiple instruction emails with conflicting information for "speakers"
+    + The selection for poster talks is currently opt-out, which means that people are being given poster talks with out explicit consent. While they recieve multiple emails telling them this is the case, it may be confusing if the initial email doesn't describe the selection system as opt-out (which it currently doesn't). Membership describes it as easier to deal with poster talk no-shows than switch to an opt-in only selection system, but this is problematic for attendees. There could be very negative impacts for the reputation and careers of presenters who don't show to poster talks or come unprepared because they didn't realize until the last minute that they were slated to give a talk. I think the selection method should be made more explicit from the beginning, if not changed altogether.  
+    + the organisation of posters into sessions was confusing to attendees b/c it appeared as one item on their app agendas & printouts. A solution might be to add a note instructing attendees to click for poster numbers or embed the range of poster numbers on the session description.
+
+- Track Hubs:
+    + Entire days events on track hub screen between events
+    + Airport style "you are here" maps
+    + More extensive orientations & walkthroughs (e.g., it's extremely important to know where the first aid station is)
+    + Extra floater during lunch to cover bathroom breaks
+
+**- Revise fungi survey blog post**
+
+**- Pull request to lab website**
+
+**- List of requests/questions for journals analyisis**
+
+1. Design new monthly report (need parameters from Melissa)
+1. Identify high citation publishers to target for marketing
+1. mBio transfer data from Maisha
+1. mSystems rejection data (AEM + all journals?)
+1. Impact by country of origin (AEM) - requires XML scrape
+1. List of articles by editor, including citations and months since published (JCM & AEM)
+1. Communicate with eJP about continual access
+1. Communicate with eJP about author self-reports for gender/race/etc
+1. Time to first decision
+1. Time to publishing
+1. Correlate reviewer decisions to citations
+1. Identify areas missing good cited papers - look at competing journals on WoS by keywords
+1. Correlation between number of revisions and citations
+
+
+#2018/06/11
+
+**- Bacillus manuscript**
+
+Got edits back from Phil. Plan to submit on Thursday. 
+
+**- Read NIH bias preprint**
+
+http://www.sciencemag.org/news/2018/05/applicant-s-race-or-gender-don-t-appear-influence-nih-peer-reviewers
+
+http://science.sciencemag.org/content/333/6045/1015
+
+http://drugmonkey.scientopia.org/2018/05/29/nih-ginther-fail-a-transformative-research-project/
+
+**- Update strategic plan**
+    
 #Goals: June 4 - 8
 1. ASM blog post
     + incorporate edits from group to fungi survey post
@@ -10,23 +208,36 @@ output: html_notebook
 
 1. XML parse - next step is scale up to all AEM XML files, waiting until after ASM
 
-1. ASM Transfer articles
-    + Practice talk on Monday
-    + Present on Thursday!!
+1. ~~ASM Transfer articles~~
+    + ~~Practice talk on Monday~~
+    + ~~Present on Thursday!!~~
     
-1. _Bacillus_ manuscript - Phil's edits (after Microbe)
+1. _Bacillus_ manuscript - ~~Phil's edits (after Microbe)~~
     
 1. Estimated IF
     + Waiting for WoS API update from Pat
     + Figure out WoS API
     
-1. Moderate Microbial Myths
+1. ~~Moderate Microbial Myths~~
+
+#2018/06/10
+
+- Maisha said that Arturo wants to compete with with Cell: Host & Microbe. Strategy is to find highly cited authors in CH&M & others (e.g. Nature Micro, eLIFE, PNAS, J infect diseases, etc. - look at list with updated impact factor) to contact specifically for marketing. How can I web-scrape & collate this data.
+
+
+#2018/06/08
+
+**- AEM Editors Meeting**
+
+Suggestions
 
 #2018/06/07
 
-**- Journals Board Meeting**
+**- Journals Board Meeting Presentation**
 
+  + Follow up with mSystems re: rejection data. 
 
+  + Follow up with Maisha about mBio transfer data. 
 
 **- AEM**
 
