@@ -14,104 +14,119 @@ Specific, Measurable, Attractive, Realistic, Time-framed
 
 #Writing/Research Goals
 
-1. Presentation for ASM on rejected articles
-    i) ~~Analyze/plot data~~
-    i) ~~Gather current data~~
-    i) ~~Choose important elements~~
-    i) ~~Add total rejection numbers~~
-    i) ~~Rmarkdown memo~~
-    i) ~~Make presentation~~
-    i) Practice talk
-2. Parse/sort all ASM XML files
-    i) ~~l/sapply parsing functions to multiple XML files~~
-    i) ~~link data from XML files for relevant manuscripts~~
-    i) ~~learn to get on Flux~~
-    i) parse/compile data from 100 XML files
-    i) parse/compile data from all AEM XML files
-3. Complete 2 Coursera courses
-    i) ~~Intro to Probabily & Data~~
-        A) ~~Week 1 lab & videos~~
-        B) ~~Week 2 lab & videos~~
-        C) ~~Week 3 lab & videos~~
-        D) ~~Week 4 lab & videos~~
-        E) ~~Week 5 project~~
-    i) Inferential Statistics
-        A) ~~Week 1 lab & videos~~
-        B) ~~Week 2 lab & videos~~
-        C) ~~Week 3 lab & videos~~
+1. Gender Authorship survey paper
+    i) parse/compile data from all XML files
+    i) get data from genderize.io & merge
+    i) research intro
+    i) outline 
+    i) analyze data
+    i) generate first draft
+    i) feedback from Schloss labbies
+    i) generate second draft
+    i) feedback from Pat
+    i) generate third draft
+    i) submit?
+2. ASM Journals Report
+    i) Identify graphs/plots
+    i) Identify data needed
+    i) Mock report for feedback
+    i) Work with eJP for access
+    i) generate scripts for each figure
+    i) compile scripts into pipeline
+3. Three blog posts for ASM
+    i) PI & non-academic career blog post
+        A) draft
+        B) feedback from ?
+        C) revise
+        D) submit to Ray
+        E) revise
+    i) Microbial Myths blog post
+        A) draft
+        B) feedback from ?
+        C) revise
+        D) submit to Ray
+        E) revise
+    i) Pathogenic Fungi survey
+        A) draft
+        B) feedback from Jesus
+        C) revise
+        D) submit to Ray
+        E) revise
+4. Complete 2 Coursera courses
+    i) Linear Regression & Modeling
+        A) Week 1 lab & videos
+        B) Week 2 lab & videos
+        C) Week 3 lab & videos
         D) Week 4 lab & videos
-        E) ~~Week 5 project~~
-4. Submit BA manuscript
-    i) ~~Fix citation issues~~
-    i) ~~Get LAESI data - Ashu~~
-    i) ~~Generate/fix/rearrange figures -- waiting for supplemental from Zack~~
-    i) ~~Rewrite text as needed - limitations~~
-    i) ~~Get further co-author comments~~
-    i) Make final changes
-    i) Double check references
-    i) Submit to mBio (check preprint option)
-
+    i) Bayesian Statistics
+        A) Week 1 lab & videos
+        B) Week 2 lab & videos
+        C) Week 3 lab & videos
+        D) Week 4 lab & videos
+5. Submit BA perspective
+    i) Outline
+    i) Draft 
+      
 ###Looking ahead to next Strategic Plan
 1. Complete 2 Coursera courses
-    i) Linear Regression & Modeling
-    i) Bayesian Statistics
-    i) Data Science Specialization (10 courses)
-2. Learn about genderize.io & how to link data
+    i) Getting and Cleaning Data
+    i) Exploratory Data Analysis
+    i) Developing Data Products
+2. Journey through publishing
+3. Publishing in developing countries perspective
+    i) outline
+    i) compile consensus data
+    i) generate first draft
+    i) feedback from Schloss labbies
+    i) generate second draft
+    i) feed back from Pat
+    i) generate third draft
+    i) submit
+4. Submit BA perspective
+    i) Revise draft
+    i) Send draft v2 to Phil
+    i) Incorporate Phil's feedback
+    i) Draft v3
+    i) Make final changes
+    i) Double check references
+    i) Submit to ?    
 
 #Personal Goals
 
-1. Yoga 2 - 3x per week: Friday/Sunday/Tuesday
-2. Meal planning: Fridays
-    i) find good recipes
-    i) make shopping lists
-    i) cook/plan what nights
-3. Clean and purge spare room
-    i) vacuum & ~~take out trash~~
-    i) ~~sort papers on desk~~
-    i) ~~sort/purge Dax's old clothes & toys~~
+1. Exercise: 6x/wk (Yoga - Sun/Tues/Fri, Walk - Mon/Wed/Thurs)
+2. Clean and purge spare room
     i) clean & purge closet
     i) clean & purge dresser
     i) dispose of purged items
     i) clean carpets
-
-#Weekly evaluation
-1) My goals for last week were ____________________________.
-
-2) I did (or did not) meet them.
-
-3) If not, I didn't meet my goals because __________________________.
-
-4) My goals for next week are __________________________________
-
-5) I need help with __________________________________
-
+3. Physical therapy: 6x/wk
 
 #Strategic Plan
 |Date | Distractions | Writing/Research Goals | Personal/Other Goals|
 |:---:|:-------------------------------|:-------------------------------------------|:------------------------------------|
-|4/2||~~Intro wk2~~|~~yoga x2~~; meal plan; ~~taxes~~|
+|7/2|Mom in town(M-T); Vacation(W-Sun)|||
 |||||
-|4/9||~~Meet with Pat & fine-tune ASM data goals~~; ~~Fix citation issues~~; ~~Intro wk3~~|~~yoga x2~~; ~~meal plan~~; ~~vaccum & sort Dax's clothes/toys -> move to 4/16~~|
+|7/9|Zack & Hayley's Wedding (F-Sun)|||
 |||||
-|4/16||~~Make requested changes & contact Melissa~~; ~~Intro wk4; Bug Ashu; l/sapply parsing functions to multiple XML files~~|~~yoga x2; meal plan~~; ~~vaccum -->move to 4/30 & sort Dax's clothes/toys; take clothes/toys to OUaC~~|
+|7/16||||
 |||||
-|4/23|Rackham Graduation (F)|~~Make requested changes & contact Melissa; Intro wk5; generate/fix MS figures; link data from XML pairs (this is difficult...)~~|~~yoga x2~~; meal plan; ~~sort papers --> move to 5/14~~|
+|7/23|MI Beerfest (F)|||
 |||||
-|4/30|Lab meeting presentation(R); Hayley & Zack in town (F)|Add rejection numbers to ASM data; ~~Work towards linking manuscripts; Inferential wk1; rearrange figures & rewrite text as needed~~|~~yoga x2; meal plan~~; vaccum|
+|7/30||||
 |||||
-|5/7||~~Choose important points for presentation; send MS back to co-authors; Inferential wk2~~|~~yoga x2; meal plan~~; purge/organize closet|
+|8/6||||
 |||||
-|5/14|Anniversary (T)|~~finalize Rmarkdown; Inferential wk3~~; parse/compile 50 XML files|yoga x2; meal plan; ~~sort papers~~, chest of drawers(?)|
+|8/13||||
 |||||
-|5/21|ASM blog post due (M)|~~Slides for talk~~; Inferential wk4; parse/compile 100 XML files|yoga x2; meal plan; dispose of purge|
+|8/20||||
 |||||
-|5/28|Memorial day (M); Lab meeting presentation (R)|figure out Flux/genderize.io; ~~ASM practice talk; Inferential wk5~~|yoga x2; meal plan|
+|8/27|Dax's birthday (M)|||
 |||||
-|6/4|ASM Microbe (T-S)~~|ASM presentation~~|~~yoga x2; meal plan~~|
+|9/3|Labor Day (M); Dept Picnic (F)|||
 |||||
-|6/11||make final changes & fix citations; parse/compile AEM XML files; Modeling wk1|yoga x2; meal plan|
+|9/10||||
 |||||
-|6/18||submit preprint; Modeling wk2; parse/compile JVI XML files|yoga x2; meal plan|
+|9/17||||
 |||||
-|6/25||parse/compile all XML files; Modeling wk3|yoga x2; meal plan|
+|9/24||||
 |||||

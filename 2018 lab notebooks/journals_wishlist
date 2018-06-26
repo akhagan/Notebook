@@ -1,21 +1,24 @@
 ASM Journals Wishlist:
 
-Start now:
-1. mBio transfer data from Maisha
-2. mSystems rejection data (AEM + all journals?)
-3. List of articles by editor, including citations and months since published (JCM & AEM)
-4. Design new monthly report (need parameters from Melissa)
-5. Communicate with eJP about continual access
-6. Communicate with eJP about author self-reports for gender/race/etc
+Need Melissa/Adar's help :
+1. Need Highwire access (I think this was mentioned in conversation with Adar?)
+2. Communicate with eJP about continual access (via API?)
+3. Communicate with eJP about author self-reports for gender/race/etc
+4. Need eJP parameters
 
-WoS/Scopus APIs
-1. Identify high citation publishers to target for marketing
-2. Identify areas missing good cited papers - look at competing journals on WoS by keywords
-3. Estimated JIF
+Start now:
+1. Compare mBio transfer data from Maisha to Rejected Article Analysis- (I think editors wanted to know exactly which ones were "transfers")
+2. Rolling out Impact Visor Statistics across all journals for Editors.
+3. Mock up a design for the new monthly report -  (will need parameters from Melissa)
+
+Need WoS/Scopus APIs:
+1. Estimated JIF
+2. Identify high citation publishing authors to target for marketing
+3. Identify areas missing good cited papers - look at competing journals on WoS by keywords
 
 
 Need eJP/XML access:
 1. Impact by country of origin (AEM) - requires XML scrape
 2. Correlation between number of revisions and citations
-3. Correlate reviewer decisions to citations
-4. Time to publishing
+3. Correlate reviewer scores to citations
+4. Time to publishing (distinct from time to first decisions, look across all versions)
