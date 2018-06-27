@@ -28,19 +28,54 @@ output: html_notebook
 
 **- WoS API**
 
-Email response to Tyler with example
+Email response to Tyler with example. Oddly, when I repeated the data pull, it included citations from the most recent years so I asked if it were possible with an API.
 
 **- genderize.io**
 
-Work on automating looping through country codes
+Send subscription info to Pat. Work on automating looping through country codes.
+
+Problems:
+  + Some country codes aren't in the list - download list of included country codes in JSON file, parse & join with `iso_code` to get rid of those that aren't included prior to join with database
+  + Have to get rid of periods? - Done
+  + Some country codes return an error (below), need to build into function to skip or suppress errors
+```
+No encoding supplied: defaulting to UTF-8. !!!! http returned status code:
+502 !!!! message: Server error: (502) Bad Gateway
+```
 
 **- XML parse**
 
-Meet with Nick to learn how to submit a batch file
+Meet with Nick to learn how to submit a batch file to parse 500 AEM XML files.
+
+  1. Using a text editor, create a `.pbs` file in the home directory of the project (use parse_500_AEM as template)
+
+  2. Fill in appropriate information (e.g., job name, email address, when you want email notifications, what resources you need)
+  
+  3. Save file and ensure that you have the appropriate modules (e.g., R) loaded
+  
+  4. Submit job: qsub title_of_batch_file.pbs
+  
+  5. Output will be the job number, which you can use to check the status:
+      + check if started: qstat -t job#
+      + check all jobs under unique name: qstat -u akhagan
+      + cancel a job: qdel job#
+      + check what a job is doing: qpeek job#
+
+Possible to create a job dependent on the outcome of the previous job. 
+
+Need to [set R module](http://arc-ts.umich.edu/software/default-modules/) to automatically load when I log on to flux. - DONE
+
+Resources: 
+  + Submitting pbs: http://arc-ts.umich.edu/flux/using-flux/pbs-basics/
+  + Interactive jobs: http://arc-ts.umich.edu/document/interactive-pbs-jobs/
+  
+Screwed up by editing the same file in both flux & my local hard drive & copied the gender data back up into my flux `akhagan` folder for a back up in case I have to replace the repo sometime. Need to finish by moving `data` into `gender_data_backup`.
+
+Ran another `pbs` job, this time with the command to `print` the first 6 `xml_top_list` so I can see what the file paths are and trouble shoot. 
 
 **- ASM blog post**
 
-Write another section of Microbial Myths.
+Started the aseptic technique section of Microbial Myths. Wrote some, did more digging for research papers & emailed Jeff Karr at CHOMA to see what he could find on the origins of aseptic technique & confirmatory papers.
 
 #2018/06/26
 
