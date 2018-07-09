@@ -9,10 +9,14 @@ output: html_notebook
 
 1. XML parse: 
     + Scale up to AEM XML files on flux
-    + figure out automating genderize.io - subscription?
+    + finish script to automate genderize.io
+    + test Pat's API key - 438d7ff7f5df44619feace2a7bd07503
   
 1. Estimated IF
-    + Emailed Tyler about WoS API - waiting for Clarviate response
+    + ~~Emailed Tyler about WoS API - waiting for Clarviate response~~
+    + Get AMR API key from Pat
+    + Find/write AMR API request script
+    + Test API script on 5 doi's
     
 1. Monthly journals report - got parameters from Melissa
     + Identify graphs/plots
@@ -26,3 +30,17 @@ output: html_notebook
 1. Summer Strategic Goals
     + Finish planning goals
     + Meet with Pat
+    
+#2018/07/09
+
+**- ASM blog post**
+
+Worked on research about bathing infants and the microbiome.
+
+**- Set up new laptop**
+
+Installed gitcola, R, R studio, slack, etc. Cloned github repositories. Also installed a couple of productivity tools: a notepad & task/timer app
+
+**- emailed with Tyler about WoS API**
+
+He sent links to documentation about the APIs & is going to check on which one we subscribe to. I think Pat was using the AMR, I asked him for the API key.
