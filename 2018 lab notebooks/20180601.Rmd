@@ -24,6 +24,22 @@ output: html_notebook
 1. ASM blog post
     + first draft of Microbial Myths
 
+#2018/06/28
+
+**- Lab meeting**
+
+**- XML parse**
+
+Finally figured out why my script keeps failing when I scale up. Missing values in the creation of `manu_data` cause it to fail. Need to figure out how to replace missing values with a `Null` or `n/a` value. 
+
+Next problem `"by" can't contain join column "person.id" which is missing from RHS`
+
+**- ASM blog post**
+
+Wrote second section of Microbial Myths - on aeseptic technique. One to go.
+
+Also, came up with new blog series: "Stepping from the shadows: fore-women of microbiology". The concept is women in Pasteur & Koch's labs that developed the techniques that they get credit for.
+
 #2018/06/27
 
 **- WoS API**

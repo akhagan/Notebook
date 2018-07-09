@@ -1,0 +1,28 @@
+---
+title: "Lab Notebook: July 2018"
+output: html_notebook
+---
+#Goals: July 9 -13
+1. EiC stats
+    + Editor data for JCM & AEM - scale up to all journals?
+    + Top competitors for all journals
+
+1. XML parse: 
+    + Scale up to AEM XML files on flux
+    + figure out automating genderize.io - subscription?
+  
+1. Estimated IF
+    + Emailed Tyler about WoS API - waiting for Clarviate response
+    
+1. Monthly journals report - got parameters from Melissa
+    + Identify graphs/plots
+    + Identify data needed
+    + Check in with Joel again
+
+1. ASM blog post
+    + finish first draft of Microbial Myths
+    + submit to Ray
+    
+1. Summer Strategic Goals
+    + Finish planning goals
+    + Meet with Pat
