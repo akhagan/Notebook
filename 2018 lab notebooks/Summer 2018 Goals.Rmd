@@ -1,7 +1,7 @@
 ---
 title: "Summer 2018 Strategic Plan"
 author: "Ada"
-date: "June 12, 2018"
+date: "July - September 2018"
 output:
   html_document: default
   pdf_document: default
@@ -21,11 +21,13 @@ Specific, Measurable, Attractive, Realistic, Time-framed
     i) outline 
     i) analyze data
     i) generate first draft
+        A) Intro
+        B) Methods
+        C) Results
+        D) Discussion
     i) feedback from Schloss labbies
     i) generate second draft
     i) feedback from Pat
-    i) generate third draft
-    i) submit?
 2. ASM Journals Report
     i) Identify graphs/plots
     i) Identify data needed
@@ -38,41 +40,48 @@ Specific, Measurable, Attractive, Realistic, Time-framed
         A) draft
         B) feedback from ?
         C) revise
-        D) submit to Ray
+        D) submit to Julie
         E) revise
     i) Microbial Myths blog post
         A) draft
         B) feedback from ?
         C) revise
-        D) submit to Ray
+        D) submit to Julie
         E) revise
     i) Pathogenic Fungi survey
         A) draft
         B) feedback from Jesus
         C) revise
-        D) submit to Ray
+        D) submit to Julie
         E) revise
-4. Complete 2 Coursera courses
-    i) Linear Regression & Modeling
-        A) Week 1 lab & videos
-        B) Week 2 lab & videos
-        C) Week 3 lab & videos
-        D) Week 4 lab & videos
-    i) Bayesian Statistics
-        A) Week 1 lab & videos
-        B) Week 2 lab & videos
-        C) Week 3 lab & videos
-        D) Week 4 lab & videos
-5. Submit BA perspective
+4. Write BA perspective
     i) Outline
-    i) Draft 
+    i) Draft
+    i) First revision
+    i) Send draft to Phil
+5. Estimated JIF
+    i) Find R script for WoS API
+    i) Write script to pull info for dois
+    i) Test on 10 dois
+    i) Script to identify included dois
       
-###Looking ahead to next Strategic Plan
-1. Complete 2 Coursera courses
+###Looking ahead to next Strategic Plan (Oct - Dec)
+1. Coursera courses
+    i) Linear Regression & Modeling
+    i) Bayesian Statistics
     i) Getting and Cleaning Data
     i) Exploratory Data Analysis
     i) Developing Data Products
 2. Journey through publishing
+    i) outline
+    i) intro
+    i) methods
+    i) results
+    i) discussion
+    i) first revisions
+    i) comments from ?
+    i) revise
+    i) draft to Pat
 3. Publishing in developing countries perspective
     i) outline
     i) compile consensus data
@@ -92,7 +101,6 @@ Specific, Measurable, Attractive, Realistic, Time-framed
     i) Submit to ?    
 
 #Personal Goals
-
 1. Exercise: 6x/wk (Yoga - Sun/Tues/Fri, Walk - Mon/Wed/Thurs)
 2. Clean and purge spare room
     i) clean & purge closet
@@ -106,27 +114,27 @@ Specific, Measurable, Attractive, Realistic, Time-framed
 |:---:|:-------------------------------|:-------------------------------------------|:------------------------------------|
 |7/2|Mom in town(M-T); Vacation(W-Sun)|||
 |||||
-|7/9|Zack & Hayley's Wedding (F-Sun)|||
+|7/9|Zack & Hayley's Wedding (F-Sun)|finish myths post; genderize API script; XML scale up; find WoS API script||
 |||||
-|7/16||||
+|7/16||revise/submit myths post; outline/research perspective; complete XML scale up; list graphs for report||
 |||||
-|7/23|MI Beerfest (F)|||
+|7/23|Chalk talk (R); MI Beerfest (F)|outline/research perspective; complete genderize scale up & merge; script to pull dois; list data neede for report||
 |||||
-|7/30||||
+|7/30||research/outline fungi post; draft perspective; analyze authorship; test WoS on 10 dois; ejp access||
 |||||
-|8/6||||
+|8/6||draft fungi post; draft perspective; analyze authorship; report mockup||
 |||||
-|8/13||||
+|8/13||finish/revise fungi post; persepective draft revise + to Phil; analyze authorship; script to identify JIF dois; report mockup||
 |||||
-|8/20||||
+|8/20|Code Review (R)|fungi post to Jesus; outline/research authorship; report mockup||
 |||||
-|8/27|Dax's birthday (M)|||
+|8/27|Dax's birthday (M)|submit/revise fungi post; outline/research authorship; report mockup||
 |||||
-|9/3|Labor Day (M); Dept Picnic (F)|||
+|9/3|Labor Day (M); Dept Picnic (F)|draft mentorship post; draft authorship intro & methods; report mockup||
 |||||
-|9/10||||
+|9/10||finish/revise mentorship; draft authorship results/discussion; report mockup||
 |||||
-|9/17||||
+|9/17|Research talk (R)|mentorship post to?; authorship survey to?; report mockup||
 |||||
-|9/24||||
+|9/24||Revise/submit authorship survey to Pat ; submit/revise mentorship post; submit report mockup|Clean carpets|
 |||||

@@ -10,7 +10,7 @@ output: html_notebook
 1. XML parse: 
     + Scale up to AEM XML files on flux
     + finish script to automate genderize.io
-    + test Pat's API key - 438d7ff7f5df44619feace2a7bd07503
+    + ~~test Pat's API key - 438d7ff7f5df44619feace2a7bd07503~~
   
 1. Estimated IF
     + ~~Emailed Tyler about WoS API - waiting for Clarviate response~~
@@ -28,9 +28,23 @@ output: html_notebook
     + submit to Ray
     
 1. Summer Strategic Goals
-    + Finish planning goals
+    + ~~Finish planning goals~~
     + Meet with Pat
     
+#2018/07/10
+
+**- work on genderize.io script**
+
+Automated it to skip errors & repeat N/A names without a country code. 
+
+Need to find a way to deal with the special characters again.
+
+**- Work on summer strategic goals**
+
+**- ASM blog post**
+
+Work on Microbial Myths post.
+
 #2018/07/09
 
 **- ASM blog post**

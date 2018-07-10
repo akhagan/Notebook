@@ -187,11 +187,15 @@ $(document).ready(function () {
 <li>XML parse:
 <ul>
 <li>Scale up to AEM XML files on flux</li>
-<li>figure out automating genderize.io - subscription?</li>
+<li>finish script to automate genderize.io</li>
+<li><del>test Pat’s API key - 438d7ff7f5df44619feace2a7bd07503</del></li>
 </ul></li>
 <li>Estimated IF
 <ul>
-<li>Emailed Tyler about WoS API - waiting for Clarviate response</li>
+<li><del>Emailed Tyler about WoS API - waiting for Clarviate response</del></li>
+<li>Get AMR API key from Pat</li>
+<li>Find/write AMR API request script</li>
+<li>Test API script on 5 doi’s</li>
 </ul></li>
 <li>Monthly journals report - got parameters from Melissa
 <ul>
@@ -206,14 +210,32 @@ $(document).ready(function () {
 </ul></li>
 <li>Summer Strategic Goals
 <ul>
-<li>Finish planning goals</li>
+<li><del>Finish planning goals</del></li>
 <li>Meet with Pat</li>
 </ul></li>
 </ol>
+</div>
+<div id="section" class="section level1">
+<h1>2018/07/10</h1>
+<p><strong>- work on genderize.io script</strong></p>
+<p>Automated it to skip errors &amp; repeat N/A names without a country code.</p>
+<p>Need to find a way to deal with the special characters again.</p>
+<p><strong>- Work on summer strategic goals</strong></p>
+<p><strong>- ASM blog post</strong></p>
+<p>Work on Microbial Myths post.</p>
+</div>
+<div id="section-1" class="section level1">
+<h1>2018/07/09</h1>
+<p><strong>- ASM blog post</strong></p>
+<p>Worked on research about bathing infants and the microbiome.</p>
+<p><strong>- Set up new laptop</strong></p>
+<p>Installed gitcola, R, R studio, slack, etc. Cloned github repositories. Also installed a couple of productivity tools: a notepad &amp; task/timer app</p>
+<p><strong>- emailed with Tyler about WoS API</strong></p>
+<p>He sent links to documentation about the APIs &amp; is going to check on which one we subscribe to. I think Pat was using the AMR, I asked him for the API key.</p>
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIkxhYiBOb3RlYm9vazogSnVseSAyMDE4Ig0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCiNHb2FsczogSnVseSA5IC0xMw0KMS4gRWlDIHN0YXRzDQogICAgKyBFZGl0b3IgZGF0YSBmb3IgSkNNICYgQUVNIC0gc2NhbGUgdXAgdG8gYWxsIGpvdXJuYWxzPw0KICAgICsgVG9wIGNvbXBldGl0b3JzIGZvciBhbGwgam91cm5hbHMNCg0KMS4gWE1MIHBhcnNlOiANCiAgICArIFNjYWxlIHVwIHRvIEFFTSBYTUwgZmlsZXMgb24gZmx1eA0KICAgICsgZmlndXJlIG91dCBhdXRvbWF0aW5nIGdlbmRlcml6ZS5pbyAtIHN1YnNjcmlwdGlvbj8NCiAgDQoxLiBFc3RpbWF0ZWQgSUYNCiAgICArIEVtYWlsZWQgVHlsZXIgYWJvdXQgV29TIEFQSSAtIHdhaXRpbmcgZm9yIENsYXJ2aWF0ZSByZXNwb25zZQ0KICAgIA0KMS4gTW9udGhseSBqb3VybmFscyByZXBvcnQgLSBnb3QgcGFyYW1ldGVycyBmcm9tIE1lbGlzc2ENCiAgICArIElkZW50aWZ5IGdyYXBocy9wbG90cw0KICAgICsgSWRlbnRpZnkgZGF0YSBuZWVkZWQNCiAgICArIENoZWNrIGluIHdpdGggSm9lbCBhZ2Fpbg0KDQoxLiBBU00gYmxvZyBwb3N0DQogICAgKyBmaW5pc2ggZmlyc3QgZHJhZnQgb2YgTWljcm9iaWFsIE15dGhzDQogICAgKyBzdWJtaXQgdG8gUmF5DQogICAgDQoxLiBTdW1tZXIgU3RyYXRlZ2ljIEdvYWxzDQogICAgKyBGaW5pc2ggcGxhbm5pbmcgZ29hbHMNCiAgICArIE1lZXQgd2l0aCBQYXQ=</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIkxhYiBOb3RlYm9vazogSnVseSAyMDE4Ig0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCiNHb2FsczogSnVseSA5IC0xMw0KMS4gRWlDIHN0YXRzDQogICAgKyBFZGl0b3IgZGF0YSBmb3IgSkNNICYgQUVNIC0gc2NhbGUgdXAgdG8gYWxsIGpvdXJuYWxzPw0KICAgICsgVG9wIGNvbXBldGl0b3JzIGZvciBhbGwgam91cm5hbHMNCg0KMS4gWE1MIHBhcnNlOiANCiAgICArIFNjYWxlIHVwIHRvIEFFTSBYTUwgZmlsZXMgb24gZmx1eA0KICAgICsgZmluaXNoIHNjcmlwdCB0byBhdXRvbWF0ZSBnZW5kZXJpemUuaW8NCiAgICArIH5+dGVzdCBQYXQncyBBUEkga2V5IC0gNDM4ZDdmZjdmNWRmNDQ2MTlmZWFjZTJhN2JkMDc1MDN+fg0KICANCjEuIEVzdGltYXRlZCBJRg0KICAgICsgfn5FbWFpbGVkIFR5bGVyIGFib3V0IFdvUyBBUEkgLSB3YWl0aW5nIGZvciBDbGFydmlhdGUgcmVzcG9uc2V+fg0KICAgICsgR2V0IEFNUiBBUEkga2V5IGZyb20gUGF0DQogICAgKyBGaW5kL3dyaXRlIEFNUiBBUEkgcmVxdWVzdCBzY3JpcHQNCiAgICArIFRlc3QgQVBJIHNjcmlwdCBvbiA1IGRvaSdzDQogICAgDQoxLiBNb250aGx5IGpvdXJuYWxzIHJlcG9ydCAtIGdvdCBwYXJhbWV0ZXJzIGZyb20gTWVsaXNzYQ0KICAgICsgSWRlbnRpZnkgZ3JhcGhzL3Bsb3RzDQogICAgKyBJZGVudGlmeSBkYXRhIG5lZWRlZA0KICAgICsgQ2hlY2sgaW4gd2l0aCBKb2VsIGFnYWluDQoNCjEuIEFTTSBibG9nIHBvc3QNCiAgICArIGZpbmlzaCBmaXJzdCBkcmFmdCBvZiBNaWNyb2JpYWwgTXl0aHMNCiAgICArIHN1Ym1pdCB0byBSYXkNCiAgICANCjEuIFN1bW1lciBTdHJhdGVnaWMgR29hbHMNCiAgICArIH5+RmluaXNoIHBsYW5uaW5nIGdvYWxzfn4NCiAgICArIE1lZXQgd2l0aCBQYXQNCiAgICANCiMyMDE4LzA3LzEwDQoNCioqLSB3b3JrIG9uIGdlbmRlcml6ZS5pbyBzY3JpcHQqKg0KDQpBdXRvbWF0ZWQgaXQgdG8gc2tpcCBlcnJvcnMgJiByZXBlYXQgTi9BIG5hbWVzIHdpdGhvdXQgYSBjb3VudHJ5IGNvZGUuIA0KDQpOZWVkIHRvIGZpbmQgYSB3YXkgdG8gZGVhbCB3aXRoIHRoZSBzcGVjaWFsIGNoYXJhY3RlcnMgYWdhaW4uDQoNCioqLSBXb3JrIG9uIHN1bW1lciBzdHJhdGVnaWMgZ29hbHMqKg0KDQoqKi0gQVNNIGJsb2cgcG9zdCoqDQoNCldvcmsgb24gTWljcm9iaWFsIE15dGhzIHBvc3QuDQoNCiMyMDE4LzA3LzA5DQoNCioqLSBBU00gYmxvZyBwb3N0KioNCg0KV29ya2VkIG9uIHJlc2VhcmNoIGFib3V0IGJhdGhpbmcgaW5mYW50cyBhbmQgdGhlIG1pY3JvYmlvbWUuDQoNCioqLSBTZXQgdXAgbmV3IGxhcHRvcCoqDQoNCkluc3RhbGxlZCBnaXRjb2xhLCBSLCBSIHN0dWRpbywgc2xhY2ssIGV0Yy4gQ2xvbmVkIGdpdGh1YiByZXBvc2l0b3JpZXMuIEFsc28gaW5zdGFsbGVkIGEgY291cGxlIG9mIHByb2R1Y3Rpdml0eSB0b29sczogYSBub3RlcGFkICYgdGFzay90aW1lciBhcHANCg0KKiotIGVtYWlsZWQgd2l0aCBUeWxlciBhYm91dCBXb1MgQVBJKioNCg0KSGUgc2VudCBsaW5rcyB0byBkb2N1bWVudGF0aW9uIGFib3V0IHRoZSBBUElzICYgaXMgZ29pbmcgdG8gY2hlY2sgb24gd2hpY2ggb25lIHdlIHN1YnNjcmliZSB0by4gSSB0aGluayBQYXQgd2FzIHVzaW5nIHRoZSBBTVIsIEkgYXNrZWQgaGltIGZvciB0aGUgQVBJIGtleS4=</div>
 
 
 
