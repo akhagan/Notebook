@@ -1,6 +1,6 @@
 ---
 title: "Summer 2018 Strategic Plan"
-author: "Ada"
+author: "Ada Hagan"
 date: "July - September 2018"
 output:
   html_document: default
@@ -54,11 +54,8 @@ Specific, Measurable, Attractive, Realistic, Time-framed
         C) revise
         D) submit to Julie
         E) revise
-4. Write BA perspective
+4. BA perspective
     i) Outline
-    i) Draft
-    i) First revision
-    i) Send draft to Phil
 5. Estimated JIF
     i) Find R script for WoS API
     i) Write script to pull info for dois
@@ -92,8 +89,10 @@ Specific, Measurable, Attractive, Realistic, Time-framed
     i) generate third draft
     i) submit
 4. Submit BA perspective
+    i) Draft
+    i) First revision
     i) Revise draft
-    i) Send draft v2 to Phil
+    i) Send draft to Phil
     i) Incorporate Phil's feedback
     i) Draft v3
     i) Make final changes
@@ -116,25 +115,25 @@ Specific, Measurable, Attractive, Realistic, Time-framed
 |||||
 |7/9|Zack & Hayley's Wedding (F-Sun)|finish myths post; genderize API script; XML scale up; find WoS API script||
 |||||
-|7/16||revise/submit myths post; outline/research perspective; complete XML scale up; list graphs for report||
+|7/16||revise/submit myths post; outline/research authorship; complete XML scale up; list graphs for report|clean & purge desk|
 |||||
-|7/23|Chalk talk (R); MI Beerfest (F)|outline/research perspective; complete genderize scale up & merge; script to pull dois; list data neede for report||
+|7/23|Chalk talk (R); MI Beerfest (F)|outline/research authorship; complete genderize scale up & merge; list data needed for report|clean & purge dresser|
 |||||
-|7/30||research/outline fungi post; draft perspective; analyze authorship; test WoS on 10 dois; ejp access||
+|7/30||research/outline fungi post; draft authorship intro; analyze authorship; ejp access|clean & purge closet|
 |||||
-|8/6||draft fungi post; draft perspective; analyze authorship; report mockup||
+|8/6||draft fungi post; draft authorship methods; analyze authorship; report mockup|dispose of purge stuff|
 |||||
-|8/13||finish/revise fungi post; persepective draft revise + to Phil; analyze authorship; script to identify JIF dois; report mockup||
+|8/13||finish/revise fungi post; analyze authorship; report mockup||
 |||||
-|8/20|Code Review (R)|fungi post to Jesus; outline/research authorship; report mockup||
+|8/20|Code Review (R)|fungi post to Jesus; draft authorship results; report mockup; script to pull dois||
 |||||
-|8/27|Dax's birthday (M)|submit/revise fungi post; outline/research authorship; report mockup||
+|8/27|Dax's birthday (M)|submit/revise fungi post; draft authorship discussion; report mockup; test WoS on 10 dois||
 |||||
-|9/3|Labor Day (M); Dept Picnic (F)|draft mentorship post; draft authorship intro & methods; report mockup||
+|9/3|Labor Day (M); Dept Picnic (F)|draft mentorship post; revise authorship; report mockup||
 |||||
-|9/10||finish/revise mentorship; draft authorship results/discussion; report mockup||
+|9/10||finish/revise mentorship; authorship survey to?; script to identify JIF dois; report mockup||
 |||||
-|9/17|Research talk (R)|mentorship post to?; authorship survey to?; report mockup||
+|9/17|Research talk (R)|mentorship post to?; Revise/submit authorship survey to Pat; report mockup; research/outline BA perspective||
 |||||
-|9/24||Revise/submit authorship survey to Pat ; submit/revise mentorship post; submit report mockup|Clean carpets|
+|9/24||submit/revise mentorship post; submit report mockup; research/outline BA perspective|Clean carpets|
 |||||

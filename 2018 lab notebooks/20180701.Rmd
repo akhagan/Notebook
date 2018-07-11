@@ -25,12 +25,24 @@ output: html_notebook
 
 1. ASM blog post
     + finish first draft of Microbial Myths
-    + submit to Ray
+    + submit to Julie
     
 1. Summer Strategic Goals
     + ~~Finish planning goals~~
-    + Meet with Pat
+    + ~~Meet with Pat~~
     
+#2018/07/11
+
+**- estimated JIF**
+
+Work on finding WoS API script for R. Can only find `wosr` which interfaces with InCite & WoS Web Services lite. Can't find one for the AMR api yet. Might have to build this interface from scratch. 
+
+**- ASM blog post**
+
+**- Summer strategic goals**
+
+Sick, email goals to Pat. 
+
 #2018/07/10
 
 **- work on genderize.io script**
