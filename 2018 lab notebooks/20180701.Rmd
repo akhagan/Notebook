@@ -31,6 +31,14 @@ output: html_notebook
     + ~~Finish planning goals~~
     + ~~Meet with Pat~~
     
+#2018/07/12
+
+**- Journal Club paper**
+
+**- Lab meeting**
+
+**- ASM blog post**
+
 #2018/07/11
 
 **- estimated JIF**
