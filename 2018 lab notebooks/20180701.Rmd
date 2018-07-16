@@ -2,6 +2,40 @@
 title: "Lab Notebook: July 2018"
 output: html_notebook
 ---
+#Goals: July 16 - 20
+1. XML parse: 
+    + Scale up to AEM XML files on flux
+    + ~~check out script automating genderize.io~~
+    
+2. Authorship paper - research & outline:
+    + Intro
+    + Materials & Methods
+
+3. Monthly journals report:
+    + ~~Check in with Joel again~~
+    + ~~Outline graphs/plots~~
+
+4. ASM blog post
+    + finalize draft of Microbial Myths 
+    + submit to Julie
+
+#2018/07/16
+
+**- Journals report**
+
+Emailed Joel about eJP access again. Emailed Adar to ask about a login to the eJP site.
+
+Draft outline of reports. 
+
+Joel said to call whenever works. 
+
+**- Genderize.io script**
+
+Finished script, fixed conversion from html special characters to text. Will still have to revisit to: 
+  
+  1. Double check that all entered names are being queried
+  2. Figure out why I'm getting `400` errors
+
 #Goals: July 9 -13
 1. EiC stats
     + Editor data for JCM & AEM - scale up to all journals?
