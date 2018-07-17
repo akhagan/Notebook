@@ -14,10 +14,21 @@ output: html_notebook
 3. Monthly journals report:
     + ~~Check in with Joel again~~
     + ~~Outline graphs/plots~~
+    + Call Joel @ 301-254-5900 on Wed @ 1pm
 
 4. ASM blog post
     + finalize draft of Microbial Myths 
     + submit to Julie
+
+#2018/07/17
+
+**- Authorship Paper**
+
+Started Rmd file, imported Zotero bibliography, started `.bib` and `.csl` files.
+
+**- Flux scale up**
+
+Having trouble with the `parse_manu` function in the scale up. So I decided to write a function that randomly samples and parses XML files then returns a success/error message along with the file name so I can trouble shoot. So far it isn't working... However, it won't actually handle the errors, and the `case_when` returns a random number of identical results. 
 
 #2018/07/16
 
