@@ -14,11 +14,53 @@ output: html_notebook
 3. Monthly journals report:
     + ~~Check in with Joel again~~
     + ~~Outline graphs/plots~~
-    + Call Joel @ 301-254-5900 on Wed @ 1pm
+    + ~~Call Joel @ 301-254-5900 on Wed @ 1pm~~
 
 4. ASM blog post
     + finalize draft of Microbial Myths 
     + submit to Julie
+
+#2018/07/18
+
+**- Call with Joel about eJP access**
+
+System has 120 reports, don't want to reinvent the wheel. Melissa has the option to set up a batch job. 
+
+Interested in seeing what kind of reports we design. 
+
+eJP primarily in Perl code. Hire interns to teach coding.
+
+Possible to get weekly access to XML. FTP server login & password, or FTP account that eJP would transfer file to. Make sure to use SFTP so that it can be encrypted during data transfer. Data privacy is becoming an issue - requires agreement. Lots at stake for data breach (names, addresses, IP addresses) Need to look into security stuff for computers (GDPR read up).
+
+Linux command line (get a book) - type FTP prompt with web address to access files (eventually type bash shell script to automate). 
+
+The file at rest should also be encrypted. Linux should have encrypt/decrypt commands. Suggests G (will email). Unencrypt for R script, then reencrypt & preferably delete. 
+
+Gender study - AGU study Brooks/Hanson mathematical analysis, to do the study correctly, you need to know the peoples age b/c of bias in older vs younger. Controlling for age was important in checking for bias. Cross-ref against membership group for age data. Could get that from ASM, but there isn't a "universal" unique identifier. Might use last name & email. 
+
+Self-report gender/race/ethincity isn't currently collected. Check membership system. 
+
+Action items:
+    + Need to know what fields need to be added to the XML files: full editor names (full all names if cross-ref to membership data), reviewer score, usage stats (web views, pdf views/downloads, unique users), identify transfers and origin, 
+    
+    + Need to talk about security/encryption of the XML files & access - study up on GDPR
+    
+    + Check out AGU study (worked with eJP to access data?)
+    
+    + Linux book
+    
+Follow up question for Joel:
+    + What XML files will be included in FTP batch? All of them? From a given timespan? Those with recent modifications?
+
+**- Microbial Myths**
+
+Watched video & made suggestions. 
+
+Revised draft of blog post & found images.
+
+**- Authorship paper**
+
+Transferred papers for Zotero from my personal computer.
 
 #2018/07/17
 
