@@ -19,6 +19,23 @@ output: html_notebook
 4. ASM blog post
     + finalize draft of Microbial Myths 
     + submit to Julie
+    + write video description
+
+#2018/07/19
+
+**- Lab meeting**
+
+**- Read Will's paper**
+
+**- Scale up XML parse**
+
+Troubleshooting tips from Nick. Save alias in `.bashrc` files
+
+AEM XML files are only 1.4G in total, going to download all of them to a local directory to make it easier to work with.   + Linux command: `scp -r akhagan@flux-xfer.arc-ts.umich.edu:/nfs/turbo/schloss-lab/akhagan/ASM_XML_parsing/gender_data/data/AEM ~/Desktop`
+
+**- Authorship paper**
+
+Finsished importing zotero citations/pdfs. Can export citations using the bibtex format.
 
 #2018/07/18
 
