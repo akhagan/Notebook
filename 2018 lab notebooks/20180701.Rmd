@@ -2,6 +2,41 @@
 title: "Lab Notebook: July 2018"
 output: html_notebook
 ---
+#Goals: July 23 - 27
+1. XML parse: 
+    + Scale up to AEM XML files on flux
+    + Genderize scale up & merge
+    
+2. Authorship paper - research & outline for chalk talk:
+    + Intro
+    + Materials & Methods
+    + Results
+    + Discussion
+
+3. Monthly journals report:
+    + Give Joel list of missing data
+
+4. ASM blog post
+    + write Microbial Myths video description
+
+#2018/07/23
+
+**- Review BA heme paper**
+
+**- XML scale up**
+
+Well, shit. It seems that my method of pulling an entire df using `xmlSApply(input_xmltop[[2]], function(x) xmlSApply(x, xmlValue))` doesn't work b/c the way the files are listed aren't always consistent. Looks like I'm going to have manually use the `get_column` function for every desired data input.
+
+Got manu_parse to work on 500 XML scale up. Running into problems with people_parse now. Can't consistently find "people" in the same location in all XML files. The `get_column` function works, except with multiple address entries, probably the easiest route to fix? `head(n=1)`
+
+**- ASM blog post**
+
+Finish draft & send to Julie along with selected images. 
+
+Start video descriptive for Ray.
+
+Edit Monika's blog post on plastic digesting microbes.
+
 #Goals: July 16 - 20
 1. XML parse: 
     + Scale up to AEM XML files on flux
@@ -17,8 +52,8 @@ output: html_notebook
     + ~~Call Joel @ 301-254-5900 on Wed @ 1pm~~
 
 4. ASM blog post
-    + finalize draft of Microbial Myths 
-    + submit to Julie
+    + ~~finalize draft of Microbial Myths~~
+    + ~~submit to Julie~~
     + write video description
 
 #2018/07/19
