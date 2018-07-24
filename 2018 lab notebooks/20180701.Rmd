@@ -4,7 +4,8 @@ output: html_notebook
 ---
 #Goals: July 23 - 27
 1. XML parse: 
-    + Scale up to AEM XML files on flux
+    + ~~Scale up to AEM XML files on flux~~
+    + Scale up to all files
     + Genderize scale up & merge
     
 2. Authorship paper - research & outline for chalk talk:
@@ -14,10 +15,30 @@ output: html_notebook
     + Discussion
 
 3. Monthly journals report:
-    + Give Joel list of missing data
+    + ~~Give Joel list of missing data~~
 
 4. ASM blog post
-    + write Microbial Myths video description
+    + ~~write Microbial Myths video description~~
+
+#2018/07/24
+
+**- Monthly report**
+
+Send Joel list of needed data.
+
+**- BA paper**
+
+Recieved rejection from mBio. Talked to Phil, we are probably going to revise & submit to mSphere. After talking to Nick though, I think an appeal to the editor might be worth a shot.
+
+**- ASM blog post**
+
+Work on video description for Microbial Myths & send to Ray for feedback.
+
+**- XML scale up**
+
+Successfully scaled the XML parse up to all of the AEM files!!
+
+Submit batch script to scale up to all files!
 
 #2018/07/23
 
@@ -31,7 +52,7 @@ Got manu_parse to work on 500 XML scale up. Running into problems with people_pa
 
 **- ASM blog post**
 
-Finish draft & send to Julie along with selected images. 
+Finished draft & sent to Julie along with selected images. 
 
 Start video descriptive for Ray.
 
