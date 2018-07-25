@@ -5,7 +5,7 @@ output: html_notebook
 #Goals: July 23 - 27
 1. XML parse: 
     + ~~Scale up to AEM XML files on flux~~
-    + Scale up to all files
+    + ~~Scale up to all files~~
     + Genderize scale up & merge
     
 2. Authorship paper - research & outline for chalk talk:
@@ -19,6 +19,46 @@ output: html_notebook
 
 4. ASM blog post
     + ~~write Microbial Myths video description~~
+
+#2018/07/25
+
+**- genderize.io scale up**
+
+Tested out genderize script with list of 28,000+ names from the AEM dataset. The country code list is so restrictive that I'm starting to question the algorithm.
+
+Running into problems submitting names without a country code, I'm getting errors that cancel the whol submission. Tried looping through each name as an individual submission... so far so good...
+
+Issues with genderize:
+
+  - keep getting 502 (server) & 400 (client) errors - might need to better coerce the name entries (no spaces)
+  - bias in country codes (only 50% of current list worked)
+  - possible to get last names, self-report gender, & email from Microbe attendees or ASM membership lists?
+  - Nichole Broderick's dataset?
+  - it seems that some country codes on their list don't work (e.g. ireland)
+
+**- XML scale up**
+
+Tried to re-extract people data from all AEM xmls & AEM01261-14 errored
+```
+Error in data.frame(..., check.names = FALSE) : 
+  arguments imply differing number of rows: 1, 13, 12
+```
+The problem here was that not all people had address tags, so by scraping all of the person nodes into a df at the same time I think I can avoid these issues. Scaling up to all AEM files was successfull.
+
+Had to resubmit batch script b/c 400 hrs (requested) is longer than the time until the next scheduled maintananec, so it wouldn't run. Requested 4 hours instead. Script ran but terminated.
+```
+[1] "starting AAC01551-15"
+Error in check_valid_names(tbl_vars(y)) :
+  Column `4` cannot have NA as name
+Calls: map_df ... left_join -> left_join.tbl_df -> check_valid_names -> .Call
+```
+Transferred that file locally to check for issues, but when I did everything worked. I think my fix for the address tags solved the issue here.
+
+Successfully got all people data!!!! Job ended before it was done with the manu & review data, but it made it through MCB so I'm pretty sure it will make it through all when I re-submitted the job.
+
+**- Authorship paper**
+
+**- Prep for chalk talk**
 
 #2018/07/24
 

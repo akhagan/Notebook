@@ -29,8 +29,8 @@ Specific, Measurable, Attractive, Realistic, Time-framed
     i) generate second draft
     i) feedback from Pat
 2. ASM Journals Report
-    i) Identify graphs/plots
-    i) Identify data needed
+    i) ~~Identify graphs/plots~~
+    i) ~~Identify data needed~~
     i) Mock report for feedback
     i) Work with eJP for access
     i) generate scripts for each figure
@@ -43,10 +43,10 @@ Specific, Measurable, Attractive, Realistic, Time-framed
         D) submit to Julie
         E) revise
     i) Microbial Myths blog post
-        A) draft
-        B) feedback from ?
-        C) revise
-        D) submit to Julie
+        A) ~~draft~~
+        B) ~~feedback from ?~~
+        C) ~~revise~~
+        D) ~~submit to Julie~~
         E) revise
     i) Pathogenic Fungi survey
         A) draft
@@ -113,11 +113,11 @@ Specific, Measurable, Attractive, Realistic, Time-framed
 |:---:|:-------------------------------|:-------------------------------------------|:------------------------------------|
 |7/2|Mom in town(M-T); Vacation(W-Sun)|||
 |||||
-|7/9|Zack & Hayley's Wedding (F-Sun)|finish myths post; genderize API script; XML scale up; find WoS API script||
+|7/9|Zack & Hayley's Wedding (F-Sun)|~~finish myths post; genderize API script; XML scale up;~~ find WoS API script||
 |||||
-|7/16||revise/submit myths post; outline/research authorship; complete XML scale up; list graphs for report|clean & purge desk|
+|7/16||~~revise/submit myths post; outline/research authorship; complete XML scale up; list graphs for report~~|~~clean & purge desk~~|
 |||||
-|7/23|Chalk talk (R); MI Beerfest (F)|outline/research authorship; complete genderize scale up & merge; list data needed for report|clean & purge dresser|
+|7/23|Chalk talk (R); MI Beerfest (F)|outline/research authorship; complete genderize scale up & merge; ~~list data needed for report~~|clean & purge dresser|
 |||||
 |7/30||research/outline fungi post; draft authorship intro; analyze authorship; ejp access|clean & purge closet|
 |||||
