@@ -15,10 +15,10 @@ Specific, Measurable, Attractive, Realistic, Time-framed
 #Writing/Research Goals
 
 1. Gender Authorship survey paper
-    i) parse/compile data from all XML files
+    i) ~~parse/compile data from all XML files~~
     i) get data from genderize.io & merge
     i) research intro
-    i) outline 
+    i) ~~outline~~
     i) analyze data
     i) generate first draft
         A) Intro
@@ -106,7 +106,7 @@ Specific, Measurable, Attractive, Realistic, Time-framed
     i) clean & purge dresser
     i) dispose of purged items
     i) clean carpets
-3. Physical therapy: 6x/wk
+3. Physical therapy: 3x/wk
 
 #Strategic Plan
 |Date | Distractions | Writing/Research Goals | Personal/Other Goals|
@@ -117,9 +117,9 @@ Specific, Measurable, Attractive, Realistic, Time-framed
 |||||
 |7/16||~~revise/submit myths post; outline/research authorship; complete XML scale up; list graphs for report~~|~~clean & purge desk~~|
 |||||
-|7/23|Chalk talk (R); MI Beerfest (F)|outline/research authorship; complete genderize scale up & merge; ~~list data needed for report~~|clean & purge dresser|
+|7/23|Chalk talk (R); MI Beerfest (F)|~~outline/research authorship~~; complete genderize scale up & merge; ~~list data needed for report~~|clean & purge dresser|
 |||||
-|7/30||research/outline fungi post; draft authorship intro; analyze authorship; ejp access|clean & purge closet|
+|7/30||research/outline fungi post; draft authorship intro; analyze authorship; arrange xml transfer|clean & purge closet|
 |||||
 |8/6||draft fungi post; draft authorship methods; analyze authorship; report mockup|dispose of purge stuff|
 |||||

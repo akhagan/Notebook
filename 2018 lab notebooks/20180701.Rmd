@@ -2,17 +2,60 @@
 title: "Lab Notebook: July 2018"
 output: html_notebook
 ---
+#Goals: July 30 - August 3
+1. Authorship paper:
+    + Draft intro
+    + Genderize scale up & merge
+    + Link manuscripts
+    + Start to analyze data
+
+1. Monthly journals report: Get eJP access
+    + Arrange first XML pull
+    + Write script to pull data needed for monthly report (deencrypt, then re-encrypt files)
+    + Verify protection of PPI  
+    + Write SFTP protocol
+
+1. ASM blog post
+    + Research/outline pathogenic fungi post
+    
+#2018/07/30
+
+**- ASM blog post**
+
+Pull reviews/articles about pathogenic fungi (plant & humans) & work on outline.
+
+**- Authorship paper**
+
+Worked on linking the XML files. Ended up needing 5 joins to ensure that the manuscripts were all matched & had to submit job to flux b/c the matching script is going to take too long.
+
+**- Monthly Journal Report**
+
+How do I get access to an encrypted network? Is that necessary?
+
+What encryption software does Flux currently have installed?
+
+https://www.howtoforge.com/tutorial/linux-commandline-encryption-tools/
+
+https://www.digitalocean.com/community/tutorials/how-to-use-sftp-to-securely-transfer-files-with-a-remote-server
+
+Worked on script to parse xml files - need to know names of requested fields.
+
+Set up public/private keys to automate transfers (prevents password entries)
+
+I bet Pat has a script for this??
+
 #Goals: July 23 - 27
 1. XML parse: 
     + ~~Scale up to AEM XML files on flux~~
     + ~~Scale up to all files~~
-    + Genderize scale up & merge
+    + ~~Genderize scale up~~ & merge
     
-2. Authorship paper - research & outline for chalk talk:
-    + Intro
-    + Materials & Methods
-    + Results
-    + Discussion
+2. Authorship paper 
+    + ~~Research & outline for chalk talk:~~
+        + Intro
+        + Materials & Methods
+        + Results
+        + Discussion
 
 3. Monthly journals report:
     + ~~Give Joel list of missing data~~
@@ -20,7 +63,33 @@ output: html_notebook
 4. ASM blog post
     + ~~write Microbial Myths video description~~
 
+#2018/07/26
+
+**- Lab meeting chalk talk**
+
+Going to have to be careful with de-identification of data prior to making it publically available.
+
+Check genderize.io against Nichole's dataset?
+
+Publish at ASM for the audience & reach
+
+**- Authorship paper**
+
+Work on outline for intro & results.
+
+**- Genderize scale up**
+
+Cleaned up initials & whitespaces in names & so far the gender_by_country assignment is working without errors! But... it did worse than 50% assignment
+
+Started working on script to merge genderize results with people df. Have to decide what I want to do with Joel's predictions: completely discard or compare?
+
+**- XML scale up COMPLETE!!**
+
+Yay! I have all the data now! (until we get more from eJP anyway)
+
 #2018/07/25
+
+**- BA manuscript revisions**
 
 **- genderize.io scale up**
 
@@ -56,7 +125,7 @@ Transferred that file locally to check for issues, but when I did everything wor
 
 Successfully got all people data!!!! Job ended before it was done with the manu & review data, but it made it through MCB so I'm pretty sure it will make it through all when I re-submitted the job.
 
-**- Authorship paper**
+**- Journal club paper**
 
 **- Prep for chalk talk**
 
