@@ -18,6 +18,20 @@ output: html_notebook
 1. ASM blog post
     + Research/outline pathogenic fungi post
     
+1. Read/edit Marc's paper
+    
+#2018/07/31
+
+**- Authorship paper**
+
+Work on script to merge genderized names with the people df. Order is join by: country & first name, first name, middle name & country, middle name. About 20% of the names weren't assigned a gender. Cleaned up script & wrote pbs script to run on flux (tomorrow?).
+
+The script to link manuscripts is still running (ugh).
+
+**- ASM blog post**
+
+Revise Microbial Myths post. 
+
 #2018/07/30
 
 **- ASM blog post**
