@@ -1,0 +1,47 @@
+---
+title: "Lab Notebook: August 2018"
+output: html_notebook
+---
+#Goals: August 6 - 10
+1. Authorship paper:
+    + Draft intro
+    + Draft methods
+    + Genderize scale up & merge - out of names to run...
+    + Link manuscripts - waiting on script
+    + Start to analyze data
+
+1. Monthly journals report: Get eJP access
+    + Write script to pull data needed for monthly report (deencrypt, then re-encrypt files)
+    + Write SFTP protocol - Pat?
+    + Report mockup
+
+1. ASM blog post
+    + Draft fungi post
+    
+1. Read/edit Marc's paper
+
+#Goals: July 30 - August 3
+1. Authorship paper:
+    + Draft intro
+    + Genderize scale up & merge
+    + Link manuscripts
+    + Start to analyze data
+
+1. Monthly journals report: Get eJP access
+    + ~~Arrange first XML pull~~
+    + Write script to pull data needed for monthly report (deencrypt, then re-encrypt files)
+    + ~~Verify protection of PPI~~  
+    + Write SFTP protocol - Pat?
+
+1. ASM blog post
+    + Research/outline pathogenic fungi post
+    
+1. Read/edit Marc's paper
+    
+#2018/08/01
+
+**- Kaitlin practice talk**
+
+**- Authorship paper**
+
+Link manuscript still running. Genderize errored out with a 502 error, have to troubleshoot. Troubleshoot, periods & titles turned out to be an issue. Resubmitted script, which ran 2421 names & then I ran out of names.
