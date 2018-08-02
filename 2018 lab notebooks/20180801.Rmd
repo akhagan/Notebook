@@ -34,10 +34,20 @@ output: html_notebook
     + Write SFTP protocol - Pat?
 
 1. ASM blog post
-    + Research/outline pathogenic fungi post
+    + ~~Research/outline pathogenic fungi post~~
     
-1. Read/edit Marc's paper
+1. ~~Read/edit Marc's paper~~
     
+#2018/08/02
+
+**- Lab meeting**
+
+**- Read & suggest changes for Marc's paper**
+
+**- ASM blog post**
+
+Revise Microbial Myths post.
+
 #2018/08/01
 
 **- Kaitlin practice talk**
