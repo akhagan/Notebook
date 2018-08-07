@@ -7,18 +7,27 @@ output: html_notebook
     + Draft intro
     + Draft methods
     + Genderize scale up & merge - out of names to run...
-    + Link manuscripts - waiting on script
+    + Link manuscripts - flux is down
     + Start to analyze data
 
 1. Monthly journals report: Get eJP access
     + Write script to pull data needed for monthly report (deencrypt, then re-encrypt files)
     + Write SFTP protocol - Pat?
-    + Report mockup
+    + Report mockup w. AEM data
 
 1. ASM blog post
-    + Draft fungi post
+    + Start draft of fungi post
     
-1. Read/edit Marc's paper
+1. BA manuscript
+    + work on revisions
+
+#2018/08/06
+
+**- Monthly journals report**
+
+Work on scripts to mock up report w. XML data. 
+
+Need to figure out how to identify the last version available.
 
 #Goals: July 30 - August 3
 1. Authorship paper:
