@@ -8,7 +8,7 @@ output: html_notebook
     + Draft methods
     + Genderize scale up & merge - out of names to run...
     + Link manuscripts - flux is down
-    + Start to analyze data
+    + Start to analyze data - waiting for genderize & link manus
 
 1. Monthly journals report: Get eJP access
     + Write script to pull data needed for monthly report (deencrypt, then re-encrypt files)
@@ -19,7 +19,21 @@ output: html_notebook
     + Start draft of fungi post
     
 1. BA manuscript
-    + work on revisions
+    + ~~work on revisions~~
+
+#2018/08/07
+
+**- Authorship paper**
+
+Flux is back up, resubmitted job to link manuscript files. 
+
+**- Monthly journals report**
+
+Continued scripting components of mock report. Need to fix things for YTD, also the % aren't adding up in the % accept, % reject, etc.
+
+**- BA manuscript revisions**
+
+Work on text revisions & response to reviewers.
 
 #2018/08/06
 
