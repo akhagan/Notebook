@@ -6,6 +6,61 @@ output: html_notebook
 1. Authorship paper:
     + Draft intro
     + Draft methods
+    + ~~Genderize scale up & merge~~
+    + Link manuscripts 
+    + Start to analyze data - waiting for genderize & link manus
+
+1. Monthly journals report: Get eJP access
+    + Write script to pull data needed for monthly report (deencrypt, then re-encrypt files)
+    + Write SFTP protocol - Pat?
+    + Report mockup w. AEM data
+
+1. ASM blog post
+    + Draft fungi post
+    
+1. BA manuscript
+    + finish revisions (see lab notebook)
+    
+#2018/08/22
+
+**- Authorship paper**
+
+Genderize script seems to have run without issue. Only threw two 502 errors. 
+
+`link_xml` script appeared to have run, and saved a csv file. However, the csv only has a single line and the script printout has an error `Error in stream_delim_(df, path, ...) : Don't know how to handle vector of type list.` Was using the wrong `map` function so it couldn't save the output correctly. Fixed & restarted pbs script.
+
+`link_xml` script errored again `Evaluation error: Result 2055 is not a length 1 atomic vector.`
+
+#2018/08/21
+
+**- Monthly journals report**
+
+Trying to figure out why the percentages in the accept/reject rates aren't adding up. In part it's because the manuscripts aren't linked so the revise decisions are being counted in the total. Ended up only selecting accepts & rejects.
+
+Need to filter by year.
+
+**- Authorship paper**
+
+Apparently `case_when` can't handle empty variables. Replaced with an `if/else` statement. Submitted jobs to link the xml files & attempt to genderize names.
+
+#2018/08/20
+
+**- Authorship paper**
+
+Work on cleaning up link manuscript script. Having trouble getting the `case_when` statement to catch errors. Asked question about it on Stack Overflow. 
+
+**- ASM blog post**
+
+Edits/suggestions to Jennifer's yeast post.
+
+#2018/08/13-17 
+
+**Berevement**
+
+#Goals: August 6 - 10
+1. Authorship paper:
+    + Draft intro
+    + Draft methods
     + Genderize scale up & merge - out of names to run...
     + Link manuscripts - flux is down
     + Start to analyze data - waiting for genderize & link manus
@@ -20,6 +75,10 @@ output: html_notebook
     
 1. BA manuscript
     + ~~work on revisions~~
+
+#2018/08/08
+
+**- Montly journals report**
 
 #2018/08/07
 

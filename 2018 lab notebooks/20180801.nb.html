@@ -183,6 +183,59 @@ $(document).ready(function () {
 <ul>
 <li>Draft intro</li>
 <li>Draft methods</li>
+<li><del>Genderize scale up &amp; merge</del></li>
+<li>Link manuscripts</li>
+<li>Start to analyze data - waiting for genderize &amp; link manus</li>
+</ul></li>
+<li>Monthly journals report: Get eJP access
+<ul>
+<li>Write script to pull data needed for monthly report (deencrypt, then re-encrypt files)</li>
+<li>Write SFTP protocol - Pat?</li>
+<li>Report mockup w. AEM data</li>
+</ul></li>
+<li>ASM blog post
+<ul>
+<li>Draft fungi post</li>
+</ul></li>
+<li>BA manuscript
+<ul>
+<li>finish revisions (see lab notebook)</li>
+</ul></li>
+</ol>
+</div>
+<div id="section" class="section level1">
+<h1>2018/08/22</h1>
+<p><strong>- Authorship paper</strong></p>
+<p>Genderize script seems to have run without issue. Only threw two 502 errors.</p>
+<p><code>link_xml</code> script appeared to have run, and saved a csv file. However, the csv only has a single line and the script printout has an error <code>Error in stream_delim_(df, path, ...) : Don't know how to handle vector of type list.</code> Was using the wrong <code>map</code> function so it couldn’t save the output correctly. Fixed &amp; restarted pbs script.</p>
+<p><code>link_xml</code> script errored again <code>Evaluation error: Result 2055 is not a length 1 atomic vector.</code></p>
+</div>
+<div id="section-1" class="section level1">
+<h1>2018/08/21</h1>
+<p><strong>- Monthly journals report</strong></p>
+<p>Trying to figure out why the percentages in the accept/reject rates aren’t adding up. In part it’s because the manuscripts aren’t linked so the revise decisions are being counted in the total. Ended up only selecting accepts &amp; rejects.</p>
+<p>Need to filter by year.</p>
+<p><strong>- Authorship paper</strong></p>
+<p>Apparently <code>case_when</code> can’t handle empty variables. Replaced with an <code>if/else</code> statement. Submitted jobs to link the xml files &amp; attempt to genderize names.</p>
+</div>
+<div id="section-2" class="section level1">
+<h1>2018/08/20</h1>
+<p><strong>- Authorship paper</strong></p>
+<p>Work on cleaning up link manuscript script. Having trouble getting the <code>case_when</code> statement to catch errors. Asked question about it on Stack Overflow.</p>
+<p><strong>- ASM blog post</strong></p>
+<p>Edits/suggestions to Jennifer’s yeast post.</p>
+</div>
+<div id="section-3" class="section level1">
+<h1>2018/08/13-17</h1>
+<p><strong>Berevement</strong></p>
+</div>
+<div id="goals-august-6---10-1" class="section level1">
+<h1>Goals: August 6 - 10</h1>
+<ol style="list-style-type: decimal">
+<li>Authorship paper:
+<ul>
+<li>Draft intro</li>
+<li>Draft methods</li>
 <li>Genderize scale up &amp; merge - out of names to run…</li>
 <li>Link manuscripts - flux is down</li>
 <li>Start to analyze data - waiting for genderize &amp; link manus</li>
@@ -203,7 +256,11 @@ $(document).ready(function () {
 </ul></li>
 </ol>
 </div>
-<div id="section" class="section level1">
+<div id="section-4" class="section level1">
+<h1>2018/08/08</h1>
+<p><strong>- Montly journals report</strong></p>
+</div>
+<div id="section-5" class="section level1">
 <h1>2018/08/07</h1>
 <p><strong>- Authorship paper</strong></p>
 <p>Flux is back up, resubmitted job to link manuscript files.</p>
@@ -212,7 +269,7 @@ $(document).ready(function () {
 <p><strong>- BA manuscript revisions</strong></p>
 <p>Work on text revisions &amp; response to reviewers.</p>
 </div>
-<div id="section-1" class="section level1">
+<div id="section-6" class="section level1">
 <h1>2018/08/06</h1>
 <p><strong>- Monthly journals report</strong></p>
 <p>Work on scripts to mock up report w. XML data.</p>
@@ -243,14 +300,14 @@ $(document).ready(function () {
 <li><del>Read/edit Marc’s paper</del></li>
 </ol>
 </div>
-<div id="section-2" class="section level1">
+<div id="section-7" class="section level1">
 <h1>2018/08/02</h1>
 <p><strong>- Lab meeting</strong></p>
 <p><strong>- Read &amp; suggest changes for Marc’s paper</strong></p>
 <p><strong>- ASM blog post</strong></p>
 <p>Revise Microbial Myths post.</p>
 </div>
-<div id="section-3" class="section level1">
+<div id="section-8" class="section level1">
 <h1>2018/08/01</h1>
 <p><strong>- Kaitlin practice talk</strong></p>
 <p><strong>- Authorship paper</strong></p>
@@ -258,7 +315,7 @@ $(document).ready(function () {
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiTGFiIE5vdGVib29rOiBBdWd1c3QgMjAxOCIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQojR29hbHM6IEF1Z3VzdCA2IC0gMTAKMS4gQXV0aG9yc2hpcCBwYXBlcjoKICAgICsgRHJhZnQgaW50cm8KICAgICsgRHJhZnQgbWV0aG9kcwogICAgKyBHZW5kZXJpemUgc2NhbGUgdXAgJiBtZXJnZSAtIG91dCBvZiBuYW1lcyB0byBydW4uLi4KICAgICsgTGluayBtYW51c2NyaXB0cyAtIGZsdXggaXMgZG93bgogICAgKyBTdGFydCB0byBhbmFseXplIGRhdGEgLSB3YWl0aW5nIGZvciBnZW5kZXJpemUgJiBsaW5rIG1hbnVzCgoxLiBNb250aGx5IGpvdXJuYWxzIHJlcG9ydDogR2V0IGVKUCBhY2Nlc3MKICAgICsgV3JpdGUgc2NyaXB0IHRvIHB1bGwgZGF0YSBuZWVkZWQgZm9yIG1vbnRobHkgcmVwb3J0IChkZWVuY3J5cHQsIHRoZW4gcmUtZW5jcnlwdCBmaWxlcykKICAgICsgV3JpdGUgU0ZUUCBwcm90b2NvbCAtIFBhdD8KICAgICsgUmVwb3J0IG1vY2t1cCB3LiBBRU0gZGF0YQoKMS4gQVNNIGJsb2cgcG9zdAogICAgKyBTdGFydCBkcmFmdCBvZiBmdW5naSBwb3N0CiAgICAKMS4gQkEgbWFudXNjcmlwdAogICAgKyB+fndvcmsgb24gcmV2aXNpb25zfn4KCiMyMDE4LzA4LzA3CgoqKi0gQXV0aG9yc2hpcCBwYXBlcioqCgpGbHV4IGlzIGJhY2sgdXAsIHJlc3VibWl0dGVkIGpvYiB0byBsaW5rIG1hbnVzY3JpcHQgZmlsZXMuIAoKKiotIE1vbnRobHkgam91cm5hbHMgcmVwb3J0KioKCkNvbnRpbnVlZCBzY3JpcHRpbmcgY29tcG9uZW50cyBvZiBtb2NrIHJlcG9ydC4gTmVlZCB0byBmaXggdGhpbmdzIGZvciBZVEQsIGFsc28gdGhlICUgYXJlbid0IGFkZGluZyB1cCBpbiB0aGUgJSBhY2NlcHQsICUgcmVqZWN0LCBldGMuCgoqKi0gQkEgbWFudXNjcmlwdCByZXZpc2lvbnMqKgoKV29yayBvbiB0ZXh0IHJldmlzaW9ucyAmIHJlc3BvbnNlIHRvIHJldmlld2Vycy4KCiMyMDE4LzA4LzA2CgoqKi0gTW9udGhseSBqb3VybmFscyByZXBvcnQqKgoKV29yayBvbiBzY3JpcHRzIHRvIG1vY2sgdXAgcmVwb3J0IHcuIFhNTCBkYXRhLiAKCk5lZWQgdG8gZmlndXJlIG91dCBob3cgdG8gaWRlbnRpZnkgdGhlIGxhc3QgdmVyc2lvbiBhdmFpbGFibGUuCgojR29hbHM6IEp1bHkgMzAgLSBBdWd1c3QgMwoxLiBBdXRob3JzaGlwIHBhcGVyOgogICAgKyBEcmFmdCBpbnRybwogICAgKyBHZW5kZXJpemUgc2NhbGUgdXAgJiBtZXJnZQogICAgKyBMaW5rIG1hbnVzY3JpcHRzCiAgICArIFN0YXJ0IHRvIGFuYWx5emUgZGF0YQoKMS4gTW9udGhseSBqb3VybmFscyByZXBvcnQ6IEdldCBlSlAgYWNjZXNzCiAgICArIH5+QXJyYW5nZSBmaXJzdCBYTUwgcHVsbH5+CiAgICArIFdyaXRlIHNjcmlwdCB0byBwdWxsIGRhdGEgbmVlZGVkIGZvciBtb250aGx5IHJlcG9ydCAoZGVlbmNyeXB0LCB0aGVuIHJlLWVuY3J5cHQgZmlsZXMpCiAgICArIH5+VmVyaWZ5IHByb3RlY3Rpb24gb2YgUFBJfn4gIAogICAgKyBXcml0ZSBTRlRQIHByb3RvY29sIC0gUGF0PwoKMS4gQVNNIGJsb2cgcG9zdAogICAgKyB+flJlc2VhcmNoL291dGxpbmUgcGF0aG9nZW5pYyBmdW5naSBwb3N0fn4KICAgIAoxLiB+flJlYWQvZWRpdCBNYXJjJ3MgcGFwZXJ+fgogICAgCiMyMDE4LzA4LzAyCgoqKi0gTGFiIG1lZXRpbmcqKgoKKiotIFJlYWQgJiBzdWdnZXN0IGNoYW5nZXMgZm9yIE1hcmMncyBwYXBlcioqCgoqKi0gQVNNIGJsb2cgcG9zdCoqCgpSZXZpc2UgTWljcm9iaWFsIE15dGhzIHBvc3QuCgojMjAxOC8wOC8wMQoKKiotIEthaXRsaW4gcHJhY3RpY2UgdGFsayoqCgoqKi0gQXV0aG9yc2hpcCBwYXBlcioqCgpMaW5rIG1hbnVzY3JpcHQgc3RpbGwgcnVubmluZy4gR2VuZGVyaXplIGVycm9yZWQgb3V0IHdpdGggYSA1MDIgZXJyb3IsIGhhdmUgdG8gdHJvdWJsZXNob290LiBUcm91Ymxlc2hvb3QsIHBlcmlvZHMgJiB0aXRsZXMgdHVybmVkIG91dCB0byBiZSBhbiBpc3N1ZS4gUmVzdWJtaXR0ZWQgc2NyaXB0LCB3aGljaCByYW4gMjQyMSBuYW1lcyAmIHRoZW4gSSByYW4gb3V0IG9mIG5hbWVzLg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiTGFiIE5vdGVib29rOiBBdWd1c3QgMjAxOCIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQojR29hbHM6IEF1Z3VzdCA2IC0gMTAKMS4gQXV0aG9yc2hpcCBwYXBlcjoKICAgICsgRHJhZnQgaW50cm8KICAgICsgRHJhZnQgbWV0aG9kcwogICAgKyB+fkdlbmRlcml6ZSBzY2FsZSB1cCAmIG1lcmdlfn4KICAgICsgTGluayBtYW51c2NyaXB0cyAKICAgICsgU3RhcnQgdG8gYW5hbHl6ZSBkYXRhIC0gd2FpdGluZyBmb3IgZ2VuZGVyaXplICYgbGluayBtYW51cwoKMS4gTW9udGhseSBqb3VybmFscyByZXBvcnQ6IEdldCBlSlAgYWNjZXNzCiAgICArIFdyaXRlIHNjcmlwdCB0byBwdWxsIGRhdGEgbmVlZGVkIGZvciBtb250aGx5IHJlcG9ydCAoZGVlbmNyeXB0LCB0aGVuIHJlLWVuY3J5cHQgZmlsZXMpCiAgICArIFdyaXRlIFNGVFAgcHJvdG9jb2wgLSBQYXQ/CiAgICArIFJlcG9ydCBtb2NrdXAgdy4gQUVNIGRhdGEKCjEuIEFTTSBibG9nIHBvc3QKICAgICsgRHJhZnQgZnVuZ2kgcG9zdAogICAgCjEuIEJBIG1hbnVzY3JpcHQKICAgICsgZmluaXNoIHJldmlzaW9ucyAoc2VlIGxhYiBub3RlYm9vaykKICAgIAojMjAxOC8wOC8yMgoKKiotIEF1dGhvcnNoaXAgcGFwZXIqKgoKR2VuZGVyaXplIHNjcmlwdCBzZWVtcyB0byBoYXZlIHJ1biB3aXRob3V0IGlzc3VlLiBPbmx5IHRocmV3IHR3byA1MDIgZXJyb3JzLiAKCmBsaW5rX3htbGAgc2NyaXB0IGFwcGVhcmVkIHRvIGhhdmUgcnVuLCBhbmQgc2F2ZWQgYSBjc3YgZmlsZS4gSG93ZXZlciwgdGhlIGNzdiBvbmx5IGhhcyBhIHNpbmdsZSBsaW5lIGFuZCB0aGUgc2NyaXB0IHByaW50b3V0IGhhcyBhbiBlcnJvciBgRXJyb3IgaW4gc3RyZWFtX2RlbGltXyhkZiwgcGF0aCwgLi4uKSA6IERvbid0IGtub3cgaG93IHRvIGhhbmRsZSB2ZWN0b3Igb2YgdHlwZSBsaXN0LmAgV2FzIHVzaW5nIHRoZSB3cm9uZyBgbWFwYCBmdW5jdGlvbiBzbyBpdCBjb3VsZG4ndCBzYXZlIHRoZSBvdXRwdXQgY29ycmVjdGx5LiBGaXhlZCAmIHJlc3RhcnRlZCBwYnMgc2NyaXB0LgoKYGxpbmtfeG1sYCBzY3JpcHQgZXJyb3JlZCBhZ2FpbiBgRXZhbHVhdGlvbiBlcnJvcjogUmVzdWx0IDIwNTUgaXMgbm90IGEgbGVuZ3RoIDEgYXRvbWljIHZlY3Rvci5gCgojMjAxOC8wOC8yMQoKKiotIE1vbnRobHkgam91cm5hbHMgcmVwb3J0KioKClRyeWluZyB0byBmaWd1cmUgb3V0IHdoeSB0aGUgcGVyY2VudGFnZXMgaW4gdGhlIGFjY2VwdC9yZWplY3QgcmF0ZXMgYXJlbid0IGFkZGluZyB1cC4gSW4gcGFydCBpdCdzIGJlY2F1c2UgdGhlIG1hbnVzY3JpcHRzIGFyZW4ndCBsaW5rZWQgc28gdGhlIHJldmlzZSBkZWNpc2lvbnMgYXJlIGJlaW5nIGNvdW50ZWQgaW4gdGhlIHRvdGFsLiBFbmRlZCB1cCBvbmx5IHNlbGVjdGluZyBhY2NlcHRzICYgcmVqZWN0cy4KCk5lZWQgdG8gZmlsdGVyIGJ5IHllYXIuCgoqKi0gQXV0aG9yc2hpcCBwYXBlcioqCgpBcHBhcmVudGx5IGBjYXNlX3doZW5gIGNhbid0IGhhbmRsZSBlbXB0eSB2YXJpYWJsZXMuIFJlcGxhY2VkIHdpdGggYW4gYGlmL2Vsc2VgIHN0YXRlbWVudC4gU3VibWl0dGVkIGpvYnMgdG8gbGluayB0aGUgeG1sIGZpbGVzICYgYXR0ZW1wdCB0byBnZW5kZXJpemUgbmFtZXMuCgojMjAxOC8wOC8yMAoKKiotIEF1dGhvcnNoaXAgcGFwZXIqKgoKV29yayBvbiBjbGVhbmluZyB1cCBsaW5rIG1hbnVzY3JpcHQgc2NyaXB0LiBIYXZpbmcgdHJvdWJsZSBnZXR0aW5nIHRoZSBgY2FzZV93aGVuYCBzdGF0ZW1lbnQgdG8gY2F0Y2ggZXJyb3JzLiBBc2tlZCBxdWVzdGlvbiBhYm91dCBpdCBvbiBTdGFjayBPdmVyZmxvdy4gCgoqKi0gQVNNIGJsb2cgcG9zdCoqCgpFZGl0cy9zdWdnZXN0aW9ucyB0byBKZW5uaWZlcidzIHllYXN0IHBvc3QuCgojMjAxOC8wOC8xMy0xNyAKCioqQmVyZXZlbWVudCoqCgojR29hbHM6IEF1Z3VzdCA2IC0gMTAKMS4gQXV0aG9yc2hpcCBwYXBlcjoKICAgICsgRHJhZnQgaW50cm8KICAgICsgRHJhZnQgbWV0aG9kcwogICAgKyBHZW5kZXJpemUgc2NhbGUgdXAgJiBtZXJnZSAtIG91dCBvZiBuYW1lcyB0byBydW4uLi4KICAgICsgTGluayBtYW51c2NyaXB0cyAtIGZsdXggaXMgZG93bgogICAgKyBTdGFydCB0byBhbmFseXplIGRhdGEgLSB3YWl0aW5nIGZvciBnZW5kZXJpemUgJiBsaW5rIG1hbnVzCgoxLiBNb250aGx5IGpvdXJuYWxzIHJlcG9ydDogR2V0IGVKUCBhY2Nlc3MKICAgICsgV3JpdGUgc2NyaXB0IHRvIHB1bGwgZGF0YSBuZWVkZWQgZm9yIG1vbnRobHkgcmVwb3J0IChkZWVuY3J5cHQsIHRoZW4gcmUtZW5jcnlwdCBmaWxlcykKICAgICsgV3JpdGUgU0ZUUCBwcm90b2NvbCAtIFBhdD8KICAgICsgUmVwb3J0IG1vY2t1cCB3LiBBRU0gZGF0YQoKMS4gQVNNIGJsb2cgcG9zdAogICAgKyBTdGFydCBkcmFmdCBvZiBmdW5naSBwb3N0CiAgICAKMS4gQkEgbWFudXNjcmlwdAogICAgKyB+fndvcmsgb24gcmV2aXNpb25zfn4KCiMyMDE4LzA4LzA4CgoqKi0gTW9udGx5IGpvdXJuYWxzIHJlcG9ydCoqCgojMjAxOC8wOC8wNwoKKiotIEF1dGhvcnNoaXAgcGFwZXIqKgoKRmx1eCBpcyBiYWNrIHVwLCByZXN1Ym1pdHRlZCBqb2IgdG8gbGluayBtYW51c2NyaXB0IGZpbGVzLiAKCioqLSBNb250aGx5IGpvdXJuYWxzIHJlcG9ydCoqCgpDb250aW51ZWQgc2NyaXB0aW5nIGNvbXBvbmVudHMgb2YgbW9jayByZXBvcnQuIE5lZWQgdG8gZml4IHRoaW5ncyBmb3IgWVRELCBhbHNvIHRoZSAlIGFyZW4ndCBhZGRpbmcgdXAgaW4gdGhlICUgYWNjZXB0LCAlIHJlamVjdCwgZXRjLgoKKiotIEJBIG1hbnVzY3JpcHQgcmV2aXNpb25zKioKCldvcmsgb24gdGV4dCByZXZpc2lvbnMgJiByZXNwb25zZSB0byByZXZpZXdlcnMuCgojMjAxOC8wOC8wNgoKKiotIE1vbnRobHkgam91cm5hbHMgcmVwb3J0KioKCldvcmsgb24gc2NyaXB0cyB0byBtb2NrIHVwIHJlcG9ydCB3LiBYTUwgZGF0YS4gCgpOZWVkIHRvIGZpZ3VyZSBvdXQgaG93IHRvIGlkZW50aWZ5IHRoZSBsYXN0IHZlcnNpb24gYXZhaWxhYmxlLgoKI0dvYWxzOiBKdWx5IDMwIC0gQXVndXN0IDMKMS4gQXV0aG9yc2hpcCBwYXBlcjoKICAgICsgRHJhZnQgaW50cm8KICAgICsgR2VuZGVyaXplIHNjYWxlIHVwICYgbWVyZ2UKICAgICsgTGluayBtYW51c2NyaXB0cwogICAgKyBTdGFydCB0byBhbmFseXplIGRhdGEKCjEuIE1vbnRobHkgam91cm5hbHMgcmVwb3J0OiBHZXQgZUpQIGFjY2VzcwogICAgKyB+fkFycmFuZ2UgZmlyc3QgWE1MIHB1bGx+fgogICAgKyBXcml0ZSBzY3JpcHQgdG8gcHVsbCBkYXRhIG5lZWRlZCBmb3IgbW9udGhseSByZXBvcnQgKGRlZW5jcnlwdCwgdGhlbiByZS1lbmNyeXB0IGZpbGVzKQogICAgKyB+flZlcmlmeSBwcm90ZWN0aW9uIG9mIFBQSX5+ICAKICAgICsgV3JpdGUgU0ZUUCBwcm90b2NvbCAtIFBhdD8KCjEuIEFTTSBibG9nIHBvc3QKICAgICsgfn5SZXNlYXJjaC9vdXRsaW5lIHBhdGhvZ2VuaWMgZnVuZ2kgcG9zdH5+CiAgICAKMS4gfn5SZWFkL2VkaXQgTWFyYydzIHBhcGVyfn4KICAgIAojMjAxOC8wOC8wMgoKKiotIExhYiBtZWV0aW5nKioKCioqLSBSZWFkICYgc3VnZ2VzdCBjaGFuZ2VzIGZvciBNYXJjJ3MgcGFwZXIqKgoKKiotIEFTTSBibG9nIHBvc3QqKgoKUmV2aXNlIE1pY3JvYmlhbCBNeXRocyBwb3N0LgoKIzIwMTgvMDgvMDEKCioqLSBLYWl0bGluIHByYWN0aWNlIHRhbGsqKgoKKiotIEF1dGhvcnNoaXAgcGFwZXIqKgoKTGluayBtYW51c2NyaXB0IHN0aWxsIHJ1bm5pbmcuIEdlbmRlcml6ZSBlcnJvcmVkIG91dCB3aXRoIGEgNTAyIGVycm9yLCBoYXZlIHRvIHRyb3VibGVzaG9vdC4gVHJvdWJsZXNob290LCBwZXJpb2RzICYgdGl0bGVzIHR1cm5lZCBvdXQgdG8gYmUgYW4gaXNzdWUuIFJlc3VibWl0dGVkIHNjcmlwdCwgd2hpY2ggcmFuIDI0MjEgbmFtZXMgJiB0aGVuIEkgcmFuIG91dCBvZiBuYW1lcy4=</div>
 
 
 
