@@ -2,7 +2,41 @@
 title: "Lab Notebook: August 2018"
 output: html_notebook
 ---
-#Goals: August 6 - 10
+#Goals: August 27 -31
+1. Authorship paper:
+    + Draft methods
+    + Link manuscripts - troubleshooting
+
+1. Monthly journals report: Get eJP access
+    + Report mockup w. AEM data
+
+1. Software Carpentry Workshop
+    + Tuesday, 9:00 - 4:30, 5320 Taubman Health Science Library
+    + Wednesday, 9:00 - 4:30, 5360 Taubman Health Science Library
+    
+1. BA manuscript - finish revisions
+
+#2018/08/27
+
+**- Journal club**
+
+Read Kaitin's journal club paper.
+
+**- Software Carpentry workshop**
+
+Fill out application & read setup material.
+
+**- Lab lunch**
+
+**- ASM blog post**
+
+Make suggestions for Jennifer's infant microbiome & gut/brain axis post.
+
+**- Authorship paper**
+
+Worked on troubleshooting linking manuscripts. It seems that there are at least 52 instances where a single manuscript is a "related manuscript" for multiple other manuscripts and end up with two matching `grouped_manu_numbers`. There's also one instance where three `grouped_manu_numbers` are identified. I'm not sure how to remedy this, or if it's even necessary...
+
+#Goals: August 20 - 24
 1. Authorship paper:
     + Draft intro
     + Draft methods
@@ -15,13 +49,35 @@ output: html_notebook
     + Write SFTP protocol - Pat?
     + Report mockup w. AEM data
 
-1. ASM blog post
-    + Draft fungi post
+1. ASM blog post - Draft fungi post
     
-1. BA manuscript
-    + finish revisions (see lab notebook)
+1. BA manuscript - finish revisions
     
+1. ~~Lab meeting - prep code review~~
+    
+#2018/08/23
+
+**- Lab meeting**
+
+**- Meet with Pat**
+
+**- Code review**
+
+Worked on presentation for code review on XML docs & R. Sample dataset on nutritional value of foods.
+
+**- ASM blog post**
+
+Re-read & made suggestions to Jennifer's yeast post.
+
 #2018/08/22
+
+**- BA manuscript**
+
+Met with Phil. We're going to submit to mSphere Direct. Work on manuscript revisions and response to reviewers.
+
+**- Monthly journals report**
+
+Work on standardizing scripts. Working out bugs. Filling in Rmd.
 
 **- Authorship paper**
 
