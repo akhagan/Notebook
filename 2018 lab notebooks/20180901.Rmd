@@ -1,0 +1,146 @@
+---
+title: "Lab Notebook: September 2018"
+output: html_document
+---
+#Goals: September 10 - 14
+1. Authorship paper:
+    + Draft methods
+    + Link manuscripts 
+    + Finish script to pull author names from URLs
+    + Test Nichole's dataset in genderize
+
+1. Monthly journals report: 
+    + Report mockup w. AEM data
+    + Ask Melissa to check in with Joel
+
+1. BA manuscript - finalize revisions
+
+1. ASM blog post
+    + draft pathogenic fungi post
+    
+1. Software carpentries workshop
+    + contribute to the lessons
+
+1. M&I Newsletter - Society News (ASM/ASV)
+    
+1. Help @ SWC - Thursday 9 - 4:30
+
+#Goals: September 3 - 7
+1. Authorship paper:
+    + Draft methods
+    + Link manuscripts 
+    + Finish script to pull author names from URLs
+    + Test Nichole's dataset in genderize
+    + ~~Pull datasets from GitHub~~
+
+1. Monthly journals report: 
+    + Report mockup w. AEM data
+    + ~~Check in with Joel about the data transfer~~
+
+1. ~~BA manuscript - finish revisions~~
+
+1. ASM blog post
+    + draft pathogenic fungi post
+    + ~~suggestions/edits for Monika~~
+    
+1. Software carpentries workshop
+    + ~~schedule final assignments~~
+    + contribute to the lessons
+    
+1. M&I department picnic - Friday, 1 - 5pm
+
+1. ABT workshop for 812 
+
+1. M&I Newsletter
+    + ~~Meet w. Kathy - Monday @ 10:45~~
+    + ~~Write Neidhardt-Freter 2017 story~~
+    + Society News (ASM/ASV)
+    
+1. ~~Irene's Thesis Defense - Thursday @1pm, NLH~~
+
+#2018/09/07
+
+**- M&I Dept Picnic**
+
+**- ABT workshop w. 812**
+
+**- Authorship Paper**
+
+Script I submitted yesterday to check the xml matches failed b/c I screwed up `write_csv`. Fixed it and resubmitted the batch script.
+
+Worked on script to webscrape author names. Figured out a trick for identifying journal from pubmed, but I think I'm going to have to add a line earlier in the script to specify journal, then use that to call functions later. 
+
+Remaining journals: science, wiley library, other misc.
+
+Interactive job w. Rstudio/Flux: https://arc-ts.umich.edu/arc-connect/
+
+#2018/09/06
+
+**- Practice ABT talk with Nick**
+
+**- Irene's Thesis Defense**
+
+**- Authorship paper**
+
+Pull `all_grouped.csv` from flux. Trying to figure out which manuscripts are getting multiple manuscript numbers attached by writing a function to count the number of identifiers a number matches to. I can then select for those with >1 match & look at them individually. There should be less than 50 so it shouldn't be an issue.
+
+Next step is to pull the manuscript number & grouped manu number columns, then join to other datasets (people & reviews) so that they can be tracked similarly.
+
+After that, check that gender data is merging properly & finally... analyze data!!
+
+Looked at genderized names, picked a threshold of 65%.
+
+#2018/09/05
+
+**- Lab meeting**
+
+R hacks: data-to-vis.com, r-graph-gallery.com, 
+
+**- SCW**
+
+Signed up to teach in October & signed up for discussion & teaching demo.
+
+**- Authorship Paper**
+
+Fixed `link_manu` script & re-submitted batch script.
+
+**- ASM blog**
+
+Work on outline for pathogenic fungi post
+
+#2018/09/04
+
+**- ASM blog post**
+
+Made suggestions/edits to Monkia's Zika post.
+
+**- M&I Newsletter**
+
+Met with Kathy & wrote a draft of the 2017 NF symposium story.
+
+**- Lab Stuff**
+
+Moved desks & went to get new keys
+
+**- Authorship paper**
+
+Worked on webscraping script & sent to Pat for suggestions.
+
+**- Monthly journals report**
+
+Figured out how to intiate `sftp` using flux. Created back ups of JIf, Impact Vizor & Reports folders since I'm going to delete those GitHub repositories. 
+
+```
+> sftp akhagan@flux-xfer.arc-ts.umich.edu:/nfs/turbo/schloss-lab/akhagan/
+#enter password
+
+sftp> put -r Desktop/estimated_jif #transfer a local file to remote server
+
+sftp> get -r remoteFile localFile #or pull a file from the remote server and put locally
+```
+
+#2018/09/03
+
+**- BA manuscript**
+
+Finished revisions & sent to Phil for comment

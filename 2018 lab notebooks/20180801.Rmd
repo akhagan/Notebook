@@ -6,15 +6,138 @@ output: html_notebook
 1. Authorship paper:
     + Draft methods
     + Link manuscripts - troubleshooting
+    + Test Nichole's dataset in genderize
 
 1. Monthly journals report: Get eJP access
     + Report mockup w. AEM data
 
-1. Software Carpentry Workshop
-    + Tuesday, 9:00 - 4:30, 5320 Taubman Health Science Library
-    + Wednesday, 9:00 - 4:30, 5360 Taubman Health Science Library
+1. ~~Software Carpentry Workshop~~
+    + ~~Tuesday, 9:00 - 4:30, 5320 Taubman Health Science Library~~
+    + ~~Wednesday, 9:00 - 4:30, 5360 Taubman Health Science Library~~
     
 1. BA manuscript - finish revisions
+
+#2018/08/31
+
+**- Authorship Paper**
+
+Worked on the script to extract author names from the URLs provided in the Broderick & Casadevall dataset. 
+
+#2018/08/30
+
+**- Lab meeting**
+
+**- Authorship Paper**
+
+Took a look at the gender analysis data from Broderick & Casadevall. Unfortunately, it doesn't contain the names and their assigned gender, instead a list of urls with the gender assignment and order. Started building functions to scrape author names from the urls using `rvest`.
+
+Pubmed links are especially tricky since pubmed only list initials, so I have to trace back to the publisher's website to find first names.
+
+Built functions for each url type (e.g., pubmed, nature, cell). Excepting Pubmed & Highwire Press articles, the scripts for finding author names are pretty similar, so I think I'll need to build a function with a `case_when` to perform based on the url and within a `try_catch` in case a particular link doesn't resolve.
+
+#2018/08/29
+
+**- Software Carpentry Instructing Workshop**
+
+Learner profile:
+
+Xandra Xcele is a managing editor for two journals at a microbiology society publisher. She has a Master's in Microbiology but no experience with programming or commandline. Each month, Xandra must create monthly reports of stats for each journal she manages. This process is tedious, and requires copy/pasting from the publisher website to generate stats and graphs in excel. 
+
+Software Carpentry will teach her to import data from the publisher website into R to then automate stats and graphs for her reports.
+
+Learning objective verb: manipulate, understand, convert, display
+Does it do an effective job of meeting the stated objective: Yes
+Does the lesson meet any objectives not stated in the objectives section: Reading in a dataset
+
+Appending to a dataframe challenge #2, mistakes:
+Incorrect dimensions error: vectors aren't all the same length
+Favorite number reads in as TRUE/FALSE: 
+Rbind error character vs factor: Forgot about characters vs factors, forgot that columns must all be the same type
+
+"Bad Video"
+Content
++) 
+-) doesn't describe commands, doesn't explain mistakes
+
+Presentation
++)
+-) code too small, doesn't say what he's typing, ignores red sticky, doesn't acknowledge class, sitting, phone wasn't silenced, distracting websites pulled up
+
+"Good Video"
+Content
++)describes where he is & what the next objective is clearly, describes code output, describes code function, explains mistakes, repeats the same content/lesson three times in different ways
+-)
+
+Presentation 
++)addressed red sticky, speaks slowly as types code, code is easier to read, standing
+-)"trust me"
+
+Live Coding Feedback:
+Begum
++) walked through saving in nano, went slowly, 
+-) what is text editor? said "change directory" but wrote cd, does cat stand for anything?
+
+Ada
++) typed/organized code in a logical manner, described steps, described executing code w. CRTL-enter
+-) Didn't specify why writing in R script vs console, didn't explain formatting (enter after lines, etc), slow down after difficult keystrokes (e.g. <-)
+
+Intro:
+Hi, my name is Ada Hagan. I'm a post-doctoral fellow with the American Society for Microbiology working at the University of Michigan. My wetlab research background is in how bacteria gather iron, but my current work is analyzing submissions data for the 13 research journals that ASM publishes and I do that using R statistical software, which I had never worked with prior to this position. So not that long ago, I was sitting in your seats, I've learned, and am still learning, a lot since then. I'm here as an instructor because I want to help pass along what I do know in order to help all of you develop, or maybe begin, your programming toolboxes. As we move through the material, I'd like for you to keep in mind that I'm your guide, but a lot of the experimenting, learning, and even teaching is going to come from you. We're here if you need us, but so is your neighbor, after all teaching is a good way to solidify concepts in your own mind. There is a lot of content to cover, but we can adjust if there are places that require more or less of our attention to make sure everyone can learn and participate in as much of the material as possible.
+
+[clarify expectations for content/behavior & Code of Conduct, introduce red/green sticky/etherpad, ] 
+
+up - 
+down - more time spent on practicing teaching techs vs 
+
+#2018/08/28
+
+**- **
+
+**- Software Carpentry workshop**
+
+Explain your work in 3 words: microbiology journals diversity
+
+Something you're pround of: Defending
+
+- "How learning works"
+
+- Teaching is trying to help novices develop mental maps of how facts connect together. New facts are fit into the context of the current model
+
+- multiple choice: designed with "plausible distractors", answers which themselves identify an incorrect understanding of a concept
+
+- "think, pair, share" - increases involvement & enhances retainment through teaches
+
+- multiple choice Q w. plausible distractors: 
+How can women attain more equal representation in STEM academia:
+1. Work harder - assumption of equal playing field 
+2. Don't have children - assumption that children inherently hinder women's career advancement
+3. Get more girls interested - assumption that girls can't be interested in science on their own
+4. Provide better instiutional support - correct, there are a series of instutitional biases that reduce retention of women in academia
+
+- Guided instruction: describe/show something, practice, get feedback  vs. discovery/inquiry based learning (http://www.cogtech.usc.edu/publications/kirschner_Sweller_Clark.pdf)
+
+-Content: 
++) 
+-) doesn't explain a function, doesn't explain mistakes, poor organization
+
+Presentation: 
++) admitted that he made mistake
+-) screen is too small, "do something really simple", 
+
+Feedback: Re-join at 4:15
++) good use of visuals
++) approachable, "made it fun"
++) defined learning objective
++) appropriate volume
+
+-) turning back to write on the board, distracting & lost volume
+
+**- Resources**
+- https://www.cardiffschools.com/cms/lib/CA01000801/Centricity/Domain/87/boosting_achievement_dweck.pdf
+
+- http://www.ascd.org/publications/educational-leadership/oct07/vol65/num02/The-Perils-and-Promises-of-Praise.aspx
+
+- http://www.cogtech.usc.edu/publications/kirschner_Sweller_Clark.pdf
 
 #2018/08/27
 
