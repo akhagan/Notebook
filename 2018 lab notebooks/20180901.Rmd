@@ -4,26 +4,77 @@ output: html_document
 ---
 #Goals: September 10 - 14
 1. Authorship paper:
-    + Draft methods
-    + Link manuscripts 
+    + ~~Link manuscripts~~ 
+    + Link genderize
     + Finish script to pull author names from URLs
     + Test Nichole's dataset in genderize
 
 1. Monthly journals report: 
-    + Report mockup w. AEM data
     + Ask Melissa to check in with Joel
 
 1. BA manuscript - finalize revisions
 
 1. ASM blog post
     + draft pathogenic fungi post
+    + ~~suggestions to this week's post~~
     
 1. Software carpentries workshop
     + contribute to the lessons
+    + work through R for Social Scientist lessons
 
 1. M&I Newsletter - Society News (ASM/ASV)
     
 1. Help @ SWC - Thursday 9 - 4:30
+
+#2018/09/12
+
+**- ASM blog post**
+
+#2018/09/11
+
+**- ASM blogging**
+
+Compiled list of permission requirements by publisher.
+
+**- SWC** X
+
+Look through lesson plans & current issues.
+lessons - https://datacarpentry.org/r-socialsci/
+instructor notes- https://datacarpentry.org/r-socialsci/guide/
+
+**- ASM blog post**
+
+Work on outline for pathogenic fungi. XXXX
+
+Begin draft and rearrange notes into a slightly better outline. XX
+
+**- M&I Newsletter** XX
+
+Edits/stories due by 10/3 - Due to printer 10/22
+
+Made suggested edits to a couple of stories emailed by Kathy (DEI & Zambia).
+
+Emailed Denise about coordinating a photo for the newsletter. Started drafting society story.
+
+**- Fall/Summer Strategic Goals** XX
+
+Reworked rest of Summer goals & started Fall goals
+
+#2018/09/10
+
+**- Lab meeting**
+
+**- Misc**
+
+Worked on revamping summer strategic goals.
+
+**- ASM blog post** XXX
+
+Make suggestions to Rita's gliobastoma post.
+
+**- Authorship Paper** XXXX XX
+
+Write script to fix mis-matched grouped manuscript numbers & verify that none remain. Submit to flux. Script required generating a df of all manuscripts with the wrong group number in one column & the correct grouped number in a second column. This df was joined to the grouped dataframe (`all_grouped`), then the `grouped.manu.number` corrected as necessary. Ran a second verification to confirm that there aren't any matches remaining.
 
 #Goals: September 3 - 7
 1. Authorship paper:
@@ -64,7 +115,7 @@ output: html_document
 
 **- ABT workshop w. 812**
 
-**- Authorship Paper**
+**- Authorship Paper** XX
 
 Script I submitted yesterday to check the xml matches failed b/c I screwed up `write_csv`. Fixed it and resubmitted the batch script.
 
@@ -80,7 +131,7 @@ Interactive job w. Rstudio/Flux: https://arc-ts.umich.edu/arc-connect/
 
 **- Irene's Thesis Defense**
 
-**- Authorship paper**
+**- Authorship paper** XXX
 
 Pull `all_grouped.csv` from flux. Trying to figure out which manuscripts are getting multiple manuscript numbers attached by writing a function to count the number of identifiers a number matches to. I can then select for those with >1 match & look at them individually. There should be less than 50 so it shouldn't be an issue.
 
