@@ -2,6 +2,90 @@
 title: "Lab Notebook: September 2018"
 output: html_document
 ---
+#Goals: September 17 - 22
+1. Authorship paper:
+    + ~~Resubmit job to link/verify manuscript group ids~~
+    + Link genderize
+    + Finish script to pull author names from URLs
+    + Test Nichole's dataset in genderize
+
+1. Monthly journals report: 
+    + Ask Melissa to check in with Joel
+    + ~~Email to ask about encryption on Flux~~
+
+1. BA manuscript - finalize revisions (checked in w. Phil)
+
+1. ASM blog post
+    + ~~draft pathogenic fungi post~~
+    + make revisions
+    
+1. Software carpentries workshop
+    + contribute to the lessons
+    + work through R for Social Scientist lessons
+    + ~~reschedule discussion & demo~~
+    
+#2018/09/18
+
+**- Lab inventory**
+
+**- Software carpentries**
+
+Rescheduled discussion (next week, need to email host) & demo.
+
+**- Monthly journals report** X
+
+Work on encrypting/de-encrypting files. I was able to encrypt/de-encrypt a txt doc on flux with help from this link: https://www.if-not-true-then-false.com/2010/linux-encrypt-files-decrypt-files-gpg-interactive-non-interactive/
+
+```{r}
+gpg -c filename.txt #to encrypt
+
+gpg filename.txt.gpg #to de-encrypt
+```
+
+Unfortunately, dealing with entire directories is more complex. I have to first compress the directory in to a `tar.gz` file that can then be encrypted. https://statistics.berkeley.edu/computing/encrypt
+
+```{r}
+tar czf my_dir.tar.gz my_dir/ #compress to tarball that can be encrypted
+  
+tar xzf my_dir.tar.gz #unzip back to directory
+```
+
+**- M&I newsletter** XX
+
+Made suggested edits to the docs currently available. 
+
+**- ASM blog post** XXXX
+
+Finish & submit.
+
+#2018/09/17
+
+**- Lab Meeting**
+
+Machine Learning. 
+
+**- ASM blog post**
+
+Work on draft.
+
+**- Authorship Paper**
+
+Check fix_link job submitted. It ran the first part, but then ran out of wall time to run the testing portion which means it didn't save the corrected csv. Moved up saving the file in the csv, added walltime & resubmitted the job.
+
+**- M&I Newsletter**
+
+Edits to Heritage story
+
+**- EJP access**
+
+Tested encrypting files in flux, permission denied. Need to check in w. admin (command worked locally)
+
+**- Prof Development**
+
+Consider applying to DEI certificate program. Application due Friday:
+
+"Please explain why you are interested in completing the Professional Development DEI Certificate Program, and how you believe that the certificate will help you to achieve your professional development goals. Please limit your response to 500 words."
+
 #Goals: September 10 - 14
 1. Authorship paper:
     + ~~Link manuscripts~~ 
@@ -12,7 +96,7 @@ output: html_document
 1. Monthly journals report: 
     + Ask Melissa to check in with Joel
 
-1. BA manuscript - finalize revisions
+1. BA manuscript - finalize revisions (checked in w. Phil)
 
 1. ASM blog post
     + draft pathogenic fungi post
@@ -22,13 +106,31 @@ output: html_document
     + contribute to the lessons
     + work through R for Social Scientist lessons
 
-1. M&I Newsletter - Society News (ASM/ASV)
+1. ~~M&I Newsletter - Society News (ASM/ASV)~~
     
-1. Help @ SWC - Thursday 9 - 4:30
+1. ~~Help @ SWC - Thursday 9 - 4:30~~
+
+#2018/09/13
+
+**- Help @ SWC workshop**
+
+**- ASM blogging**
+
+Work on draft
 
 #2018/09/12
 
+**- Lab meeting**
+
+**- M&I newsletter**
+
+Suggested edits to stories currently available
+
+Wrote draft of Society News
+
 **- ASM blog post**
+
+Work on draft
 
 #2018/09/11
 
