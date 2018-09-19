@@ -10,10 +10,10 @@ output: html_document
     + Test Nichole's dataset in genderize
 
 1. Monthly journals report: 
-    + Ask Melissa to check in with Joel
+    + ~~Ask Melissa to check in with Joel~~
     + ~~Email to ask about encryption on Flux~~
 
-1. BA manuscript - finalize revisions (checked in w. Phil)
+1. ~~BA manuscript - finalize revisions~~
 
 1. ASM blog post
     + ~~draft pathogenic fungi post~~
@@ -24,6 +24,48 @@ output: html_document
     + work through R for Social Scientist lessons
     + ~~reschedule discussion & demo~~
     
+#2018/09/19
+
+**- Lab meeting**
+
+**- M&I newsletter**
+
+Coordinate photo w. Denise & Michele. Edit stuff. 
+
+**- Authorship Paper**
+
+Read paper examining peer review bias at eLife. They use a consultative peer review process where after the reviewers submit write ups, they have a discussion about the merits of the paper (where identies are known) prior to a decision being given. 
+
+Thoughts:
+- histogram of # publications per unique id, M vs F vs Unknown
+- chi-squared comparision between groups
+- total M v F compared to over time, any changes? 2012 vs 2017
+- fully explain ASM submission/review process in intro/data
+- all M reviews vs all F reviews vs mixed/uncertain
+- author/reviewer country origin (& gender) look at reviewer reccomendation/score instead of (or in addition to) editor decision
+- no objective measure of the intrinsic quality of a manuscript (citations? narrative?)
+- authors don't discuss how the eLife method could perpetuate homophily by potentially allowing one (high ranking) reviewer to dominate the discussion
+
+**- Monthly journals report**
+
+Sent another email to Joel, cc'ing Pat & Melissa.
+
+Successfully encrypted a directory on flux. Now I'm confused about the de-encryption process. I have to enter a passphrase to encrypt a file but none to de-encrypt it? I guess this is as long as I'm in the same terminal session. If I log out of flux, then log back in I have to enter the passphrase.
+
+Need to set options to use a better encryption method: https://superuser.com/questions/633715/how-do-i-fix-warning-message-was-not-integrity-protected-when-using-gpg-symme
+
+Need to work on building the script to de/re encrypt the files for analysis.
+
+More reading on security/encryption/keypairs:
+- https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/security_guide/chap-security_guide-security_overview
+- https://www.digitalocean.com/community/tutorials/how-to-use-gpg-to-encrypt-and-sign-messages
+- https://alexcabal.com/creating-the-perfect-gpg-keypair/
+- https://www.gnupg.org/gph/en/manual.html
+
+**- BA manuscript**
+
+Finalized changes to the manuscript, uploaded changes plus reviewer comments to mBio site. Just waiting for the cover letter.
+
 #2018/09/18
 
 **- Lab inventory**
