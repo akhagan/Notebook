@@ -2,6 +2,93 @@
 title: "Lab Notebook: September 2018"
 output: html_document
 ---
+#Goals: September 24 - 28
+1. Authorship paper:
+    + Link genderize
+    + Hardcode editor genders
+    + analyze current dataset
+    + ~~fix scripts for new dataset~~
+    + Finish script to pull author names from URLs
+    + Test Nichole's dataset in genderize
+
+1. Monthly journals report: 
+    + ~~verify test xml~~
+    + ~~reply to Joel's email~~
+
+1. ASM blog post
+    + ~~make suggestions to Jennifer's post~~
+    + ~~finish revisions~~
+    
+1. Software carpentries workshop
+    + contribute to the lessons
+    + work through R for Social Scientist lessons
+    + discussion
+
+#2018/09/25
+
+**- ASM Staff Meeting**
+
+**- Authorship paper**
+
+Started batch script of 2018 data!! & since the people portion finished already, I started the genderize batch script!
+
+Join all grouped xml files & save. Begin analysis
+
+Draft pipeline/workflow of scripts & csv files.
+
+Emailed Adar & Stacey to ask about ASM member demographics.
+
+**- Monthly journals report**
+
+Download & test Joel's xml data. 
+  + Was able to download all of them to desktop with one command: `mget *2018*`
+  + Moved all filed to flux & deleted local copies except for AAC, which I'll use to trouble shoot the new script. 
+  + Unzipped into new directories (this part is what takes the longest, I have to create new directories for each to unzip into. Moving forward they either need to be tar.gz files or write a script for automating this)
+  + Encrypted files into single folder and tested the AAC files successfully
+  + Trying to start a script to randomly select & scrape data from 500 files, but I'm having trouble with the batch decryption line
+  + successfully submitted a batch script to test 500 files, which succesfully completed!!!
+
+Updated parsing script to include names, insitutions, reviewer scores, transfers & journal id.
+
+#2018/09/24
+
+**- Monthly journals report**
+
+Start updating XML scraping script.
+
+Respond to Joel's email:
+
+1) I'm looking at a run/set of sample files where   "reviewer scores" appear to already be present via the "referee-rank" element... do you see this in your/Pat's previous file/run?
+
+   + Yes, some files have a value, others don't (like the AEM manuscripts, which I expected to)
+
+2) I've now added last names + institution to all person records.
+
+3) *** Can you elaborate what you mean by "status"?   The record will already have a <decision> tag (with various values like accept/reject, etc.)
+
+   + To identify manuscripts that might not have had a decision made yet, or have been withdrawn/deleted by the author. Am I correct in assuming that no value in <EJP.decision/> means that a decision is pending?   
+
+4) I've now added "journal-name" and "journal-id" elements to each XML file.
+
+5) I believe transfer information was already present- for example, see the files I sent Pat called "AAC04864-14.XML"
+
+      <transfers>
+        <transfer>
+          <journal>iai</journal>
+          <transfer_dt>2014-11-19  21:43:13</transfer_dt>
+          <transfer_msno>IAI02954-14</transfer_msno>
+          <type>From</type>
+        </transfer>
+      </transfers>
+      
+  + That file has the <transfers/> tag, but no data with in it
+
+**- ASM blog**
+
+Finish revisions for pathogenic fungi post.
+
+Make suggestions to Jennifer's post.
+
 #Goals: September 17 - 22
 1. Authorship paper:
     + ~~Resubmit job to link/verify manuscript group ids~~
@@ -24,6 +111,30 @@ output: html_document
     + work through R for Social Scientist lessons
     + ~~reschedule discussion & demo~~
     
+#2018/09/21
+
+**- DEI certificate**
+
+Applied to DEI certificate program:
+
+"Please explain why you are interested in completing the Professional Development DEI Certificate Program, and how you believe that the certificate will help you to achieve your professional development goals. Please limit your response to 500 words."
+
+The American Society for Microbiology (ASM) publishes 13 different research journals and is funding my postdoctoral fellowship to examine their submissions data for gender parity and the possibility of gender bias in manuscript decisions. As a tenet of modern scientific research, the peer review process requires that all research must be vetted by other researchers in the field before it is considered valid. Unfortunately, as a whole, these gatekeepers are not entirely representative of their respective research fields. Studies examining the peer review process have found that gatekeeper populations are dominated by men, even in fields with substantial representation of female researchers. Even more concerning is that a recent pre-print found evidence of preferential decisions when the gender or nationality of the reviewers matched those of the most senior author. But aside from increasing the diversity of gatekeepers in research, how can we address these subtle instances of implicit bias that can have serious consequences on another individual’s career.
+
+I’m interested in completing the Professional Development DEI Certificate Program because in addition to identifying potential problems with regard to diversity and implicit bias, I want to be able to suggest, and work to implement, real solutions. In addition to shedding light on potential problems in the publishing history of ASM, I want to help create change that will champion those who have been traditionally excluded. I recognize, however, that the process of combating barriers requires recognizing them and potential solutions. My hope is that completing this certificate program will better equip me to recognize and respond to implicit bias, to identify exclusionary barriers, and engage traditionally excluded scientists to collaborate on potential solutions.
+
+**- M&I Newsletter**
+
+**- ASM blog**
+
+#2018/09/20
+
+**- Authorship Paper**
+
+Verified genders for editors. 
+
+**- Seminar & lunch w. the speaker**
+
 #2018/09/19
 
 **- Lab meeting**
