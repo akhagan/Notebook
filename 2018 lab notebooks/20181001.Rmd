@@ -1,0 +1,84 @@
+---
+title: "Lab Notebook: October 2018"
+output: html_document
+---
+#Goals: October 1 - 5
+1. Authorship paper:
+    + ~~check batch outputs~~
+    + Hardcode editor genders - Mia working on new data
+    + ~~Finish script to pull author names from URLs~~
+    + Test Nichole's dataset in genderize
+    + ~~get editor names ready for Mia to check~~
+
+1. Monthly journals report: 
+    + script 2 figures
+
+1. ASM blog post
+    + ~~make suggestions to Monika's post~~
+    + research/outline ergot post
+    
+1. Software carpentries workshop
+    + contribute to the lessons
+    + ~~work through R for Social Scientist lessons~~
+    + ~~demo~~
+    
+1. Follow up JCM & AEM editor requests
+
+1. DEI certificate
+    + ~~clarify what counts toward the 5 "leadership" track workshops~~
+    + ~~IDI survey~~
+    + "Change it up" - Thursday
+    
+1. Geographical survey - Mia
+    + ~~Meeting 12:30pm - 4pm~~ - gave editor names to Mia to check
+
+#2018/10/02
+
+**- Misc**
+
+Worked on booking flight to DC for EiC meeting.
+
+**- Authorship paper**
+
+Finished the script to scrape author names from the URLs & submitted as a batch script. Fingers crossed!
+
+Doing it within a `mutate` wasn't working, so I had to create a new tibble & `cbind` to the original dataset.
+
+**- SWC**
+
+Working through the first part of the R lessons for the demo later. 
+
+Demo - 
+
+**- DEI Certificate**
+
+Emailed to ask about IDI survey & workshop choice. Signed up for additional workshops.
+
+2018/10/01
+
+**- Lab meeting**
+
+Skimmed through Josh's materials for journal club. 
+
+**- Authorship post**
+
+Looks like the genderize script didn't run all of the names again. Probably run through it by hand. 
+    + inspection reveals that of the 105,697 names run through genderize, only 44,370 are assigned genders.  
+    + 85,751 unique name/country entries are run through with countries, but 57,896 are not assigned a gender
+    + 21,314 are run through without country data, 4,716 don't recieve a gender (seems reasonable)
+    + 42,862 names are above the threshold of 65% confidence
+    + pull editors & group by gender, print for Mia to work on
+
+Manuscript linking script completed & saved. 
+    + looking at the num_matches document, 1,809 manuscripts don't have a matching grouped manuscript number?
+    + Submit the script to fix the group manuscript numbers & see if that helps
+    
+Worked on webscraping authors from Nicole's dataset. Need to finish up the `get_author_function` b/c the `case_when` statement isn't working. Ryan suggested using the `x %in% y return(blah_y) x %in% z return(blah_z)` within an `sapply` function.
+
+Succesfully mapped the function & pulled author's names!! Need to build in a `tryCatch` or something similar for when it doesn't work & will definitely need to submit as a batch script b/c it takes forever.
+
+Following step is tidying the names & genders to match.
+
+**- ASM blog post**
+
+Made suggestions to Monika's post

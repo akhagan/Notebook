@@ -2,11 +2,33 @@
 title: "Lab Notebook: September 2018"
 output: html_document
 ---
+#Goals: October 1 - 5
+1. Authorship paper:
+    + Hardcode editor genders (skip until new data is ready
+    + Finish script to pull author names from URLs
+    + Test Nichole's dataset in genderize
+    + get editor names ready for Mia to check
+
+1. Monthly journals report: 
+    + 
+
+1. ASM blog post
+    + make suggestions to ?'s post
+    
+1. Software carpentries workshop
+    + contribute to the lessons
+    + work through R for Social Scientist lessons
+    + demo
+    
+1. Follow up JCM & AEM editor requests
+
+1. DEI certificate - clarify what counts toward the 5 "leadership" track workshops
+
 #Goals: September 24 - 28
 1. Authorship paper:
-    + Link genderize
-    + Hardcode editor genders
-    + analyze current dataset
+    + ~~Link genderize~~
+    + Hardcode editor genders (skip until new data is ready)
+    + ~~analyze current dataset~~
     + ~~fix scripts for new dataset~~
     + Finish script to pull author names from URLs
     + Test Nichole's dataset in genderize
@@ -22,7 +44,52 @@ output: html_document
 1. Software carpentries workshop
     + contribute to the lessons
     + work through R for Social Scientist lessons
-    + discussion
+    + ~~discussion~~
+
+#2018/09/27
+
+**- Authorship paper** X
+
+Started batch scripts:
+  + genderize - assign gender to 2018 data; ran but only came back with 44k names, tried to figure it out & resubmit
+  + link_xml - generate csv file of manu metadata with `grouped.manu.number`
+  + get_num_matches - simultaneously check if the outcome of link_xml will need to be processed with fix_link_xml
+
+**- Fall goals** XXXX
+
+Work on identifying and scheduling fall goals for myself professionally, personally, & for Mia's work on the geographic authorship paper. 
+
+https://docs.google.com/document/d/14PshGeRJJRYXWbiqFAnheMdQ2yDqSPVqaWwh8EZhmZg/edit?usp=sharing
+
+#2018/09/26
+
+**- Lab meeting**
+
+Pat said that the EiCs often do a bulk of the editorial rejections, need to code which senior editors were EiCs & during which years. 
+
+Consider using the "NA" names as a way to parse gender bias from "foreign" bias? 
+
+**- SWC discussion**
+
+Extra time - jargon busting activity from library carpentries.
+
+Consider a warm up activity on day 2 to help re-inforce the previous day's activities (get people opening the software  & working)
+
+Tips for helping people behind catch up:
+  + Give helpers the lesson material so they can help catch people up who fall behind
+  + generally, try to slow down
+  + Paired excercises
+  + have someone type the commands into the etherpad (start a cheatsheet)
+
+**- Authorship Paper** 
+
+XML parsing script completed successfully & the genderize script ran, but I ran out of names. Asked Pat to bump up the subscription.
+
+My fix for the grouped manuscript numbers worked according to the num_matches_fixed.csv, where all manuscript numbers had only one occurance. I can proceed with joining db.
+
+Started analyzing "old data". Ended up merging the data into a single df for analysis. B/c both reviewer & people databases had person ids, I may need to be more nuanced in that join. XX
+
+Made presentaion for lab meeting w. "teaser data" & describing my workflow. 
 
 #2018/09/25
 
@@ -143,7 +210,7 @@ Verified genders for editors.
 
 Coordinate photo w. Denise & Michele. Edit stuff. 
 
-**- Authorship Paper**
+**- Authorship Paper** XX
 
 Read paper examining peer review bias at eLife. They use a consultative peer review process where after the reviewers submit write ups, they have a discussion about the merits of the paper (where identies are known) prior to a decision being given. 
 
@@ -157,7 +224,7 @@ Thoughts:
 - no objective measure of the intrinsic quality of a manuscript (citations? narrative?)
 - authors don't discuss how the eLife method could perpetuate homophily by potentially allowing one (high ranking) reviewer to dominate the discussion
 
-**- Monthly journals report**
+**- Monthly journals report** X
 
 Sent another email to Joel, cc'ing Pat & Melissa.
 
@@ -173,7 +240,7 @@ More reading on security/encryption/keypairs:
 - https://alexcabal.com/creating-the-perfect-gpg-keypair/
 - https://www.gnupg.org/gph/en/manual.html
 
-**- BA manuscript**
+**- BA manuscript** XX
 
 Finalized changes to the manuscript, uploaded changes plus reviewer comments to mBio site. Just waiting for the cover letter.
 
