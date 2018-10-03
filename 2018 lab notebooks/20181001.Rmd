@@ -32,6 +32,22 @@ output: html_document
 1. Geographical survey - Mia
     + ~~Meeting 12:30pm - 4pm~~ - gave editor names to Mia to check
 
+#2018/10/03
+
+**- ASM blog post**
+
+Worked on research & outline for the ergot post.
+
+**- Authorship paper**
+
+Webscraping script errored out part way through b/c it tried to add "http://" to a link that already had "https://". Fixed that but then realized in some cases, pubmed stores the doi  in a wierd location. I ran the script anyway, but I'll probably have to fix it to run those that error out.
+
+Less than 100 URLs succesfully ran, I figured out one problem (passing the journal name to the `some_journals` function), but not all pubmed entries have a doi (e.g., https://www.ncbi.nlm.nih.gov/pubmed/9396779), so I have to figure out a back up for that.
+
+**- Misc**
+
+Booked flight to DC.
+
 #2018/10/02
 
 **- Misc**
