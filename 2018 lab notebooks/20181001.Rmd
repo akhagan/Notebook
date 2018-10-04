@@ -2,6 +2,34 @@
 title: "Lab Notebook: October 2018"
 output: html_document
 ---
+#Goals: October 8 - 12
+1. Authorship paper:
+    + Hardcode editor genders - Mia working on new data
+    + Test Nichole's dataset in genderize
+    + Finish pipeline with 2018 data
+    + Begin analysis of 2018 data
+
+1. Monthly journals report: 
+    + script 2 figures
+
+1. Estimated JIF
+    + manually pull JIF data
+
+1. ASM blog post
+    + make suggestions to ? post
+    + 500 words to ergot post
+    
+1. Software carpentries workshop
+    + contribute to the lessons
+    
+1. Follow up JCM & AEM editor requests - need updated impact vizor stats (& login!)
+
+1. DEI certificate
+    + "Inclusive leadership" - Tuesday @ noon
+    
+1. Geographical survey - Mia
+    + gave editor names to Mia to check 
+
 #Goals: October 1 - 5
 1. Authorship paper:
     + ~~check batch outputs~~
@@ -15,7 +43,7 @@ output: html_document
 
 1. ASM blog post
     + ~~make suggestions to Monika's post~~
-    + research/outline ergot post
+    + ~~research/outline ergot post~~
     
 1. Software carpentries workshop
     + contribute to the lessons
@@ -31,6 +59,20 @@ output: html_document
     
 1. Geographical survey - Mia
     + ~~Meeting 12:30pm - 4pm~~ - gave editor names to Mia to check
+
+#2018/10/04
+
+**- DEI workshop**
+
+"Change it up"" reflection:
+
+**- Authorship paper**
+
+I think I actually have a working webscraping script. I created a lot of conditionals to allow the different functions to be more flexible. Submitted as a batch script.
+
+**- ASM blog post**
+
+Finish research & outlining the ergot post.
 
 #2018/10/03
 
