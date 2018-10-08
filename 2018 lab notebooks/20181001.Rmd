@@ -16,11 +16,11 @@ output: html_document
     + manually pull JIF data
 
 1. ASM blog post
-    + make suggestions to ? post
+    + ~~make suggestions to Janet's post~~
     + 500 words to ergot post
     
 1. Software carpentries workshop
-    + contribute to the lessons
+    + ~~contribute to the lessons~~
     
 1. Follow up JCM & AEM editor requests - need updated impact vizor stats (& login!)
 
@@ -29,6 +29,40 @@ output: html_document
     
 1. Geographical survey - Mia
     + gave editor names to Mia to check 
+    
+#2018/10/09
+
+**- Estimated JIF**
+
+**- DEI certificate**
+
+**- JCM & AEM Follow up**
+
+**- ASM blog post**
+
+Write 500 words of the ergot post.
+
+#2018/10/08
+
+**- Authorship paper**
+
+Looked at output from latest run of the webscraping batch script. I don't know what to with it. I ended up with 6 more entries than I started with and several (more than 6) results are duplicated.
+
+**- Lab meeting**
+
+Read paper for journal club
+
+**- editor requests**
+
+Get updated data from Impact vizor
+
+**- SWC**
+
+Github issue/pull request. https://github.com/datacarpentry/r-socialsci/pull/86
+
+**- ASM blog post**
+
+Make suggestions/edits to Janet's post.
 
 #Goals: October 1 - 5
 1. Authorship paper:
@@ -55,16 +89,52 @@ output: html_document
 1. DEI certificate
     + ~~clarify what counts toward the 5 "leadership" track workshops~~
     + ~~IDI survey~~
-    + "Change it up" - Thursday
+    + ~~"Change it up" - Thursday~~
     
 1. Geographical survey - Mia
     + ~~Meeting 12:30pm - 4pm~~ - gave editor names to Mia to check
+
+#2018/10/05
+
+**- DEI workshop**
+
+Submitted my reflection form for the bystander intervention training.
 
 #2018/10/04
 
 **- DEI workshop**
 
-"Change it up"" reflection:
+"Change it up""  - Bystander Intervention
+
+notes:
+  + think about a time when you were a witness of harm - happened/feel/intervene or not? why?
+  + it isn't always easy, some "harm" occurs in spaces that are difficult to intervene in or where intervening may cause more harm
+  + what is our role? what is my goal?
+  + intervention methods provide the tools/skills for you to decide based on the context
+  + bystander can even be when someone tells you about an event, not just witnessing
+  + this is a lot like parenting?
+  
+blueprint
+  + Notice a problem
+      + identities impact what you notice
+      + what do I think about alot? (every interaction is a reminder of how you don't fit)
+      + what I don't think about 
+      + "Sometimes you're a caterpillar" - youtube video
+      + not pushing into areas where we're unsafe, but perhaps uncomfortable
+      + "entitlement"
+  + Assume responsiblity
+      + motivation - what would motivate you to change it up?
+      + structure the practice: choose a "harm" that you often notice, make a plan & follow through
+  + Think it through
+      + physical & emotional safety - how will identities impact the situation? are there others around to support you? what power dynamics are at play?
+      + effectiveness - are people going to listen to what you have to say?
+  + change it up!
+  
+Toolkit
+  + Direct - confront the situation right away
+  + Distract - create a diversion to interrupt the situation
+  + Delegate - tell someone else (friend, prof, coworker) & decide together how to intervene
+  + Delay - Check in later wtih those who were involved
 
 **- Authorship paper**
 
