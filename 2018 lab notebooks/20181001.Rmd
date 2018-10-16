@@ -2,45 +2,177 @@
 title: "Lab Notebook: October 2018"
 output: html_document
 ---
+#Goals: October 15 - 19
+1. Authorship paper:
+    + ~~Finish hardcode editor genders - Email unknown names to Pat w. journal~~
+    + Work on bugs in webscrape script
+    + Test Nichole's dataset in genderize
+
+1. Monthly journals report: 
+    + ~~pull fresh usage/citation stats~~
+    + script 4 figures
+
+1. Estimated JIF - nothing
+
+1. ASM blog post
+    + Finish ergot post
+
+1. DEI certificate
+    + Identify DEI person to interview
+    
+1. Geographical survey - Mia
+    + get data to Mia to analyze!!
+
+#2018/10/16
+
+**- ASM blog post**
+
+Continued working on drafting the ergot post - added images, citations, and about 350 words.
+
+**- Monthly journals report**
+
+Finished cleaning up data for report-type analyisis & saved as a `csv` file. Started tweaking the analysis scripts to use the new dataset. Trying to write a function `test_list` to make all dataframes contain the same variables (e.g., journal or editor name) regardless of whether or not they have a variable value in that particular test. I'm stuck on getting `arrange` to recognize a column w/o specifically naming it. When that happens, I'll have 3 scripts completed.
+
+#2018/10/15
+
+**- Monthly journals report**
+
+Pulled fresh usage & citation stats. Updated code for new datasets.
+
+**- Authorship Paper**
+
+Verified that all of the randomized group values were joined correctly.
+
+Double checked names & genders from Mia's `csv` files. Seems that something weird happened when I generated the initial "unknown" list that mis-matched some names/institutions. Corrected those & sent two names to Pat to ask about. Also worked on the `verify_gender` script to correct mis-coded editors. Just waiting for the two other editors before we can move forward!
+
 #Goals: October 8 - 12
 1. Authorship paper:
-    + Hardcode editor genders - Mia working on new data
+    + ~~Hardcode editor genders - Mia working on new data~~
     + Test Nichole's dataset in genderize
-    + Finish pipeline with 2018 data
-    + Begin analysis of 2018 data
+    + ~~Finish pipeline with 2018 data~~
 
 1. Monthly journals report: 
     + script 2 figures
 
 1. Estimated JIF
-    + manually pull JIF data
+    + ~~manually pull JIF data~~
 
 1. ASM blog post
     + ~~make suggestions to Janet's post~~
-    + 500 words to ergot post
+    + ~~500 words to ergot post~~
     
 1. Software carpentries workshop
     + ~~contribute to the lessons~~
     
-1. Follow up JCM & AEM editor requests - need updated impact vizor stats (& login!)
+1. ~~Follow up JCM & AEM editor requests~~
 
 1. DEI certificate
-    + "Inclusive leadership" - Tuesday @ noon
+    + ~~"Inclusive leadership" - Tuesday @ noon~~
     
 1. Geographical survey - Mia
-    + gave editor names to Mia to check 
+    + ~~gave editor names to Mia to check~~
     
-#2018/10/09
+#2018/10/11
+
+**- Nick's Practice Talk**
+
+**- Monthly Journals Report**
+
+Have to figure out how to pull usage & citation stats more easily than Impact Vizor in order to automate the report. 
 
 **- Estimated JIF**
 
-**- DEI certificate**
+Pulled from the web of science with the following search criteria:
+  + SO=(Molecular "AND" CELLULAR BIOLOGY OR MICROBIOLOGY "AND" MOLECULAR BIOLOGY REVIEWS OR JOURNAL OF MICROBIOLOGY "AND" BIOLOGY EDUCATION OR MICROBIOLOGY SPECTRUM OR MICROBIOLOGY RESOURCE ANNOUNCEMENTS OR ECOSAL PLUS OR GENOME ANNOUNCEMENTS OR INFECTION "AND" IMMUNITY OR APPLIED "AND" ENVIRONMENTAL MICROBIOLOGY OR CLINICAL MICROBIOLOGY REVIEWS OR CLINICAL "AND" VACCINE IMMUNOLOGY OR MBIO OR JOURNAL OF BACTERIOLOGY OR JOURNAL OF VIROLOGY OR JOURNAL OF CLINICAL MICROBIOLOGY OR mSystems OR mSphere) AND PY=(2016 OR 2017) 
+  + A citation report was generated and the data downloaded into excel files, 500 at a time  
+
+Might need to pull all ASM publications from Impact Vizor, so I can determine the type of manuscripts & thus whether their citations "count" or not.
+
+**- Authorship paper**
+
+Finished writing a script to randomize manuscript numbers & link them into a grouped, randomized manuscript number. Also wrote code to assign randomized person.ids. 
+
+Completed a workflow to clean & deidentify all of the data to get it ready for analysis. Only potentially identifying things left are the person's institutions & dates of submission/reciept/publication. The next step is to finish assigning gender to the editors & then we're done & ready to analyze!! (though I am running a script to verify that all of the randomized manu numbers were matched into single grouped random manu numbers). 
+
+#2018/10/10
+
+**- Authorship paper**
+
+Mia kept working on adding names to the unknown editors list.
+
+I worked on finishing up the workflow to try to anonymize the data. 
+
+**- Our STEM**
+
+Begum gave me the idea to start a weekly digest similar to Bik's microbiome digest, but centered around bias and diversity in STEM fields, academia, & journals. This morning I set up an email address with several RSS & ToC subscriptions. I plan to host the site from Github, though I have to decide whether or not to buy a domain name.
+
+#2018/10/09
 
 **- JCM & AEM Follow up**
 
+Emailed papers with citation data to EiCs of JCM & AEM per their request at Microbe.
+
+**- DEI certificate (Inclusive leadership)**
+
+Traits of inclusive leader - the 6 C's:
+  + Commitment - willing to invest time/energy/resources
+  + Courage
+      + be vulnerable
+      + brave enough to distract harm
+  + Cognizance of Bias
+      + recognize their own biases 
+      + realize the biases can narrow their field of vision
+  + Curiosity 
+      + open minded, 
+      + seek other perspectives, 
+      + always learning/innovating, 
+      + active listener
+      + important to remember that some people need time to process before responding
+  + Cultural Intelligence 
+      + confident & effective in cross cultural interactions  
+      + seeks opportunities to experience & create culturally diverse environments
+      + also need to be aware that your experiences may have been wrong/don't fit in a setting
+  + Collaboration
+      + seek TRUE collaboration
+      + empowers individuals
+      + diversity will make the end result of complex problems better, but it will NOT be faster
+
+Practices of inclusive leader:
+  + Set the stage for an inclusive environment - Universal Design
+      + Representation (WHAT) - provide multiple means of representation to address the WHAT of learning (various ways to learn/acquire info)
+      + Action & Expression (HOW) - provide multiple means of action & expression to support the HOW of learning
+      + Engagement (WHY) - multiple means of engagement to answer the WHY of learning
+  + Begin by establishing community/trust
+      + survey in advance for intentional design of group activities
+      + start with ice breakers and/or introductions
+      + allow participants to identify their preferred names & pronunciation
+      + gender pronouns on name tags
+      + share your workshop discussion guidelines
+      + be incremental 
+      + community guidelines
+      + share personal stories
+  + Model inclusive behaviors
+      + 
+  + Liberating structures
+      + "easy-to-learn microstructures that enhance relational coordination and trust. they quidkly foster lively participation in groups of any size, making it possible to truly include & unleash everyone"
+      + in other words... timed, flexible facilitation techniques that maximize inclusion and can be easily adapted
+      + liberating structures are a set of practices that make it possible for everyone to have a voice & for everyone to engage & seize opportunities
+      + ALL voices matter!
+
+Why it matters:
+  + FYI: there are systemic & structural barriers to inclusive leadership
+
+Resources:
+  + lynda.com
+  + coursera.org - all courses free for all students now!
+  + Center for Positive Organizations - UM Ross (research on diversity & outcomes)
+  + umich organizational learning
+  + Inclusive leadership programs:
+      + Inclusive excellence leadership Academy
+
 **- ASM blog post**
 
-Write 500 words of the ergot post.
+Wrote 500 words of the ergot post.
 
 #2018/10/08
 
@@ -54,7 +186,7 @@ Read paper for journal club
 
 **- editor requests**
 
-Get updated data from Impact vizor
+Got updated data from Impact vizor.
 
 **- SWC**
 
