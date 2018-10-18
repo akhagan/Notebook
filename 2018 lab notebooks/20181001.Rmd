@@ -10,18 +10,54 @@ output: html_document
 
 1. Monthly journals report: 
     + ~~pull fresh usage/citation stats~~
-    + script 4 figures
+    + ~~script 4 figures~~
 
 1. Estimated JIF - nothing
 
 1. ASM blog post
-    + Finish ergot post
+    + ~~Finish ergot post~~
 
 1. DEI certificate
     + Identify DEI person to interview
     
 1. Geographical survey - Mia
-    + get data to Mia to analyze!!
+    + ~~get data to Mia to analyze!!~~
+
+#2018/10/18
+
+**- Journal Club**
+
+Picked a paper for journal club next week. 
+
+**- BA paper**
+
+Went over & returned proofs for the petrobactin & sporulation paper. 
+
+**- Thursday seminar**
+
+**- Monthly journals report**
+
+Finished the script to make all data fit across all variables. Successfully sourced six different scripts. There are two that need further development, then I need to move on to the more complicated stats & usage/citation stats.
+
+#2018/10/17
+
+**- Lab Meeting**
+
+**- Authorship paper**
+
+Ran final clean up to generate `csv` files for Mia. I will just have to change the last two editor genders (if at all), later.
+
+**- Newsletter**
+
+Edited draft of retreat write up.
+
+**- ASM blog post**
+
+Finished first draft (minus the conclusion) & sent it to Begum & Jesus for feedback. 
+
+**- Our STEM**
+
+Culled papers from email alerts.
 
 #2018/10/16
 
