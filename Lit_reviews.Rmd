@@ -1,0 +1,771 @@
+---
+title: "Lit_reviews"
+author: "Ada Hagan"
+date: "October 23, 2018"
+output: html_document
+---
+# Follow up
+1. Stenpries, Anders & Ritzke (1999) “The impact of gender on teh reivew of the CV of job applicants & tenure candidates: A nationl empirical study” Sex Roles 41:509-528
+1. Milkman et al (2013) “Discrimination in the Academ: A field experiment”
+1. Ghiasi, G., Larivi?re, V. & Sugimoto, C. R. On the compliance of women engineers with a gendered scientific system. PLoS ONE 10, e0145931 (2015)
+1. Davenport, J. R. A. et al. Studying gender in conference talks - data from the 223rd Meeting of the American Astronomical Society. Preprint at http://arXiv.org/abs/1403.3091 (2014)
+1. Pritchard, J. et al. Asking gender questions: results from a survey of gender and question asking among UK astronomers at NAM2014. Astron. Geophys. 55, 8-12 (2014)
+1. Hong, L. & Page, S. E. Groups of diverse problem solvers can outperform groups of high-ability problem solvers. Proc. Natl Acad. Sci. USA 101, 16,385-16,389 (2004).
+1. Medin, D. L. & Lee, C. D. Diversity makes better science. APS Observer (27 April 2012); www.psychologicalscience.org/observer/diversity-makes- better-science#.WQB3psYo-aE
+1. Wooley et al., 2010
+1. Broder, 1993
+1. Akerlof & Kranton, 2000
+1. Ellemers et al., 2004
+1. Vernos, 2013
+1. Lloyd,"Gender factors in reviewer recommendations for manuscript publication"  1990; 
+1. Budden, "Double blind review..." 2008; 
+1. Knobloch-Westerwick, "The Matilida effect in science communciation..." 2013; 
+1. Lariviere, et al., "Bibliometrics: Global gender disparities in science" 2013; 
+1. Demarest, "The reviewer in the mirror: examining gendered and ethnicized notions of reciprocity in peer review" 2014; 
+1. Zuckerman, "The careers of men & women scientists: A review of current research" 1991; 
+1. Long & Fox, "Scientific Careers: Universalism & particularism" 1995; 
+1. Xie & Shauman, "Sex differences in resarch productivity: new evidence about an old puzzle" 1998; 
+1. Pan & Kalinaki, "Mapping gender in the german research arena" 2015; 
+1. Conley & Stadmark, 2012 "Gender matters: a call to commission more women writers"; 
+1. Valkonen & Brooks, 2011 "Gender balance in Cortex acceptance rates"; 
+1. De Vries, 2009 "Exploring the peer review process: What is it, does it work, and can it be improved?"; 
+1. Heidari & Babor, 2013 "Evaluate gender equality in journals"; 
+1. Tregenza, 2002 "Gender bias in the refereeing process? Trends"; 
+1. Lee, 2013 "Bias in peer review."; 
+1. Leahey, 2007 "Not by productivity alone: how visibility and specialization contribute to academic earnings."; 
+1. Ceci & Williams, 2011 "Understanding current causes of women's underrepresentation in science."; 
+1. Donaldson, 2010 "Injecting youth into peer-review to ensure its sustainability: a case study of ecology journals."
+1. Fox et al, 2016 "Gender differ- ences in patterns of authorship do not affect peer review outcomes at an ecology journal. Functional"
+1. Schroter et al, 2006 "Differences in review quality and recommendations for publication between peer reviewers suggested by authors or by editors."
+1. Wager et al., 2006 "Are reviewers suggested by authors as good as those chosen by editors? Results of a rater-blinded, retrospective study"
+1. Rivara et al., 2007 "A comparison of reviewers selected by editors and reviewers suggested by authors."
+1. Kowalczuk et al, 2015 "Retrospective analysis of the quality of reports by author-suggested and non-author-suggested reviewers in journals operating on open or single-blind peer review models"
+1. Schroeder et al, 2013 "Fewer invited talks by women in evolutionary biol- ogy symposia. Journal"
+1. Nature, 2012 "Nature's sexism"
+1. Pettorelli et al, 2013 "Addressing gender imbalances in Animal Con- servation."
+1. Fox, C.W. & Burns, C.S. (2015) The relationship between manuscript title structure and success: editorial decisions and citation performance for an ecological journal. Ecology and Evolution, 5, 1970-1980
+1. Ledin et al, 2007
+1. Martin 2012
+1. Alzahrani 2010
+1. McPherson, 2001
+1. Grod, 2010
+1. wing, 2010
+1. Willet 2013
+1. Uzun 2004
+1. Garcia-Carpintero 2010
+1. Holmes et al., “women in the Geosciences: Pracitcal, positive practices toward parity” (2015) 
+1. Dickersin et. al, 1998
+1. Bejerano & Bartosh, 2015
+1. Hirshfield et al., (2014) “She’s not good with crying: the effect of gender expectations on graduate students assesments of their principal investigators” 
+1. Reid (2015) “Embracing, passing, revealing, and the ideal worker image: how people naviage expected and experienced professional identities.” 
+1. Smith et al., (2013) “When trying hard isn’t natural: women’s belonging with and motivation for male-dominated STEM fields as a function of effor expenditure concerns” 
+1. Sekaquaptewa D, Thompson M (2003) Solo status, stereotype threat, and perfor- mance expectancies: Their effects on women's performance. J Exp Soc Psychol 39(1): 68-74.
+1. Bertrand M, Chugh D, Mullainathan S (2005) New approaches to discrimination: Implicit discrimination. Am Econ Rev 95(2):94-98.
+1. Kliewer et al, 2004 "Peer reviewat theAmerican Journal ofRoentgenology:Howreviewer and manuscript characteristics affected editorial decisions on 196 major papers."
+1. Kliewer et al, 2005 "Reviewing the reviewers: Comparison of review quality and reviewer characteristics at the American Journal of Roentgenology. American"
+1. Nylenna et al, 1994 "Multiple blinded reviews of the same two manuscripts: Effects of referee characteristics and publication language."
+1. Klein, R. S. et al. Speaking out about gender imbalance in invited speakers improves diversity. Nat. Immunol. 18, 475-478 (2017)
+1. Ginther, D. K. et al. Race, ethnicity, and NIH research awards. Science 333, 1015-1019 (2011)
+1. Williams, J., Phillips, K. W. & Hall, E. V. Double jeopardy?: Gender bias against women of color in science. (Hastings College of the Law, Center for WorkLife Law, 2014)
+1. Leslie, S.-J., Cimpian, A., Meyer, M. & Freeland, E. Expectations of brilliance underlie gender distributions across academic disciplines. Science 347, 262-265 (2015)
+1. Carnes, M. et al. The effect of an intervention to break the gender bias habit for faculty at one institution: a cluster randomized, controlled trial. Acad. Med. 90, 221-230 (2015).
+1. Smyth, F. L. & Nosek, B. A. On the gender-science stereotypes held by scientists: explicit accord with gender-ratios, implicit accord with scientific identity. Front. Psychol. 6, 415 (2015)
+1. Schmader, T., Whitehead, J. & Wysocki, V. H. A Linguistic Comparison of Letters of Recommendation for Male and Female Chemistry and Biochemistry Job Applicants. Sex Roles 57, 509-514 (2007)
+1. Stark, P., Ottoboni, K., Boring, A. & Cetinkaya-Rundel, M. Student Evaluations of Teaching (Mostly) Do Not Measure Teaching Effectiveness. (2016). doi:10.14293/S2199- 1006.1.SOR-EDU.AETBZC.v1
+1. Lutter, M. & Schr?der, M. Who becomes a tenured professor, and why? Panel data evidence from German sociology, 1980-2013. Res. Policy 45, 999-1013 (2016)
+1. Ceci, S. J. & Williams, W. M. Women have substantial advantage in STEM faculty hiring, except when competing against more-accomplished men. Front. Psychol. 6, 1532 (2015).
+1. Leslie, L. M., Manchester, C. F. & Dahm, P. C. Why and When Does the Gender Gap Reverse? Diversity Goals and the Pay Premium for High Potential Women. Acad. Manage. J. 60, 402-432 (2017)
+1. Gino, F., Wilmuth, C. A. & Brooks, A. W. Compared to men, women view professional advancement as equally attainable, but less desirable. Proc. Natl. Acad. Sci. U. S. A. 112, 12354-12359 (2015).
+1. Moss-Racusin, C. A. et al. A 'Scientific Diversity' Intervention to Reduce Gender Bias in a Sample of Life Scientists. CBE Life Sci. Educ. 15, (2016)
+1. Tricco, A. C. et al. Strategies to Prevent or Reduce Gender Bias in Peer Review of Research Grants: A Rapid Scoping Review. PLoS One 12, e0169718 (2017).
+1. Unconscious Bias in Peer Review. Available at: http://www.cihr-irsc.gc.ca/lms/e/bias/. (Accessed: 2nd August 2017)
+1. Balafoutas, L. & Sutter, M. Affirmative action policies promote women and do not harm efficiency in the laboratory. Science 335, 579-582 (2012)
+1. Albrecht et al. (2013)
+1. Ruben et al. (2014)
+1. Wenneras and Wold (2001)
+1. Link, 1998 
+1. Paludie and Bauer (1983) 
+1. Paludi and Strayer (1985) 
+1. Peck, 1978
+1. Symonds, et al. “Gender differences in publication output” Plos one (2006); 
+1. Pohlhaus et al. “Sex differences in application, success, and funding rates for NIH extramural programs” Acad Med (2011); 
+1. Kaatz, et al., “A quantitative linguistic analysis of NIH R01 application critiques from investigators at one institution” Acad Med (2014) 
+1. Jagsi R, Guancial EA, Worobey CC, et al. The “gender gap” in authorship of academic medical literature--a 35-year perspective. N Engl J Med 2006;355:281-7. doi:10.1056/NEJMsa053910.
+1. Sidhu R, Rajashekhar P, Lavin VL, et al. The gender imbalance in academic medicine: a study of female authorship in the United Kingdom. J R Soc Med 2009;102:337-42. doi:10.1258/jrsm.2009.080378.
+1. Bergeron JL, Wilken R, Miller ME, Shapiro NL, Bhattacharyya N. Measurable progress in female authorship in otolaryngology. Otolaryngol Head Neck Surg 2012;147:40-3. doi:10.1177/0194599812438171.
+1. Feramisco JD, Leitenberger JJ, Redfern SI, Bian A, Xie XJ, Resneck JS Jr. A gender gap in the dermatology literature? Cross-sectional analysis of manuscript authorship trends in dermatology journals during 3 decades. J Am Acad Dermatol 2009;60:63-9. doi:10.1016/j.jaad.2008.06.044.
+1. Kurichi JE, Kelz RR, Sonnad SS. Women authors of surgical research. Arch Surg 2005;140:1074-7. doi:10.1001/archsurg.140.11.1074.
+1. Long MT, Leszczynski A, Thompson KD, Wasan SK, Calderwood AH. Female authorship in major academic gastroenterology journals: a look over 20 years. Gastrointest Endosc 2015;81:1440-1447.e3. doi:10.1016/j.gie.2015.01.032.
+1. Amering M, Schrank B, Sibitz I. The gender gap in high-impact psychiatry journals. Acad Med 2011;86:946-52. doi:10.1097/ACM.0b013e3182222887.
+1. Schrager S, Bouwkamp C, Mundt M. Gender and first authorship of papers in family medicine journals 2006--2008. Fam Med 2011;43:155-9.
+1. Waisbren SE, Bowles H, Hasan T, et al. Gender differences in research grant applications and funding outcomes for medical school faculty. J Womens Health (Larchmt) 2008;17:207-14. doi:10.1089/jwh.2007.0412.
+1. Amrein K, Langmann A, Fahrleitner-Pammer A, Pieber TR, Zollner-Schwetz I. Women underrepresented on editorial boards of 60 major medical journals. Gend Med 2011;8:378-87. doi:10.1016/j.genm.2011.10.007.
+1. Heckenberg A, Druml C. Gender aspects in medical publication - the Wiener klinische Wochenschrift. Wien Klin Wochenschr 2010;122:141-5. doi:10.1007/s00508-010-1302-8
+1.Broder IE. Review of NSF economics proposals: gender and institutional patterns. Am Econ Rev 1993;83:964-70. 
+1. Dotson B. Women as authors in the pharmacy literature: 1989-2009. Am J Health Syst Pharm 2011;68:1736-9. doi:10.2146/ajhp100597.
+1. Tinjum BE, Getto L, Tiedemann J, et al. Female authorship in emergency medicine parallels women practicing academic emergency medicine. J Emerg Med 2011;41:723-7. doi:10.1016/j.jemermed.2010.04.014
+1. Reed DA, Enders F, Lindor R, McClees M, Lindor KD. Gender differences in academic productivity and leadership appointments of physicians throughout academic careers. Acad Med 2011;86:43-7. doi:10.1097/ACM.0b013e3181ff9ff2.
+1. National Research Council (2010) Gender Differences at Critical Transitions in the Careers of Science, Engineering, and Mathematics Faculty. National Academies Press.
+1. Conley D, Stadmark J (2012) Gender matters: A call to commission more women writers. Nature 488: 590.
+1. Spelke ES, Grace AD (2006) Sex, math, and science. In: Ceci S, Williams W, editors, Why Aren’t MoreWomen In Science?: Top Gender Researchers Debate the Evidence., APA Publications.
+1. National Academy of Sciences (2007) Beyond Bias and Barriers: Fulfilling the Potential of Women in Academic Science and Engineering. Washington, DC: National Academies Press
+1. Fox MF (2001) Women, Science, and Academia: Graduate Education and Careers. Gender & Society 1: 654–666.
+1. Babcock L, Laschever S (2007) Women Don’t Ask: The High Cost of Avoiding Negotiation-and Positive Strategies for Change. New York, NY: Bantam Dell.
+1. Rudman LA (1998) Self-Promotion as a Risk Factor for Women: The Costs andBenefits of Counterstereotypical Impression Management. Journal of Personality and Social Psychology 74: 629–45.
+
+# Perceptions of women in science
+### “To name or not to name: The effect of changing author gender on peer review”, Borsuk et al., 2009
+***
+**Background:** 
++ Peer review requires unpaid participation & assessment could be based on something other than scientific merit at any point (e.g., more senior reviewers are more critical, the number of authors, gender or nationality can influence merit). used a single research paper with varying names (M, F, initials) across a variety of reviewer types (undergrad, grad, pd, faculty) to ask if gender and/or seniority altered recommendation to accept
++ M reviewers tend to recommend accept/reject, F revisions (Davo et al., 2003). # of authors/nationality can bias. Gender has also been shown to have an effect, but trends may be changing. Both editor & reviewer populations are mostly male. Reviewer performance varies by gender.
+
+**Methods:** 
++ used a previously published study formatted a manuscript changing only author names. Distributed to undergrads in 4 biology classes, posted online, provided to grad students/pd's 
++ Used published paper w. journal’s mean citation #, formated as manuscript w. M/F/I/NN, & distributed to UG/Grad/PD/faculty. Only 2 faculty responded.
+
+**Results:** 
++ UG in class more likely to reject & give lower quality rating than online. Author gender had no effect. PD/Grad more likely to reject than UG. F rated manuscripts lower than M, primarily b/c F PD.
++ 1031 respondants (faculty = 2) author gender had no effect on acceptance rates. PD/grad most likely to reject. F rated lower than M
+
+###“Threats to objectivity in peer review: The case of gender” Kaatz et al., 2014 
+***
++ Implict biases against women exist and science is consider more “M” than “F” b/c of stereotypes. These sterotypes subtley shift expectations such that women have to achieve more to be rated equal to men. This despite women recieving praise for equal achievements b/c she exceeded the lower expectations.
++ Aged 40-65 hold the strongest implicit biases, the same age as reviewers. Is this affecting acceptance rate of F-authored papers and grant proposals?
++ “Women are generally found to have fewer but overall higher-quality peer-reviewed scientific publications than men (Symonds, 2006)”
++ “If gender bias operates in grant peer review, one would expect that different evaluative standards for M and F investigators would be exaggerated when assumptions of performance most strongly align with M gender stereotypes; that is, where science and leadership conflate.”
++ “Data from the NIH website show persistently lower Type 2 R01 or R01- equivalent success rates for women versus men, and there was no change after the 2009 change in scoring and critique structure (range, 2-8% lower; average, 5%)”
++ Writen critiques of R01 proposals are significantly different from M to F. Reviewers provide more praise to women for exceeding lower performance expectations while critqiues for M have more negative words –> they recieve similar scores and funding outcomes!
++ Suggested interventions for scientific review: 
+    + reflect on susceptibility for bias 
+    + focus and don’t rush through a review 
+    + imagine a female scientific leader 
+    + review assesment criteria before evaluation 
+    + challenge evaluation with opposite gender, ethnicity, institution 
+    + avoid gender-typed terms in review criteria 
+        
+### “Author’s gender affects rating of academic articles: Evidence from an incentivized, deception-free laboratory experiment”, Krawcxyk & Smyk, 2016.
+***
+**Background:** describes gender-science sterotype; age as a factor of perception (younger > odds of drawing woman sci; young women more likely to be sterotyped); unconscious correlation betwn gender & qualification; women held to higher standard, often judged by males, at risk of skewed persepective of skills; career stage may make a difference in gendered evaluations; 2009 study found no differences in reviews of article written by M/F/GN - female postdocs most critical; 2013 study found that male-authored abstracts rated higher on average (but completed a questionanaire about opinon on gender roles??)
+
+**Methods: **
+    1) told subjects the task (no deception); 2) provided entire paper; 3) financial reward for correctly answering a relevant question; 4) no internet; 5) asked question about paper elements to learn if “traditionally feminine” vs “masculine” aspects were judged differently; Used 5 pairs of papers written by mixed-gender authors from top schools; pilot study w. 4 students who read and rated all 10 papers similarly; Each study subject read and evaluated one paper described as “male/female/young male/young female economist” - no names to exclude effect of nationality/ethnicity; all subjects in a single session recieved the same paper with the same assigned gender; pilot study was repeated without gender/publication data
+
+**Predictions:** 
+  1) female authors will recive lower ratings than GN/M & be less often judged as published 
+  2) Young female will be judged inferior to female
+
+**Results:** publication prediction accuracy was essentially random; male-authored papers more likely to be considered “published”; percevied age had no effect;
+
+**Discussion/conclusion:** gender, but not age, of author matters during evaluation; self-selected subjects interested in economics (likely future academics); research conducted at U of Warsaw - 50-60% F PhD candidates/ 20% F full-time professors; subjects approaching age of early career decisions, bias against women suggests women fail to see successful F scholars & may alter decisions accordingly;
+
+###"Analysis of NIH R01 Application Critiques, Impact and Criteria Scores: Does the Sex of the Principal Investigator Make a Difference?" Kaatz et al., 2016.
+***
+**Background: **
++ M&F applicants have similar success rates for new (type 1) R01's but lowwer success rates (5%) in renewals (type 2) w. no change for past 15 yrs.
++ NIH has 2-phase system: 1) reviewers assign scores & write critiques, top 1/2 of applications are discussed & rescored 2) NIH staff & advisory make recommendations for fundint
++ gender stereotype - agentic traits: independence, logic - reviewers hold women to higher performance standards by requiring more proof of ability to confirm competence
++ Greater praise & fewer negative evaluation words did not translate to better scores or funding outcomes for F PIs
++ 2009, NIH altered scoring system from 5 to 9 points & introduced separate criterion scores for approach, significance, innovation, investigators & environment w. bullet points for strentghts & weaknesses
++ this study analyzed priority & criteria scores & reviewer critiques from a sample of applications from 2010 to 2014
+  
+**Methods:**
++ Queried RePORTER database for UW-Madison PI's who recieved type 1 or type 2 r01 grants from 2010 - 2014 then requested the summary statements directly from the PIs. Excluded data from grants funded after revison under the old format. 
++ sample was 739 critiques, 268 from 88 unfunded & 471 from 153 funded from 125 PIs (M = 61% & F= 39%). 
++ used R to pull applicant info (degree, experience level, application type, & scoring info) & parse bulleted text 
++ "We wrote an R program that matched the Linguistic Inquiry Word Count (LIWC, 2007) program used in our previous study16,38 and used it to detect 7 categories of words relevant to scientific grant evaluation in each critique and criteria subsection (see Kaatz et al16 for full lists of words in each category): ability (e.g., able, skill), achievement (e.g., awards, honors), agentic (e.g., competent, leader), negative evaluation (e.g., unclear, illogical), positive evaluation (e.g., solid, feasible), research (e.g., productivity, grant), and standout adjectives (e.g., exceptional, outstanding)." -> 2 outcome variables Y/N & %
+  
+**Results: **
++ No difference in M/F scores for type 1, but significant diff for type 2
++ A strong approach score was predictive of a strong priority score
++ Overall, M PI proposals were more positive
+
+**Discussion:**
++ F PIs applying for type 2 may be disadvantaged in scoring - worse scores in priority, approach & significance
++ overall, approach scores predicted priority scores but noncompetitive approach scores were more detrimental for F PIs
++ evidence of different evaluative scores - F type 2 reviews more likely to have standout & ability words
++ lingusitic differences originated in approach & significance strength sections
++ no nonresponse bias, good sample of differing fields, even clincal & similar critera for hiring/promotion/productivity suggest similar background qualifications. 
++ This bias is unconcieous & more likely to occur when a review is for a high-status position or award - agenic traits
++ renewals are higher status awards
++ implicit beliefs that women are less competent than men are confounded by perceptions that women are weak & need to be protected from negative experiences. - more likely to occur with explicit bias than implicit though
++ body of research documents co-occurance of more positive lingusitic comments & poorer numerical rankings for women than men in male-typed roles. in-group bias whre members of a postitively-sterotype ingroup recieve favorable ratings on criteria that matter most for obtaining tangible rewards & members of a negatively sterotyped out group recieve favorable ratings on criteria that matter least. 
++ in-group bias more likely when women make up less than 25% of applicants - true for Type 2 R01s 
++ women fail to advance at equvalent rates to men & are more likely than men to study issues within the realm of women's health, women's attrition from research areers perpetuates health disparities.
+
+### "National hiring experiments reveal 2:1 faculty preference for women on STEM tenure track" Williams & Ceci, 2015
+***
+**Background: **
++ Application of women to tenure track positions is key juncture in understanding lack of attrition in STEM fields
++ once hired W prosper w. similar rates of promotion  - why are there fewer applicants?
++ Discouraging messaging re: sexism in hiring? Single study in psychology (50% F field) showed bias
++ however no study in math-intenstive fields w. strong applicant records
+  
+**Methods:** 
++ 5 experiments w. 873 tenure-track faculty from 371 colleges & universities in 50 states + DC
++ hiring faculty preferences for hypothetical applicants in two math-intensive fields in which women are poorly represented (engineering & economics) & well represented (Biology & psychology)
++ Used applications for Dr. X/Y/Z differing in the gender pronouns used. 
++ Also evaluated lifestyle differences e.g. 
+      + expt 1 - two applicants married w/o kids, & 2 w. stay @home spouses.
+      + expt 2 - married father of two w. stay @ home spouse, single mother of 2 w. absent ex-spouse
+      + expt 3 - identical mothers or fathers who either did or did not take a 1 y parental leave in grad school
+      + expt 4 - same as one but evaluated CV vs narrative summaries
+      + expt 5 - faculty rated only 1 applicant (m/f w. identical records) to validate expt 1-4
++ claims they used complex experimental design to avoid giving away the punchline - not terribly convinced
++ faculty recived info for 3 candidates - used narrative summaries vs CV b/c no single CV would hold accross all fields
++ used a pre-tested "foil" candidate to obscure design - slightly weaker candidate
++ lifestyle data incorporated in summaries as "voluntarily" provided info
++ two forms of ea gender were described in either traditionally F or M adjectives
++ used same descriptors only differed by gender in ea experiment - how do you ask people to compare & expect a non-social-acceptible response?
+
+**Results: **
++ Women candidates preferred over men by at least 2:1 in all lifestyle conditions
++ M faculty preferred women w. leave in grad school over W w/o leave 2:1, no effect on M applicants
++ F preferred mothers w. no extended leaves
++ CV experiment replicated narrative summary experiment
++ rating of a single narrative at a time confirmed preference for F applicants - rated 1 point scale higher --> why didn't they do the entire study this way?
+  
+**Discussion:**
++ attempts to counter bias in academia have worked - auspicious time for F applying for tenure-track jobs
++ F advantages come at a cost to M, who may be disadvantaged when competing against equally qualified W
++ "once tenure-track F apply to a position, departments are on average inviting more F to interview than would be expected if gender were not a factor"
+
+
+### "Female grant applicants are equally successful when peer reviewers assess the science, but not when they assess the scientist", Witteman et al., 2017
+***
+**Background:** W must perform to a higher standard than men for equal recognition (esp POC). W more often charaterized as "lacking the brilliance, drive, and talent required to carry a novel line of inquiry through to discovery", contribute more labor for less credit . **"Female surgeons have been shown to have better patient outcomes overall, yet, when a patient dies in surgery under the care of a female surgeon, general practitioners reduce referrals to her and to other female surgeons in her specialty, whereas they show no such reduced referrals to male surgeons following a patient's death." & "high-potential women are favored over high-potential men and that, while women face discrimination at earlier stages, once women have proven themselves in a male-dominated context, they are favored over men"** No previous study (all observational) has found that women fare better than men in grant submissions/funding. Compare grand success rates among 3 grant programs: tradtional, two new programs w/ & w/o explicit review focus of PI quality. Possible results: 
+
+  + Gaps similar under all 3 conditions suggest  different career paths and choices made by women and men, differences between the types of research proposed by female and male principal investigators, or may be spurious. 
+  
+  + A larger gap in favour of male PIs when focusing on science suggests that gender gaps are due to lower quality proposals by W. 
+  
+  + A larger gap in favour of men when focusing on the scientist suggests that gender gaps in research funding are partly or wholly driven by gender bias 
+  
+  + Other potential results such as gaps in favor of female PIs were not considered a priori because publicly-available summary statistics of the programs showed these results to be impossible
+  
+**Methods: **pulled data from all applications submitted between 2011 & 2016 - modeled success rates as a function of the grant program, PI sex, age, domain of research & controlled for different review criteria b/c of age & research domain
+
+**Results:** 23,918 applications from 7, 093 PIs. 15,775 from 4,472 M PI & 8,143 from 2,621 F PI. 27% submitted 5+ apps. Overall success rate was 15.8% - predicted probability of success 0.9% higher for M PIs
+
+**Discussion:** Netherlands - grant reviewers gave equal scores to men's and women's proposed research but assigned lower scores to women as researchers. "Following the grant cycles analyzed in our study and as part of a broader Equity Framework,81 the CIHR implemented new policies in an attempt to eliminate the observed gender gap in Foundation grants"
+
+### "The Matilda effect in science" Rossiter, 1993
+***
+"Just how specific and widespread should a scientific reputation be? If we had some scale or measure, then we might know how upset or outraged to be when a deserving scientist is ignored or forgotten. After all, not everyone can or should be remembered by everyone else" - If science is meritocratic, then acheivements should determine this --> not the case for women.
+
+Named after a suffragette who aided in writing "The Woman's Bible" - a feminist examination of the Bible
+
+### "How stereotypes impair women's careers in science" Reuben, et al., 2014
+***
+**Background:**
++ Why does the proportion of women in science, technology, engineering, and mathematics (STEM)-related professions fail to reflect the interest girls demonstrate for mathematics and science courses in early school years?
++ is difficult to show the existence of discrimination if we allow for the possibility of a sex difference in preference; that is, if women truly prefer fields outside of mathematics and science, then their lower proportions in STEM domains may result not from discrimination but merely from preference.
++ designed expt where supply-side considerations did not apply (e.g., job candidates chosen randomly & couldn't opt out) - avoiding preference bias from candidate
++ elicited expectations of candidate performances to test if performance-related expectations were biased by sex or if there was bias in updating expecitations as they recieved more info about candidate performance
++ used implicit assocaition test to check for ias in initial beliefes & with biase in updating process
++ W were 1/2 as likely to be hired as men b/c of erronious belief re: performance
++ self-reported performance women were chosen at equally low rates despite better candidates chosen more frequently on avg
++ Men more likely to boast vs women who underestimate - employers (esp those w. strong bias) tend not to take this bias into account
++ bias reduced (but not eliminated) when employers pre-informed re: previous performance
++ When the information was "objective" (i.e., provided by the experimenter), the updating, although not complete, was not biased by the preexisting stereotype (as measured by the IAT). In contrast, when the information was provided by the subjects themselves, employers biased against women were less likely to realize that, on average, men boast more about their performance than women do, leading to a biased and suboptimal choice in favor of men.
+  
+**Methods:**
++ subjects "hired" to perform arithmetic test w. equal performance from both genders
++ two subjects randomly selected as candidates, others became employers
++ Employers provided two responses for each pair of candidates they evaluated: (i) choosing one of the two candidates as their "employee" and (ii) estimating the number of sums each candidate would complete correctly on a second arithmetic task. 
++ Candidates earned more money in the experiment if they were chosen by the employer. Employers earned more if they chose the candidate who performed better than the other candidate in the pair on the second arithmetic task
++ Varied what type of info given re: candidate - e.g., looks (gender), self-reported score, examiner-reported score, before/after hiring, sometimes offered to update choice based on info 
++ all employers completed the IAT test for bias
+  
+**Results:**
++ substantial discrimination against women in all conditions
++ percent W candidates chosen in no info & self-report were almost identical (<50%)
++ 10% more likely if examiner reported score - still less than 50%
++ no info cond - expected earnings of female candidates is 19.4% less than that of their male counterparts
++ In all three conditions, the higher-performing candidate was picked significantly more often than would have occurred by chance (by at least 4.6 percentage points)
++ Suboptimal hiring decisions were associated strongly with sex bias. If hiring decisions were sex-neutral, the fraction of sub- optimal decisions in which a lower-performing male was chosen over a higher-performing female would be close to 50%
++ employers of both genders had more difficulty associating women with science/ math than men
++ positive, highly significant re- lationship between IAT scores and the average expected difference in performance between the evaluated male and female candidates
++ IAT scores were not significantly correlated with how much they overestimated their own future performance, for both men & women
++ in self-report 20.7% of employers did not update their expectation, and 34.6% updated as if their prior belief was completely uninformative - 12.8% & 46.6%, respectively for examiner-reported scores
++ Employers found candidates' past performance a more reliable signal, and hence more useful information for decision-making, than their self-reported expectation of future performance, but they still weighted prior beliefs excessively.
++ stereotypes did not seem to affect the updating process when the information was provided by a neutral third party
++ Less-biased employers (with low IAT scores) made a stark distinction between self-reported performance levels based on the candidates' sex
++ In con- trast, more biased employers (with high IAT scores) put more weight on the male candidates' announcements and, as a result, did not differentiate significantly between the self-reports of male and female candidates
+  
+**Discussion:**
++ Our findings seem to suggest that both men and women discriminate against women without realizing that they do so. This form of discrimination is very different from the forms normally modeled in economics. Importantly, discrimination driven by implicit associations requires different (less coercive) policies for remediation (21).
++ Thus, even in the face of valuable new information, employers continue to rely at least in part on their biased priors.
++ Men tend to be more self-promoting than women in these reports, but employers, particularly those dem- onstrating evidence of stronger implicit sex bias (higher IAT), do not fully appreciate the extent of this difference.
++ the bias against women measured by the IAT seems to act in two ways: It penalizes women when an unfounded negative stereotype against them exists, and it does not penalize men when there is evidence (15, 16) that they overpromote themselves.
+  
+###"Are female applicants disadvantaged in National Institutes of Health peer review? Combining algorithmic text mining and qualitative methods to detect evaluative differences", Magua et al., 2017
+***
+Text mining of reviewer comments from NIH grants. All were eventually funded but data included unfunded versions. There were distinct differences in descriptions of the proposals, scientists & research environment based on gender of applicant. Critiques of M applicants more likely to be "coddled" with a statement of competence vs W who were given "gentle" but vauge critiques. Women's research environment also discussed more than M applicants. M applications more likely to be described as innovative & significant, F as having "expertise".
+
+
+
+# Workloads/barriers for women in science
+### "Time-to-credit gender inequities of first-year PhD students in the biological sciences” Feldon et al., (2017) 
+***
+**Background:** Tenured F faculty are expected to take on more mentorship/service, which is uncompensated & undervalued (Hirshfield, 2014). When M & W work equal hours, M percieved as more dedicated & productive. W 50% of biology phd grads, only 30% tenure-track positions. Trouble finding post-docs? Longitudinal studies suggest that # grad papers predicts productivity later in careers.
+
+**Research questions: **
++ Do men and women report different amounts of time spent on supervised research? 
++ Are there differential reported influences associated with research time spent for men and women? 
++ Is there a differential publication yield for men and women per time spent on supervised research? 
+
+**Methods:** focus on field with lab-based experiments, multi-level modeling to account for insitutional culture/practices. Time spent on research reported biweekely. Reported # journal articles, conference papers, & published abstracts they recived authorship credit on. 336 students/53 institutions. Completed bi-weekly surveys for time, + 3 year-end surveys. Used hierarchical linear modeling to analyze logitutinal data
+
+**Results:** Men more confident than women in designing experiments & formulating research hypotheses. W report upto 30hr more time in supervised research than M. Found significant gender by total hrs spent on rearch for journal articles. For 100hr spent on research, M 15% more likely to recieve authorship credit.
+
+**Discussion:** “men spend significantly less time engaging in supervised research, are less likely to attribute their time alloca- tion to the demands of assigned tasks, and are 15% more likely to author published journal articles than their female counter- parts per 100 hours of research time” Gender inequality manifests as early as 1st year of grad school in the “time-to-credit” payoff. F students percieve greater estimate of effort req’d for success (Smith et al., 2013). Disparities in publishing may account for PD hiring discrepancies. “no evidence that lower self-efficacy prompts women to self-select out of professional opportunities in the first years of their doctoral studies”, “the relevance of confidence in experimental design skills to time spent on research may point to a greater relevance of those skills in the tasks assigned to male graduate students within the laboratory environment.”
+
+### "Double jeopardy in astronomy and planetary science: Women of color face greater risks of gendered and racial harassment", Clancy et al., 2017
+
+***
+Questionnaire asking diversity questions & questions about bigoted remarks, verbal/physical harrassment & skipping events for safety reasons. WoC report disportional amounts of all b/c of "double jeopardy". 7% miss 6+ events a month!!
+
+### "Is science built on the shoulders of women? A study of gender differences in contributorship", Macaluso et al., 2016
+***
+Examined author contributions in PloS Journals from 2008 - 2013 (b/c plos requires authorship statement). Pulled XML files from Plos & scraped WoS data from each author. Examined 5 different categories by author genders and broken down by corresponding author & first author genders. Also looked based on "academic age", e.g. years since first publication. Women more likely to be associated with performing the experiment (e.g. technicican) vs planning/writing analyzing. Moderated by corresponding author gender. E.g., having a male corresponding increased proportion of W involved in experimentation relative to female corresponding author. 
+
+### "Sex differences in institutional support for junior biomedical researchers" Sege et al, 2015
+***
+Uses applications to a New England based funding source to examine startup packages by gender, research type (clinical vs basic), university type & degree. W recived significantly less start up support - can't be explained by any factor other than gender. 
+
+### Women’s visibility in academic seminars: women ask fewer questions than men. Carter, Croft, Lukas & Sandstrom, 2018
+***
+“Social role theory suggests that women should benefit from being exposed to successful ingroup role models at all points along the leaky pipeline. Before attending academic conferences and seeing women present their work, and before gaining a familiarity with the authors of papers in a particular research area, undergraduate and postgraduate students are exposed to the role-modelled behaviours of the women and men who work in their department. Given social role theory explanations for how gendered expectations of certain roles develop based on who is seen occupying those roles, we argue that the behaviour of the local community may play a formative role in identifying ingroup role models at an early career stage. Few studies have investigated such local phenomena, but these reveal a potential bias against women.”
+
+“As we explained earlier in this paper, research on role modelling suggests that having access to successful ingroup role models (e.g., women in senior levels of the academy) can be a key factor in determining what course of study or occupation a person will pursue [6,9], and, when people do not have first-hand experience in a particular domain, ingroup role models can signal whether a person would also be likely to achieve success in that domain [7,8]. In the case of academic seminars, then, the fact that our data show women asking disproportionately fewer questions than men necessarily means that junior scholars are encountering fewer visible female role models in the field. This lack of visibility of women during this type of regular academic interaction (the departmental seminar) is further compounded by women giving fewer talks at, and asking fewer questions at conferences [16,18,19], and women being less visible in the scientific literature as first and senior authors of scientific papers [10–13]”
+
+### "Vague Feedback Is Holding Women Back." Correll S, Simard C., Harvard Business Review. 2016.[https://hbr.org/2016/04/research-vague-feedback-is-holding-women-back]
+
+### "Faculty service loads and gender: Are women taking care of the academic family ?", Guarino & Borden, 2017
+***
+**Background:** Women experience academia differently then men - short of resources and heavy on additional responsibilities. Responsibilities divided into research, teaching & service. All factor into yearly evaluations & promotions but service is considered less so tenured faculty are supposed to take on a larger load. Two types of service, internal (school, dept, etc) & external (community, associations, etc). Previous studies have found that there are gendered differences regarding service whereby women spend more time in service, especially internal & local, despite not having a preference (relative to men). There seems to be some changes over time - more even distribution now. Several different mechanisms for this observation 1) interactions in an organizations hierarchy, 2) fear of retaliation for declining, 3) increased expectations that W will perform service above M 4) W pursing internal track admin opportunities
+
+**Data:** Two datasets 
+    1) national FSSE survey - 19,000 faculty @ 143 colleges 
+    2) university specific FYAR survey w. more info re: type of service performed - two campuses, 1715 faculty (excluded 337 w. admin positions) - Only reports # of services, not # of hours spent in service
+    
+**Results:** mean amount of services differs by +30 min/wk or 1.5 activities per yr for W; FSSE shows that full profs spend most time on service, w. F sig more time than M - Arts & humanities spend more time than business/sciences. FYAR data - W report 1 more service activity/yr, associates report more internal service than Assis/Full. W perform more community & national (review panels?) service. In the social sciences, W are more likely to perform service w. F chair. Internal service is more likely with F chair. 
+
+**Discussion:** W faculty perform more service than M & this is driven by internal service. 
+
+### "Gender differences in accepting and receiving requests for tasks with low promotability", Babcock et al., 2017
+***
+**Background:** Time spent on research is clearly preferable for promotions in academica, however, W spend 2.45 fewer hrs/wk on research than M - W more likely to mentor undergrads & participate in more committees. Managers are more likely to assign challenging tasks to M than F. "Unless W spend more time at work than M, working on a less-promtable task means that they spend less time on more-promotable tasks". This may be more than an issue of opportunity cost since such assignments may decrease job satisfaction & thus committment & investment in the job.
+
+**Research question:** Are W more likely to be asked to complete low promotability tasks than M & are they more likely to agree?
+
++ Divided into several different experiments:
+
+  1) Response to volunteer requests - F faculty more likely to volunteer to be on a committee (7.0% vs 2.6%) -> higher representation (25% F faculty but 38% faculty senate). Unclear why this is the case - do W have a stronger preference? Designed experiment where people need to volunteer for a task ("investing") that everyone wants to get done but noone wants to do (b/c if not, then they get to spend time on better tasks i.e., >$ ). Someone must volunteer where the consequence is that it may not get done in time & suffers a time penalty (1.25 back vs 2). 
+  
+  2) Even gender split - 84.2% of groups invested 2/3 in last two seconds. W more likely than M (3.4 vs 2.3 x). 61% of M invest 2 or < times, only 40% fall in same category. Why? Could gender be proxy for personality traits or reflect differences in beliefs that others will pick up the slack?
+  
+  3) Beliefs vs personality: does response differ by gender composition - groups split into single sex b/c if gender differences in investing are caused by personality (more conforming/altruistic/risk averse) then investment should increase. If caused by belief that W more likely to volunteer then M should invest more & F less. - NO difference in liklihood to invest if in same sex group. Behavior is not due to fixed preferences but drawn from group composition. 
+  
+  4) Are W asked to volunteer more than M? - Adds outside requestor who must ask 1 person to invest after seeing their pictures & is incentivized to get someone to agree. Mixed gender groups of 4 - all were shown images of group members & asked who they would ask to invest if chosen as the requestor. All submitted, then assignments given at same time as the request - other members where shown who recieved the request. All members (except requestor) were able to invest. Only 40% of investments were made in last 2 seconds (vs 80%). Mean # requests for M & F (8.7 vs 11.1). Gender is predictive of request. Difference increases over experiment w. 0.9 more requests in 1st 5 rounds (stranger) & 1.6 in last 5 (non-stranger). Difference of 12 percentage points whether F is asked above M. Request to invest has impact on decision. Requested have investment rate of 65.5% vs 14% if not asked (no diff by gender). Requested investment does differ by gender requested 51% for M & 75% for W
+  
+  5) Is investment rate for W believed to be higher than it is for M? - Asked 3rd party to predict behavior in a represntative session from 1st experiment after participating in 5 rounds of the game. Results for first task were consistent with first experiment re: % of successful investments & gender split. 3rd party was provided with info including: sex, age, U.S. citizenship, year in school & major. 3rd party gave probability that either group member 1, 2, 3, invested or that noone invested. In groups with 2M1F W predicted to invest 47%, 2F1M 75% - should be 33 & 66% if equal beliefs. 
+  
+  6) Altruism - does generosity differ with the gender of the decision maker & the other group members? - participants provided with bio info of other participants in group & asked to make 6 decisions that result in payoffs to themselves & two other group members. No evidence that W are more likely to chose a later & more altruistic switch point. Nor is there a difference if the recipient is M or F.
+  
+**Conclusion:** study is small, randomized, and anonymous - what about when its nonanonymous & potential for reputation building? "While the gender difference in volunteering and in requests to volunteer is disturbing, it is important to note that the decision to perform such tasks is not made in error. If no-one else will volunteer it is, in our setting, individually rational to do so even if it places the individual at a relative disadvantage. From the organization's perspective it may, however, be an error to let the acceptance of low-promotability tasks be discretionary. If performance on high-promotability tasks is more import- ant than performance on low-promotability tasks, then organizations should prefer to have the latter performed by those who are least able to perform tasks with high promotability. In improving the allocation of tasks it is promising that differential request and acceptance rates appear to be influenced by beliefs. This suggests that small inter- ventions can help reduce the differences in allocations of less-promotable tasks."
+
+
+### "Dancing Backwards in High Heels: Female Professors Experience More Work Demands and Special Favor Requests, Particularly from Academically Entitled Students", El-Alayli et al., 2018
+***
++ Gender bias regarding female instructors requires that F professors behave more nurturing but must demonstrate more expertise to be percived as being equally knowledgable as M professors. This doesn't protect them from poor student reviews & leads to more requests for favors and emotional labor. 
+
++ This paper examines the perception of F vs M faculty regarding emotional labor and favors. It also evaluates students for their perceptions, academic entitlement, and responses to denial of a hypothetical favor.
+
++ S1 Methods: M & F faculty from 300 U.S. institutions contacted to complete an online survey re: demographics, current position, course most frequently taught & asked to estimate how often students exhibited behaviors to solicit standard work demands, special favors, and friendship behaviors + assessments of emtional labor (self-directed & other-directed)
+
++ Women reported more student behaviors in all regards. M&F self-directed emotional labor was not significant but F other-directed was higher than M. Professor gender was predictive of special favors which was in turn predictive of other-directed emotional labor.
+
++ S1 reports faculty percieved and reported interactions, not actual or the student. It also doesn't take into account potential differences in faculty behavior that may elict these differences (which doesn't mean that bias is a factor). S2 evaluates student responses. 
+
++ S2 Methods: Undergrads from public university completing survey for credit. Randomly assigned to either M or F scenario & given description of instructor then asked if they would approach instructor w. a series of requests then how they would feel if denied. Also completed an academic entitlement scale & gender & authority measure + Old-fashioned  & Modern sexist scales. 
+
++ Student gender was not significant except that F students seemed to be more likely to expect favorable response from F professors. Entitlement was only associated with stronger expectations in the F professor conditions. 
+
+### "The productivity puzzle: Persistence and change in patterns of publication of men and women scientists", Cole & Zuckerman, 1984
+***
+Took a cohort of scientists who all recieved their PhDs in 1970 - evenly split m:f & matched (both recieved PhD from same department). Examined the number of publications from each scientist following graduation, as well as citations. They found that men publish almost twice as much as women & are more highly cited. The increased citation rate is likely due to the increased amount of scientific output. W are just as likely to publish sole vs collaborative papers as M & have first authorship. Gender, early citations, and early productivity were the greatest determinants of later productivity with greater in-gender variablilty for productivity than between gender. W are more likely to be "discouraged" by lower citation rates in their early career than M. 
+
+### "Recognition for Group Work: Gender Differences in Academia" Sarsons, 2017
+***
+**Background:**
++ Organizations increasingly rely on group work for production
++ does uncertainty over an individual's role on a project lead to differential attribution of credit that contributes to the gender pay gap?
++ A significant protion of the promotion gap is unexplained by productivity, personality/behavioral differences, or fertility preferences
++ Examine tenure decisions w.in Economics academia b/c there is a large tenure gap that hasn't shifted despite increase of W in field & authors are ordered alphabetically making it difficult to discern contributions
++ Correlating fraction of an individual's papers that are coauthored w. tenure, test whether women recieve less credit for work when contributions are unclear vs clear (solo author)
++ M&W who solo author most of their work are tenured at equal rates but additional co-authored papers corellate with an 8% increase in tenure probabilty for men vs 2% for women
+  
+**Data:** 
++ CVs from economists who went up for tenure between 1985-2014 at top 30 phd-granting insitutions in US
++ 6-8 years after hire = tenure window, moving to another university ranked 5 positions below or industry during/shortly after that window = denied tenure
++ use the RePEc/IDEAS ranking of econom- ics journals to control for the quality of a person's publications. I take the top 85 journals and give the top journal a score of 85. The lowest quality journal has a score of one.
++ 70% recieved tenure at first institution: 52% of women & 75% of men
++ No difference in number of papers or total unique coauthors - w 2x as likely to coauthor with women, men tend to publish coauthored in slightly better journals
+  
+**Results: **
++ The condition (solo vs co authorship) of papers doesn't matter for M tenure - does for women, 0 solo = 40% chance vs 80% solo = 75% chance
++ matters if the co-author is M, F, or mix. Less credit if no other women on the paper
++ In sociology, authors are listed by contributions - randomly sampled faculty at the top 20 sociology PhD-granting schools in the U.S. n=250, 40% are female
++ Being 1st is strongly correlated with tenure - but no penalization for being a co-author vs M
+
+
+# Gender Diversity in Science
+## Specific Journals/Publishers
+### “Is there gender bias in JAMA’s peer review process?”, Gilbert et al., 1994 
+***
+**Background:** PUblication bias occurs in 3 stages: gender bias in differential handling of manuscripts is one.
+
+**Question:** the gender ofthe corresponding author, the assigned editor, or the reviewers had an effect on, or association with, the peer review, manuscript processing, or acceptance rates of research articles submitted
+
+**Methods:** pulled data from 1991 including corresponding author, assigned editor/reviewer, reviewer recommendations, turnaround times for review, editor ratings of reviewer, final decision. Genders determined.
+
+**Results:** Editors employed most M full-time, most F part-time but handeled 2x #manuscripts. F editors assigned 30% more F authored papers than men. M reviewers assisted M editors more often than F. F reviewers aided equally. F editors rated reviewers lower than M ed, irrespective of gender. M reviewers took ~2 days longer to return reviews. M authored manuscripts fared worse in initial review by editor, F ed summarily rejected at higher rates than M (b/c higher case load?). No sig diff following review or in overall tally.
+
+**Comment:** “the evidence suggests that either female editors are assigned manuscripts of lower quality, irrespective of the corresponding author’s gender, or female editors’ higher rejection rates without other review shows a differenee in the level of criticism between male and female editors” OR they are triaging a higher case load to a managable number of papers
+
+### “Why are women underused in the JECH peer review process?”, Davo et al., 2003
+***
+**Background:** emperical evidence about sex bias in choosing referees w. out justification by any qualitiy criteria
+
+**Methods:** Year 2000 JECH databased mined retrospectively for peer review management info. 31% F reviewers, took 1st 100 M & 100 F reviewers for convenience then looked at ALL reviews provided by these reviewers (from 1992-2002, 48% female). Variables: Sex (independent), time to answer, editors percieved quality, reviewer recommend decisions.
+
+**Results:** All women answered w. comments, 6.5% of men did not. No differences re: time to answer or editors percieved quality. Women 3% more likely to ask for major revision, Men 4% more likely to accept or reject.
+
+**Discussion:** Bias - manuscripts may be assigned differently
+
+### “Journals invite too few women to referee” Lerback & Hanson (2017) 
+***
++ Peer review is a career building activity that develops writing skills & expertise, + fosters relationships with other scholars. Esp. important for young scientists. Most studies don’t have access to gender/age data.
++ this data set has age and genders of authors & reviewers from 2012 to 2015 for AGU journals (20 journals; 6,000 papers) Find that women were used as reviwers less often than expected - based on proportion of members in that age/gender group.
++ 1st authored papers are important for career development/hiring/promotions. 1st authors are typically the cooresponding authors.
++ Women 26% of submitting 1st authors vs 28% members. Acceptance rate higher than for males, gender of editor/reviewer did not affect. Women submitted fewer overall papers than M
++ higher acceptance rates could be due to reverse gender bias or better journals targeting/manuscript preparation
++ Only 20% of reveiwers were women, persistent accross all age groups. F reviwers suggested 21% of time by F authors, 15% by M authors. Women of every age declined more often than men. Main reason given was workload. “The differences may also reflect varying approaches to risk or confidence”
++ “It [reviewing] provides positive feedback that a scholar is respected and participating in their field and fosters self-confidence, all of which lead to increased retention of woemn in geoscience”
++ Hiring F editors has helped AGU mitigate teh disparity in recommendations. Encourage authors/editors to invite more women to review, esp younger.
+
+### "Editor and reviewer gender influence the peer review process but not peer review outcomes at an ecology journal" Fox et al., 2016
+***
+**Background:** Authorship functions as a signal of gender inequality in the sciences & acts as a potiential contributorM editors consider reviewer status more than F & differences in social/professional networks could lead F editors to choose reviewers of diff backgrounds. Editorial boards are also geographically homogenous. More closely reflect distribution of PhD-granting institutions or journal ownership. Less diversity may reduce the diversity of perspectives & approaches valued & represented. 
+
+**Question: **
++ how editor gender influences gender balance in reviewer recruitment
++ how reviewer gender influences responses to review invitations & review scores given to papers
++ whether editor seniority & geographic locality mediate effects of editor & reviewer gender 
+
+**Methods:** All "standard" papers submitted to _Functional Ecology_ from Jan 2004 to June 2014. Only evaluated the first submission & review for a given paper. Selected reviewers are those suggested by the authors, invited reivewers are those asked by the editor and agreed reviewers are those actually performing the reivew. Data set includes 23,516 selected reviewers with 8533 unique individuals. 17,958 invitations were sent to 7551 unique reviewers, 8763 let to an agreement (4898 individuals) & 8288 reviews were submitted. Primarily assigned gender by first hand knowledge, followed by google searches & genderize.io. Seniority determined by defense year. location determined by home country & the UN M.49 area codes
+
+**Results:** Prop of selected/invited/agreed F reviewers increased over time. 2004 all manuscripts handled by 1 of 4 male reviewers. in 2005, FE started recruiting associate editors to handel manuscripts w. geographic & gender diversity in mind. F editors primary driver for F reviewers b/c more likely to invite F reviewers. F less likely to respond to review requests but 6% more likely to agree if they do respond. Proportion of respondee's agreeing to review has declined. Invitations from F editors more likely to be declined, esp by M reviewers. No evidence of bias by gender re: review score, accept/reject following peer review. No difference in seniority at time of appointment as editor. Seniority does affect likely hood of selecting F reviewers. Reivewers less likely to accept and/or respond if the editor was more senior. Editors selected more reviewers from NA overall & each editor was more likely to select from within their geographic region. 
+
+**Discussion:** Key findings - 
+1) proportion of women selected as reviewers depends on gender of editor, esp for more senior editors. 
+2) Women invited were less likely to respond, took longer to respond, but were more likely to agree if they did respond. 
+3) Women invited to review responded similarly regardless of gender whereas men were less likely to respond & more likely to decline if the editor was female. 
+4) No evidence in bias re: score or decision 
+5) reviewers less likely to agree the more senior the editor 
+6) editors more likely to select reviewers from their own geographic regions
+
++ To increase diversity in peer review, increase diversity of editorial boards. That women respond less frequently may not mean that they're ignoring them but may be inactive email addresses since women leave sci @ higher rates and move to accomodate husband's careers more frequently. The studies reporting gender bias in journal peer review are generally older than those reporting no bias which may reflect changing social attitudes. When choosing reviewers it may be better for editors to rely more on manuscript reference lists & data base searches than on personal knowledge
+
+### "Author-suggested reviewers: gender differences and influences on the peer review process at an ecology journal" Fox et al., 2017
+***
+**Background:** The growth of scientific lit & increasing selectivity of journals have increased the peer review "burden", reducing the proportion of review requests submitted. Authors are often asked to suggest reviewers since they know their field well, which has led to concerns that author-suggested reviews are biased toward the author. Gender affects some aspects of peer review. Study asks how prefferred and nonpreferred reviewers, use of suggestions by editors & influence on decision outcome & how these questions relate to gender
+
+**Methods:** used data from journal submissions from Jan 2004 to June 2014 - 6720 papers. Only assigned gender to non-Asian names, used genderize.io TO test if review scores are biased by preferred authors - chose those who reviewed as both suggested & non-suggested reviewers, calculated mean scores for each type of review & compared to a non-parametric test
+
+**Results:** Few authors volunteer non-preferred reviewers. Percent of preferred F reviewers increased by 10% over the decade. Gender had no impact on +/- of suggested reviewers or #. Proportion of women reviewers suggested by F authors (27%) was higher than for M authors (21%). 1 in 4 reviewers contacted by editors are author-suggested & is constant over time. No difference in editor gender/seniority re: reviewer assignment. Gender of the reviewer is a factor. Author-suggested F reviewers (46.2) are selected more than M reviewers (41.8). Until 2006, papers with suggested reviewers were more likely to be sent for peer review. Prospective reivewers were more likely to respond if suggested but no more likely to accept. Women were less likely to respond. Author-suggested reviewers scored papers more positively (~16%). Papers reviewed by author-suggested were more likely to have a "revise" decision: 52% if 2 preferred reviewers, 36% if 1, 28% if none. 
+
+**Discussion:** Differences in gender of author-suggested reviewers/editors could be explained by varying proportion of women in subfields and/or by professional network structures (often a factor of age & gender). Preferred reviewers may be more postive overall b/c they are more enthusiastic about the paper subjects, more often share author perspectives, or are biased in the authors' favor. Preferred authors may also be beetter informed & review scores more correctly reflect the true quality & significance of the paper. Listing non-preferred reviewers increases odds of positive decision, possibly by eliminating lower review scores since correcting for mean score reduces the significance. 
+
+### "Is there gender bias in reviewer selection and publication success rates for the _New Zealand Journal of Ecology_?" Buckley et al., 2014
+***
+**Background:** Science requires that problems/questions be challenged with multiple perspectives which requires diversity in scientists and their backgrounds, however, there are disparities in representation (e.g., women/ethnic minorities). New Zealand is not an exception to the global gender bias patterns. Between 2003 & 2012, only 10 of 41 invited speakers were women; 77% of best student presentation, 72% of best student poster & 64% of best paper by a new researcher awards went to women - only 11% of more prestgious awards for ecological excellence went to women. The gender pay gap is worse than in the US. No gender bias in success rae of female first authors vs male. Call for scientific journal editors to assess gender equity in their publication process. These researchers asked:
+    1. is the rate of publication success biased by gender of either first or corressponding author?
+    1. is the gender ration of selected reviewers biased?
+    1. does the gender of the associate editor bias either publication success or reviewer selection frequencies by gender?
+
+**Methods:** NZJE manuscript database was used to obtain a list of papers submitted & sent for review between 2003 & 2012. Genders of first & corresponding authors were obtained (13/365 excluded). Current editors asked to provide data re: frequency of F & M reviewers selected for all papers in that time period. To assess bias, a 2x2 contingency table analysis was used to compare the frequencies of accepted & declined manuscripts by 1st author gender. 
+
+**Results:** 128 of 352 manuscripts had F lead authors; 86% of lead authors were also corressponding authors. Success rates of F vs M manuscript submissions were similar but overall percentage by F authors was much lower (36% F first author). On average, more M reviewers were selected (~29% F), individual editors ranged (0-60%), but F more likely to select F reviewers - but not statistically significant. 
+
+**Discussion:** Not a gender bias in publication success rate. Disparity in F reviewers selected (29%), however that is similar to the proportional availability of full-time F ecologists (27%) - doesn't include F PD or grad students. Thus authors conclude it is an issue of female "visibility" versus "availability". Suggestion that being selected as a reviewer increases visibility, which has a direct & significant impact on salary. Little evidence of gender discrimination in publication (C&W, 2011), under-rep of W in Sci b/c of positions w. fewer resources. **"Participating in the peer-review process is an important way that early-career researchers can feel more involved with, and contribute to, the scientific community"** Reviewer-mentoring intitiative - spreading the responsibility of peer review across all experience levels
+    
+### "Gender bias in scholarly peer review" Helmer et al., 2017
+***
+**Background:** Important role of peer review to improve research paper quality. Relies on "self-regulated interactions" re: editors assignment of reviewers. Since peer reviewer & editor info is generally confidential info, previous studies have had small data sets & given partly contradictory reports. Frontiers journals differ in disclosing identites with each published journal to increase transparency. Pulled reviewer, author, and editor data from 41,000+ papers published between 2007 & 2015 for analysis.
+
+**Results:** Used directed networks to verify active/mature research network. Women were 37% of authors, 28% of reviewers and 26% of editors. Global trend toward gender parity, differences between fields (PH is most likely to have parity). To test whether lower fractions of F contributers was a reflection of available authors by maintaining gender proportions but randomizing gender assignment & concluded that the smaller number of F "actors" doens't explain the unbalanced proprtions of F contributors. Looked at differences over the entire distributions & found that some individuals provide a large number of contrbutions whereas most provide a small number. Marked gender homophily bias for M & F editors. 73% M reviewers by M editors, 33% F reviewers by F editors. "inbreeding homophily" is widespread among male editors
+
+**Discussion:** Women are underrepresented in science with a very slow trend toward parity. Women contribute less than expected.  Increasing the # of invitations to F reviewers would have a direct & proportional effect. Previous studies were mono-discipline & report 9 to 38 to 54% F editors (supplementary 2). Frontiers 6% (robotics), to 37% (Neurosci). F reviewers in lit 16% to 48% vs Frontiers 11% to 48%. Comparison of women's underrep in AGU (Lerback & Hanson, 2017 is questionable b/c reviewers in lower age groups are rarely invited by editors. F reviewers more likely to accept F-authored papers (Lloyd, 1990) vs equal liklihood to reject ( Borsuk, 2009). Differences in gender attachment strategies; W have small homogenous groups & M in larger, more herogenous groups. Strongly homophilic W editors "femocrats" that help push top-down solutions for so long as they are present **"The goal should be to motivate all scientific actors to "integrate thinking about gender discrimination in every decisional process" (translated from Woodward, 2008"** 
+
+### "Addressing sex and gender inequities in scientific research and publishing", Del Boca, 2016
+***
+Editorial on how researchers need to do better at recruiting/studying things according to gender (b/c single largest source of variation above race/ethnicity) & that W need to be better represented in publishing (this was only one paragraph of the entire thing. Oops). Lists several ways to address this issue througout the manuscript from title to discussion. 
+
+### "An examination of gender differences in the American Fisheries Society peer-review process" Handley, et al. 2015
+***
+**Background:** 
++ double-blind review corrects for bias in favor of US & english-speaking countries
++ no evidence that gender influences peer review outcomes - to date
++ in 2003, women comprised 16.7% of regular AFS members, 30.8% of young professionals, and 35.3% of students. By 2012 female regular members represented 19.8% of total membership, and female young professionals and students were 37.5% and 38.2%, respectively.
++ Electronic submissions between 2003 & 2010
++ Manuscripts assigned to Associate Editor by the AFS editorial office based on paper subject & AE expertise
++ AE's handle peer review, assess manuscript & submit suggestions to the editor, who makes final decision
+
+**Methods: **
++ 4,663 manuscripts submitted to 4 journals
++ gender coded for 1st author based on first name - 5% indiscernible - reliability confirmed by hand, 250/co-author
++ number of revisions for each manuscript, decision, and final outcome all recorded - those still in review or with indiscernible author gender were excluded -> 4,264 manuscripts
++ Two sets of analysis: 1) descriptive 2) heirarchical linear modeling - controlled for base rate representation differences
++ This study used a nested design with two hierarchical levels. The manuscript was at the lowest level of the hierarchy. Associate Editor represented the next level of the hierarchy. Variables associated with the highest level were AE gender, journal, and submission year. Variables associated with the lower level of manuscript were reviewer gender, author gender, manuscript recommendations, number of rounds of revisions, publication outcome, and whether there was one author from an English- speaking country (although not of primary interest to our study, omitting a relevant variable from the HLM models would bias our regression estimates). We also included two-way interactions between first author gender and AE gender and first author gender and the presence of at least one female reviewer.
+  
+**Results:** 
++ Sig diff in % of manuscripts submitted by W 1st athors between journals - more freq sub to JAAH & TAFS
++ No diff in author gender & AE gender
++ F authored manuscripts more likely to be assigned at least 1 F reviewer, M authored papers less likely to have 1 less F reviewer, & F AEs chose F reviewers more often than M
++ F authored manuscripts less likely to be published, only sig for NAJFM
++ Manuscripts with at least one "english-speaking" author were more likely to be published (63.1% vs 28.9%!!) 
++ Manuscripts w. M author had better chance of publication w. F AE than M (69.9% vs 61.7%) & w. F reviewers 
++ more revisions increased liklihood of publication
++ reveiwer evaluations were biased toward an english-speaking author, no diff based on gender
+  
+**Discussion: **
++ Female first authors tended to submit more manuscripts to TAFS (the journal with the highest rejection rate) and fewer manuscripts than expected to NAJA (the journal with the lowest rejection rate)
++ "strong evidence that differences in acceptance rates among journals, which were controlled for in this analysis, at least partially explain the gender differences in publication outcomes" -- why didn't they look at editorial rejection breakdown by gender?
++ "consistent disadvantage experienced by manuscripts with no author from an English- speaking country"
+
+
+## Publications
+### "Persistent Underrepresentation of Women's Science in High Profile Journals" Shen et al., preprint
+
+Considering writing a comment/review of this preprint. It's very brief (only 4 graphs), which show that female authorship is negatively correlated with impact factor. Additionally, the proportion of female authors is below the proportion funded by NIH RO1s
+
+The authors call for 3 immediate actions by high impact journals: 1) collect and make publicly available gender and minority data 2) double-blind peer review 3) provide reviewers with clear guidance for review criteria
+
+Critiques: 
+
+1. Authors assume that this indicates gender bias in peer review, however there is no evidence to support that and the data needed to examine peer review in editorial rejections isn't available to this analysis. 
+
+1. The data for double-blind peer review is conflicting, and may reduce career opportunities for female reviewers to network with other researchers
+
+1. Ignores that high impact journals are an artifically inflated and poor substitutes for quality research
+
+### "Gender disparities in high-quality research revealed by Nature index journals", Bendels et.al 2018
+***
+**Background:** **"common opinion that "scientific authorship" embodies a type of reward system that does not exclusively honour the pure scientific merit of someone's intellectual contribution but also reflects hierarchical structures of the research community"** presitge of authorships follows a ranked order with a higher rep of 1st & last authors, lower for co-authors & since early career generally publish 1st/co and senior as last we can view academic status of women. 
+
+**Research questions:** gender distribution across first, co & last authorships, how does this change over time, are there differences in productivity & citation rates are there regional differences regarding integration of women
+
+**Methods:** scraped data from Nature Index (excluding physics) & analyzed 1,488,989 male and female authorships from 293,557 articles that were published between January 2008 and May 2016. _Prestige index_ is a measure for the odds of holding prestigious authorships vs men where co-authors are weighted negatively but 1st/last are equal and weighted positively. 0 == gender-neutral distribution but >0 == excess of prestigous authorships held by women, <0 == lack
+
+**Results:** men are 2x more likely to have a last authorship, women make up 33.1%, 31.8%, and 18.1% of global first, co & last authorships, respecitvely. In almost all countries, women had lower odds for last authorships vs men. Iceland is the only country with higher odds for women as last authors - giving highest _PI_ of all, followed by New Zealand which was almost gender neutral in all authorship categories (+,=,=). All topics had negative _PI_ except for Earth & Environmental (0.06). The _PI_ was negative across all journals - only 5 of 54 journals do women have equal or higher odds for prestigious authorships vs men. Large negative correlation between 5-yr JIF & corresponding _PI_. No correlation to FAP. The more authors on an article, the higher the FAP and lower the representation at prestigous authorships. "The analysis of combined authorships documents that male-first/ male-last and male-first/female-last articles have on average the highest citation rates with 40.2 and 36.8 citations/article, respectively, followed by female-first/male-last and female-first/ female-last articles with 35.2 and 33.2 citations/article, respectively" "Overall, 61.0% male authors are responsible for 70.2% of all authorships in our data set (Fig 5C), thus indicating a higher pro- ductivity of the male authors."
+
+**Discussion:** 
++ "We identified a global pattern of FAORs that is characterized by the triplet (+, +, -), i.e. higher female odds for first or co-authorships and lower female odds for last authorships compared to men. This uneven distribution of female authors across the different authorships reflects the known structural imbalance of the scientific system, with just a few female group leaders as last-authors and many female researchers at lower hierarchical level being first- or co- authors."
++ Woah - "Japan-with a strong sense of patriarchy in society [36]-occupies a noticeable role among the top 15 productive countries: it has with 17% the lowest FAP, an even more unfavour- able FAOR-pattern and a relatively low Prestige Index, thus pointing to a non-advanced integra- tion of female scientists. Concomitantly, the Japanese government recently reported that its world standing in science and technology is falling [37] and introduced a range of policies in response to this, which are designed to recruit top international researchers"
++ "Methodically, the comparison of e.g. Turkey to Finland emphasizes the importance to include FAORs and the related Prestige Index in the analysis of authorships: Although both countries are characterized by a relatively high proportion of approximately 40% female authorships, Finland has a more favourable FAOR-pattern with considerably higher female odds for prestigious authorships than Turkey. Apparently, the FAOR-distribution reveals two completely different scientific systems regarding the integration of women."
+
+### "The role of gender in scholarly authorship", West et al., 2013
+***
+**Background:**
++ F 25% of full professors w/ 80% the salary of M
++ M publish more in chemistry & math, F in electrical engineering
+(2,4, 26, 28, 32)
+
+**Methods:**
++ JSTOR corpus - body of academic papers from a range of disciplines
++ network-based community detection approach - literature is large network where papers are linked by citation relationships
++ hierarchical map equation reveals multiple levels of substructure (disciplines/fields/subfields)
++ gender determined from the US social security administration records, 95% cutoff
++ androgynous names are more likely to be females
+
+**Results:**
++ F 21.9% of all authorships: 17% single authored (26% after 1990); 
++ even in fields with near equal gender parity, M & F are unequally distributed in subfields
++ Prior to 1990, huge inequity for first author, gap closed quite a bit in last 20 years; largest gap is now in last author positions
+
+**Discussion:**
++ the difference between total & first F authorships <2% since 1960s, but 5% between total & last F authorships
++ Potential reasons:
+    + women submit fewer papers than men or that their contributions to papers are less significant than their male coauthors. No evidence to support the claim of women’s lesser contributions, women are less likely to be involved with collaborative research projects in many scientific fields 
+    + men negotiate more successfully for the more prestigious authorship positions in informal negotations (men, in general, do negotiate more than women and are more likely to self-promote their accomplishments)
+    + bias against women in the review process, such that when they are in the more prestigious author positions, papers of equal quality are less likely to be accepted than when men occupy the prestigious positions. This would produce an underrepresentation of women in journals that do not rely on gender blind reviews.
+
+## Editors
+### “Is there a sex bias in choosing editors?”, Dickersin et al., 2003 
+***
+**Background:** People are interested in studying careers of F in science/medicine. 45-60% of those in Public Health:Epidemiology graduate programs are women. F faculty numbers have increased 23% in 1976 to 36% in 1991 but little data following grad school. Study questions: F representation in epi editorial boards vs proportion of F authors/reviewers 1) does prop of F editors reflect F authors/reviewers? 2) Has prop of each changed over time?
+
+**Methods:** Looked from 1982 - 1994 (sp journals in 82, 87, 92 & 94) in 4 journals (AJE, JCE, AE, Epi). Identified editors, reviewers, and authors (down to 8) from articles and volumes, attributed sex where possible.
+
+**Results:** All F editors in All journals ranged from 6.5% to 16.3%. Removing unassigned gender persons, F were on average 28.7% of authors, 26.7% of reviewers and 12.8% of editors. Values ranged from year to year
+
+**Comment:** The proportion of F editors is low, though it had increased over time & in newer journals. Possible that women just aren’t as good at epi as men? Not if you look at productivity via papers & asking to be reviewers. Cohort effect - recent influx of women means ineligible at higher proportion than eligible but prop of F editors didn’t increase over time after incrase in F authors nor does it seem that more F editors have been added. Women may be refusing membership on boards or less likely to nominate themselves. Selection bias by male EiCs. increased “professional influence” is conferred by being an author, reviewer, or editor and that each of these roles has progres- sively more influence in the scientific community.
+
+### “Male gatekeepers gender bias in the publishing process”, Bransch & Kvasnicka, 2017.
+***
+**Background:** Editors can also take more indirect influence, e.g. by selectively assigning submissions to reviewers who favor certain subjects or do a better job at reviewing (which improves manuscript quality), or by influencing the decisions of other editors in board meetings or informal talks (Addis and Villa, 2003). Gender bias may also entail significant efficiency losses. Few studies have looked at editorial boards, mostly for professional ties, not gender differences. Presence of women on hiring committees have negative impact for female candidates. Two types of literature re: female under-representation in economics: 1) Demand-side—potential discrimination by employers e.g., universities & research institutions—studies suggest statistical discrimination b/c unobservable productivity &/or decision-makers aversion to interact w. women 2) Supply-side–M/F productivity gaps e.g., lack of professional networks & mentors for women, < likely to apply for promotions, less competition, > time on socially desirable tasks that don’t count towards tenure
+
+**Methods:** Pulled data from the article, editorial info from each issue, citation info from WoS. Assigned gender to authors by hand -> 1 if any F author/0 if none. Assigning editors to papers was difficult: 1st had to learn class of editors responsible for handling & decisions. 2nd editors listed in issue may be different from those who handeled the articles in that issue. Chose to consider the avg share of F editors of a journal over the 3 yrs before an article was published (‘editor share’). Used article citation as a proxy for article quality. Used JEL codes to bin articles by field to account for citation. Attempted to control for # of authors, # of pages, and year of publication.
+    
+**Results:** only 16.3% of articles had at least 1 F author. As the share of F editors increased, share of F-authored articles decreased. Quality increased with > F editor share (up to 11.7%), but then declined (based on citation count). 
+
++ Possible reasons include:
+    + F editors may discriminate to protect their standing (Broder, 1993)
+    + M editors may discriminate less in all-male environment (Akerlof & Kranton, 2000)
+    + “Queen Bee syndrome” F editors prefer M b/c acclamated to M-dominated system (Ellemers et al., 2004)
+    + Editor responsiblities reduce time for research & publications (Vernos, 2013)
+    + F authors submit less to journals w. F editors
+    + Gendered networks (Saloner, 1985) - M networks may be disrupted, at first improving quality, then be replaced by F networks
+    + F may initially improve performance of group (Wooley et al., 2010), then productivity effect is reversed
+
+
+## Reviewers
+### "Gender differences in providing peer review to two behavioural science journals, 2006 - 2015", Schmaling & Blume, 2017
+***
++ Men outnumbered women among the 2,178 potential reviewers for two behavioural science journals (53.5% and 46.5%, respectively).
++ Women were more likely to accept invitations to review than men (64% and 59%, respectively).
++ Women took approximately two more days to complete their reviews than men.
++ There were no gender differences in the number of days to respond to invitations to review or in the total number of invitations extended
+
+
+
+## Author Order
+### "Gender and Byline Placement of Co-first Authors in Clinical and Basic Science Journals With High Impact Factors", Aakhus et al., 2018
+***
+Examined papers published between 2005 & 2014 - M & F co-authors are equally likely to be placed first
+
+### Trends and comparison of female first authorship in high impact medical journals: observational study (1994-2014). Filardo et al, 2016
+***
+**Background:**
++ M/F entry & graduates approximately equal in US & UK - practicing 33 & 47% respectively
++ Representation of F physicians in Japan (the lowest), doubled between 1986 & 2012
++ Academic medicine lags - <30% female, <20% F leadership positions.
++ Introduced implict bias into the fields of research, influencing future clincial practice
++ Two studies looked at proportions of F vs M first authorships in US (MDs only) or UK - gender gap narrowed, but still 29% (US) & 36% (UK)
+
+**Methods:**
++ selected 6 journals w. highest 2012 JIF in "Medicine, general & internal" (Annals of Internal Medicine (Annals), Archives of Internal Medicine/JAMA-Internal Medicine (Archives), The BMJ, JAMA, The Lancet, and the New England Journal of Medicine (NEJM).)
++ collected data (# authors, names, coutnry, article type, specialty/topic, study design) for all research from Feb 1994 to June 2014
++ hand-assigned gender
++ logistic regression to model association between gender & time of publication & between gender & journal
+
+**Results:**
++ couldn't determine gender for 3%, 34% female first authors, 10% increase over the time period
++ BMJ highest total proportion of female, NEJM the lowest (& the only to have a decreasing trend)
++ research originated from 50 countries (predom NA & Europe), 5% in Africa/Asia/Australia/SA
+
+**Discussion:**
++ since 2009 F first authorships have either plateaued or declined in all journals examined
++ the 4 journals w. F EICs had the highest unadjusted rates of F first authorship for those years
++ 
+(13,14,18, 50)
+
+
+## Citations
+### "Quantitative evaluation of gender bias in astronomical publications from citation counts" Caplar, 2017
+***
++ Biases against W in astronomy re: conference presentation, telescope proposal success rates. Pulled >200,000 publications from 1950-2015 from 5 major astronmy journals - data included names & # of authors, number of references, year of publication, journal, abstract & name of 1st authors institution. -> removed papers where 1st author gender couldn't be assigned or had no citations/references.
+
++ Papers written by M & W have different "properties". Citation count is expected to correlate w. non-gender-specific properites of papers (e.g., seniority, # references, journal, year, field of study, geogrpahical region). Attempted to separate gender bias effect from non-gender-specific properties effect
+
++ Men recieve ~6% more citations - used machine-learning to correct & estimate more accurately the amount of gender bias by training on non-gender-specific parameters to predict the number of citations for given F authored papers then comparing the predictions against actual counts. -> W recieve 10% fewer citations than expected. 
+
++ Replaced actual citations for W with predicted citations then measure the difference in citations - > Men should recieve 4% fewer citations than F b/c of differences in paper properties
+
++ Gender identification run through multiple algorithms: 
+    + SexMachine (https://pypi.python.org/pypi/SexMachine/), a Python module. This database consists of 40,000 names from a wide geographical range that have been classified by native speakers. 
+    
+    + United States Social Security Administration and the UK Office of National Statistics, which track the gender of all children born in these countries (https://github.com/OpenGenderTracking/globalnamedata). It consists of about 100,000 names, but it does not have the geographical width of the first database. 
+    
+    + Gender API (https://gender-api.com/), which includes nearly 2,000,000 names. 
+    
+    + If a given first name consists of several names, we check the gender for all of the names and weight the final gender assignment accordingly
+  
++ F authored papers have 7 +/- 3% more references
+
+
+## Academia
+### “Elite male faculty in the life sciences employ fewer women” Sheltzer & Smith, 2014 
+***
+**Background:** Gender differences in individual’s personal aspirations may explain some of leaky pipeline e.g. women rank work-life balance & parenthood-related issues as more important than men do. M post-docs >2x as likely to expect their spouse to make career sacrifices for their benefit. F scientists w. children sig less likely to be hired for tenure-track jobs than those w/out (Opposite phenomenon for men). Career outcomes are affected by post-doc labs & mentors.
+
+**Results:** Collected info on grad students/post-docs/faculty in 39 depts at 24 high ranking US instiutions. Used lab websites/dept directories to assign mentors to trainees. Most prestigious faculty were those funded by HHMI, NAS members, or won a major research award. F: 21% full professors, 29% assist prof, 25% HHMI, 18% NAS, 16% major award. 49% grad, 39% post-doc. Avg - male PI had F 36% post-doc & 47% grad. W PI - 46% PD & 53% grad. Prestigious M faculty had fewer F PD than other M faculty. No diff btwn F faculty. “Combining faculty of both genders, men were about 17% more likely to do their graduate training with a member of the NAS, 25% more likely to do their postdoctoral training with a member of the NAS, and 90% more likely to do their postdoctoral training with a Nobel Laureate.” “Feeder labs” are those who produce assist profs. 13% of all profss were NAS, but 58% of feeder labs were NAS members. Feeder labs have 14% fewer F postdocs than non-feeders.
+
+**Discussion:** Data do not show conscious bias. Could also be self-selection “women win competitive fellowships for graduate and postdoctoral training at frequencies that are proportional to their representation among all trainees.” “According to the theory of cumulative disadvantage, persistent inequalities in achieve- ment can result from small differences in treatment over a pro- longed goal-oriented process (14). In controlled studies, women in academia receive less favorable evaluations, receive lower salary offers, and are ignored by faculty more frequently than men (15, 20).”
+
+### “Science Faculty’s subtle gender biases favor male students” Moss-Racusin et al., 2012 
+***
+**Background:** There’s a problem getting women from graduate degree to professorship. Many argue its b/c of life choices, there isn’t bias in the sciences. No one has tested it. Bias occurs from repeated exposure to sterotypes, predicted that M/F faculty would both exhibit gender bias. “People who value their objectivity & fairness are particularly likely to fall prey to biases”
+
+**Methods:** tested for differences in treatment of lab manager candidate based on gendered name in Re: to: 1) percieved competence, 2) salary offers (which reflect value), 3) willingness to mentor. Nationwide sample of bio/chem/physics professors (n=127) randomly assigned application w. either M or F name. Participants rated compentence, hirability, salary and amount of mentoring they would offer. Participants believed that their feedback would be shared with the student rated.
+
+**Results:** Student gender was significant, faculty gender was not. Faculty viewed F students as less competent, less hireable, offered less mentoring & less starting salary. F & M faculty rated similarly in all areas. F applicant was considered more “likeable”
+
+**Discussion:** Study filled gap in examining bias in faculty vs undergrads. While differences in ratings are relatively small, the effect sizes were moderate to large. Moderation studies suggest that implicit biases negatively affect F (but not M) student. Bias was exhibity by both M & F faculty regardless of discipline, age, or tenure status. Selecting faculty who interact with students on a regular basis allows for “ecological validity & generalizability”. If the decision to move forward in science is affected by such early career bias, then fixing issues later in the career path won’t fully correct gender parity. “Our results point to the importance of establishing objective, transparent student evaluation and admissions criteria to uard against observers tendentcy to unintentionally use different standards when assessing women relative to men”
+
+###"Gender in the Global Research Landscape" - report by Elsvier
+***
+**Key findings:**
+
+1. The proportion of women among researchers & inventors is increasing in all 12 comparator countries & regions over time
+    + women inventors increased from 10% (96-00) to 14% (11-15)
+    + The representation of women in STEM varies geographically, with certain countries having relatively high propor- tions of women among researchers (Bolivia 63%, Venezuela 56%), while others have lower proportions (Republic of Korea 18%, Japan 15%). Only 25% of researchers in France, Germany, and the Netherlands are women. (4)
+    + A large study of 5.5 million papers and 27.3 million authorships reveals that men produce a greater number of papers (70%) and hold more first authorships (66%) than women, even in the most productive countries (9) - UNESCO 2015 ~28% researchers worldwide are women
+    + Women researchers have also been shown to specialize less than men, which may also be linked to lower productivity and promotion.(24, 25)
+    + The National Institutes of Health (NIH) has formally recognized the need to address the gender imbalance in the United States' biomedical re- search workforce, not only to ensure fairness, but also to channel all available intellectual capacity towards building knowledge and improving human health.(29)
+    + Programs in US (NIH, NSF ADVANCE), EU (Horizon 2020, STAGES), Asia-Pacific ("womenomics", Japan hosting Gender Summit 10, SAGE, Athena SWAN, WISET)
+    + M&I is evenly split between M/F researchers in all countries/regions 
+2. Women publish fewer research papers on average than men, but there is no evidence that this affects how their papers are cited or downloaded
+    + Research has shown that gender does have an influence on tasks associated with authorship: women are more likely to perform experiments than men, who tend to have other roles (81)
+    + despite their low representation in the field, women hold a fairly high share of first/corresponding authorships in this field (Engineering). - given that men are authors on more papers, does this mean that female researchers are more productive than men?
+3. Women are less likely than men to collaborate internationally on research papers
+4. In general, women's scholarly output includes a slightly larger proportion of highly interdisciplinary research than men's
+5. Among researchers, women are generally less internationally mobile than men
+6. Gender research is growing in terms of size and complexity, with new topics emerging over time
+7. The former dominance of the US in gender research has declined as research activity in the EU has risen
+
+**Methods:**
++ Mined Scopus for data set spanned 20 years, 12 comparator countries and regions (US, EU, UK, Canada, Australia, Brazil, Denmark, Portugal), 27 subject areas.
++ "Novel gender disabiguation approach" - combining Scopus data with data sources providing information on first names and gender per country (Genderize.io, NamSor sociolinguistic analysis, and Wikipedia name lists), which allow us to assign a gender to author profiles with a first name
++ Scopus indexes authors with an associated unique identifier (Scopus ID). Through this data structure, we can identify all the papers, affil- iations, and citations of an author to form a Scopus Author Profile
++ Scopus, journals are classified into 27 non-mutually exclusive subject areas, use these journal subject areas as a proxy for fields of research
+  
+# Decision-making
+## Academic hiring/promotions
+### Assessing scientists for hiring, promotion, and tenure. Moher et al, 2018
+***
+Summary of literature and discussions around what is (and isn’t) incentivized in science. Primarily discusses impact, citations, open resource, etc.
+
+“How we evaluate scientists reflects what we value most—and don’t—in the scientific enterprise and powerfully influences scientists’ behaviour.”
+
+## Social
+### Social influence bias: A randomized experiment. Muchnik, Aral & Taylor. Science 2013
+***
+“the tone of the first comment posted influences the tone of subsequent comments” (from paper on men asking more questions than F at seminars)
+
+# Publication metrics
+### "Evaluation of h-index, its variants and extensions based on publication age & citation intensity in civil engineering", Raheel, 2018
+***
+Wu-index appears to be the most well rounded measure, taking into account more than number of publications and citations. Most different indexes have some positive correllation with other indexes. Used the Spearman Rank correlation to compare their indices. 
+
+### "And now for something completely different: The congruence of the Altmetric Attention Score's structure between different article groups", Mukherjee, 2018
+***
+Aggreggation of individual altmetrics scores (e.g., Twitter, Facebook, Blogs, News) into a single score doesn't work. There isn't co-linearity between many of the scores, and in some cases there are negative correlations. These nuances don't come across in an individualized score in order to make comparisons across papers.
+
+### "How does the peer review process influence AANA journal article readability?", Biddle & Aker, 1996
+***
+Evaluated the text of about 60 papers (case reports & research articles) published in AANA for readability using MS word & two different readability scales (Gunning & Flesch). 20 were randomly pulled & analyzed by humans. No sig diff btwn human/computer analysis. On average, papers become more readabile following peer review but are still pretty difficult to read.
+

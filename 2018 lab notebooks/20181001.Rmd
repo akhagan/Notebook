@@ -2,6 +2,77 @@
 title: "Lab Notebook: October 2018"
 output: html_document
 ---
+#Goals: October 22 - 26
+1. Authorship paper:
+    + Work on bugs in webscrape script
+    + Test Nichole's dataset in genderize
+    + Analyze 2018 data
+    + Draft intro/methods
+
+1. Monthly journals report - nothing
+
+1. Estimated JIF - nothing
+
+1. ASM blog post
+    + ~~Suggestions to J Brubaker's post~~
+    + ~~Revise ergot post~~
+    + ~~Submit post~~
+
+1. DEI certificate
+    + Identify DEI person to interview
+    
+1. Geographical survey - Mia
+
+1. ~~Journal Club~~
+
+1. ~~ASM Journal Staff Meeting - Wed @ 1pm~~
+
+1. NCBI Command Line workshop - Thurs @ 1pm
+
+#2018/10/24
+
+**- ASM blog post**
+
+Generated google doc w. images & submitted to Julie on Slack.
+
+**- Lit review**
+
+Finished organizing current list of papers & the list of follow up papers. Read 2 papers.
+
+#2018/10/23
+
+**- Lit review**
+
+Read a few papers, also tried to find a better way to organize my papers. Decide to compile all of them into a single `Rmd` file, which enables searchability & organization. 
+
+**- Software Carpentry**
+
+Monthly meeting @ 9am.
+
+**- ASM blog post**
+
+Revise ergot post based on Begum's suggestions. 
+
+#2018/10/22
+
+**- Lab Meeting**
+
+Present journal club.
+
+**- Journal club**
+
+Finish prepping for lab meeting.
+
+**- Lab Lunch**
+
+**- ASM blog post**
+
+Make suggestions to J. Brubaker's post.
+
+**- Newsletter**
+
+Edit newsletter proofs.
+
 #Goals: October 15 - 19
 1. Authorship paper:
     + ~~Finish hardcode editor genders - Email unknown names to Pat w. journal~~
