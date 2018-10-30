@@ -31,7 +31,7 @@ output: html_document
 1. De Vries, 2009 "Exploring the peer review process: What is it, does it work, and can it be improved?"; 
 1. Heidari & Babor, 2013 "Evaluate gender equality in journals"; 
 1. Tregenza, 2002 "Gender bias in the refereeing process? Trends"; 
-1. Lee, 2013 "Bias in peer review."; 
+1. Lee CJ, Sugimoto CR, Zhang G, Cronin B. Bias in peer review. J Am Soc Inf Sci Technol. 2013; 64: 2–17 
 1. Leahey, 2007 "Not by productivity alone: how visibility and specialization contribute to academic earnings."; 
 1. Ceci & Williams, 2011 "Understanding current causes of women's underrepresentation in science."; 
 1. Donaldson, 2010 "Injecting youth into peer-review to ensure its sustainability: a case study of ecology journals."
@@ -48,7 +48,7 @@ output: html_document
 1. Martin 2012
 1. Alzahrani 2010
 1. McPherson, 2001
-1. Grod, 2010
+1. Grod ON, Lortie CJ, Budden AE. Behind the shroud: a survey of editors in ecology and evolution. Front Ecol Environ. 2010; 8: 187–192.
 1. wing, 2010
 1. Willet 2013
 1. Uzun 2004
@@ -112,6 +112,51 @@ output: html_document
 1. Fox MF (2001) Women, Science, and Academia: Graduate Education and Careers. Gender & Society 1: 654–666.
 1. Babcock L, Laschever S (2007) Women Don’t Ask: The High Cost of Avoiding Negotiation-and Positive Strategies for Change. New York, NY: Bantam Dell.
 1. Rudman LA (1998) Self-Promotion as a Risk Factor for Women: The Costs andBenefits of Counterstereotypical Impression Management. Journal of Personality and Social Psychology 74: 629–45.
+1. Hewlett SA, Peraino K, Sherbin L, Sumberg K (2010) The sponsor effect: breaking through the last glass ceiling. Harvard Bus Rev Res Rep 1–85.
+1. Ceci, Ginther, Kahn, Williams (2015) Do women earn less than men in STEM Fields? https://www.scientificamerican.com/article/do-women-earn-less-than-men-in-stem-fields/
+1. Bardolph DN. A critical evaluations of recent gendered publishing trends in American archaeology. American Antiquity. 2014; 79(3): 522–540.
+1. Casadevall A, Handelsman J. The presence of female conveners correlates with higher proportion of female speakers at scientific symposia. mBio. 2014; 5(1): e00846–13. doi: 10.1128/mBio.00846-13 PMID: 24399856
+1. Henley MM. Women’s success in academic science: Challenges to breaking through the ivory ceiling. Sociology Compass. 2015; 9(8): 668–680.
+1. Fox MF. Gender, family characteristics, and publication productivity among scientists. Social Studies of Science. 2005; 35(1): 131–150.
+1. Correll SJ, Benard S, Paik I. Getting a job: Is there a motherhood penalty? American Journal of Sociology. 2007; 112(5): 1297–1338.
+1. Appel M, Kronberger N, Aronson J. Stereotype threat impairs ability building: Effects on test preparation among women in science and technology. Eur J Soc Psychol. 2011; 41: 904–913.
+1. Kelly K, Grant L. Penalties and premiums: The impact of gender, marriage, and parenthood on faculty salaries in science, engineering and mathematics (SEM) and non-SEM fields. Social Studies of Science. 2012; 42(6): 869–896.
+1. Ferriman K, Lubinski D, Benbow CP. Work preferences, life values, and personal views of top math/science graduate students and the profoundly gifted: Developmental changes and gender differences during emerging adulthood and parenthood. Journal of Personality and Social Psychology. 2009; 97 (3):517–32. https://doi.org/10.1037/a0016030 PMID: 19686005
+1.Jacobs JA, Winslow SE. Overworked faculty: Job stresses and family demands. Annals of the American Academy of Political and Social Science. 2004; 596:104–29. https://doi.org/10.1177/0002716204268185
+1.Ng TWH, Eby LT, Sorensen KL, Feldman DC. Predictors of objective and subjective career success. A meta-analysis. Personnel Psychology. 2005; 58(2):367–408. https://doi.org/10.1111/j.1744-6570.2005.00515.x
+1. Ceci SJ, Ginther DK, Kahn S, Williams WM. Women in academic science: A changing landscape. Psychol Sci Public Interest. 2014; 15(3):75–141. https://doi.org/10.1177/1529100614541236 PMID:26172066
+1. Lubinski D, Benbow CP, Kell HJ. Life Paths and Accomplishments of Mathematically Precocious Males and Females Four Decades Later. Psychological Science. 2014; 25(12):2217–32. https://doi.org/10.1177/0956797614551371 PMID: 25384550
+1. Baker M. Choices or constraints? Family responsibilities, gender and academic career. Journal of Comparative Family Studies. 2010; 41(1):1–18.
+1. Lubinski D. Introduction to the Special Section on Cognitive Abilities: 100 Years After Spearman’s (1904) ’’General Intelligence,’ Objectively Determined and Measured’. Journal of Personality and Social Psychology. 2004; 86(1):96–111. https://doi.org/10.1037/0022-3514.86.1.96 PMID: 14717630
+1. Jacobs JA, Winslow SE. The academic life course, time pressures and gender inequality. Community, Work & Family. 2004; 7(2):143–61.
+1. Eagly AH, Miller DI. Scientific Eminence: Where Are the Women? Perspectives On Psychological Science: A Journal Of The Association For Psychological Science. 2016; 11(6):899–904. https://doi.org/10.1177/1745691616663918 PMID: 27899733
+1. van den Besselaar P, Sandström U. Vicious circles of gender bias, lower positions, and lower performance: Gender differences in scholarly productivity and impact. PLoS One. 2017; 12(8):1–16. https://doi.org/10.1371/journal.pone.0183301 PMID: 28841666
+1. Hunter LA, Leahey E. Parenting and research productivity: New evidence and methods. Social Studies of Science. 2010; 40(3):433–51. https://doi.org/10.1177/0306312709358472
+1. Fox MF, Faver CA. Men, women, and publication productivity: Patterns among social work academics. The Sociological Quarterly. 1985; 26(4):537–49. https://doi.org/10.1111/j.1533-8525.1985.tb00243.x
+1. Cole JR, Zuckerman H. Marriage, motherhood and research performance in science. Sci Am. 1987; 256(2):119–25. https://doi.org/10.1038/scientificamerican0287-119 PMID: 3810117
+1. Kyvik S, Teigen M. Child care, research collaboration, and gender differences in scientific productivity. Science, Technology, & Human Values. 1996; 21(1):54–71. https://doi.org/10.1179/2046905514Y.0000000146
+1. King EB. The effect of bias on the advancement of working mothers: Disentangling legitimate concerns from inaccurate stereotypes as predictors of advancement in academe. Human Relations. 2008; 61 (12):1677–711. https://doi.org/10.1177/0018726708098082
+1. Ecklund EH, Lincoln AE. Scientists want more children. PLoS ONE. 2011; 6(8). https://doi.org/10.1371/journal.pone.0022590 PMID: 21850232
+1. Mason MA, Goulden M. Marriage and Baby Blues: Redefining Gender Equity in the Academy. Annals of the American Academy of Political and Social Science. 2004; 596:86–103. https://doi.org/10.1177/0002716204268744
+1. Moss-Racusin, Vand Der Toorn, Dovidio et al "Scientific Diversity Interventions" Science (2014)
+1. Miller & Wai. "The bachelor's to PhD STEM pipeline no longer leaks more women than men: A 30-year analysis". Frontiers in psychology (2015)
+1. Morton MJ, Sonnad SS. Women on professional society and journal editorial boards. J Natl Med Assoc. 2007; 99: 764. PMID: 17668642
+1. Mauléon E, Hillán L, Moreno L, Gómez I, Bordons M. Assessing gender balance among journal authors and editorial board members. Scientometrics. 2013; 95: 87–114
+1. Cho AH, Johnson SA, Schuman CE, Adler JM, Gonzalez O, Graves SJ, et al. Women are underrepresented on the editorial boards of journals in environmental biology and natural resource management. Peer J. 2014; 2: e542. https://doi.org/10.7717/peerj.542 PMID: 25177537
+1. Barret SCH. Proceedings B 2017: the year in review. Proc R Soc Lond B Biol Sci. 2017. https://doi.org/10.1098/rspb.2017.2553 PMID: 29298940
+1. Topaz CM, Sen S. Gender Representation on Journal Editorial Boards in the Mathematical Sciences. PLoS ONE. 2006; 11: e0161357.
+1. Mason MA, Goulden M. Do Babies Matter (Part II)? Closing the Baby Gap. Academe, November-December, Berkeley. 2004.
+1. Knapp S. A suitable job for a woman. Trends Ecol Evol. 2005; 20: 55–56. https://doi.org/10.1016/j.tree.2004.11.016 PMID: 16701341
+(10, 11, 32, 33, 38-40, 43, 44)
+1. Britton DM. The epistemology of the gendered organization. Gender & Society. 2000; 14(3):418–34.
+https://doi.org/10.1177/089124300014003004
+1. Herrera R, Duncan PA, Green MT, Skaggs SL. The effect of gender on leadership and culture. Global Business and Organizational Excellence. 2012; 31(2):37–48. https://doi.org/10.1002/joe.21413
+1. Chesterman C, Ross-Smith A, Peters M. “Not doable jobs!” Exploring senior women’s attitudes to academic leadership roles. Women’s Studies International Forum. 2005; 28(2–3):163–80. http://dx.doi.org/10.1016/j.wsif.2005.04.005.
+1. McTavish D, Miller K. Gender balance in leadership?: Reform and modernization in the UK further education sector. Educational Management Administration & Leadership. 2009; 37(3):350–65. https://doi.org/10.1177/1741143209102784
+1. Rudman LA, Moss-Racusin CA, Phelan JE, Nauts S. Status incongruity and backlash effects: Defending the gender hierarchy motivates prejudice against female leaders. Journal of Experimental Social Psychology. 2012; 48(1):165–79. http://dx.doi.org/10.1016/j.jesp.2011.10.008
+1. Whittington KB, Smith-Doerr L. Women inventors in context: disparities in patenting across academia and industry. Gender & Society. 2008; 22(2):194–218. https://doi.org/10.1177/0891243207313928
+1. Reagans R, Zuckerman EW. Networks, Diversity, and Productivity: The social capital of corporate R&D teams. Organization Science. 2001; 12(4):502–17. https://doi.org/10.1287/orsc.12.4.502.10637
+1. Caplan PJ. Lifting a ton of feathers: A woman’s guide to surviving in the academic world. Toronto: University of Toronto Press; 1993
 
 # Perceptions of women in science
 ### “To name or not to name: The effect of changing author gender on peer review”, Borsuk et al., 2009
@@ -306,6 +351,41 @@ Text mining of reviewer comments from NIH grants. All were eventually funded but
 
 
 # Workloads/barriers for women in science
+### "Can lifestyle preferences help explain the persistent gender gap in academia? The 'mothers work less' hypothesis supported for German but not for U.S. early career researchers" Sieverding, Eib, Neubauer, & Stahl, 2018
+*** 
+**Background:**
++ lifestyle preferences are a greater factor in career acheivement than bias 
++ highly qualified women differed substantially in their lifestyle preferences than men
++ "differential gendered outcomes in the real world result from differences in resources attributiable to choices, whether free for constrained"
++ main goal - explore workhours as a function of gender & parenthood
++ highly qualified women work less than comparable men do - similar patterns in academia w. male full-time faculty putting in more work hours than F counterparts
++ accumulated differences in hours over time (e.g. 5 yrs) may have negative consequences
++ gender differences in work hours may contribute to gender differences in academic success
++ hypothesis that children disproportionately affect the work hours of F academics vs M - "mothers work less"
++ expected differences in the effects of parenthood on working hours btwn US & Germany b/c of parental leave policies (12 wks vs 14 mo)
+
+**Methods:**
++ Sent survey to early career researchers at two German Universities & 3 US universities
++ Final sample included 95 women & 107 men from Germany & 96 women and 101 men from US universities
++ four categorizations of Ph.D. fields: arts & humanities, social sciences/business/law, natural sciences, other
++ asked "actual work hours" (any where, per week) & "ideal work hours"
++ asked questions to assess degree of "calling" an individual had for their work & the degree of "mother-child ideology", which would affect their opinion of women's participation in the workforce
+
+**Results**
++ early career researchers in U.S. work more than those in Germany (51.5 vs 45.2)
++ female researchers work less than male researchers, only sig in Germany (F=42.3, M=47.8), not the U.S.(F=50.9 vs M=52.1)
++ Men w/o children in the U.S. work 6.2hrs > men w/o children in Germany
++ Gender & parenthood explain 9% of the variance in U.S. workhours (& 23% in Germany)
++ men w. children in U.S. work 6.4 > hrs than men w. children in Germany, no diff based in gender in U.S.
++ ideal work hours are very similar but do vary according to gender, country & parenthood status
+
+**Discussion**
++ difference of ~2k hours over 5 years for F parents vs M
++ 1st 5 years are cruical for career prospects in academia
++ evidence is unclear that that children negatively affect F careers via productivity - more likely that reduced vocational engagement (reduced work hours), interrupted careers, timing, childcare provisions & partner involvement
++ stronger cultural pressure for W to stay home w. children in Germany - parental leave policies may have unintended effect by rewarding reduced work hours & interuption of careers for married women
++ gendered work hours are no longer capable of explaining the gender gap in higher positions in U.S. academia
+
 ### "Time-to-credit gender inequities of first-year PhD students in the biological sciences” Feldon et al., (2017) 
 ***
 **Background:** Tenured F faculty are expected to take on more mentorship/service, which is uncompensated & undervalued (Hirshfield, 2014). When M & W work equal hours, M percieved as more dedicated & productive. W 50% of biology phd grads, only 30% tenure-track positions. Trouble finding post-docs? Longitudinal studies suggest that # grad papers predicts productivity later in careers.
@@ -422,10 +502,54 @@ Took a cohort of scientists who all recieved their PhDs in 1970 - evenly split m
 
 
 # Gender Diversity in Science
-## Specific Journals/Publishers
+## Specific Journals/
+### "Gender differences in authorships are not associated with publication bias in an evolutionary journal" Edwards, Schroeder & Dugdale, 2018
+*** 
+**Background:**
++ low representation of women as first/last authors in ecology/evolution, as well as less frequently invited to be speakers, research featured less often in ecology text books
++ cause of gender patterns in authorship remain unclear: F in junior roles, less effective in negotiations, bias in editorial/review process
++ conflicting results from double-blind experiments may suggest that gender bias is percieved as an issue, but isn't actually
++ editor gender may also influence deicions of reviewers to accept to review a manuscript
++ geographic underrepresentation influences peer review also - publication, citation rate, reviewer location
+
+**Questions:**
++ women are under represented as first & last authors (most prestigous), editorial boards & as reviewers
++ the gender of the first author is associated with wheter the first author is a corresponding author
++ gender fo the first author is associated with the gender of the last author
++ gender of th first author may be associated with the first author's continent of affiliation
++ expect decision to review, the reviwers decision to review, and the firsta nd final publication decisions to be associated with the gender of the first author/last author/first author contentint of affiliation/gender of the reviewer.
+
+**Methods:**
++ manuscripts decisions & reviews submitted to the Journal of Evolutionary Biology (society journal for European Society for Evolutionary Biology) from 2012 - 2016
++ Included all manuscript types (research paper, review, short notes, special issue)
++ handling editor assigned to 3,348 unique manuscripts: 81% sent for review & 19% rejected -- 54% invited for revision, 43% rejected, 0.01% accepted, 0.02 unknown. 87% of those requiring revision that were resubmitted were accepted.
++ gender assigned to first names using `genderizeR` package to query genderize.io
++ calculated a modified probability from genderize p & c -- Pmod = pc+2/c+4 -- cut off set at Pmod >= 0.85 (ref 41)
++ hand validated names with Pmod between 0.85 - 0.855 -- total of 5 names, all gendered correctly
++ gender assigned to: all editors, 79% of first authors, 80% of last authors, 79% of corresponding authors, 84% of reviewers
+
+**Results:**
++ 42% first, 25% last, 37% corresponding F authors
++ first author M , 6x more likely to be corres than F
++ M last authorship 3x more likely with M first author
++ review papers more likely to be first authored by M
++ continent of affiliation not associated w. first author gender
++ comparision to estimated membership: first authors similar, fewer F last authors (25 vs 30%), reviewers (22% vs 38%) & editors (32 vs 38% ns) than estimated
++ no associations (based on questions) between gender and review/editorial decisions
++ manuscripts from Asia 5x more likely to be rejected on final decision than manuscripts from Europe
+
+**Discussion:**
++ scholarly publishing can act as an indicator and potential contributor to gender inequality
++ gender was not a contributing factor in the editorial decision to publish
++ men & women more likely to collaborate with researchers of the same gender
++ lower publication rates of F vs M - accross scientific disciplines 
++ culmination of reduced success in grant rounds, greater proportion of time dedicated to childcare, greater involvement with non-research resposibilites, lower ranking of women 
++ suggest that large number of Asia rejects due to scope issues??
++ did not detect gender bias with their published analysis
+
 ### “Is there gender bias in JAMA’s peer review process?”, Gilbert et al., 1994 
 ***
-**Background:** PUblication bias occurs in 3 stages: gender bias in differential handling of manuscripts is one.
+**Background:** Publication bias occurs in 3 stages: gender bias in differential handling of manuscripts is one.
 
 **Question:** the gender ofthe corresponding author, the assigned editor, or the reviewers had an effect on, or association with, the peer review, manuscript processing, or acceptance rates of research articles submitted
 
@@ -546,6 +670,72 @@ Editorial on how researchers need to do better at recruiting/studying things acc
 + "strong evidence that differences in acceptance rates among journals, which were controlled for in this analysis, at least partially explain the gender differences in publication outcomes" -- why didn't they look at editorial rejection breakdown by gender?
 + "consistent disadvantage experienced by manuscripts with no author from an English- speaking country"
 
+
+## Academic meetings/conferences
+### "Not 'Pulling up the ladder': Women who organize conference symposia provide greater opportunities for women to speak at conservation conferences", Sardelis & Drew, 2016
+*** 
+**Background:**
++ F recipients comprise 60% of master's & 36-48% PhD, half of all MDs & 52% of all PhDs in life sciences
++ 50% of US workforce is F
++ Still inequality - F occupy <40% of bio/chem/physics jobs & 25% of STEM overall; 18-24% full-time professors
++ while F 20% of earth & environmental sciences, only 3.8% of Nature publications in that field are women
++ the absence of F role models limits the # of F entering STEM fields
++ venues to increase visibility & prof recognition: publishing research, awards, invited lectureships, speaking/organizing symposia
++ inviting scientists to speak at a symposia leads to academic relationships
++ abstracts of M speakers percieved by conference participants to be of higher scientific quality than F
++ presenting in symposia at scientific conferences provides networking, peer recognition & future professional opportunities
++ the ratio of F:M speakers is a basal assessment of gender equality
++ quantifying the visibility of F speakers in relation to F organizers is a comprehensible method of assesing F representation in science more generally
+
+**Methods:**
++ assessed 289 symposia from SCG Global conferences with 612 organizers & 1958 speakers
++ 56 symposia from ASIH conferences w. 132 organizers & 933 speakers
++ ASIH members 68.69% M, 1.17% unknown(self-identified data)
++ gender hand-assigned to speakers/organizers
++ used multi-variate regression analysis
+
+**Results:**
++ SCB conferences: 36.4% organizers, 31.7% presenters F
++ ASIH conferenes: 19.1% organizers & 28% presenters F (< %F membership!)
++ Every additional F organizer after the first increased the # of F presenters by 95% (SCB) & 70% (ASIH)
++ while the total number of orgnaizers & presenters increased over time, the percentage of F organizers/speakers did not
+
+**Discussion:**
++ strong relationship between F participation in the organization of symposia & opportunities for F to participate at both societies
++ symposia with larger pools of speakers and organizers are significantly more likely to include women in both categories - inclusivity might be simulated by larger symposia w. greater topic generality
++ increasing the number of presenters per symposium increased the # of F presenters at both conferences
++ smaller (more specialized?) symposia are less likely to include F in programming
++ while F may invite more F, M may also be more likely to reject an inviation from a F
++ "Friendship bonuses" peer review & reviewer acquantance - considered a more competent scientist
++ equal amounts of peer-reviewed literature between mothers & non-mothers 
++ performance of women is impaired by a "predominant mentality of inferiority in academia, increasing male motivation to avoid inviting female speakers"
+
+### "Stag Parties linger: Continued gender bias in a Female-rich scientific discipline" Isbell, Young & Harcourt, 2012
+***
+**Background:**
++ Difficult to distinguish between bias and tendancy for women to self-promote 
++ Use conferences as a proxy b/c it allows for both scenarios (bias in invited symposia vs self-promotion in oral/poster talks)
++ Looked at primate anthropology, which is a historically well-represented field in terms of gender
+
+**Methods:**
++ Examined 21 years of meeting issues for the American Journal of Physical Anthropology & hand-assigned gender to all first authors (assumed to be the presenter) within the subfield of primate behavior/ecology.
+
+**Results:**
++ 1874 poster, oral & symposia presentations over 21 years. 1819 were gender-identifiable.
++ AAPA meeting particiaption has increased over the years, though fremale particiaption has increased more than male
++ Women gave more poster than oral, M more oral than poster
++ Data from the last two years showed that men were 12% more likely than women to request a talk
++ Requests were denied at similar rates but trends in assigning posters for those who preferred talks suggest some additional bias (22% M, 29% F)
++ F first authors on 65% of podium/poster sessions but 47.4% of symposia
++ participation differed by the gender of the organzier: F-org symposia had 63.6% F, M/F-org - 58.5% F, M-org - 28.8% F
++ bias from symposia organizers confirmed by analysis of meetins from the Am Soc Primatologists
++ cannot be attributed to career-stage differences, bias was constant over time
+
+**Discussion:**
++ men may be more homophilic than women?
++ Homophily - preverential interaction w. others who have similar attitudes, beliefs, or personal characteristics
++ easier communication & increased behaviorial predictibility seem to be benefits of homophily
++ women may be less homophilic b/c of the influential differential that exists between m & f - women gain greater professional success w. they have sponsorship from men
 
 ## Publications
 ### "Persistent Underrepresentation of Women's Science in High Profile Journals" Shen et al., preprint
@@ -675,6 +865,13 @@ Examined papers published between 2005 & 2014 - M & F co-authors are equally lik
 
 
 ## Citations
+### "Self-citation is the hallmark of productive authors, of any gender" Mishra, Fegley, Diesner & Torvik, 2018
+***
++ Used logistic modeling to determine if gender is a factor in self-citations.
++ It isn't (really), but it and other factors may play into citations of others in general
++ reinforces that early years of research are crucial for generating papers that self-cite to lay the foundation of research in a given field
++ also that self-citation is evidence of a fruitful line of research
+
 ### "Quantitative evaluation of gender bias in astronomical publications from citation counts" Caplar, 2017
 ***
 + Biases against W in astronomy re: conference presentation, telescope proposal success rates. Pulled >200,000 publications from 1950-2015 from 5 major astronmy journals - data included names & # of authors, number of references, year of publication, journal, abstract & name of 1st authors institution. -> removed papers where 1st author gender couldn't be assigned or had no citations/references.
@@ -698,6 +895,51 @@ Examined papers published between 2005 & 2014 - M & F co-authors are equally lik
 
 
 ## Academia
+### "Diversity begets diversity: A global perspective on gender equality in scientific society leadership" Potvin, Burdfield-Steel, Potvin, & Heap. 2018
+*** 
+**Background:**
++ gender disparity at higher levels of academia "hierarchical segretation" despite improvements in post-graduate representation
++ societies support students & researchers through grants, conferences, & journal publications
++ also unite geogrpahically distant researchers within a field, rpovide mentors or role models for early career academics & have potential to close gaps between career stages by bringing people together with a common scientific goal
++ opportuntiies for networking (formal & informal) - particularly important for women who are excluded/isolated from traditional academic networks
++ society leadership is very different from academic: membership & leadership are both self-selected/nominated - election processes include a large number of student/early career members, no tenure of leadership means high turnover
++ gender equality defined as proportionately equal
++ organizations with F leaders tend to be more equitable (10, 11)
++ goals to reveal potential barriers to F involvement & identify characteristics correlated with gender equity
+
+**Methods:**
++ scientific/academic professional societies with open membership that had a focus on living animals - used Google
++ required current website (April/May 2016) in English or easily translatable
++ collected # of members on the main executive board/committee, # F, gender of those as President, VP, Secretary, Treasurer
++ collected founding year, country based, main focus, geographic scope & presence of diversity/gender equality statement
++ "performative gender" as opposed to biological sex
+
+**Results:**
++ 202 sepearate societies: 68 discipline based, 134 taxon-focused; 142 national, 27 continential, 33 international
++ 39 had visible statement/commitment to diversity
++ mean age of 58 yrs, oldest 184 yrs & youngest 4
++ society culture (e.g., equality statement, age, F rep, board size) explained more variation in F board representation (& as president) than history/geographic/dicisplinary scope
++ F board rep higher in societies w. smaller board sizes & more F in leadership positions
+
+**Discussion:**
++ societies with smaller boards have greater female representation on the board as a whole & are more likely to elect F leaders
++ founding year is a predictive factor for gender equality  in leadership
++ internal culture is greater predictor than geographic region/taxonomic focus or historical precident
++ leadership traits more readily associated w. M - F/minority leadership is effective in contradicting such associations
++ unclear whether diversity statements (& thus actions) result in F leaders or F leaders are the ones writing diversity statements
++ health checklists for gender equality can be found for many fields, based on evidence for effective ways to promote & maintain gender equality
++ societies can be identified as one of 4 based on the health checklist:
+    1. Exclusionary - socieities are discriminatory & restrictive
+    2. Club-like - preserve a masculine culture while admitting "token" female leaders w/o full commitments to equality & diversity
+    3. Complying - overtly removes discrimination but does not change their mission, structure, or culture
+    4. Affirming - the committment to eliminate discrimination is coupled with changes in the culture that provide support for minority groups & the implementation of policies ensuring equity & diversity
++ key components of the health checklist:
+    1. Include a visible mission/vision statement or other commitment to equality & diversity that includes a non-discrimination clause regarding elected officials & members
+    2. Collect data on membership & leadership of the society each time an annual general meeting is held & present numbers publicly - maintain accountability
+    3. Have a specific protocol for the reporting of & responding to discrimination & harassment
+    4. Be explict about support for women (& other minority groups). Both formally (e.g., providing grants, reword to gender-neutral) and informally (e.g., rewarding inclusive behavior by award candidates, encouraging women at general meetings to take up leadership positions, have gender-neutral, non-exclusive, family-friendly social activities)
++ well-documented that orgs w. more diverse & equitable representation are both more inclusive & supportive as well as more productive & innovative
+    
 ### “Elite male faculty in the life sciences employ fewer women” Sheltzer & Smith, 2014 
 ***
 **Background:** Gender differences in individual’s personal aspirations may explain some of leaky pipeline e.g. women rank work-life balance & parenthood-related issues as more important than men do. M post-docs >2x as likely to expect their spouse to make career sacrifices for their benefit. F scientists w. children sig less likely to be hired for tenure-track jobs than those w/out (Opposite phenomenon for men). Career outcomes are affected by post-doc labs & mentors.
@@ -745,14 +987,14 @@ Examined papers published between 2005 & 2014 - M & F co-authors are equally lik
   
 # Decision-making
 ## Academic hiring/promotions
-### Assessing scientists for hiring, promotion, and tenure. Moher et al, 2018
+### "Assessing scientists for hiring, promotion, and tenure". Moher et al, 2018
 ***
 Summary of literature and discussions around what is (and isn’t) incentivized in science. Primarily discusses impact, citations, open resource, etc.
 
 “How we evaluate scientists reflects what we value most—and don’t—in the scientific enterprise and powerfully influences scientists’ behaviour.”
 
 ## Social
-### Social influence bias: A randomized experiment. Muchnik, Aral & Taylor. Science 2013
+### "Social influence bias: A randomized experiment". Muchnik, Aral & Taylor. Science 2013
 ***
 “the tone of the first comment posted influences the tone of subsequent comments” (from paper on men asking more questions than F at seminars)
 

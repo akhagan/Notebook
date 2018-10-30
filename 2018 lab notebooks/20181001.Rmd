@@ -2,6 +2,131 @@
 title: "Lab Notebook: October 2018"
 output: html_document
 ---
+#Goals: Oct 29 - Nov 2
+1. Authorship paper:
+    + Work on bugs in webscrape script
+    + Test Nichole's dataset in genderize
+    + Analyze 2018 data
+    + Draft intro
+    + ~~Draft methods~~
+    + ~~Outline results/discussion~~
+
+1. Monthly journals report 
+    + script 2 report figures
+
+1. Estimated JIF 
+    + ~~script JIF calculations~~
+
+1. ASM blog post
+    + Revise ergot post - Thurs
+
+1. DEI certificate
+    + Identify DEI person to interview
+    + ~~"Barriers to Communicating" - Tues @ noon~~
+    
+1. Geographical survey - Mia
+
+1. ~~Journal Club paper~~
+
+1. ASM Staff Meeting - Wed @ 2pm
+
+1. Suggestions for Begum - Thurs
+
+#2018/10/30
+
+**- Estimated JIF**
+
+Wrote script to calculate the estimated JIF of each ASM journal. This required the 2018 citations of all items published in 2016 & 2017 that are indexed in WoS for each journal, as well as a list of the "citeable items" for each journal (document types: Article, Review & Proceedings paper). The calculation & script was pretty simple, the hardest part is getting the data. I can manually download with with two different searches (one for all citations & one for citable items), but WoS only allows downloads of 500 items at a time, so it takes a while to get all of the 1000's of records downloaded.
+
+Saved a `csv` of today's estimate & sent it to Pat. Need to look at the APIs again now that I have an idea of what data I need & the search criteria to find it.
+
+UM has access to Web Services Lite and Article Match Retrieval APIs. Looks like I should be able to:
+1. use Web Services Lite to generate the list of all articles published by specified journals in a specified time frame.
+Neither of the services returns citations by year. 
+2. use a second search to generate a list of "citeable items". 
+The problem is then figuring out how many cites they have... AMR only returns total cites, not a breakdown by year but it also returns a URL of the list of citing articles in Web of Science Core Collection. 
+3. Use a script to identify those articles listed in the URL of citing articles & restrict to those published in the most recent year. That should work?
+
+**- DEI certificate**
+
+Attended "Barriers to Communicating" workshop. - Anti-Racism
+
+Notes:
+Instructor: Patricia Coleman-Burns
+
+Workshop on teaching racisim to primarily white
+
+Think about DEI in terms of ideas, as well as skin color, geography, gender, etc.
+
+Think about "sex" terms vs "gender" terms (male/female vs man/woman)
+
+Think about my color, understand some of where I come from. Don't erase what I am.
+
+My job as a mentor is to tap into what you as a scholar bring to the table.
+
+Sometimes the science needs to change. -- Who do you "norm" the data on? Who are you deciding is too costly to "save"?
+
+How will my discipline be better b/c I do DEI research
+
+It's about community, the "beloved community"
+
+Challenging & changing your disciplines (canons)
+
+Education to govern
+
+What do you need to do this kind of work? What resources to be successful.
+
+"Pyramid of Hate"
+
+Concepts:
+  + Retention & progession
+      + address systemic biases
+      + mentoring
+  + Scholarly Interests
+  + "Activism" or "Not"
+  
+Reflection: 
+
+Prior to this workshop, I had considered that most changes within an organization are made sustainable by the incoming/younger generations. In that context, it seems obvious that the people best suited to initiate change are those who are actively participating and who can create a culture that recruits those who value those changes. What I found most compelling about this workshop was the shift from DEI in academia as a structure, to DEI in and throughout research. How can we design and approach our research question in a way that contributes to DEI in the research OUTCOMES. Not just the research community. I felt like that was really powerful and wish we had been able to spend more time learning tools and/or discussing how to identify those opportunities in non-obvious research projects.
+
+**- Authorship paper**
+
+Supposed to start drafting introduction but I'm considering changing my whole approach, splitting into three manuscripts:
+    1. Who submits, publishes, and are the gatekeepers at ASM journals - breakdown of authors/editors/reviewers looking at all demographics: predicted gender, geographic/institutional location, etc
+    2. Is there gender bias in peer review at ASM journals - models associating gender with editor/review outcomes, duration in peer review, etc
+    3. Is there geographic bias in peer review at ASM journals - models associating geographic location/institution with review outcomes, etc.
+    
+Drafted outline & started methods for paper #1. Drafted rough outline of paper #2.
+
+Continued analyzing genderize breakdown of results by country. Should we generate a modified probability with a higher cut off? (Edwards, 2018)
+
+**- Lit review** XXXX
+
+Edwards, 2018. "Gender differences in authorship are not associated with publication bias in an evolutionary journal"
+
+Potvin, 2018. "Diversity begets diversity: A global perspective on gender equality in scientific society leadership"
+
+#2018/10/29
+**- Lab meeting**
+
+**- Journal club paper** XX
+
+**- Authorship paper** 
+
+Finished drafting methods.
+
+Started analyzing 2018 data, focusing on outcomes from Genderize.io
+
+**- Lit review** XX
+
+Read paper - Sieverding, 2018 - "Mother's work less" 
+
+**- Weekly overview** X
+
+Plan for week: Check in with fall goals & events this week. Layout items for each day
+
+Send weekly report to Pat.
+
 #Goals: October 22 - 26
 1. Authorship paper:
     + Work on bugs in webscrape script
@@ -27,9 +152,69 @@ output: html_document
 
 1. ~~ASM Journal Staff Meeting - Wed @ 1pm~~
 
-1. NCBI Command Line workshop - Thurs @ 1pm
+1. ~~NCBI Command Line workshop - Thurs @ 1pm~~
+
+#2018/10/25
+
+**- NCBI Command Line workshop**
+
+Notes: https://ftp.ncbi.nlm.nih.gov/pub/education/Mod_Workshops/2018/UMich_Oct/Commandline_Access/
+
+Entrez API: eutils.ncbi.nlm.nih.gov/entrex/eutils
+
+Entrez Direct (E-direct): command line version of E-Utilities - requires unix & Perl
+
+epost/elink/esearch return the results of a search query into a history that can then be piped to efetch to retreive
+
+**einfo:** Provides information about the available databases, Database names, Indexed fields, Links to other databases, Produces XML (or text output with –fields, -links provides info about each of the search databases in an XML format
+
+**elink:** Returns related records  in the same (-related) or different (-target) database , Use link name from einfo to get the most precise results (-name linkname), Pipe into efetch, Use with –cmd neighbor to get a table of linked identifiers (elink XML
+
+**esearch:** Uses standard web Entrez queries, Try searches on web interface first, Results stored in web environment, Pipe output to efetch, elink
+
+**eFetch:** Produces full XML records for many databases and summaries 
+(docsums) for all databases, Specialized formats for PubMed, sequence databases, Gene and others, In many cases the docsum contains enough information (efetch -format docsum == esummary), Parsing values from full XML can be more challenging than parsing the summarie - docsum returns XML format 
+
+**xtract:** full-features XML parser that produces a tab deliminted output including selected items & conditional execution (flexible output formats) - use to parse any valid xml structure
+
++ `-pattern ` places the data from individual records into separate rows.
++ `-element` extracts values from specified fields into separate columns.
++ `-group`, `-block`, and `-subset` limit element exploration to selected XML subregions.
++ `-sep` specifies the character separating multiple fields in an ‘-element’ argument
+    + Default is the tab character “\t” 
+    + Example `-sep` “,” 
++ `-tab` specifies the character separating multiple values of an ‘-element’ argument
+    + Default is a newline “\n”
++ Place `-sep` and `-tab` before `-element`
++ `-head` Creates output table header
+    + Example: -sep ‘Organism\tNucAccessions\tAssemblyAccessions’
+    + Place -head immediately after xtract command, before any exploration option
+
+`efetch -db pubmed -id [numerical pmid] -format docsum | xtract -pattern DocumentSummary - element ID,Source,Title` Pull the data for a specific article in pubmed using the PMID, then select just the ID, source & title
+
+```{r, eval=FALSE}
+esearch -db pubmed -query 'antibiotic resistance[MeSH] AND metagenomic' | #search that returns into a search history (gives a count of results)
+efetch - format docsum | #returns xml records
+xtract -pattern DocumentSummary -sep "|" -element Id,Source,Title | #sep changes from the default of tab - pull text from xml structure
+head -5
+```
+`esearch -db pubmed -query 'gender AND authorship'|efetch -format docsum|xtract -pattern DocumentSummary -sep "\n" -element Name|sort-uniq-count-rank|head -15` Count how many times authors appear on papers in the returned results
+
+**- Seminar**
+
+**- Authorship Paper**
+
+Work on writing methods.
+
+Need to analyze 2018 data - start with descriptive stats of gender (e.g., editors known vs unknown vs corrected, breakdown of known vs unknown by country).
+
+**- Lit review**
+
+Read 2 papers.
 
 #2018/10/24
+
+**- Lab meeting**
 
 **- ASM blog post**
 
