@@ -1,0 +1,148 @@
+---
+title: "Lab Notebook: November 2018"
+output: html_document
+---
+#Goals: Nov 12 -16
+1. Authorship paper:
+    + Work on bugs in webscrape script - more rows in output than input
+    + Test Nichole's dataset in genderize
+    + Generate representation paper figures
+    + Draft intro
+
+1. Monthly journals report
+    + Finish tweaking scripts for draft reports
+    + Submit draft to Pat (& Melissa?)
+
+1. ASM blog post
+    + Suggestions for X post
+    + Draft 500 words of careers post
+
+1. DEI certificate
+    + Identify DEI person to interview
+    + "Multiculturalism, Inclusion & Career Development" - Wed @?
+    
+1. Geographical survey - Mia
+
+
+#Goals: Nov 5 - 9
+1. Authorship paper:
+    + Work on bugs in webscrape script - more rows in output than input
+    + Test Nichole's dataset in genderize
+    + Analyze 2018 data
+    + Draft intro
+
+1. Monthly journals report - Finish
+    + ~~all journals report~~
+    + ~~individual journals report~~
+
+1. Estimated JIF 
+    + ?
+
+1. ASM blog post
+    + ~~research/outline careers post~~
+
+1. DEI certificate
+    + Identify DEI person to interview
+    
+1. Geographical survey - Mia
+
+1. ~~Code review presentation~~
+
+#2018/11/08
+
+**- Seminar**
+
+**- Monthly journals report**
+
+Worked on `each_journal_report.rmd`.
+
++ Need to add "title" to the report parse output.
+
+Finished first full drafts of the reports for all ASM journals plus the monthly report for each journal. Generated a list of items to tweak before I submit the draft report to Pat next week.
+
+#2018/11/07
+
+**- Lab meeting**
+
+**- Doctor's appointment**
+
+**- Monthly journals report**
+
+Work on adapting the scripts for the `each_journal_report.Rmd`
+
+**- Newsletter**
+
+Go over hardcopy proofs
+
+#2018/11/06
+
+**- Monthly journals report**
+
+Finished draft of all journals report. - Need to fix preferences on "Article cites based on category" & figure sizes for "Views... over time" & silence chuck codes.
+
+Started drafing reports for individual journals.
+
+**- VOTED!!**
+
+**- ASM blog post**
+
+Finish researching/outlining careers post.
+
+#2018/11/05
+**- Lab meeting**
+
+**- ASM Microbe Presentation**
+
+Reply to Noel's email about the journals presentation for Microbe.
+
+**- Monthly journals report**
+
+Test script to automate `Rmd` generation.
+
+**- Code Review**
+
+Finish presentation & share dataset on Slack.
+
+**- ASM blog post**
+
+Work on researching NIH stance on alternative career development.
+
+#Goals: Oct 29 - Nov 2
+1. Authorship paper:
+    + Work on bugs in webscrape script - more rows in output than input
+    + Test Nichole's dataset in genderize
+    + Analyze 2018 data
+    + Draft intro
+    + ~~Draft methods~~
+    + ~~Outline results/discussion~~
+
+1. Monthly journals report 
+    + ~~script 2 report figures~~
+
+1. Estimated JIF 
+    + ~~script JIF calculations~~
+
+1. ASM blog post
+    + ~~Revise ergot post - Thurs~~
+
+1. DEI certificate
+    + Identify DEI person to interview
+    + ~~"Barriers to Communicating" - Tues @ noon~~
+    
+1. Geographical survey - Mia
+
+1. ~~Journal Club paper~~
+
+1. ~~ASM Staff Meeting - Wed @ 2pm~~
+
+1. ~~Suggestions for Begum - Thurs~~
+
+#2018/11/01
+
+**- Monthly journals report**
+
+Work on further developing the code for the monthly report. Found a description of how to automate `Rmd` files so I think I'll write a script to load in the data & functions, generate the monthly report for all journals and then individual reports for each of the journals. 
+
+**- ASM blog post**
+
+Finish revisions.

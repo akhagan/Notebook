@@ -134,7 +134,7 @@ output: html_document
 1. Hunter LA, Leahey E. Parenting and research productivity: New evidence and methods. Social Studies of Science. 2010; 40(3):433–51. https://doi.org/10.1177/0306312709358472
 1. Fox MF, Faver CA. Men, women, and publication productivity: Patterns among social work academics. The Sociological Quarterly. 1985; 26(4):537–49. https://doi.org/10.1111/j.1533-8525.1985.tb00243.x
 1. Cole JR, Zuckerman H. Marriage, motherhood and research performance in science. Sci Am. 1987; 256(2):119–25. https://doi.org/10.1038/scientificamerican0287-119 PMID: 3810117
-1. Kyvik S, Teigen M. Child care, research collaboration, and gender differences in scientific productivity. Science, Technology, & Human Values. 1996; 21(1):54–71. https://doi.org/10.1179/2046905514Y.0000000146
+https://doi.org/10.1179/2046905514Y.0000000146
 1. King EB. The effect of bias on the advancement of working mothers: Disentangling legitimate concerns from inaccurate stereotypes as predictors of advancement in academe. Human Relations. 2008; 61 (12):1677–711. https://doi.org/10.1177/0018726708098082
 1. Ecklund EH, Lincoln AE. Scientists want more children. PLoS ONE. 2011; 6(8). https://doi.org/10.1371/journal.pone.0022590 PMID: 21850232
 1. Mason MA, Goulden M. Marriage and Baby Blues: Redefining Gender Equity in the Academy. Annals of the American Academy of Political and Social Science. 2004; 596:86–103. https://doi.org/10.1177/0002716204268744
@@ -142,7 +142,6 @@ output: html_document
 1. Miller & Wai. "The bachelor's to PhD STEM pipeline no longer leaks more women than men: A 30-year analysis". Frontiers in psychology (2015)
 1. Morton MJ, Sonnad SS. Women on professional society and journal editorial boards. J Natl Med Assoc. 2007; 99: 764. PMID: 17668642
 1. Mauléon E, Hillán L, Moreno L, Gómez I, Bordons M. Assessing gender balance among journal authors and editorial board members. Scientometrics. 2013; 95: 87–114
-1. Cho AH, Johnson SA, Schuman CE, Adler JM, Gonzalez O, Graves SJ, et al. Women are underrepresented on the editorial boards of journals in environmental biology and natural resource management. Peer J. 2014; 2: e542. https://doi.org/10.7717/peerj.542 PMID: 25177537
 1. Barret SCH. Proceedings B 2017: the year in review. Proc R Soc Lond B Biol Sci. 2017. https://doi.org/10.1098/rspb.2017.2553 PMID: 29298940
 1. Topaz CM, Sen S. Gender Representation on Journal Editorial Boards in the Mathematical Sciences. PLoS ONE. 2006; 11: e0161357.
 1. Mason MA, Goulden M. Do Babies Matter (Part II)? Closing the Baby Gap. Academe, November-December, Berkeley. 2004.
@@ -414,7 +413,7 @@ Examined author contributions in PloS Journals from 2008 - 2013 (b/c plos requir
 ***
 Uses applications to a New England based funding source to examine startup packages by gender, research type (clinical vs basic), university type & degree. W recived significantly less start up support - can't be explained by any factor other than gender. 
 
-### Women’s visibility in academic seminars: women ask fewer questions than men. Carter, Croft, Lukas & Sandstrom, 2018
+### "Women’s visibility in academic seminars: women ask fewer questions than men". Carter, Croft, Lukas & Sandstrom, 2018
 ***
 “Social role theory suggests that women should benefit from being exposed to successful ingroup role models at all points along the leaky pipeline. Before attending academic conferences and seeing women present their work, and before gaining a familiarity with the authors of papers in a particular research area, undergraduate and postgraduate students are exposed to the role-modelled behaviours of the women and men who work in their department. Given social role theory explanations for how gendered expectations of certain roles develop based on who is seen occupying those roles, we argue that the behaviour of the local community may play a formative role in identifying ingroup role models at an early career stage. Few studies have investigated such local phenomena, but these reveal a potential bias against women.”
 

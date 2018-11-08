@@ -18,7 +18,7 @@ output: html_document
     + ~~script JIF calculations~~
 
 1. ASM blog post
-    + Revise ergot post - Thurs
+    + ~~Revise ergot post - Thurs~~
 
 1. DEI certificate
     + Identify DEI person to interview
@@ -28,9 +28,32 @@ output: html_document
 
 1. ~~Journal Club paper~~
 
-1. ASM Staff Meeting - Wed @ 2pm
+1. ~~ASM Staff Meeting - Wed @ 2pm~~
 
-1. Suggestions for Begum - Thurs
+1. ~~Suggestions for Begum - Thurs~~
+
+#2018/10/31
+
+**- ASM blog post**
+
+Begin revising ergot post.
+
+**- Suggestions for Begum**
+
+**- ASM Staff Meeting**
+
+**- Estimated JIF**
+
+Validated the JIF calculations by comparing a 2017 estimate against the official numbers with little deviation. Revised the 2018 estimates b/c I forgot AAC.
+
+**- Monthly report**
+
+Double checking completed scripts & formatting into the Rmarkdown report. 
+
+Notes:
++ need to go back to `get_day_stats` to figure out how to use lubridate to filter submissions except for the previous 12 months
++ finish commenting `get_day_stats` - what version/how are we calculating days from sub to pub?
++ consider creating separate `.rmd` for each journal?
 
 #2018/10/30
 
