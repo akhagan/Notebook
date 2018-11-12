@@ -10,19 +10,34 @@ output: html_document
     + Draft intro
 
 1. Monthly journals report
-    + Finish tweaking scripts for draft reports
-    + Submit draft to Pat (& Melissa?)
+    + ~~Finish tweaking scripts for draft reports~~
+    + ~~Submit draft to Pat (& Melissa?)~~
 
 1. ASM blog post
-    + Suggestions for X post
+    + ~~Suggestions for Ashley's post~~
     + Draft 500 words of careers post
 
 1. DEI certificate
     + Identify DEI person to interview
-    + "Multiculturalism, Inclusion & Career Development" - Wed @?
+    + "Multiculturalism, Inclusion & Career Development" - Wed @3:30
     
 1. Geographical survey - Mia
 
+#2018/11/12
+
+**- ASM blog post**
+
+Suggestions for Ashley's post.
+
+Started drafting the careers post (~300 words).
+
+**- Monthly journals report**
+
+Finished drafts of the monthly & individual reports plus started compiling the pipeline. Sent sample drafts to Melissa & Pat.
+
+**- Lit review**
+
+Cho et al, 2014 "Women are underrepresented on the editorial boards of journals in environmental biology and natural resource management"
 
 #Goals: Nov 5 - 9
 1. Authorship paper:
