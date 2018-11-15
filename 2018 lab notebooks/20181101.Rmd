@@ -4,9 +4,9 @@ output: html_document
 ---
 #Goals: Nov 12 -16
 1. Authorship paper:
-    + Work on bugs in webscrape script - more rows in output than input
-    + Test Nichole's dataset in genderize
-    + Generate representation paper figures
+    + ~~Work on bugs in webscrape script - more rows in output than input~~
+    + ~~Test Nichole's dataset in genderize~~
+    + ~~Generate representation paper figures~~
     + Draft intro
 
 1. Monthly journals report
@@ -15,13 +15,70 @@ output: html_document
 
 1. ASM blog post
     + ~~Suggestions for Ashley's post~~
-    + Draft 500 words of careers post
+    + ~~Draft 500 words of careers post~~
 
 1. DEI certificate
     + Identify DEI person to interview
-    + "Multiculturalism, Inclusion & Career Development" - Wed @3:30
+    + ~~"Multiculturalism, Inclusion & Career Development" - Wed @3:30~~
     
 1. Geographical survey - Mia
+
+#2018/11/15
+
+**- ASM blog post**
+
+Suggestions for Rita's post.
+
+**- Authorship paper**
+
+Worked on generating figures for the representation paper. Have to decide if I should show gender proportions in both submissions & publications or just one?
+
+Generated a list of >2,000 names with gender attached from Nichole's dataset & ran them through genderize for a comparison. Need to figure out how best to demonstrate the differences. Calculated the Pmod (Edwards, 2018)
+
+**- DEI certificate**
+
+Submitted reflection for yesterdays workshop.
+
+#2018/11/14
+
+**- "Multiculturalism, Inclusion & Career Development"**
+
+**- Authorship paper**
+
+Worked on webscraping script & resubmitted the job to flux. (x3)
+
+List of figures for gender representation: 
+  + gender of all editors over time
+   
+  + ~~breakdown into editor type: e.g., EiC, senior, associate?~~
+   
+  + gender of all reviewers over time
+   
+  + gender of all senior/corresponding authors over time
+   
+  + gender of all first authors over time
+   
+  + gender of all authors
+   
+  + proportion of gender at each stage: e.g., author, reviewer, editor by type
+   
+  + invited manuscripts by gender
+   
+  + male/female dominated categories? journals?
+
+#2018/11/13
+
+**- Authorship paper**
+
+Tried something to fix the input/output issue with the webscraping script & resubmitted to flux.
+
+Wrote script to match names & genders from Nichole's dataset given the output. Just need to increase the number of names I get from the webscrapting script. 
+
+Worked on troubleshooting the various URLs that are erroring out & found one issue: I have a `case_when` statement that is giving me problems. Given the URL value below, the `case_when` _should_ return a value of "plos". Unfortunately, it is instead evaluating the first expression (`read_html(URL)...`) despite returning a "FALSE" value for `str_detect(URL, "pubmed")`. It doesn't seem to matter whether I place that line before or after `str_detect(URL, "plos")`. Figured out a way around it. 
+
+**- ASM blog post**
+
+Finished the first draft of the careers post & sent it to Josie for feedback. I wasn't quite able to fit in the NIH stance on effort, but I might after I see what she thinks.
 
 #2018/11/12
 
