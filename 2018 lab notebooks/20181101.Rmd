@@ -2,6 +2,252 @@
 title: "Lab Notebook: November 2018"
 output: html_document
 ---
+#Goals: Nov 26 - 30
+1. Authorship paper:
+    + ~~Draft intro~~
+    + ~~Generate figures~~
+
+1. Monthly journals report
+    + ~~Revise based on feedback from Pat & Melissa~~
+
+1. ~~Prep chalk talk~~ - Wed @ 3:30pm
+
+1. ~~Careers in SciComm Postdoc Presentation - Wed @ noon~~
+
+1. ~~Nov SWC Meeting - Tues @ 9am~~
+
+1. ASM blog post
+    + ~~Suggestions for Jesus~~
+
+1. DEI certificate
+    + ~~Schedule interview w. Amy Chang~~ - Fri @ 11:30
+    + Write DEI interview report
+    + Submit DEI interview report
+    
+1. ~~Geographical survey - figures from Mia~~
+
+1. ~~Meeting w. Pat - Fri @ 1pm?~~
+
+#2018/11/30
+
+**- Meeting w. Pat**
+
+Notes:
+  + Overall, Pat wants to try to look to the data for how to make recommendations for better representation moving forward. 
+      + Authors have the power to influence gender equity in review by suggesting more female/minority reviewers - Need to look at who is being suggested vs not
+      + Does better representation among gatekeepers influence recruitment of reviewers/papers - Look at JVI (F EIC) vs AEM or other journal, each journal is an experiement
+      + Nothing about final decisions in this paper, just recommendations for increasing candidate representation
+
+  + Potentially add Hazel Barton as an author. Pat wants to generate a 3 paper package to present to Hazel & the Committee on Women in Science for their input on interpretation/suggestions. For that I would need:
+      + Outline for each of the three papers
+      + Slides for the each of the three results sections
+      
+  + Thoughts about data presentation:
+      + Consider looking at the percentage of each author gender, but inflate it by the number of manuscripts. e.g., 10 papers by Pat = 10 men
+      + Look at the number of papers w/ 1, 2, 3, ... F authors vs M (bin papers by the # of F/M authors)
+      + Generate an ROC curve of Nichole's dataset comparing P-raw vs P-mod & the various cutoffs for increased sensitivity/specificity
+
+    + Monthly Report:
+      + citation data should include the articles published in the 2-3 years prior (to mimic JIF)
+      + Rankings for editors? Who reviews the fastest, the most, etc.
+      
+**- DEI Certificate**
+
+Informational interview w. Amy Chang. Notes:
++ 30 yrs w. ASM - first projects minority fellowship program - Watkins
++ undergrad minority program - iniitally funded by NIH then ASM
++ presidental award for URM - ASM ended up getting institutional award
++ apply to NIH to run symposium - sole candidate in 2001 to recieve fundin for ABRACAM - largest minority STEM conference for undergrads - 17 yrs
++ experience + visibilty nationally made her natural fit when ASM 
++ AAAS elected fellow b/c of work in URM & development
++ currently working on the action plan - have 25yrs, 450 former fellows, 120 travel grants for min fellows, newsletter, awards, networking opportunities. BUT diversity in scientific committe & boards doesn't reflect whats in the academy or general population.
++ Leadership & awards aren't reflecting the work 
++ Need to work at a different level/places - look at system & structure
++ Recommended (report to board) - 
+    + collect data (what's the baseline?)
+    + examine policies on how we engage people in subcommittes/committees - recruiting/identifying/nominating - is diversity/inclusion even considered
+    + where are the transitional places that we lose URM - what's wrong & shore it up with programming & mentoring - beyond early career, seems to be a big gap in midcareer
+    + better job in branding as leaders who believe in inclusion to achieve scientific diversity
+    + prof development/resources/training
++ Resistance/challenges 
+    + it always makes someone uncomfortable - people don't realize that there's a whole area of implict biases - give info & keep moving forward
+    + been a goal for a long time, but it doesn't need a committee, the work needs to be distributed to everyone - it's everyone's job
+    + people in the field need to identify people from diverse backgrounds & champion them 
++ training
+  + no courses - lots of reading
+    + Shirly Malcom - AAAS - mentor for 20 yrs, 1st project was to work with black churches to raise sci education in the community - the most learning happened here - also Hispanic community
+    + learned a lot together - those in the DEI/URM community
+    + volunteering to be an advisor in a lot of groups & then learning from them
+    +SCA Change - Sciety Collation to think about project that does institutional recognition for inclusion - brings in policy/practice & legal
+    + Athena Swan program for equity from Europe
+
+#2018/11/29
+
+**- Monthly Journals Report**
+
+To Do:
++ make the editor tables sortable by each column - can you do this in html?
++ add title to 10 most-frequently tables, hyperlink with the doi - need to recompile the data to get title
++ submissions comparison table
++ transfers - need actual transfer data
++ problem manuscript report - need incomplete data
+
+Suggestions completed:
++ ~~move the "Acceptance and rejection rates by article type” table ahead of the editor tables~~
++ ~~add footnotes describing the NA categories~~ - AAC (579); AEM (240); JB (2355); JCM (24); JVI (480); mBio (6114); MCB (5748); mSphere & mSystems (3 each) - seems that most journals have items that aren't given a category. mBio & MCB don't use the category field at all.
++ ~~Make 10 most-frequently tables journal-specific~~
++ ~~pool article usage stats by month~~
++ ~~figure out how usages stats that are grouped by month, can be arranged in the correct order~~
++ ~~restrict submission trends to last 5 years - use contrasting colors (make discrete)~~
+
+Feedback from Pat:
+
+I might be good to do this in iterations, but this is a great start and has me thinking “dashboard” :) ...
+
+In general, if there’s an overall report that should be for all journals and should break things up by journals. So you might have submission trends by year as well as individual journals for the most recent year. I’m not sure how important the individual categories are when pooled across journals. if there’s a report for an individual journal then that report should really only have information fro that journal.
+
+Also, where are you pulling the data from? If the report is dated November 12, 2018, were these the data pulled on that date? I’m worried that the numbers aren’t current to the day of the report given the fall off in 2018 submissions and no data from August to November 2018.
+
+For the submission trends the colors for the lines cannot be distinguished. Could you present the last 5 years and use contrasting colors for those?
+
+On the line plots why are they so spikey - what are the vertical lines? Are these numbers pooled by month or are they daily numbers? It would be best to have these by month.
+
+For the 10 most-frequently tables, the title would be nice. Perhaps the DOI column could be the title with a hyper link to the DOI? Again, I don’t know that someone reading the AEM report would care what the top papers were from other journals - Harold or one of his editors want to know how their papers are doing.
+
+In the category plots, what are the NA categories? Since they are so abundant, I think a footnote indicating what they are is important.
+
+Can you make the editor tables sortable by each column? 
+
+Maybe move the "Acceptance and rejection rates by article type” table ahead of the editor tables. This way the focus goes from broad to narrow as you read down the list
+
+**- Review project proposal for Josie**
+
+**- Authorship Paper**
+
+Re-run genderize & merging scripts on flux.
+
+Type up draft of paper outline to email to Pat ahead of our meeting tomorrow. https://docs.google.com/document/d/1t0gVKzIAvgX8fM3incmC7IgoXlX9uWTNzEs1DRbQ2LU/edit?usp=sharing
+
+#2018/11/28
+
+**- Lab meeting**
+
+Present chalk talk that is outline of first representation paper.
+
+Representation Trilogy:
+1. Who are ASM Journals? - descriptive
+2. Is there gender bias at ASM journals?
+3. Is there geographic bias at ASM journals?
+
+**- Met w. Mia**
+
+**- Authorship paper**
+
+Worked on generating figures. The histograms looking at the number of manuscripts are heavily left skewed. Need to figure out how to visualize them to better see differences in distributions. Perhaps binning?
+
+**- M&I Postdoc Meeting Presentation**
+
+**- Authorship paper**
+
+Revise outline for chalk talk.
+
+Went back to increase specificity for gender assignment using the Modified P value & found that the `fix_html` function in clean_people.R is replacing values with the name "Kwok-Chiu". Turns out I needed to use `map` within the mutate. Fixed that plus decided to run the function over the additional columns: address, last.name, institution. Adding `map` made it more computationally intensive so I'll need to run the `clean_people` script on flux then re-run `genderize_names`.
+
+**- Careers in SciComm Presentation**
+
+Skim back over presentation
+
+#2018/11/27
+
+**- Authorship paper**
+
+Wrote first draft of the intro.
+
+**- Prep chalk talk**
+
+Finished outlining results & discussion.
+
+**- SWC meeting**
+
+#2018/11/26
+
+**- Lab meeting**
+
+**- ASM blog post**
+
+Gave suggested edits for Jesus' blog post.
+
+**- Prep chalk talk**
+
+Wrote central message & question/findings ABTs. Outlined intro & started results. 
+
+#Goals: Nov 19 - 21
+1. Authorship paper:
+    + ~~Genderize validation/comparisions~~
+    + Draft intro
+    + Prep chalk talk outline
+    + Generate figures
+
+1. Monthly journals report
+    + Revise based on feedback from Pat & Melissa
+
+1. ~~Read for lab meeting~~
+
+1. M&I Postdoc Presentation
+    + ~~Careers in SciComm~~
+
+1. ASM blog post
+    + Revise careers post (after Thanksgiving)
+
+1. DEI certificate
+    + ~~Identify DEI person to interview~~
+    
+1. ~~Geographical survey - Mia~~
+
+#2018/11/21
+
+**- M&I Postdoc Presentation**
+
+Finished careers presentation.
+
+#2018/11/20
+
+**- M&I Postdoc Presentation**
+
+Worked on careers in scicomm presentation
+
+**- Authorship paper**
+
+Commented out some code to send to Mia as an example of plotting attributes "over time".
+
+Worked on generating figures for the analysis of genderize outcomes.
+
+#2018/11/19
+
+**- Lab meeting**
+
+**- Authorship paper**
+
+Worked on comparison of genderize to Nichole's dataset. Of the 2153 names I ran through genderize, it correctly predicted gender 72% of the time (19% weren't predicted). Many of the incorrect predictions had high probabilities (52 names had a 100% probability). Limiting the probabilities to those >= 0.65, we drop 30% of the incorrect predictions as well as 4% of the correct predictions.
+
+I found some papers that calculate a modified probability based on the count & probability and set a higher cut off of 0.85. If I group the outcome by that metric, we drop 80% of the incorrect predictions along with 27% of the correct predictions. 
+
+**- Meet w. Mia**
+
+Have to think about how to group countries. Possibly based on the number of researchers or research output? Need to annonate some of my "overtime" code to send to her.
+
+**- M&I DEI Meeting**
+
+**- DEI certificate**
+
+Figured out that Amy Chang is heading up ASM DEI efforts. Sent her an email requesting an informational interview while I'm at ASM HQ next month.
+
+**- M&I Postdoc Presentation**
+
+Work on putting together slides about careers in scicomm
+
+**- Read paper for lab meeting**
+
 #Goals: Nov 12 -16
 1. Authorship paper:
     + ~~Work on bugs in webscrape script - more rows in output than input~~

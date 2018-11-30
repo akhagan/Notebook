@@ -1,0 +1,36 @@
+---
+title: "Lab Notebook: December 2018"
+output: html_document
+---
+#Goals: Nov 26 - 30
+1. Authorship paper:
+    + Finish re-running genderize
+    + Figures for genderize comparison
+    + Draft genderize comparison results section
+    + List of figures for Mia
+
+1. AEM requests
+    + Citations by country
+    + Citations by editor
+
+1. Monthly journals report
+    + Submissions comparison
+    + Shiny
+    + Meet w. Melissa - Thurs @ 10am
+
+1. Microbe Publishing Talk
+    + Draft outline/concepts
+    + Meet w. group - Thurs @ 2pm
+
+1. EiC Meeting - Friday
+
+1. ASM blog post
+    + Suggestions for ?
+
+1. DEI certificate
+    + Write & submit DEI interview report
+    + “Commitment to diversity” Workshop - Tues @ noon
+    + Workshop reflection
+    + Draft DEI Statement
+    
+1. Geographical survey - Mia

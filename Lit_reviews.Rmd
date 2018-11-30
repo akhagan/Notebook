@@ -947,16 +947,6 @@ Examined papers published between 2005 & 2014 - M & F co-authors are equally lik
 
 **Discussion:** Data do not show conscious bias. Could also be self-selection “women win competitive fellowships for graduate and postdoctoral training at frequencies that are proportional to their representation among all trainees.” “According to the theory of cumulative disadvantage, persistent inequalities in achieve- ment can result from small differences in treatment over a pro- longed goal-oriented process (14). In controlled studies, women in academia receive less favorable evaluations, receive lower salary offers, and are ignored by faculty more frequently than men (15, 20).”
 
-### “Science Faculty’s subtle gender biases favor male students” Moss-Racusin et al., 2012 
-***
-**Background:** There’s a problem getting women from graduate degree to professorship. Many argue its b/c of life choices, there isn’t bias in the sciences. No one has tested it. Bias occurs from repeated exposure to sterotypes, predicted that M/F faculty would both exhibit gender bias. “People who value their objectivity & fairness are particularly likely to fall prey to biases”
-
-**Methods:** tested for differences in treatment of lab manager candidate based on gendered name in Re: to: 1) percieved competence, 2) salary offers (which reflect value), 3) willingness to mentor. Nationwide sample of bio/chem/physics professors (n=127) randomly assigned application w. either M or F name. Participants rated compentence, hirability, salary and amount of mentoring they would offer. Participants believed that their feedback would be shared with the student rated.
-
-**Results:** Student gender was significant, faculty gender was not. Faculty viewed F students as less competent, less hireable, offered less mentoring & less starting salary. F & M faculty rated similarly in all areas. F applicant was considered more “likeable”
-
-**Discussion:** Study filled gap in examining bias in faculty vs undergrads. While differences in ratings are relatively small, the effect sizes were moderate to large. Moderation studies suggest that implicit biases negatively affect F (but not M) student. Bias was exhibity by both M & F faculty regardless of discipline, age, or tenure status. Selecting faculty who interact with students on a regular basis allows for “ecological validity & generalizability”. If the decision to move forward in science is affected by such early career bias, then fixing issues later in the career path won’t fully correct gender parity. “Our results point to the importance of establishing objective, transparent student evaluation and admissions criteria to uard against observers tendentcy to unintentionally use different standards when assessing women relative to men”
-
 ###"Gender in the Global Research Landscape" - report by Elsvier
 ***
 **Key findings:**
@@ -985,7 +975,18 @@ Examined papers published between 2005 & 2014 - M & F co-authors are equally lik
 + Scopus, journals are classified into 27 non-mutually exclusive subject areas, use these journal subject areas as a proxy for fields of research
   
 # Decision-making
-## Academic hiring/promotions
+## Academic hiring/
+
+### “Science Faculty’s subtle gender biases favor male students” Moss-Racusin et al., 2012 
+***
+**Background:** There’s a problem getting women from graduate degree to professorship. Many argue its b/c of life choices, there isn’t bias in the sciences. No one has tested it. Bias occurs from repeated exposure to sterotypes, predicted that M/F faculty would both exhibit gender bias. “People who value their objectivity & fairness are particularly likely to fall prey to biases”
+
+**Methods:** tested for differences in treatment of lab manager candidate based on gendered name in Re: to: 1) percieved competence, 2) salary offers (which reflect value), 3) willingness to mentor. Nationwide sample of bio/chem/physics professors (n=127) randomly assigned application w. either M or F name. Participants rated compentence, hirability, salary and amount of mentoring they would offer. Participants believed that their feedback would be shared with the student rated.
+
+**Results:** Student gender was significant, faculty gender was not. Faculty viewed F students as less competent, less hireable, offered less mentoring & less starting salary. F & M faculty rated similarly in all areas. F applicant was considered more “likeable”
+
+**Discussion:** Study filled gap in examining bias in faculty vs undergrads. While differences in ratings are relatively small, the effect sizes were moderate to large. Moderation studies suggest that implicit biases negatively affect F (but not M) student. Bias was exhibity by both M & F faculty regardless of discipline, age, or tenure status. Selecting faculty who interact with students on a regular basis allows for “ecological validity & generalizability”. If the decision to move forward in science is affected by such early career bias, then fixing issues later in the career path won’t fully correct gender parity. “Our results point to the importance of establishing objective, transparent student evaluation and admissions criteria to uard against observers tendentcy to unintentionally use different standards when assessing women relative to men”
+
 ### "Assessing scientists for hiring, promotion, and tenure". Moher et al, 2018
 ***
 Summary of literature and discussions around what is (and isn’t) incentivized in science. Primarily discusses impact, citations, open resource, etc.
