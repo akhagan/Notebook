@@ -2,35 +2,417 @@
 title: "Lab Notebook: December 2018"
 output: html_document
 ---
-#Goals: Nov 26 - 30
+#Goals: Dec 17 - 21
 1. Authorship paper:
-    + Finish re-running genderize
+    + ~~Continue outline for gender bias paper~~
     + Figures for genderize comparison
     + Draft genderize comparison results section
-    + List of figures for Mia
 
-1. AEM requests
-    + Citations by country
-    + Citations by editor
+1. Estimated JIF
+    + Start working on WoS APIs
 
 1. Monthly journals report
     + Submissions comparison
-    + Shiny
-    + Meet w. Melissa - Thurs @ 10am
+    + Make revisions based on Melissa's suggestions
+    + Shiny - Dashboards book
 
 1. Microbe Publishing Talk
-    + Draft outline/concepts
-    + Meet w. group - Thurs @ 2pm
+    + ~~Detailed outline due in late January~~
+    
+1. DEI certificate
+    + Revise DEI statement
+    + Submit
+    
+1. ~~Geographical survey - Work on paper outline~~
 
-1. EiC Meeting - Friday
+1. Faculty meeting presentation
+    + double check data
+    + generate figures
+    + outline talk
+    + discuss w. Josie
+    
+1. ~~SWC Helper - M & T~~
+
+#2018/12/18
+
+**- SWC Helper**
+
+**- Geographic bias**
+
+Reviewed and made suggestions/comments on Mia's outline.
+
+**- Faculty Meeting presentation**
+
+Emailed Kathy for additional invited speaker data. She doesn't have anything else, & suggested talking to Ann
+
+**- Authorship paper**
+
+Continue sifting through email alerts on papers. 
+
+#2018/12/17
+
+**- Faculty meeting presentation**
+
+Emailed Bonnie & Nichole for spreadsheets of historical invited speaker data.
+
+**- Authorship paper**
+
+Continue working on gender bias outline. Start sifting through email alerts on papers.
+
+**- Microbe Publishing Talk**
+
+Work on outline
+
+**- SWC Helper**
+
+**- Weekly report**
+
+#Goals: Dec 10 - 14
+1. Authorship paper:
+    + ~~Outline for gender bias paper~~
+    + ~~Re-run editor assignment & identify editor genders to correct~~
+    + Figures for genderize comparison
+    + Draft genderize comparison results section
+
+1. AEM requests
+    + ~~Email Harold back~~
+
+1. Estimated JIF
+    + Start working on WoS APIs
+
+1. Monthly journals report
+    + Submissions comparison
+    + Make revisions based on Melissa's suggestion
+    + Shiny - Dashboards book
+    + ~~Email Joel~~
+    + ~~Email Highwire~~
+
+1. Microbe Publishing Talk
+    + Detailed outline due in late January
+    + ~~Email Adar about quarterly meeting~~
 
 1. ASM blog post
-    + Suggestions for ?
+    + ~~Suggestions for Erica~~
 
 1. DEI certificate
-    + Write & submit DEI interview report
-    + “Commitment to diversity” Workshop - Tues @ noon
-    + Workshop reflection
-    + Draft DEI Statement
+    + ~~Finish drafting DEI statement~~
+    + ~~send to Begum for feedback~~
+    + Revise
+    + Submit
     
-1. Geographical survey - Mia
+1. ~~Geographical survey - Work on paper outline~~
+
+1. Faculty meeting presentation
+    + double check data
+    + generate figures
+    + outline talk
+    + discuss w. Josie
+
+#2018/12/13
+
+**- Theresa's thesis defense**
+
+**- Coffee w. Hannah**
+
+Spoke with Hannah about science writing/communication and how to get started. Suggested books & what not to read.
+
+**- Authorship paper**
+
+Worked on the genderize comparison with Nichole's data. I decided to also try it with the country data to see if that also improves the outcome. Generated two data sets one w/ country & one without.
+
+Worked on generating an ROC curve to compare genderize predictive ability using various probability and pmod thresholds. Unfortunately, while the accuracy is high (>.9), the AUC is very low (~0.5), which leads to a bad ROC. 
+
+Begüm suggested using a precision-recall curve instead b/c the difference in groupings (1300 vs 1000) might be too large for a good ROC visualization.
+
+Begüm now believes that curves aren't going to be good visualizations, that I would be better off sticking to tables (e.g., a confusion matrix).
+
+**- Emails**
+
+Replied to Hannah Doty about the middle school podcast (also tweeted looking for an expert in bacteriophage cancer therapy).
+
+Replied to Ryan.
+
+#2018/12/12
+
+**- Met with Mia**
+
+She is planning to work Fridays next term, with a possible meeting on Thursday afternoon depending on how my schedule works out. Today and Monday are her last days, so she is continuing to work on the outline. I've requested a meeting with Pat in early January to discuss the bias paper outlines and to discuss summer research opportunities for Mia since she's planning to apply to the ASM undergraduate research fellowship. I promised to send her mine & Michelle's previous applications. Maybe also Travis? I emailed him to ask.
+
+**- Scicomm panel w. Julie**
+
+**- Authorship paper**
+
+Finish re-assigning genders to those names who lost their associated gender when I increased the stringency & added their person.ids to the script.
+
+**- Byron's Thesis Defense**
+
+**- ASM blog post**
+
+Suggestions for Erica's blog post on Microbe Ninja Warriors!
+
+#2018/12/11
+
+**- ASM Prof Development Grant**
+
+I was going to apply for this for AAAS conference in Feb, but I don't think the timing will work out so I'm considering using it to apply for funding for the 2019 SACNAS conference in Hawaii!! (https://www.sacnas.org/conference/) Begum & Josie suggested increasing the size of my department invited speaker dataset to include those from other departments at UM.
+
+Immunology - http://immunology.medicine.umich.edu/immunology-program-seminar-series
+Ecology & Evolutionary Biology - https://lsa.umich.edu/eeb/news-events/all-events.html#date=2018-12-11&view=month
+All graduate programs - https://medicine.umich.edu/medschool/education/phd-programs/about-pibs/graduate-programs/molecular-cellular-developmental-biology
+
+**- Authorship paper**
+
+Work on Central Message, Question & Findings ABT for gender bias paper. 
+
+Start figuring out some of the results/questions I want to identify - because we're interested in gender disparities & want to avoid geographic confounding factors, does it make sense to limit this analysis to papers published by US and/or European authors?
+
+Started verifying genders of the editors now that we've changed the genderize success threshold.
+
+**- DEI certificate**
+
+Finished drafting DEI statement & sent to Begum for feedback.
+
+#2018/12/10
+
+**- Lab meeting**
+
+**- Read paper for journal club**
+
+**- Monthly reports**
+
+Spoke to Eric from Highwire over the phone. Unfortunately, there aren't any APIs for the Vizor dashboards. He showed me a slightly easier way to get to the full datasets (click & hover over usage/cites to select option to download data - full datasets tab).
+
+Usage stats should come from UV:HAT/HOT, cites from IV:HOT
+
+The data are updated on a monthly basis (last update was Nov 20th).
+
+**- Authorship paper**
+
+Talked to Begum about generating an ROC curve for the genderize comparison. She sent me a link for calculations: https://rpubs.com/josezuniga/255749
+
+I have to convert the predicted genders into binary (1/0) then calculate the number of true positives (1/1), false negatives (1/0),
+false positives (0/1), and true negatives (0/0). I'll do this for different Praw or Pmod cutoffs from the genderized set of Nichole's data.
+
+I might go back and collect more names though, since many aren't attempted.
+
+**- Winter Strategic Plan**
+
+Work on developing goals & plan for the next couple of weeks & the winter quarter.
+
+**- Emails**
+
+Send emails to Joel (eJP) & Eric (highwire) to continue improving the monthly reports process.
+
+Send email to Harold clarifying formula used for his graphics. 
+
+Email Adar & Melissa to ask about coming to DC for the February Quarterly Journals Staff Meeting.
+
+**- Weekly report**
+
+Also asked Pat if he would be willing to send me to the AAAS General Meeting in DC in February. -- Begum suggested applying for the ASM Career Development Grant: https://www.asm.org/index.php/women-in-microbiology/121-whats-new/membership/1120-womens-career-development-grants
+
+#Goals: Dec 3 - 7
+1. Authorship paper:
+    + ~~Recompile data - dfs for suggested reviewers + people~~
+    + ~~Re-run genderize & merge~~ 
+    + Re-run editor assignment & identify editor genders to correct
+    + Figures for genderize comparison
+    + Draft genderize comparison results section
+
+1. AEM requests
+    + ~~Citations by country~~
+    + ~~Citations by editor~~
+
+1. Monthly journals report
+    + Submissions comparison
+    + Shiny - Dashboards book
+    + ~~Meet w. Melissa - Thurs @ 10am~~
+
+1. Microbe Publishing Talk
+    + ~~Draft outline/concepts~~
+    + ~~Meet w. group - Thurs @ 2pm~~
+
+1. ASM blog post
+    + ~~Suggestions for Janet~~
+
+1. DEI certificate
+    + ~~Write & submit DEI interview report~~
+    + ~~“Commitment to diversity” Workshop - Tues @ noon~~
+    + ~~Workshop reflection~~
+    + ~~Draft DEI statement outline~~
+    
+1. ~~EiC Meeting - Friday~~
+
+1. Geographical survey - Work on paper outline
+
+#2018/12/07
+
+**- EiC Meeting**
+
+Need to look at editorial rejects of transfers with the new data set from Joel. 
+
+**- AEM requests**
+
+Finished generating the graphics for Harold & emailed them.
+
+#2018/12/06
+
+**- AEM requests**
+
+Started working on the AEM requests. I ended up using article cites per month, and then divided by the total number of articles published per country/editor. This should control for both the length and volume of publication.
+
+**- Meeting about Microbe Presentation**
+
+Amy is going to act as the MC to do introductions and make transitions between speakers. 
+10 minutes each to present. 
+Need to have a detailed outline by the end of January.
+
+My talk is going to discuss things to avoid & things to look for when submitting. 
+    + Start by talking about IFs & discuss how volatile they are
+    + Coalition to not advertise IFs
+    + Discuss different metrics - available for all ASM articles
+    + Pre-submission inquires/scope
+    + How to identify predatory journals
+    + OA - preprints
+    + Social media/press releases - getting author's science out to the community.
+
+**- Meeting w. Melissa**
+
+Gave an update on the projects I've been working on. Discussed the revamped monthly report:
+    + Need to get citations for papers published between 12 & 36 months prior.
+    + Use approved date for determining total submissions. Don't include withdrawn articles.
+    + Ask Joel to send incomplete files - cc Melissa
+    + Melissa gave me a contact to email about the potential for Highwire API access.
+
+**- Monthly journals report**
+
+Started reading the dashboard book.
+
+**- Authorship Paper**
+
+Pulled data files from flux - genderize/gender_assigned/people. I didn't bring the list of hand-coded editors, so I'll have to put this off to next week.
+
+**- Travel to DC**
+
+#2018/12/05
+
+**- DEI certificate**
+
+Worked on further drafting my diversity statement. 
+
+**- Authorship Paper**
+
+Checked on flux scripts. Fixed an issue preventing a csv file from saving & resubmitted.
+
+Started drafting the workflow in the ASM_XML_parsing repository readme.
+
+#2018/12/04
+
+**- DEI certificate**
+
+Submitted reflection form for today's workshop.
+
+Started doing research on diversity statements and making further notes for my own.
+
+**"Commitment to diversity" Workshop**
+Leaders: Deborah Willis, Rebeca Villegas, Anna Brunner, Jessica Espenshade
+
+Notes: 
+Non-academic employers increasingly seeking DEI-minded employees - multiculturalism is valued - interpersonal skills
+
++ Look at the organization's DEI statement - use that language in your own package
++ be self-aware of your privileges & biases
++ committed to learning more
++ How have you broght together people of diverging perspectives
++ have examples in your cover letter & resumes
++ Do I share personal identities? No obligation - if you are, relate them to how your contributions/commitments & how it pertains to the position
++ what to avoid:
+    + relying too much on an identity
+    + assuming its just racial diversity
+    + diversity by osmosis e.g., my partner is xyz
+    + rejecting the premise of DEIJ as important outright
+    + Using language you don't know
+    + not being self-aware
+    + savior complex
++ Biggest sense of urgency is the the changing US demographics - concern is that historically white organizations will no longer be relevant
++ what are the organization missions - how do diverse perspectives (specifically, each type) add value to these missions?
++ talk about experiences relevant to changing times - exprience working across cultures
++ Resume tips:
+    + Create an all encompassing resume - Highlight components of inclusion
+    + thoroughly read job description
+    + If you do not match 100% of skills set - how many do you match & do you have transferable skills
++ Cover letter tips
+    + think of it as a magnifying glass on your resume
+    + match & expand on resume
+    + cover letter may include _specific_ instructions
+    + show you want the job - enthusiasim for duties, knowledge of the company
+    + it's ok to be honest, but be professional
+
+Potential interview/application questions:
++ Please describe a project, interaction, or experience that would demonstrate your commitment to diversity, equity & inclusion
+    + Research publications are a coveted measure of success in academic settings but there are described instances of bias during the peer review process in addition to those prevalent in academia that result in decreased publication productivity. My research project as an ASM fellow is focused on understanding the representation of different genders and geographic locations in the submission of research articles to ASM journals. Our next step will be to examine the dataset for potential areas of bias. Our goal is to suggest policy changes that remove barriers and the potential for bias to play a role in manuscript acceptance.
++ What does diversity mean to you?
+
+Tips:
+    + use the phrase "& I have more examples/I can expand on that, if you are interested"
+    + talk about your
+    
++ Review process
+    + did they follow all of the directions?
+    + Rubric
+    + Do their skill sets match the duities?
+    + Do they fill a gap? - who is the org representative of?
+
++ Can you talk about a time you navigated tricky dynamics around race or other identities in your work? What did you do?
+
++ Can you give an example of a time you brought together a group of people - of perhaps differeing opinions or areas of expertise - around a common goal? Why do you think this is important?
+
+**- AEM requests**
+
+Citations by editor - tried working on this, but I'm having trouble with special characters in last names again. Nothing I've tried before seems to be working...
+
+Citations by country - have to join in country data somehow. Might do this when I recompile the data
+
+"I looked at a few of the data sets, interesting trends, but I am wondering if there is somewhere hidden in the gillion numbers an average citation value on a per editor basis?  Probably not, I did not find it, but something like that would be of value, a "number" that would reflect the average citation value of a paper on a per editor basis.  I know that older papers usually have the higher number of citations, and I am wondering if a simple index could be created to neutralize that bias since editors vary in their time as editors.
+
+I also wonder if it would be possible to crunch out a number on a country basis??  E.g., most submissions come from China, but China also has the highest rejection rate, evidence that China submits a lot of low value manuscripts.  However, it is the citation value of the published manuscripts that matter.  Is it possible to do a "country crunch"??
+
+In the end, single illustrative graphs for both editors and countries would be of value for "potential" discussion with the editors."
+
+**- Authorship Paper**
+
+Check on flux status - finally got it running!
+
+It finished & I re-started the genderize script.
+
+#2018/12/03
+
+**- Microbe Publishing Talk**
+
+Worked on drafting an outline/concepts for my section.
+
+**- Geographical survey**
+
+Work with Mia on developing her story for this paper.
+
+**- Authorship paper**
+
+Edit code to create a dataframe of potential reviewers and add their personal information to the "people" dataframe. 
+
+Start job on flux. 
+
+**- DEI certificate**
+
+Outline/notes for DEI statement.
+
+Write & submit report for my interview w. Amy Chang. 
+
+**- ASM blog post**
+
+Suggestions for Janet's post.
+
+**- Weekly Report**
+
+**- Elections**
+
+Voted in Software Carpentry & ASM elections.

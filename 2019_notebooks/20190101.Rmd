@@ -1,0 +1,340 @@
+---
+title: "Lab Notebook: January 2019"
+output: html_document
+---
+#Goals: Jan. 14 - 18
+1. ~~Work on SWC Git lessons~~
+
+1. ~~Present Journal Club (T)~~
+
+1. ~~AAAS
+    + Registration
+    + Flight
+    + Lodging~~
+
+1. Authorship paper:
+    + Genderize comparison figures
+    + Write genderize comparision section
+    
+1. Monthly journals report
+    + submission comparison -- skip for now
+    
+1. DEI certificate
+    + ~~IDI session - Thurs, Jan 17. @ noon~~
+    + “Unconscious Bias in Everyday Life” - Friday, Jan. 18 @ noon
+    
+1. ASM blog
+    + Suggestions for ?
+    + Revise/rework careers blog post -- Waiting to hear more from Julie
+    + Outline/research next blog post -- Theories on the origin of life
+
+1. Geographical survey - Mia
+    + Discuss details of figures
+    + Give feedback on paper 1 figures
+    
+1. Dept DEI
+    + ~~work on invited speaker data~~
+
+1. ASM Grant: (https://www.asm.org/Fellowships/Career-Development-Grants-for-Postdoctoral-Women)
+    + Letter from Phil
+    + Letter from Pat
+    + Compile & submit - Due Feb 1
+
+#2019/01/17
+
+**- IDI session @ noon**
+
+Go over the group results from the early IDI & sign up for a one-on-one IDI session.
+
+1. Subjective & Objective Culture
+  - objective: artifacts & institutions created by a group of people, reflected in art, architecture, literature, dance, holidays & collective history (food, fashion, festivals, fun)
+      -few misunderstandings - visible - learned cognitively, a functional awareness
+  - Subjective: Patterns of interpretations (values, beliefs, perceptions) and behaviour learned from social interactions.
+      - unspoken rules - violations result in negative feelings about the violator - learned by trial and error
+      - unconsious rules - violations taken personally, affecting relations between people - learned through modeling, usually in childhood, or during highly developmental time frames
+2. Intercultural competence
+  - Diversity & Inclusion are distinct, competence joins the two: D+IC=I
+      -Diversity - mix of differences, focus on impact of differences, measured by demographic analysis
+      -Intercultural competence - how to make the mix work, focus on capacity, measured by IDI
+      -Inclusion - the mix feeling valued and engaged, focus on the experience, measured by outcomes
+3. The Intercultural Development Continuum of the IDI
+  - Denial - "unable to see differences are in play" (apathatic)
+      - key to understanding: commitment to one's own cultural values  & practices
+      - Approach to difference: indifference, de-prioritization of misunderstandings/violation
+      - organizational impact: unaware to culture issues, assimilationist, inattentiveness for cultural difference
+      - Fix - objective culture experiences
+  - Polarization: Defense - dualistic "Us vs Them", superiority "those people..." (combative)
+      - KTU: ability to deal directly with difficulties around cultural difference
+      - ATD: Fear & anger
+      - OI: Diversity seen as problem & obstacle, diversity recruitment is half-hearted
+  - Polarization: Reversal - Dualistic but "they" are superior (narrow comparision) 
+      - KTU: positive evaluation of other cultures & a willingness to be self-critical
+      - ATD: Shame/guilt/self-critical
+      - OI: Diversity seen as problem & obstacle,
+      - Fix: neutrality & commonality
+  - Minimization: Dominant culture - overemphasis on commonality, minimize the difference to understand people
+      - KTU: Recognizes cultural commonalities across difference and tries to behave in tolerant ways
+      - ATD: comfort & tolerance
+      - OI: universalistic, overestimation of competence, tolerance & "color-blind" policies, conflict avoidant, overreliance on similarities
+  - Minimzation: Non-dominant culture - deep awareness of difference b/c not part of the majority, overemphasis on commonality for self-preservation, assimilation
+      - KTU: reconizes cultural commonalities in facor of disclosing difference and tries to assimilate or in efforts for difference not to be noticed
+      - ATD: visible comfort, potential internal struggle & tolerence
+      - OI: universalistic, overestimation of competence, tolerance, conflict avoidant and inadvertently impacted by "color-blind" policies
+      - Fix: deep cultural self-exploration, where am I overprojecting & over relying on similarites
+  - Acceptance: "Able to recognize cultural patterns & _see_ them in context"
+      - KTU: Values both cultural commonalities & differences & see's how cultural difference are relevant
+      - ATD: curiosity
+      - OI: Bridging, active effort to recruit & retain diversity workdforce, cognitive understanding of cultural perspective of some cultures, talking talk w/o "walking the walk", dominant - analysis & paralysis
+  - Adaptation: "ability to shift perspective & behavior"
+      - KTU: Generally flexible in cultural perspective, deep understanding of at least one other culture, comfortable bridging across culture communities
+      - ATD: Flexibility & Tolerance for ambiguity
+      - OI: Briding, strong climate & respect for diversity, culturally responseive policites and practices, focus on equity outcomes
+4. IDI Group Profile results
+  - Percieved orientation (PO): where you place yourself, immediate potential & where we are headed
+  - Developmental Orientation (DO): indicates where we are and how we percieve & navigate across difference
+  - Trailing orientation in reversal
+5. Next steps in the Student Life IDI Pilot
+  - Task: deep cultural self awareness
+  - when do I/we have: an over-emphaisis on "human similatireis" as a bridge across diversity or have a tendency to attribute similar behavrios
+    
+**it is possible to do this at the lab level.
+
+**- Coffee w. Phil @ 10:45**
+
+Talk about Harry's findings about differences in salaries. -- publish as commentary?
+
+**- Authorship paper**
+
+Worked on creating a df with the comparisons of sens/spec/acc for different iterations of Nicole's dataset & genderize results.
+
+#2019/01/16
+
+**- Feedback on Mia's figures**
+
+1. Clean up regions: C#.. == Cote d'Ivoire (sp?), filter out "crunchbase", NA, & move others to nearby regions or drop altogether, then add your region vectors to the `analysis_functions.R` script so that they're sourced when `load_data.R` is run & there's more consistency between the scripts (e.g., regions in `author_origin_time.R` and `editor_origin_time.R` are different)
+
+1. Add `mutate(region = case_when...)` to `load_data.R`
+
+1. Line types don't seem to work well for the regions, let's try some other options
+
+1. Since you have the region color legend on the right, drop the x-axis region labels for the bar plots
+ 
+1. Move labels to line them up with the 3 regions that are visible & label the bottom "all other regions" (line graphs in `editor_origin_time.R` & `reviewer_origin_time.R`)
+
+1. Zoom in the `ylim` to <25, maybe even <5 or 10 (line graph in `first_origin_time.R`)
+
+Figures to add:
+1. unique authors/reviewers/editors by geographic region - ~~submissions,~~ publications and by journal
+1. # of times an author appears on submitted manuscripts by geographic region and journal
+1. # of times an author appears on published manuscripts by geographic region and journal
+1. # of times an individual reviews manuscripts by geographic region and journal
+1. Proportion of editors/reviewers for each geographic region each year - total and by journal
+1. Visualization of the countries represented (global map?) by submitted/published papers and by authors/editors/reviewers
+
+**- Authorship paper**
+
+Figured out where I left off with the data set. Pat wanted me to add suggested reviewers so I gathered all of that data, re-ran the genderize & merging process, & confirmed editor gender assignments. Next I: re-randomized personal identifiers, merged & re-created the de-identified people dataset along with all of the other "ready" for analysis datasets. 
+
+Split each paper into it's own repo and copied the de-identified data to each. Sent an encrypted copy of the data to Mia. Need Mia's git hub info so that I can add her as a collaborator.
+
+**- Meet with Phil**
+
+Had to cancel. Maybe tomorrow?
+
+**- Arrangements for AAAS**
+
+Booked flight, bed & breakfast, & registration. Printed recipets to take up to Bonnie along w. the shortcode.
+
+#2019/01/15
+
+**- Present Journal Club**
+
+**- Seminar**
+
+**- Invited Speaker Data**
+
+Worked on cleaning the data and getting it into a single dataframe.
+
+#2019/01/14
+
+**- ASM blog post**
+
+Identify next post topic: Theories on the origins of life. Deep thermal vents vs astrobiology, etc
+
+**- Monthly Journals Report**
+
+I don't understand the value of the Comparison year over year... only comparing to previous years, but difficult to see the overall trend with those values. 
+
+**- Meeting with Shoba**
+
+CV - Make it more focused & highlight key accomplishments in a more accessible way. 
+  + give position, location in bold - allows to skim bold for impt details w/o looking through the text
+  + use at least 11 font
+  + do better at highlighting dates/timeline/chronology
+  + what can you move around to highlight specific areas (e.g., Ethiopia is in teaching, but could go in DEI - same for tutoring/mentoring)
+  + Shorten summary based on job (make more crisp)
+
+Try to get foot in to system w. connections to try to create a position:
+
+Assit Dean DEI @ Rackham Ethram... - informational interview
+
+Medical School DEI people? -- college level
+
+Get on all DEI mailing lists -- attend meetings on increasing faculty diversity (faculty development for URM)
+
+CRLT -- making intro courses more helpful, esp for URM students
+
+Check options (DEI initiatives) with other societies
+
+Connect with DEI taskforce - any way I can help, give a learning module, etc
+
+Deborah -- info interview about DEI jobs/initiaitves
+
+CRLT - foot in the door type position
+
+3 types: perfect fit, foot in the door & create, create new position around skills
+
+Give descriptions more "umph" & solid. 
+
+**- Prep for JC** X
+
+Re-read paper & the methods.
+
+**- Git Lesson** X
+
+Worked through lessons on git set up, initalizing repo, adding/committing changes, tracking changes, reverting to old versions and using .gitignore .
+
+**- Discuss Pat's question with Begum**
+
+Begum suggested not approaching the problem with the question bias, but still outlining those factors to consider when reviewing papers. Another idea is to ask about bias, but then use the conclusion to say that it's difficult to parse bias from conflicting factors & call for additional research (e.g. named/country applications).
+
+#Goals: Jan. 7 - 11
+1. SWC: M & T
+    + ~~Teach Git (T)~~
+
+1. ~~Prep for Journal Club (T)~~
+
+1. Authorship paper:
+    + ~~Finish outline for gender bias paper + get feedback~~
+    
+1. Monthly journals report
+    + ~~Make revisions based on Melissa's suggestions~~
+    
+1. DEI certificate
+    + ~~Revise DEI statement~~
+    + ~~Submit~~
+    + ~~Send to OGPS for feedback~~
+    
+1. ASM blog
+    + Revise/rework careers blog post
+
+1. ~~Geographical survey - Work on paper outline + feedback from Pat~~
+
+1. ASM Grant: (https://www.asm.org/Fellowships/Career-Development-Grants-for-Postdoctoral-Women)
+    + ~~Finish drafting candidate statement~~
+    + ~~Revise candidate statement~~
+    + Letter from Phil
+    + Letter from Pat
+    + ~~CV updated~~
+    + ~~Complete application page~~
+    + submit
+    
+#2019/01/11
+
+**- Mia!!**
+
+Met w. Mia to discuss plans for this term. 
+  + She is going to apply to the Capstone Fellowship to attend Microbe (Due in March)
+  + I need to send her the Sterotype & Segregation paper that I'm reading as well as the eLife preprint
+  + I need to check over our dataset & make sure she gets the most recent version
+  + I need to look over her figures for the representation paper & let her know any changes that need to be made
+  + She is going to plan out each of the figures for the geographic paper & then we'll discuss them. 
+
+**- Dept DEI**
+
+Loaded & started cleaning speaker data in R.
+
+**- Git lesson** X
+
+Worked on further developing my git lessons.
+
+**- ASM grant**
+
+Finished updating/revising my CV.
+
+Sent my CV & diversity statement to Shoba for her feedback.
+
+#2019/01/10
+
+** Meeting w. Mia & Pat**
+
+A major question/issue for Pat was: "how do you separate bias from genuinely bad science" -- he expects that others are going to raise this question also (esp in regards to geographic bias), so we need to be prepared to address it in the drafts.
+
+Also, I need to learn about statistical regressions for the questions re: controlling for other factors and determining the effect of gender on decisions, etc.
+
+**- Read**
+
+Started reading my "library" book: "Gender and STEM". The intro paper is a great review of the literature on bias and sterotypes, along with mechanisms.
+
+**- Seminar**
+
+**- Monthly Report**
+
+Made revisions based on Melissa's suggestions. Need to doublecheck that the scripts will all run. Also have to start from the xml files since I need an additional date. Will be a good chance to see if the pipeline works & to figure out how to link in the citation/usage data. 
+
+**- Git lesson** X
+
+Worked on adding both conceptual think/pair/share exercises, as well as real-life ones, to the git lesson.
+
+**- Etc** X
+
+Made suggestions to Josie's bio.
+
+#2019/01/09
+
+**- Authorship papers** XX
+
+Worked further on the gender & geographic bias outlines. Sent the drafts to Pat for his feedback tomorrow & check in w. Mia.
+
+**- Etc**
+
+Talked to Nick about graphic novel ideas & got his feedback on my book draft.
+
+Went to find Phil... not in yet. Try tomorrow?
+
+**- Prep for Journal Club** X
+
+Read through paper & made notes. Need to re-read Monday & check out the methods a bit more. 
+
+**- Git lesson** XX
+
+Started an `Rmd` file with my own git lesson.
+
+#2019/01/08
+
+**- DEI certificate**
+
+Revised DEI statement based on Begum's comments & submitted.
+
+**- ASM Grant**
+
+Application Deadline moved to February 1st!!
+
+Revised candidate statement based on Begum's comments & completed the application page (need to ask Pat if I have other funding?).
+
+I need to work on editing my CV.
+
+**- SWC**
+
+Taught section on git. The puzzle analogy seemed to work really well & extended well to the idea of collaboration via github. Based on comments, need to work on making a clearer outline for the lesson (e.g., what we'll cover) & have more excercises for people to do. Some students want to do more with the collaboration.
+
+#2019/01/07
+**- SWC**
+
+Helped at Monday workshop
+
+**- Make suggestions to Begum's proposal**
+
+**- ASM Grant Proposal**
+
+Finished drafting candidate statement and sent to Begum for feedback.
