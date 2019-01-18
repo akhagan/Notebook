@@ -21,24 +21,66 @@ output: html_document
     
 1. DEI certificate
     + ~~IDI session - Thurs, Jan 17. @ noon~~
-    + “Unconscious Bias in Everyday Life” - Friday, Jan. 18 @ noon
+    + ~~“Unconscious Bias in Everyday Life” - Friday, Jan. 18 @ noon~~
     
 1. ASM blog
     + Suggestions for ?
-    + Revise/rework careers blog post -- Waiting to hear more from Julie
+    + Revise/rework careers blog post -- Next week
     + Outline/research next blog post -- Theories on the origin of life
 
 1. Geographical survey - Mia
     + Discuss details of figures
-    + Give feedback on paper 1 figures
+    + ~~Give feedback on paper 1 figures~~
     
 1. Dept DEI
     + ~~work on invited speaker data~~
 
 1. ASM Grant: (https://www.asm.org/Fellowships/Career-Development-Grants-for-Postdoctoral-Women)
     + Letter from Phil
-    + Letter from Pat
+    + ~~Letter from Pat~~
     + Compile & submit - Due Feb 1
+
+#2019/01/18
+
+**- Bias workshop**
+
+- Science & research of unconcious bias
+    - Bias is a shortcut to interpret/interact wit our world - results in judgement w/o question - not postive/negative, it is a function w/ +/- OUTCOMES
+    - UcB: mental associations w/o awareness, intention, control -- often conflict w/ our conscious attitudes, behaviors & intentions
+- increase awareness
+- identify how it impacts decisions
+    - 11 million pieces of information at anyone time!!
+    - There are a number of filters:
+      1. Perceptions
+      2. Interpretations (prioritize audio vs visual)
+      3. Preferences
+      4. Selective attention -- narrowing focus automatically to miss other things
+    - Actually absorbs 40-50 pieces of information
+    - several lenses in play: culture, group, individual, institutional -- obscures what we're viewing, so it's through our lenses as opposed to what it actually is - we see the world as we are, not necessarily the way it is
+    - selective attention is a bigger issue the more specialized you are -- another issue for more perspective (radiology expt)
+    - Orchestratin impartiality: the impact of "blind" auditions on female muscitions 2009
+    - Scott Page - econ prof @UM - "The diversity bonus" - mathmatically & logically prove that diverse perspectives improve teams & solving problems
+- ways to mitigate
+    - too much conflicting information, means you need to slow down or you make mistakes
+    - Fast (emotional) brain
+    - Slow (Thinking) brain - metacognition - thinking about our thinking
+    - The unconcious is malleable - we can change it but it takes time and effort
+
+Submitted my reflection form.
+
+**- Geographic bias**
+
+Met with Mia to talk about the code for her figures and to give her a list of remaining figures for the representation paper.
+
+**- Authorship paper**
+
+Completed `b_c_comparision.R` script, which generates a table of summary stats for the different comparisons with Nichole's gendered data set. e.g., no cut off, p85, pmod85 cutoffs & then w/ & w/o country data. Important to remember that this analysis only considers events where predictions are made! Not "unknown/na" return values. 
+
+Need to go back to the original dataset & figure out why so many names (69) dont have genders. Rewrote code to include more author names in the analysis and drop an entry that doesn't evaluate correctly & prevents the csv from saving. Also dropped error messages from the list of name for genderize and worked to better comment the code. 
+
+**-ASM blog post**
+
+Heard from Julie, we're probably going to go ahead w. publishing my post to mentors on supporing non-ac students b/c we're not sure when the report will come out. 
 
 #2019/01/17
 
@@ -124,12 +166,17 @@ Worked on creating a df with the comparisons of sens/spec/acc for different iter
 1. Zoom in the `ylim` to <25, maybe even <5 or 10 (line graph in `first_origin_time.R`)
 
 Figures to add:
-1. unique authors/reviewers/editors by geographic region - ~~submissions,~~ publications and by journal
-1. # of times an author appears on submitted manuscripts by geographic region and journal
-1. # of times an author appears on published manuscripts by geographic region and journal
-1. # of times an individual reviews manuscripts by geographic region and journal
-1. Proportion of editors/reviewers for each geographic region each year - total and by journal
-1. Visualization of the countries represented (global map?) by submitted/published papers and by authors/editors/reviewers
+  1. unique authors/reviewers/editors by geographic region - ~~submissions,~~ publications and by journal
+  
+  1. # of times an author appears on submitted manuscripts by geographic region and journal
+  
+  1. # of times an author appears on published manuscripts by geographic region and journal
+  
+  1. # of times an individual reviews manuscripts by geographic region and journal
+  
+  1. Proportion of editors/reviewers for each geographic region each year - total and by journal
+  
+  1. Visualization of the countries represented (global map?) by submitted/published papers and by authors/editors/reviewers
 
 **- Authorship paper**
 
