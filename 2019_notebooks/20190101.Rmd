@@ -2,6 +2,108 @@
 title: "Lab Notebook: January 2019"
 output: html_document
 ---
+#Goals: Jan 22 - 25
+1. Authorship paper:
+    + ~~Genderize comparison of N/A countries from Nichole's data~~
+    + Genderize comparison w. Editor names
+    
+1. Monthly journals report
+    + continue working through Dashboard book
+    
+1. DEI certificate
+    + Disability Awareness - Thursday @ 3pm
+    
+1. ASM blog
+    + Finish outline/research for next blog post -- Theories on the origin of life
+
+1. Geographical survey - Mia
+    + Work on representation figures
+    
+1. Dept DEI
+    + Generate CSV of compiled invited speaker data
+    + Fill in demographic data
+
+1. ASM Grant: (https://www.asm.org/Fellowships/Career-Development-Grants-for-Postdoctoral-Women)
+    + ~~Letter from Phil~~
+    + Revise CV w. Shoba's comments
+    + Compile & submit - Due Feb 1
+    
+1. Microbe Session
+    + Finish detailed outline
+    + Send to group
+
+#2019/01/25
+
+**- Speaker Data**
+
++ Generate CSV of compiled invited speaker data
++ Fill in demographic data
+
+**- Microbe session**
+
++ Finish detailed outline
++ Send to group
+
+**- ASM Grant**
+
+Revise CV & submit
+
+#2019/01/24
+
+**- Disability Awareness worshop** @ 3pm
+
+**- Authorship paper**
+
+Figure out gender assignment issue.
+
+#2019/01/23
+
+**- ASM staff meeting**
+
+2 - 3:30pm
+
+**- ASM grant**
+
+Revise & save Phil's letter as a pdf. Download/save Pat's letter.
+
+**- ASM blog**
+
+Revised non-ac career post & submitted to Julie. This is going to take the place of my Feb. 15 blog post. So that's done!
+
+**- Authorship paper**
+
+Restarted script to pull author names & run genderize on Nichole's data set. Job completed succesfully so I re-ran `b_c_comparison.R` & everything seems to be alright.
+
+Generated plots to compare countries with higher proportions of unpredicted genders from Nichole's data.
+
+Generated csv file of editor names with genderize predictions and "correct" genders.
+
+Something isn't right... when I compare actual vs predicted gender, the accuracy is near perfect, which doesn't line up with the ~150 editors who had to be correctly coded--- I'm not sure what's going on...
+
+#2019/01/22
+
+**- Lab Meeting**
+
+**- ASM blog post**
+
+Suggestions to Jennifer Brubaker's post on cancer-causing viruses.
+
+**- Lab meeting prep**
+
+Read ch. 1 - 4 of Data viz book & skimmed Pat's paper in progress ouline.
+
+**- Misc**
+
+Getting organized: weekly report, setting goals, etc.
+
+**- SWC Meeting**
+
+Pat mentioned the DEI office was interested in a workshop, maybe ask to be involved w. that
+
+#2019/01/21
+
+**-Martin Luther King, Jr. Day**
+
 #Goals: Jan. 14 - 18
 1. ~~Work on SWC Git lessons~~
 
@@ -29,7 +131,7 @@ output: html_document
     + Outline/research next blog post -- Theories on the origin of life
 
 1. Geographical survey - Mia
-    + Discuss details of figures
+    + ~~Discuss details of figures~~
     + ~~Give feedback on paper 1 figures~~
     
 1. Dept DEI
