@@ -2,59 +2,137 @@
 title: "Lab Notebook: January 2019"
 output: html_document
 ---
-#Goals: Jan 22 - 25
+#Goals: Jan 28 - Feb 1
 1. Authorship paper:
-    + ~~Genderize comparison of N/A countries from Nichole's data~~
-    + Genderize comparison w. Editor names
+    + ~~Write section on genderize results~~
     
 1. Monthly journals report
     + continue working through Dashboard book
-    
-1. DEI certificate
-    + Disability Awareness - Thursday @ 3pm
+    + check in w. Joel & Melissa again
+    + stream-line highwire data retrieval?
     
 1. ASM blog
-    + Finish outline/research for next blog post -- Theories on the origin of life
+    + ~~suggestions for Guest post~~
 
 1. Geographical survey - Mia
     + Work on representation figures
     
 1. Dept DEI
-    + Generate CSV of compiled invited speaker data
-    + Fill in demographic data
+    + ~~Fill in demographic data~~
+    + Generate figures
+    + Make presentation for faculty meeting
+    
+1. Estimated JIFs
+    + Start script A -- Pull all indexed items from Web Services Lite for two year period
+
+1. "Git" Coffee w. Ari - Thurs @ 9
+
+1. ~~M&I PDA Mtg - Thurs @ noon~~--CANCELLED
+
+
+#2019/01/29
+
+**- Lab meeting**
+
+gghighlight package -- helps w. adding highlights to visualizations
+
+- r-graph-gallery.com
+- reddit.com/r/dataisbeautiful/
+- kaggle.com
+
+**- ASM blog post**
+
+Made some revisions to the non-ac careers post.
+
+**- Dept DEI**
+
+Cleaned up & merged datasets for analysis.
+
+Finished assigning demographic data to speakers.
+
+#2019/01/28
+
+**- Misc**
+
+Ran names of the AAM awardees through genderize.io for Pat. Less than 1/3rd women.
+
+**- Authorship paper**
+
+Wrote a first rough draft of the genderize results section. (Spent an unfortunate amount of time trying to access all of the datafiles to do a full draft, I'll have to touch it up later.)
+
+**- ASM blog**
+
+Edits/suggestions for guest post.
+
+#Goals: Jan 22 - 25
+1. Authorship paper:
+    + ~~Genderize comparison of N/A countries from Nichole's data~~
+    + ~~Genderize comparison w. Editor names~~
+    
+1. Monthly journals report
+    + continue working through Dashboard book
+    
+1. DEI certificate
+    + ~~Disability Awareness - Thursday @ 3pm~~
+    
+1. ASM blog
+    + Finish outline/research for next blog post -- Theories on the origin of life
+
+1. Geographical survey - Mia
+    + ~~Work on representation figures~~
+    
+1. Dept DEI
+    + ~~Generate CSV of compiled invited speaker data~~
+    + ~~Fill in demographic data~~
 
 1. ASM Grant: (https://www.asm.org/Fellowships/Career-Development-Grants-for-Postdoctoral-Women)
     + ~~Letter from Phil~~
-    + Revise CV w. Shoba's comments
-    + Compile & submit - Due Feb 1
+    + ~~Revise CV w. Shoba's comments~~
+    + ~~Compile & submit - Due Feb 1~~
     
 1. Microbe Session
-    + Finish detailed outline
-    + Send to group
+    + ~~Finish detailed outline~~
+    + ~~Send to group~~
 
 #2019/01/25
 
 **- Speaker Data**
 
-+ Generate CSV of compiled invited speaker data
-+ Fill in demographic data
+Generated CSVs of compiled invited speaker & host data. Began filling in demographic data.
 
 **- Microbe session**
 
-+ Finish detailed outline
-+ Send to group
+Finished a detailed outline & emailed to the group.
 
 **- ASM Grant**
 
-Revise CV & submit
+Revised CV & submitted package.
 
 #2019/01/24
 
-**- Disability Awareness worshop** @ 3pm
+**- Disability Awareness worshop**
+
+- Entire series in NYT on disabilities & awareness.
+
+- Disability is not a blanket statement "if you've met one person with a disability, you've met one person with a disability"
+
+- Stella Young TED talk - "I'm not your inspiration, thank you very much"
+
+- "person-first" language acknowledges the individual is separate from the (dis)ability
+
+- SWC accomodations?
+
+- Platinum rule: treat others the way THEY want to be treated (vs golden - treat as you would want to be treated)
+
+Completed/submitted reflection form.
+
+**- Seminar**
 
 **- Authorship paper**
 
-Figure out gender assignment issue.
+Figure out gender assignment issue --- there wasn't actually an issue. Because we increased the genderize threshold to pmod 0.85, many names simply weren't predicted by genderize, leading to increased accuracy of the names whose genders were predicted.
+
+Finished compiling the genderize analysis figures/tables and started a more detailed outline of that results section. Need to fine-tune the figures/tables and start writing.
 
 #2019/01/23
 
