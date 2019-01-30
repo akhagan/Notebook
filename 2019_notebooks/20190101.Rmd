@@ -8,7 +8,7 @@ output: html_document
     
 1. Monthly journals report
     + continue working through Dashboard book
-    + check in w. Joel & Melissa again
+    + ~~check in w. Joel & Melissa again~~
     + stream-line highwire data retrieval?
     
 1. ASM blog
@@ -25,10 +25,34 @@ output: html_document
 1. Estimated JIFs
     + Start script A -- Pull all indexed items from Web Services Lite for two year period
 
-1. "Git" Coffee w. Ari - Thurs @ 9
+1. "Git" Coffee w. Ari - Fri @ 9
 
 1. ~~M&I PDA Mtg - Thurs @ noon~~--CANCELLED
 
+
+#2019/01/30
+
+**ASM is on 3 hr delay & UM campus is closed**
+
+**- Monthly report**
+
+Dashboard book.
+
+Checked in w. Joel & Melissa.
+
+**- Authorship paper**
+
+Revised genderize results section describing Table 1.
+
+**- Misc**
+
+Emailed journal demographic stats to Amy Chang.
+
+Checked in w. Brenda about new W2 & new contract.
+
+Emailed Amy about AAAS meeting.
+
+Reminded everyone to give me feedback on my non-ac careers post.
 
 #2019/01/29
 
