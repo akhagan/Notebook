@@ -7,7 +7,7 @@ output: html_document
     + ~~Write section on genderize results~~
     
 1. Monthly journals report
-    + continue working through Dashboard book
+    + ~~continue working through Dashboard book~~
     + ~~check in w. Joel & Melissa again~~
     + stream-line highwire data retrieval?
     
@@ -29,6 +29,28 @@ output: html_document
 
 1. ~~M&I PDA Mtg - Thurs @ noon~~--CANCELLED
 
+#2019/01/31
+
+**UM campus is closed**
+
+**- Monthly journals report**
+
+Work on Dashboard book.
+
+**- Authorship paper**
+
+Revise description of country data in genderize results. 
+
+Calculated the percent of unassigned names per country and then found a way to adjust it to reflect the number of names provided & thus the impact on the overall percentage of unassigned names using the following 
+```{r}
+mutate(impact = round(((
+  country_percent-percent_unpredicted)*(country_total/num_obs)
+  )/percent_unpredicted, digits = 4))
+```
+
+-- was working on this and realized that Canada has one the highest negative impacts on the overall average, starting looking into it & realized that genderize doesn't handle special characters, e.g., it assigns gender to "Jose" but not "José". I'm going to have to figure out how to deal w. the special characters so that those names are also assigned gender correctly. 
+
+`mutate(first.name = iconv(first.name, from = 'UTF-8', to = 'ASCII//TRANSLIT'))` seems to work for the b_c dataset. I'll run a full comparision tomorrow to see how much it improves accuracy & changes the impact of each country on gender assignment.
 
 #2019/01/30
 
