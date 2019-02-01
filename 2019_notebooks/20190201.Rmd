@@ -1,0 +1,88 @@
+---
+title: "Lab Notebook: February 2019"
+output: html_document
+---
+#Goals: Feb 4 - 8
+1. Authorship paper:
+    + Recompile dataset & share w. Mia
+    + Finish revising/figures for genderize results section
+    + Read 2 papers
+    
+1. Monthly journals report
+    + continue working through Dashboard book
+    + stream-line highwire data retrieval?
+    
+1. ASM blog
+    + Revisions for non-ac careers post
+
+1. Geographical survey - Mia
+    + Work on representation figures
+    
+1. Dept DEI
+    + Generate figures
+    + Make presentation for faculty meeting
+    
+1. Estimated JIFs
+    + Start script A -- Pull all indexed items from Web Services Lite for two year period
+
+1. DEI certificate
+    + Individual Session - Thurs @ 11
+    + Submit reflection
+    + DEI Symposium - Friday 
+
+#Goals: Jan 28 - Feb 1
+1. Authorship paper:
+    + ~~Write section on genderize results~~
+    
+1. Monthly journals report
+    + ~~continue working through Dashboard book~~
+    + ~~check in w. Joel & Melissa again~~
+    + stream-line highwire data retrieval?
+    
+1. ASM blog
+    + ~~suggestions for Guest post~~
+
+1. Geographical survey - Mia
+    + ~~Work on representation figures~~
+    
+1. Dept DEI
+    + ~~Fill in demographic data~~
+    + Generate figures
+    + Make presentation for faculty meeting
+    
+1. Estimated JIFs
+    + Start script A -- Pull all indexed items from Web Services Lite for two year period
+
+1. ~~"Git" Coffee w. Ari - Fri @ 9~~
+
+1. ~~M&I PDA Mtg - Thurs @ noon~~--CANCELLED
+
+#2019/02/01
+
+**- ASM blog**
+
+Suggestions for Rita's post.
+
+**- Misc**
+
+Completed IDP.
+
+Arranged for dinner w. Amy.
+
+Emailed Bonnie about Reimbursement.
+
+**- Authorship paper**
+
+Re-started genderize script + workflow to change special characters & generate new `ready.csv` files for analysis.
+
+Started B_C analysis w/ & w/o changing special characters to compare accuracy. -- done
+
+Showed genderize impact chart to Begum, she suggested dropping any countries with a positive impact on gender assignment (negative impact on the graph, e.g., USA) & instead mentioning them in the text. 
+
+**- Mia**
+
+Car won't start, working from home.
+
+**- "Git" Coffee w. Ari**
+
+Apparently, she missed the git section w. Josh so I gave her an overview & got her started. We'll probably meet again to get her repos set up on GitHub.
