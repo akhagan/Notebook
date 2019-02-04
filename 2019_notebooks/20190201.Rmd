@@ -4,7 +4,7 @@ output: html_document
 ---
 #Goals: Feb 4 - 8
 1. Authorship paper:
-    + Recompile dataset & share w. Mia
+    + ~~Recompile dataset & share w. Mia~~
     + Finish revising/figures for genderize results section
     + Read 2 papers
     
@@ -13,7 +13,7 @@ output: html_document
     + stream-line highwire data retrieval?
     
 1. ASM blog
-    + Revisions for non-ac careers post
+    + ~~Revisions for non-ac careers post~~
 
 1. Geographical survey - Mia
     + Work on representation figures
@@ -29,6 +29,22 @@ output: html_document
     + Individual Session - Thurs @ 11
     + Submit reflection
     + DEI Symposium - Friday 
+    
+#2019/02/04
+
+**- Authorship paper**
+
+Read Bravo, et al., 2019 -- interestingly, they found that open peer review increased the objectivity and positivity of reviews from men.
+
+Uploaded the new dataset to Box for Mia.
+
+Started draft of "paper-in-progress" for the ASM representation paper
+
+Worked on revising genderize results with updated validation dataset. Overall, the accuracy dropped a bit when I removed special characters, but the proportion of names that were assigned genders increased.
+
+**- ASM blog**
+
+Revised non-acc careers post & found new links.
 
 #Goals: Jan 28 - Feb 1
 1. Authorship paper:
