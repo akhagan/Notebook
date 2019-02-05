@@ -5,7 +5,7 @@ output: html_document
 #Goals: Feb 4 - 8
 1. Authorship paper:
     + ~~Recompile dataset & share w. Mia~~
-    + Finish revising/figures for genderize results section
+    + ~~Finish revising/figures for genderize results section~~
     + Read 2 papers
     
 1. Monthly journals report
@@ -30,6 +30,37 @@ output: html_document
     + Submit reflection
     + DEI Symposium - Friday 
     
+#2019/02/05
+
+**- Dept DEI**
+
+Worked on choosing visualizations for the faculty mtg presentation. Key question is: what do I want to show?
+
+1. Is work distributed equally - e.g. how many faculty are hosting multiple times? What are those demographics?
+
+2. What are the proportions of M/F, W/POC for invited speakers?
+
+3. What are the proportions for lectureships?
+
+Outline:
+  + Introduction - DEI session at the retreat - Josie
+  + Why does speaker diversity matter? - Ada/Josie
+  + Methods - where did the data come from/demographic assignments - Ada
+  + Results - demographic stats, lectureship stats
+  + Conclusions - suggestions for improving speaker diversity moving forward
+
+**- Lab meeting**
+
+`ggplot(aes(x, color, y))+ geom_jitter(position=position_jitterdodge(jitter.width=0.1))`
+
+**- Authorship paper**
+
+Finished revising the genderize results section and added discussions of the editor comparison data and the countries with high proportion of na-gendered names from the full dataset.
+
+**-ASM blog**
+
+Made a few more tweaks to the non-ac careers post & sent off to Julie!
+
 #2019/02/04
 
 **- Authorship paper**

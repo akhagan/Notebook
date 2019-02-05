@@ -1011,3 +1011,7 @@ Aggreggation of individual altmetrics scores (e.g., Twitter, Facebook, Blogs, Ne
 ***
 Evaluated the text of about 60 papers (case reports & research articles) published in AANA for readability using MS word & two different readability scales (Gunning & Flesch). 20 were randomly pulled & analyzed by humans. No sig diff btwn human/computer analysis. On average, papers become more readabile following peer review but are still pretty difficult to read.
 
+#Altering Peer Review (blinded/reports)
+### "The effect of publishing peer review reports on referee behavior in five scholarly journals", Bravo et al., 2019
+***
+Looked at 5 Elsiever journals that transitioned to "open" peer review, e.g., Reviews were published along with the article with the option for the reviewers name to be made public. In a comparison against 5 non-open peer review journals, they found no significant difference in the liklihood for reviewers to agree or decline in submissions. They did find that reviews from men became both more positive and more objective.
