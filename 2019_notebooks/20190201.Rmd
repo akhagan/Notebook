@@ -19,7 +19,7 @@ output: html_document
     + Work on representation figures
     
 1. Dept DEI
-    + Generate figures
+    + ~~Generate figures~~
     + Make presentation for faculty meeting
     
 1. Estimated JIFs
@@ -30,6 +30,16 @@ output: html_document
     + Submit reflection
     + DEI Symposium - Friday 
     
+#2019/02/06
+
+**- Dept DEI**
+
+Generated several figures based on the three questions belows & finished a rough draft of the presentation.
+
+I'd like to know the demographics of our current grad students & postdocs. Does who they see match who they are? Perhaps work that into the introduction. -- only 20% of trainees are WM
+
+Also need to address the idea of representational vs aspirational -- balance the workload & the recognition
+
 #2019/02/05
 
 **- Dept DEI**
