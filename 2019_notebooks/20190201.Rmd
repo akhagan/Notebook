@@ -2,6 +2,36 @@
 title: "Lab Notebook: February 2019"
 output: html_document
 ---
+#Goals: Feb 11 -15
+1. Authorship paper:
+    + Gender representation figures
+    + Paper in progress report
+    + read 2 papers
+
+1. Monthly journals report
+    + continue working through Dashboard book
+    + stream-line highwire data retrieval?
+    + email Melissa to try to get data from Joel or someone else
+
+1. Geographical survey - Mia
+    + Work on representation figures
+    + Provide feedback on CV & application essays
+    + Send CV to Paul
+
+1. Dept DEI
+    + Faculty Meeting Presentation - Tues @ noon
+    
+1. Estimated JIFs
+    + Start script A -- Pull all indexed items from Web Services Lite for two year period
+    
+1. AAAS - Thurs-Sun
+    + Dinner w. Amy Chang, Friday
+    + Plan sessions/workshops
+    
+1. DEI
+    + email Dr. Deborah Willis for informational interview
+    + email Dr. Damon Williams?
+
 #Goals: Feb 4 - 8
 1. Authorship paper:
     + ~~Recompile dataset & share w. Mia~~
@@ -16,19 +46,115 @@ output: html_document
     + ~~Revisions for non-ac careers post~~
 
 1. Geographical survey - Mia
-    + Work on representation figures
+    + ~~Work on representation figures~~
     
 1. Dept DEI
     + ~~Generate figures~~
-    + Make presentation for faculty meeting
+    + ~~Make presentation for faculty meeting~~
     
 1. Estimated JIFs
     + Start script A -- Pull all indexed items from Web Services Lite for two year period
 
 1. DEI certificate
-    + Individual Session - Thurs @ 11
-    + Submit reflection
-    + DEI Symposium - Friday 
+    + ~~Individual Session - Thurs @ 11~~
+    + ~~Submit reflection~~
+    + ~~DEI Symposium - Friday ~~
+
+#2019/02/08
+
+**- DEI symposium**
+
+Taylor Cox, President of Morehouse - structural/organizational diversity
+
+Mike Nettles, Walter (black social sci scholars) "Three magic letters, ph.d."
+
+"Resilent folks don't focus on what they don't have, they focus on what they do have"-- book on resilence of inner city kids
+
+"visualization of the diffusion of innovation model" -- google image search -- difficult to "convert" resistors one-on-one. Identify where people are on the spectrum
+
+"Managing change" & "managing the diffusion of change/innovation"
+
+Make it optional, but make it accountable & public -- people can see who's falling behind & who's moving forward
+
+spend more time on the _activation_ of the toolkit, so it can be disseminated appropriately. toolkit -- simple, mvp (minimal viable product) -- Time is inbalanced focusing on the design as opposed to the implimentation
+
+upwork.com -- global talent searching platform -- Research scientist w. analysis of DEI -- Williams business
+
+thought leadership - thought leader, finding organizations to spread your ideas -- what is the problem that you can take away from a client
+
+Damon A. Williams, Keynote: @DAWPHD
+
+You didn't come to UM to play it small & be a contributor -- you came to be an innovator
+
+Connection economy --not just citizens, but citizen brands. We're not just a scholar, not just advocate -- think of ourselves as a brand.
+
+What does it mean to be an innovator? We live in a time of innovation - idea to product faster now than ever before. "The innovator's DNA"
+
+What makes an innovator an innovator? -- do you embody these characterisitcs?
+  1. Questioning -- poking the box
+      + leaders can't find greatness until there is a community to push them there
+  2. Solutions Across Boundaries -- look for solutions whereever you can find them, innovators do not live confined w/in a field
+  3. Engaging other innovators -- innovation rarely happens in solo, isolated efforts, it happens at the intersection of community and networks -- culture of peer critique from the very first day! That's a major diff btwn arts & bio -- that's what it takes to level up
+  Self-directed, self-authored, I get up and push it to the max not b/c anyone asked me to but b/c I want to
+  4. Experimenting w. New Ideas -- Innovators have a bias toward action 
+  5. Taking ideas to scale -- when innovators figure out what works, they scale it up & go big. Don't just do it once, do it over & over & over again
+  "Commitment w.out currency is counterfeit. Don't let anyone tell you different."
+  "the ability & willingness not just to lead change, but ask hard questions, find solutions, scale up"
+  6. Leading with Courage -- too often we are not courages, we live our lives in fear of who we are not, of what others think of us -- every day courage drives: a culture of inclusive excellence
+    + the courage to be humble
+    + writing is an act of polishing, research is an act of struggle
+    + courage to build new relationships
+    + courage to coach, mentor & sponsor difference -- always seeking out coaches, mentors & sponsors -- sponsors pick up the phone, send a note, make a call -- POC have coaches & mentors, but what about sponsors??
+    + courage to continue to challenge priviledge & bias -- create spaces for true dialouge, scale up to include others regardless of background
+    + courage to servant lead -- success is what you do for yourself, great is what you do to spark change for someone else
+    + courage to be original
+
+Simon Sinek -- "golden circle"
+  + don't start with what or how, they start w. WHY -- articulate the burning questions that will carry you through your purpose & career
+  + we are the most diverse generation ever
+  
+Voice, Choice, Access, & Passion: Preparing the Centennials to Lead
+  1. Passion & Purpose -- what sparks  you?
+  2. Voice & agency 
+  3. Growth mindset -- progress is incremental
+  4. Grit & resilience -- have to go through the fire
+  5. Personal brand & character -- constantly building & protecting your brand -- who are you & what do you stand for to others?
+  
+  1. Academic credentials & experiences
+  2. High impact leadership development experiences
+  3. mentoring & learning relationships
+  4. Role models & avoidance models -- reverse engineer how they got there
+  5. Health & wellness plan
+  
++ people think the research is the work, it's not, it's the project that gets you the data to have the impact to find solutions and make the change
+
++ "The beautiful constraint" -- the world is filled w. constriants - the innovators find opportunity to work within the constrainst - mindsets of abundance & success, high level understanding from mapping it out & reverse engineering the solution
+  
+Sellers: Reasons to contribute to DEI @ umich
+  1. You ARE your institution
+  2. Need to continue the legacy
+
+**- Checked in w. Mia**
+
+She is going to send me her CV draft & application essays to look over. She plans to have 3 figures done by the end of next Friday.
+
+#2019/02/07
+
+**- Authorship paper**
+
+Read Quadlin, 2018 "The Mark of a Woman's Record: Gender and Academic Performance in Hiring"
+
+**- DEI Cert**
+
+one-on-one w/ Nichole Burnside of my IDI results & submitted a reflection form. Suggestions to further develop my intercultural competence:
+  + Language classes & workshops at the hospital
+  + Rosetta stone from UM library
+  + Books & podcasts on/from other cultures
+  + Travel to conferences for URM
+
+**- Dept DEI**
+
+Meet w. Josie to discuss presentation. Started collaborative box to work on the presentation folder. Brainstormed some possible questions and strategized responses.
     
 #2019/02/06
 
