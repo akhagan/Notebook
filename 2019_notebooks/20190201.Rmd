@@ -5,32 +5,105 @@ output: html_document
 #Goals: Feb 11 -15
 1. Authorship paper:
     + Gender representation figures
-    + Paper in progress report
+    + ~~Paper in progress report~~
     + read 2 papers
 
 1. Monthly journals report
     + continue working through Dashboard book
     + stream-line highwire data retrieval?
-    + email Melissa to try to get data from Joel or someone else
+    + ~~email Melissa to try to get data from Joel or someone else~~
 
 1. Geographical survey - Mia
     + Work on representation figures
-    + Provide feedback on CV & application essays
+    + ~~Provide feedback on CV & application essays~~
     + Send CV to Paul
 
 1. Dept DEI
-    + Faculty Meeting Presentation - Tues @ noon
+    + Faculty Meeting Presentation - ~~Tues @ noon~~ Postponed to March
     
 1. Estimated JIFs
     + Start script A -- Pull all indexed items from Web Services Lite for two year period
     
 1. AAAS - Thurs-Sun
-    + Dinner w. Amy Chang, Friday
+    + Dinner w. Amy Chang, Friday @ 6pm
     + Plan sessions/workshops
     
 1. DEI
-    + email Dr. Deborah Willis for informational interview
-    + email Dr. Damon Williams?
+    + ~~email Dr. Deborah Willis for informational interview~~
+
+#2019/02/13
+
+**- AAAS**
+
+Found & downloaded app for the meeting. Will work on sessions later.
+
+**- Authorship paper**
+
+Printed off several papers to read through on my trip.
+
+Continued streamlining code -- this time by creating plot functions.
+
+Trying to figure out how to create a df that has the data for each year & journal, that way I can facet_wrap by journal --- one problem is that not all journals have all years. Might need to create a separate function altogether
+
+**-ASM blog**
+
+Addressed more comments, including new title :(
+    
+#2019/02/12
+
+**- XML parse**
+
+Cleaned up github files
+
+**- Lab Meeting**
+
+Goal in writing code & using github -- to be able to burn files, git pull, & run a MAKE file to generate the end paper.
+
+How can we revamp code review?
+
+R studio has a spell check ???
+
+```{r}
+#community mouse1day1 (phylum)-- piechart
+data %>% filter(Level == "Phylum", day == 1, mouse == 1) %>% 
+  group_by(Classification) %>% summarise(n = n()) %>% 
+  ggplot(aes(x = 1, fill = Classification, y = n))+
+  geom_bar(width = 1, stat = "identity")+
+  coord_polar(theta = "y")+
+  theme_void()
+```
+
+**- Seminar**
+
+**- Authorship Paper**
+
+Work on gender representation figures. --- streamlined the code by adding setup scripts for authors & gatekeepers, made functions to split out author types & to generate dfs with n & proportion counts by year for specific column types.
+
+Need to think about how I want to present the aggreggate numbers -- currently unique by year, but potentially duplicated across years. Probably want to just have unique regardless of year??
+
+#2019/02/11
+
+**- Dept DEI** 
+
+Talked to Josie - she wants to incorporate the findings from the Lancet issue on Women & get Akira on-board as an ally. We'll postpone to the March meeting.
+
+**- Authorship papers**
+
+Worked on paper-in-progress outline for the first paper & started P-i-P outlines for the next two.
+
+**- Mia**
+
+Provided feedback on her CV & ASM essays.
+
+**- Misc**
+
+Emailed Dr. Willis for info interview, week of March 4th.
+
+Emailed Melissa & Pat to ask about Joel's non-response.
+
+**- ASM blog**
+
+Finished last revision 
 
 #Goals: Feb 4 - 8
 1. Authorship paper:
