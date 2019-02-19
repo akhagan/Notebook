@@ -4,9 +4,9 @@ output: html_document
 ---
 #Goals: Feb 11 -15
 1. Authorship paper:
-    + Gender representation figures
+    + ~~Gender representation figures~~
     + ~~Paper in progress report~~
-    + read 2 papers
+    + read 2 papers: I
 
 1. Monthly journals report
     + continue working through Dashboard book
@@ -26,10 +26,323 @@ output: html_document
     
 1. AAAS - Thurs-Sun
     + Dinner w. Amy Chang, Friday @ 6pm
-    + Plan sessions/workshops
+    + ~~Plan sessions/workshops~~
     
 1. DEI
     + ~~email Dr. Deborah Willis for informational interview~~
+
+#2019/02/17
+
+**- Promoting Gender Equity**
+
+  + CVs for Assist prof hire: men preferred 2:1, 4x more 
+  + Posdoc apps: women have to publish >99 papers to be seen as competent as man w. about 35 papers
+  + white sounding names recieve 50% more callbacks for interviews
+  + wearting gay & proud apparel resulted in empolyers spending less time, used fewer words & acted more negatively
+  + same regardless of M or F reviewer
+  + 50% of women report having been harassed
+  + 20-50% of women experience sexually harassing behavior from faculty/staff
+  + 4 factors increase women's likelihood obeing targets
+      + male dominated work settings
+      +hierarchies that concentrate power
+      + sympbolic
+  + what seems to be working: (industry)
+      + strong & diverse senior leadership support (& training/development)
+      + accountability - annual reviews
+      + clearly defined practices, policies, proceedures (data driven decision making for d&i)
+      + mentoring programs
+      + ERGs (vs affinity groups) connected to business goals - employee resource groups, tied to mission of company & each has a senior leadership sponsor
+      + gender & ethnic diversity is correlated w. increased financial performance
+      + (academia)
+      + leadership driven, leadership informed
+      + embed implicit bias & cultural competency in everything -- even women don't know!!
+      + bystander, advocates & allies workshops
+      + address & **reward** in hiring, p&t, annual evaluations
+      + improve transparancy & accountability on sexual harrassment policies
+      + data driven!!
+  + Colorado School of Mines -- top down, bottom up plan -- contact for resources  
+  
+  + Gendered impacts of science communication training programs
+  + 70% of men experienced increase in empathy & 74% of women increased leadership
+  + assessing effectiveness & impact of scicomm training could mean different things for men & wmen
+  + could scicomm training mean
+  + why communication?
+  + double standard in how women judged
+  + women are communicated to! what are you communicating??
+  + best practices: emotion, be personal, storytelling, body language, outside of the box
+  + 2 min to establish credibility: 55% visible, 38% vocal, content
+  + sterotypes against women using communication best practices
+  + deficit model doesn't work for scicomm or combating bias!!
+  + Communication challenges:
+      + not just men! other women in leadership can be the problem, e.g. bad advice, competetion, I had to do it, you do too
+      + challenges are pervasive -- no accountability, reportin/trainings protecting institution not victims
+      + overt bias (slipped hotel room keys) vs indirect bias (mosqito bites)
+      + belonging - thick skin
+      + can't be yourself: remove "femininity"
+      + "Has anything changed?"
+      + working harder -- work/family
+      + Hiding emotions -- "no crying in science"
+  + reframing sterotypes 
+  + sterotype threat -- when you know one exists, you tend to internalize & perpetuate
+  + know your audience/know your goal/know yourself
+  + instead of reacting -- take a pause & respond
+  + Solutions:
+      + advocates & allies
+          + workshops for those that identify as men -- empathy/surprise/change
+          + mentorship & sponsorship
+          + bystander training
+      + tools for us: workshops for those who identify as women & underrep groups
+  + On quotas in the workplace: I want to be there b/c of my merit, but the system of merit is fundamentally flawed!!!!
+  + different definitions of merit -- female names means 1/2 as meritorious
+  + doesn't bother me how I got in the room, the issue is what do I do now that I'm in the room
+  + "goals" vs "quotas" -- our demographics should reflect the state b/c we are a state-institution
+
+**- Globalization of the workforce**
+
+  + growing lit on academic & institutional citizenship
+  + time allocation studies:
+      + time on research == greater productivity
+      + including foreign born are mostly limited to general professorate (not STEM)
+      + STEM-focused focus on productivity, not nativity
+      + studies of foreign-born focus on productivty & satisfaction, but not broader roles & contributions to institution
+  + research intentisve/extensive unis -- doctoral serving institutions (bio, biochem, civil engineering, math)
+  + FB more likely to be in engineering & math, younger, lower rank, was a postdoc, male, non-white, married
+  + FB/USB work about the same hrs
+  + FB spend 10% more on research, dropping time from service/teaching
+  + FB more likely to serve on search committees & journal editors
+  + NB uni committees, as student advisors, on gov't & community boards
+  + studies have shown that FB faculty are more productive in grants & publications
+  + time on research has significant & positive relationship with productivity
+  + service/teaching have significant & negative relationship w productivity
+  + is this deliberate strategy? or issues of inclusion?
+  + implications of different service composition:
+      + exlusion from participation in governance & leadership
+      + social capital advantages of service & leadership
+  + there is a willingness for foreigners to contribute, but misunderstandings of cultures make it difficult to be inclusionary 
+  + no formal orientation to interaction w. culture, institutional structure
+  
+  + consider getting list of NSF advance granted insitutions -- compare to non-advance -- does dept head/organizer matter for who is invited?
+
+#2019/02/16
+
+**- Bias in decision making**
+
+Unintentional Bias: (Patricia Devine)
+  + bias persists in those who renounce prejudice
+  + sterotypes & biases spring to mind effortlessly & often w/o awareness
+  + why? b/c exposed to stereotypes early & often
+  + leads unwitting complicity in the perpetuation of discrimination
+  + Reducing unintential bias is a a habit-breaking process -- enlists people as agents of change
+  + Learning objectives: (computerized: devine, 2012; forscher, 2017 -- in-person: carnes, 2015; Devine, 2017)
+    1. understanding that bias is ordinary, pervasive & not a moral failing
+    1. Understand that unintential bias disadvantages members of sterotyped groups
+    1. understand that bias is a habit that can be broken (i.e., requires effor overtime & likely will involve setbacks) - review steps in breaking a habit: motivation, awareness, strategies, effort
+    1. have self-efficacy to work on reducing bias over time
+    
+  + 3months later, faculty in intervention departments show increases in self-reported: awareness, self-efficacy to promote, action to promote gender equity
+  + intervention depts reported increased positive climate: fit in their departments, feeling their scholarship was valued, familial obligations
+  + dramatic increase in % of women hired
+  + must empower people w. full understanding of the obstacles to change & provide tools needed to effect change in a self-sustaining way -- spreads to the social contexts in which they live & work
+  
+Strategies to create momentum around diversity: (Sherilynn Black)
+  + Scott Page -- diversity is ethical 
+  + well-documented studies in gender, race/ethnicity, educational pedigree biases
+  + Many barriers:
+      1. imposter syndrome
+      1. lack of cultural awareness
+      1. lack of self-efficacy
+      1. lack of role-models
+      1. small UR trainee & faculty cohorts = incomplete support
+      1. leads to isolation, alienation
+      
+  + Many institutions <10% underrep trainees, <5% faculty/prof scientists
+  + Complete mismatch w. census data
+  + faculty need to be engaged at all levels in programmatic initiatives, grands, recruitment, mentorship
+  + provide professional development opportunities -- better mentor/scientist
+  + 1 year mentor training program, 25-30 hrs -- mixed methods
+  
+DORA - improving research assessment: best practices
+  + "Inferior" the science of gender Angela Saini
+  + How do we solve the problem of bias in research assessment?
+      1. define nature & scale
+      1. understand root causes
+      1. design & test tools & processes to fix it -- education, training, methiods for credible, time-efficent research assessment
+      
+  + Holst & Haag
+  + Lancet, Witteman, 2019
+  + Naomi Ellemers -- Gender Sterotypes
+  + Sterotyping leads to over-empahsis of differences, and underestimate of variations in groups
+  + Training:
+      1. Acknowledge the pervasive nature & impacts
+      1. Accept that we are all subjected to gendered expectations & that impacts judgements
+      1. Educate people to recognize the implicit effects that sterotypes have
+      
+  + JIF -- stereotyping research papers since 1972
+      + huge range of citation performance in any one journal
+      + 65% of papers have fewer citations than suggested by JIF
+      + JIF is a poor indicator of the number of citations of any given paper 
+      + journal metrics favor men (authorship, self-citation)
+  + JIF contributes to problematic "prestige economy"
+      + slowness, loss of productivity
+      + postive bias in the literature
+      + fraud, loss of trust
+      + journal ranking promotes "winner takes all" mentality that drives conservative & biases deciion-making & increases stress on the individual
+      + devaluation of otehr impt activities - disconnect btween academy & rest of society
+  
+  + new tools are essential to break old habits -- structured narratives
+      + research assessments that are narrative based -- nuanced & qualitative reviews
+      + needs built in processes to reduce bias: 
+          1. proactive search for underrep candidates
+          1. careful use of language in adverts
+          1. anonymixation of candidate info at triage stage
+          1. bias training for panels
+          1. diverse panels
+          1. a designated EDI observer at interview 
+          1. explorative & value-driven rather than aggressive interviews
+          
+  + How should we define success?
+      + reliable, rapidly comunicated, accessible, high-quality research
+      + researchers who collaborate, who feel a duty of care to communities & societies
+      + a research system that vlaues the people within it, considers quality of life
+      
+  + Understanding Interventions Meeting -- started a journal!
+  + understand the currency of constituents -- benefits to their sciences (e.g., diversity supplements on grants) as opposed to moral imperative -- learning community! we're all training & learning
+  + Process:
+      1. Lift the burden of proof from disadvantaged
+      1. Support employees in reconiciling M&F role expectations
+
+**- LGBTQA+ in STEM pipeline**
+
+  + Silence != Neutrality -- lack of visibilty of LGBT people in STEM
+  + culture/climate is heteronormative -- time required for success in STEM means less time engaging in queer communities -- "Don't ask, don't tell"
+  + "politics" of professionalism w/in STEM shut down conversations -- refusing to acknowledge preferred pronouns/names
+  + queerstem.org
+  + Journal of Homosexuality
+  + 500 queer scientists
+  + gender & orientation is extremely complex
+  + really need to distinguish sexual orientation from gender identity
+  + most are not out & alck mentors w. shared identities
+  + workplace harassment more common among T*/LGBQ
+  + T* participated in REUs 10% less than LGBQ, S&C
+  + less than 50% T* out for gender identity, <60% sexual orientation -- personal lives
+  + <20% out of T* GI/SO, or LGBQ SO
+  + minority SO & GI go into the closet at work, compared to their personal lives
+  + As move up the academic hierarchy, individuals become more "out" in their workplaces -- possibly b/c of increased longterm relationships, work security
+  + grad students & postdocs much more likely to be in the closet -- vulnerable?
+  + correlation btwn outness & welcoming climate -- v. diff experiences if out in welcome vs unwelcome climate
+  + T* recieve fewer promotions when out than not out -- incentivized to stay in the closet during career (industry)
+  + Climate affects career advancement fewer promotions for ALL groups!! (even S&C men)
+  + QCW & T* had higher pub rates when out in unwelcoming envi than welcoming
+  + QCM have higher pub rates when out in unwelcoming envi
+  + S&C W did not have different rates based on climate
+  + S&C M had higher pub rates in out & unwelcoming climates (part of the dominant group)
+  + leaks in stem pipeline are more severe for T* than LGBQ than S&C
+  + The STEM inclusion study: what are the implications of bias for LGBTQ persons' contributison & productivity in STEM -- is their work equally valued & supported?
+  + Questions:
+    1. equally qualified for & dedicated to their work
+        + no sig diff in education or hrs worked per wk 
+        + no sig diff in williningness to put in effort or importance of their work
+        + no diff in qualifications & dedications
+    1. fewer opportunties & resources
+        + less likely to have access to resources
+    1. more likely to discredited & devalued in the work plade
+        + colleagues think they're less productive
+        + must work harder than their collegues
+        + less likely to be held to the same standard
+    1. more likely to leave
+        + yes
+  + lesser feelings of work support & prof devaluation + less access to resources lead to increased attrition
+  + obstacles to professional advancement
+  + undervaluation & underrecogntion of contributions
+  + loss of STEM talent
+  
+  + Jeff Maloy -- collecting relevant data
+
+#2019/02/15
+
+**- Barriers to WoC**
+
+Double bind report, 1976
+
+Anita Hill -- insider status & outsider perspectives/values
+
+Factors: subordinate status, exclusionary practice, hostile climates, implicit bias, 
+
+Strategies that work -- crossdisplinary initative 
+
+Enhance professional socalization -- impt of developing managerial skills, need multiple & serial mentors, need for sponsors, need for communinalism (hesitancy to share ideas for fear of them being taken -- no credit, no collaboration), impt of narratives & counternarratives, safe spaces & counterspaces --- longitutdinal data disagregated by sex/ethnicity/race
+
+THe Negro Scientist - WB deBois, 1936 -- many of the same issues faced today
+
+A sense of belonging -- hierarchy of human needs
+
+Lancet women issue 
+
+**- Champions of Science -- Africa Storytelling Challenge Award**
+
+Michael Matlocz -- President of EuroScience, "euroscientist newsletter" euroscience.org
+
+"ideas are gender neutral, region neutral, and generation neutral" - Seema
+
+Stories of work on the African continent are often hidden. Build movement & tell stories that break sterotypes
+
+100 entries from 22 countries 
+
+South African Department of Science & Tech -- innovation is happening in Africa, but the way we are communicating it is not working -- just b/c we don't hear of it, doesn't mean it isn't happening
+
+  + Shift in govn't perception of the role of sci & tech have in the economy
+
+  + African Union - agenda 63, industrial development strategy
+
+  + Africa has a large population under 30 -- huge amt of human capital
+
+  + Emergence of African philanthropic orgs
+   
+Problem w. Childhood education in Africa -- speak monther language at home until they go to school where they are thrust into a an educational environment in an ex-colonial language -- leads to poor outcomes, maybe good to learn additional language b/c of globalization but implementation is problematic -- built language app for young kids
+
+ Training in Uganda is very theoretical with very little practical -- most research we see comes from relatively privledged individuals/organizations/regions 
+ 
+ I can't rely on anyone else to make the change, I must do it myself
+ 
+ Most research rely on data from other contentints to solve African problems - must publish our own b/c other isn't help
+ 
+ Disseminate at conferences are a big part of it. The biggest challenges probably come from funding, less publishing -- open source medical devices - euroafrican collaboration - dubora, an e-platform to sign up & create deviced underpinned w. European device standards
+ 
+ South African journal & magazine -- Yousef
+ 
+ @AfricanSciences twitter -- African Health Sciences
+
+**- Feminist Agenda in Scicomm**
+
+The field of scicomm has morphed from a male-dominated field in the 50's to a female-dominated field as it has become more "professional". Feminist theory would argue that scicomm has been feminized by "ethics of care" -- who takes on the role of nurturing and education. The dearth of tenure-track scicomm positions and the decline in their prestige as a "back up" career make it conform to the paradigm that **education is subordinate to knowledge generation**. Tania Perez-Bustos argues that we should take advantage of the feminization of scicomm to also feminize science via the "politics of care". Use the platform to give voices to scientists that belong to marginalized communities (gender, racial, LGBTQA, etc.). Use this to show that science can be done by different bodies & widen the idea of who can be a scientist, which in turn should create a more caring scientific field. (e.g., Brigitte Baptiste, TED Talk)
+
+noted that **media in the south** covers science from the north b/c they have the perspective that **science is produced in the north**. 
+
+Stephanie is an ethnographer, describes "feminist techno-science" which holds that science is inherently political -- continuously ask the questions: **"who benefits, how, and at whose expense?"**
+
+Scicomm research journal -- Public Understanding of Science
+
+Feminist standpoint theory -- holds that individuals at the periphery of an organization (such as those marginalized), have a better understanding of the organization & it's structure as a whole, b/c they have paid more attention in ther fight upstream -- their observations/insights are highly valuable
+
+Naiomi ?? - historian, paper on heroism and objectivity -- argues that feminized positions in science (computers, tech) are more objective than the masculinized position of the PI
+
+Huge increase in the # of women in forensic science --- by product of women in these positions on TV, e.g., Bones, NCIS, CSI, etc.
+
+Do I follow Stephaie Page on twitter?
+
+Arranged meeting w. Tania to discuss barriers to publication by scientists in the global south
+
+#2019/02/14
+
+**- AAAS**
+
+Traveled to DC! 
+ 
+Read 1 paper -- Sterotypes & STEM
+
+Elyse -- Michigan Framework talk -- met Paula Croxson, works w. Storycollider, scicomm position at Columbia U
+
+President's Address -- Peggy Hamburg "The time for outrage is over, it's time to act" - "SEACHANGE" initiative
 
 #2019/02/13
 
