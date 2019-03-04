@@ -2,11 +2,202 @@
 title: "Lab Notebook: February 2019"
 output: html_document
 ---
+#Goals: Feb 25 - Mar 1
+1. Authorship paper:
+    + cont read Lancet Women's issue
+
+1. Monthly journals report
+    + ~~continue working through Dashboard book~~
+    + ~~stream-line highwire data retrieval~~
+
+1. Geographical survey - Mia
+    + Work on representation figures
+    + Send CV to Paul?
+    + ~~Meeting - Mon @11~~
+
+1. ASM HQ - Tuesday
+    + ~~Quarterly Journals Staff mtg - 1pm~~
+    + ~~Microbe talk mtg - 2pm~~
+    + ~~Slides for microbe talk?~~
+    
+1. SWC - Thursday
+    + ~~Teach Git - afternoon~~
+    + ~~Update Git Lesson plan~~
+    
+1. ASM blog
+    + outline/research "origins of life"
+
+#2019/02/28
+
+**- SWC lesson**
+
+Feedback:
+  + many appreciated having class repeat functions, but for some it got old -- need to find a way to get continuous feedback  -- also a comment that it could be confusing?
+  + request for digital concept map of my analogy
+  + iterate that when they do come up with a question, they should ask
+  + some students didn't hear commands/codes -- need to write/draw if I don't type
+  + some still had a hard time with .gitignore
+  + github needs more time/go slower
+  + try to hide responses until everyone has answered
+  + some students were confused b/c my planets repo was at a different place from theirs -- I found it helpful in a couple places to demonstrate differences (e.g, when I had a .dat file staged before generating the .gitignore file)
+  + lots of positive feedback on my analogy -- how can I extend it to .gitignore??
+  + positive feedback on repeating concepts/commands
+
+**- ASM blog**
+
+Made suggestions to Janet's post.
+
+#2019/02/27
+
+**- Travel back from DC**
+
+**- Authorship paper**
+
+Read a paper on the influence on gender to achievements & hiring outcomes.
+
+#2019/02/26
+
+**- Quarterly Journals Staff mtg**
+
+Check out CrossRef for cites API -- monthly reports & JIF???
+
+**- Microbe talk**
+
+Finished rough draft of slides & sent to Amy.
+
+Meeting @ 2pm:
+  + adapt slides to ASM
+  + refine slides
+  + Jasmine addressing pre-prints
+  + predatory -- emails overly ingratiating
+  + predatory -- looks reputable b/c similar name (email to ask about impact factor/indexing)
+  + ASM takes them (pre-sub inq), but review process is so quick that aren't considered necessary
+  + out-of-scope -- always come w/ editor suggestion for appropriate journal having read the manuscript -- facilitate the transfer process
+  + move preprints last?
+  + all ASM articles OA 6mo after publication regardless
+  + example of Altmetrics 
+  + introduce Jasmine -- submission process
+  + 45 minutes total -- 8 min each -- Strict!
+  + focus on major points/overview
+  + final summary slide
+  + graphical abstract
+  + need final slides by May
+
+**- Monthly journals report**
+
+Worked to update streamlining download of Highwire data -- this will have to be done manually each month :( -- unfortunately, one of the dashboards fails when I try to download the data. I've notified Eric Hall, a rep at Highwire of the issue.
+
+Updated README to include instructions for sourcing the requesite data.
+
+Need to update `clean_test_data`, `get_test_data`, and `load_test_data` to appropriately source and name output files. Merged `clean_test_data` and `get_test_data` & renamed as `merge_clean_report_data`. `load_test_data` and `get_report_functions` are redundant. Deleted `load_test_data` and renamed `get_report_functions` to `load_report_data_functions`. `get_report_data` was redundant with `merge_clean_report_data` - Delete. Updated `run_monthly_reports` to reflect the changes in script names. 
+
+Cont reading dashboard book. I'd like to replace the submissions comparison chart with one of their comparison line plots.
+
+#2019/02/25
+
+**- Microbe**
+
+Worked on rough draft of slides for the talk to share at mtg tomorrow.
+
+**- Mia**
+
+Meeting w. Mia -- talked about changes I made to condense code & generate functions.
+
+**- SWC**
+
+Updated Git lesson & exercises to include Unix `data-shell/` directory.
+
+Check in w. Zena about SWC later this week -- she suggested using the UNIX folders for git exercises.
+
+**- Misc**
+
+Weekly report
+
+#Goals: Feb 19 - 22
+1. Authorship paper:
+    + ~~Gender representation figures~~
+    + ~~Paper in progress report~~
+    + ~~read Lancet Women's issue~~
+
+1. Monthly journals report
+    + continue working through Dashboard book
+    + stream-line highwire data retrieval?
+
+1. Geographical survey - Mia
+    + ~~Work on representation figures~~
+    + ~~Feedback on figures~~
+    + Send CV to Paul
+
+1. Estimated JIFs
+    + Start script A -- Pull all indexed items from Web Services Lite for two year period
+
+#2019/02/22
+
+**- Authorship paper**
+
+Continue reading Lancet Women's issue
+
+**- Monthly journals report**
+
+Finally heard back from Joel this week. What steps in the workflow do I need data from? I think we'll start with the "initial qc complete" & "any decision" trigger points & work from there. 
+
+What I need: Editor assigned & date. Date of first decision. Final decision. Publication date.
+
+**- Mia**
+
+Arrange to meet with her Monday at 11.
+
+**- Misc**
+
+Dealt with reimbursement & travel to ETSU.
+
+#2019/02/21
+
+**- Sick**
+
+#2019/02/20
+
+**- Authorship paper**
+
+Read more of the Lancet Women's issue.
+
+Commented on Mia's commit from Friday.
+
+Worked on building the `get_prop_by_yr` function to include several options to specify journals. _SUPER_ close to getting it to work. Just need to figure out the `tryCatch`
+
+**- Misc**
+
+Compiled reciepts for reimbursement.
+
+Arranged travel to ETSU in March.
+
+Submitted work order for hallway water fountain.
+
+#2019/02/19
+
+**- lab meeting**
+
+try backing up laptop to flux
+
+present paper-in-prog
+
+**- Authorship paper**
+
+Finish Paper-in-prog draft.
+
+Started reading Lancet Women's issue commentaries.
+
+**- Misc**
+
+Weekly report, set goals.
+
+Add resources to dept DEI presentation
+
 #Goals: Feb 11 -15
 1. Authorship paper:
     + ~~Gender representation figures~~
     + ~~Paper in progress report~~
-    + read 2 papers: I
+    + ~~read 2 papers~~
 
 1. Monthly journals report
     + continue working through Dashboard book
@@ -25,7 +216,7 @@ output: html_document
     + Start script A -- Pull all indexed items from Web Services Lite for two year period
     
 1. AAAS - Thurs-Sun
-    + Dinner w. Amy Chang, Friday @ 6pm
+    + ~~Dinner w. Amy Chang, Friday @ 6pm~~
     + ~~Plan sessions/workshops~~
     
 1. DEI
@@ -38,7 +229,7 @@ output: html_document
   + CVs for Assist prof hire: men preferred 2:1, 4x more 
   + Posdoc apps: women have to publish >99 papers to be seen as competent as man w. about 35 papers
   + white sounding names recieve 50% more callbacks for interviews
-  + wearting gay & proud apparel resulted in empolyers spending less time, used fewer words & acted more negatively
+  + wearing gay & proud apparel resulted in empolyers spending less time, used fewer words & acted more negatively
   + same regardless of M or F reviewer
   + 50% of women report having been harassed
   + 20-50% of women experience sexually harassing behavior from faculty/staff
@@ -376,7 +567,7 @@ How can we revamp code review?
 
 R studio has a spell check ???
 
-```{r}
+```
 #community mouse1day1 (phylum)-- piechart
 data %>% filter(Level == "Phylum", day == 1, mouse == 1) %>% 
   group_by(Classification) %>% summarise(n = n()) %>% 

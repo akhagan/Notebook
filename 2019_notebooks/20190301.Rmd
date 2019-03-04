@@ -1,0 +1,111 @@
+---
+title: "Lab Notebook: February 2019"
+output: html_notebook
+---
+#Goals: Mar 4 - Mar 8
+1. Authorship paper:
+    + cont read Lancet Women's issue
+    + Finish gender rep figures
+
+1. Monthly journals report
+    + test monthly reports pipeline?
+    + update figures
+
+1. Geographical survey - Mia
+    + Work on representation figures
+    
+1. Microbe Talk
+    + ~~Clean up slides~~
+    
+1. SWC
+    + ~~Update Lessons per Thursday Feedback~~
+    
+1. ASM blog
+    + outline/research "origins of life"
+
+#2018/03/04
+
+**- ASM blog**
+
+outline/research "origins of life"
+
+**- Microbe talk**
+
+Clean up slides
+
+**- Update Git Lessons**
+
+Add analogy for .gitignore files & update instructions to self/setup sections.
+
+**- Misc**
+
+AAAS & ASM trip reimbursements. 
+
+Weekly report. 
+
+List.files example to Emily
+
+#Goals: Mar 4 - Mar 8
+1. Authorship paper:
+    + cont read Lancet Women's issue
+
+1. Monthly journals report
+    + ~~continue working through Dashboard book~~
+    + ~~stream-line highwire data retrieval~~
+
+1. Geographical survey - Mia
+    + Work on representation figures
+    + Send CV to Paul?
+    + ~~Meeting - Mon @11~~
+
+1. ASM HQ - Tuesday
+    + ~~Quarterly Journals Staff mtg - 1pm~~
+    + ~~Microbe talk mtg - 2pm~~
+    + ~~Slides for microbe talk?~~
+    
+1. SWC - Thursday
+    + ~~Teach Git - afternoon~~
+    + ~~Update Git Lesson plan~~
+    
+1. ASM blog
+    + outline/research "origins of life"
+    
+
+#2019/03/01
+
+**- SWC Python**
+
+Anaconda is a collection of data science "packages" written in python.
++ Add strings together with "+" or multiply with "*"
++ "Type" has two characteristics: the data & the methods that can be applied to the data
++ autofill in python "name." gives list of actions that can be performed on that variable
++ Move order of cells by clicking on cell & using up/down arrows in the menu
++ Hit esc to toggle out to "command mode" then A to insert a cell above the cell you're in
++ delete a cell w. esc - X
++ Juypter supports markdown
++ Python can be used with either Python, R or Julia kernals
++ Rodeo - RStudio for Python
++ headers are important, glossaries are even better
+
+```{r}
+library(reticulate)
+use_virtualenv("r-reticulate")
+py_available(TRUE)
+```
+```{python}
+name = "fred rogers"
+len(name)
+```
+
+**- Emails**
+
+Deborah about API needs for cites/usage.
+
+Elle about followup survey for reviewers
+
+Amy K about ethics & DEI/bias
+
+Amy C about BOD meeting
+
+
+**- goal for next week? concept map of publishing talk...**
