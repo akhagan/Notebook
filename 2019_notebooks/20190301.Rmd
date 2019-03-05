@@ -9,7 +9,7 @@ output: html_notebook
 
 1. Monthly journals report
     + test monthly reports pipeline?
-    + update figures
+    + update figures from new dataset
 
 1. Geographical survey - Mia
     + Work on representation figures
@@ -22,6 +22,14 @@ output: html_notebook
     
 1. ASM blog
     + outline/research "origins of life"
+
+#2018/03/05
+
+**- Lab meeting**
+
+**- Authorship paper**
+
+FINALLY finished my function w. 3 nested if statements & an internal mapping function!!!! -- it came down to an issue of quotes. Go figure.
 
 #2018/03/04
 
