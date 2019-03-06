@@ -23,7 +23,15 @@ output: html_notebook
 1. ASM blog
     + outline/research "origins of life"
 
-#2018/03/05
+#2019/03/06
+
+**- Authorship paper**
+
+Finish writing functions & scripts to generate **45** customized plots of the unique, published & submitted authors for each type for both all ASM journals combined and separate.
+
+Also cleaned up & finished scripts to generate/save similar plots for editors & reviewers. Something's odd about the "senior editor" grouping... need to check that out.
+
+#2019/03/05
 
 **- Lab meeting**
 
