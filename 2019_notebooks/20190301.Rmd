@@ -12,7 +12,7 @@ output: html_notebook
     + update figures from new dataset
 
 1. Geographical survey - Mia
-    + Work on representation figures
+    + Spring Break
     
 1. Microbe Talk
     + ~~Clean up slides~~
@@ -22,6 +22,20 @@ output: html_notebook
     
 1. ASM blog
     + outline/research "origins of life"
+
+#2019/03/07
+
+**- Meeting w. Speaker**
+
+Steven Finkel gave me a great idea! Apparently, NIH/NSF collect race/ethnicity data of fundees -- use acknowledgements section to get awards & link back to race data!
+
+**- Sukhmani's defense**
+
+**- Seminar**
+
+**- Authorship paper**
+
+Wrote scripts for box plots of reviewer frequency by gender & editor assignment by gender.
 
 #2019/03/06
 
