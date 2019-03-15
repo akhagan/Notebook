@@ -2,10 +2,116 @@
 title: "Lab Notebook: February 2019"
 output: html_notebook
 ---
+#Goals: Mar 11 - Mar 15
+1. Authorship paper:
+    + cont read Lancet Women's issue
+    + Revise gender rep figures
+    + Double-check how I handled hypens in names
+    + Generate de-identified summary dataset
+
+1. Dept DEI
+    + Present at DEI meeting - Mon @noon
+
+1. Geographical survey - Mia
+    + Finish geographic bias
+    
+1. ASM blog
+    + outline/research "origins of life"
+    + write draft of "origins of life"
+    + comments on ? post
+    
+1. Code review
+    + Prep code review for next week
+    + Present at lab meeting
+
+
+#Goals: Mar 11 - Mar 15
+1. Authorship paper:
+    + cont read Lancet Women's issue
+    + ~~Revise gender rep figures~~
+    + ~~Update representation intro/disc/methods~~
+
+1. Dept DEI
+    + ~~Skype w. Josie @ 10~~
+    + ~~Present at faculty meeting - Tues @noon~~
+
+1. Geographical survey - Mia
+    + Finish geographic bias
+    
+1. ASM blog
+    + ~~outline/research "origins of life"~~
+    + ~~comments on paleomicro post~~
+    
+1. Prep code review for next week
+
+1. DEI certificate
+    + ~~Microaggressions - Thurs,@ 3pm~~
+    + ~~“Liberating Structures” - Fri, @ noon~~
+
+#2019/03/15
+
+**- Authorship paper** 
+
+Finally finished the alluvial plot(s)!!
+
+**- Mia**
+
+Checked in on progress & provided another round of feedback for her ASM capstone application.
+
+**- DEI certificate**
+
+Attended "Liberating Structures" & submitted reflection forms for both it and yesterday's session. I'm all done now!!
+
+#2019/03/14
+
+**- Authorship paper**
+
+Organized data into format for alluvial plot.
+
+Revised Representation intro, discussion & method outlines.
+
+**- Seminar**
+
+**- DEI certificate**
+
+Attended a session/panel on microaggressions.
+
+#2019/03/13
+
+**- Authorship paper**
+
+Worked on revising gender rep figures. Decided to try to make alluvial plots to track flow of indivivduals from jr author -> sr author -> potential rev -> reviewer -> editor.
+    
+#2019/03/12
+
+**- Lab meeting**
+
+**- ASM blog**
+
+Suggestions to paleomicrobiology post.
+
+Work on "origins of life" post research.
+
+**- Dept DEI**
+
+Update graphs & go over slides w. Josie.
+
+Present to faculty!
+
+#2019/03/11
+
+**- Dept DEI**
+
+Update slides for Josie.
+
+**- Misc**
+
+Weekly report
+
 #Goals: Mar 4 - Mar 8
 1. Authorship paper:
     + cont read Lancet Women's issue
-    + Finish gender rep figures
+    + ~~Finish gender rep figures~~
 
 1. Monthly journals report
     + test monthly reports pipeline?
@@ -22,6 +128,27 @@ output: html_notebook
     
 1. ASM blog
     + outline/research "origins of life"
+
+#2019/03/08
+
+**- Meeting w. Josie**
+
+Tweak a couple of graphs. Send resources for representation matters. 
+
+**- Authorship paper**
+
+Figured out how to print all of my png files using `Rmd`. Going to try to story board the gender section of the representation paper. What do I have, what do I need, what is most interesting/helpful?
+
+Came up with several questions/suggestions for presenting the data to see the differences more clearly:
+1. is the increased publication proportion relative to submission proportional for M vs W?
+1. overlay subs & pubs over time or totals
+1. what is the distribution of subs & pubs by individuals by gender --> boxplot? i.e., what gender is more likely to have multiple papers -- looking at last/coress
+1. Look at %women overtime by journal (& %M, %U)
+1. plot unique F/L/C/M % or total unique auth OT -- are we retaining w?
+1. what is n of senior editors?
+1. plot prop of potential rev vs actual rev over time -- how does that compare to first/last auth
+1. are m/w handeling equivalent shares of papers? -- unique editor - % of total papers?
+
 
 #2019/03/07
 
