@@ -2,28 +2,105 @@
 title: "Lab Notebook: February 2019"
 output: html_notebook
 ---
-#Goals: Mar 11 - Mar 15
+#Goals: Mar 25 - 29
+1. Authorship paper:
+    + cont read Lancet Women's issue
+    + Review gender rep story/figures
+
+1. ~~Spring strategic plan~~
+
+1. ~~SWC Meeting - Tues @ 9am~~
+
+1. Lab meeting - Tues @ 2pm
+
+1. ASM blog
+  + ~~submit S. epi post~~
+  + revise S. epi post
+  
+#2019/03/25
+
+**- Spring strategic plan**
+
+**- Prep for Thursday talk**
+
+title: Falling with Style: A Millenial's Career Path
+
+central message: career paths aren't linear, be open to opportunity & willing to take risks
+
+outline:
+
+**- Finished & submitted S. epi post**
+
+#Goals: Mar 18 -22
 1. Authorship paper:
     + cont read Lancet Women's issue
     + Revise gender rep figures
-    + Double-check how I handled hypens in names
-    + Generate de-identified summary dataset
+    + ~~Double-check how I handled hypens in names~~
+    + ~~Generate de-identified summary dataset~~
 
 1. Dept DEI
-    + Present at DEI meeting - Mon @noon
+    + ~~Present at DEI meeting - Mon @noon~~
 
 1. Geographical survey - Mia
     + Finish geographic bias
     
-1. ASM blog
-    + outline/research "origins of life"
-    + write draft of "origins of life"
-    + comments on ? post
+1. ASM blog -- Monday
+    + ~~outline/research "S.epi"~~
+    + write draft of "S.epi"
     
-1. Code review
-    + Prep code review for next week
-    + Present at lab meeting
+1. Code review -- Tuesday
+    + ~~Prep code review~~
+    + ~~Present at lab meeting~~
 
+#2019/03/21
+
+**- Begum's specific aims**
+
+Review & make suggestions.
+
+**- Authorship paper**
+
+Finished function to randomize the day portion of dates & added the calculation for the interval between decision date & ready.for.production.date to the parse xml functions.
+
+Compiled all scripts from xml parsing project into a single pipeline that used the api as a commandline argument & submitted it to flux. The result should be a completely de-identified dataset in a few weeks.
+
+#2019/03/20
+
+**- Authorship paper**
+
+Double-checked how I handled hyphens & realized that I didn't address either periods or hyphens in names. Also realized that a `case_when` statement wasn't working if there were multiple issues within a single name entry. Redesigned `replace_special` as a series of `if_else` statements. Need to re-run the genderize analysis again.
+
+Working on creating a function to randomize the day portion of the dates to further anonymize the dataset.
+
+Also need to calculate the days between decision date & ready.for.production.date.
+
+**- Prepped for lab meeting next week**
+
+#2019/03/19
+
+**- Authorship paper**
+
+Worked on new summary figures
+
+**- Nellie Tran Seminar**
+
+**- Prepped & sent out code review**
+
+**- Lab meeting**
+
+Code review. Meeting w. Pat on Friday morning. Look at map2/pmap?
+
+Going to work w. Begum on her specific aims & proposal.
+
+#2019/03/18
+
+**- DEI meeting**
+
+**- ASM blog post** 
+
+Switch topics to skin microbiota & immunity.
+
+Pull relevant papers & start taking notes & making the outline.
 
 #Goals: Mar 11 - Mar 15
 1. Authorship paper:
