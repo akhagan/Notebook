@@ -1,5 +1,5 @@
 ---
-title: "Lab Notebook: February 2019"
+title: "Lab Notebook: March 2019"
 output: html_notebook
 ---
 #Goals: Mar 25 - 29
@@ -11,11 +11,32 @@ output: html_notebook
 
 1. ~~SWC Meeting - Tues @ 9am~~
 
-1. Lab meeting - Tues @ 2pm
+1. ~~Lab meeting - Tues @ 2pm~~
 
 1. ASM blog
   + ~~submit S. epi post~~
-  + revise S. epi post
+  + ~~revise S. epi post~~
+
+#2019/03/27 - 29
+
+**- ASM blog**
+  + revised S. epi post
+  + suggestions on Salmonella post
+  + read/commented Graduate education white paper for blog post
+
+#2019/03/26
+
+**- Lab meeting**
+
+**- Prep Thursday talk**
+
+**- Authorship paper**
+
+Worked on github management. Updated code for failed flux run & restarted.
+
+**- Lab Check-in**
+
+**- SWC Meeting**
   
 #2019/03/25
 

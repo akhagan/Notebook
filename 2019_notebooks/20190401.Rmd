@@ -1,0 +1,210 @@
+---
+title: "Lab Notebook: April 2019"
+output: html_notebook
+---
+#Goals: April 15 - 19
+1. Gender bias paper:
+    + figure 3
+    
+1. SWC Git Revamp
+    + graphic of puzzle analogy
+    
+1. Estimated JIF
+    + develop strategy
+    + learn crossRef API
+
+1. Monthly journals report
+    + Pull new data
+    + All journals report: submissions comparison & transfers
+    + Each journal report: problem manuscript report
+    
+1. Lab Meeting
+    + Prep
+    + Present gender rep figures
+
+#Goals: Apr 8 - 12
+1. Authorship paper:
+    + ~~Tweak gender rep figures~~
+    + ~~Add gender rep story/figures to rmd~~
+
+1. Gender bias paper:
+    + ~~figure 1, split by journal~~
+    + ~~figure 2~~
+
+1. Estimated JIF
+    + develop strategy
+    
+1. Dept DEI
+    + ~~draft website update~~
+    + ~~submit to Harry etc.~~
+    + ~~Meet w. Harry about faculty salary - Mon @ 3~~
+    + ~~Meet w. Meghan - Thurs @ 9~~
+
+1. ASM Blog
+    + ~~revise white paper post~~
+
+#2019/04/12
+
+**- Gender bias**
+    + figure 1, Is there a disparity in acceptance rates based on author gender? -- Consider looking at (or eliminating) paper withdrawal M/W
+        + Across all ASM Journals
+        + Split by journal
+    + figure 2, Do papers authored by women take longer to get accepted than those authored by men?
+        + Number of revisions
+        + Time (in ASM’s hands) from initial submission to acceptance
+
+**- Mia**
+
+Checked in on code. Worked on generalizing scripts. Need to figure out why `!!quo_group` isn't working for her.
+
+#2019/04/11
+
+**- Meet w. Meghan**
+
+**- ASM blog**
+
+Make suggestions to Jennifer's post.
+
+**- Authorship paper**
+
+Continue tweaking gender representation figures and add to `.rmd`.
+
+Share `.rmd` with Pat.
+
+**- Prep for Lab Meeting**
+
+Share draft of genderize and gender results on Slack, along with paper-in-progress doc. Asked for big picture feedback:
+    - does the evidence for the genderize analysis logically make sense? Is it sufficient?
+    - given the details in (or alluded to in) the abbreviated notes, do the figures seem to give a complete picture of gender representation?  
+    - what do you think should be made available in supplemental?
+
+#2019/04/10
+
+**- Authorship paper**
+
+Tweak gender representation figures
+
+**- Postdoc meeting**
+
+QPR training
+
+**- ASM blog**
+
+Revisions to white paper post
+
+#2019/04/09
+
+**- Authorship paper**
+
+Read Paul, Bosu & Sultana, 2018; Applebaum, 2018
+    
+#2019/04/08
+
+**- Authorship paper**
+
+Read Fox and Paine, 2019. They found that slightly lower reviewer scores explained the difference in decisions on F-authored papers following peer review. Why did they not recommend discontinuation of review scores???!
+
+**- Department DEI**
+
+Drafted an update to the dept DEI page & sent it to Harry, Akira, and Ann for comments.
+
+**- Meet w. Harry @ 3pm**
+
+Found a few different options for submissions. 
+
+Drafted a rough outline & read some papers on the gender pay gap.
+
+A good review: https://journals.sagepub.com/doi/full/10.1177/0095399716636928
+
+He seems semi-interested. Gonna have to bug him about it.
+
+#Goals: Apr 1 - 5
+1. Authorship paper:
+    + cont read Lancet Women's issue
+    + ~~Review gender rep story/figures~~
+
+1. Gender bias paper:
+    + ~~figure 1~~
+
+1. Lab meeting
+    + ~~read Begum's paper~~
+
+1. Estimated JIF
+    + ~~read about CrossRef~~
+    + develop strategy
+    
+1. Dept DEI
+    + draft website update
+
+1. ASM Blog
+    + ~~outline white paper post~~
+    + ~~questions/~~comments from Arturo
+    + ~~draft~~
+    + ~~revise~~
+    + ~~submit to Julie - F~~
+
+#2019/04/05
+
+**- Authorship paper**
+
+Generated, printed and examined all figures. Culled from 100 to <20 for representative figures. Need to tweak figures and add to submission `.rmd`.
+
+**- Gender bias**
+
+Cleaned up repo. Generated first figure on acceptance rates. Need to split for journals.
+
+**- Misc**
+
+STEM inclusion study.
+
+#2019/04/04
+
+**- ASM blog**
+
+Finish and submit white paper post to Julie. She'll send it out for comments/edits.
+
+#2019/04/03
+
+**- ASM blog**
+
+Work on researching and drafting white paper post.
+
+#2019/04/02
+
+**- Seminar**
+
+**- DEI Certificate**
+
+Took exit IDI & completed survey
+
+**- ASM blog**
+
+Pulled up relavent sources. Drafted an outline. Emailed questions to Arturo.
+
+#2019/04/01
+
+**- Paper for lab meeting**
+
+**- Estimated JIF**
+
+Checked out CrossRef APIs. CrossRef has a number of APIs and search functions (https://www.crossref.org/services/metadata-delivery/). They also have a tool (Metadata Plus), for production services - Need to check if ASM has this & if I can get access. 
+
+There is also an API for reference linking - https://support.crossref.org/hc/en-us/articles/213420726
+
+The REST API - https://github.com/CrossRef/rest-api-doc
+
+An R interface for REST - https://github.com/ropensci/rcrossref (installed package)
+
+the OAI-PMH - https://support.crossref.org/hc/en-us/articles/213679866-OAI-PMH-subscriber-only-
+
+OpenURL - https://support.crossref.org/hc/en-us/articles/214880143-OpenURL
+
+Query service accounts - https://support.crossref.org/hc/en-us/articles/213198266-Query-service-accounts
+
+**- Misc**
+
+Weekly report, set goals, get oriented.
+
+**- Microbe - Folklore**
+
+Started compiling microbiological folklore & notes
