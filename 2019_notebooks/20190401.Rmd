@@ -2,9 +2,39 @@
 title: "Lab Notebook: April 2019"
 output: html_notebook
 ---
+#Goals: April 22 - 26
+1. Gender bias paper:
+    + finish fig 4 - logistical regressions
+    + finish fig 3 
+    
+1. Meet w. Pat -- Mon @ 2:30pm
+
+1. DEI 
+    + Certificate -- Mon @ 12 - 2pm
+    + Inclusive Listening -- Thursday @ 9:30
+    
+1. Kat Milligan-Meyer Visits -- Friday
+    + Seminar @ noon
+    + one-on-one @ 2:45pm
+    
+1. SWC 
+    + Meeting -- Tuesday @ 9
+    + Git Revamp - Git A lesson
+    
+1. Estimated JIF
+    + develop strategy
+    + learn crossRef API
+
+1. Monthly journals report
+    + All journals report: submissions comparison & transfers
+    + Each journal report: problem manuscript report
+    
+1. Publishing in Dev Countries
+    + submit questionaire to IRB
+
 #Goals: April 15 - 19
 1. Gender bias paper:
-    + figure 3
+    + ~~figure 3~~
     
 1. SWC Git Revamp
     + graphic of puzzle analogy
@@ -14,13 +44,124 @@ output: html_notebook
     + learn crossRef API
 
 1. Monthly journals report
-    + Pull new data
+    + ~~Pull new data~~
     + All journals report: submissions comparison & transfers
     + Each journal report: problem manuscript report
     
 1. Lab Meeting
-    + Prep
-    + Present gender rep figures
+    + ~~Prep~~
+    + ~~Present gender rep figures~~
+
+#2019/04/19
+
+**- Work on schematics**
+
+  + Git puzzle analogy
+  + Generate schematic of gender assigment process
+  + figure of equation to calculate negative impact on gender prediction
+
+#2019/04/18
+
+**- Dept DEI**
+
+Made suggested changes to the website update.
+
+**- Authorship paper**
+
+Work on suggested changes to gender rep section
+  Genderize
+  + Highlight, draw attention to countries with gender-neutral naming conventions in plot
+  + Histogram/density plot of names/country -- possibly show difference between before/after genderize
+  + Graphic of global vs ASM ratios in supplemental
+  + check & clarify what numbers are at the end of bars in genderize plots
+  
+Flux job finally terminated. Not all of the manuscripts are matching to grouped manuscript numbers for some reason. Also, I have to upload the csv of correct editor genders to flux.
+
+Generated public/private keys & figured out how to mount flux so that I can add/remove docs. Also backed up my hard drive to flux.
+
+Fixed issues with the dataset generating scripts & used Arc Connect!
+
+Generated datasets ready for analysis & moved to hard drive. Need to re-generate the editor comparision csv for the genderize analysis.
+
+Sent log regression table to Begum.
+
+#2019/04/17
+
+**- Gender bias**
+
+Work on logistic regression table for impact of gender on publication.
+
+**- Authorship paper**
+
+Work on suggested changes to gender rep section
+  Genderize
+  + ~~Move genderize validation to methods & supplemental~~
+
+  Editors
+  + ~~pool senior & non-senior editor together for "proportion of editors" plot~~
+  + ~~line plot of editor proportions weighted by the number of papers handled -- possibly combine w. unweighted proportion of editors~~
+  + ~~need to elminate editorial rejections from papers handled~~
+  + ~~mBio/mSphere/mSystems - only journals that use senior/editor hierarchy. Separate into different senior editor/editor proportion graphic from other journals & add both lines~~
+  + ~~line plot of weighted editor proportions by journal~~
+  + ~~drop graphic for comparision of senior author - potential rev - reviewer -- move that to the summary section~~ & add details in the text
+  
+  Summary
+  + ~~Change publication rate disparity to acceptance rate disparity~~
+
+**- Misc**
+
+Read Pat's proposal
+
+Plan next couple of weeks
+
+Convince Begum to write a blog with me :D
+
+#2019/04/16
+
+**- Lab meeting**
+
+Present progress on gender rep figures.
+
+Comments/Suggestions:
+  + ~~Move genderize validation to methods & supplemental~~
+  + Generate schematic of gender assigment process
+  + Highlight, draw attention to countries with gender-neutral naming conventions in plot
+  + Histogram/density plot of names/country -- possibly show difference between before/after genderize
+  + Graphic of global vs ASM ratios in supplemental
+  + figure of equation to calculate negative impact on gender prediction
+  + check & clarify what numbers are at the end of bars in genderize plots
+  + pool senior & non-senior editor together for "proportion of editors" plot
+  + line plot of editor proportions weighted by the number of papers handled -- possibly combine w. unweighted proportion of editors
+  + need to elminate editorial rejections from papers handled
+  + mBio/mSphere/mSystems - only journals that use senior/editor hierarchy. Separate into different senior editor/editor proportion graphic from other journals & add both lines
+  + line plot of weighted editor proportions by journal
+  + drop graphic for comparision of senior author - potential rev - reviewer -- move that to the summary section & add details in the text
+  + Change publication rate disparity to acceptance rate disparity
+  
+**- Begum's upgoerfive abstract**
+
+**- Prep for lab meeting**
+
+**- Read Nick's paper**
+
+**- Monthly journals report**
+
+Transfered some ejp file & started a bash script to automate the process. Except you can't automate sftp w/out dealing w. pass keys.
+
+Worked on adapting the xml parsing script to the new data from ejp & generated a df to work on remaining figures.
+
+#2019/04/15
+
+**-Gender bias paper**
+
+Fig. 3 - Are papers authored by women ranked differently by reviewers? -- generated several figures to try to understand _what_ the ranking system is for each journal, not sure that I succeeded so I found the Instructions to Reviewers for the different journals on the shared drive. Also generated several figures trying to compare ranking by journal across genders. 
+          + Does ranking correlate to impact (via citations)? -- need dois to answer this question
+          
+Fig. 4 - How does gender of author/reviewer/editor influence outcomes?
+          + statistical regression (GRE papers)
+          + Read up on logistical regression and started coercing gender data into a format for logistical regression. Having trouble with the factors. 
+          + It might also be interesting to look at time to publish (days.pending) in terms of the hazard regression.
+          + To convert reviewer gender into a logistical variable, I calculated the proportion of reveiewers that were men on each manuscript (using manu number, not grouped manu). Per Ryan's query that there might be a dose-dependent response, the scale ranged from "All men == 0" to "No men == 4". He also suggested looking up P tests for trends.
 
 #Goals: Apr 8 - 12
 1. Authorship paper:
