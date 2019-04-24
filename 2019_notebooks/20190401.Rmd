@@ -7,10 +7,10 @@ output: html_notebook
     + finish fig 4 - logistical regressions
     + finish fig 3 
     
-1. Meet w. Pat -- Mon @ 2:30pm
+1. ~~Meet w. Pat -- Mon @ 2:30pm~~
 
 1. DEI 
-    + Certificate -- Mon @ 12 - 2pm
+    + ~~Certificate -- Mon @ 12 - 2pm~~
     + Inclusive Listening -- Thursday @ 9:30
     
 1. Kat Milligan-Meyer Visits -- Friday
@@ -18,8 +18,8 @@ output: html_notebook
     + one-on-one @ 2:45pm
     
 1. SWC 
-    + Meeting -- Tuesday @ 9
-    + Git Revamp - Git A lesson
+    + ~~Meeting -- Tuesday @ 9~~
+    + ~~Git Revamp - Git A lesson~~
     
 1. Estimated JIF
     + develop strategy
@@ -31,6 +31,54 @@ output: html_notebook
     
 1. Publishing in Dev Countries
     + submit questionaire to IRB
+
+#2019/04/24
+
+**- Gender Bias paper**
+
+Updated with re-run datasets. Need to run the script for `editor_comparision.csv` from ASM_XML_parsing. --Done
+
+Fixed git issue in flux ASM_XML_parsing repo & succesfuly synced. 
+
+Created script to get a dataset of the reviewer-editor correspondence (needed for gender bias paper) & ran.
+
+Pulled & joined citation/viewing stats for analysis.
+
+Realized that because I randomized days for dates, I have to re-run the xml to dataset workflow. I can still work on generating code, but won't be able to run it until next week.
+
+#2019/04/23
+
+**- Lab meeting**
+
+Review Begum's code.
+
+**- SWC meeting**
+
+Agreed to work on revamping/updating the website.
+
+**- Gender bias**
+
+Worked w. Begum on logisitical regression.
+    
+#2019/04/22
+
+**- ASM blog**
+
+Suggestions to post on helminths.
+
+**- DEI**
+
+Certificate ceremony.
+
+Send website draft out.
+
+**- SWC**
+
+Work on Git lesson revamp. Clone repo & work on first couple of lessons. Need to add photos.
+
+**- Meet w. Pat**
+
+Suggested info interviews w. Melissa & consultants, etc.
 
 #Goals: April 15 - 19
 1. Gender bias paper:
@@ -53,6 +101,8 @@ output: html_notebook
     + ~~Present gender rep figures~~
 
 #2019/04/19
+
+**- Work with Mia**
 
 **- Work on schematics**
 
