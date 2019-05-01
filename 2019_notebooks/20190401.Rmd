@@ -2,20 +2,88 @@
 title: "Lab Notebook: April 2019"
 output: html_notebook
 ---
+#Goals: April 29 - May 3
+1. Gender bias paper:
+    + finish scripting fig 4 - logistical regressions dataset
+    + finish scripting fig 3
+    + script fig 5
+    
+1. ~~Meet w. Pat -- Mon @ 1pm~~
+
+1. Microbe
+    + journals concept map
+    + update journals slides
+    + microbiology myths
+    + arrange meetings to discuss data (Hazel & international rep)
+
+1. SWC 
+    + ~~Git Revamp - Git B lesson~~
+    
+1. Estimated JIF
+    + ~~develop strategy~~
+    + learn crossRef API
+
+1. Monthly journals report
+    + ?
+    
+1. ASM blog
+    + work on origin blog (Friday)
+
+1. Publishing in Dev Countries
+    + submit questionaire to IRB
+    + get suggestions from international rep
+    
+1. ~~Geographic figures w. Mia - Mon @ 2pm~~
+
+#2019/04/30
+
+**- Lab meeting**
+
+**- Microbe**
+
+Email for feedback on survey & to arrange meetings for Microbe.
+
+**- Authorship paper**
+
+Work on trying to figure out what's going on w. the region/gdp groupings.
+
+#2019/04/29
+**- Estimated JIF**
+
+Figured out that the highwire dataset that I use to look at cites/usage in the monthly report actually lists the date of the cites made. I can use that to calculate a rolling estimated jif to include in the monthly report. Scripted a table that includes the manuscript types that seem to be considered citeable from the WoS dataset. Added table to the monthly report.
+
+**- Met w. Josie**
+
+**- Met w. Pat**
+
+IRB - Pat suggested sending my survey to some ASM international reps to gather their thoughts & then schedule a meeting at ASM to get their input on the data/interpretations. Also, if I fill out the paperwork (we should be able to get an exemption), then Pat will click the button. Possibly roll these results in w. the geographic bias paper?
+
+Gender rep - 15 minute presentation at Microbe + 15 min Questions. Set up a meeting with Pat & Hazel Barton to dicuss data/interpretation at Microbe.
+
+Monthly report - waiting for Joel. Pat suggested me to figure out how to estimate the following year's JIF based on data within each report (multiple current JIF by scale based on how much time is left?)
+
+**- Met w. Mia**
+
+Work on some issues in the geographic figures code:
+  1. Years are being wierd in the reviewer & editor plots over time
+  2. Having trouble with region, gdp groupings
+  3. Run author figures on flux -- keep crashing Rstudio
+
 #Goals: April 22 - 26
 1. Gender bias paper:
-    + finish fig 4 - logistical regressions
-    + finish fig 3 
+    + finish ~~fig 4 - logistical regressions~~
+    + finish ~~fig 3~~ 
     
 1. ~~Meet w. Pat -- Mon @ 2:30pm~~
 
 1. DEI 
     + ~~Certificate -- Mon @ 12 - 2pm~~
-    + Inclusive Listening -- Thursday @ 9:30
+    + ~~Inclusive Listening -- Thursday @ 9:30~~
     
 1. Kat Milligan-Meyer Visits -- Friday
-    + Seminar @ noon
-    + one-on-one @ 2:45pm
+    + ~~Seminar @ 10~~
+    + ~~Seminar @ noon~~
+    + ~~one-on-one @ 2:45pm~~
     
 1. SWC 
     + ~~Meeting -- Tuesday @ 9~~
@@ -26,11 +94,42 @@ output: html_notebook
     + learn crossRef API
 
 1. Monthly journals report
-    + All journals report: submissions comparison & transfers
-    + Each journal report: problem manuscript report
+    + ~~All journals report: submissions comparison & transfers~~
+    + ~~Each journal report: problem manuscript report~~
+    + ~~Emailed Joel for more data~~
     
 1. Publishing in Dev Countries
     + submit questionaire to IRB
+
+#2019/04/26
+
+**- Monthly Journals Report**
+
+Emailed Joel for more data.
+
+**-ASM blog**
+
+Made final revisions to white paper blog post.
+
+**- Authorship paper**
+
+Worked on schematics & added to `supp_figures` file in `submission`.
+
+**- Seminars & meetings**
+
+Kat @ 10 - Science Origin Story
+
+Kat @ 12 - Science Research Story
+
+Kat @ 2:45 - One-on-one
+
+#2019/04/25
+
+**- Inclusive Listening**
+
+**- Monthly journals report**
+
+Wrote code for transfers and problem manuscripts to both scrape from xml files as well as view/plot. Re-ran xml parse to ensure the updated code worked. Fixed issue with local git repo and started a new remote repo. Need to now contact Joel for a full dataset.
 
 #2019/04/24
 

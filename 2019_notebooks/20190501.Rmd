@@ -1,0 +1,50 @@
+---
+title: "Lab Notebook: May 2019"
+output: html_notebook
+---
+#Goals: April 29 - May 3
+1. Gender bias paper:
+    + finish scripting fig 4 - logistical regressions dataset
+    + ~~finish scripting fig 3~~
+    + script fig 5
+    
+1. ~~Meet w. Pat -- Mon @ 1pm~~
+
+1. Microbe
+    + journals concept map
+    + update journals slides
+    + microbiology myths
+    + ~arrange meetings to discuss data (Hazel & international rep)~~
+
+1. SWC 
+    + ~~Git Revamp - Git B lesson~~
+    
+1. Estimated JIF
+    + ~~develop strategy~~
+    + learn crossRef API
+
+1. Monthly journals report
+    + ?
+    
+1. ASM blog
+    + work on origin blog (Friday)
+
+1. Publishing in Dev Countries
+    + submit questionaire to IRB
+    + get suggestions from international rep
+    
+1. ~~Geographic figures w. Mia - Mon @ 2pm~~
+
+#2019/05/01
+
+**- Josie Teaching Demo**
+
+**- Gender bias**
+
+Worked on finishing scripting figure 3. Added citation & usage data & started a couple of correlation plots. 
+
+**- Geographic figures**
+
+Sorted out the issues Mia was having with her figures. 
+  + Rstudio kept crashing b/c it was trying to use an entire df to name a figure, swapped that out for a name.
+  + Some figures looked jagged overtime b/c they needed to be facetted by journal
