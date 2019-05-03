@@ -2,18 +2,46 @@
 title: "Lab Notebook: May 2019"
 output: html_notebook
 ---
+#Goals: May 6 - 10
+1. Gender bias paper:
+    + script fig 5
+    + start results outline/figures
+
+1. Microbe
+    + finish journals concept map
+    + update journals slides
+    + microbiology myths
+
+1. SWC 
+    + Git Revamp - Git C lesson
+    
+1. Monthly journals report
+    + ?
+    
+1. ASM blog
+    + work on origin blog
+
+1. Publishing in Dev Countries
+    + submit questionaire to IRB
+    + get suggestions from international rep -- waiting
+    
+1. Geographic Rep
+    + go over figures w. Mia
+    + suggest next line figures
+    + revise outline
+
 #Goals: April 29 - May 3
 1. Gender bias paper:
-    + finish scripting fig 4 - logistical regressions dataset
+    + ~~finish scripting fig 4 - logistical regressions dataset~~
     + ~~finish scripting fig 3~~
     + script fig 5
     
 1. ~~Meet w. Pat -- Mon @ 1pm~~
 
 1. Microbe
-    + journals concept map
+    + ~~journals concept map~~
     + update journals slides
-    + microbiology myths
+    + ~~microbiology myths~~
     + ~arrange meetings to discuss data (Hazel & international rep)~~
 
 1. SWC 
@@ -21,19 +49,45 @@ output: html_notebook
     
 1. Estimated JIF
     + ~~develop strategy~~
-    + learn crossRef API
+    + learn crossRef API -- not needed ATM
 
 1. Monthly journals report
     + ?
     
 1. ASM blog
-    + work on origin blog (Friday)
+    + ~~work on origin blog (Friday)~~
 
 1. Publishing in Dev Countries
     + submit questionaire to IRB
-    + get suggestions from international rep
+    + get suggestions from international rep -- waiting
     
 1. ~~Geographic figures w. Mia - Mon @ 2pm~~
+
+#2019/05/03
+
+**- Gender bias**
+
+Re-script logistic regression dataset to include days, cite data, num revisions/authors/reviewers, etc. Now just waiting for the flux job to finish so that I can also include days.pending
+
+Was going to start scripting figure 5, but I'm waiting on the flux job to finish.
+
+Worked on trying to find reviewer score systems.
+
+**- ASM blog**
+
+Work on intro & outline to origin of life blog.
+
+**- Microbe**
+
+Work on journals concept map
+
+#2019/05/02
+
+**- Microbe**
+
+Worked on microbial myths doc.
+
+Worked on journals concept map.
 
 #2019/05/01
 
