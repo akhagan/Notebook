@@ -4,16 +4,16 @@ output: html_notebook
 ---
 #Goals: May 6 - 10
 1. Gender bias paper:
-    + script fig 5
+    + ~~script fig 5~~
     + start results outline/figures
 
 1. Microbe
-    + finish journals concept map
-    + update journals slides
+    + ~~finish journals concept map~~
+    + ~~update journals slides~~
     + microbiology myths
 
 1. SWC 
-    + Git Revamp - Git C lesson
+    + ~~Git Revamp - Git C lesson~~
     
 1. Monthly journals report
     + ?
@@ -26,9 +26,61 @@ output: html_notebook
     + get suggestions from international rep -- waiting
     
 1. Geographic Rep
-    + go over figures w. Mia
-    + suggest next line figures
+    + ~~go over figures w. Mia~~
+    + ~~suggest next line figures~~
     + revise outline
+
+#2019/05/08
+
+**- Microbe**
+
+Finished draft of journals concept map & send updated slides.
+
+**- Gender bias**
+
+Flux job failed again b/c of the editors dataset. Used an interactive job to finish the pipeline. Clean up flux folders. Share updated data w. Mia
+
+Missing CVI & mBio for articles between 1 & 12 mo published w. view stats
+
+Missing mBio for articles between 24 & 48 mo published w. cite stats
+
+Figures that need work:
+
+time_at_journ - revisit w. days.pending calculated - done
+rev_accept_gender - need potential reviewer dataset - started coding
+
+Need to bin institutions, US vs non-US researchers, # of authors, reviewer recomendations, JIF of previous year, "percieved impact" (composite IF with number added to account for age)
+
+**- Lit review**
+
+Sift through alert emails for relevant papers.
+
+#2019/05/07
+
+**- Lab meeting**
+
+**- SWC**
+
+Git Revamp - Git C lesson
+
+**- Journal club**
+
+Find & share paper for journal club next week. 
+
+**- Microbe**
+
+Worked on slides.
+
+#2019/05/06
+
+**- Microbe**
+
+Worked on slides for journals talk.
+
+**- Geographic Rep**
+
+Went over figures with Mia & made suggestions for next round.
+
 
 #Goals: April 29 - May 3
 1. Gender bias paper:
