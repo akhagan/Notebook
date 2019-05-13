@@ -12,13 +12,13 @@ output: html_notebook
     + microbiology myths -- wait
 
 1. SWC 
-    + Git Revamp - Git D lesson
+    + ~~Git Revamp - Git D lesson~~
     
 1. Monthly journals report
     + ?
     
 1. ASM blog
-    + finish on origin blog
+    + ~~finish origin blog~~
     + revise blog
     + submit to Julie
     + ~~comments on ? blog~~
@@ -45,6 +45,10 @@ Weekly report & goals.
 Suggestions for blog post on immune amnesia & measles.
 
 Finish origin of life blog & send to Begum
+
+**- SWC**
+
+Work on Git lesson D revamp.
 
 #Goals: May 6 - 10
 1. Gender bias paper:
