@@ -2,6 +2,50 @@
 title: "Lab Notebook: May 2019"
 output: html_notebook
 ---
+#Goals: May 13 - 17
+1. Gender bias paper:
+    + work on finishing previous figures
+    + script new set of figures
+    + start results outline/figures
+
+1. Microbe
+    + microbiology myths -- wait
+
+1. SWC 
+    + Git Revamp - Git D lesson
+    
+1. Monthly journals report
+    + ?
+    
+1. ASM blog
+    + finish on origin blog
+    + revise blog
+    + submit to Julie
+    + ~~comments on ? blog~~
+
+1. Publishing in Dev Countries
+    + submit questionaire to IRB
+    + get suggestions from international rep -- waiting
+    
+1. Geographic Rep
+    + go over second line figures w. Mia
+    + suggest next line figures
+    + revise outline
+    
+1. Journal club
+
+#2019/05/13
+
+**- Misc**
+
+Weekly report & goals.
+
+**- ASM blog**
+
+Suggestions for blog post on immune amnesia & measles.
+
+Finish origin of life blog & send to Begum
+
 #Goals: May 6 - 10
 1. Gender bias paper:
     + ~~script fig 5~~
@@ -10,7 +54,7 @@ output: html_notebook
 1. Microbe
     + ~~finish journals concept map~~
     + ~~update journals slides~~
-    + microbiology myths
+    + ~~microbiology myths~~
 
 1. SWC 
     + ~~Git Revamp - Git C lesson~~
@@ -19,7 +63,7 @@ output: html_notebook
     + ?
     
 1. ASM blog
-    + work on origin blog
+    + ~~work on origin blog~~
 
 1. Publishing in Dev Countries
     + submit questionaire to IRB
@@ -29,6 +73,22 @@ output: html_notebook
     + ~~go over figures w. Mia~~
     + ~~suggest next line figures~~
     + revise outline
+
+#2019/05/10
+
+**- ASM blog**
+
+Worked on origin of life blog
+
+**- Microbe**
+
+Worked on microbial myths
+
+#2019/05/09
+
+**- ASM blog**
+
+Work on origin of life blog.
 
 #2019/05/08
 
