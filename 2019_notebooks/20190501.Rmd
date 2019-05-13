@@ -10,7 +10,7 @@ output: html_notebook
 1. Microbe
     + ~~finish journals concept map~~
     + ~~update journals slides~~
-    + microbiology myths
+    + ~~microbiology myths~~
 
 1. SWC 
     + ~~Git Revamp - Git C lesson~~
@@ -29,6 +29,16 @@ output: html_notebook
     + ~~go over figures w. Mia~~
     + ~~suggest next line figures~~
     + revise outline
+
+#2019/05/09
+
+**- ASM blog**
+
+Work on origin blog post.
+
+**- Microbe**
+
+Work on microbiology myths.
 
 #2019/05/08
 
