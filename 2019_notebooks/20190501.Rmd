@@ -15,12 +15,12 @@ output: html_notebook
     + ~~Git Revamp - Git D lesson~~
     
 1. Monthly journals report
-    + ?
+    + ~~arrange data transfers~~
     
 1. ASM blog
     + ~~finish origin blog~~
-    + revise blog
-    + submit to Julie
+    + ~~revise blog~~
+    + ~~submit to Julie~~
     + ~~comments on ? blog~~
 
 1. Publishing in Dev Countries
@@ -32,7 +32,43 @@ output: html_notebook
     + suggest next line figures
     + revise outline
     
-1. Journal club
+1. ~~Journal club~~
+
+#2019/05/15
+
+**- Gender bias**
+
+Work on binning institution types.
+
+**- Misc**
+
+Finished clarifying/arranging data transfers from ejp.
+
+Emailed about SEA Change.
+
+Emailed Amy Chang.
+
+Emailed Rebecca about Diversify M&I.
+
+**- Invited Speaker Paper**
+
+Met with Josie to discuss & plan a paper about the invited speaker dataset.
+
+**- ASM blog**
+
+Finished origin blog post, went through revisions with Begum, & submitted to Julie.
+
+#2019/05/14
+
+**- Lab meeting**
+
+Prep for journal club.
+
+**- ASM blog**
+
+Work on blog & check in w. Begum.
+
+Suggestions for Julie
 
 #2019/05/13
 
@@ -44,7 +80,7 @@ Weekly report & goals.
 
 Suggestions for blog post on immune amnesia & measles.
 
-Finish origin of life blog & send to Begum
+Work on origin of life blog
 
 **- SWC**
 
