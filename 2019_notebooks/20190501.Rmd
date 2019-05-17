@@ -10,6 +10,7 @@ output: html_notebook
 
 1. Microbe
     + microbiology myths -- wait
+    + ~~meeting @ 11:30~~
 
 1. SWC 
     + ~~Git Revamp - Git D lesson~~
@@ -33,6 +34,32 @@ output: html_notebook
     + revise outline
     
 1. ~~Journal club~~
+
+#2019/05/17
+
+**- Microbe**
+
+Phone call w. journals crew.
+
+**- Gender bias**
+
+Finish binning research institutions.
+
+**- Geographic rep**
+
+Meet with Mia & save images to date. Need to look over them on Monday.
+
+#2019/05/16
+
+**- Bystander Intervention Training (ASM)**
+
+**- Gender bias**
+
+Work on binning institution types.
+
+**- Misc**
+
+Start 3 year work plan.
 
 #2019/05/15
 
