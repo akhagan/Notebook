@@ -6,6 +6,53 @@ output: html_notebook
 1. Gender bias paper:
     + work on finishing previous figures
     + script new set of figures
+    + get regression dataset to Begum
+
+1. Microbe
+    + microbiology myths -- wait
+    + 3yr work plan -- Pat, Thurs @ 2:30
+
+1. SWC 
+    + Git Revamp - hold until after Microbe
+    
+1. Monthly journals report
+    + ~~pull new data~~
+    + citation/usage stats
+    + final touches on monthly report
+    + send to Pat/Melissa
+    
+1. ASM blog
+    + revisions on origin blog
+
+1. Geographic Rep
+    + go over second line figures
+    + make next line figures
+
+#2019/05/20
+
+**- Misc**
+
+Microbe schedule planning & weekly report.
+
+**- Gender bias**
+
+Get regression data for Begum:
+  + Revisit binning institutions. Final categories == R1, R2, medical/insitutes, government, industry, & low research
+  + Calculate prop of F authors on each manuscript.
+  + Get average reviewer rank. -- found something weird in the reviewer data -- reviewer.random.id seems to be assigned based on manuscript & not individual. Need to look into this.
+  + Gather historical jif, max jif, and foundation years, to calculate a "percieved JIF".
+      + Percieved JIF = Avg JIF (2010-2017) + Max JIF + # Years since founded
+      
+**-Monthly Report**
+
+Pulled 3 year data dump from ejp & emailed joel about getting my public key set up.
+
+Need to get citation/usage stats from impact vizor.
+
+#Goals: May 13 - 17
+1. Gender bias paper:
+    + work on finishing previous figures
+    + script new set of figures
     + start results outline/figures
 
 1. Microbe
