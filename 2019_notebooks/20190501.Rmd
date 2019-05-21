@@ -6,7 +6,7 @@ output: html_notebook
 1. Gender bias paper:
     + work on finishing previous figures
     + script new set of figures
-    + get regression dataset to Begum
+    + ~~get regression dataset to Begum~~
 
 1. Microbe
     + microbiology myths -- wait
@@ -27,6 +27,22 @@ output: html_notebook
 1. Geographic Rep
     + go over second line figures
     + make next line figures
+
+#2019/05/21
+
+**- Gender bias**
+
+Work on figuring out what is happening to reviewer ids. -- incorrect joining during deidentification step. Fixed, which meant I had to re-do how I load in reviewer data for analysis and drop all ".y" from the end of column names. -- fixed for both gender_analysis & representation projects. 
+
+Made the process of binning US institutions faster by spliting and joining.
+
+Made final changes to script to generate the regression data for Begum & ran.
+
+Sent new df to Begum.
+
+**- Lab Meeting**
+
+Learned about R documentation!!!
 
 #2019/05/20
 
