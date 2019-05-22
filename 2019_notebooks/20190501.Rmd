@@ -22,11 +22,25 @@ output: html_notebook
     + send to Pat/Melissa
     
 1. ASM blog
-    + revisions on origin blog
+    + ~~revisions on origin blog~~
 
 1. Geographic Rep
-    + go over second line figures
+    + ~~go over second line figures~~
     + make next line figures
+
+#2019/05/22
+
+**- Gender Rep**
+
+Go through 2nd line figures. Have to figure out the best way to show all of the different regions.
+
+**- Gender Bias**
+
+Made additional changes to the dataset for Begum.
+
+**- ASM blog**
+
+Made a few changes to the blog post.
 
 #2019/05/21
 
