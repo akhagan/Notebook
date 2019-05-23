@@ -10,14 +10,14 @@ output: html_notebook
 
 1. Microbe
     + microbiology myths -- wait
-    + 3yr work plan -- Pat, Thurs @ 2:30
+    + ~~3yr work plan -- Pat, Thurs @ 2:30~~
 
 1. SWC 
     + Git Revamp - hold until after Microbe
     
 1. Monthly journals report
     + ~~pull new data~~
-    + citation/usage stats
+    + ~~citation/usage stats~~
     + final touches on monthly report
     + send to Pat/Melissa
     
@@ -27,6 +27,24 @@ output: html_notebook
 1. Geographic Rep
     + ~~go over second line figures~~
     + make next line figures
+
+#2019/05/23
+
+**- Monthly Journals Report**
+
+Worked on finishing touches to the workflow & got a dataset ready to run through the report scripts.
+
+**- ASM blog**
+
+Finished suggestions to the blog.
+
+**- Gender bias**
+
+
+
+**- Meeting w. Pat**
+
+Talked about the 3yr work plan. He gave me some suggestions of ideas for future research and language to use. I need to give them a draft for comments.
 
 #2019/05/22
 
