@@ -18,7 +18,7 @@ output: html_notebook
 1. Monthly journals report
     + ~~pull new data~~
     + ~~citation/usage stats~~
-    + final touches on monthly report
+    + ~~final touches on monthly report~~
     + send to Pat/Melissa
     
 1. ASM blog
@@ -27,6 +27,18 @@ output: html_notebook
 1. Geographic Rep
     + ~~go over second line figures~~
     + make next line figures
+
+#2019/05/24
+
+**- Monthly Journals Report**
+
+Still working on pipeline. [Found a piece of data that I need but wasn't in the parsing function used. Added it to the code & re-ran `report_parse.R`.]x2
+
+I think I made all of the needed tweaks in the report & started a job overnight to run all of the `run_report` script.
+
+**- Microbe**
+
+Finished draft of 3yr workplan & sent to Pat.
 
 #2019/05/23
 
