@@ -2,10 +2,29 @@
 title: "Lab Notebook: May 2019"
 output: html_notebook
 ---
+#Goals: May 27 - 31
+1. Gender bias paper:
+    + review all figures
+    + generate 2nd line figures
+    + Ouline & Figures to Pat -- F
+
+1. Microbe
+    + microbiology myths -- wait
+    + Slides & practice for Microbe Talk
+
+1. Monthly journals report -- waiting for feedback
+    
+1. ASM blog -- wait
+
+1. Geographic Rep
+    + make next line figures
+    + review/tweak all figures
+    + Outline & Figures to Pat -- F
+
 #Goals: May 13 - 17
 1. Gender bias paper:
-    + work on finishing previous figures
-    + script new set of figures
+    + ~~work on finishing previous figures~~
+    + ~~script new set of figures~~
     + ~~get regression dataset to Begum~~
 
 1. Microbe
@@ -27,6 +46,16 @@ output: html_notebook
 1. Geographic Rep
     + ~~go over second line figures~~
     + make next line figures
+
+#2019/05/26
+
+**- Monthly Journals Report**
+
+Restarted `run_monthly_reports.R` job. Ran all reports
+
+**- Gender Bias**
+
+Finished generating rough figures & print.
 
 #2019/05/24
 
