@@ -21,6 +21,14 @@ output: html_notebook
     + review/tweak all figures
     + Outline & Figures to Pat -- F
     
+#2019/05/29
+
+**- Gender bias**
+
+
+
+**- Meeting w. Harry**
+
 #2019/05/28
 
 **- Monthly Report Feedback**
@@ -29,6 +37,9 @@ Pat:
   + editor/month tables sorting alphabetical instead of numeric - might need to `as.numeric` the month columns &/or check out the NAs being generated (na vs NA), that might also be throwing things
   + need to work out the data.table error
   + try color with the journal submissions plot
+  
+Melissa:
+  + 
   
 Tried to troubleshoot key authentication w. ejpress
   
