@@ -20,14 +20,26 @@ output: html_notebook
     + make next line figures
     + review/tweak all figures
     + Outline & Figures to Pat -- F
+
+#2019/05/30
+  
+**- Gender bias**
+
+Need to create a variable for inst.type:gender.
+
+Worked on plots and adding results to the Rmd. I'm stuck on reviewer scores again. If I can figure out which direction each score system needs to go, I'll probably combine all of the journals for analyisis. Another option is to look at reviewer reccommendations instead.
     
 #2019/05/29
 
+**- Postdoc Meeting**
+
 **- Gender bias**
 
-
+Work through figures to take notes on outcomes & choose plots for outlines.
 
 **- Meeting w. Harry**
+
+Went well!
 
 #2019/05/28
 
