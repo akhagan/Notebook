@@ -5,7 +5,7 @@ output: html_notebook
 #Goals: May 27 - 31
 1. Gender bias paper:
     + ~~review all figures~~
-    + generate 2nd line figures
+    + ~~generate 2nd line figures~~
     + Ouline & Figures to Pat -- F
 
 1. Microbe
@@ -20,6 +20,12 @@ output: html_notebook
     + make next line figures
     + review/tweak all figures
     + Outline & Figures to Pat -- F
+
+#2019/05/31
+
+**- Gender bias**
+
+Worked on final plots evaluating decisions/recommendations by reviewer/editor gender.
 
 #2019/05/30
   
