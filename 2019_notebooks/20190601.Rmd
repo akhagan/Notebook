@@ -1,0 +1,61 @@
+---
+title: "Lab Notebook: June 2019"
+output: html_document
+---
+#Goals: June 3 - 7
+1. Gender bias paper:
+    + feedback from Pat
+
+1. Microbe
+    + microbiology myths
+    + ~~Microbe Talk Practice #1 -- Monday @ 11am~~
+    + Microbe Talk Practice #2 -- Wednesday @ 11am
+
+1. Monthly journals report -- 
+    + Work on automating sftp
+    + datatable error (or other method for sortable tables)
+    + data pull for June report
+    
+1. ASM blog -- wait
+
+1. Geographic Rep
+    + review/tweak all figures
+    + Outline & Figures to Pat...
+
+#2019/06/03
+
+**- Gender Bias**
+
+Final touches to Rmd outline/figures. Send to Pat.
+
+**- Representation**
+
+Adjust gender portion & send to Pat.
+
+Work on geographic section.
+
+**- Microbe talk**
+
+Draft script for 1st practice.
+
+1st practice w. group.
+
+Notes to self:
+  + develop intro (describe publishing model)
+  + new mBio manu about preprints
+  + drop kudos 
+  + drop predatory review slides
+  + add twitter handle?
+  + drop 1st JIF slide
+  + drop title slide
+  + add publishing model at the end for questions
+
+**- Monthly report**
+
+Work on sorting out data table error
+
+#2019/06/02
+
+**- Gender Bias**
+
+Work on finishing gender bias outline & figures.

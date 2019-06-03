@@ -6,18 +6,18 @@ output: html_notebook
 1. Gender bias paper:
     + ~~review all figures~~
     + ~~generate 2nd line figures~~
-    + Ouline & Figures to Pat -- F
+    + ~~Ouline & Figures to Pat~~
 
 1. Microbe
     + microbiology myths -- wait
-    + Slides & practice for Microbe Talk
+    + ~~Slides & practice for Microbe Talk~~
 
 1. Monthly journals report -- waiting for feedback
     
 1. ASM blog -- wait
 
 1. Geographic Rep
-    + make next line figures
+    + ~~make next line figures~~
     + review/tweak all figures
     + Outline & Figures to Pat -- F
 
