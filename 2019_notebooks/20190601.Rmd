@@ -4,16 +4,17 @@ output: html_document
 ---
 #Goals: June 3 - 7
 1. Gender bias paper:
-    + feedback from Pat
+    + feedback from Pat -- Meet Tuesday @ 1
+    + Make presentation for EiC meeting
 
 1. Microbe
-    + microbiology myths
+    + ~~microbiology myths~~
     + ~~Microbe Talk Practice #1 -- Monday @ 11am~~
-    + Microbe Talk Practice #2 -- Wednesday @ 11am
+    + ~~Microbe Talk Practice #2 -- Wednesday @ 11am~~
 
 1. Monthly journals report -- 
     + Work on automating sftp
-    + datatable error (or other method for sortable tables)
+    + ~~datatable error (or other method for sortable tables)~~
     + data pull for June report
     
 1. ASM blog -- wait
@@ -21,6 +22,48 @@ output: html_document
 1. Geographic Rep
     + review/tweak all figures
     + Outline & Figures to Pat...
+
+#2019/06/05
+
+**- Microbial Myths**
+
+**- Microbe talk practice**
+
+Notes:
+  + Better frame JIF in terms of ASM stance & DORA (editorial)
+  + clarify that ASM journals do have JIFs
+  + Add resources/make source images larger 
+  + Consider using IF vs JIF
+  + Clarify what predatory journals are & their impact on scientific publishing
+  + Pubmed: use "discoverable" vs "indexed"
+  + Discuss how society journals add value
+  + Make OA images bigger
+  + Google discoverability (abstracts vs articles)
+  + Clarify: hybrid journal articles "freely available" after 6 mo (not OA)
+  + Clarify/describe what altmetrics are & their value
+  + Should be "preprint" not "pre-print"
+  
+**- Postdoc Training Summary**
+
+Finished & sent to Pat & Michele.
+
+**- Monthly Report**
+
+Arrange time to troubleshoot w. Shane for SFTP automation.
+
+#2019/06/04
+
+**- Monthly Journals Report**
+
+Figure out datatable issue, was using an old version. -- unfortunately, there's still a bug where only it only works with JVI...
+
+**- ASM pre-Microbe Meeting**
+
+**- Geographic bias**
+
+Work with Mia.
+
+**- Microbial Myths**
 
 #2019/06/03
 
